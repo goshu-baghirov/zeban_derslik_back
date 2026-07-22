@@ -16,6 +16,7 @@ from .models import (
     MultipleChoiceItem,
     PracticeRevealExercise,
     PracticeRevealItem,
+    ReadingComprehensionQuestion,
     ReadingFootnote,
     ReadingText,
     SentencePractice,
@@ -82,7 +83,7 @@ class GrammarNoteSerializer(serializers.ModelSerializer):
 class FillBlankItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = FillBlankItem
-        fields = ("fa_with_blank", "correct_answer")
+        fields = ("fa_with_blank", "correct_answer", "reading_az", "az", "full_reading_az", "full_translation_az")
 
 
 class FillBlankExerciseSerializer(serializers.ModelSerializer):
@@ -175,12 +176,28 @@ class ReadingFootnoteSerializer(serializers.ModelSerializer):
         fields = ("fa", "az")
 
 
+class ReadingComprehensionQuestionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ReadingComprehensionQuestion
+        fields = ("question_fa", "reading_az", "az")
+
+
 class ReadingTextSerializer(serializers.ModelSerializer):
     footnotes = ReadingFootnoteSerializer(many=True, read_only=True)
+    comprehension_questions = ReadingComprehensionQuestionSerializer(many=True, read_only=True)
 
     class Meta:
         model = ReadingText
-        fields = ("title_fa", "title_az", "image", "paragraphs_fa", "full_translation_az", "footnotes")
+        fields = (
+            "title_fa",
+            "title_az",
+            "image",
+            "paragraphs_fa",
+            "full_translation_az",
+            "sentences",
+            "footnotes",
+            "comprehension_questions",
+        )
 
 
 class LessonSerializer(serializers.ModelSerializer):

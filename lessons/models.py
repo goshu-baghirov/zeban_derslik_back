@@ -134,6 +134,10 @@ class FillBlankItem(models.Model):
     exercise = models.ForeignKey(FillBlankExercise, related_name="items", on_delete=models.CASCADE)
     fa_with_blank = models.CharField("Cümlə (boşluqlu)", max_length=500)
     correct_answer = models.CharField("Düzgün cavab", max_length=255)
+    reading_az = models.CharField("Cavabın oxunuşu (az hərfləri ilə)", max_length=255, blank=True, default="")
+    az = models.CharField("Cavabın tərcüməsi (az)", max_length=255, blank=True, default="")
+    full_reading_az = models.CharField("Cümlənin oxunuşu (az hərfləri ilə)", max_length=500, blank=True, default="")
+    full_translation_az = models.CharField("Cümlənin ümumi tərcüməsi (az)", max_length=500, blank=True, default="")
     order = models.PositiveIntegerField("Sıra", default=0)
 
     class Meta:
@@ -346,6 +350,12 @@ class ReadingText(models.Model):
     image = models.ImageField("Şəkil", upload_to=lesson_image_path, blank=True, null=True)
     paragraphs_fa = models.JSONField("Paraqraflar (fars)", default=list)
     full_translation_az = models.TextField("Tam tərcümə (az)")
+    sentences = models.JSONField(
+        "Cümlələr (toxunanda oxunuş+tərcümə görünür)",
+        default=list,
+        blank=True,
+        help_text='Hər biri {"fa", "reading_az", "az", "new_paragraph"} formasında. Boşdursa köhnə paraqraf görünüşü işlədilir.',
+    )
 
     class Meta:
         verbose_name = "Oxu mətni"
@@ -363,3 +373,19 @@ class ReadingFootnote(models.Model):
 
     class Meta:
         ordering = ["order", "id"]
+
+
+class ReadingComprehensionQuestion(models.Model):
+    """"لطفاً پاسخ دهید" bölməsi: mətndən sonra, sözlərdən sonra göstərilən,
+    qapalı kartın içində açılan anlama sualları."""
+
+    reading_text = models.ForeignKey(ReadingText, related_name="comprehension_questions", on_delete=models.CASCADE)
+    question_fa = models.CharField("Sual (fars)", max_length=500)
+    reading_az = models.CharField("Sualın oxunuşu (az hərfləri ilə)", max_length=500, blank=True, default="")
+    az = models.CharField("Sualın tərcüməsi (az)", max_length=500, blank=True, default="")
+    order = models.PositiveIntegerField("Sıra", default=0)
+
+    class Meta:
+        ordering = ["order", "id"]
+        verbose_name = "Anlama sualı"
+        verbose_name_plural = "Anlama sualları"

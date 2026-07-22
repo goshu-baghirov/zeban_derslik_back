@@ -26,6 +26,7 @@ from lessons.models import (
     MultipleChoiceItem,
     PracticeRevealExercise,
     PracticeRevealItem,
+    ReadingComprehensionQuestion,
     ReadingFootnote,
     ReadingText,
     SentencePractice,
@@ -320,6 +321,50 @@ LESSON_1 = {
                     "az": "O dəftərdə rəsm çəkirmi? Xeyr, o dəftər üzərində rəsm çəkir.",
                 },
             ],
+            "drills": [
+                {
+                    "title_fa": "با توجّه به تصویر پاسخ دهید",
+                    "instruction_az": "Şəklə diqqət edərək cavab verin",
+                    "items": [
+                        {
+                            "prompt_fa": "آیا این دختر، کتاب دارد؟",
+                            "answer_fa": "بله، این دختر کتاب دارد.",
+                            "reading_az": "Bəle, in doxtər ketab darəd.",
+                            "az": "Bəli, bu qızın kitabı var.",
+                        },
+                        {
+                            "prompt_fa": "آیا کتاب او روی میز نیست؟",
+                            "answer_fa": "نه، کتاب او روی میز نیست؛ در دست اوست.",
+                            "reading_az": "Na, ketabe u ruye miz nist; dər dəste u əst.",
+                            "az": "Bəli, onun kitabı masanın üstündə deyil; onun əlindədir.",
+                        },
+                        {
+                            "prompt_fa": "آیا او نقّاشی می‌کشد؟",
+                            "answer_fa": "نه، او نقّاشی نمی‌کشد؛ او کتاب می‌خواند.",
+                            "reading_az": "Na, u nəqqaşi nemikeşəd; u ketab mixanəd.",
+                            "az": "Xeyr, o rəsm çəkmir; o kitab oxuyur.",
+                        },
+                        {
+                            "prompt_fa": "آیا حسین مداد ندارد؟",
+                            "answer_fa": "چرا، حسین مداد دارد.",
+                            "reading_az": "Çera, Hoseyn medad darəd.",
+                            "az": "Xeyr (əksinə), Hüseynin qələmi var.",
+                        },
+                        {
+                            "prompt_fa": "آیا او با مداد نمی‌نویسد؟",
+                            "answer_fa": "نه، او با مداد نمی‌نویسد؛ او با خودکار می‌نویسد.",
+                            "reading_az": "Na, u ba medad neminevisəd; u ba xodkar minevisəd.",
+                            "az": "Bəli, o mədədlə yazmır; o tükənməz qələmlə yazır.",
+                        },
+                        {
+                            "prompt_fa": "مداد حسین کجاست؟",
+                            "answer_fa": "مداد حسین، روی میز است.",
+                            "reading_az": "Medade Hoseyn, ruye miz əst.",
+                            "az": "Hüseynin qələmi masanın üstündədir.",
+                        },
+                    ],
+                },
+            ],
         },
     ],
     "exercises": [
@@ -328,20 +373,53 @@ LESSON_1 = {
             "instruction_az": "Boşluğu söz bankından uyğun sözlə doldurun.",
             "word_bank": ["پاک می‌کند", "نیست", "ندارید", "می‌گذارم", "می‌نویسد", "می‌کشند"],
             "items": [
-                {"fa_with_blank": "من کیف را روی میز ___ .", "correct_answer": "می‌گذارم"},
-                {"fa_with_blank": "او با مداد ___ .", "correct_answer": "می‌نویسد"},
-                {"fa_with_blank": "او با پاک‌کن ___ .", "correct_answer": "پاک می‌کند"},
+                {
+                    "fa_with_blank": "من کیف را روی میز ___ .",
+                    "correct_answer": "می‌گذارم",
+                    "reading_az": "migozaram",
+                    "az": "qoyuram",
+                    "full_reading_az": "Mən kif ra ruye miz migozaram.",
+                    "full_translation_az": "Mən çantanı masanın üstünə qoyuram.",
+                },
+                {
+                    "fa_with_blank": "او با مداد ___ .",
+                    "correct_answer": "می‌نویسد",
+                    "reading_az": "minevisəd",
+                    "az": "yazır",
+                    "full_reading_az": "U ba medad minevisəd.",
+                    "full_translation_az": "O, qələmlə yazır.",
+                },
+                {
+                    "fa_with_blank": "او با پاک‌کن ___ .",
+                    "correct_answer": "پاک می‌کند",
+                    "reading_az": "pak mikonəd",
+                    "az": "silir",
+                    "full_reading_az": "U ba pakkon pak mikonəd.",
+                    "full_translation_az": "O, pozanla silir.",
+                },
                 {
                     "fa_with_blank": "آن‌ها روی تابلو نقّاشی نمی‌کشند؛ در دفتر نقّاشی ___ .",
                     "correct_answer": "می‌کشند",
+                    "reading_az": "mikeşənd",
+                    "az": "çəkirlər",
+                    "full_reading_az": "Anha ruye təblo nəqqaşi nemikeşənd; dər dəftər nəqqaşi mikeşənd.",
+                    "full_translation_az": "Onlar lövhənin üstündə rəsm çəkmirlər; dəftərdə rəsm çəkirlər.",
                 },
                 {
                     "fa_with_blank": "آیا این زیردستی ___ ؟ نه، این زیردستی نیست؛ پوشه است.",
                     "correct_answer": "نیست",
+                    "reading_az": "nist",
+                    "az": "deyil",
+                    "full_reading_az": "Aya in zirdəsti nist? Nə, in zirdəsti nist; puşe əst.",
+                    "full_translation_az": "Bu yazı altlığı deyilmi? Xeyr, bu yazı altlığı deyil; qovluqdur.",
                 },
                 {
                     "fa_with_blank": "آیا شما خط‌کش و پرگار ___ ؟ چرا، ما خط‌کش و پرگار داریم.",
                     "correct_answer": "ندارید",
+                    "reading_az": "nədarid",
+                    "az": "yoxdur",
+                    "full_reading_az": "Aya şoma xətkeş və pərgar nədarid? Çera, ma xətkeş və pərgar darim.",
+                    "full_translation_az": "Sizin xətkeşiniz və pərgarınız yoxdurmu? Xeyr (əksinə), bizim xətkeşimiz və pərgarımız var.",
                 },
             ],
         },
@@ -366,6 +444,42 @@ LESSON_1 = {
                 {"question_fa": "مادر حسین چه‌کاره است؟", "options": ["پرستار است", "پزشک است", "استاد دانشگاه است"], "correct_index": 2},
                 {"question_fa": "حسین و فاطمه اهل کجا هستند؟", "options": ["ایران", "لبنان", "عراق"], "correct_index": 1},
                 {"question_fa": "خواهر حسین کدام کتاب را می‌خواند؟", "options": ["کتاب اوّل", "کتاب دوم", "کتاب سوم"], "correct_index": 0},
+            ],
+        },
+        {
+            "kind": "practice_reveal",
+            "instruction_az": "Suallara öz cavabınızı düşünün, sonra nümunə cavabı yoxlayın.",
+            "items": [
+                {
+                    "prompt_fa": "اسم استاد شما چیست؟",
+                    "answer_fa": "استاد من، آقای احمدی است.",
+                    "reading_az": "Ostade mən, aqaye Əhmədi əst.",
+                    "az": "Mənim müəllimim cənab Əhmədidir.",
+                },
+                {
+                    "prompt_fa": "شما تابلو را پاک نمی‌کنید؟",
+                    "answer_fa": "چرا، من تابلو را پاک می‌کنم.",
+                    "reading_az": "Çera, mən təblo ra pak mikonəm.",
+                    "az": "Xeyr (əksinə), mən lövhəni silirəm.",
+                },
+                {
+                    "prompt_fa": "آیا شما کتاب دوم را می‌خوانید؟",
+                    "answer_fa": "بله، من کتاب دوم را می‌خوانم.",
+                    "reading_az": "Bəle, mən ketabe dovvom ra mixanəm.",
+                    "az": "Bəli, mən ikinci kitabı oxuyuram.",
+                },
+                {
+                    "prompt_fa": "آیا استاد شما تابلو نمی‌نویسد؟",
+                    "answer_fa": "چرا، استاد من تابلو می‌نویسد.",
+                    "reading_az": "Çera, ostade mən təblo minevisəd.",
+                    "az": "Xeyr (əksinə), mənim müəllimim lövhəyə yazır.",
+                },
+                {
+                    "prompt_fa": "شما (تو) در کدام مدرسه درس می‌خوانی؟",
+                    "answer_fa": "من در مدرسه‌ی المهدی درس می‌خوانم.",
+                    "reading_az": "Mən dər mædrese-ye Əl-Mehdi dars mixanam.",
+                    "az": "Mən Əl-Mehdi məktəbində oxuyuram.",
+                },
             ],
         },
     ],
@@ -483,6 +597,88 @@ LESSON_1 = {
             "məktəbində dərs oxuyuruq. Biz fars dili öyrənirik. Bacım birinci kitabı, mən isə ikinci kitabı oxuyuram.\n\n"
             "Mənim bir böyük qələmqabım var. Qələmqabımda karandaş, tükənməz qələm, qələmyonan, xətkeş, pozan və s. var."
         ),
+        "sentences": [
+            {
+                "fa": "اسم من حسین است و اسم خواهرم فاطمه است.",
+                "reading_az": "Esme mən Hoseyn əst və esme xahərəm Fateme əst.",
+                "az": "Mənim adım Hüseyndir və bacımın adı Fatimədir.",
+                "new_paragraph": True,
+            },
+            {
+                "fa": "پدر ما پزشک است و مادر ما استاد دانشگاه است.",
+                "reading_az": "Pedəre ma pezeşk əst və madəre ma ostade daneşgah əst.",
+                "az": "Atamız həkimdir, anamız isə universitet müəllimidir.",
+            },
+            {
+                "fa": "ما الآن در ایران هستیم.",
+                "reading_az": "Ma əl-an dər Iran həstim.",
+                "az": "Biz hazırda İrandayıq.",
+            },
+            {
+                "fa": "من و خواهرم طلبه‌ی جامعة المصطفی هستیم.",
+                "reading_az": "Mən və xahərəm təlləbeye Cameətol-Mostəfa həstim.",
+                "az": "Mən və bacım əl-Müstəfa Cəmiyyətinin tələbələriyik.",
+                "new_paragraph": True,
+            },
+            {
+                "fa": "من در مدرسه‌ی المهدی و خواهرم در مدرسه‌ی بنت‌الهدی درس می‌خوانیم.",
+                "reading_az": "Mən dər mædrese-ye əl-Mehdi və xahərəm dər mædrese-ye Bentol-Hoda dərs mixanim.",
+                "az": "Mən əl-Mehdi məktəbində, bacım isə Bintul-Huda məktəbində dərs oxuyuruq.",
+            },
+            {
+                "fa": "ما زبان فارسی می‌خوانیم.",
+                "reading_az": "Ma zəbane farsi mixanim.",
+                "az": "Biz fars dili öyrənirik.",
+            },
+            {
+                "fa": "خواهرم کتاب اوّل می‌خواند و من کتاب دوم می‌خوانم.",
+                "reading_az": "Xahərəm ketabe əvvəl mixanəd və mən ketabe dovvom mixanəm.",
+                "az": "Bacım birinci kitabı, mən isə ikinci kitabı oxuyuram.",
+            },
+            {
+                "fa": "من یک جامدادی بزرگ دارم.",
+                "reading_az": "Mən yek camedadiye bozorg daram.",
+                "az": "Mənim bir böyük qələmqabım var.",
+                "new_paragraph": True,
+            },
+            {
+                "fa": "در جامدادی من مداد، خودکار، مدادتراش، خط‌کش، پاک‌کن و... وجود دارد.",
+                "reading_az": "Dər camedadiye mən medad, xodkar, medadtəraş, xətkeş, pakkon və ... vocud darəd.",
+                "az": "Qələmqabımda karandaş, tükənməz qələm, qələmyonan, xətkeş, pozan və s. var.",
+            },
+        ],
+        "comprehension_questions": [
+            {
+                "question_fa": "اسم خواهرِ حسین چیست؟",
+                "reading_az": "Esme xahəre Hoseyn çist?",
+                "az": "Hüseynin bacısının adı nədir?",
+            },
+            {
+                "question_fa": "آیا پدر حسین، معلّم است؟",
+                "reading_az": "Aya pedəre Hoseyn, moəllem əst?",
+                "az": "Hüseynin atası müəllimdirmi?",
+            },
+            {
+                "question_fa": "حسین و فاطمه، اهل کجا هستند؟",
+                "reading_az": "Hoseyn və Fateme, əhle koca həstənd?",
+                "az": "Hüseyn və Fatimə haralıdırlar?",
+            },
+            {
+                "question_fa": "حسین و فاطمه کجا درس می‌خوانند؟",
+                "reading_az": "Hoseyn və Fateme koca dərs mixanənd?",
+                "az": "Hüseyn və Fatimə harada oxuyurlar?",
+            },
+            {
+                "question_fa": "فاطمه و حسین، الآن کدام کتاب را می‌خوانند؟",
+                "reading_az": "Fateme və Hoseyn, əl-an kodam ketab ra mixanənd?",
+                "az": "Fatimə və Hüseyn indi hansı kitabı oxuyurlar?",
+            },
+            {
+                "question_fa": "آیا در جامدادی حسین، مدادتراش و پاک‌کن وجود ندارد؟",
+                "reading_az": "Aya dər camedadiye Hoseyn, medadtəraş və pakkon vocud nədarəd?",
+                "az": "Hüseynin qələmqabında qələmyonan və pozan yoxdurmu?",
+            },
+        ],
     },
 }
 
@@ -901,11 +1097,14 @@ class Command(BaseCommand):
             title_az=reading_data["title_az"],
             paragraphs_fa=reading_data["paragraphs_fa"],
             full_translation_az=reading_data["full_translation_az"],
+            sentences=reading_data.get("sentences", []),
         )
         self._attach_image(reading, "image", reading_data.get("image"), assets_dir)
         reading.save()
         for f_order, footnote in enumerate(reading_data["footnotes"]):
             ReadingFootnote.objects.create(reading_text=reading, order=f_order, **footnote)
+        for q_order, question in enumerate(reading_data.get("comprehension_questions", [])):
+            ReadingComprehensionQuestion.objects.create(reading_text=reading, order=q_order, **question)
 
         try:
             self.stdout.write(self.style.SUCCESS(f"Ders {data['number']} ({data['title_az']}) yuklendi."))

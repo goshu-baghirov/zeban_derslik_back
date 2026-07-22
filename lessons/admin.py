@@ -18,6 +18,7 @@ from .models import (
     MultipleChoiceItem,
     PracticeRevealExercise,
     PracticeRevealItem,
+    ReadingComprehensionQuestion,
     ReadingFootnote,
     ReadingText,
     SentencePractice,
@@ -177,13 +178,18 @@ class ReadingFootnoteInline(nested_admin.NestedTabularInline):
     extra = 1
 
 
+class ReadingComprehensionQuestionInline(nested_admin.NestedTabularInline):
+    model = ReadingComprehensionQuestion
+    extra = 1
+
+
 class ReadingTextInline(nested_admin.NestedStackedInline):
     model = ReadingText
     extra = 0
     max_num = 1
-    fields = ("title_fa", "title_az", "image", "preview", "paragraphs_fa", "full_translation_az")
+    fields = ("title_fa", "title_az", "image", "preview", "paragraphs_fa", "full_translation_az", "sentences")
     readonly_fields = ("preview",)
-    inlines = [ReadingFootnoteInline]
+    inlines = [ReadingFootnoteInline, ReadingComprehensionQuestionInline]
 
     def preview(self, obj):
         return thumb(obj.image.url if obj and obj.image else None)
