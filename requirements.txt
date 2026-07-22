@@ -1,0 +1,13 @@
+asgiref==3.12.1
+Django==6.0.7
+django-jazzmin==3.0.5
+django-nested-admin==4.1.6
+djangorestframework==3.17.1
+pillow==12.3.0
+psycopg2-binary==2.9.12
+pymupdf==1.28.0
+pypdf==6.14.2
+python-dotenv==1.2.2
+python-monkey-business==1.1.0
+sqlparse==0.5.5
+tzdata==2026.3
