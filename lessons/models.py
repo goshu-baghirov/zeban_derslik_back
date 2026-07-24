@@ -3,12 +3,18 @@ from django.db import models
 
 def lesson_image_path(instance, filename):
     """Group uploaded images under media/lessons/lesson_XX/ regardless of
-    which model (VocabWord, TrueFalseImageItem, ReadingText) owns the field."""
+    which model (VocabWord, TrueFalseImageItem, ReadingText, PracticeRevealItem/
+    Exercise) owns the field. PracticeRevealExercise/Item can be linked either
+    directly to a Lesson or indirectly through a GrammarNote, so both paths
+    are resolved here."""
     lesson = None
     if getattr(instance, "lesson_id", None):
         lesson = instance.lesson
     elif getattr(instance, "exercise_id", None):
-        lesson = instance.exercise.lesson
+        exercise = instance.exercise
+        lesson = exercise.lesson or (exercise.grammar_note.lesson if exercise.grammar_note_id else None)
+    elif getattr(instance, "grammar_note_id", None):
+        lesson = instance.grammar_note.lesson
 
     folder = f"lesson_{lesson.number:02d}" if lesson else "misc"
     return f"lessons/{folder}/{filename}"
@@ -170,6 +176,44 @@ class TrueFalseImageItem(models.Model):
         ordering = ["order", "id"]
 
 
+class PictureSentenceExercise(models.Model):
+    """«برای هر تصویر، دو جمله بگویید» tipli məşğələ: nömrələnmiş şəkillər
+    şaquli sırayla düzülür, hər birinin altında (adətən iki) nümunə cümlə
+    toxunuşla açılır."""
+
+    lesson = models.ForeignKey(Lesson, related_name="picture_sentence_exercises", on_delete=models.CASCADE)
+    instruction_az = models.TextField("Tapşırıq (az)")
+    order = models.PositiveIntegerField("Sıra", default=0)
+
+    class Meta:
+        ordering = ["order", "id"]
+        verbose_name = "Şəkilli cümlə məşğələsi"
+        verbose_name_plural = "Şəkilli cümlə məşğələləri"
+
+    def __str__(self):
+        return self.instruction_az[:60]
+
+
+class PictureSentenceItem(models.Model):
+    exercise = models.ForeignKey(PictureSentenceExercise, related_name="items", on_delete=models.CASCADE)
+    image = models.ImageField("Şəkil", upload_to=lesson_image_path, blank=True, null=True)
+    order = models.PositiveIntegerField("Sıra", default=0)
+
+    class Meta:
+        ordering = ["order", "id"]
+
+
+class PictureSentenceLine(models.Model):
+    item = models.ForeignKey(PictureSentenceItem, related_name="sentences", on_delete=models.CASCADE)
+    fa = models.CharField("Cümlə (fars)", max_length=500)
+    reading_az = models.CharField("Oxunuşu (az)", max_length=500, blank=True, default="")
+    az = models.CharField("Tərcümə (az)", max_length=500, blank=True, default="")
+    order = models.PositiveIntegerField("Sıra", default=0)
+
+    class Meta:
+        ordering = ["order", "id"]
+
+
 class MultipleChoiceExercise(models.Model):
     lesson = models.ForeignKey(Lesson, related_name="multiple_choice_exercises", on_delete=models.CASCADE)
     instruction_az = models.TextField("Tapşırıq (az)")
@@ -224,6 +268,21 @@ class PracticeRevealExercise(models.Model):
         "Nümunənin işlənmiş cavabı (fars)", max_length=500, blank=True, default="",
         help_text="example_prompt_fa əsasında qurulan nümunə cümlə, eyni *ulduz* qaydası ilə.",
     )
+    example_reading_az = models.CharField(
+        "Nümunənin oxunuşu (az)", max_length=500, blank=True, default="",
+        help_text="example_fa (və varsa example_answer_fa) üçün üzündən oxunuş.",
+    )
+    example_az = models.CharField(
+        "Nümunənin tərcüməsi (az)", max_length=500, blank=True, default="",
+        help_text="example_fa (və varsa example_answer_fa) üçün tərcümə.",
+    )
+    example_image_have = models.ImageField(
+        "Nümunə şəkli («var» tərəfi)", upload_to=lesson_image_path, blank=True, null=True,
+        help_text="Şəkillə göstərilən «has/dارم» tərəfi üçün nümunə şəkli (məs. تصویری بازی/بگویید məşğələləri).",
+    )
+    example_image_not_have = models.ImageField(
+        "Nümunə şəkli («yoxdur» tərəfi)", upload_to=lesson_image_path, blank=True, null=True,
+    )
     order = models.PositiveIntegerField("Sıra", default=0)
 
     class Meta:
@@ -241,6 +300,13 @@ class PracticeRevealItem(models.Model):
     answer_fa = models.CharField("Nümunə cavab (fars)", max_length=500)
     reading_az = models.CharField("Cavabın oxunuşu (az)", max_length=500, blank=True, default="")
     az = models.CharField("Cavabın tərcüməsi (az)", max_length=500, blank=True, default="")
+    image_have = models.ImageField(
+        "Şəkil («var» tərəfi)", upload_to=lesson_image_path, blank=True, null=True,
+        help_text="Bu sətrin sahib olduğu əşya/xüsusiyyətin şəkli (məs. «دارم» tərəfi).",
+    )
+    image_not_have = models.ImageField(
+        "Şəkil («yoxdur» tərəfi)", upload_to=lesson_image_path, blank=True, null=True,
+    )
     order = models.PositiveIntegerField("Sıra", default=0)
 
     class Meta:
@@ -383,6 +449,11 @@ class ReadingComprehensionQuestion(models.Model):
     question_fa = models.CharField("Sual (fars)", max_length=500)
     reading_az = models.CharField("Sualın oxunuşu (az hərfləri ilə)", max_length=500, blank=True, default="")
     az = models.CharField("Sualın tərcüməsi (az)", max_length=500, blank=True, default="")
+    sample_answer_fa = models.CharField("Nümunə cavab (fars)", max_length=500, blank=True, default="")
+    sample_answer_reading_az = models.CharField(
+        "Nümunə cavabın oxunuşu (az hərfləri ilə)", max_length=500, blank=True, default=""
+    )
+    sample_answer_az = models.CharField("Nümunə cavabın tərcüməsi (az)", max_length=500, blank=True, default="")
     order = models.PositiveIntegerField("Sıra", default=0)
 
     class Meta:

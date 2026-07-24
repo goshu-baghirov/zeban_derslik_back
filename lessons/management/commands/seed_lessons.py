@@ -24,6 +24,9 @@ from lessons.models import (
     ListenReadSentence,
     MultipleChoiceExercise,
     MultipleChoiceItem,
+    PictureSentenceExercise,
+    PictureSentenceItem,
+    PictureSentenceLine,
     PracticeRevealExercise,
     PracticeRevealItem,
     ReadingComprehensionQuestion,
@@ -265,6 +268,65 @@ LESSON_1 = {
                         },
                     ],
                 },
+                {
+                    "title_fa": "مانند مثال بگویید",
+                    "instruction_az": "Nümunə kimi deyin",
+                    "example_fa": "من ماژیک *دارم*؛ مدادرنگی *ندارم*.",
+                    "example_reading_az": "Mən majik daram; medad-rəngi nədaram.",
+                    "example_az": "Mənim markerim var; rəngli karandaşım yoxdur.",
+                    "example_image_have": "assets/images/lessons/lesson_01/majik.png",
+                    "example_image_not_have": "assets/images/lessons/lesson_01/medadrangi.png",
+                    "items": [
+                        {
+                            "prompt_fa": "ما",
+                            "answer_fa": "ما خط‌کش داریم؛ پرگار نداریم.",
+                            "reading_az": "Ma xətkeş darim; pərgar nədarim.",
+                            "az": "Bizim xətkeşimiz var; pərgarımız yoxdur.",
+                            "image_have": "assets/images/lessons/lesson_01/khatkesh.png",
+                            "image_not_have": "assets/images/lessons/lesson_01/pargar.png",
+                        },
+                        {
+                            "prompt_fa": "این خانم",
+                            "answer_fa": "این خانم قیچی دارد؛ گونیا ندارد.",
+                            "reading_az": "In xanom qeyçi darəd; gunya nədarəd.",
+                            "az": "Bu xanımın qayçısı var; guniyası yoxdur.",
+                            "image_have": "assets/images/lessons/lesson_01/qeychi.png",
+                            "image_not_have": "assets/images/lessons/lesson_01/gunya.png",
+                        },
+                        {
+                            "prompt_fa": "احمد",
+                            "answer_fa": "احمد پاک‌کن دارد؛ ماژیک ندارد.",
+                            "reading_az": "Əhməd pakkon darəd; majik nədarəd.",
+                            "az": "Əhmədin pozanı var; markeri yoxdur.",
+                            "image_have": "assets/images/lessons/lesson_01/pakkon.png",
+                            "image_not_have": "assets/images/lessons/lesson_01/majik.png",
+                        },
+                        {
+                            "prompt_fa": "شما (تو)",
+                            "answer_fa": "شما (تو) رایانه داری؛ دوربین نداری.",
+                            "reading_az": "To rayane dari; durbin nədari.",
+                            "az": "Sənin komputerin var; fotoaparatın yoxdur.",
+                            "image_have": "assets/images/lessons/lesson_01/rayaneh.png",
+                            "image_not_have": "assets/images/lessons/lesson_01/durbin.png",
+                        },
+                        {
+                            "prompt_fa": "آن‌ها",
+                            "answer_fa": "آن‌ها پوشه دارند؛ تخته‌شاسی ندارند.",
+                            "reading_az": "Anha puşe darənd; təxte-şasi nədarənd.",
+                            "az": "Onların qovluğu var; yazı taxtası yoxdur.",
+                            "image_have": "assets/images/lessons/lesson_01/pushe.png",
+                            "image_not_have": "assets/images/lessons/lesson_01/takhteshasi.png",
+                        },
+                        {
+                            "prompt_fa": "فیل‌ها",
+                            "answer_fa": "فیل‌ها خرطوم دارند؛ شاخ ندارند.",
+                            "reading_az": "Filha xortum darənd; şax nədarənd.",
+                            "az": "Fillərin xortumu var; buynuzu yoxdur.",
+                            "image_have": "assets/images/lessons/lesson_01/fil.png",
+                            "image_not_have": "assets/images/lessons/lesson_01/boz.png",
+                        },
+                    ],
+                },
             ],
         },
         {
@@ -424,61 +486,258 @@ LESSON_1 = {
             ],
         },
         {
-            "kind": "true_false_image",
-            "instruction_az": "Şəklə baxın: cümlə doğrudurmu?",
+            "kind": "practice_reveal",
+            "title_fa": "مانند مثال بگویید",
+            "instruction_az": "Nümunə kimi deyin",
+            "example_fa": (
+                "پدر / می‌نویسد\n"
+                "اسم پدرم احمد است؛ *او الآن* نامه می‌نویسد."
+            ),
+            "example_reading_az": (
+                "Pedər / minevisəd.\n"
+                "Esme pedərəm Əhməd əst; u əl-an name minevisəd."
+            ),
+            "example_az": (
+                "Ata / yazır.\n"
+                "Atamın adı Əhməddir; o indi məktub yazır."
+            ),
             "items": [
-                {"image": "assets/images/lessons/lesson_01/khodkar.png", "statement_fa": "این خودکار است.", "statement_az": "Bu tükənməz qələmdir.", "is_true": True},
-                {"image": "assets/images/lessons/lesson_01/medadtarash.png", "statement_fa": "این پاک‌کن است.", "statement_az": "Bu pozandır.", "is_true": False},
-                {"image": "assets/images/lessons/lesson_01/majik.png", "statement_fa": "این ماژیک است.", "statement_az": "Bu markerdir.", "is_true": True},
-                {"image": "assets/images/lessons/lesson_01/jamedadi.png", "statement_fa": "این پوشه است.", "statement_az": "Bu qovluqdur.", "is_true": False},
-                {"image": "assets/images/lessons/lesson_01/taqvim.png", "statement_fa": "این تقویم است.", "statement_az": "Bu təqvimdir.", "is_true": True},
-                {"image": "assets/images/lessons/lesson_01/pushe.png", "statement_fa": "این چسب است.", "statement_az": "Bu yapışqandır.", "is_true": False},
-            ],
-        },
-        {
-            "kind": "multiple_choice",
-            "instruction_az": '"در ایران" mətninə görə düzgün cavabı seçin.',
-            "items": [
-                {"question_fa": "اسم خواهر حسین چیست؟", "options": ["فاطمه", "زینب", "مریم"], "correct_index": 0},
-                {"question_fa": "پدر حسین چه‌کاره است؟", "options": ["معلّم است", "پزشک است", "استاد دانشگاه است"], "correct_index": 1},
-                {"question_fa": "مادر حسین چه‌کاره است؟", "options": ["پرستار است", "پزشک است", "استاد دانشگاه است"], "correct_index": 2},
-                {"question_fa": "حسین و فاطمه اهل کجا هستند؟", "options": ["ایران", "لبنان", "عراق"], "correct_index": 1},
-                {"question_fa": "خواهر حسین کدام کتاب را می‌خواند؟", "options": ["کتاب اوّل", "کتاب دوم", "کتاب سوم"], "correct_index": 0},
+                {
+                    "prompt_fa": "خواهر / نقّاشی می‌کشد",
+                    "answer_fa": "اسم خواهرم زینب است؛ او الآن نقّاشی می‌کشد.",
+                    "reading_az": "Esme xahərəm Zeynəb əst; u əl-an nəqqaşi mikeşəd.",
+                    "az": "Bacımın adı Zeynəbdir; o indi rəsm çəkir.",
+                },
+                {
+                    "prompt_fa": "فرزند / می‌خورد",
+                    "answer_fa": "اسم فرزندم علی است؛ او الآن غذا می‌خورد.",
+                    "reading_az": "Esme fərzəndəm Əli əst; u əl-an qəza mixorəd.",
+                    "az": "Övladımın adı Əlidir; o indi yemək yeyir.",
+                },
+                {
+                    "prompt_fa": "استاد / پاک می‌کند",
+                    "answer_fa": "اسم استادم رضا است؛ او الآن تابلو را پاک می‌کند.",
+                    "reading_az": "Esme ostadəm Reza əst; u əl-an təblo ra pak mikonəd.",
+                    "az": "Müəllimimin adı Rzadır; o indi lövhəni silir.",
+                },
+                {
+                    "prompt_fa": "مادر / می‌خواند",
+                    "answer_fa": "اسم مادرم فاطمه است؛ او الآن کتاب می‌خواند.",
+                    "reading_az": "Esme madərəm Fateme əst; u əl-an ketab mixanəd.",
+                    "az": "Anamın adı Fatimədir; o indi kitab oxuyur.",
+                },
             ],
         },
         {
             "kind": "practice_reveal",
-            "instruction_az": "Suallara öz cavabınızı düşünün, sonra nümunə cavabı yoxlayın.",
+            "title_fa": "با فعل‌های «دارد» و «وجود دارد» جمله بسازید",
+            "instruction_az": '"دارد" və "وجود دارد" felləri ilə cümlə qurun',
+            "example_fa": (
+                "کلاس ما / صندلی، رایانه و تابلو:\n"
+                "کلاس ما صندلی، رایانه و تابلو *دارد*.\n"
+                "*در* کلاس ما صندلی، رایانه و تابلو *وجود دارد*."
+            ),
+            "example_reading_az": (
+                "Kelase ma / səndəli, rayane vo tablo:\n"
+                "Kelase ma səndəli, rayane vo tablo darəd.\n"
+                "Dər kelase ma səndəli, rayane vo tablo vocud darəd."
+            ),
+            "example_az": (
+                "Bizim sinif / stul, komputer və lövhə:\n"
+                "Bizim sinifin stulu, komputeri və lövhəsi var.\n"
+                "Bizim sinifdə stul, komputer və lövhə var."
+            ),
             "items": [
                 {
-                    "prompt_fa": "اسم استاد شما چیست؟",
-                    "answer_fa": "استاد من، آقای احمدی است.",
-                    "reading_az": "Ostade mən, aqaye Əhmədi əst.",
-                    "az": "Mənim müəllimim cənab Əhmədidir.",
+                    "prompt_fa": "اتاق شما / فرش، تخت و تلفن",
+                    "answer_fa": "اتاق شما فرش، تخت و تلفن دارد. / در اتاق شما فرش، تخت و تلفن وجود دارد.",
+                    "reading_az": "Otaqe şoma fərş, təxt və telefon darəd. / Dər otaqe şoma fərş, təxt və telefon vocud darəd.",
+                    "az": "Sizin otağınızın xalçası, çarpayısı və telefonu var. / Sizin otağınızda xalça, çarpayı və telefon var.",
                 },
                 {
-                    "prompt_fa": "شما تابلو را پاک نمی‌کنید؟",
-                    "answer_fa": "چرا، من تابلو را پاک می‌کنم.",
-                    "reading_az": "Çera, mən təblo ra pak mikonəm.",
-                    "az": "Xeyr (əksinə), mən lövhəni silirəm.",
+                    "prompt_fa": "باغ پدرم / درخت سیب و گیلاس",
+                    "answer_fa": "باغ پدرم درخت سیب و گیلاس دارد. / در باغ پدرم درخت سیب و گیلاس وجود دارد.",
+                    "reading_az": "Bağe pedərəm dərəxte sib və gilas darəd. / Dər bağe pedərəm dərəxte sib və gilas vocud darəd.",
+                    "az": "Atamın bağının alma və albalı ağacı var. / Atamın bağında alma və albalı ağacı var.",
                 },
                 {
-                    "prompt_fa": "آیا شما کتاب دوم را می‌خوانید؟",
-                    "answer_fa": "بله، من کتاب دوم را می‌خوانم.",
-                    "reading_az": "Bəle, mən ketabe dovvom ra mixanəm.",
-                    "az": "Bəli, mən ikinci kitabı oxuyuram.",
+                    "prompt_fa": "فروش‌گاه مدرسه / میوه، بستنی و ساندویچ",
+                    "answer_fa": "فروش‌گاه مدرسه میوه، بستنی و ساندویچ دارد. / در فروش‌گاه مدرسه میوه، بستنی و ساندویچ وجود دارد.",
+                    "reading_az": "Foruşgahe mædrese mive, bəstəni və sanduiç darəd. / Dər foruşgahe mædrese mive, bəstəni və sanduiç vocud darəd.",
+                    "az": "Məktəbin mağazasının meyvəsi, dondurması və sendviçi var. / Məktəbin mağazasında meyvə, dondurma və sendviç var.",
                 },
                 {
-                    "prompt_fa": "آیا استاد شما تابلو نمی‌نویسد؟",
-                    "answer_fa": "چرا، استاد من تابلو می‌نویسد.",
-                    "reading_az": "Çera, ostade mən təblo minevisəd.",
-                    "az": "Xeyr (əksinə), mənim müəllimim lövhəyə yazır.",
+                    "prompt_fa": "این فرودگاه / عابربانک، فروش‌گاه و رستوران",
+                    "answer_fa": "این فرودگاه عابربانک، فروش‌گاه و رستوران دارد. / در این فرودگاه عابربانک، فروش‌گاه و رستوران وجود دارد.",
+                    "reading_az": "In forudgah aberbank, foruşgah və restoran darəd. / Dər in forudgah aberbank, foruşgah və restoran vocud darəd.",
+                    "az": "Bu hava limanının bankomatı, mağazası və restoranı var. / Bu hava limanında bankomat, mağaza və restoran var.",
+                },
+            ],
+        },
+        {
+            "kind": "practice_reveal",
+            "title_fa": "مانند مثال بپرسید و پاسخ دهید",
+            "instruction_az": "Nümunə kimi soruşub cavab verin",
+            "example_fa": (
+                "او / روزنامه / نمی‌خواند:\n"
+                "آیا او روزنامه نمی‌خواند؟ *چرا*، او روزنامه می‌خواند."
+            ),
+            "example_reading_az": (
+                "U / ruzname / nemixanəd:\n"
+                "Aya u ruzname nemixanəd? Çera, u ruzname mixanəd."
+            ),
+            "example_az": (
+                "O / qəzet / oxumur:\n"
+                "O qəzeti oxumur? Xeyr (əksinə), o qəzeti oxuyur."
+            ),
+            "items": [
+                {
+                    "prompt_fa": "ما / ساعت / نداریم",
+                    "answer_fa": "آیا ما ساعت نداریم؟ چرا، ما ساعت داریم.",
+                    "reading_az": "Aya ma saət nədarim? Çera, ma saət darim.",
+                    "az": "Bizim saatımız yoxdurmu? Xeyr (əksinə), bizim saatımız var.",
                 },
                 {
-                    "prompt_fa": "شما (تو) در کدام مدرسه درس می‌خوانی؟",
-                    "answer_fa": "من در مدرسه‌ی المهدی درس می‌خوانم.",
-                    "reading_az": "Mən dər mædrese-ye Əl-Mehdi dars mixanam.",
-                    "az": "Mən Əl-Mehdi məktəbində oxuyuram.",
+                    "prompt_fa": "آن‌ها / لیمو / نمی‌خورند",
+                    "answer_fa": "آیا آن‌ها لیمو نمی‌خورند؟ چرا، آن‌ها لیمو می‌خورند.",
+                    "reading_az": "Aya anha limu nemixorənd? Çera, anha limu mixorənd.",
+                    "az": "Onlar limon yemirlərmi? Xeyr (əksinə), onlar limon yeyirlər.",
+                },
+                {
+                    "prompt_fa": "شما (تو) / نامه / نمی‌نویسی",
+                    "answer_fa": "آیا شما (تو) نامه نمی‌نویسی؟ چرا، من نامه می‌نویسم.",
+                    "reading_az": "Aya to name neminevisi? Çera, mən name minevisəm.",
+                    "az": "Sən məktub yazmırsanmı? Xeyr (əksinə), mən məktub yazıram.",
+                },
+                {
+                    "prompt_fa": "مهدی / تابلو / پاک نمی‌کند",
+                    "answer_fa": "آیا مهدی تابلو را پاک نمی‌کند؟ چرا، مهدی تابلو را پاک می‌کند.",
+                    "reading_az": "Aya Mehdi təblo ra pak nemikonəd? Çera, Mehdi təblo ra pak mikonəd.",
+                    "az": "Mehdi lövhəni silmirmi? Xeyr (əksinə), Mehdi lövhəni silir.",
+                },
+                {
+                    "prompt_fa": "شما / کتاب فارسی / نمی‌خوانید",
+                    "answer_fa": "آیا شما کتاب فارسی نمی‌خوانید؟ چرا، ما کتاب فارسی می‌خوانیم.",
+                    "reading_az": "Aya şoma ketabe farsi nemixanid? Çera, ma ketabe farsi mixanim.",
+                    "az": "Siz fars dili kitabını oxumursunuzmu? Xeyr (əksinə), biz fars dili kitabını oxuyuruq.",
+                },
+                {
+                    "prompt_fa": "فاطمه / در دفتر / نقّاشی نمی‌کشد",
+                    "answer_fa": "آیا فاطمه در دفتر نقّاشی نمی‌کشد؟ چرا، فاطمه در دفتر نقّاشی می‌کشد.",
+                    "reading_az": "Aya Fateme dər dəftər nəqqaşi nemikeşəd? Çera, Fateme dər dəftər nəqqaşi mikeşəd.",
+                    "az": "Fatimə dəftərdə rəsm çəkmirmi? Xeyr (əksinə), Fatimə dəftərdə rəsm çəkir.",
+                },
+            ],
+        },
+        {
+            "kind": "practice_reveal",
+            "title_fa": "مانند مثال جایگزین کنید",
+            "instruction_az": "Nümunə kimi əvəz edin",
+            "example_fa": (
+                "من کتاب را در کیف می‌گذارم.\n"
+                "مریم / میوه / سبد:\n"
+                "مریم میوه *را* در سبد می‌گذارد."
+            ),
+            "example_reading_az": (
+                "Mən ketab ra dər kif migozaram.\n"
+                "Məryəm / mive / səbəd:\n"
+                "Məryəm mive ra dər səbəd migozarəd."
+            ),
+            "example_az": (
+                "Mən kitabı çantaya qoyuram.\n"
+                "Məryəm / meyvə / səbət:\n"
+                "Məryəm meyvəni səbətə qoyur."
+            ),
+            "items": [
+                {
+                    "prompt_fa": "آن‌ها / قاشق / بشقاب",
+                    "answer_fa": "آن‌ها قاشق را در بشقاب می‌گذارند.",
+                    "reading_az": "Anha qaşoq ra dər bəşqab migozarənd.",
+                    "az": "Onlar qaşığı boşqaba qoyurlar.",
+                },
+                {
+                    "prompt_fa": "شما / پول / جیب",
+                    "answer_fa": "شما پول را در جیب می‌گذارید.",
+                    "reading_az": "Şoma pul ra dər jib migozarid.",
+                    "az": "Siz pulu cibə qoyursunuz.",
+                },
+                {
+                    "prompt_fa": "ما / خودنویس / جامدادی",
+                    "answer_fa": "ما خودنویس را در جامدادی می‌گذاریم.",
+                    "reading_az": "Ma xodnevis ra dər camedadi migozarim.",
+                    "az": "Biz dolma qələmi qələmqabına qoyuruq.",
+                },
+                {
+                    "prompt_fa": "علی / نامه / پاکت‌نامه",
+                    "answer_fa": "علی نامه را در پاکت‌نامه می‌گذارد.",
+                    "reading_az": "Əli name ra dər pakətname migozarəd.",
+                    "az": "Əli məktubu zərfə qoyur.",
+                },
+            ],
+        },
+        {
+            "kind": "picture_sentences",
+            "instruction_az": "Hər şəkil üçün iki cümlə qurun.",
+            "items": [
+                {
+                    "image": "assets/images/lessons/lesson_01/takhte_gach.png",
+                    "sentences": [
+                        {
+                            "fa": "این پسر روی تابلو می‌نویسد.",
+                            "reading_az": "In pesər ruye tablo minevisəd.",
+                            "az": "Bu oğlan lövhənin üstündə yazır.",
+                        },
+                        {
+                            "fa": "او با گچ سفید می‌نویسد.",
+                            "reading_az": "U ba gəçe səfid minevisəd.",
+                            "az": "O, ağ təbaşirlə yazır.",
+                        },
+                    ],
+                },
+                {
+                    "image": "assets/images/lessons/lesson_01/chasb.png",
+                    "sentences": [
+                        {
+                            "fa": "این چسب، زرد رنگ است.",
+                            "reading_az": "In çəsb, zərd rəng əst.",
+                            "az": "Bu yapışqan sarı rəngdədir.",
+                        },
+                        {
+                            "fa": "من با چسب، کاغذ را می‌چسبانم.",
+                            "reading_az": "Mən ba çəsb, kağəz ra michəsbanam.",
+                            "az": "Mən yapışqanla kağızı yapışdırıram.",
+                        },
+                    ],
+                },
+                {
+                    "image": "assets/images/lessons/lesson_01/medad_naghashi.png",
+                    "sentences": [
+                        {
+                            "fa": "این پسر با مداد نقّاشی می‌کشد.",
+                            "reading_az": "In pesər ba medad nəqqaşi mikeşəd.",
+                            "az": "Bu oğlan qələmlə rəsm çəkir.",
+                        },
+                        {
+                            "fa": "او روی دفتر نقّاشی می‌کشد.",
+                            "reading_az": "U ruye dəftər nəqqaşi mikeşəd.",
+                            "az": "O, dəftərin üstündə rəsm çəkir.",
+                        },
+                    ],
+                },
+                {
+                    "image": "assets/images/lessons/lesson_01/taqvim.png",
+                    "sentences": [
+                        {
+                            "fa": "این تقویم، آبی و نارنجی است.",
+                            "reading_az": "In təqvim, abi və narenci əst.",
+                            "az": "Bu təqvim mavi və narıncı rəngdədir.",
+                        },
+                        {
+                            "fa": "امروز، پنج‌شنبه است.",
+                            "reading_az": "Emruz, pəncşənbe əst.",
+                            "az": "Bu gün cümə axşamıdır.",
+                        },
+                    ],
                 },
             ],
         },
@@ -652,31 +911,49 @@ LESSON_1 = {
                 "question_fa": "اسم خواهرِ حسین چیست؟",
                 "reading_az": "Esme xahəre Hoseyn çist?",
                 "az": "Hüseynin bacısının adı nədir?",
+                "sample_answer_fa": "اسم خواهر حسین، فاطمه است.",
+                "sample_answer_reading_az": "Esme xahəre Hoseyn, Fateme əst.",
+                "sample_answer_az": "Hüseynin bacısının adı Fatimədir.",
             },
             {
                 "question_fa": "آیا پدر حسین، معلّم است؟",
                 "reading_az": "Aya pedəre Hoseyn, moəllem əst?",
                 "az": "Hüseynin atası müəllimdirmi?",
+                "sample_answer_fa": "نه، پدر حسین معلّم نیست؛ او پزشک است.",
+                "sample_answer_reading_az": "Nə, pedəre Hoseyn moəllem nist; u pezeşk əst.",
+                "sample_answer_az": "Xeyr, Hüseynin atası müəllim deyil; o, həkimdir.",
             },
             {
                 "question_fa": "حسین و فاطمه، اهل کجا هستند؟",
                 "reading_az": "Hoseyn və Fateme, əhle koca həstənd?",
                 "az": "Hüseyn və Fatimə haralıdırlar?",
+                "sample_answer_fa": "آن‌ها اهل لبنان هستند.",
+                "sample_answer_reading_az": "Anha əhle Lobnan həstənd.",
+                "sample_answer_az": "Onlar Livandandırlar.",
             },
             {
                 "question_fa": "حسین و فاطمه کجا درس می‌خوانند؟",
                 "reading_az": "Hoseyn və Fateme koca dərs mixanənd?",
                 "az": "Hüseyn və Fatimə harada oxuyurlar?",
+                "sample_answer_fa": "حسین در مدرسه‌ی المهدی و فاطمه در مدرسه‌ی بنت‌الهدی درس می‌خوانند.",
+                "sample_answer_reading_az": "Hoseyn dər mædrese-ye əl-Mehdi və Fateme dər mædrese-ye Bentol-Hoda dərs mixanənd.",
+                "sample_answer_az": "Hüseyn əl-Mehdi məktəbində, Fatimə isə Bintul-Huda məktəbində oxuyur.",
             },
             {
                 "question_fa": "فاطمه و حسین، الآن کدام کتاب را می‌خوانند؟",
                 "reading_az": "Fateme və Hoseyn, əl-an kodam ketab ra mixanənd?",
                 "az": "Fatimə və Hüseyn indi hansı kitabı oxuyurlar?",
+                "sample_answer_fa": "فاطمه کتاب اوّل و حسین کتاب دوم را می‌خواند.",
+                "sample_answer_reading_az": "Fateme ketabe əvvəl və Hoseyn ketabe dovvom ra mixanənd.",
+                "sample_answer_az": "Fatimə birinci kitabı, Hüseyn isə ikinci kitabı oxuyur.",
             },
             {
                 "question_fa": "آیا در جامدادی حسین، مدادتراش و پاک‌کن وجود ندارد؟",
                 "reading_az": "Aya dər camedadiye Hoseyn, medadtəraş və pakkon vocud nədarəd?",
                 "az": "Hüseynin qələmqabında qələmyonan və pozan yoxdurmu?",
+                "sample_answer_fa": "چرا، در جامدادی او مدادتراش و پاک‌کن وجود دارد.",
+                "sample_answer_reading_az": "Çera, dər camedadiye u medadtəraş və pakkon vocud darəd.",
+                "sample_answer_az": "Xeyr (əksinə), Hüseynin qələmqabında qələmyonan və pozan var.",
             },
         ],
     },
@@ -991,6 +1268,7 @@ class Command(BaseCommand):
         lesson.true_false_exercises.all().delete()
         lesson.multiple_choice_exercises.all().delete()
         lesson.practice_reveal_exercises.all().delete()
+        lesson.picture_sentence_exercises.all().delete()
         ReadingText.objects.filter(lesson=lesson).delete()
         # SentencePractice itself is not wiped here: "Məsdərlər" (Infinitive/
         # ConjugatedForm) content lives only in the admin panel, never in this
@@ -1023,19 +1301,33 @@ class Command(BaseCommand):
                     reading_az=ex.get("reading_az") or preserved_example_readings.get(ex["fa"], ""),
                 )
             for d_order, drill_data in enumerate(note_data.get("drills", [])):
-                drill = PracticeRevealExercise.objects.create(
+                drill = PracticeRevealExercise(
                     grammar_note=note,
                     title_fa=drill_data.get("title_fa", ""),
                     instruction_az=drill_data["instruction_az"],
                     example_fa=drill_data.get("example_fa", ""),
                     example_prompt_fa=drill_data.get("example_prompt_fa", ""),
                     example_answer_fa=drill_data.get("example_answer_fa", ""),
+                    example_reading_az=drill_data.get("example_reading_az", ""),
+                    example_az=drill_data.get("example_az", ""),
                     order=d_order,
                 )
-                for i_order, item in enumerate(drill_data["items"]):
-                    PracticeRevealItem.objects.create(exercise=drill, order=i_order, **item)
+                self._attach_image(drill, "example_image_have", drill_data.get("example_image_have"), assets_dir)
+                self._attach_image(drill, "example_image_not_have", drill_data.get("example_image_not_have"), assets_dir)
+                drill.save()
+                for i_order, raw_item in enumerate(drill_data["items"]):
+                    item = dict(raw_item)
+                    image_have = item.pop("image_have", None)
+                    image_not_have = item.pop("image_not_have", None)
+                    drill_item = PracticeRevealItem(exercise=drill, order=i_order, **item)
+                    self._attach_image(drill_item, "image_have", image_have, assets_dir)
+                    self._attach_image(drill_item, "image_not_have", image_not_have, assets_dir)
+                    drill_item.save()
 
-        exercise_order = {"fill_blank": 0, "true_false_image": 0, "multiple_choice": 0, "practice_reveal": 0}
+        exercise_order = {
+            "fill_blank": 0, "true_false_image": 0, "multiple_choice": 0, "practice_reveal": 0,
+            "picture_sentences": 0,
+        }
         for overall_order, ex_data in enumerate(data["exercises"]):
             kind = ex_data["kind"]
             order = exercise_order[kind]
@@ -1073,10 +1365,29 @@ class Command(BaseCommand):
 
             elif kind == "practice_reveal":
                 exercise = PracticeRevealExercise.objects.create(
-                    lesson=lesson, instruction_az=ex_data["instruction_az"], order=overall_order,
+                    lesson=lesson,
+                    title_fa=ex_data.get("title_fa", ""),
+                    instruction_az=ex_data["instruction_az"],
+                    example_fa=ex_data.get("example_fa", ""),
+                    example_prompt_fa=ex_data.get("example_prompt_fa", ""),
+                    example_answer_fa=ex_data.get("example_answer_fa", ""),
+                    example_reading_az=ex_data.get("example_reading_az", ""),
+                    example_az=ex_data.get("example_az", ""),
+                    order=overall_order,
                 )
                 for i_order, item in enumerate(ex_data["items"]):
                     PracticeRevealItem.objects.create(exercise=exercise, order=i_order, **item)
+
+            elif kind == "picture_sentences":
+                exercise = PictureSentenceExercise.objects.create(
+                    lesson=lesson, instruction_az=ex_data["instruction_az"], order=overall_order,
+                )
+                for i_order, item_data in enumerate(ex_data["items"]):
+                    pic_item = PictureSentenceItem(exercise=exercise, order=i_order)
+                    self._attach_image(pic_item, "image", item_data.get("image"), assets_dir)
+                    pic_item.save()
+                    for s_order, line in enumerate(item_data["sentences"]):
+                        PictureSentenceLine.objects.create(item=pic_item, order=s_order, **line)
 
         if "sentence_practice" in data:
             practice_data = data["sentence_practice"]

@@ -14,6 +14,9 @@ from .models import (
     ListenReadSentence,
     MultipleChoiceExercise,
     MultipleChoiceItem,
+    PictureSentenceExercise,
+    PictureSentenceItem,
+    PictureSentenceLine,
     PracticeRevealExercise,
     PracticeRevealItem,
     ReadingComprehensionQuestion,
@@ -47,7 +50,7 @@ class ExampleSentenceSerializer(serializers.ModelSerializer):
 class PracticeRevealItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = PracticeRevealItem
-        fields = ("prompt_fa", "answer_fa", "reading_az", "az")
+        fields = ("prompt_fa", "answer_fa", "reading_az", "az", "image_have", "image_not_have")
 
 
 class PracticeRevealExerciseSerializer(serializers.ModelSerializer):
@@ -63,6 +66,10 @@ class PracticeRevealExerciseSerializer(serializers.ModelSerializer):
             "example_fa",
             "example_prompt_fa",
             "example_answer_fa",
+            "example_reading_az",
+            "example_az",
+            "example_image_have",
+            "example_image_not_have",
             "items",
         )
 
@@ -114,6 +121,32 @@ class TrueFalseImageExerciseSerializer(serializers.ModelSerializer):
 
     def get_type(self, obj):
         return "true_false_image"
+
+
+class PictureSentenceLineSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = PictureSentenceLine
+        fields = ("fa", "reading_az", "az")
+
+
+class PictureSentenceItemSerializer(serializers.ModelSerializer):
+    sentences = PictureSentenceLineSerializer(many=True, read_only=True)
+
+    class Meta:
+        model = PictureSentenceItem
+        fields = ("image", "sentences")
+
+
+class PictureSentenceExerciseSerializer(serializers.ModelSerializer):
+    items = PictureSentenceItemSerializer(many=True, read_only=True)
+    type = serializers.SerializerMethodField()
+
+    class Meta:
+        model = PictureSentenceExercise
+        fields = ("type", "instruction_az", "items")
+
+    def get_type(self, obj):
+        return "picture_sentences"
 
 
 class MultipleChoiceItemSerializer(serializers.ModelSerializer):
@@ -179,7 +212,14 @@ class ReadingFootnoteSerializer(serializers.ModelSerializer):
 class ReadingComprehensionQuestionSerializer(serializers.ModelSerializer):
     class Meta:
         model = ReadingComprehensionQuestion
-        fields = ("question_fa", "reading_az", "az")
+        fields = (
+            "question_fa",
+            "reading_az",
+            "az",
+            "sample_answer_fa",
+            "sample_answer_reading_az",
+            "sample_answer_az",
+        )
 
 
 class ReadingTextSerializer(serializers.ModelSerializer):
@@ -233,6 +273,8 @@ class LessonSerializer(serializers.ModelSerializer):
             exercises.append(MultipleChoiceExerciseSerializer(exercise, context=self.context).data)
         for exercise in obj.practice_reveal_exercises.all():
             exercises.append(PracticeRevealExerciseSerializer(exercise, context=self.context).data)
+        for exercise in obj.picture_sentence_exercises.all():
+            exercises.append(PictureSentenceExerciseSerializer(exercise, context=self.context).data)
         return exercises
 
 

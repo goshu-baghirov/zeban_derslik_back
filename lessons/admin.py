@@ -16,6 +16,9 @@ from .models import (
     ListenReadSentence,
     MultipleChoiceExercise,
     MultipleChoiceItem,
+    PictureSentenceExercise,
+    PictureSentenceItem,
+    PictureSentenceLine,
     PracticeRevealExercise,
     PracticeRevealItem,
     ReadingComprehensionQuestion,
@@ -64,7 +67,7 @@ class ExampleSentenceInline(nested_admin.NestedTabularInline):
 class TopicDrillItemInline(nested_admin.NestedTabularInline):
     model = PracticeRevealItem
     extra = 1
-    fields = ("order", "prompt_fa", "answer_fa", "reading_az", "az")
+    fields = ("order", "prompt_fa", "answer_fa", "reading_az", "az", "image_have", "image_not_have")
 
 
 class TopicDrillInline(nested_admin.NestedStackedInline):
@@ -75,8 +78,10 @@ class TopicDrillInline(nested_admin.NestedStackedInline):
     model = PracticeRevealExercise
     fk_name = "grammar_note"
     extra = 0
-    max_num = 1
-    fields = ("title_fa", "instruction_az", "example_fa", "example_prompt_fa", "example_answer_fa")
+    fields = (
+        "title_fa", "instruction_az", "example_fa", "example_prompt_fa", "example_answer_fa",
+        "example_image_have", "example_image_not_have",
+    )
     verbose_name = "Mövzu kartı (məsələn, «Nümunə kimi əvəz edin»)"
     verbose_name_plural = "Mövzu kartları"
     inlines = [TopicDrillItemInline]
@@ -115,6 +120,32 @@ class TrueFalseImageExerciseInline(nested_admin.NestedStackedInline):
     model = TrueFalseImageExercise
     extra = 0
     inlines = [TrueFalseImageItemInline]
+
+
+class PictureSentenceLineInline(nested_admin.NestedTabularInline):
+    model = PictureSentenceLine
+    extra = 2
+    fields = ("order", "fa", "reading_az", "az")
+
+
+class PictureSentenceItemInline(nested_admin.NestedStackedInline):
+    model = PictureSentenceItem
+    extra = 1
+    fields = ("order", "image", "preview")
+    readonly_fields = ("preview",)
+    inlines = [PictureSentenceLineInline]
+
+    def preview(self, obj):
+        return thumb(obj.image.url if obj.image else None, size=80)
+
+    preview.short_description = "Önizləmə"
+
+
+class PictureSentenceExerciseInline(nested_admin.NestedStackedInline):
+    model = PictureSentenceExercise
+    extra = 0
+    fields = ("instruction_az", "order")
+    inlines = [PictureSentenceItemInline]
 
 
 class MultipleChoiceItemInline(nested_admin.NestedTabularInline):
@@ -244,6 +275,7 @@ class LessonAdmin(nested_admin.NestedModelAdmin):
         TrueFalseImageExerciseInline,
         MultipleChoiceExerciseInline,
         PracticeRevealExerciseInline,
+        PictureSentenceExerciseInline,
         ReadingTextInline,
     ]
 

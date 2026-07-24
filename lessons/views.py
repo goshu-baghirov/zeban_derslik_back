@@ -31,6 +31,7 @@ class LessonViewSet(viewsets.ReadOnlyModelViewSet):
         "true_false_exercises__items",
         "multiple_choice_exercises__items",
         "practice_reveal_exercises__items",
+        "picture_sentence_exercises__items__sentences",
         "sentence_practice__listen_items",
         "sentence_practice__answer_items",
         "sentence_practice__infinitives__forms",

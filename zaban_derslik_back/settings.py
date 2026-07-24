@@ -37,6 +37,15 @@ if os.environ.get('ALLOWED_HOSTS'):
 else:
     ALLOWED_HOSTS = ['*'] if DEBUG else []
 
+# The Lesson admin page nests many inline formsets several levels deep
+# (VocabWord, GrammarNote -> ConjugationRow/ExampleSentence/TopicDrill ->
+# TopicDrillItem, FillBlank/TrueFalseImage/MultipleChoice/PracticeReveal ->
+# Items, PictureSentenceExercise -> Items -> Sentences, etc.) — a content-rich
+# lesson easily produces more POST fields than Django's default limit
+# (1000), raising TooManyFieldsSent when saving. This is an internal,
+# authenticated admin panel (not a public form), so a much higher cap is safe.
+DATA_UPLOAD_MAX_NUMBER_FIELDS = 100000
+
 
 
 # Application definition
@@ -175,3 +184,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Prevent TooManyFieldsSent error in django admin when editing large lessons/grades
+DATA_UPLOAD_MAX_NUMBER_FIELDS = 10000
+
