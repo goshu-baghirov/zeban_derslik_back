@@ -90,6 +90,12 @@ class GrammarNote(models.Model):
     title_az = models.CharField("Başlıq (az)", max_length=255)
     title_fa = models.CharField("Başlıq (fars)", max_length=255)
     order = models.PositiveIntegerField("Sıra", default=0)
+    note_fa = models.TextField(
+        "Qeyd (fars, ardıcıl mətn)", blank=True, default="",
+        help_text="Nümunə cümlələrdən sonra göstərilən ayrıca 'Qeyd' kartı — bütün mətn tək blok kimi.",
+    )
+    note_reading_az = models.TextField("Qeydin oxunuşu (az hərfləri ilə)", blank=True, default="")
+    note_az = models.TextField("Qeydin tərcüməsi (az)", blank=True, default="")
 
     class Meta:
         ordering = ["order", "id"]
@@ -179,10 +185,36 @@ class TrueFalseImageItem(models.Model):
 class PictureSentenceExercise(models.Model):
     """«برای هر تصویر، دو جمله بگویید» tipli məşğələ: nömrələnmiş şəkillər
     şaquli sırayla düzülür, hər birinin altında (adətən iki) nümunə cümlə
-    toxunuşla açılır."""
+    toxunuşla açılır. title_fa/example_* isə könüllü, çalışmanın başında
+    göstərilən «نمونه» nümunə qutusu üçündür (PracticeRevealExercise-dəki
+    eyni adlı sahələrlə eyni məntiq, sadəcə prompt/answer alt-nümunəsi yoxdur)."""
 
     lesson = models.ForeignKey(Lesson, related_name="picture_sentence_exercises", on_delete=models.CASCADE)
     instruction_az = models.TextField("Tapşırıq (az)")
+    title_fa = models.CharField("Başlıq (fars)", max_length=255, blank=True, default="")
+    example_fa = models.CharField(
+        "Nümunə sual (fars)", max_length=500, blank=True, default="",
+        help_text="«یا» sualı olan nümunə cümlə (məs. «مریم ظرف می‌شوید یا غذا می‌پزد؟»).",
+    )
+    example_reading_az = models.CharField("Nümunə sualın oxunuşu (az)", max_length=500, blank=True, default="")
+    example_az = models.CharField("Nümunə sualın tərcüməsi (az)", max_length=500, blank=True, default="")
+    example_answer_fa = models.CharField(
+        "Nümunə cavab (fars)", max_length=500, blank=True, default="",
+        help_text="Sualın düz cavabı (məs. «مریم غذا می‌پزد.»).",
+    )
+    example_answer_reading_az = models.CharField("Nümunə cavabın oxunuşu (az)", max_length=500, blank=True, default="")
+    example_answer_az = models.CharField("Nümunə cavabın tərcüməsi (az)", max_length=500, blank=True, default="")
+    example_image = models.ImageField(
+        "Nümunə şəkli (tək)", upload_to=lesson_image_path, blank=True, null=True,
+        help_text="Tək şəkilli nümunə üçün. Cüt şəkilli («bu, yoxsa o?») nümunə üçün bunun əvəzinə "
+        "aşağıdakı iki sahəni doldurun.",
+    )
+    example_image_have = models.ImageField(
+        "Nümunə şəkli («düz cavab» tərəfi)", upload_to=lesson_image_path, blank=True, null=True,
+    )
+    example_image_not_have = models.ImageField(
+        "Nümunə şəkli («səhv/həzf olunan» tərəfi)", upload_to=lesson_image_path, blank=True, null=True,
+    )
     order = models.PositiveIntegerField("Sıra", default=0)
 
     class Meta:
@@ -196,7 +228,17 @@ class PictureSentenceExercise(models.Model):
 
 class PictureSentenceItem(models.Model):
     exercise = models.ForeignKey(PictureSentenceExercise, related_name="items", on_delete=models.CASCADE)
-    image = models.ImageField("Şəkil", upload_to=lesson_image_path, blank=True, null=True)
+    image = models.ImageField(
+        "Şəkil", upload_to=lesson_image_path, blank=True, null=True,
+        help_text="Tək şəkilli element üçün. Cüt şəkilli («bu, yoxsa o?») elementlər üçün bunun əvəzinə "
+        "aşağıdakı iki sahəni doldurun.",
+    )
+    image_have = models.ImageField(
+        "Şəkil (düz cavab tərəfi)", upload_to=lesson_image_path, blank=True, null=True,
+    )
+    image_not_have = models.ImageField(
+        "Şəkil (səhv/həzf olunan tərəf)", upload_to=lesson_image_path, blank=True, null=True,
+    )
     order = models.PositiveIntegerField("Sıra", default=0)
 
     class Meta:
@@ -208,6 +250,48 @@ class PictureSentenceLine(models.Model):
     fa = models.CharField("Cümlə (fars)", max_length=500)
     reading_az = models.CharField("Oxunuşu (az)", max_length=500, blank=True, default="")
     az = models.CharField("Tərcümə (az)", max_length=500, blank=True, default="")
+    order = models.PositiveIntegerField("Sıra", default=0)
+
+    class Meta:
+        ordering = ["order", "id"]
+
+
+class AnswerQuestionExercise(models.Model):
+    """«لطفاً پاسخ دهید» tipli məşğələ (Çalışmalar siyahısında): nömrələnmiş
+    suallar, hər birinin öz nümunə cavabı — eyni tap-to-reveal görünüşü
+    'Sözlərin işləndiyi cümlələr' → 'Suallara cavab verin' kartı ilə eynidir
+    (AnswerQuestionTile widget-i paylaşılır), sadəcə bu, ayrıca bir Çalışma
+    kimi Lesson-a bağlıdır. note_* sahələri isə çalışmanın sonunda göstərilən,
+    könüllü ayrıca 'Qeyd' kartı üçündür (GrammarNote-dakı eyni adlı sahələrlə
+    eyni məntiq)."""
+
+    lesson = models.ForeignKey(Lesson, related_name="answer_question_exercises", on_delete=models.CASCADE)
+    title_fa = models.CharField("Başlıq (fars)", max_length=255, blank=True, default="")
+    instruction_az = models.TextField("Tapşırıq (az)")
+    note_fa = models.TextField("Qeyd (fars, ardıcıl mətn)", blank=True, default="")
+    note_reading_az = models.TextField("Qeydin oxunuşu (az hərfləri ilə)", blank=True, default="")
+    note_az = models.TextField("Qeydin tərcüməsi (az)", blank=True, default="")
+    order = models.PositiveIntegerField("Sıra", default=0)
+
+    class Meta:
+        ordering = ["order", "id"]
+        verbose_name = "Sual-cavab məşğələsi"
+        verbose_name_plural = "Sual-cavab məşğələləri (لطفاً پاسخ دهید)"
+
+    def __str__(self):
+        return self.title_fa or self.instruction_az[:60]
+
+
+class AnswerQuestionExerciseItem(models.Model):
+    exercise = models.ForeignKey(AnswerQuestionExercise, related_name="items", on_delete=models.CASCADE)
+    fa = models.CharField("Sual (fars)", max_length=500)
+    reading_az = models.CharField("Sualın oxunuşu (az hərfləri ilə)", max_length=500, blank=True, default="")
+    az = models.CharField("Sualın tərcüməsi (az)", max_length=500, blank=True, default="")
+    sample_answer_fa = models.CharField("Nümunə cavab (fars)", max_length=500, blank=True, default="")
+    sample_answer_reading_az = models.CharField(
+        "Nümunə cavabın oxunuşu (az hərfləri ilə)", max_length=500, blank=True, default=""
+    )
+    sample_answer_az = models.CharField("Nümunə cavabın tərcüməsi (az)", max_length=500, blank=True, default="")
     order = models.PositiveIntegerField("Sıra", default=0)
 
     class Meta:
@@ -318,6 +402,12 @@ class SentencePractice(models.Model):
     siyahı — گوش کنید و بخوانید (listen_items) və لطفاً پاسخ دهید (answer_items)."""
 
     lesson = models.OneToOneField(Lesson, related_name="sentence_practice", on_delete=models.CASCADE)
+    answer_note_fa = models.TextField(
+        "Sualların qeydi (fars)", blank=True, default="",
+        help_text="'Suallara cavab verin' siyahısının sonunda göstərilən 'Qeyd' kartı.",
+    )
+    answer_note_reading_az = models.TextField("Qeydin oxunuşu (az hərfləri ilə)", blank=True, default="")
+    answer_note_az = models.TextField("Qeydin tərcüməsi (az)", blank=True, default="")
 
     class Meta:
         verbose_name = "Sözlərin işləndiyi cümlələr"

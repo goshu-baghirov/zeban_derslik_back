@@ -1,6 +1,8 @@
 from rest_framework import serializers
 
 from .models import (
+    AnswerQuestionExercise,
+    AnswerQuestionExerciseItem,
     AnswerQuestionSentence,
     ConjugatedForm,
     ConjugationRow,
@@ -84,7 +86,16 @@ class GrammarNoteSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = GrammarNote
-        fields = ("title_az", "title_fa", "conjugations", "examples", "drills")
+        fields = (
+            "title_az",
+            "title_fa",
+            "conjugations",
+            "examples",
+            "drills",
+            "note_fa",
+            "note_reading_az",
+            "note_az",
+        )
 
 
 class FillBlankItemSerializer(serializers.ModelSerializer):
@@ -134,7 +145,7 @@ class PictureSentenceItemSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = PictureSentenceItem
-        fields = ("image", "sentences")
+        fields = ("image", "image_have", "image_not_have", "sentences")
 
 
 class PictureSentenceExerciseSerializer(serializers.ModelSerializer):
@@ -143,10 +154,42 @@ class PictureSentenceExerciseSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = PictureSentenceExercise
-        fields = ("type", "instruction_az", "items")
+        fields = (
+            "type",
+            "instruction_az",
+            "title_fa",
+            "example_fa",
+            "example_reading_az",
+            "example_az",
+            "example_answer_fa",
+            "example_answer_reading_az",
+            "example_answer_az",
+            "example_image",
+            "example_image_have",
+            "example_image_not_have",
+            "items",
+        )
 
     def get_type(self, obj):
         return "picture_sentences"
+
+
+class AnswerQuestionExerciseItemSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = AnswerQuestionExerciseItem
+        fields = ("fa", "reading_az", "az", "sample_answer_fa", "sample_answer_reading_az", "sample_answer_az")
+
+
+class AnswerQuestionExerciseSerializer(serializers.ModelSerializer):
+    items = AnswerQuestionExerciseItemSerializer(many=True, read_only=True)
+    type = serializers.SerializerMethodField()
+
+    class Meta:
+        model = AnswerQuestionExercise
+        fields = ("type", "title_fa", "instruction_az", "note_fa", "note_reading_az", "note_az", "items")
+
+    def get_type(self, obj):
+        return "answer_question"
 
 
 class MultipleChoiceItemSerializer(serializers.ModelSerializer):
@@ -200,7 +243,10 @@ class SentencePracticeSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = SentencePractice
-        fields = ("listen_items", "answer_items", "infinitives")
+        fields = (
+            "listen_items", "answer_items", "infinitives",
+            "answer_note_fa", "answer_note_reading_az", "answer_note_az",
+        )
 
 
 class ReadingFootnoteSerializer(serializers.ModelSerializer):
@@ -264,18 +310,28 @@ class LessonSerializer(serializers.ModelSerializer):
         )
 
     def get_exercises(self, obj):
+        # Hər növün öz sıra nömrəsi var (order=overall_order, seed_lessons.py-də
+        # "exercises" siyahısındakı yeri), amma bu, əvvəllər YALNIZ eyni növ
+        # daxilində sıralanırdı — növlər özləri həmişə sabit ardıcıllıqla
+        # (fill_blank → true_false_image → multiple_choice → practice_reveal →
+        # picture_sentences) göstərilirdi, "order" dəyərindən asılı olmayaraq.
+        # Bütün növləri bir siyahıda toplayıb ÜMUMİ "order" ilə sıralamaq,
+        # istənilən növün istənilən mövqedə görünməsinə imkan verir.
         exercises = []
         for exercise in obj.fill_blank_exercises.all():
-            exercises.append(FillBlankExerciseSerializer(exercise, context=self.context).data)
+            exercises.append((exercise.order, FillBlankExerciseSerializer(exercise, context=self.context).data))
         for exercise in obj.true_false_exercises.all():
-            exercises.append(TrueFalseImageExerciseSerializer(exercise, context=self.context).data)
+            exercises.append((exercise.order, TrueFalseImageExerciseSerializer(exercise, context=self.context).data))
         for exercise in obj.multiple_choice_exercises.all():
-            exercises.append(MultipleChoiceExerciseSerializer(exercise, context=self.context).data)
+            exercises.append((exercise.order, MultipleChoiceExerciseSerializer(exercise, context=self.context).data))
         for exercise in obj.practice_reveal_exercises.all():
-            exercises.append(PracticeRevealExerciseSerializer(exercise, context=self.context).data)
+            exercises.append((exercise.order, PracticeRevealExerciseSerializer(exercise, context=self.context).data))
         for exercise in obj.picture_sentence_exercises.all():
-            exercises.append(PictureSentenceExerciseSerializer(exercise, context=self.context).data)
-        return exercises
+            exercises.append((exercise.order, PictureSentenceExerciseSerializer(exercise, context=self.context).data))
+        for exercise in obj.answer_question_exercises.all():
+            exercises.append((exercise.order, AnswerQuestionExerciseSerializer(exercise, context=self.context).data))
+        exercises.sort(key=lambda pair: pair[0])
+        return [data for _, data in exercises]
 
 
 class LessonSummarySerializer(serializers.ModelSerializer):

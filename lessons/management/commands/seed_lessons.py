@@ -13,6 +13,8 @@ from django.db import transaction
 from lessons.models import lesson_image_path
 
 from lessons.models import (
+    AnswerQuestionExercise,
+    AnswerQuestionExerciseItem,
     AnswerQuestionSentence,
     ConjugationRow,
     ExampleSentence,
@@ -1016,51 +1018,622 @@ LESSON_2 = {
             "examples": [
                 {
                     "fa": "این اجاق‌گاز است یا لباس‌شویی است؟ این لباس‌شویی است.",
+                    "reading_az": "İn ocaq-qaz əst ya ləbasşuyi əst? İn ləbasşuyi əst.",
                     "az": "Bu qaz plitəsidir, yoxsa paltaryuyandır? Bu paltaryuyandır.",
                 },
                 {
                     "fa": "این لباس‌شویی، بزرگ است یا کوچک؟ این لباس‌شویی، بزرگ است.",
+                    "reading_az": "İn ləbasşuyi, bozorg əst ya kuçek? İn ləbasşuyi, bozorg əst.",
                     "az": "Bu paltaryuyan böyükdür, yoxsa kiçik? Bu paltaryuyan böyükdür.",
                 },
-                {"fa": "محمّد پزشک است یا پرستار است؟ محمّد، پزشک است.", "az": "Məhəmməd həkimdir, yoxsa tibb bacısı? Məhəmməd həkimdir."},
+                {
+                    "fa": "محمّد پزشک است یا پرستار است؟ محمّد، پزشک است.",
+                    "reading_az": "Mohəmməd pezeşk əst ya pərəstar əst? Mohəmməd, pezeşk əst.",
+                    "az": "Məhəmməd həkimdir, yoxsa tibb bacısı? Məhəmməd həkimdir.",
+                },
                 {
                     "fa": "شما در حمّام دوش می‌گیرید یا در آشپزخانه؟ من در حمّام دوش می‌گیرم.",
+                    "reading_az": "Şoma dər həmmam duş migirid ya dər aşpəzxane? Mən dər həmmam duş migiram.",
                     "az": "Siz hamamda duş alırsınız, yoxsa mətbəxdə? Mən hamamda duş alıram.",
                 },
+                {
+                    "fa": "بینی برای شنیدن است یا بوییدن؟ بینی برای بوییدن است.",
+                    "reading_az": "Bini bəraye şenidən əst ya buyidən? Bini bəraye buyidən əst.",
+                    "az": "Burun eşitmək üçündür, yoxsa iyləmək üçün? Burun iyləmək üçündür.",
+                },
+                {
+                    "fa": "این خانم‌ها ظرف می‌شویند یا غذا می‌پزند؟ این خانم‌ها غذا می‌پزند.",
+                    "reading_az": "İn xanomha zərf mişuyənd ya qəza mipəzənd? İn xanomha qəza mipəzənd.",
+                    "az": "Bu xanımlar qab yuyur, yoxsa yemək bişirir? Bu xanımlar yemək bişirir.",
+                },
             ],
+            "note_fa": (
+                "۱. اگر در جمله‌ی پرسشی واژه‌ی «یا» باشد؛ جواب «بله»، «نه» و «چرا» درست نیست، "
+                "مانند: این شلوار مشکی است یا آبی؟\n"
+                "✅ این شلوار مشکی است.\n"
+                "❌ بله، این شلوار مشکی است.\n"
+                "❌ نه، این شلوار مشکی نیست؛ آبی است.\n"
+                "۲. در جمله‌ی پرسشی که «یا» وجود دارد، اگر دو فعل همانند باشد، معمولاً فعل دوم را حذف می‌کنیم.\n"
+                "✅ این لباس‌شویی بزرگ است یا کوچک؟\n"
+                "✅ این لباس‌شویی بزرگ یا کوچک است؟"
+            ),
+            "note_reading_az": (
+                '1. Əgər dər comleye porseşi vajeye "ya" başəd; cəvab "bəle", "na" va "çera" dorost nist, '
+                "manənd: in şəlvar meşki əst ya abi?\n"
+                "İn şəlvar meşki əst.\n"
+                "Bəle, in şəlvar meşki əst.\n"
+                "Na, in şəlvar meşki nist; abi əst.\n"
+                '2. Dər comleye porseşi ke "ya" vocud darəd, əgər do fele həmanənd başəd, məmulən fele dovvom ra həzf mikonim.\n'
+                "İn ləbasşuyi bozorg əst ya kuçek?\n"
+                "İn ləbasşuyi bozorg ya kuçek əst?"
+            ),
+            "note_az": (
+                '1. Sual cümləsində "یا" (ya) sözü olarsa, cavab olaraq "bəli", "xeyr" və "niyə" düzgün deyil, '
+                "məsələn: Bu şalvar qara rəngdədir, yoxsa mavi?\n"
+                "✅ Bu şalvar qara rəngdədir.\n"
+                "❌ Bəli, bu şalvar qara rəngdədir.\n"
+                "❌ Xeyr, bu şalvar qara rəngdə deyil; mavidir.\n"
+                '2. "یа" (ya) olan sual cümləsində iki fel eyni olarsa, adətən ikinci feli buraxırıq.\n'
+                "✅ Bu paltaryuyan böyükdür, yoxsa kiçik?\n"
+                "✅ Bu paltaryuyan böyük, yoxsa kiçikdir?"
+            ),
         },
         {
             "title_az": 'Sual cümləsi "چه‌کار می‌کند؟" (O nə edir?)',
             "title_fa": "جمله‌ی پرسشی «چه‌کار می‌کند؟»",
             "conjugations": [],
             "examples": [
-                {"fa": "این مرد چه‌کار می‌کند؟ این مرد روزنامه می‌خواند.", "az": "Bu kişi nə edir? Bu kişi qəzet oxuyur."},
-                {"fa": "آن خانم چه‌کار می‌کند؟ آن خانم غذا می‌پزد.", "az": "O xanım nə edir? O xanım yemək bişirir."},
-                {"fa": "فاطمه چه‌کار می‌کند؟ فاطمه نامه می‌نویسد.", "az": "Fatimə nə edir? Fatimə məktub yazır."},
-                {"fa": "علی چه‌کار می‌کند؟ علی نقّاشی می‌کشد.", "az": "Əli nə edir? Əli rəsm çəkir."},
+                {
+                    "fa": "این مرد چه‌کار می‌کند؟ این مرد روزنامه می‌خواند.",
+                    "reading_az": "İn mərd çekar mikonəd? İn mərd ruzname mixanəd.",
+                    "az": "Bu kişi nə edir? Bu kişi qəzet oxuyur.",
+                },
+                {
+                    "fa": "آن خانم چه‌کار می‌کند؟ آن خانم غذا می‌پزد.",
+                    "reading_az": "An xanom çekar mikonəd? An xanom qəza mipəzəd.",
+                    "az": "O xanım nə edir? O xanım yemək bişirir.",
+                },
+                {
+                    "fa": "فاطمه چه‌کار می‌کند؟ فاطمه نامه می‌نویسد.",
+                    "reading_az": "Fateme çekar mikonəd? Fateme name minevisəd.",
+                    "az": "Fatimə nə edir? Fatimə məktub yazır.",
+                },
+                {
+                    "fa": "علی چه‌کار می‌کند؟ علی نقّاشی می‌کشد.",
+                    "reading_az": "Əli çekar mikonəd? Əli nəqqaşi mikeşəd.",
+                    "az": "Əli nə edir? Əli rəsm çəkir.",
+                },
+                {
+                    "fa": "شما (تو) چه‌کار می‌کنی؟ من لباس می‌شویم.",
+                    "reading_az": "Şoma (to) çekar mikoni? Mən lebas mişuyəm.",
+                    "az": "Sən nə edirsən? Mən paltar yuyuram.",
+                },
+                {
+                    "fa": "شما کدام لباس را می‌شویید؟ من پیراهن قرمز را می‌شویم.",
+                    "reading_az": "Şoma kodam lebas ra mişuyid? Mən pirahəne qermez ra mişuyəm.",
+                    "az": "Siz hansı paltarı yuyursunuz? Mən qırmızı köynəyi yuyuram.",
+                },
+                {
+                    "fa": "شما (تو) چه‌کار می‌کنی؟ من دوش می‌گیرم.",
+                    "reading_az": "Şoma (to) çekar mikoni? Mən duş migiram.",
+                    "az": "Sən nə edirsən? Mən duş alıram.",
+                },
+                {
+                    "fa": "شما کجا دوش می‌گیری؟ من در حمّام، دوش می‌گیرم.",
+                    "reading_az": "Şoma koca duş migiri? Mən dər həmmam, duş migiram.",
+                    "az": "Sən harada duş alırsan? Mən hamamda duş alıram.",
+                },
+                {
+                    "fa": "نرگس چه دارد؟ او کیف و کتاب دارد.",
+                    "reading_az": "Nərges çe darəd? U kif və ketab darəd.",
+                    "az": "Nərgizin nəyi var? Onun çantası və kitabı var.",
+                },
+                {
+                    "fa": "نرگس چه‌کار می‌کند؟ او درس می‌خواند.",
+                    "reading_az": "Nərges çekar mikonəd? U dərs mixanəd.",
+                    "az": "Nərgiz nə edir? O, dərs oxuyur.",
+                },
+                {
+                    "fa": "نرگس کجا درس می‌خواند؟ او در اتاق مطالعه درس می‌خواند.",
+                    "reading_az": "Nərges koca dərs mixanəd? U dər otağe motaleə dərs mixanəd.",
+                    "az": "Nərgiz harada dərs oxuyur? O, iş otağında dərs oxuyur.",
+                },
             ],
         },
         {
             "title_az": "Hörmət forması (تو → شما, او → ایشان)",
             "title_fa": "جمله‌ی محترمانه",
             "conjugations": [
-                {"pronoun_fa": "تو استادی.", "form_fa": "شما استادید."},
-                {"pronoun_fa": "او استاد است.", "form_fa": "ایشان استادند."},
+                {"pronoun_fa": "تو", "form_fa": "شما"},
+                {"pronoun_fa": "تو استاد هستی.", "form_fa": "شما استاد هستی. / شما استاد هستید."},
+                {"pronoun_fa": "او", "form_fa": "ایشان"},
+                {"pronoun_fa": "او استاد است.", "form_fa": "ایشان استاد است. / ایشان استاد هستند."},
             ],
             "examples": [
-                {"fa": "تو نگهبانی. → شما نگهبانید.", "az": "Sən keşikçisən. → Siz keşikçisiniz."},
                 {
-                    "fa": "او کتاب را روی میز می‌گذارد. → ایشان کتاب را روی میز می‌گذارند.",
-                    "az": "O, kitabı masanın üstünə qoyur. → Onlar (hörmətlə) kitabı masanın üstünə qoyurlar.",
+                    "fa": "شما (تو) پزشک هستی. (شما پزشک هستید.)",
+                    "reading_az": "Şoma (to) pezeşk həsti. (Şoma pezeşk həstid.)",
+                    "az": "Sən həkimsən. → Hörmətlə: Siz həkimsiniz. (Fel həm təkdə, həm cəmdə ola bilər.)",
                 },
                 {
-                    "fa": "آیا او محمّدمهدی است؟ → آیا ایشان محمّدمهدی هستند؟",
-                    "az": "O, Məhəmmədmehdidirmi? → O zat (hörmətlə) Məhəmmədmehdidirmi?",
+                    "fa": "ایشان (او) پلیس نیست؛ ایشان نگهبان است. (ایشان پلیس نیستند؛ ایشان نگهبان هستند.)",
+                    "reading_az": "İşan (u) polis nist; işan negəhban əst. (İşan polis nistənd; işan negəhban həstənd.)",
+                    "az": "O, polis deyil; keşikçidir. → Hörmətlə «او» yerinə «ایشان» deyilir; fel təkdə də, cəmdə də düzgündür.",
+                },
+                {
+                    "fa": "آیا شما دو فرزند داری؟ (آیا شما دو فرزند دارید؟) — نه، من سه فرزند دارم.",
+                    "reading_az": "Aya şoma do fərzənd dari? (Aya şoma do fərzənd darid?) — Nə, mən se fərzənd daram.",
+                    "az": "Sizin iki övladınız var? — Xeyr, mənim üç övladım var. (Sual hər iki fel forması ilə düzgündür.)",
+                },
+                {
+                    "fa": "آیا این خانم نقّاشی می‌کشد؟ (آیا ایشان نقّاشی می‌کشند؟) — نه، ایشان کتاب می‌خوانند.",
+                    "reading_az": "Aya in xanom nəqqaşi mikeşəd? (Aya işan nəqqaşi mikeşənd?) — Nə, işan ketab mixanənd.",
+                    "az": "Bu xanım rəsm çəkir? — Xeyr, o, kitab oxuyur. (Hörmətlə «ایشان» deyilir və fel cəmə keçir.)",
+                },
+                {
+                    "fa": "آیا شما نامه می‌نویسی؟ (آیا شما نامه می‌نویسید؟) — نه، من روزنامه می‌خوانم.",
+                    "reading_az": "Aya şoma name minevisi? (Aya şoma name minevisid?) — Nə, mən ruzname mixanəm.",
+                    "az": "Siz məktub yazırsınız? — Xeyr, mən qəzet oxuyuram. (Sual hər iki fel forması ilə düzgündür.)",
                 },
             ],
+            "note_fa": (
+                "۱. در جمله‌ی محترمانه به جای «تو» می‌گوییم «شما»:\n"
+                "✅ تو استاد هستی. ← شما استاد هستی. / شما استاد هستید.\n"
+                "۲. به جای «او» می‌گوییم «ایشان»:\n"
+                "✅ او استاد است. ← ایشان استاد است. / ایشان استاد هستند.\n"
+                "۳. در جمله‌ی محترمانه فعل می‌تواند مفرد بماند یا جمع شود؛ هر دو درست است."
+            ),
+            "note_reading_az": (
+                '1. Dər comleye mohtərəmane be caye "to" miguyim "şoma":\n'
+                "To ostad həsti. ← Şoma ostad həsti. / Şoma ostad həstid.\n"
+                '2. Be caye "u" miguyim "işan":\n'
+                "U ostad əst. ← İşan ostad əst. / İşan ostad həstənd.\n"
+                "3. Dər comleye mohtərəmane fel mitəvanəd mofrəd bemanəd ya cəm şəvəd; hər do dorost əst."
+            ),
+            "note_az": (
+                '1. Hörmət bildirən cümlədə "تو" (sən) əvəzinə "شما" (siz) deyilir:\n'
+                "✅ Sən müəllimsən. ← Siz müəllimsiniz.\n"
+                '2. "او" (o) əvəzinə "ایشان" (hörmətli "o") deyilir:\n'
+                "✅ O, müəllimdir. ← O cənab / o xanım müəllimdir.\n"
+                "3. Hörmət formasında fel həm təkdə qala bilər, həm də cəmə keçə bilər — hər ikisi düzgündür."
+            ),
         },
     ],
     "exercises": [
+        {
+            "kind": "answer_question",
+            "title_fa": "لطفاً پاسخ دهید",
+            "instruction_az": "Suallara cavab verin",
+            "note_fa": (
+                "در جمله‌های پرسشی که «یا» وجود دارد، اگر دو فعل مختلف باشند، نمی‌توانیم فعل را حذف کنیم:\n"
+                "✅ شما نقّاشی می‌کشید یا کتاب می‌خوانید؟\n"
+                "❌ شما نقّاشی می‌کشید یا کتاب؟"
+            ),
+            "note_reading_az": (
+                'Dər comlehaye porseşi ke "ya" vocud darəd, əgər do fel moxtəlef başənd, nemitəvanim fel ra həzf konim:\n'
+                "Şoma nəqqaşi mikeşid ya ketab mixanid?\n"
+                "Şoma nəqqaşi mikeşid ya ketab?"
+            ),
+            "note_az": (
+                '"یа" (ya) olan sual cümlələrində iki fel fərqli olarsa, feli buraxa bilmərik:\n'
+                "✅ Siz rəsm çəkirsiniz, yoxsa kitab oxuyursunuz?\n"
+                "❌ Siz rəsm çəkirsiniz, yoxsa kitab?"
+            ),
+            "items": [
+                {
+                    "fa": "اتاق شما پنکه دارد یا کولر؟",
+                    "reading_az": "Otaqe şoma pənke darəd ya kuler?",
+                    "az": "Otağınızda ventilyator var, yoxsa kondisioner?",
+                    "sample_answer_fa": "اتاق من کولر دارد.",
+                    "sample_answer_reading_az": "Otaqe mən kuler darəd.",
+                    "sample_answer_az": "Mənim otağımda kondisioner var.",
+                },
+                {
+                    "fa": "شما (تو) اهل آفریقا هستی یا اروپا؟",
+                    "reading_az": "Şoma (to) əhle Afriqa həsti ya Orupa?",
+                    "az": "Siz (sən) Afrikadansınız, yoxsa Avropadan?",
+                    "sample_answer_fa": "من اهل آفریقا هستم.",
+                    "sample_answer_reading_az": "Mən əhle Afriqa həstəm.",
+                    "sample_answer_az": "Mən Afrikadanam.",
+                },
+                {
+                    "fa": "پتو و بالش شما تمیز است یا کثیف؟",
+                    "reading_az": "Pətu va baleşe şoma təmiz əst ya kəsif?",
+                    "az": "Adyalınız və yastığınız təmizdir, yoxsa çirkli?",
+                    "sample_answer_fa": "پتو و بالش من تمیز است.",
+                    "sample_answer_reading_az": "Pətu va baleşe mən təmiz əst.",
+                    "sample_answer_az": "Mənim adyalım və yastığım təmizdir.",
+                },
+                {
+                    "fa": "حیاط خانه‌ی شما باغچه دارد یا حوض؟",
+                    "reading_az": "Həyate xane-ye şoma bağçe darəd ya hoz?",
+                    "az": "Evinizin həyətində bağça var, yoxsa hovuz?",
+                    "sample_answer_fa": "حیاط خانه‌ی ما باغچه دارد.",
+                    "sample_answer_reading_az": "Həyate xane-ye ma bağçe darəd.",
+                    "sample_answer_az": "Bizim evimizin həyətində bağça var.",
+                },
+                {
+                    "fa": "استاد شما با ماژیک آبی می‌نویسد یا قرمز؟",
+                    "reading_az": "Ostade şoma ba majike abi minevisəd ya qermez?",
+                    "az": "Müəlliminiz mavi markerlə yazır, yoxsa qırmızı?",
+                    "sample_answer_fa": "استاد من با ماژیک قرمز می‌نویسد.",
+                    "sample_answer_reading_az": "Ostade mən ba majike qermez minevisəd.",
+                    "sample_answer_az": "Müəllimim qırmızı markerlə yazır.",
+                },
+                {
+                    "fa": "شما در آشپزخانه غذا می‌خورید یا در اتاق پذیرایی؟",
+                    "reading_az": "Şoma dər aşpəzxane qəza mixorid ya dər otağe pəzirayi?",
+                    "az": "Siz mətbəxdə yemək yeyirsiniz, yoxsa qonaq otağında?",
+                    "sample_answer_fa": "من در اتاق پذیرایی غذا می‌خورم.",
+                    "sample_answer_reading_az": "Mən dər otağe pəzirayi qəza mixorəm.",
+                    "sample_answer_az": "Mən yeməyi qonaq otağında yeyirəm.",
+                },
+                {
+                    "fa": "شما هر روز نقّاشی می‌کشید یا تکلیف می‌نویسید؟",
+                    "reading_az": "Şoma hər ruz nəqqaşi mikeşid ya təklif minevisid?",
+                    "az": "Siz hər gün rəsm çəkirsiniz, yoxsa tapşırıq yazırsınız?",
+                    "sample_answer_fa": "من هر روز تکلیف می‌نویسم.",
+                    "sample_answer_reading_az": "Mən hər ruz təklif minevisəm.",
+                    "sample_answer_az": "Mən hər gün tapşırıq yazıram.",
+                },
+                {
+                    "fa": "پدر شما ماشین را در پارکینگ می‌گذارد یا در حیاط؟",
+                    "reading_az": "Pedəre şoma maşin ra dər parkinq migozarəd ya dər həyat?",
+                    "az": "Atanız maşını avtomobil dayanacağına qoyur, yoxsa həyətə?",
+                    "sample_answer_fa": "پدر من ماشین را در پارکینگ می‌گذارد.",
+                    "sample_answer_reading_az": "Pedəre mən maşin ra dər parkinq migozarəd.",
+                    "sample_answer_az": "Atam maşını avtomobil dayanacağında qoyur.",
+                },
+            ],
+        },
+        {
+            "kind": "picture_sentences",
+            "title_fa": "مانند مثال بپرسید و پاسخ دهید",
+            "instruction_az": "Nümunə kimi soruşun və cavab verin",
+            "example_fa": "مریم ظرف می‌شوید یا غذا می‌پزد؟",
+            "example_reading_az": "Məryəm zərf mişuyəd ya qəza mipəzəd?",
+            "example_az": "Məryəm qab yuyur, yoxsa yemək bişirir?",
+            "example_answer_fa": "مریم غذا می‌پزد.",
+            "example_answer_reading_az": "Məryəm qəza mipəzəd.",
+            "example_answer_az": "Məryəm yemək bişirir.",
+            "example_image_have": "assets/images/lessons/lesson_02/ghaza_mipazad.png",
+            "example_image_not_have": "assets/images/lessons/lesson_02/zarf_mishuyad.png",
+            "items": [
+                {
+                    "image_have": "assets/images/lessons/lesson_02/rahro.png",
+                    "image_not_have": "assets/images/lessons/lesson_02/parking.png",
+                    "sentences": [
+                        {
+                            "fa": "این راهرو است یا پارکینگ؟ این راهرو است.",
+                            "reading_az": "İn rahro əst ya parkinq? İn rahro əst.",
+                            "az": "Bu dəhlizdir, yoxsa avtomobil dayanacağı? Bu dəhlizdir.",
+                        },
+                    ],
+                },
+                {
+                    "image_have": "assets/images/lessons/lesson_02/labasshuyi.png",
+                    "image_not_have": "assets/images/lessons/lesson_02/abgarmkon.png",
+                    "sentences": [
+                        {
+                            "fa": "این لباس‌شویی است یا آب‌گرم‌کن؟ این لباس‌شویی است.",
+                            "reading_az": "İn ləbasşuyi əst ya abgərmkon? İn ləbasşuyi əst.",
+                            "az": "Bu paltaryuyandır, yoxsa su qızdırıcısı? Bu paltaryuyandır.",
+                        },
+                    ],
+                },
+                {
+                    "image_have": "assets/images/lessons/lesson_02/mishuyad.png",
+                    "image_not_have": "assets/images/lessons/lesson_02/dush_migirad.png",
+                    "sentences": [
+                        {
+                            "fa": "او دست می‌شوید یا دوش می‌گیرد؟ او دست می‌شوید.",
+                            "reading_az": "U dəst mişuyəd ya duş migirəd? U dəst mişuyəd.",
+                            "az": "O əlini yuyur, yoxsa duş alır? O əlini yuyur.",
+                        },
+                    ],
+                },
+                {
+                    "image_have": "assets/images/lessons/lesson_02/ketab.png",
+                    "image_not_have": "assets/images/lessons/lesson_01/jamedadi.png",
+                    "sentences": [
+                        {
+                            "fa": "این کتاب است یا جامدادی؟ این کتاب است.",
+                            "reading_az": "İn ketab əst ya camedadi? İn ketab əst.",
+                            "az": "Bu kitabdır, yoxsa qələmqabı? Bu kitabdır.",
+                        },
+                    ],
+                },
+                {
+                    "image_have": "assets/images/lessons/lesson_02/otagh_paziraei.png",
+                    "image_not_have": "assets/images/lessons/lesson_02/otagh_motalee.png",
+                    "sentences": [
+                        {
+                            "fa": "این اتاق پذیرایی است یا اتاق مطالعه؟ این اتاق پذیرایی است.",
+                            "reading_az": "İn otağe pəzirayi əst ya otağe motaleə? İn otağe pəzirayi əst.",
+                            "az": "Bu qonaq otağıdır, yoxsa iş otağı? Bu qonaq otağıdır.",
+                        },
+                    ],
+                },
+                {
+                    "image_have": "assets/images/lessons/lesson_01/naghashi_mikeshad.png",
+                    "image_not_have": "assets/images/lessons/lesson_01/pak_mikonad.png",
+                    "sentences": [
+                        {
+                            "fa": "او نقّاشی می‌کشد یا تابلو را پاک می‌کند؟ او نقّاشی می‌کشد.",
+                            "reading_az": "U nəqqaşi mikeşəd ya təblo ra pak mikonəd? U nəqqaşi mikeşəd.",
+                            "az": "O rəsm çəkir, yoxsa lövhəni silir? O rəsm çəkir.",
+                        },
+                    ],
+                },
+            ],
+        },
+        {
+            "kind": "picture_sentences",
+            "title_fa": "مانند مثال بپرسید و پاسخ دهید",
+            "instruction_az": "Nümunə kimi soruşun və cavab verin",
+            "example_fa": "این کودک چه‌کار می‌کند؟",
+            "example_reading_az": "İn kudək çekar mikonəd?",
+            "example_az": "Bu uşaq nə edir?",
+            "example_answer_fa": "این کودک غذا می‌خورد.",
+            "example_answer_reading_az": "İn kudək qəza mixorəd.",
+            "example_answer_az": "Bu uşaq yemək yeyir.",
+            "items": [
+                {
+                    "sentences": [
+                        {
+                            "fa": "این پسر چه‌کار می‌کند؟ این پسر ماشین را می‌شوید.",
+                            "reading_az": "İn pesər çekar mikonəd? İn pesər maşin ra mişuyəd.",
+                            "az": "Bu oğlan nə edir? Bu oğlan maşını yuyur.",
+                        },
+                    ],
+                },
+                {
+                    "sentences": [
+                        {
+                            "fa": "این خانم چه‌کار می‌کند؟ این خانم کتاب می‌خواند.",
+                            "reading_az": "İn xanom çekar mikonəd? İn xanom ketab mixanəd.",
+                            "az": "Bu xanım nə edir? Bu xanım kitab oxuyur.",
+                        },
+                    ],
+                },
+                {
+                    "sentences": [
+                        {
+                            "fa": "این دختر چه‌کار می‌کند؟ این دختر درس می‌خواند.",
+                            "reading_az": "İn doxtər çekar mikonəd? İn doxtər dərs mixanəd.",
+                            "az": "Bu qız nə edir? Bu qız dərs oxuyur.",
+                        },
+                    ],
+                },
+                {
+                    "sentences": [
+                        {
+                            "fa": "این پسر چه‌کار می‌کند؟ این پسر دوش می‌گیرد.",
+                            "reading_az": "İn pesər çekar mikonəd? İn pesər duş migirəd.",
+                            "az": "Bu oğlan nə edir? Bu oğlan duş alır.",
+                        },
+                    ],
+                },
+                {
+                    "sentences": [
+                        {
+                            "fa": "این خانم‌ها چه‌کار می‌کنند؟ این خانم‌ها غذا می‌پزند.",
+                            "reading_az": "İn xanomha çekar mikonənd? İn xanomha qəza mipəzənd.",
+                            "az": "Bu xanımlar nə edir? Bu xanımlar yemək bişirir.",
+                        },
+                    ],
+                },
+                {
+                    "sentences": [
+                        {
+                            "fa": "این خانم چه‌کار می‌کند؟ این خانم نقّاشی می‌کشد.",
+                            "reading_az": "İn xanom çekar mikonəd? İn xanom nəqqaşi mikeşəd.",
+                            "az": "Bu xanım nə edir? Bu xanım rəsm çəkir.",
+                        },
+                    ],
+                },
+                {
+                    "sentences": [
+                        {
+                            "fa": "این پسر چه‌کار می‌کند؟ این پسر غذا می‌خورد.",
+                            "reading_az": "İn pesər çekar mikonəd? İn pesər qəza mixorəd.",
+                            "az": "Bu oğlan nə edir? Bu oğlan yemək yeyir.",
+                        },
+                    ],
+                },
+                {
+                    "sentences": [
+                        {
+                            "fa": "این پسر چه‌کار می‌کند؟ این پسر صورتش را می‌شوید.",
+                            "reading_az": "İn pesər çekar mikonəd? İn pesər surətəş ra mişuyəd.",
+                            "az": "Bu oğlan nə edir? Bu oğlan üzünü yuyur.",
+                        },
+                    ],
+                },
+                {
+                    "sentences": [
+                        {
+                            "fa": "این دختر چه‌کار می‌کند؟ این دختر روی تخته می‌نویسد.",
+                            "reading_az": "İn doxtər çekar mikonəd? İn doxtər ruye təxte minevisəd.",
+                            "az": "Bu qız nə edir? Bu qız lövhəyə yazır.",
+                        },
+                    ],
+                },
+            ],
+        },
+        {
+            "kind": "practice_reveal",
+            "title_fa": "مانند مثال تبدیل کنید",
+            "instruction_az": "Nümunə kimi hörmət formasına çevirin",
+            "example_fa": "تو پرستار هستی. ← شما پرستار *هستید*.",
+            "example_reading_az": "To pərəstar həsti. ← Şoma pərəstar həstid.",
+            "example_az": "Sən tibb bacısısan. ← Siz tibb bacısısınız.",
+            "items": [
+                {
+                    "prompt_fa": "تو نگهبان هستی.",
+                    "answer_fa": "شما نگهبان هستید.",
+                    "reading_az": "Şoma negəhban həstid.",
+                    "az": "Siz keşikçisiniz.",
+                },
+                {
+                    "prompt_fa": "او استاد نیست.",
+                    "answer_fa": "ایشان استاد نیستند.",
+                    "reading_az": "İşan ostad nistənd.",
+                    "az": "Onlar müəllim deyillər.",
+                },
+                {
+                    "prompt_fa": "او کتاب را روی میز می‌گذارد.",
+                    "answer_fa": "ایشان کتاب را روی میز می‌گذارند.",
+                    "reading_az": "İşan ketab ra ruye miz migozarənd.",
+                    "az": "Onlar kitabı masanın üstünə qoyurlar.",
+                },
+                {
+                    "prompt_fa": "تو در رستوران، غذا می‌خوری.",
+                    "answer_fa": "شما در رستوران، غذا می‌خورید.",
+                    "reading_az": "Şoma dər restoran, qəza mixorid.",
+                    "az": "Siz restoranda yemək yeyirsiniz.",
+                },
+                {
+                    "prompt_fa": "آیا او محمّدمهدی است؟",
+                    "answer_fa": "آیا ایشان محمّدمهدی هستند؟",
+                    "reading_az": "Aya işan Mohəmmədmehdi həstənd?",
+                    "az": "O zat Məhəmmədmehdidirmi?",
+                },
+                {
+                    "prompt_fa": "آیا تو الآن دوش می‌گیری؟",
+                    "answer_fa": "آیا شما الآن دوش می‌گیرید؟",
+                    "reading_az": "Aya şoma əl-an duş migirid?",
+                    "az": "Siz indi duş alırsınız?",
+                },
+            ],
+        },
+        {
+            "kind": "picture_sentences",
+            "title_fa": "برای هر تصویر، دو جمله بگویید",
+            "instruction_az": "Hər şəkil üçün iki cümlə deyin",
+            "items": [
+                {
+                    "image": "assets/images/lessons/lesson_02/ashpazkhane.png",
+                    "sentences": [
+                        {
+                            "fa": "این آشپزخانه است.",
+                            "reading_az": "İn aşpəzxane əst.",
+                            "az": "Bu mətbəxdir.",
+                        },
+                        {
+                            "fa": "در آشپزخانه، اجاق‌گاز و کتری وجود دارد.",
+                            "reading_az": "Dər aşpəzxane, ocaq-qaz və ketri vocud darəd.",
+                            "az": "Mətbəxdə qaz plitəsi və çaydan var.",
+                        },
+                    ],
+                },
+                {
+                    "image": "assets/images/lessons/lesson_02/otagh_khab.png",
+                    "sentences": [
+                        {
+                            "fa": "این اتاق خواب است.",
+                            "reading_az": "İn otağe xab əst.",
+                            "az": "Bu yataq otağıdır.",
+                        },
+                        {
+                            "fa": "در اتاق خواب، تخت و بالش وجود دارد.",
+                            "reading_az": "Dər otağe xab, təxt və baleş vocud darəd.",
+                            "az": "Yataq otağında çarpayı və yastıq var.",
+                        },
+                    ],
+                },
+                {
+                    "image": "assets/images/lessons/lesson_02/ghaza_mipazad.png",
+                    "sentences": [
+                        {
+                            "fa": "این خانم در آشپزخانه است.",
+                            "reading_az": "İn xanom dər aşpəzxane əst.",
+                            "az": "Bu xanım mətbəxdədir.",
+                        },
+                        {
+                            "fa": "این خانم غذا می‌پزد.",
+                            "reading_az": "İn xanom qəza mipəzəd.",
+                            "az": "Bu xanım yemək bişirir.",
+                        },
+                    ],
+                },
+                {
+                    "image": "assets/images/lessons/lesson_02/otagh_paziraei.png",
+                    "sentences": [
+                        {
+                            "fa": "این اتاق پذیرایی است.",
+                            "reading_az": "İn otağe pəzirayi əst.",
+                            "az": "Bu qonaq otağıdır.",
+                        },
+                        {
+                            "fa": "در اتاق پذیرایی، مبل وجود دارد.",
+                            "reading_az": "Dər otağe pəzirayi, mobl vocud darəd.",
+                            "az": "Qonaq otağında divan var.",
+                        },
+                    ],
+                },
+                {
+                    "image": "assets/images/lessons/lesson_02/otagh_motalee.png",
+                    "sentences": [
+                        {
+                            "fa": "این اتاق مطالعه است.",
+                            "reading_az": "İn otağe motaleə əst.",
+                            "az": "Bu iş otağıdır.",
+                        },
+                        {
+                            "fa": "من در اتاق مطالعه درس می‌خوانم.",
+                            "reading_az": "Mən dər otağe motaleə dərs mixanəm.",
+                            "az": "Mən iş otağında dərs oxuyuram.",
+                        },
+                    ],
+                },
+                {
+                    "image": "assets/images/lessons/lesson_02/dush_migirad.png",
+                    "sentences": [
+                        {
+                            "fa": "این پسر در حمّام است.",
+                            "reading_az": "İn pesər dər həmmam əst.",
+                            "az": "Bu oğlan hamamdadır.",
+                        },
+                        {
+                            "fa": "این پسر دوش می‌گیرد.",
+                            "reading_az": "İn pesər duş migirəd.",
+                            "az": "Bu oğlan duş alır.",
+                        },
+                    ],
+                },
+                {
+                    "image": "assets/images/lessons/lesson_02/baghche.png",
+                    "sentences": [
+                        {
+                            "fa": "این باغچه است.",
+                            "reading_az": "İn bağçe əst.",
+                            "az": "Bu bağçadır.",
+                        },
+                        {
+                            "fa": "در باغچه، گل و درخت وجود دارد.",
+                            "reading_az": "Dər bağçe, gol və dərəxt vocud darəd.",
+                            "az": "Bağçada gül və ağac var.",
+                        },
+                    ],
+                },
+                {
+                    "image": "assets/images/lessons/lesson_02/hammam.png",
+                    "sentences": [
+                        {
+                            "fa": "این حمّام است.",
+                            "reading_az": "İn həmmam əst.",
+                            "az": "Bu hamam otağıdır.",
+                        },
+                        {
+                            "fa": "حمّام ما تمیز است.",
+                            "reading_az": "Həmmame ma təmiz əst.",
+                            "az": "Bizim hamamımız təmizdir.",
+                        },
+                    ],
+                },
+            ],
+        },
         {
             "kind": "fill_blank",
             "instruction_az": "Boşluğu söz bankından uyğun sözlə doldurun.",
@@ -1069,14 +1642,70 @@ LESSON_2 = {
                 "درس می‌خوانید", "می‌کشیم", "می‌گذارد", "می‌شوید",
             ],
             "items": [
-                {"fa_with_blank": "آن‌ها در حمّام ___ .", "correct_answer": "دوش می‌گیرند"},
-                {"fa_with_blank": "من هر روز تابلو را ___ .", "correct_answer": "پاک می‌کنم"},
-                {"fa_with_blank": "در اتاق‌خوابِ من، تخت ___ .", "correct_answer": "وجود دارد"},
-                {"fa_with_blank": "مادرم هر روز در آشپزخانه ___ .", "correct_answer": "غذا می‌پزد"},
-                {"fa_with_blank": "شما هر روز در اتاقِ مطالعه ___ .", "correct_answer": "درس می‌خوانید"},
-                {"fa_with_blank": "من و حسین در کلاس، نقّاشی ___ .", "correct_answer": "می‌کشیم"},
-                {"fa_with_blank": "نرگس لباس‌های کثیف را در لباس‌شویی ___ .", "correct_answer": "می‌گذارد"},
-                {"fa_with_blank": "خدیجه لباس‌های کثیف را با لباس‌شویی ___ .", "correct_answer": "می‌شوید"},
+                {
+                    "fa_with_blank": "آن‌ها در حمّام ___ .",
+                    "correct_answer": "دوش می‌گیرند",
+                    "reading_az": "duş migirənd",
+                    "az": "duş alırlar",
+                    "full_reading_az": "Anha dər həmmam duş migirənd.",
+                    "full_translation_az": "Onlar hamamda duş alırlar.",
+                },
+                {
+                    "fa_with_blank": "من هر روز تابلو را ___ .",
+                    "correct_answer": "پاک می‌کنم",
+                    "reading_az": "pak mikonəm",
+                    "az": "təmizləyirəm",
+                    "full_reading_az": "Mən hər ruz təblo ra pak mikonəm.",
+                    "full_translation_az": "Mən hər gün lövhəni təmizləyirəm.",
+                },
+                {
+                    "fa_with_blank": "در اتاق‌خوابِ من، تخت ___ .",
+                    "correct_answer": "وجود دارد",
+                    "reading_az": "vocud darəd",
+                    "az": "var",
+                    "full_reading_az": "Dər otağe xabe mən, təxt vocud darəd.",
+                    "full_translation_az": "Mənim yataq otağımda çarpayı var.",
+                },
+                {
+                    "fa_with_blank": "مادرم هر روز در آشپزخانه ___ .",
+                    "correct_answer": "غذا می‌پزد",
+                    "reading_az": "qəza mipəzəd",
+                    "az": "yemək bişirir",
+                    "full_reading_az": "Madərəm hər ruz dər aşpəzxane qəza mipəzəd.",
+                    "full_translation_az": "Anam hər gün mətbəxdə yemək bişirir.",
+                },
+                {
+                    "fa_with_blank": "شما هر روز در اتاقِ مطالعه ___ .",
+                    "correct_answer": "درس می‌خوانید",
+                    "reading_az": "dərs mixanid",
+                    "az": "dərs oxuyursunuz",
+                    "full_reading_az": "Şoma hər ruz dər otağe motaleə dərs mixanid.",
+                    "full_translation_az": "Siz hər gün iş otağında dərs oxuyursunuz.",
+                },
+                {
+                    "fa_with_blank": "من و حسین در کلاس، نقّاشی ___ .",
+                    "correct_answer": "می‌کشیم",
+                    "reading_az": "mikeşim",
+                    "az": "çəkirik",
+                    "full_reading_az": "Mən va Hoseyn dər kelas, nəqqaşi mikeşim.",
+                    "full_translation_az": "Mən və Hüseyn sinifdə rəsm çəkirik.",
+                },
+                {
+                    "fa_with_blank": "نرگس لباس‌های کثیف را در لباس‌شویی ___ .",
+                    "correct_answer": "می‌گذارد",
+                    "reading_az": "migozarəd",
+                    "az": "qoyur",
+                    "full_reading_az": "Nərges lebashaye kəsif ra dər ləbasşuyi migozarəd.",
+                    "full_translation_az": "Nərgiz çirkli paltarları paltaryuyana qoyur.",
+                },
+                {
+                    "fa_with_blank": "خدیجه لباس‌های کثیف را با لباس‌شویی ___ .",
+                    "correct_answer": "می‌شوید",
+                    "reading_az": "mişuyəd",
+                    "az": "yuyur",
+                    "full_reading_az": "Xədice lebashaye kəsif ra ba ləbasşuyi mişuyəd.",
+                    "full_translation_az": "Xədicə çirkli paltarları paltaryuyanla yuyur.",
+                },
             ],
         },
         {
@@ -1102,57 +1731,113 @@ LESSON_2 = {
                 {"question_fa": "اسم بزرگ‌ترین فرزند احمد چیست؟", "options": ["زینب", "فاطمه", "علی"], "correct_index": 1},
             ],
         },
-        {
-            "kind": "practice_reveal",
-            "instruction_az": '"یا" ilə sual qurun və cavab verin.',
-            "items": [
-                {"prompt_fa": "بینی برای شنیدن است یا بوییدن؟", "answer_fa": "بینی برای بوییدن است."},
-                {"prompt_fa": "این خانم‌ها ظرف می‌شویند یا غذا می‌پزند؟", "answer_fa": "این خانم‌ها غذا می‌پزند."},
-                {"prompt_fa": "این اجاق‌گاز است یا لباس‌شویی؟", "answer_fa": "این لباس‌شویی است."},
-                {"prompt_fa": "این لباس‌شویی، بزرگ است یا کوچک؟", "answer_fa": "این لباس‌شویی، بزرگ است."},
-            ],
-        },
-        {
-            "kind": "practice_reveal",
-            "instruction_az": '"چه‌کار می‌کند؟" sualına cavab verin.',
-            "items": [
-                {"prompt_fa": "فاطمه چه‌کار می‌کند؟", "answer_fa": "فاطمه نامه می‌نویسد."},
-                {"prompt_fa": "علی چه‌کار می‌کند؟", "answer_fa": "علی نقّاشی می‌کشد."},
-                {"prompt_fa": "نرگس چه‌کار می‌کند؟", "answer_fa": "نرگس درس می‌خواند؛ او در اتاق مطالعه درس می‌خواند."},
-                {"prompt_fa": "شما (تو) چه‌کار می‌کنی؟ (لباس)", "answer_fa": "من لباس می‌شویم."},
-                {"prompt_fa": "شما (تو) چه‌کار می‌کنی؟ (حمّام)", "answer_fa": "من دوش می‌گیرم."},
-            ],
-        },
-        {
-            "kind": "practice_reveal",
-            "instruction_az": 'Nümunə kimi hörmət formasına çevirin: "تو پرستار هستی. → شما پرستار هستید."',
-            "items": [
-                {"prompt_fa": "تو نگهبان هستی.", "answer_fa": "شما نگهبان هستید."},
-                {"prompt_fa": "او استاد نیست.", "answer_fa": "ایشان استاد نیستند."},
-                {"prompt_fa": "او کتاب را روی میز می‌گذارد.", "answer_fa": "ایشان کتاب را روی میز می‌گذارند."},
-                {"prompt_fa": "تو در رستوران، غذا می‌خوری.", "answer_fa": "شما در رستوران، غذا می‌خورید."},
-                {"prompt_fa": "آیا او محمّدمهدی است؟", "answer_fa": "آیا ایشان محمّدمهدی هستند؟"},
-                {"prompt_fa": "آیا تو الآن دوش می‌گیری؟", "answer_fa": "آیا شما الآن دوش می‌گیرید؟"},
-            ],
-        },
-        {
-            "kind": "practice_reveal",
-            "instruction_az": '"خانه‌ی برادرم" mətninə əsasən cavab verin.',
-            "items": [
-                {
-                    "prompt_fa": "فاطمه در اتاق مطالعه چه‌کار می‌کند؟",
-                    "answer_fa": "فاطمه در اتاق مطالعه درس می‌خواند و تکلیف می‌نویسد.",
-                },
-                {
-                    "prompt_fa": "مبل و قفسه‌های کتاب کجاست؟",
-                    "answer_fa": "مبل و قفسه‌های کتاب در سالن پذیرایی و اتاق مطالعه است.",
-                },
-            ],
-        },
     ],
     "sentence_practice": {
-        "listen_items": [],
-        "answer_items": [],
+        "answer_note_fa": "۱. کجاست؟ = کجا است؟",
+        "answer_note_reading_az": "1. Kocast? = Koca əst?",
+        "answer_note_az": '1. "کجاست؟" (haradadır?) — "کجا است؟" birləşməsinin qısaldılmış formasıdır; hər ikisi eyni mənadadır.',
+        "listen_items": [
+            {
+                "fa": "خانه‌ی ما دو طبقه است و شش اتاق دارد.",
+                "reading_az": "Xane-ye ma do təbəqe əst və şeş otaq darəd.",
+                "az": "Bizim evimiz iki mərtəbəlidir və altı otağı var.",
+            },
+            {
+                "fa": "اتاق خواب و اتاق مطالعه‌ی من در طبقه‌ی دوم است.",
+                "reading_az": "Otağe xab və otağe motaleə-ye mən dər təbəqe-ye dovvom əst.",
+                "az": "Yataq otağım və iş otağım ikinci mərtəbədədir.",
+            },
+            {
+                "fa": "در اتاق خوابِ من، تخت، تشک، بالش، پتو و پرده وجود دارد.",
+                "reading_az": "Dər otağe xabe mən, təxt, toşək, baleş, pətu və pərde vocud darəd.",
+                "az": "Mənim yataq otağımda çarpayı, döşək, yastıq, adyal və pərdə var.",
+            },
+            {
+                "fa": "حیاط خانه‌ی ما بزرگ است. در حیاط ما یک باغچه هست.",
+                "reading_az": "Həyate xane-ye ma bozorg əst. Dər həyate ma yek bağçe həst.",
+                "az": "Evimizin həyəti böyükdür. Həyətimizdə bir bağça var.",
+            },
+            {
+                "fa": "در باغچه‌ی خانه‌ی ما یک درخت سیب و یک درخت انار وجود دارد.",
+                "reading_az": "Dər bağçe-ye xane-ye ma yek dərəxte sib və yek dərəxte anar vocud darəd.",
+                "az": "Evimizin bağçasında bir alma ağacı və bir nar ağacı var.",
+            },
+            {
+                "fa": "آن‌ها در تابستان با آب سرد و در زمستان با آب گرم دوش می‌گیرند.",
+                "reading_az": "Anha dər tabestan ba abe sərd və dər zemestan ba abe gərm duş migirənd.",
+                "az": "Onlar yayda soyuq su ilə, qışda isə isti su ilə duş alırlar.",
+            },
+            {
+                "fa": "خانه‌ی ما پارکینگ و حیاط ندارد. پدرم ماشین را در خیابان می‌گذارد.",
+                "reading_az": "Xane-ye ma parkinq və həyat nədarəd. Pedərəm maşin ra dər xiyaban migozarəd.",
+                "az": "Bizim evimizin avtomobil dayanacağı və həyəti yoxdur. Atam maşını küçəyə qoyur.",
+            },
+            {
+                "fa": "مادرم هر روز در آشپزخانه غذا می‌پزد و خواهرم سارا ظرف‌ها را می‌شوید.",
+                "reading_az": "Madərəm hər ruz dər aşpəzxane qəza mipəzəd və xahərəm Sara zərfha ra mişuyəd.",
+                "az": "Anam hər gün mətbəxdə yemək bişirir, bacım Sara isə qabları yuyur.",
+            },
+            {
+                "fa": "پرده‌های خانه‌ی ما کثیف است. من با لباس‌شویی، پرده‌های کثیف را می‌شویم.",
+                "reading_az": "Pərdehaye xane-ye ma kəsif əst. Mən ba ləbasşuyi, pərdehaye kəsif ra mişuyəm.",
+                "az": "Bizim evimizin pərdələri çirklidir. Mən çirkli pərdələri paltaryuyanla yuyuram.",
+            },
+            {
+                "fa": "در آشپزخانه‌ی ما اجاق‌گاز، لباس‌شویی، آب‌گرم‌کن و یک ظرف‌شویی بزرگ وجود دارد.",
+                "reading_az": "Dər aşpəzxane-ye ma ocaq-qaz, ləbasşuyi, abgərmkon və yek zərfşuyi-ye bozorg vocud darəd.",
+                "az": "Bizim mətbəximizdə qaz plitəsi, paltaryuyan, su qızdırıcısı və bir böyük qabyuyan maşın var.",
+            },
+        ],
+        "answer_items": [
+            {
+                "fa": "آیا پدر شما غذا نمی‌پزد؟",
+                "reading_az": "Aya pedəre şoma qəza nemipəzəd?",
+                "az": "Atanız yemək bişirmir?",
+                "sample_answer_fa": "نه، پدر من غذا نمی‌پزد؛ مادرم غذا می‌پزد.",
+                "sample_answer_reading_az": "Nə, pedəre mən qəza nemipəzəd; madərəm qəza mipəzəd.",
+                "sample_answer_az": "Xeyr, atam yemək bişirmir; anam yemək bişirir.",
+            },
+            {
+                "fa": "شما ظرف‌ها را کجا می‌شویید؟",
+                "reading_az": "Şoma zərfha ra koca mişuyid?",
+                "az": "Siz qabları harada yuyursunuz?",
+                "sample_answer_fa": "ما ظرف‌ها را در آشپزخانه می‌شوییم.",
+                "sample_answer_reading_az": "Ma zərfha ra dər aşpəzxane mişuyim.",
+                "sample_answer_az": "Biz qabları mətbəxdə yuyuruq.",
+            },
+            {
+                "fa": "یخچال مدرسه‌ی شما کجاست؟",
+                "reading_az": "Yəxçale mædrese-ye şoma kocast?",
+                "az": "Məktəbinizin soyuducusu haradadır?",
+                "sample_answer_fa": "یخچال مدرسه‌ی ما در آشپزخانه است.",
+                "sample_answer_reading_az": "Yəxçale mædrese-ye ma dər aşpəzxane əst.",
+                "sample_answer_az": "Məktəbimizin soyuducusu mətbəxdədir.",
+            },
+            {
+                "fa": "آیا پرده‌ی اتاق شما تمیز نیست؟",
+                "reading_az": "Aya pərde-ye otağe şoma təmiz nist?",
+                "az": "Otağınızın pərdəsi təmiz deyilmi?",
+                "sample_answer_fa": "چرا، پرده‌ی اتاق ما تمیز است.",
+                "sample_answer_reading_az": "Çera, pərde-ye otağe ma təmiz əst.",
+                "sample_answer_az": "Xeyr (əksinə), otağımızın pərdəsi təmizdir.",
+            },
+            {
+                "fa": "آیا کولر شما روی پشت‌بام است؟",
+                "reading_az": "Aya kuler-e şoma ruye poştebam əst?",
+                "az": "Sizin kondisioneriniz damın üstündədir?",
+                "sample_answer_fa": "بله، کولر ما روی پشت‌بام است.",
+                "sample_answer_reading_az": "Bəle, kuler-e ma ruye poştebam əst.",
+                "sample_answer_az": "Bəli, bizim kondisionerimiz damın üstündədir.",
+            },
+            {
+                "fa": "آیا لباس‌شویی شما در حمّام است؟",
+                "reading_az": "Aya ləbasşuyi-ye şoma dər həmmam əst?",
+                "az": "Paltaryuyanınız hamamdadır?",
+                "sample_answer_fa": "نه، لباس‌شویی ما در آشپزخانه است.",
+                "sample_answer_reading_az": "Nə, ləbasşuyi-ye ma dər aşpəzxane əst.",
+                "sample_answer_az": "Xeyr, bizim paltaryuyanımız mətbəxdədir.",
+            },
+        ],
     },
     "reading_text": {
         "title_fa": "خانه‌ی برادرم",
@@ -1179,6 +1864,126 @@ LESSON_2 = {
             "Masanın üstündə komputer, masa lampası, təqvim, kitab və yazı ləvazimatı var. Fatimə və Əli hər gün bu "
             "otaqda dərs oxuyur və tapşırıq yazırlar."
         ),
+        "sentences": [
+            {
+                "fa": "تهران، پایتخت ایران است.",
+                "reading_az": "Tehran, paytəxte Iran əst.",
+                "az": "Tehran, İranın paytaxtıdır.",
+                "new_paragraph": True,
+            },
+            {
+                "fa": "خانه‌ی برادرم احمد در تهران است.",
+                "reading_az": "Xane-ye bəradərəm Əhməd dər Tehran əst.",
+                "az": "Qardaşım Əhmədin evi Tehrandadır.",
+            },
+            {
+                "fa": "خانه‌ی او دو طبقه است.",
+                "reading_az": "Xane-ye u do təbəqe əst.",
+                "az": "Onun evi iki mərtəbəlidir.",
+            },
+            {
+                "fa": "ایشان سه فرزند دارد: دو دختر به نام فاطمه و زینب و یک پسر به نام علی.",
+                "reading_az": "İşan se fərzənd darəd: do doxtər be name Fateme və Zeynəb və yek pesər be name Əli.",
+                "az": "Onun üç övladı var: Fatimə və Zeynəb adında iki qızı, Əli adında bir oğlu.",
+                "new_paragraph": True,
+            },
+            {
+                "fa": "فاطمه بزرگ‌ترین فرزند برادرم است.",
+                "reading_az": "Fateme bozorgtərin fərzənde bəradərəm əst.",
+                "az": "Fatimə qardaşımın ən böyük övladıdır.",
+            },
+            {
+                "fa": "خانه‌ی برادرم یک سالن پذیرایی، دو اتاق خواب، یک اتاق مطالعه، آشپزخانه و سرویس‌بهداشتی دارد.",
+                "reading_az": "Xane-ye bəradərəm yek salone pəziraei, do otağe xab, yek otağe motaleə, aşpəzxane və servise behdaşti darəd.",
+                "az": "Qardaşımın evində bir qonaq otağı, iki yataq otağı, bir iş otağı, mətbəx və sanitar qovşağı var.",
+                "new_paragraph": True,
+            },
+            {
+                "fa": "سالن پذیرایی و اتاق مطالعه‌ی آن‌ها در طبقه‌ی دوم است.",
+                "reading_az": "Salone pəziraei va otağe motaleə-ye anha dər təbəqe-ye dovvom əst.",
+                "az": "Onların qonaq otağı və iş otağı ikinci mərtəbədədir.",
+            },
+            {
+                "fa": "در سالن پذیرایی آن‌ها مبل، میز پذیرایی و یک تلویزیون بزرگ هست.",
+                "reading_az": "Dər salone pəziraei-ye anha mobl, mize pəziraei və yek televizione bozorg həst.",
+                "az": "Onların qonaq otağında divan, qonaq masası və böyük bir televizor var.",
+                "new_paragraph": True,
+            },
+            {
+                "fa": "و در اتاق مطالعه سه قفسه‌ی کتاب، چهار صندلی و یک میز بزرگ وجود دارد.",
+                "reading_az": "Va dər otağe motaleə se qafase-ye ketab, çahar səndəli və yek mize bozorg vocud darəd.",
+                "az": "İş otağında isə üç kitab rəfi, dörd stul və böyük bir masa var.",
+            },
+            {
+                "fa": "روی میز، رایانه، چراغ مطالعه، تقویم، کتاب و نوشت‌افزار هست.",
+                "reading_az": "Ruye miz, rayane, çerağe motaleə, təqvim, ketab və neveştəfzar həst.",
+                "az": "Masanın üstündə komputer, masa lampası, təqvim, kitab və yazı ləvazimatı var.",
+                "new_paragraph": True,
+            },
+            {
+                "fa": "فاطمه و علی هر روز در این اتاق درس می‌خوانند و تکلیف می‌نویسند.",
+                "reading_az": "Fateme va Əli hər ruz dər in otaq dərs mixanənd va təklif minevisənd.",
+                "az": "Fatimə və Əli hər gün bu otaqda dərs oxuyur və tapşırıq yazırlar.",
+            },
+        ],
+        "comprehension_questions": [
+            {
+                "question_fa": "پایتخت ایران کجاست؟",
+                "reading_az": "Paytəxte Iran kocast?",
+                "az": "İranın paytaxtı haradadır?",
+                "sample_answer_fa": "پایتخت ایران، تهران است.",
+                "sample_answer_reading_az": "Paytəxte Iran, Tehran əst.",
+                "sample_answer_az": "İranın paytaxtı Tehrandır.",
+            },
+            {
+                "question_fa": "خانه‌ی احمد در کدام شهر است؟",
+                "reading_az": "Xane-ye Əhməd dər kodam şəhr əst?",
+                "az": "Əhmədin evi hansı şəhərdədir?",
+                "sample_answer_fa": "خانه‌ی احمد در تهران است.",
+                "sample_answer_reading_az": "Xane-ye Əhməd dər Tehran əst.",
+                "sample_answer_az": "Əhmədin evi Tehrandadır.",
+            },
+            {
+                "question_fa": "آیا احمد دو پسر و یک دختر دارد؟",
+                "reading_az": "Aya Əhməd do pesər və yek doxtər darəd?",
+                "az": "Əhmədin iki oğlu və bir qızı varmı?",
+                "sample_answer_fa": "نه، احمد دو دختر و یک پسر دارد.",
+                "sample_answer_reading_az": "Nə, Əhməd do doxtər və yek pesər darəd.",
+                "sample_answer_az": "Xeyr, Əhmədin iki qızı və bir oğlu var.",
+            },
+            {
+                "question_fa": "اسم بزرگ‌ترین فرزند احمد چیست؟",
+                "reading_az": "Esme bozorgtərin fərzəde Əhməd çist?",
+                "az": "Əhmədin ən böyük övladının adı nədir?",
+                "sample_answer_fa": "اسم بزرگ‌ترین فرزند احمد، فاطمه است.",
+                "sample_answer_reading_az": "Esme bozorgtərin fərzəde Əhməd, Fateme əst.",
+                "sample_answer_az": "Əhmədin ən böyük övladının adı Fatimədir.",
+            },
+            {
+                "question_fa": "سالن پذیرایی آن‌ها در کدام طبقه است؟",
+                "reading_az": "Salone pəziraei-ye anha dər kodam təbəqe əst?",
+                "az": "Onların qonaq otağı hansı mərtəbədədir?",
+                "sample_answer_fa": "سالن پذیرایی آن‌ها در طبقه‌ی دوم است.",
+                "sample_answer_reading_az": "Salone pəziraei-ye anha dər təbəqe-ye dovvom əst.",
+                "sample_answer_az": "Onların qonaq otağı ikinci mərtəbədədir.",
+            },
+            {
+                "question_fa": "فاطمه در اتاق مطالعه چه‌کار می‌کند؟",
+                "reading_az": "Fateme dər otağe motaleə çekar mikonəd?",
+                "az": "Fatimə iş otağında nə edir?",
+                "sample_answer_fa": "فاطمه در اتاق مطالعه درس می‌خواند و تکلیف می‌نویسد.",
+                "sample_answer_reading_az": "Fateme dər otağe motaleə dərs mixanəd və təklif minevisəd.",
+                "sample_answer_az": "Fatimə iş otağında dərs oxuyur və tapşırıq yazır.",
+            },
+            {
+                "question_fa": "مبل و قفسه‌های کتاب کجاست؟",
+                "reading_az": "Mobl və qafasehaye ketab kocast?",
+                "az": "Divan və kitab rəfləri haradadır?",
+                "sample_answer_fa": "مبل در سالن پذیرایی و قفسه‌های کتاب در اتاق مطالعه است.",
+                "sample_answer_reading_az": "Mobl dər salone pəziraei və qafasehaye ketab dər otağe motaleə əst.",
+                "sample_answer_az": "Divan qonaq otağında, kitab rəfləri isə iş otağındadır.",
+            },
+        ],
     },
 }
 
@@ -1261,7 +2066,7 @@ class Command(BaseCommand):
             .values_list("fa", "reading_az")
         )
 
-        # Idempotent: wipe existing children before recreating them.
+        # İdempotent: yenidən yaratmadan əvvəl mövcud alt-elementləri sil.
         lesson.vocabulary.all().delete()
         lesson.grammar_notes.all().delete()
         lesson.fill_blank_exercises.all().delete()
@@ -1269,6 +2074,7 @@ class Command(BaseCommand):
         lesson.multiple_choice_exercises.all().delete()
         lesson.practice_reveal_exercises.all().delete()
         lesson.picture_sentence_exercises.all().delete()
+        lesson.answer_question_exercises.all().delete()
         ReadingText.objects.filter(lesson=lesson).delete()
         # SentencePractice itself is not wiped here: "Məsdərlər" (Infinitive/
         # ConjugatedForm) content lives only in the admin panel, never in this
@@ -1288,7 +2094,13 @@ class Command(BaseCommand):
 
         for order, note_data in enumerate(data["grammar_notes"]):
             note = GrammarNote.objects.create(
-                lesson=lesson, title_az=note_data["title_az"], title_fa=note_data["title_fa"], order=order,
+                lesson=lesson,
+                title_az=note_data["title_az"],
+                title_fa=note_data["title_fa"],
+                order=order,
+                note_fa=note_data.get("note_fa", ""),
+                note_reading_az=note_data.get("note_reading_az", ""),
+                note_az=note_data.get("note_az", ""),
             )
             for c_order, row in enumerate(note_data["conjugations"]):
                 ConjugationRow.objects.create(grammar_note=note, order=c_order, **row)
@@ -1326,7 +2138,7 @@ class Command(BaseCommand):
 
         exercise_order = {
             "fill_blank": 0, "true_false_image": 0, "multiple_choice": 0, "practice_reveal": 0,
-            "picture_sentences": 0,
+            "picture_sentences": 0, "answer_question": 0,
         }
         for overall_order, ex_data in enumerate(data["exercises"]):
             kind = ex_data["kind"]
@@ -1379,21 +2191,59 @@ class Command(BaseCommand):
                     PracticeRevealItem.objects.create(exercise=exercise, order=i_order, **item)
 
             elif kind == "picture_sentences":
-                exercise = PictureSentenceExercise.objects.create(
-                    lesson=lesson, instruction_az=ex_data["instruction_az"], order=overall_order,
+                exercise = PictureSentenceExercise(
+                    lesson=lesson,
+                    instruction_az=ex_data["instruction_az"],
+                    title_fa=ex_data.get("title_fa", ""),
+                    example_fa=ex_data.get("example_fa", ""),
+                    example_reading_az=ex_data.get("example_reading_az", ""),
+                    example_az=ex_data.get("example_az", ""),
+                    example_answer_fa=ex_data.get("example_answer_fa", ""),
+                    example_answer_reading_az=ex_data.get("example_answer_reading_az", ""),
+                    example_answer_az=ex_data.get("example_answer_az", ""),
+                    order=overall_order,
                 )
+                self._attach_image(
+                    exercise, "example_image", ex_data.get("example_image"), assets_dir
+                )
+                self._attach_image(
+                    exercise, "example_image_have", ex_data.get("example_image_have"), assets_dir
+                )
+                self._attach_image(
+                    exercise, "example_image_not_have", ex_data.get("example_image_not_have"), assets_dir
+                )
+                exercise.save()
                 for i_order, item_data in enumerate(ex_data["items"]):
                     pic_item = PictureSentenceItem(exercise=exercise, order=i_order)
                     self._attach_image(pic_item, "image", item_data.get("image"), assets_dir)
+                    self._attach_image(pic_item, "image_have", item_data.get("image_have"), assets_dir)
+                    self._attach_image(pic_item, "image_not_have", item_data.get("image_not_have"), assets_dir)
                     pic_item.save()
                     for s_order, line in enumerate(item_data["sentences"]):
                         PictureSentenceLine.objects.create(item=pic_item, order=s_order, **line)
+
+            elif kind == "answer_question":
+                exercise = AnswerQuestionExercise.objects.create(
+                    lesson=lesson,
+                    title_fa=ex_data.get("title_fa", ""),
+                    instruction_az=ex_data["instruction_az"],
+                    note_fa=ex_data.get("note_fa", ""),
+                    note_reading_az=ex_data.get("note_reading_az", ""),
+                    note_az=ex_data.get("note_az", ""),
+                    order=overall_order,
+                )
+                for i_order, item in enumerate(ex_data["items"]):
+                    AnswerQuestionExerciseItem.objects.create(exercise=exercise, order=i_order, **item)
 
         if "sentence_practice" in data:
             practice_data = data["sentence_practice"]
             # get_or_create (not create): "Məsdərlər" (Infinitive/ConjugatedForm)
             # is admin-only content and must survive re-seeding untouched.
             practice, _ = SentencePractice.objects.get_or_create(lesson=lesson)
+            practice.answer_note_fa = practice_data.get("answer_note_fa", "")
+            practice.answer_note_reading_az = practice_data.get("answer_note_reading_az", "")
+            practice.answer_note_az = practice_data.get("answer_note_az", "")
+            practice.save()
             practice.listen_items.all().delete()
             practice.answer_items.all().delete()
             for l_order, item in enumerate(practice_data.get("listen_items", [])):

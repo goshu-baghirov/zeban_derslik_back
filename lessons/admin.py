@@ -3,6 +3,8 @@ from django.contrib import admin
 from django.utils.html import format_html
 
 from .models import (
+    AnswerQuestionExercise,
+    AnswerQuestionExerciseItem,
     AnswerQuestionSentence,
     ConjugatedForm,
     ConjugationRow,
@@ -131,7 +133,7 @@ class PictureSentenceLineInline(nested_admin.NestedTabularInline):
 class PictureSentenceItemInline(nested_admin.NestedStackedInline):
     model = PictureSentenceItem
     extra = 1
-    fields = ("order", "image", "preview")
+    fields = ("order", "image", "preview", "image_have", "image_not_have")
     readonly_fields = ("preview",)
     inlines = [PictureSentenceLineInline]
 
@@ -144,7 +146,20 @@ class PictureSentenceItemInline(nested_admin.NestedStackedInline):
 class PictureSentenceExerciseInline(nested_admin.NestedStackedInline):
     model = PictureSentenceExercise
     extra = 0
-    fields = ("instruction_az", "order")
+    fields = (
+        "instruction_az",
+        "title_fa",
+        "example_fa",
+        "example_reading_az",
+        "example_az",
+        "example_answer_fa",
+        "example_answer_reading_az",
+        "example_answer_az",
+        "example_image",
+        "example_image_have",
+        "example_image_not_have",
+        "order",
+    )
     inlines = [PictureSentenceItemInline]
 
 
@@ -157,6 +172,19 @@ class MultipleChoiceExerciseInline(nested_admin.NestedStackedInline):
     model = MultipleChoiceExercise
     extra = 0
     inlines = [MultipleChoiceItemInline]
+
+
+class AnswerQuestionExerciseItemInline(nested_admin.NestedTabularInline):
+    model = AnswerQuestionExerciseItem
+    extra = 1
+    fields = ("order", "fa", "reading_az", "az", "sample_answer_fa", "sample_answer_reading_az", "sample_answer_az")
+
+
+class AnswerQuestionExerciseInline(nested_admin.NestedStackedInline):
+    model = AnswerQuestionExercise
+    extra = 0
+    fields = ("order", "title_fa", "instruction_az", "note_fa", "note_reading_az", "note_az")
+    inlines = [AnswerQuestionExerciseItemInline]
 
 
 class PracticeRevealItemInline(nested_admin.NestedTabularInline):
@@ -276,6 +304,7 @@ class LessonAdmin(nested_admin.NestedModelAdmin):
         MultipleChoiceExerciseInline,
         PracticeRevealExerciseInline,
         PictureSentenceExerciseInline,
+        AnswerQuestionExerciseInline,
         ReadingTextInline,
     ]
 
