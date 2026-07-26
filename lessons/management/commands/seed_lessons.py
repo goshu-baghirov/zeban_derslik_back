@@ -23,9 +23,8 @@ from lessons.models import (
     Grade,
     GrammarNote,
     Lesson,
+    ListenReadExercise,
     ListenReadSentence,
-    MultipleChoiceExercise,
-    MultipleChoiceItem,
     PictureSentenceExercise,
     PictureSentenceItem,
     PictureSentenceLine,
@@ -35,8 +34,6 @@ from lessons.models import (
     ReadingFootnote,
     ReadingText,
     SentencePractice,
-    TrueFalseImageExercise,
-    TrueFalseImageItem,
     VocabWord,
 )
 from .lesson_data import LESSONS as EXTRA_LESSONS
@@ -745,46 +742,50 @@ LESSON_1 = {
         },
     ],
     "sentence_practice": {
-        "listen_items": [
+        "listen_exercises": [
             {
-                "fa": "این خودکار، آبی است. من با خودکار آبی می‌نویسم.",
-                "reading_az": "İn xodkar, abi əst. Mən ba xodkare abi minevisəm.",
-                "az": "Bu tükənməz qələm mavidir. Mən mavi tükənməz qələmlə yazıram.",
-            },
-            {
-                "fa": "محمّد مدادتراش دارد. مدادتراش او قرمز است. او مدادتراش را در جامدادی می‌گذارد.",
-                "reading_az": "Məhəmməd medadtəraş darəd. Medadtəraşe u qermez əst. U medadtəraş ra dər camedani migozarəd.",
-                "az": "Məhəmmədin qələmyonanı var. Onun qələmyonanı qırmızıdır. O, qələmyonanı qələmqabına qoyur.",
-            },
-            {
-                "fa": "آن جامدادی، بزرگ و تمیز است. در آن جامدادی سه مداد، دو خودکار و یک پاک‌کن هست.",
-                "reading_az": "An camedani, bozorg və təmiz əst. Dər an camedani se medad, do xodkar və yek pakkon həst.",
-                "az": "O qələmqabı böyük və təmizdir. O qələmqabıda üç karandaş, iki tükənməz qələm və bir pozan var.",
-            },
-            {
-                "fa": "برادر کوچک من با مداد می‌نویسد و با پاک‌کن پاک می‌کند.",
-                "reading_az": "Bəradəre kuçəke mən ba medad minevisəd və ba pakkon pak mikonəd.",
-                "az": "Mənim kiçik qardaşım karandaşla yazır və pozanla silir.",
-            },
-            {
-                "fa": "آن‌ها با خودکار و خودنویس می‌نویسند و با غلط‌گیر پاک می‌کنند.",
-                "reading_az": "Anha ba xodkar və xodnəvis minevisənd və ba qəltgir pak mikonənd.",
-                "az": "Onlar tükənməz qələm və dolma qələmlə yazırlar və korrektorla silirlər.",
-            },
-            {
-                "fa": "آیا فاطمه روی تابلو نقّاشی می‌کشد؟ نه، فاطمه روی مقوّا نقّاشی می‌کشد.",
-                "reading_az": "Aya Fateme ruye təblo nəqqaşi mikeşəd? Nə, Fateme ruye moqəvva nəqqaşi mikeşəd.",
-                "az": "Fatimə lövhənin üstündə rəsm çəkirmi? Xeyr, Fatimə karton üzərində rəsm çəkir.",
-            },
-            {
-                "fa": "آیا در کیف شما (تو) ماشین‌حساب هست؟ بله، در کیف من ماشین‌حساب هست.",
-                "reading_az": "Aya dər kife şoma (to) maşinhesab həst? Bəle, dər kife mən maşinhesab həst.",
-                "az": "Sənin çantanda kalkulyator varmı? Bəli, mənim çantamda kalkulyator var.",
-            },
-            {
-                "fa": "آیا شما کتاب و نوشت‌افزار را در کیف می‌گذارید؟ بله، ما کتاب و نوشت‌افزار را در کیف می‌گذاریم.",
-                "reading_az": "Aya şoma ketab və neveştəfzar ra dər kif migozarid? Bəle, ma ketab və neveştəfzar ra dər kif migozarim.",
-                "az": "Siz kitab və yazı ləvazimatını çantaya qoyursunuzmu? Bəli, biz kitab və yazı ləvazimatını çantaya qoyuruq.",
+                "items": [
+                    {
+                        "fa": "این خودکار، آبی است. من با خودکار آبی می‌نویسم.",
+                        "reading_az": "İn xodkar, abi əst. Mən ba xodkare abi minevisəm.",
+                        "az": "Bu tükənməz qələm mavidir. Mən mavi tükənməz qələmlə yazıram.",
+                    },
+                    {
+                        "fa": "محمّد مدادتراش دارد. مدادتراش او قرمز است. او مدادتراش را در جامدادی می‌گذارد.",
+                        "reading_az": "Məhəmməd medadtəraş darəd. Medadtəraşe u qermez əst. U medadtəraş ra dər camedani migozarəd.",
+                        "az": "Məhəmmədin qələmyonanı var. Onun qələmyonanı qırmızıdır. O, qələmyonanı qələmqabına qoyur.",
+                    },
+                    {
+                        "fa": "آن جامدادی، بزرگ و تمیز است. در آن جامدادی سه مداد، دو خودکار و یک پاک‌کن هست.",
+                        "reading_az": "An camedani, bozorg və təmiz əst. Dər an camedani se medad, do xodkar və yek pakkon həst.",
+                        "az": "O qələmqabı böyük və təmizdir. O qələmqabıda üç karandaş, iki tükənməz qələm və bir pozan var.",
+                    },
+                    {
+                        "fa": "برادر کوچک من با مداد می‌نویسد و با پاک‌کن پاک می‌کند.",
+                        "reading_az": "Bəradəre kuçəke mən ba medad minevisəd və ba pakkon pak mikonəd.",
+                        "az": "Mənim kiçik qardaşım karandaşla yazır və pozanla silir.",
+                    },
+                    {
+                        "fa": "آن‌ها با خودکار و خودنویس می‌نویسند و با غلط‌گیر پاک می‌کنند.",
+                        "reading_az": "Anha ba xodkar və xodnəvis minevisənd və ba qəltgir pak mikonənd.",
+                        "az": "Onlar tükənməz qələm və dolma qələmlə yazırlar və korrektorla silirlər.",
+                    },
+                    {
+                        "fa": "آیا فاطمه روی تابلو نقّاشی می‌کشد؟ نه، فاطمه روی مقوّا نقّاشی می‌کشد.",
+                        "reading_az": "Aya Fateme ruye təblo nəqqaşi mikeşəd? Nə, Fateme ruye moqəvva nəqqaşi mikeşəd.",
+                        "az": "Fatimə lövhənin üstündə rəsm çəkirmi? Xeyr, Fatimə karton üzərində rəsm çəkir.",
+                    },
+                    {
+                        "fa": "آیا در کیف شما (تو) ماشین‌حساب هست؟ بله، در کیف من ماشین‌حساب هست.",
+                        "reading_az": "Aya dər kife şoma (to) maşinhesab həst? Bəle, dər kife mən maşinhesab həst.",
+                        "az": "Sənin çantanda kalkulyator varmı? Bəli, mənim çantamda kalkulyator var.",
+                    },
+                    {
+                        "fa": "آیا شما کتاب و نوشت‌افزار را در کیف می‌گذارید؟ بله، ما کتاب و نوشت‌افزار را در کیف می‌گذاریم.",
+                        "reading_az": "Aya şoma ketab və neveştəfzar ra dər kif migozarid? Bəle, ma ketab və neveştəfzar ra dər kif migozarim.",
+                        "az": "Siz kitab və yazı ləvazimatını çantaya qoyursunuzmu? Bəli, biz kitab və yazı ləvazimatını çantaya qoyuruq.",
+                    },
+                ],
             },
         ],
         "answer_items": [
@@ -1377,6 +1378,7 @@ LESSON_2 = {
             "example_answer_fa": "این کودک غذا می‌خورد.",
             "example_answer_reading_az": "İn kudək qəza mixorəd.",
             "example_answer_az": "Bu uşaq yemək yeyir.",
+            "example_image": "assets/images/lessons/lesson_02/ghaza_mikhorad.png",
             "items": [
                 {
                     "sentences": [
@@ -1462,48 +1464,229 @@ LESSON_2 = {
             ],
         },
         {
+            "kind": "fill_blank",
+            "instruction_az": "Boşluğu söz bankından uyğun sözlə doldurun.",
+            "word_bank": [
+                "دوش می‌گیرند", "پاک می‌کنم", "وجود دارد", "غذا می‌پزد",
+                "درس می‌خوانید", "می‌کشیم", "می‌گذارد", "می‌شوید",
+            ],
+            "items": [
+                {
+                    "fa_with_blank": "آن‌ها در حمّام ___ .",
+                    "correct_answer": "دوش می‌گیرند",
+                    "reading_az": "duş migirənd",
+                    "az": "duş alırlar",
+                    "full_reading_az": "Anha dər həmmam duş migirənd.",
+                    "full_translation_az": "Onlar hamamda duş alırlar.",
+                },
+                {
+                    "fa_with_blank": "من هر روز تابلو را ___ .",
+                    "correct_answer": "پاک می‌کنم",
+                    "reading_az": "pak mikonəm",
+                    "az": "təmizləyirəm",
+                    "full_reading_az": "Mən hər ruz təblo ra pak mikonəm.",
+                    "full_translation_az": "Mən hər gün lövhəni təmizləyirəm.",
+                },
+                {
+                    "fa_with_blank": "در اتاق‌خوابِ من، تخت ___ .",
+                    "correct_answer": "وجود دارد",
+                    "reading_az": "vocud darəd",
+                    "az": "var",
+                    "full_reading_az": "Dər otağe xabe mən, təxt vocud darəd.",
+                    "full_translation_az": "Mənim yataq otağımda çarpayı var.",
+                },
+                {
+                    "fa_with_blank": "مادرم هر روز در آشپزخانه ___ .",
+                    "correct_answer": "غذا می‌پزد",
+                    "reading_az": "qəza mipəzəd",
+                    "az": "yemək bişirir",
+                    "full_reading_az": "Madərəm hər ruz dər aşpəzxane qəza mipəzəd.",
+                    "full_translation_az": "Anam hər gün mətbəxdə yemək bişirir.",
+                },
+                {
+                    "fa_with_blank": "شما هر روز در اتاقِ مطالعه ___ .",
+                    "correct_answer": "درس می‌خوانید",
+                    "reading_az": "dərs mixanid",
+                    "az": "dərs oxuyursunuz",
+                    "full_reading_az": "Şoma hər ruz dər otağe motaleə dərs mixanid.",
+                    "full_translation_az": "Siz hər gün iş otağında dərs oxuyursunuz.",
+                },
+                {
+                    "fa_with_blank": "من و حسین در کلاس، نقّاشی ___ .",
+                    "correct_answer": "می‌کشیم",
+                    "reading_az": "mikeşim",
+                    "az": "çəkirik",
+                    "full_reading_az": "Mən va Hoseyn dər kelas, nəqqaşi mikeşim.",
+                    "full_translation_az": "Mən və Hüseyn sinifdə rəsm çəkirik.",
+                },
+                {
+                    "fa_with_blank": "نرگس لباس‌های کثیف را در لباس‌شویی ___ .",
+                    "correct_answer": "می‌گذارد",
+                    "reading_az": "migozarəd",
+                    "az": "qoyur",
+                    "full_reading_az": "Nərges lebashaye kəsif ra dər ləbasşuyi migozarəd.",
+                    "full_translation_az": "Nərgiz çirkli paltarları paltaryuyana qoyur.",
+                },
+                {
+                    "fa_with_blank": "خدیجه لباس‌های کثیف را با لباس‌شویی ___ .",
+                    "correct_answer": "می‌شوید",
+                    "reading_az": "mişuyəd",
+                    "az": "yuyur",
+                    "full_reading_az": "Xədice lebashaye kəsif ra ba ləbasşuyi mişuyəd.",
+                    "full_translation_az": "Xədicə çirkli paltarları paltaryuyanla yuyur.",
+                },
+            ],
+        },
+        {
+            "kind": "answer_question",
+            "title_fa": "خانه‌ی ما",
+            "instruction_az": "Nümunə kimi deyin",
+            "example_fa": "*خانه‌ی ما*\nخانه‌ی ما دو اتاق خواب، یک اتاق پذیرایی، آشپزخانه و سرویس بهداشتی *دارد*.",
+            "example_reading_az": "Xane-ye ma do otağe xab, yek otağe pəzirayi, aşpəzxane va servise behdaşti darəd.",
+            "example_az": "Bizim evimizin iki yataq otağı, bir qonaq otağı, mətbəxi və sanitar qovşağı var.",
+            "items": [
+                {
+                    "fa": "اتاق من",
+                    "reading_az": "Otaqe mən",
+                    "az": "Mənim otağım",
+                    "sample_answer_fa": "اتاق من یک تخت، یک میز و یک کتابخانه دارد.",
+                    "sample_answer_reading_az": "Otaqe mən yek təxt, yek miz va yek ketabxane darəd.",
+                    "sample_answer_az": "Mənim otağımın bir çarpayısı, bir masası və bir kitab rəfi var.",
+                },
+                {
+                    "fa": "آشپزخانه‌ی ما",
+                    "reading_az": "Aşpəzxane-ye ma",
+                    "az": "Bizim mətbəximiz",
+                    "sample_answer_fa": "آشپزخانه‌ی ما یک اجاق‌گاز، یک یخچال و یک ظرف‌شویی دارد.",
+                    "sample_answer_reading_az": "Aşpəzxane-ye ma yek ocaq-qaz, yek yəxçal va yek zərfşuyi darəd.",
+                    "sample_answer_az": "Bizim mətbəximizin bir qaz plitəsi, bir soyuducusu və bir qabyuyan maşını var.",
+                },
+                {
+                    "fa": "مدرسه‌ی شما",
+                    "reading_az": "Mædrese-ye şoma",
+                    "az": "Sizin məktəbiniz",
+                    "sample_answer_fa": "مدرسه‌ی ما چند کلاس، یک کتابخانه و یک حیاط بزرگ دارد.",
+                    "sample_answer_reading_az": "Mædrese-ye ma çənd kelas, yek ketabxane va yek həyate bozorg darəd.",
+                    "sample_answer_az": "Bizim məktəbimizin bir neçə sinfi, bir kitabxanası və bir böyük həyəti var.",
+                },
+                {
+                    "fa": "حیاط خانه‌ی پدرم",
+                    "reading_az": "Həyate xane-ye pedərəm",
+                    "az": "Atamın evinin həyəti",
+                    "sample_answer_fa": "حیاط خانه‌ی پدرم یک باغچه و چند درخت میوه دارد.",
+                    "sample_answer_reading_az": "Həyate xane-ye pedərəm yek bağçe va çənd dərəxte mive darəd.",
+                    "sample_answer_az": "Atamın evinin həyətində bir bağça və bir neçə meyvə ağacı var.",
+                },
+            ],
+        },
+        {
             "kind": "practice_reveal",
             "title_fa": "مانند مثال تبدیل کنید",
             "instruction_az": "Nümunə kimi hörmət formasına çevirin",
-            "example_fa": "تو پرستار هستی. ← شما پرستار *هستید*.",
-            "example_reading_az": "To pərəstar həsti. ← Şoma pərəstar həstid.",
-            "example_az": "Sən tibb bacısısan. ← Siz tibb bacısısınız.",
+            "example_fa": "*تو* پرستار *هستی*. ← *شما* پرستار *هستی*. / *شما* پرستار *هستید*.",
+            "example_reading_az": "To pərəstar həsti. ← Şoma pərəstar həsti. / Şoma pərəstar həstid.",
+            "example_az": "Sən tibb bacısısan. ← Siz tibb bacısısınız. (Fel tək və ya cəm ola bilər.)",
             "items": [
                 {
                     "prompt_fa": "تو نگهبان هستی.",
-                    "answer_fa": "شما نگهبان هستید.",
-                    "reading_az": "Şoma negəhban həstid.",
+                    "answer_fa": "شما نگهبان هستی. / شما نگهبان هستید.",
+                    "reading_az": "Şoma negəhban həsti. / Şoma negəhban həstid.",
                     "az": "Siz keşikçisiniz.",
                 },
                 {
                     "prompt_fa": "او استاد نیست.",
-                    "answer_fa": "ایشان استاد نیستند.",
-                    "reading_az": "İşan ostad nistənd.",
+                    "answer_fa": "ایشان استاد نیست. / ایشان استاد نیستند.",
+                    "reading_az": "İşan ostad nist. / İşan ostad nistənd.",
                     "az": "Onlar müəllim deyillər.",
                 },
                 {
                     "prompt_fa": "او کتاب را روی میز می‌گذارد.",
-                    "answer_fa": "ایشان کتاب را روی میز می‌گذارند.",
-                    "reading_az": "İşan ketab ra ruye miz migozarənd.",
+                    "answer_fa": "ایشان کتاب را روی میز می‌گذارد. / ایشان کتاب را روی میز می‌گذارند.",
+                    "reading_az": "İşan ketab ra ruye miz migozarəd. / İşan ketab ra ruye miz migozarənd.",
                     "az": "Onlar kitabı masanın üstünə qoyurlar.",
                 },
                 {
                     "prompt_fa": "تو در رستوران، غذا می‌خوری.",
-                    "answer_fa": "شما در رستوران، غذا می‌خورید.",
-                    "reading_az": "Şoma dər restoran, qəza mixorid.",
+                    "answer_fa": "شما در رستوران، غذا می‌خوری. / شما در رستوران، غذا می‌خورید.",
+                    "reading_az": "Şoma dər restoran, qəza mixori. / Şoma dər restoran, qəza mixorid.",
                     "az": "Siz restoranda yemək yeyirsiniz.",
                 },
                 {
                     "prompt_fa": "آیا او محمّدمهدی است؟",
-                    "answer_fa": "آیا ایشان محمّدمهدی هستند؟",
-                    "reading_az": "Aya işan Mohəmmədmehdi həstənd?",
+                    "answer_fa": "آیا ایشان محمّدمهدی است؟ / آیا ایشان محمّدمهدی هستند؟",
+                    "reading_az": "Aya işan Mohəmmədmehdi əst? / Aya işan Mohəmmədmehdi həstənd?",
                     "az": "O zat Məhəmmədmehdidirmi?",
                 },
                 {
                     "prompt_fa": "آیا تو الآن دوش می‌گیری؟",
-                    "answer_fa": "آیا شما الآن دوش می‌گیرید؟",
-                    "reading_az": "Aya şoma əl-an duş migirid?",
+                    "answer_fa": "آیا شما الآن دوش می‌گیری؟ / آیا شما الآن دوش می‌گیرید؟",
+                    "reading_az": "Aya şoma əl-an duş migiri? / Aya şoma əl-an duş migirid?",
                     "az": "Siz indi duş alırsınız?",
+                },
+            ],
+        },
+        {
+            "kind": "fill_blank",
+            "instruction_az": "Boşluğu söz bankından uyğun sözlə doldurun.",
+            "word_bank": [
+                "قفسه", "پارکینگ", "مطالعه", "حمّام", "پشت‌بام", "لباس‌شویی", "خواب",
+            ],
+            "items": [
+                {
+                    "fa_with_blank": "او الآن در ___ دوش می‌گیرد.",
+                    "correct_answer": "حمّام",
+                    "reading_az": "həmmam",
+                    "az": "hamam",
+                    "full_reading_az": "U al-an dər həmmam duş migirəd.",
+                    "full_translation_az": "O, indi hamamda duş alır.",
+                },
+                {
+                    "fa_with_blank": "من کتاب‌هایم را در ___ می‌گذارم.",
+                    "correct_answer": "قفسه",
+                    "reading_az": "qafase",
+                    "az": "rəf",
+                    "full_reading_az": "Mən ketab-hayam ra dər qafase migozaram.",
+                    "full_translation_az": "Mən kitablarımı rəfə qoyuram.",
+                },
+                {
+                    "fa_with_blank": "ماشین در ___ است.",
+                    "correct_answer": "پارکینگ",
+                    "reading_az": "parkinq",
+                    "az": "avtomobil dayanacağı",
+                    "full_reading_az": "Maşin dər parkinq əst.",
+                    "full_translation_az": "Maşın avtomobil dayanacağındadır.",
+                },
+                {
+                    "fa_with_blank": "کولر روی ___ است.",
+                    "correct_answer": "پشت‌بام",
+                    "reading_az": "poştebam",
+                    "az": "dam",
+                    "full_reading_az": "Kuler ruye poştebam əst.",
+                    "full_translation_az": "Kondisioner damın üstündədir.",
+                },
+                {
+                    "fa_with_blank": "مادرم لباس‌های کثیف را در ___ می‌گذارد.",
+                    "correct_answer": "لباس‌شویی",
+                    "reading_az": "lebasşuyi",
+                    "az": "paltaryuyan",
+                    "full_reading_az": "Madərəm lebashaye kəsif ra dər ləbasşuyi migozarəd.",
+                    "full_translation_az": "Anam çirkli paltarları paltaryuyana qoyur.",
+                },
+                {
+                    "fa_with_blank": "در اتاق ___‌ی من دو قفسه‌ی کتاب وجود دارد.",
+                    "correct_answer": "مطالعه",
+                    "reading_az": "motaleə",
+                    "az": "iş/oxu",
+                    "full_reading_az": "Dər otağe motaleə-ye mən do qafase-ye ketab vocud darəd.",
+                    "full_translation_az": "Mənim iş otağımda iki kitab rəfi var.",
+                },
+                {
+                    "fa_with_blank": "در اتاق ___ جواد تخت، تشک، بالش و پتو هست.",
+                    "correct_answer": "خواب",
+                    "reading_az": "xab",
+                    "az": "yataq",
+                    "full_reading_az": "Dər otağe xabe Cavad təxt, toşək, baleş va pətu həst.",
+                    "full_translation_az": "Cavadın yataq otağında çarpayı, döşək, yastıq və adyal var.",
                 },
             ],
         },
@@ -1634,158 +1817,65 @@ LESSON_2 = {
                 },
             ],
         },
-        {
-            "kind": "fill_blank",
-            "instruction_az": "Boşluğu söz bankından uyğun sözlə doldurun.",
-            "word_bank": [
-                "دوش می‌گیرند", "پاک می‌کنم", "وجود دارد", "غذا می‌پزد",
-                "درس می‌خوانید", "می‌کشیم", "می‌گذارد", "می‌شوید",
-            ],
-            "items": [
-                {
-                    "fa_with_blank": "آن‌ها در حمّام ___ .",
-                    "correct_answer": "دوش می‌گیرند",
-                    "reading_az": "duş migirənd",
-                    "az": "duş alırlar",
-                    "full_reading_az": "Anha dər həmmam duş migirənd.",
-                    "full_translation_az": "Onlar hamamda duş alırlar.",
-                },
-                {
-                    "fa_with_blank": "من هر روز تابلو را ___ .",
-                    "correct_answer": "پاک می‌کنم",
-                    "reading_az": "pak mikonəm",
-                    "az": "təmizləyirəm",
-                    "full_reading_az": "Mən hər ruz təblo ra pak mikonəm.",
-                    "full_translation_az": "Mən hər gün lövhəni təmizləyirəm.",
-                },
-                {
-                    "fa_with_blank": "در اتاق‌خوابِ من، تخت ___ .",
-                    "correct_answer": "وجود دارد",
-                    "reading_az": "vocud darəd",
-                    "az": "var",
-                    "full_reading_az": "Dər otağe xabe mən, təxt vocud darəd.",
-                    "full_translation_az": "Mənim yataq otağımda çarpayı var.",
-                },
-                {
-                    "fa_with_blank": "مادرم هر روز در آشپزخانه ___ .",
-                    "correct_answer": "غذا می‌پزد",
-                    "reading_az": "qəza mipəzəd",
-                    "az": "yemək bişirir",
-                    "full_reading_az": "Madərəm hər ruz dər aşpəzxane qəza mipəzəd.",
-                    "full_translation_az": "Anam hər gün mətbəxdə yemək bişirir.",
-                },
-                {
-                    "fa_with_blank": "شما هر روز در اتاقِ مطالعه ___ .",
-                    "correct_answer": "درس می‌خوانید",
-                    "reading_az": "dərs mixanid",
-                    "az": "dərs oxuyursunuz",
-                    "full_reading_az": "Şoma hər ruz dər otağe motaleə dərs mixanid.",
-                    "full_translation_az": "Siz hər gün iş otağında dərs oxuyursunuz.",
-                },
-                {
-                    "fa_with_blank": "من و حسین در کلاس، نقّاشی ___ .",
-                    "correct_answer": "می‌کشیم",
-                    "reading_az": "mikeşim",
-                    "az": "çəkirik",
-                    "full_reading_az": "Mən va Hoseyn dər kelas, nəqqaşi mikeşim.",
-                    "full_translation_az": "Mən və Hüseyn sinifdə rəsm çəkirik.",
-                },
-                {
-                    "fa_with_blank": "نرگس لباس‌های کثیف را در لباس‌شویی ___ .",
-                    "correct_answer": "می‌گذارد",
-                    "reading_az": "migozarəd",
-                    "az": "qoyur",
-                    "full_reading_az": "Nərges lebashaye kəsif ra dər ləbasşuyi migozarəd.",
-                    "full_translation_az": "Nərgiz çirkli paltarları paltaryuyana qoyur.",
-                },
-                {
-                    "fa_with_blank": "خدیجه لباس‌های کثیف را با لباس‌شویی ___ .",
-                    "correct_answer": "می‌شوید",
-                    "reading_az": "mişuyəd",
-                    "az": "yuyur",
-                    "full_reading_az": "Xədice lebashaye kəsif ra ba ləbasşuyi mişuyəd.",
-                    "full_translation_az": "Xədicə çirkli paltarları paltaryuyanla yuyur.",
-                },
-            ],
-        },
-        {
-            "kind": "true_false_image",
-            "instruction_az": "Şəklə baxın: cümlə doğrudurmu?",
-            "items": [
-                {"image": "assets/images/lessons/lesson_02/ashpazkhane.png", "statement_fa": "این آشپزخانه است.", "statement_az": "Bu mətbəxdir.", "is_true": True},
-                {"image": "assets/images/lessons/lesson_02/hammam.png", "statement_fa": "این توالت است.", "statement_az": "Bu tualetdir.", "is_true": False},
-                {"image": "assets/images/lessons/lesson_02/balesh.png", "statement_fa": "این بالش است.", "statement_az": "Bu yastıqdır.", "is_true": True},
-                {"image": "assets/images/lessons/lesson_02/kooler.png", "statement_fa": "این پرده است.", "statement_az": "Bu pərdədir.", "is_true": False},
-                {"image": "assets/images/lessons/lesson_02/ketri.png", "statement_fa": "این کتری است.", "statement_az": "Bu çaydandır.", "is_true": True},
-                {"image": "assets/images/lessons/lesson_02/toshak.png", "statement_fa": "این پتو است.", "statement_az": "Bu adyaldır.", "is_true": False},
-            ],
-        },
-        {
-            "kind": "multiple_choice",
-            "instruction_az": '"خانه‌ی برادرم" mətninə görə düzgün cavabı seçin.',
-            "items": [
-                {"question_fa": "پایتخت ایران کجاست؟", "options": ["تبریز", "اصفهان", "تهران"], "correct_index": 2},
-                {"question_fa": "خانه‌ی احمد چند طبقه است؟", "options": ["یک طبقه", "دو طبقه", "سه طبقه"], "correct_index": 1},
-                {"question_fa": "احمد چند فرزند دارد؟", "options": ["دو دختر و یک پسر", "یک دختر و دو پسر", "سه پسر"], "correct_index": 0},
-                {"question_fa": "سالن پذیرایی و اتاق مطالعه‌ی آن‌ها در کدام طبقه است؟", "options": ["طبقه‌ی اوّل", "طبقه‌ی دوم", "پشت‌بام"], "correct_index": 1},
-                {"question_fa": "اسم بزرگ‌ترین فرزند احمد چیست؟", "options": ["زینب", "فاطمه", "علی"], "correct_index": 1},
-            ],
-        },
     ],
     "sentence_practice": {
         "answer_note_fa": "۱. کجاست؟ = کجا است؟",
         "answer_note_reading_az": "1. Kocast? = Koca əst?",
         "answer_note_az": '1. "کجاست؟" (haradadır?) — "کجا است؟" birləşməsinin qısaldılmış formasıdır; hər ikisi eyni mənadadır.',
-        "listen_items": [
+        "listen_exercises": [
             {
-                "fa": "خانه‌ی ما دو طبقه است و شش اتاق دارد.",
-                "reading_az": "Xane-ye ma do təbəqe əst və şeş otaq darəd.",
-                "az": "Bizim evimiz iki mərtəbəlidir və altı otağı var.",
-            },
-            {
-                "fa": "اتاق خواب و اتاق مطالعه‌ی من در طبقه‌ی دوم است.",
-                "reading_az": "Otağe xab və otağe motaleə-ye mən dər təbəqe-ye dovvom əst.",
-                "az": "Yataq otağım və iş otağım ikinci mərtəbədədir.",
-            },
-            {
-                "fa": "در اتاق خوابِ من، تخت، تشک، بالش، پتو و پرده وجود دارد.",
-                "reading_az": "Dər otağe xabe mən, təxt, toşək, baleş, pətu və pərde vocud darəd.",
-                "az": "Mənim yataq otağımda çarpayı, döşək, yastıq, adyal və pərdə var.",
-            },
-            {
-                "fa": "حیاط خانه‌ی ما بزرگ است. در حیاط ما یک باغچه هست.",
-                "reading_az": "Həyate xane-ye ma bozorg əst. Dər həyate ma yek bağçe həst.",
-                "az": "Evimizin həyəti böyükdür. Həyətimizdə bir bağça var.",
-            },
-            {
-                "fa": "در باغچه‌ی خانه‌ی ما یک درخت سیب و یک درخت انار وجود دارد.",
-                "reading_az": "Dər bağçe-ye xane-ye ma yek dərəxte sib və yek dərəxte anar vocud darəd.",
-                "az": "Evimizin bağçasında bir alma ağacı və bir nar ağacı var.",
-            },
-            {
-                "fa": "آن‌ها در تابستان با آب سرد و در زمستان با آب گرم دوش می‌گیرند.",
-                "reading_az": "Anha dər tabestan ba abe sərd və dər zemestan ba abe gərm duş migirənd.",
-                "az": "Onlar yayda soyuq su ilə, qışda isə isti su ilə duş alırlar.",
-            },
-            {
-                "fa": "خانه‌ی ما پارکینگ و حیاط ندارد. پدرم ماشین را در خیابان می‌گذارد.",
-                "reading_az": "Xane-ye ma parkinq və həyat nədarəd. Pedərəm maşin ra dər xiyaban migozarəd.",
-                "az": "Bizim evimizin avtomobil dayanacağı və həyəti yoxdur. Atam maşını küçəyə qoyur.",
-            },
-            {
-                "fa": "مادرم هر روز در آشپزخانه غذا می‌پزد و خواهرم سارا ظرف‌ها را می‌شوید.",
-                "reading_az": "Madərəm hər ruz dər aşpəzxane qəza mipəzəd və xahərəm Sara zərfha ra mişuyəd.",
-                "az": "Anam hər gün mətbəxdə yemək bişirir, bacım Sara isə qabları yuyur.",
-            },
-            {
-                "fa": "پرده‌های خانه‌ی ما کثیف است. من با لباس‌شویی، پرده‌های کثیف را می‌شویم.",
-                "reading_az": "Pərdehaye xane-ye ma kəsif əst. Mən ba ləbasşuyi, pərdehaye kəsif ra mişuyəm.",
-                "az": "Bizim evimizin pərdələri çirklidir. Mən çirkli pərdələri paltaryuyanla yuyuram.",
-            },
-            {
-                "fa": "در آشپزخانه‌ی ما اجاق‌گاز، لباس‌شویی، آب‌گرم‌کن و یک ظرف‌شویی بزرگ وجود دارد.",
-                "reading_az": "Dər aşpəzxane-ye ma ocaq-qaz, ləbasşuyi, abgərmkon və yek zərfşuyi-ye bozorg vocud darəd.",
-                "az": "Bizim mətbəximizdə qaz plitəsi, paltaryuyan, su qızdırıcısı və bir böyük qabyuyan maşın var.",
+                "items": [
+                    {
+                        "fa": "خانه‌ی ما دو طبقه است و شش اتاق دارد.",
+                        "reading_az": "Xane-ye ma do təbəqe əst və şeş otaq darəd.",
+                        "az": "Bizim evimiz iki mərtəbəlidir və altı otağı var.",
+                    },
+                    {
+                        "fa": "اتاق خواب و اتاق مطالعه‌ی من در طبقه‌ی دوم است.",
+                        "reading_az": "Otağe xab və otağe motaleə-ye mən dər təbəqe-ye dovvom əst.",
+                        "az": "Yataq otağım və iş otağım ikinci mərtəbədədir.",
+                    },
+                    {
+                        "fa": "در اتاق خوابِ من، تخت، تشک، بالش، پتو و پرده وجود دارد.",
+                        "reading_az": "Dər otağe xabe mən, təxt, toşək, baleş, pətu və pərde vocud darəd.",
+                        "az": "Mənim yataq otağımda çarpayı, döşək, yastıq, adyal və pərdə var.",
+                    },
+                    {
+                        "fa": "حیاط خانه‌ی ما بزرگ است. در حیاط ما یک باغچه هست.",
+                        "reading_az": "Həyate xane-ye ma bozorg əst. Dər həyate ma yek bağçe həst.",
+                        "az": "Evimizin həyəti böyükdür. Həyətimizdə bir bağça var.",
+                    },
+                    {
+                        "fa": "در باغچه‌ی خانه‌ی ما یک درخت سیب و یک درخت انار وجود دارد.",
+                        "reading_az": "Dər bağçe-ye xane-ye ma yek dərəxte sib və yek dərəxte anar vocud darəd.",
+                        "az": "Evimizin bağçasında bir alma ağacı və bir nar ağacı var.",
+                    },
+                    {
+                        "fa": "آن‌ها در تابستان با آب سرد و در زمستان با آب گرم دوش می‌گیرند.",
+                        "reading_az": "Anha dər tabestan ba abe sərd və dər zemestan ba abe gərm duş migirənd.",
+                        "az": "Onlar yayda soyuq su ilə, qışda isə isti su ilə duş alırlar.",
+                    },
+                    {
+                        "fa": "خانه‌ی ما پارکینگ و حیاط ندارد. پدرم ماشین را در خیابان می‌گذارد.",
+                        "reading_az": "Xane-ye ma parkinq və həyat nədarəd. Pedərəm maşin ra dər xiyaban migozarəd.",
+                        "az": "Bizim evimizin avtomobil dayanacağı və həyəti yoxdur. Atam maşını küçəyə qoyur.",
+                    },
+                    {
+                        "fa": "مادرم هر روز در آشپزخانه غذا می‌پزد و خواهرم سارا ظرف‌ها را می‌شوید.",
+                        "reading_az": "Madərəm hər ruz dər aşpəzxane qəza mipəzəd və xahərəm Sara zərfha ra mişuyəd.",
+                        "az": "Anam hər gün mətbəxdə yemək bişirir, bacım Sara isə qabları yuyur.",
+                    },
+                    {
+                        "fa": "پرده‌های خانه‌ی ما کثیف است. من با لباس‌شویی، پرده‌های کثیف را می‌شویم.",
+                        "reading_az": "Pərdehaye xane-ye ma kəsif əst. Mən ba ləbasşuyi, pərdehaye kəsif ra mişuyəm.",
+                        "az": "Bizim evimizin pərdələri çirklidir. Mən çirkli pərdələri paltaryuyanla yuyuram.",
+                    },
+                    {
+                        "fa": "در آشپزخانه‌ی ما اجاق‌گاز، لباس‌شویی، آب‌گرم‌کن و یک ظرف‌شویی بزرگ وجود دارد.",
+                        "reading_az": "Dər aşpəzxane-ye ma ocaq-qaz, ləbasşuyi, abgərmkon və yek zərfşuyi-ye bozorg vocud darəd.",
+                        "az": "Bizim mətbəximizdə qaz plitəsi, paltaryuyan, su qızdırıcısı və bir böyük qabyuyan maşın var.",
+                    },
+                ],
             },
         ],
         "answer_items": [
@@ -2066,12 +2156,38 @@ class Command(BaseCommand):
             .values_list("fa", "reading_az")
         )
 
+        # Qrammatika: tətbiqdən redaktə/əlavə olunmuş qeyd/hallanma sətri/nümunə
+        # cümlə (edited_via_app=True) başlığa/əvəzliyə/fars mətninə görə anbara
+        # götürülür ki, aşağıdakı silmə-yenidənyaratma onları itirməsin (vocab-
+        # dakı eyni prinsip). Yeni qrammatika MÖVZUSU tətbiqdən yaradıla bilmir
+        # (yalnız mövcud mövzunun daxili siyahılarına əlavə/redaktə) — ona görə
+        # GrammarNote özü üçün "faylda olmayan əlavə mövzu" halı yoxdur.
+        existing_notes_by_title = {
+            n.title_fa: n for n in lesson.grammar_notes.all().prefetch_related("conjugations", "examples")
+        }
+
+        # Çalışmalar: tətbiqdən redaktə olunmuş konteynerlər (instruction_az/
+        # title_fa/example_* və s.) VƏ elementlər (items) silmədən əvvəl anbara
+        # götürülür. Konteynerlər üçün təbii mətn açarı etibarlı olmadığından
+        # (instruction_az uzun/təkrarlana bilər), öz NÖVÜNÜN daxilindəki SIRAYA
+        # görə uyğunlaşdırılır — eyni növün çalışmalarını öz aralarında yenidən
+        # sıralamaq nadir hal olduğundan bu kifayət qədər etibarlıdır. Elementlər
+        # isə (vocab/qrammatika kimi) öz mətn açarlarına görə ayrıca qorunur.
+        existing_fill_blank = list(lesson.fill_blank_exercises.all().prefetch_related("items"))
+        existing_practice_reveal = list(lesson.practice_reveal_exercises.all().prefetch_related("items"))
+        existing_picture_sentences = list(lesson.picture_sentence_exercises.all().prefetch_related("items__sentences"))
+        existing_answer_question = list(lesson.answer_question_exercises.all().prefetch_related("items"))
+        existing_reading_text = (
+            ReadingText.objects.filter(lesson=lesson)
+            .prefetch_related("footnotes", "comprehension_questions")
+            .first()
+        )
+
         # İdempotent: yenidən yaratmadan əvvəl mövcud alt-elementləri sil.
-        lesson.vocabulary.all().delete()
+        # (Lüğət/vocabulary AŞAĞIDA, saxlanması lazım olan tətbiq-redaktəli
+        # sözlərin anbara götürülməsindən SONRA silinir — bax aşağı şərh.)
         lesson.grammar_notes.all().delete()
         lesson.fill_blank_exercises.all().delete()
-        lesson.true_false_exercises.all().delete()
-        lesson.multiple_choice_exercises.all().delete()
         lesson.practice_reveal_exercises.all().delete()
         lesson.picture_sentence_exercises.all().delete()
         lesson.answer_question_exercises.all().delete()
@@ -2081,37 +2197,105 @@ class Command(BaseCommand):
         # file, so re-seeding must not delete it. Only the listen/answer
         # sentence lists below (which do live in this file) get replaced.
 
+        # Mobil tətbiqin Söz ehtiyatı redaktə ekranından dəyişdirilmiş/əlavə
+        # edilmiş sözlər (edited_via_app=True) bu fayldakı məzmunla üstələnmir
+        # — silmədən əvvəl fa mətninə görə anbara götürülür, sonra ya öz
+        # yerində (mövcud sözü redaktə edibsə) ya da faylda heç olmayan
+        # tamam yeni söz kimi sonda bərpa olunur (Infinitive/ConjugatedForm-
+        # dakı admin-only prinsipin yüngül versiyası, bax [[zeban-derslik-projects]]).
+        existing_by_fa = {w.fa: w for w in lesson.vocabulary.all()}
+        seed_fa_set = {item["fa"] for item in data["vocabulary"]}
+        extra_words = [w for fa, w in existing_by_fa.items() if fa not in seed_fa_set and w.edited_via_app]
+
+        lesson.vocabulary.all().delete()
+
         for order, item in enumerate(data["vocabulary"]):
+            prior = existing_by_fa.get(item["fa"])
+            use_prior = prior is not None and prior.edited_via_app
             word = VocabWord(
                 lesson=lesson,
                 fa=item["fa"],
-                reading_az=item.get("reading", ""),
-                az=item["az"],
+                reading_az=(prior.reading_az if use_prior else item.get("reading", "")),
+                az=(prior.az if use_prior else item["az"]),
                 order=order,
+                edited_via_app=use_prior,
             )
-            self._attach_image(word, "image", item.get("image"), assets_dir)
+            if use_prior and prior.image:
+                word.image = prior.image.name
+            else:
+                self._attach_image(word, "image", item.get("image"), assets_dir)
             word.save()
 
+        next_order = len(data["vocabulary"])
+        for extra in extra_words:
+            extra.pk = None
+            extra.lesson = lesson
+            extra.order = next_order
+            extra.save()
+            next_order += 1
+
         for order, note_data in enumerate(data["grammar_notes"]):
+            prior_note = existing_notes_by_title.get(note_data["title_fa"])
+            note_prior_ok = prior_note is not None and prior_note.edited_via_app
             note = GrammarNote.objects.create(
                 lesson=lesson,
                 title_az=note_data["title_az"],
                 title_fa=note_data["title_fa"],
                 order=order,
-                note_fa=note_data.get("note_fa", ""),
-                note_reading_az=note_data.get("note_reading_az", ""),
-                note_az=note_data.get("note_az", ""),
+                note_fa=(prior_note.note_fa if note_prior_ok else note_data.get("note_fa", "")),
+                note_reading_az=(
+                    prior_note.note_reading_az if note_prior_ok else note_data.get("note_reading_az", "")
+                ),
+                note_az=(prior_note.note_az if note_prior_ok else note_data.get("note_az", "")),
+                edited_via_app=note_prior_ok,
             )
+
+            prior_conjugations = {r.pronoun_fa: r for r in prior_note.conjugations.all()} if prior_note else {}
+            seed_pronouns = {row["pronoun_fa"] for row in note_data["conjugations"]}
             for c_order, row in enumerate(note_data["conjugations"]):
-                ConjugationRow.objects.create(grammar_note=note, order=c_order, **row)
+                prior_row = prior_conjugations.get(row["pronoun_fa"])
+                row_prior_ok = prior_row is not None and prior_row.edited_via_app
+                ConjugationRow.objects.create(
+                    grammar_note=note,
+                    pronoun_fa=row["pronoun_fa"],
+                    form_fa=(prior_row.form_fa if row_prior_ok else row["form_fa"]),
+                    order=c_order,
+                    edited_via_app=row_prior_ok,
+                )
+            next_row_order = len(note_data["conjugations"])
+            for pronoun, r in prior_conjugations.items():
+                if pronoun not in seed_pronouns and r.edited_via_app:
+                    r.pk = None
+                    r.grammar_note = note
+                    r.order = next_row_order
+                    r.save()
+                    next_row_order += 1
+
+            prior_examples = {e.fa: e for e in prior_note.examples.all()} if prior_note else {}
+            seed_example_fas = {ex["fa"] for ex in note_data["examples"]}
             for e_order, ex in enumerate(note_data["examples"]):
+                prior_ex = prior_examples.get(ex["fa"])
+                ex_prior_ok = prior_ex is not None and prior_ex.edited_via_app
                 ExampleSentence.objects.create(
                     grammar_note=note,
                     order=e_order,
                     fa=ex["fa"],
-                    az=ex["az"],
-                    reading_az=ex.get("reading_az") or preserved_example_readings.get(ex["fa"], ""),
+                    az=(prior_ex.az if ex_prior_ok else ex["az"]),
+                    reading_az=(
+                        prior_ex.reading_az
+                        if ex_prior_ok
+                        else ex.get("reading_az") or preserved_example_readings.get(ex["fa"], "")
+                    ),
+                    edited_via_app=ex_prior_ok,
                 )
+            next_ex_order = len(note_data["examples"])
+            for fa, e in prior_examples.items():
+                if fa not in seed_example_fas and e.edited_via_app:
+                    e.pk = None
+                    e.grammar_note = note
+                    e.order = next_ex_order
+                    e.save()
+                    next_ex_order += 1
             for d_order, drill_data in enumerate(note_data.get("drills", [])):
                 drill = PracticeRevealExercise(
                     grammar_note=note,
@@ -2137,135 +2321,357 @@ class Command(BaseCommand):
                     drill_item.save()
 
         exercise_order = {
-            "fill_blank": 0, "true_false_image": 0, "multiple_choice": 0, "practice_reveal": 0,
+            "fill_blank": 0, "practice_reveal": 0,
             "picture_sentences": 0, "answer_question": 0,
         }
         for overall_order, ex_data in enumerate(data["exercises"]):
             kind = ex_data["kind"]
-            order = exercise_order[kind]
+            position = exercise_order[kind]
             exercise_order[kind] += 1
 
             if kind == "fill_blank":
+                prior = existing_fill_blank[position] if position < len(existing_fill_blank) else None
+                prior_ok = prior is not None and prior.edited_via_app
                 exercise = FillBlankExercise.objects.create(
-                    lesson=lesson, instruction_az=ex_data["instruction_az"],
-                    word_bank=ex_data["word_bank"], order=overall_order,
+                    lesson=lesson,
+                    instruction_az=(prior.instruction_az if prior_ok else ex_data["instruction_az"]),
+                    word_bank=(prior.word_bank if prior_ok else ex_data["word_bank"]),
+                    order=overall_order,
+                    edited_via_app=prior_ok,
                 )
+                prior_items = {i.fa_with_blank: i for i in prior.items.all()} if prior else {}
+                seed_blanks = {item["fa_with_blank"] for item in ex_data["items"]}
                 for i_order, item in enumerate(ex_data["items"]):
-                    FillBlankItem.objects.create(exercise=exercise, order=i_order, **item)
-
-            elif kind == "true_false_image":
-                exercise = TrueFalseImageExercise.objects.create(
-                    lesson=lesson, instruction_az=ex_data["instruction_az"], order=overall_order,
-                )
-                for i_order, item in enumerate(ex_data["items"]):
-                    tf_item = TrueFalseImageItem(
-                        exercise=exercise,
-                        statement_fa=item["statement_fa"],
-                        statement_az=item["statement_az"],
-                        is_true=item["is_true"],
-                        order=i_order,
-                    )
-                    self._attach_image(tf_item, "image", item.get("image"), assets_dir)
-                    tf_item.save()
-
-            elif kind == "multiple_choice":
-                exercise = MultipleChoiceExercise.objects.create(
-                    lesson=lesson, instruction_az=ex_data["instruction_az"], order=overall_order,
-                )
-                for i_order, item in enumerate(ex_data["items"]):
-                    MultipleChoiceItem.objects.create(exercise=exercise, order=i_order, **item)
+                    prior_item = prior_items.get(item["fa_with_blank"])
+                    item_ok = prior_item is not None and prior_item.edited_via_app
+                    if item_ok:
+                        FillBlankItem.objects.create(
+                            exercise=exercise, order=i_order, edited_via_app=True,
+                            fa_with_blank=prior_item.fa_with_blank, correct_answer=prior_item.correct_answer,
+                            reading_az=prior_item.reading_az, az=prior_item.az,
+                            full_reading_az=prior_item.full_reading_az,
+                            full_translation_az=prior_item.full_translation_az,
+                        )
+                    else:
+                        FillBlankItem.objects.create(exercise=exercise, order=i_order, **item)
+                next_item_order = len(ex_data["items"])
+                for fa_blank, i in prior_items.items():
+                    if fa_blank not in seed_blanks and i.edited_via_app:
+                        i.pk = None
+                        i.exercise = exercise
+                        i.order = next_item_order
+                        i.save()
+                        next_item_order += 1
 
             elif kind == "practice_reveal":
-                exercise = PracticeRevealExercise.objects.create(
+                prior = existing_practice_reveal[position] if position < len(existing_practice_reveal) else None
+                prior_ok = prior is not None and prior.edited_via_app
+                exercise = PracticeRevealExercise(
                     lesson=lesson,
-                    title_fa=ex_data.get("title_fa", ""),
-                    instruction_az=ex_data["instruction_az"],
-                    example_fa=ex_data.get("example_fa", ""),
-                    example_prompt_fa=ex_data.get("example_prompt_fa", ""),
-                    example_answer_fa=ex_data.get("example_answer_fa", ""),
-                    example_reading_az=ex_data.get("example_reading_az", ""),
-                    example_az=ex_data.get("example_az", ""),
+                    title_fa=(prior.title_fa if prior_ok else ex_data.get("title_fa", "")),
+                    instruction_az=(prior.instruction_az if prior_ok else ex_data["instruction_az"]),
+                    example_fa=(prior.example_fa if prior_ok else ex_data.get("example_fa", "")),
+                    example_prompt_fa=(prior.example_prompt_fa if prior_ok else ex_data.get("example_prompt_fa", "")),
+                    example_answer_fa=(prior.example_answer_fa if prior_ok else ex_data.get("example_answer_fa", "")),
+                    example_reading_az=(prior.example_reading_az if prior_ok else ex_data.get("example_reading_az", "")),
+                    example_az=(prior.example_az if prior_ok else ex_data.get("example_az", "")),
                     order=overall_order,
+                    edited_via_app=prior_ok,
                 )
+                if prior_ok and prior.example_image_have:
+                    exercise.example_image_have = prior.example_image_have.name
+                if prior_ok and prior.example_image_not_have:
+                    exercise.example_image_not_have = prior.example_image_not_have.name
+                exercise.save()
+                prior_items = {i.prompt_fa: i for i in prior.items.all()} if prior else {}
+                seed_prompts = {item["prompt_fa"] for item in ex_data["items"]}
                 for i_order, item in enumerate(ex_data["items"]):
-                    PracticeRevealItem.objects.create(exercise=exercise, order=i_order, **item)
+                    prior_item = prior_items.get(item["prompt_fa"])
+                    item_ok = prior_item is not None and prior_item.edited_via_app
+                    if item_ok:
+                        PracticeRevealItem.objects.create(
+                            exercise=exercise, order=i_order, edited_via_app=True,
+                            prompt_fa=prior_item.prompt_fa, answer_fa=prior_item.answer_fa,
+                            reading_az=prior_item.reading_az, az=prior_item.az,
+                            image_have=(prior_item.image_have.name if prior_item.image_have else ""),
+                            image_not_have=(prior_item.image_not_have.name if prior_item.image_not_have else ""),
+                        )
+                    else:
+                        PracticeRevealItem.objects.create(exercise=exercise, order=i_order, **item)
+                next_item_order = len(ex_data["items"])
+                for prompt_fa, i in prior_items.items():
+                    if prompt_fa not in seed_prompts and i.edited_via_app:
+                        i.pk = None
+                        i.exercise = exercise
+                        i.order = next_item_order
+                        i.save()
+                        next_item_order += 1
 
             elif kind == "picture_sentences":
+                prior = existing_picture_sentences[position] if position < len(existing_picture_sentences) else None
+                prior_ok = prior is not None and prior.edited_via_app
                 exercise = PictureSentenceExercise(
                     lesson=lesson,
-                    instruction_az=ex_data["instruction_az"],
-                    title_fa=ex_data.get("title_fa", ""),
-                    example_fa=ex_data.get("example_fa", ""),
-                    example_reading_az=ex_data.get("example_reading_az", ""),
-                    example_az=ex_data.get("example_az", ""),
-                    example_answer_fa=ex_data.get("example_answer_fa", ""),
-                    example_answer_reading_az=ex_data.get("example_answer_reading_az", ""),
-                    example_answer_az=ex_data.get("example_answer_az", ""),
+                    instruction_az=(prior.instruction_az if prior_ok else ex_data["instruction_az"]),
+                    title_fa=(prior.title_fa if prior_ok else ex_data.get("title_fa", "")),
+                    example_fa=(prior.example_fa if prior_ok else ex_data.get("example_fa", "")),
+                    example_reading_az=(prior.example_reading_az if prior_ok else ex_data.get("example_reading_az", "")),
+                    example_az=(prior.example_az if prior_ok else ex_data.get("example_az", "")),
+                    example_answer_fa=(prior.example_answer_fa if prior_ok else ex_data.get("example_answer_fa", "")),
+                    example_answer_reading_az=(
+                        prior.example_answer_reading_az if prior_ok else ex_data.get("example_answer_reading_az", "")
+                    ),
+                    example_answer_az=(prior.example_answer_az if prior_ok else ex_data.get("example_answer_az", "")),
                     order=overall_order,
+                    edited_via_app=prior_ok,
                 )
-                self._attach_image(
-                    exercise, "example_image", ex_data.get("example_image"), assets_dir
-                )
-                self._attach_image(
-                    exercise, "example_image_have", ex_data.get("example_image_have"), assets_dir
-                )
-                self._attach_image(
-                    exercise, "example_image_not_have", ex_data.get("example_image_not_have"), assets_dir
-                )
+                if prior_ok and prior.example_image:
+                    exercise.example_image = prior.example_image.name
+                else:
+                    self._attach_image(exercise, "example_image", ex_data.get("example_image"), assets_dir)
+                if prior_ok and prior.example_image_have:
+                    exercise.example_image_have = prior.example_image_have.name
+                else:
+                    self._attach_image(exercise, "example_image_have", ex_data.get("example_image_have"), assets_dir)
+                if prior_ok and prior.example_image_not_have:
+                    exercise.example_image_not_have = prior.example_image_not_have.name
+                else:
+                    self._attach_image(
+                        exercise, "example_image_not_have", ex_data.get("example_image_not_have"), assets_dir
+                    )
                 exercise.save()
+
+                # Elementlər öz cümlələrinin fars mətnləri (tuple) ilə tanınır —
+                # şəkillər (fərqli olaraq) təbii mətn açarı daşımadığından.
+                prior_items_by_lines = {
+                    tuple(s.fa for s in i.sentences.all()): i for i in (prior.items.all() if prior else [])
+                }
+                seed_line_keys = {
+                    tuple(line["fa"] for line in item_data["sentences"]) for item_data in ex_data["items"]
+                }
                 for i_order, item_data in enumerate(ex_data["items"]):
-                    pic_item = PictureSentenceItem(exercise=exercise, order=i_order)
-                    self._attach_image(pic_item, "image", item_data.get("image"), assets_dir)
-                    self._attach_image(pic_item, "image_have", item_data.get("image_have"), assets_dir)
-                    self._attach_image(pic_item, "image_not_have", item_data.get("image_not_have"), assets_dir)
+                    key = tuple(line["fa"] for line in item_data["sentences"])
+                    prior_item = prior_items_by_lines.get(key)
+                    item_ok = prior_item is not None and prior_item.edited_via_app
+                    pic_item = PictureSentenceItem(exercise=exercise, order=i_order, edited_via_app=item_ok)
+                    if item_ok and prior_item.image:
+                        pic_item.image = prior_item.image.name
+                    else:
+                        self._attach_image(pic_item, "image", item_data.get("image"), assets_dir)
+                    if item_ok and prior_item.image_have:
+                        pic_item.image_have = prior_item.image_have.name
+                    else:
+                        self._attach_image(pic_item, "image_have", item_data.get("image_have"), assets_dir)
+                    if item_ok and prior_item.image_not_have:
+                        pic_item.image_not_have = prior_item.image_not_have.name
+                    else:
+                        self._attach_image(pic_item, "image_not_have", item_data.get("image_not_have"), assets_dir)
                     pic_item.save()
-                    for s_order, line in enumerate(item_data["sentences"]):
+                    lines = (
+                        [{"fa": s.fa, "reading_az": s.reading_az, "az": s.az} for s in prior_item.sentences.all()]
+                        if item_ok else item_data["sentences"]
+                    )
+                    for s_order, line in enumerate(lines):
                         PictureSentenceLine.objects.create(item=pic_item, order=s_order, **line)
+                next_item_order = len(ex_data["items"])
+                for key, i in prior_items_by_lines.items():
+                    if key not in seed_line_keys and i.edited_via_app:
+                        old_lines = list(i.sentences.all())
+                        i.pk = None
+                        i.exercise = exercise
+                        i.order = next_item_order
+                        i.save()
+                        for s_order, line in enumerate(old_lines):
+                            PictureSentenceLine.objects.create(
+                                item=i, order=s_order, fa=line.fa, reading_az=line.reading_az, az=line.az
+                            )
+                        next_item_order += 1
 
             elif kind == "answer_question":
+                prior = existing_answer_question[position] if position < len(existing_answer_question) else None
+                prior_ok = prior is not None and prior.edited_via_app
                 exercise = AnswerQuestionExercise.objects.create(
                     lesson=lesson,
-                    title_fa=ex_data.get("title_fa", ""),
-                    instruction_az=ex_data["instruction_az"],
-                    note_fa=ex_data.get("note_fa", ""),
-                    note_reading_az=ex_data.get("note_reading_az", ""),
-                    note_az=ex_data.get("note_az", ""),
+                    title_fa=(prior.title_fa if prior_ok else ex_data.get("title_fa", "")),
+                    example_fa=(prior.example_fa if prior_ok else ex_data.get("example_fa", "")),
+                    example_reading_az=(prior.example_reading_az if prior_ok else ex_data.get("example_reading_az", "")),
+                    example_az=(prior.example_az if prior_ok else ex_data.get("example_az", "")),
+                    instruction_az=(prior.instruction_az if prior_ok else ex_data["instruction_az"]),
+                    note_fa=(prior.note_fa if prior_ok else ex_data.get("note_fa", "")),
+                    note_reading_az=(prior.note_reading_az if prior_ok else ex_data.get("note_reading_az", "")),
+                    note_az=(prior.note_az if prior_ok else ex_data.get("note_az", "")),
                     order=overall_order,
+                    edited_via_app=prior_ok,
                 )
+                prior_items = {i.fa: i for i in prior.items.all()} if prior else {}
+                seed_fas = {item["fa"] for item in ex_data["items"]}
                 for i_order, item in enumerate(ex_data["items"]):
-                    AnswerQuestionExerciseItem.objects.create(exercise=exercise, order=i_order, **item)
+                    prior_item = prior_items.get(item["fa"])
+                    item_ok = prior_item is not None and prior_item.edited_via_app
+                    if item_ok:
+                        AnswerQuestionExerciseItem.objects.create(
+                            exercise=exercise, order=i_order, edited_via_app=True,
+                            fa=prior_item.fa, reading_az=prior_item.reading_az, az=prior_item.az,
+                            sample_answer_fa=prior_item.sample_answer_fa,
+                            sample_answer_reading_az=prior_item.sample_answer_reading_az,
+                            sample_answer_az=prior_item.sample_answer_az,
+                        )
+                    else:
+                        AnswerQuestionExerciseItem.objects.create(exercise=exercise, order=i_order, **item)
+                next_item_order = len(ex_data["items"])
+                for fa, i in prior_items.items():
+                    if fa not in seed_fas and i.edited_via_app:
+                        i.pk = None
+                        i.exercise = exercise
+                        i.order = next_item_order
+                        i.save()
+                        next_item_order += 1
 
         if "sentence_practice" in data:
             practice_data = data["sentence_practice"]
             # get_or_create (not create): "Məsdərlər" (Infinitive/ConjugatedForm)
             # is admin-only content and must survive re-seeding untouched.
             practice, _ = SentencePractice.objects.get_or_create(lesson=lesson)
-            practice.answer_note_fa = practice_data.get("answer_note_fa", "")
-            practice.answer_note_reading_az = practice_data.get("answer_note_reading_az", "")
-            practice.answer_note_az = practice_data.get("answer_note_az", "")
+            if not practice.answer_note_edited_via_app:
+                practice.answer_note_fa = practice_data.get("answer_note_fa", "")
+                practice.answer_note_reading_az = practice_data.get("answer_note_reading_az", "")
+                practice.answer_note_az = practice_data.get("answer_note_az", "")
             practice.save()
-            practice.listen_items.all().delete()
+
+            # Tətbiqdən redaktə/əlavə olunmuş cümlələr (edited_via_app=True) fa
+            # mətninə görə qorunur — vocabulary-dəki eyni prinsip (bax yuxarı şərh).
+            # "Dinləyin və oxuyun" indi Çalışma-lara bölünür (ListenReadExercise);
+            # köhnə/yeni çalışmalar sırasına (position) görə uyğunlaşdırılır — eyni
+            # prinsip "answer_question" kind-inin exercises siyahısında olduğu kimi.
+            existing_listen_exercises = list(practice.listen_exercises.all().prefetch_related("items"))
+
+            prior_answer = {s.fa: s for s in practice.answer_items.all()}
+            seed_answer_fas = {item["fa"] for item in practice_data.get("answer_items", [])}
+            extra_answer = [s for fa, s in prior_answer.items() if fa not in seed_answer_fas and s.edited_via_app]
+
+            practice.listen_exercises.all().delete()
             practice.answer_items.all().delete()
-            for l_order, item in enumerate(practice_data.get("listen_items", [])):
-                ListenReadSentence.objects.create(practice=practice, order=l_order, **item)
+
+            for ex_position, ex_data in enumerate(practice_data.get("listen_exercises", [])):
+                prior_exercise = (
+                    existing_listen_exercises[ex_position]
+                    if ex_position < len(existing_listen_exercises) else None
+                )
+                exercise = ListenReadExercise.objects.create(practice=practice, order=ex_position + 1)
+                prior_items = {s.fa: s for s in prior_exercise.items.all()} if prior_exercise else {}
+                seed_item_fas = {item["fa"] for item in ex_data["items"]}
+                for l_order, item in enumerate(ex_data["items"]):
+                    prior = prior_items.get(item["fa"])
+                    use_prior = prior is not None and prior.edited_via_app
+                    ListenReadSentence.objects.create(
+                        exercise=exercise,
+                        fa=item["fa"],
+                        reading_az=(prior.reading_az if use_prior else item.get("reading_az", "")),
+                        az=(prior.az if use_prior else item["az"]),
+                        order=l_order,
+                        edited_via_app=use_prior,
+                    )
+                next_item_order = len(ex_data["items"])
+                for fa, s in prior_items.items():
+                    if fa not in seed_item_fas and s.edited_via_app:
+                        s.pk = None
+                        s.exercise = exercise
+                        s.order = next_item_order
+                        s.save()
+                        next_item_order += 1
+
             for a_order, item in enumerate(practice_data.get("answer_items", [])):
-                AnswerQuestionSentence.objects.create(practice=practice, order=a_order, **item)
+                prior = prior_answer.get(item["fa"])
+                use_prior = prior is not None and prior.edited_via_app
+                AnswerQuestionSentence.objects.create(
+                    practice=practice,
+                    fa=item["fa"],
+                    reading_az=(prior.reading_az if use_prior else item.get("reading_az", "")),
+                    az=(prior.az if use_prior else item["az"]),
+                    sample_answer_fa=(prior.sample_answer_fa if use_prior else item.get("sample_answer_fa", "")),
+                    sample_answer_reading_az=(
+                        prior.sample_answer_reading_az if use_prior else item.get("sample_answer_reading_az", "")
+                    ),
+                    sample_answer_az=(prior.sample_answer_az if use_prior else item.get("sample_answer_az", "")),
+                    order=a_order,
+                    edited_via_app=use_prior,
+                )
+            next_answer_order = len(practice_data.get("answer_items", []))
+            for extra in extra_answer:
+                extra.pk = None
+                extra.practice = practice
+                extra.order = next_answer_order
+                extra.save()
+                next_answer_order += 1
 
         reading_data = data["reading_text"]
+        reading_prior_ok = existing_reading_text is not None and existing_reading_text.edited_via_app
         reading = ReadingText(
             lesson=lesson,
-            title_fa=reading_data["title_fa"],
-            title_az=reading_data["title_az"],
-            paragraphs_fa=reading_data["paragraphs_fa"],
-            full_translation_az=reading_data["full_translation_az"],
-            sentences=reading_data.get("sentences", []),
+            title_fa=(existing_reading_text.title_fa if reading_prior_ok else reading_data["title_fa"]),
+            title_az=(existing_reading_text.title_az if reading_prior_ok else reading_data["title_az"]),
+            paragraphs_fa=(existing_reading_text.paragraphs_fa if reading_prior_ok else reading_data["paragraphs_fa"]),
+            full_translation_az=(
+                existing_reading_text.full_translation_az if reading_prior_ok else reading_data["full_translation_az"]
+            ),
+            sentences=(existing_reading_text.sentences if reading_prior_ok else reading_data.get("sentences", [])),
+            edited_via_app=reading_prior_ok,
         )
-        self._attach_image(reading, "image", reading_data.get("image"), assets_dir)
+        if reading_prior_ok and existing_reading_text.image:
+            reading.image = existing_reading_text.image.name
+        else:
+            self._attach_image(reading, "image", reading_data.get("image"), assets_dir)
         reading.save()
+
+        prior_footnotes = (
+            {f.fa: f for f in existing_reading_text.footnotes.all()} if existing_reading_text else {}
+        )
+        seed_footnote_fas = {footnote["fa"] for footnote in reading_data["footnotes"]}
         for f_order, footnote in enumerate(reading_data["footnotes"]):
-            ReadingFootnote.objects.create(reading_text=reading, order=f_order, **footnote)
+            prior_footnote = prior_footnotes.get(footnote["fa"])
+            footnote_ok = prior_footnote is not None and prior_footnote.edited_via_app
+            if footnote_ok:
+                ReadingFootnote.objects.create(
+                    reading_text=reading, order=f_order, edited_via_app=True,
+                    fa=prior_footnote.fa, az=prior_footnote.az,
+                )
+            else:
+                ReadingFootnote.objects.create(reading_text=reading, order=f_order, **footnote)
+        next_footnote_order = len(reading_data["footnotes"])
+        for fa, f in prior_footnotes.items():
+            if fa not in seed_footnote_fas and f.edited_via_app:
+                f.pk = None
+                f.reading_text = reading
+                f.order = next_footnote_order
+                f.save()
+                next_footnote_order += 1
+
+        prior_questions = (
+            {q.question_fa: q for q in existing_reading_text.comprehension_questions.all()}
+            if existing_reading_text else {}
+        )
+        seed_question_fas = {q["question_fa"] for q in reading_data.get("comprehension_questions", [])}
         for q_order, question in enumerate(reading_data.get("comprehension_questions", [])):
-            ReadingComprehensionQuestion.objects.create(reading_text=reading, order=q_order, **question)
+            prior_question = prior_questions.get(question["question_fa"])
+            question_ok = prior_question is not None and prior_question.edited_via_app
+            if question_ok:
+                ReadingComprehensionQuestion.objects.create(
+                    reading_text=reading, order=q_order, edited_via_app=True,
+                    question_fa=prior_question.question_fa, reading_az=prior_question.reading_az,
+                    az=prior_question.az, sample_answer_fa=prior_question.sample_answer_fa,
+                    sample_answer_reading_az=prior_question.sample_answer_reading_az,
+                    sample_answer_az=prior_question.sample_answer_az,
+                )
+            else:
+                ReadingComprehensionQuestion.objects.create(reading_text=reading, order=q_order, **question)
+        next_question_order = len(reading_data.get("comprehension_questions", []))
+        for question_fa, q in prior_questions.items():
+            if question_fa not in seed_question_fas and q.edited_via_app:
+                q.pk = None
+                q.reading_text = reading
+                q.order = next_question_order
+                q.save()
+                next_question_order += 1
 
         try:
             self.stdout.write(self.style.SUCCESS(f"Ders {data['number']} ({data['title_az']}) yuklendi."))

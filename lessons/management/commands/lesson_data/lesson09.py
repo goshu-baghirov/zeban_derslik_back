@@ -271,20 +271,6 @@ LESSON = {
             ],
         },
         {
-            "kind": "multiple_choice",
-            "instruction_az": "«جنگل» mətninə görə düzgün cavabı seçin.",
-            "items": [
-                {"question_fa": "در جنگل چه چیزهایی وجود دارد؟", "options": ["درختان، حیوان‌ها، پرنده‌ها و حشره‌های گوناگون", "فقط درخت", "فقط پرنده"], "correct_index": 0},
-                {"question_fa": "بیشتر جنگل‌های ایران در کجا قرار دارد؟", "options": ["در جنوب ایران", "در شمال ایران", "در شرق ایران"], "correct_index": 1},
-                {"question_fa": "ارتفاع درختان جنگل‌های شمال حدود چند متر است؟", "options": ["حدود ده متر", "حدود بیست متر", "حدود پنجاه متر"], "correct_index": 1},
-                {"question_fa": "ببر ایرانی چندمین ببر بزرگ جهان است؟", "options": ["اوّلین", "دومین", "سومین"], "correct_index": 1},
-                {"question_fa": "وزن ببر ایرانی بیشتر از چند کیلوگرم است؟", "options": ["دویست و چهل کیلوگرم", "صد کیلوگرم", "سیصد کیلوگرم"], "correct_index": 0},
-                {"question_fa": "بزرگ‌ترین دریاچه‌ی جهان چه نام دارد؟", "options": ["دریاچه‌ی ارومیه", "دریاچه‌ی مازندران (خزر)", "دریاچه‌ی وان"], "correct_index": 1},
-                {"question_fa": "بیشترین عمق دریاچه‌ی مازندران حدود چند متر است؟", "options": ["۹۸۰ متر", "۷۳۷ متر", "۱۰۰ متر"], "correct_index": 0},
-                {"question_fa": "زیباترین عقاب جنگل‌های ایران چه نام دارد؟", "options": ["عقاب سیاه", "عقاب طلایی", "عقاب سفید"], "correct_index": 1},
-            ],
-        },
-        {
             "kind": "practice_reveal",
             "instruction_az": "«گوناگون» sözü ilə cümlə qurun: «ما غذاهای گوناگون، مانند برنج، نیمرو، گوشت و ساندویچ می‌خوریم.»",
             "items": [
@@ -346,61 +332,65 @@ LESSON = {
         },
     ],
     "sentence_practice": {
-        "listen_items": [
+        "listen_exercises": [
             {
-                "fa": "در اتاق مطالعه‌ی من هشتاد و سه کتاب هست.",
-                "reading_az": "Dər otaqe motaleeye mən həştad o se ketab həst.",
-                "az": "Mənim iş otağımda səksən üç kitab var.",
-            },
-            {
-                "fa": "در این ظرف ده لیتر آب و در آن ظرف بیست لیتر بنزین هست.",
-                "reading_az": "Dər in zərf dəh litr ab va dər an zərf bist litr benzin həst.",
-                "az": "Bu qabda on litr su, o qabda isə iyirmi litr benzin var.",
-            },
-            {
-                "fa": "عرض این خیابان، چهل و پنج متر است و طول آن حدود پانزده کیلومتر است.",
-                "reading_az": "Ərze in xiyaban, çehel o pənc metr əst va tule an hodude panzdəh kilometr əst.",
-                "az": "Bu küçənin eni qırx beş metr, uzunluğu isə təxminən on beş kilometrdir.",
-            },
-            {
-                "fa": "طول این استخر سی و دو متر، عرض آن دوازده متر و عمق آن چهار متر است.",
-                "reading_az": "Tule in estəxr si o do metr, ərze an dəvazdəh metr va omqe an çəhar metr əst.",
-                "az": "Bu hovuzun uzunluğu otuz iki metr, eni on iki metr, dərinliyi isə dörd metrdir.",
-            },
-            {
-                "fa": "در این جعبه، بیست و پنج کیلو لیمو و در آن جعبه، هجده کیلو کیوی است.",
-                "reading_az": "Dər in cəbe, bist o pənc kilo limu va dər an cəbe, hejdəh kilo kivi əst.",
-                "az": "Bu qutuda iyirmi beş kilo limon, o qutuda isə on səkkiz kilo kivi var.",
-            },
-            {
-                "fa": "میوه‌فروش با ترازو، جعبه‌های پرتقال و موز را وزن می‌کند.",
-                "reading_az": "Meyvəforuş ba tərazu, cəbehaye porteqal va mouz ra vəzn mikonəd.",
-                "az": "Meyvəsatan tərəzi ilə portağal və banan qutularını çəkir.",
-            },
-            {
-                "fa": "حسین سی و چهار سال دارد. پدرش پنجاه و پنج سال و پدربزرگش هفتاد و هشت سال دارد.",
-                "reading_az": "Hoseyn si o çəhar sal darəd. Pedərəş pənjah o pənc sal va pedərbozorgəş həftad o həşt sal darəd.",
-                "az": "Hüseyn otuz dörd yaşındadır. Atası əlli beş, babası isə yetmiş səkkiz yaşındadır.",
-            },
-            {
-                "fa": "وزن دوست من هفتاد و یک کیلو و قدّش یک متر و هفتاد و شش سانتی‌متر است.",
-                "reading_az": "Vəzne duste mən həftad o yek kilo va qəddəş yek metr va həftad o şeş santimetr əst.",
-                "az": "Dostumun çəkisi yetmiş bir kilo, boyu isə bir metr yetmiş altı santimetrdir.",
-            },
-            {
-                "fa": "پزشک هنگام معاینه، کودکان را با ترازو وزن می‌کند و قدّشان را با متر اندازه می‌گیرد.",
-                "reading_az": "Pezeşk hengame moayene, kudəkan ra ba tərazu vəzn mikonəd va qəddəşan ra ba metr əndaze migirəd.",
-                "az": "Həkim müayinə zamanı uşaqları tərəzi ilə çəkir və boylarını metrlə ölçür.",
-            },
-            {
-                "fa": "من با متر، قدّ پسرم را اندازه می‌گیرم. قدّ او یک متر و بیست و هفت سانتی‌متر است.",
-                "reading_az": "Mən ba metr, qədde pesərəm ra əndaze migiram. Qədde u yek metr va bist o həft santimetr əst.",
-                "az": "Mən metrlə oğlumun boyunu ölçürəm. Onun boyu bir metr iyirmi yeddi santimetrdir.",
-            },
-            {
-                "fa": "آیا ارتفاع کلاس شما سه متر است؟ بله، ارتفاع کلاس ما حدود سه متر است.",
-                "reading_az": "Aya ertefae kelase şoma se metr əst? Bəle, ertefae kelase ma hodude se metr əst.",
-                "az": "Sizin sinfinizin hündürlüyü üç metrdirmi? Bəli, sinfimizin hündürlüyü təxminən üç metrdir.",
+                "items": [
+                    {
+                        "fa": "در اتاق مطالعه‌ی من هشتاد و سه کتاب هست.",
+                        "reading_az": "Dər otaqe motaleeye mən həştad o se ketab həst.",
+                        "az": "Mənim iş otağımda səksən üç kitab var.",
+                    },
+                    {
+                        "fa": "در این ظرف ده لیتر آب و در آن ظرف بیست لیتر بنزین هست.",
+                        "reading_az": "Dər in zərf dəh litr ab va dər an zərf bist litr benzin həst.",
+                        "az": "Bu qabda on litr su, o qabda isə iyirmi litr benzin var.",
+                    },
+                    {
+                        "fa": "عرض این خیابان، چهل و پنج متر است و طول آن حدود پانزده کیلومتر است.",
+                        "reading_az": "Ərze in xiyaban, çehel o pənc metr əst va tule an hodude panzdəh kilometr əst.",
+                        "az": "Bu küçənin eni qırx beş metr, uzunluğu isə təxminən on beş kilometrdir.",
+                    },
+                    {
+                        "fa": "طول این استخر سی و دو متر، عرض آن دوازده متر و عمق آن چهار متر است.",
+                        "reading_az": "Tule in estəxr si o do metr, ərze an dəvazdəh metr va omqe an çəhar metr əst.",
+                        "az": "Bu hovuzun uzunluğu otuz iki metr, eni on iki metr, dərinliyi isə dörd metrdir.",
+                    },
+                    {
+                        "fa": "در این جعبه، بیست و پنج کیلو لیمو و در آن جعبه، هجده کیلو کیوی است.",
+                        "reading_az": "Dər in cəbe, bist o pənc kilo limu va dər an cəbe, hejdəh kilo kivi əst.",
+                        "az": "Bu qutuda iyirmi beş kilo limon, o qutuda isə on səkkiz kilo kivi var.",
+                    },
+                    {
+                        "fa": "میوه‌فروش با ترازو، جعبه‌های پرتقال و موز را وزن می‌کند.",
+                        "reading_az": "Meyvəforuş ba tərazu, cəbehaye porteqal va mouz ra vəzn mikonəd.",
+                        "az": "Meyvəsatan tərəzi ilə portağal və banan qutularını çəkir.",
+                    },
+                    {
+                        "fa": "حسین سی و چهار سال دارد. پدرش پنجاه و پنج سال و پدربزرگش هفتاد و هشت سال دارد.",
+                        "reading_az": "Hoseyn si o çəhar sal darəd. Pedərəş pənjah o pənc sal va pedərbozorgəş həftad o həşt sal darəd.",
+                        "az": "Hüseyn otuz dörd yaşındadır. Atası əlli beş, babası isə yetmiş səkkiz yaşındadır.",
+                    },
+                    {
+                        "fa": "وزن دوست من هفتاد و یک کیلو و قدّش یک متر و هفتاد و شش سانتی‌متر است.",
+                        "reading_az": "Vəzne duste mən həftad o yek kilo va qəddəş yek metr va həftad o şeş santimetr əst.",
+                        "az": "Dostumun çəkisi yetmiş bir kilo, boyu isə bir metr yetmiş altı santimetrdir.",
+                    },
+                    {
+                        "fa": "پزشک هنگام معاینه، کودکان را با ترازو وزن می‌کند و قدّشان را با متر اندازه می‌گیرد.",
+                        "reading_az": "Pezeşk hengame moayene, kudəkan ra ba tərazu vəzn mikonəd va qəddəşan ra ba metr əndaze migirəd.",
+                        "az": "Həkim müayinə zamanı uşaqları tərəzi ilə çəkir və boylarını metrlə ölçür.",
+                    },
+                    {
+                        "fa": "من با متر، قدّ پسرم را اندازه می‌گیرم. قدّ او یک متر و بیست و هفت سانتی‌متر است.",
+                        "reading_az": "Mən ba metr, qədde pesərəm ra əndaze migiram. Qədde u yek metr va bist o həft santimetr əst.",
+                        "az": "Mən metrlə oğlumun boyunu ölçürəm. Onun boyu bir metr iyirmi yeddi santimetrdir.",
+                    },
+                    {
+                        "fa": "آیا ارتفاع کلاس شما سه متر است؟ بله، ارتفاع کلاس ما حدود سه متر است.",
+                        "reading_az": "Aya ertefae kelase şoma se metr əst? Bəle, ertefae kelase ma hodude se metr əst.",
+                        "az": "Sizin sinfinizin hündürlüyü üç metrdirmi? Bəli, sinfimizin hündürlüyü təxminən üç metrdir.",
+                    },
+                ],
             },
         ],
         "answer_items": [

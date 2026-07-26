@@ -173,20 +173,6 @@ LESSON = {
             ],
         },
         {
-            "kind": "multiple_choice",
-            "instruction_az": "«فروش‌گاه مرکزی» mətninə görə düzgün cavabı seçin.",
-            "items": [
-                {"question_fa": "فروش‌گاه مرکزی چند متر است؟", "options": ["حدود شش هزار متر", "حدود هزار متر", "حدود صد متر"], "correct_index": 0},
-                {"question_fa": "چند نفر در فروش‌گاه مرکزی کار می‌کنند؟", "options": ["صد و ده نفر", "شصت نفر", "دویست نفر"], "correct_index": 0},
-                {"question_fa": "در طبقه‌ی اوّل چه می‌فروشند؟", "options": ["وسایل خانه", "خوراکی‌ها", "پارچه و فرش"], "correct_index": 0},
-                {"question_fa": "در طبقه‌ی دوم چه می‌فروشند؟", "options": ["پوشاک", "خوراکی‌های گوناگون، مانند گوشت، برنج، قارچ و عسل", "کفش"], "correct_index": 1},
-                {"question_fa": "طبقه‌ی سوم برای فروش چیست؟", "options": ["پارچه، پوشاک و فرش", "وسایل خانه", "طلا و ساعت"], "correct_index": 0},
-                {"question_fa": "ساعت کار فروش‌گاه چگونه است؟", "options": ["از هشت صبح تا هشت شب", "از نه صبح تا نه شب", "از هفت صبح تا هفت شب"], "correct_index": 0},
-                {"question_fa": "فروش‌گاه مرکزی چه روزهایی تعطیل است؟", "options": ["روزهای شنبه", "روزهای جمعه", "روزهای پنج‌شنبه"], "correct_index": 1},
-                {"question_fa": "مشتری‌ها پس از انتخاب کالا به کجا می‌روند؟", "options": ["به خانه", "به صندوق", "به طبقه‌ی سوم"], "correct_index": 1},
-            ],
-        },
-        {
             "kind": "practice_reveal",
             "instruction_az": "Böyük ədədləri farsca oxuyun.",
             "items": [
@@ -244,51 +230,55 @@ LESSON = {
         },
     ],
     "sentence_practice": {
-        "listen_items": [
+        "listen_exercises": [
             {
-                "fa": "در آن دانش‌گاه دو هزار و سیصد و چهل و هفت دانش‌جو درس می‌خوانند.",
-                "reading_az": "Dər an daneşgah do hezar o sisəd o çehel o həft daneşcu dərs mixanənd.",
-                "az": "O universitetdə iki min üç yüz qırx yeddi tələbə oxuyur.",
-            },
-            {
-                "fa": "در کتاب‌خانه‌ی مدرسه‌ی ما دوازده هزار و سیصد و هشتاد و پنج کتاب وجود دارد.",
-                "reading_az": "Dər ketabxaneye mædreseye ma dəvazdəh hezar o sisəd o həştad o pənc ketab vocud darəd.",
-                "az": "Məktəbimizin kitabxanasında on iki min üç yüz səksən beş kitab var.",
-            },
-            {
-                "fa": "آن فروشنده در فروش‌گاهش حدود بیست و سه هزار و ششصد کیلو برنج دارد.",
-                "reading_az": "An foruşende dər foruşgahəş hodude bist o se hezar o şeşsəd kilo berənc darəd.",
-                "az": "O satıcının mağazasında təxminən iyirmi üç min altı yüz kilo düyü var.",
-            },
-            {
-                "fa": "یک کیلو برنج، سه هزار و نهصد تومان است و یک کیلو گندم ششصد و پنجاه تومان است.",
-                "reading_az": "Yek kilo berənc, se hezar o nohsəd toman əst va yek kilo gəndom şeşsəd o pənjah toman əst.",
-                "az": "Bir kilo düyü üç min doqquz yüz tümən, bir kilo buğda isə altı yüz əlli tümündür.",
-            },
-            {
-                "fa": "این خانم، کارمندِ بانک ملّی ایران است. او هر روز پول‌های زیادی را می‌شمارد.",
-                "reading_az": "In xanom, karmənde banke melliye Iran əst. U hər ruz pulhaye ziyadi ra mişomarəd.",
-                "az": "Bu xanım İran Milli Bankının işçisidir. O hər gün çoxlu pul sayır.",
-            },
-            {
-                "fa": "خانه‌ی حسین در خیابان امین است. او خانه‌اش را دویست و پنجاه میلیون تومان می‌فروشد.",
-                "reading_az": "Xaneye Hoseyn dər xiyabane Əmin əst. U xaneəş ra devist o pənjah milyun toman miforuşəd.",
-                "az": "Hüseynin evi Əmin küçəsindədir. O evini iki yüz əlli milyon tümənə satır.",
-            },
-            {
-                "fa": "من با کارت اعتباری از عابربانک پول می‌گیرم و در کیفم می‌گذارم.",
-                "reading_az": "Mən ba karte etebari əz aberbank pul migiram va dər kifəm migozaram.",
-                "az": "Mən bank kartı ilə bankomatdan pul götürürəm və çantama qoyuram.",
-            },
-            {
-                "fa": "تاجرها در خرید و فروش، بیشتر از چک یا کارت اعتباری استفاده می‌کنند.",
-                "reading_az": "Tacerha dər xərid o foruş, biştər əz çek ya karte etebari estefade mikonənd.",
-                "az": "Tacirlər alqı-satqıda daha çox çek və ya bank kartından istifadə edirlər.",
-            },
-            {
-                "fa": "فروشنده با ماشین‌حساب، پول غذاها را حساب می‌کند.",
-                "reading_az": "Foruşende ba maşin-hesab, pule qəzaha ra hesab mikonəd.",
-                "az": "Satıcı kalkulyatorla yeməklərin pulunu hesablayır.",
+                "items": [
+                    {
+                        "fa": "در آن دانش‌گاه دو هزار و سیصد و چهل و هفت دانش‌جو درس می‌خوانند.",
+                        "reading_az": "Dər an daneşgah do hezar o sisəd o çehel o həft daneşcu dərs mixanənd.",
+                        "az": "O universitetdə iki min üç yüz qırx yeddi tələbə oxuyur.",
+                    },
+                    {
+                        "fa": "در کتاب‌خانه‌ی مدرسه‌ی ما دوازده هزار و سیصد و هشتاد و پنج کتاب وجود دارد.",
+                        "reading_az": "Dər ketabxaneye mædreseye ma dəvazdəh hezar o sisəd o həştad o pənc ketab vocud darəd.",
+                        "az": "Məktəbimizin kitabxanasında on iki min üç yüz səksən beş kitab var.",
+                    },
+                    {
+                        "fa": "آن فروشنده در فروش‌گاهش حدود بیست و سه هزار و ششصد کیلو برنج دارد.",
+                        "reading_az": "An foruşende dər foruşgahəş hodude bist o se hezar o şeşsəd kilo berənc darəd.",
+                        "az": "O satıcının mağazasında təxminən iyirmi üç min altı yüz kilo düyü var.",
+                    },
+                    {
+                        "fa": "یک کیلو برنج، سه هزار و نهصد تومان است و یک کیلو گندم ششصد و پنجاه تومان است.",
+                        "reading_az": "Yek kilo berənc, se hezar o nohsəd toman əst va yek kilo gəndom şeşsəd o pənjah toman əst.",
+                        "az": "Bir kilo düyü üç min doqquz yüz tümən, bir kilo buğda isə altı yüz əlli tümündür.",
+                    },
+                    {
+                        "fa": "این خانم، کارمندِ بانک ملّی ایران است. او هر روز پول‌های زیادی را می‌شمارد.",
+                        "reading_az": "In xanom, karmənde banke melliye Iran əst. U hər ruz pulhaye ziyadi ra mişomarəd.",
+                        "az": "Bu xanım İran Milli Bankının işçisidir. O hər gün çoxlu pul sayır.",
+                    },
+                    {
+                        "fa": "خانه‌ی حسین در خیابان امین است. او خانه‌اش را دویست و پنجاه میلیون تومان می‌فروشد.",
+                        "reading_az": "Xaneye Hoseyn dər xiyabane Əmin əst. U xaneəş ra devist o pənjah milyun toman miforuşəd.",
+                        "az": "Hüseynin evi Əmin küçəsindədir. O evini iki yüz əlli milyon tümənə satır.",
+                    },
+                    {
+                        "fa": "من با کارت اعتباری از عابربانک پول می‌گیرم و در کیفم می‌گذارم.",
+                        "reading_az": "Mən ba karte etebari əz aberbank pul migiram va dər kifəm migozaram.",
+                        "az": "Mən bank kartı ilə bankomatdan pul götürürəm və çantama qoyuram.",
+                    },
+                    {
+                        "fa": "تاجرها در خرید و فروش، بیشتر از چک یا کارت اعتباری استفاده می‌کنند.",
+                        "reading_az": "Tacerha dər xərid o foruş, biştər əz çek ya karte etebari estefade mikonənd.",
+                        "az": "Tacirlər alqı-satqıda daha çox çek və ya bank kartından istifadə edirlər.",
+                    },
+                    {
+                        "fa": "فروشنده با ماشین‌حساب، پول غذاها را حساب می‌کند.",
+                        "reading_az": "Foruşende ba maşin-hesab, pule qəzaha ra hesab mikonəd.",
+                        "az": "Satıcı kalkulyatorla yeməklərin pulunu hesablayır.",
+                    },
+                ],
             },
         ],
         "answer_items": [

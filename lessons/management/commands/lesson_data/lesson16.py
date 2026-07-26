@@ -160,20 +160,6 @@ LESSON = {
             ],
         },
         {
-            "kind": "multiple_choice",
-            "instruction_az": "«کمک به پدربزرگ» mətninə görə düzgün cavabı seçin.",
-            "items": [
-                {"question_fa": "مجید و خانواده‌اش ساعت چند به طرف روستای پدربزرگ حرکت کردند؟", "options": ["حدود ساعت هشت", "حدود ساعت شش", "حدود ساعت ده"], "correct_index": 0},
-                {"question_fa": "آن‌ها چه ساعتی به خانه‌ی پدربزرگ رسیدند؟", "options": ["ده و نیم صبح", "دوازده ظهر", "نه صبح"], "correct_index": 0},
-                {"question_fa": "مجید بعدازظهر برای چه به باغ پدربزرگش رفت؟", "options": ["برای تفریح و کمک", "برای خرید", "برای درس خواندن"], "correct_index": 0},
-                {"question_fa": "وقتی هوا بارانی شد، پدربزرگ مجید را چه‌طور صدا زد؟", "options": ["گفت جعبه‌ها را بیاور", "گفت به خانه برو", "گفت کمکم کن"], "correct_index": 0},
-                {"question_fa": "مجید و پدربزرگش با جعبه‌ها چه‌کار کردند؟", "options": ["سیب‌ها و زردآلوها را در آن‌ها ریختند", "میوه‌ها را فروختند", "جعبه‌ها را شستند"], "correct_index": 0},
-                {"question_fa": "پدربزرگ در راه برگشت به مجید چه‌کار داد؟", "options": ["مقداری پول", "یک کتاب", "یک ساعت"], "correct_index": 0},
-                {"question_fa": "مجید با آن پول چه چیزهایی خرید؟", "options": ["کاهو، سیب‌زمینی، تخم‌مرغ", "کتاب و دفتر", "لباس"], "correct_index": 0},
-                {"question_fa": "وقتی مجید به خانه برگشت، مادربزرگش چه کار می‌کرد؟", "options": ["در حال پختن غذا بود", "در حال خواندن کتاب بود", "در حال خواب بود"], "correct_index": 0},
-            ],
-        },
-        {
             "kind": "practice_reveal",
             "instruction_az": "Cümləni əmr felinə çevirin: «من فردا به تهران می‌روم. → شما (تو) فردا به تهران برو.»",
             "items": [
@@ -205,17 +191,21 @@ LESSON = {
         },
     ],
     "sentence_practice": {
-        "listen_items": [
-            {"fa": "باغبان‌ها در فصل تابستان و پاییز میوه‌ها را می‌چینند و می‌فروشند.", "reading_az": "Bağbanha dər fəsle tabestan va payiz miveha ra miçinənd va mifəruşənd.", "az": "Bağbanlar yay və payız fəslində meyvələri yığıb satırlar."},
-            {"fa": "سمیّه و مادرش سبزی‌ها را پاک کردند؛ سپس آن‌ها را شستند و در یخچال گذاشتند.", "reading_az": "Somayye va madərəş səbziha ra pak kərdənd; səpəs anha ra şostənd va dər yəxçal gozaştənd.", "az": "Səmiyyə və anası göyərtiləri təmizlədilər; sonra onları yudular və soyuducuya qoydular."},
-            {"fa": "ما بعضی از میوه‌ها را پوست می‌کنیم و می‌خوریم و بعضی را با پوست می‌خوریم.", "reading_az": "Ma bəzi əz miveha ra pust mikonim va mixorim va bəzi ra ba pust mixorim.", "az": "Biz meyvələrin bəzisini soyub yeyirik, bəzisini isə qabığı ilə yeyirik."},
-            {"fa": "دیشب زهرا و مادرش سبزی‌ها را خرد کردند و خورش سبزی درست کردند.", "reading_az": "Dişəb Zəhra va madərəş səbziha ra xord kərdənd va xoreşe səbzi dorost kərdənd.", "az": "Dünən gecə Zəhra və anası göyərtiləri xırdaladılar və göyərti xörəşti hazırladılar."},
-            {"fa": "در میوه‌فروشی‌ها، میوه‌های گوناگونی، مانندِ انگور، انجیر، زردآلو، موز و ... وجود دارد.", "reading_az": "Dər mivefəruşiha, mivehaye gunaguni, manənde əngur, ənjir, zərdalu, mouz va ... vocud darəd.", "az": "Meyvə mağazalarında üzüm, əncir, ərik, banan və s. kimi müxtəlif meyvələr var."},
-            {"fa": "دوستم مریض است. من دیروز دو عدد کمپوت گلابی و آناناس خریدم و برای او بردم.", "reading_az": "Dustəm məriz əst. Mən diruz do ədəd kompote goləbi va ananas xəridəm va bəraye u bordəm.", "az": "Dostum xəstədir. Mən dünən iki ədəd armud və ananas kompotu aldım və ona apardım."},
-            {"fa": "من امروز در باغچه‌ی خانه‌مان یک درخت زیتون و یک درخت انار می‌کارم.", "reading_az": "Mən emruz dər bağçeye xanemean yek dərəxte zeytun va yek dərəxte anar mikaram.", "az": "Mən bu gün evimizin bağçasında bir zeytun ağacı və bir nar ağacı əkirəm."},
-            {"fa": "امروز جشن تولّدِ برادرزاده‌ام است؛ دو شاخه گل از باغچه می‌چینم و به او هدیه می‌دهم.", "reading_az": "Emruz cəşne touləde bəradərzadeəm əst; do şaxe gol əz bağçe miçinəm va be u hedye midəham.", "az": "Bu gün qardaşımın oğlunun ad günüdür; bağçadan iki gül sapı dərib ona hədiyyə edirəm."},
-            {"fa": "پدرم یک کیلو سبزی خوردن (جعفری، ریحان، پیازچه، نعنا و تربچه) خرید و به خانه آورد.", "reading_az": "Pedərəm yek kilo səbzi xordən (cəfəri, reyhan, piyazçe, nəna va torbəçe) xərid va be xane avərd.", "az": "Atam bir kilo yaşıllıq (cəfəri, reyhan, cavan soğan, nanə və turp) aldı və evə gətirdi."},
-            {"fa": "در کارخانه‌ی کمپوت‌سازی با میوه‌های مختلف، کمپوت درست می‌کنند.", "reading_az": "Dər karxaneye kompotsazi ba mivehaye moxtəlef, kompot dorost mikonənd.", "az": "Kompot zavodunda müxtəlif meyvələrdən kompot hazırlayırlar."},
+        "listen_exercises": [
+            {
+                "items": [
+                    {"fa": "باغبان‌ها در فصل تابستان و پاییز میوه‌ها را می‌چینند و می‌فروشند.", "reading_az": "Bağbanha dər fəsle tabestan va payiz miveha ra miçinənd va mifəruşənd.", "az": "Bağbanlar yay və payız fəslində meyvələri yığıb satırlar."},
+                    {"fa": "سمیّه و مادرش سبزی‌ها را پاک کردند؛ سپس آن‌ها را شستند و در یخچال گذاشتند.", "reading_az": "Somayye va madərəş səbziha ra pak kərdənd; səpəs anha ra şostənd va dər yəxçal gozaştənd.", "az": "Səmiyyə və anası göyərtiləri təmizlədilər; sonra onları yudular və soyuducuya qoydular."},
+                    {"fa": "ما بعضی از میوه‌ها را پوست می‌کنیم و می‌خوریم و بعضی را با پوست می‌خوریم.", "reading_az": "Ma bəzi əz miveha ra pust mikonim va mixorim va bəzi ra ba pust mixorim.", "az": "Biz meyvələrin bəzisini soyub yeyirik, bəzisini isə qabığı ilə yeyirik."},
+                    {"fa": "دیشب زهرا و مادرش سبزی‌ها را خرد کردند و خورش سبزی درست کردند.", "reading_az": "Dişəb Zəhra va madərəş səbziha ra xord kərdənd va xoreşe səbzi dorost kərdənd.", "az": "Dünən gecə Zəhra və anası göyərtiləri xırdaladılar və göyərti xörəşti hazırladılar."},
+                    {"fa": "در میوه‌فروشی‌ها، میوه‌های گوناگونی، مانندِ انگور، انجیر، زردآلو، موز و ... وجود دارد.", "reading_az": "Dər mivefəruşiha, mivehaye gunaguni, manənde əngur, ənjir, zərdalu, mouz va ... vocud darəd.", "az": "Meyvə mağazalarında üzüm, əncir, ərik, banan və s. kimi müxtəlif meyvələr var."},
+                    {"fa": "دوستم مریض است. من دیروز دو عدد کمپوت گلابی و آناناس خریدم و برای او بردم.", "reading_az": "Dustəm məriz əst. Mən diruz do ədəd kompote goləbi va ananas xəridəm va bəraye u bordəm.", "az": "Dostum xəstədir. Mən dünən iki ədəd armud və ananas kompotu aldım və ona apardım."},
+                    {"fa": "من امروز در باغچه‌ی خانه‌مان یک درخت زیتون و یک درخت انار می‌کارم.", "reading_az": "Mən emruz dər bağçeye xanemean yek dərəxte zeytun va yek dərəxte anar mikaram.", "az": "Mən bu gün evimizin bağçasında bir zeytun ağacı və bir nar ağacı əkirəm."},
+                    {"fa": "امروز جشن تولّدِ برادرزاده‌ام است؛ دو شاخه گل از باغچه می‌چینم و به او هدیه می‌دهم.", "reading_az": "Emruz cəşne touləde bəradərzadeəm əst; do şaxe gol əz bağçe miçinəm va be u hedye midəham.", "az": "Bu gün qardaşımın oğlunun ad günüdür; bağçadan iki gül sapı dərib ona hədiyyə edirəm."},
+                    {"fa": "پدرم یک کیلو سبزی خوردن (جعفری، ریحان، پیازچه، نعنا و تربچه) خرید و به خانه آورد.", "reading_az": "Pedərəm yek kilo səbzi xordən (cəfəri, reyhan, piyazçe, nəna va torbəçe) xərid va be xane avərd.", "az": "Atam bir kilo yaşıllıq (cəfəri, reyhan, cavan soğan, nanə və turp) aldı və evə gətirdi."},
+                    {"fa": "در کارخانه‌ی کمپوت‌سازی با میوه‌های مختلف، کمپوت درست می‌کنند.", "reading_az": "Dər karxaneye kompotsazi ba mivehaye moxtəlef, kompot dorost mikonənd.", "az": "Kompot zavodunda müxtəlif meyvələrdən kompot hazırlayırlar."},
+                ],
+            },
         ],
         "answer_items": [],
     },

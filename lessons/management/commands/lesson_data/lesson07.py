@@ -237,18 +237,6 @@ LESSON = {
             ],
         },
         {
-            "kind": "multiple_choice",
-            "instruction_az": "«بازار» mətninə görə düzgün cavabı seçin.",
-            "items": [
-                {"question_fa": "در بازار چه مغازه‌هایی وجود دارد؟", "options": ["مغازه‌های پوشاک، کفش، فرش، طلا و ظرف", "فقط مغازه‌های پوشاک", "فقط مغازه‌های فرش"], "correct_index": 0},
-                {"question_fa": "آیا در بازارهای ایران، مسجد وجود ندارد؟", "options": ["نه، وجود ندارد", "چرا، مسجد هم هست", "فقط در تهران هست"], "correct_index": 1},
-                {"question_fa": "فروشنده‌ها و خریدارها هنگام اذان چه‌کار می‌کنند؟", "options": ["به خانه می‌روند", "برای خواندن نماز به مسجد می‌روند", "غذا می‌خورند"], "correct_index": 1},
-                {"question_fa": "چه وقت بازارهای ایران بسیار شلوغ هستند؟", "options": ["نزدیک عید", "هنگام صبح", "روزهای جمعه"], "correct_index": 0},
-                {"question_fa": "بچّه‌ها لباس‌های نو را چه‌کار می‌کنند؟", "options": ["به دوستانشان می‌دهند", "در کمد به چوب‌لباسی آویزان می‌کنند", "می‌فروشند"], "correct_index": 1},
-                {"question_fa": "بچّه‌ها در روز عید به کجا می‌روند؟", "options": ["به مدرسه", "به بازار", "به خانه‌ی پدربزرگ‌ها، مادربزرگ‌ها و بستگان"], "correct_index": 2},
-            ],
-        },
-        {
             "kind": "practice_reveal",
             "instruction_az": "Nümunə kimi əvəz edin: «علی پیراهنش را درمی‌آورد و ژاکت می‌پوشد. — من / کاپشن / پالتو → من کاپشنم را درمی‌آورم و پالتو می‌پوشم.»",
             "items": [
@@ -382,51 +370,55 @@ LESSON = {
         },
     ],
     "sentence_practice": {
-        "listen_items": [
+        "listen_exercises": [
             {
-                "fa": "سارا و یاسر در فروش‌گاه پوشاک کار می‌کنند. آن‌ها لباس‌های زنانه و مردانه می‌فروشند.",
-                "reading_az": "Sara va Yasər dər foruşgahe puşak kar mikonənd. Anha lebashaye zənane va mərdane miforuşənd.",
-                "az": "Sara və Yasər geyim mağazasında işləyirlər. Onlar qadın və kişi geyimləri satırlar.",
-            },
-            {
-                "fa": "پدرم برای من دو پیراهنِ آستین بلند و یک پیراهن آستین کوتاه می‌خرد.",
-                "reading_az": "Pedərəm bəraye mən do pirahəne astin-bolənd va yek pirahəne astin-kutah mixərəd.",
-                "az": "Atam mənə iki uzunqollu köynək və bir qısaqollu köynək alır.",
-            },
-            {
-                "fa": "من در خانه زیرپوش یا پیراهن آستین‌کوتاه و بیرون از خانه پیراهن آستین بلند می‌پوشم.",
-                "reading_az": "Mən dər xane zirpuş ya pirahəne astin-kutah va birun əz xane pirahəne astin-bolənd mipuşəm.",
-                "az": "Mən evdə alt köynəyi və ya qısaqollu köynək, evdən bayırda isə uzunqollu köynək geyinirəm.",
-            },
-            {
-                "fa": "علی و زهرا در روز عید پدر به بازار می‌روند و برای پدرشان یک پیراهن انتخاب می‌کنند و می‌خرند.",
-                "reading_az": "Əli va Zəhra dər ruze eyde pedər be bazar mirəvənd va bəraye pedərşan yek pirahən entexab mikonənd va mixərənd.",
-                "az": "Əli və Zəhra ata günündə bazara gedirlər və ataları üçün bir köynək seçib alırlar.",
-            },
-            {
-                "fa": "همسرم لباس‌های کثیف را با لباس‌شویی می‌شوید و لباس‌های چروک را اتو می‌زند.",
-                "reading_az": "Həmsərəm lebashaye kəsif ra ba ləbasşuyi mişuyəd va lebashaye çoruk ra otu mizənəd.",
-                "az": "Həyat yoldaşım çirkli paltarları paltaryuyanla yuyur və qırışmış paltarları ütüləyir.",
-            },
-            {
-                "fa": "مریم روزهای جمعه در شستن لباس‌ها و تمیزکردن خانه به مادرش کمک می‌کند.",
-                "reading_az": "Məryəm ruzhaye come dər şostəne lebasha va təmiz-kərdəne xane be madərəş komək mikonəd.",
-                "az": "Məryəm cümə günləri paltarları yumaqda və evi təmizləməkdə anasına kömək edir.",
-            },
-            {
-                "fa": "آیا شما در کلاس، کاپشنتان را درمی‌آورید؟ بله، من در کلاسم کاپشنم را درمی‌آورم.",
-                "reading_az": "Aya şoma dər kelas, kapşenetan ra dərmiavərid? Bəle, mən dər kelasəm kapşenəm ra dərmiavəram.",
-                "az": "Siz sinifdə gödəkcənizi çıxarırsınızmı? Bəli, mən sinifdə gödəkcəmi çıxarıram.",
-            },
-            {
-                "fa": "شما کدام روسری را انتخاب می‌کنید؟ من روسری سرمه‌ای را انتخاب می‌کنم.",
-                "reading_az": "Şoma kodam rusəri ra entexab mikonid? Mən rusəriye sormei ra entexab mikonəm.",
-                "az": "Siz hansı baş örtüyünü seçirsiniz? Mən tünd göy baş örtüyünü seçirəm.",
-            },
-            {
-                "fa": "شما در زمستان چه لباس‌هایی می‌پوشید؟ ما در زمستان لباس‌های ضخیم، مانند ژاکت، کاپشن و پالتو می‌پوشیم.",
-                "reading_az": "Şoma dər zemestan çe lebashayi mipuşid? Ma dər zemestan lebashaye zəxim, manənde jaket, kapşen va palto mipuşim.",
-                "az": "Siz qışda hansı paltarları geyinirsiniz? Biz qışda jaket, gödəkcə və palto kimi qalın paltarlar geyinirik.",
+                "items": [
+                    {
+                        "fa": "سارا و یاسر در فروش‌گاه پوشاک کار می‌کنند. آن‌ها لباس‌های زنانه و مردانه می‌فروشند.",
+                        "reading_az": "Sara va Yasər dər foruşgahe puşak kar mikonənd. Anha lebashaye zənane va mərdane miforuşənd.",
+                        "az": "Sara və Yasər geyim mağazasında işləyirlər. Onlar qadın və kişi geyimləri satırlar.",
+                    },
+                    {
+                        "fa": "پدرم برای من دو پیراهنِ آستین بلند و یک پیراهن آستین کوتاه می‌خرد.",
+                        "reading_az": "Pedərəm bəraye mən do pirahəne astin-bolənd va yek pirahəne astin-kutah mixərəd.",
+                        "az": "Atam mənə iki uzunqollu köynək və bir qısaqollu köynək alır.",
+                    },
+                    {
+                        "fa": "من در خانه زیرپوش یا پیراهن آستین‌کوتاه و بیرون از خانه پیراهن آستین بلند می‌پوشم.",
+                        "reading_az": "Mən dər xane zirpuş ya pirahəne astin-kutah va birun əz xane pirahəne astin-bolənd mipuşəm.",
+                        "az": "Mən evdə alt köynəyi və ya qısaqollu köynək, evdən bayırda isə uzunqollu köynək geyinirəm.",
+                    },
+                    {
+                        "fa": "علی و زهرا در روز عید پدر به بازار می‌روند و برای پدرشان یک پیراهن انتخاب می‌کنند و می‌خرند.",
+                        "reading_az": "Əli va Zəhra dər ruze eyde pedər be bazar mirəvənd va bəraye pedərşan yek pirahən entexab mikonənd va mixərənd.",
+                        "az": "Əli və Zəhra ata günündə bazara gedirlər və ataları üçün bir köynək seçib alırlar.",
+                    },
+                    {
+                        "fa": "همسرم لباس‌های کثیف را با لباس‌شویی می‌شوید و لباس‌های چروک را اتو می‌زند.",
+                        "reading_az": "Həmsərəm lebashaye kəsif ra ba ləbasşuyi mişuyəd va lebashaye çoruk ra otu mizənəd.",
+                        "az": "Həyat yoldaşım çirkli paltarları paltaryuyanla yuyur və qırışmış paltarları ütüləyir.",
+                    },
+                    {
+                        "fa": "مریم روزهای جمعه در شستن لباس‌ها و تمیزکردن خانه به مادرش کمک می‌کند.",
+                        "reading_az": "Məryəm ruzhaye come dər şostəne lebasha va təmiz-kərdəne xane be madərəş komək mikonəd.",
+                        "az": "Məryəm cümə günləri paltarları yumaqda və evi təmizləməkdə anasına kömək edir.",
+                    },
+                    {
+                        "fa": "آیا شما در کلاس، کاپشنتان را درمی‌آورید؟ بله، من در کلاسم کاپشنم را درمی‌آورم.",
+                        "reading_az": "Aya şoma dər kelas, kapşenetan ra dərmiavərid? Bəle, mən dər kelasəm kapşenəm ra dərmiavəram.",
+                        "az": "Siz sinifdə gödəkcənizi çıxarırsınızmı? Bəli, mən sinifdə gödəkcəmi çıxarıram.",
+                    },
+                    {
+                        "fa": "شما کدام روسری را انتخاب می‌کنید؟ من روسری سرمه‌ای را انتخاب می‌کنم.",
+                        "reading_az": "Şoma kodam rusəri ra entexab mikonid? Mən rusəriye sormei ra entexab mikonəm.",
+                        "az": "Siz hansı baş örtüyünü seçirsiniz? Mən tünd göy baş örtüyünü seçirəm.",
+                    },
+                    {
+                        "fa": "شما در زمستان چه لباس‌هایی می‌پوشید؟ ما در زمستان لباس‌های ضخیم، مانند ژاکت، کاپشن و پالتو می‌پوشیم.",
+                        "reading_az": "Şoma dər zemestan çe lebashayi mipuşid? Ma dər zemestan lebashaye zəxim, manənde jaket, kapşen va palto mipuşim.",
+                        "az": "Siz qışda hansı paltarları geyinirsiniz? Biz qışda jaket, gödəkcə və palto kimi qalın paltarlar geyinirik.",
+                    },
+                ],
             },
         ],
         "answer_items": [],

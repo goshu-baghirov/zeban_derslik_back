@@ -254,19 +254,6 @@ LESSON = {
             ],
         },
         {
-            "kind": "multiple_choice",
-            "instruction_az": "«خانواده‌ی من» mətninə görə düzgün cavabı seçin.",
-            "items": [
-                {"question_fa": "نرگس و همسرش چه‌کاره هستند؟", "options": ["دانش‌جو هستند", "معلّم هستند", "پزشک هستند"], "correct_index": 0},
-                {"question_fa": "آیا پدر نرگس الآن درس می‌دهد؟", "options": ["بله، درس می‌دهد", "نه، او بازنشسته است", "نه، او مهندس است"], "correct_index": 1},
-                {"question_fa": "صادق در کدام دانش‌گاه درس می‌خواند؟", "options": ["دانش‌گاه تهران", "دانش‌گاه اصفهان", "دانش‌گاه شیراز"], "correct_index": 0},
-                {"question_fa": "کدام برادر نرگس، دکترِ قلب است؟", "options": ["سجّاد", "حسن", "صادق"], "correct_index": 1},
-                {"question_fa": "سجّاد کجا کار می‌کند؟", "options": ["در بیمارستان ابوعلی سینا", "در فرودگاه امام‌خمینی تهران", "در مدرسه‌ی شهید بهشتی"], "correct_index": 1},
-                {"question_fa": "مادر نرگس چه‌کاره است؟", "options": ["خانه‌دار است", "معلّم است", "پرستار است"], "correct_index": 0},
-                {"question_fa": "خانواده‌ی نرگس چند نفره است؟", "options": ["چهار نفره", "پنج نفره", "شش نفره"], "correct_index": 2},
-            ],
-        },
-        {
             "kind": "practice_reveal",
             "instruction_az": "Nümunə kimi: «یوسف / عکّاس / دوربین → یوسف چه‌کاره است؟ او عکّاس است. عکّاس چه دارد؟ عکّاس دوربین دارد.»",
             "items": [
@@ -346,56 +333,60 @@ LESSON = {
         },
     ],
     "sentence_practice": {
-        "listen_items": [
+        "listen_exercises": [
             {
-                "fa": "پدرم نجّار است. او میز و صندلی می‌سازد.",
-                "reading_az": "Pedərəm nəccar əst. U miz va səndəli misazəd.",
-                "az": "Atam dülgərdir. O, masa və stul düzəldir.",
-            },
-            {
-                "fa": "آن مرد، رفتگر است. او خیابان را جارو می‌کند.",
-                "reading_az": "An mərd, roftegər əst. U xiyaban ra caru mikonəd.",
-                "az": "O kişi zibilyığandır. O, küçəni süpürür.",
-            },
-            {
-                "fa": "نادر و سلیمان کارگر هستند. آن‌ها به بنّا کمک می‌کنند.",
-                "reading_az": "Nadər va Soleyman kargər həstənd. Anha be bənna komək mikonənd.",
-                "az": "Nadir və Süleyman fəhlədir. Onlar bənnaya kömək edirlər.",
-            },
-            {
-                "fa": "آن خانم، استاد ما است؛ ایشان به ما زبان فارسی درس می‌دهد.",
-                "reading_az": "An xanom, ostade ma əst; işan be ma zəbane farsi dərs midəhəd.",
-                "az": "O xanım bizim müəlliməmizdir; o bizə fars dili öyrədir.",
-            },
-            {
-                "fa": "ما مهندسِ رایانه هستیم و در جامعة المصطفی کار می‌کنیم.",
-                "reading_az": "Ma mohəndese rayane hastim va dər Cameətol-Mostəfa kar mikonim.",
-                "az": "Biz kompüter mühəndisiyik və əl-Müstəfa Cəmiyyətində işləyirik.",
-            },
-            {
-                "fa": "برادرم بنّا است و خانه می‌سازد. خواهرم خیّاط است و لباس می‌دوزد.",
-                "reading_az": "Bəradərəm bənna əst va xane misazəd. Xahərəm xəyyat əst va lebas miduzəd.",
-                "az": "Qardaşım bənnadır və ev tikir. Bacım dərzidir və paltar tikir.",
-            },
-            {
-                "fa": "نجّار با چوب، در و پنجره می‌سازد و آهنگر با آهن، در و پنجره می‌سازد.",
-                "reading_az": "Nəccar ba çub, dər va pəncəre misazəd va ahəngər ba ahən, dər va pəncəre misazəd.",
-                "az": "Dülgər taxtadan qapı və pəncərə düzəldir, dəmirçi isə dəmirdən qapı və pəncərə düzəldir.",
-            },
-            {
-                "fa": "احمد و دوستش دانش‌جو هستند. آن‌ها در دانش‌گاه تهران درس می‌خوانند.",
-                "reading_az": "Əhməd va dustəş daneşcu həstənd. Anha dər daneşgahe Tehran dərs mixanənd.",
-                "az": "Əhməd və dostu tələbədir. Onlar Tehran Universitetində oxuyurlar.",
-            },
-            {
-                "fa": "محمّد و فاطمه دانش‌آموز هستند؛ پدرشان معلّم است و مادرشان مدیر مدرسه است.",
-                "reading_az": "Mohəmməd va Fateme daneşamuz həstənd; pedərşan moəllem əst va madərşan modire mædrese əst.",
-                "az": "Məhəmməd və Fatimə şagirddir; ataları müəllim, anaları isə məktəb müdiridir.",
-            },
-            {
-                "fa": "من و همسرم پزشک هستیم. ما بیمارها را معاینه می‌کنیم و برای آن‌ها دارو می‌نویسیم.",
-                "reading_az": "Mən va həmsərəm pezeşk hastim. Ma bimarha ra moayene mikonim va bəraye anha daru minevisim.",
-                "az": "Mən və həyat yoldaşım həkimik. Biz xəstələri müayinə edirik və onlara dərman yazırıq.",
+                "items": [
+                    {
+                        "fa": "پدرم نجّار است. او میز و صندلی می‌سازد.",
+                        "reading_az": "Pedərəm nəccar əst. U miz va səndəli misazəd.",
+                        "az": "Atam dülgərdir. O, masa və stul düzəldir.",
+                    },
+                    {
+                        "fa": "آن مرد، رفتگر است. او خیابان را جارو می‌کند.",
+                        "reading_az": "An mərd, roftegər əst. U xiyaban ra caru mikonəd.",
+                        "az": "O kişi zibilyığandır. O, küçəni süpürür.",
+                    },
+                    {
+                        "fa": "نادر و سلیمان کارگر هستند. آن‌ها به بنّا کمک می‌کنند.",
+                        "reading_az": "Nadər va Soleyman kargər həstənd. Anha be bənna komək mikonənd.",
+                        "az": "Nadir və Süleyman fəhlədir. Onlar bənnaya kömək edirlər.",
+                    },
+                    {
+                        "fa": "آن خانم، استاد ما است؛ ایشان به ما زبان فارسی درس می‌دهد.",
+                        "reading_az": "An xanom, ostade ma əst; işan be ma zəbane farsi dərs midəhəd.",
+                        "az": "O xanım bizim müəlliməmizdir; o bizə fars dili öyrədir.",
+                    },
+                    {
+                        "fa": "ما مهندسِ رایانه هستیم و در جامعة المصطفی کار می‌کنیم.",
+                        "reading_az": "Ma mohəndese rayane hastim va dər Cameətol-Mostəfa kar mikonim.",
+                        "az": "Biz kompüter mühəndisiyik və əl-Müstəfa Cəmiyyətində işləyirik.",
+                    },
+                    {
+                        "fa": "برادرم بنّا است و خانه می‌سازد. خواهرم خیّاط است و لباس می‌دوزد.",
+                        "reading_az": "Bəradərəm bənna əst va xane misazəd. Xahərəm xəyyat əst va lebas miduzəd.",
+                        "az": "Qardaşım bənnadır və ev tikir. Bacım dərzidir və paltar tikir.",
+                    },
+                    {
+                        "fa": "نجّار با چوب، در و پنجره می‌سازد و آهنگر با آهن، در و پنجره می‌سازد.",
+                        "reading_az": "Nəccar ba çub, dər va pəncəre misazəd va ahəngər ba ahən, dər va pəncəre misazəd.",
+                        "az": "Dülgər taxtadan qapı və pəncərə düzəldir, dəmirçi isə dəmirdən qapı və pəncərə düzəldir.",
+                    },
+                    {
+                        "fa": "احمد و دوستش دانش‌جو هستند. آن‌ها در دانش‌گاه تهران درس می‌خوانند.",
+                        "reading_az": "Əhməd va dustəş daneşcu həstənd. Anha dər daneşgahe Tehran dərs mixanənd.",
+                        "az": "Əhməd və dostu tələbədir. Onlar Tehran Universitetində oxuyurlar.",
+                    },
+                    {
+                        "fa": "محمّد و فاطمه دانش‌آموز هستند؛ پدرشان معلّم است و مادرشان مدیر مدرسه است.",
+                        "reading_az": "Mohəmməd va Fateme daneşamuz həstənd; pedərşan moəllem əst va madərşan modire mædrese əst.",
+                        "az": "Məhəmməd və Fatimə şagirddir; ataları müəllim, anaları isə məktəb müdiridir.",
+                    },
+                    {
+                        "fa": "من و همسرم پزشک هستیم. ما بیمارها را معاینه می‌کنیم و برای آن‌ها دارو می‌نویسیم.",
+                        "reading_az": "Mən va həmsərəm pezeşk hastim. Ma bimarha ra moayene mikonim va bəraye anha daru minevisim.",
+                        "az": "Mən və həyat yoldaşım həkimik. Biz xəstələri müayinə edirik və onlara dərman yazırıq.",
+                    },
+                ],
             },
         ],
         "answer_items": [

@@ -244,20 +244,6 @@ LESSON = {
             ],
         },
         {
-            "kind": "multiple_choice",
-            "instruction_az": "«مسافرت» mətninə görə düzgün cavabı seçin.",
-            "items": [
-                {"question_fa": "بیشتر مردم چه روزهایی به مسافرت می‌روند؟", "options": ["روزهای تعطیل", "روزهای کاری", "روزهای امتحان"], "correct_index": 0},
-                {"question_fa": "مردم با چه چیزهایی مسافرت می‌کنند؟", "options": ["فقط با هواپیما", "با ماشین شخصی یا با بلیت اتوبوس، قطار و هواپیما", "فقط پیاده"], "correct_index": 1},
-                {"question_fa": "احمد و خانواده‌اش هر چند سال یک بار به مسافرت می‌روند؟", "options": ["هر سال یک بار", "هر دو یا سه سال یک بار", "هر ماه یک بار"], "correct_index": 1},
-                {"question_fa": "آن‌ها در تعطیلات عید نوروز به کجا مسافرت می‌کنند؟", "options": ["به شهر همدان", "به شهر مشهد", "به شهر شیراز"], "correct_index": 0},
-                {"question_fa": "آن‌ها در روزهای اوّل تابستان به کجا می‌روند؟", "options": ["به همدان", "برای زیارت امام رضا (ع) به مشهد", "به تبریز"], "correct_index": 1},
-                {"question_fa": "احمد و همسرش پارسال برای مسافرت کدام شهرها را انتخاب کردند؟", "options": ["اصفهان و شیراز", "تبریز و اردبیل", "همدان و مشهد"], "correct_index": 0},
-                {"question_fa": "آن‌ها امسال به کدام شهرها می‌روند؟", "options": ["اصفهان و شیراز", "تبریز و اردبیل", "قم و تهران"], "correct_index": 1},
-                {"question_fa": "آن‌ها ابتدا به کدام شهر می‌روند و چند روز آن‌جا می‌مانند؟", "options": ["اردبیل؛ دو روز", "تبریز؛ سه روز", "اصفهان؛ یک روز"], "correct_index": 0},
-            ],
-        },
-        {
             "kind": "practice_reveal",
             "instruction_az": "Nümunə kimi cümlə qurun: «ما ساعت هفت سوار اتوبوس می‌شویم و ساعت هشت به مدرسه می‌رسیم.»",
             "items": [
@@ -289,61 +275,65 @@ LESSON = {
         },
     ],
     "sentence_practice": {
-        "listen_items": [
+        "listen_exercises": [
             {
-                "fa": "در کره‌ی زمین، پنج قارّه به نام‌های آسیا، اروپا، آفریقا، آمریکا و اقیانوسیه وجود دارد.",
-                "reading_az": "Dər koreye zəmin, pənc qarre be namhaye Asiya, Orupa, Afriqa, Amrika va Oqyanusiye vocud darəd.",
-                "az": "Yer kürəsində Asiya, Avropa, Afrika, Amerika və Okeaniya adlı beş qitə var.",
-            },
-            {
-                "fa": "چین و اندونزی در قارّه‌ی آسیا، مصر و نیجریه در قارّه‌ی آفریقا قرار دارند.",
-                "reading_az": "Çin va Ondonezi dər qarreye Asiya, Mesr va Nijeriye dər qarreye Afriqa qərar darənd.",
-                "az": "Çin və Endoneziya Asiya qitəsində, Misir və Nigeriya isə Afrika qitəsində yerləşir.",
-            },
-            {
-                "fa": "حسین امروز به دفتر مسافرتی می‌رود و برای رفتن به کشورش بلیت هواپیما می‌خرد.",
-                "reading_az": "Hoseyn emruz be dəftəre mosaferəti mirəvəd va bəraye rəftən be kəşvərəş belite həvapeyma mixərəd.",
-                "az": "Hüseyn bu gün turizm agentliyinə gedir və öz ölkəsinə getmək üçün təyyarə bileti alır.",
-            },
-            {
-                "fa": "مسافران پس از خریدن بلیت به ایستگاه راه‌آهن می‌روند و سوار قطار می‌شوند.",
-                "reading_az": "Mosaferan pəs əz xəridəne belit be istqahe rah-ahən mirəvənd va səvare qətar mişəvənd.",
-                "az": "Sərnişinlər bilet aldıqdan sonra dəmiryol stansiyasına gedir və qatara minirlər.",
-            },
-            {
-                "fa": "مسافران برای خواندن نماز و خوردن ناهار از اتوبوس پیاده می‌شوند.",
-                "reading_az": "Mosaferan bəraye xandəne nəmaz va xordəne nahar əz otobus piyade mişəvənd.",
-                "az": "Sərnişinlər namaz qılmaq və nahar yemək üçün avtobusdan düşürlər.",
-            },
-            {
-                "fa": "امدادگران و پلیس‌ها هنگام تصادف به مردم کمک می‌کنند.",
-                "reading_az": "Emdadgəran va polisha hengame təsadof be mərdom komək mikonənd.",
-                "az": "Xilasedicilər və polislər qəza zamanı insanlara kömək edirlər.",
-            },
-            {
-                "fa": "من با دست چپ می‌نویسم و فرزندانم با دست راست می‌نویسند.",
-                "reading_az": "Mən ba dəste çəp minevisəm va fərzəndanəm ba dəste rast minevisənd.",
-                "az": "Mən sol əllə yazıram, övladlarım isə sağ əllə yazırlar.",
-            },
-            {
-                "fa": "من و دوستانم هر روز ساعت هفت سوار اتوبوس می‌شویم و ساعت هشت به دانش‌گاه می‌رسیم.",
-                "reading_az": "Mən va dustanəm hər ruz saəte həft səvare otobus mişəvim va saəte həşt be daneşgah miresim.",
-                "az": "Mən və dostlarım hər gün saat yeddidə avtobusa minirik və saat səkkizdə universitetə çatırıq.",
-            },
-            {
-                "fa": "عمویم هر روز صبح پیاده به محلّ‌کارش می‌رود و شب با مترو یا تاکسی به خانه برمی‌گردد.",
-                "reading_az": "Əmuyəm hər ruz sobh piyade be məhəllekarəş mirəvəd va şəb ba metro ya taksi be xane bərmigərdəd.",
-                "az": "Əmim hər gün səhər piyada iş yerinə gedir və gecə metro və ya taksi ilə evə qayıdır.",
-            },
-            {
-                "fa": "تصادف در خیابان‌های شلوغ و پرترافیک، بیشتر از خیابان‌های خلوت و کم‌ترافیک است.",
-                "reading_az": "Təsadof dər xiyabanhaye şoluğ va porterafik, bişttər əz xiyabanhaye xəlvət va kəmterafik əst.",
-                "az": "Qəza izdihamlı və tıxaclı küçələrdə, sakit və az sıxlıqlı küçələrdən daha çoxdur.",
-            },
-            {
-                "fa": "خانه‌ی امام خمینی (ره) در شهر قم، خیابان معلّم، اوّل کوچه‌ی ۱۱، سمت چپ قرار دارد.",
-                "reading_az": "Xaneye Emam Xomeyni dər şəhre Qom, xiyabane Moəllem, əvvəle kuçeye yazdəh, səmte çəp qərar darəd.",
-                "az": "İmam Xomeyninin (r) evi Qum şəhərində, Müəllim küçəsində, on birinci döngənin başında, sol tərəfdə yerləşir.",
+                "items": [
+                    {
+                        "fa": "در کره‌ی زمین، پنج قارّه به نام‌های آسیا، اروپا، آفریقا، آمریکا و اقیانوسیه وجود دارد.",
+                        "reading_az": "Dər koreye zəmin, pənc qarre be namhaye Asiya, Orupa, Afriqa, Amrika va Oqyanusiye vocud darəd.",
+                        "az": "Yer kürəsində Asiya, Avropa, Afrika, Amerika və Okeaniya adlı beş qitə var.",
+                    },
+                    {
+                        "fa": "چین و اندونزی در قارّه‌ی آسیا، مصر و نیجریه در قارّه‌ی آفریقا قرار دارند.",
+                        "reading_az": "Çin va Ondonezi dər qarreye Asiya, Mesr va Nijeriye dər qarreye Afriqa qərar darənd.",
+                        "az": "Çin və Endoneziya Asiya qitəsində, Misir və Nigeriya isə Afrika qitəsində yerləşir.",
+                    },
+                    {
+                        "fa": "حسین امروز به دفتر مسافرتی می‌رود و برای رفتن به کشورش بلیت هواپیما می‌خرد.",
+                        "reading_az": "Hoseyn emruz be dəftəre mosaferəti mirəvəd va bəraye rəftən be kəşvərəş belite həvapeyma mixərəd.",
+                        "az": "Hüseyn bu gün turizm agentliyinə gedir və öz ölkəsinə getmək üçün təyyarə bileti alır.",
+                    },
+                    {
+                        "fa": "مسافران پس از خریدن بلیت به ایستگاه راه‌آهن می‌روند و سوار قطار می‌شوند.",
+                        "reading_az": "Mosaferan pəs əz xəridəne belit be istqahe rah-ahən mirəvənd va səvare qətar mişəvənd.",
+                        "az": "Sərnişinlər bilet aldıqdan sonra dəmiryol stansiyasına gedir və qatara minirlər.",
+                    },
+                    {
+                        "fa": "مسافران برای خواندن نماز و خوردن ناهار از اتوبوس پیاده می‌شوند.",
+                        "reading_az": "Mosaferan bəraye xandəne nəmaz va xordəne nahar əz otobus piyade mişəvənd.",
+                        "az": "Sərnişinlər namaz qılmaq və nahar yemək üçün avtobusdan düşürlər.",
+                    },
+                    {
+                        "fa": "امدادگران و پلیس‌ها هنگام تصادف به مردم کمک می‌کنند.",
+                        "reading_az": "Emdadgəran va polisha hengame təsadof be mərdom komək mikonənd.",
+                        "az": "Xilasedicilər və polislər qəza zamanı insanlara kömək edirlər.",
+                    },
+                    {
+                        "fa": "من با دست چپ می‌نویسم و فرزندانم با دست راست می‌نویسند.",
+                        "reading_az": "Mən ba dəste çəp minevisəm va fərzəndanəm ba dəste rast minevisənd.",
+                        "az": "Mən sol əllə yazıram, övladlarım isə sağ əllə yazırlar.",
+                    },
+                    {
+                        "fa": "من و دوستانم هر روز ساعت هفت سوار اتوبوس می‌شویم و ساعت هشت به دانش‌گاه می‌رسیم.",
+                        "reading_az": "Mən va dustanəm hər ruz saəte həft səvare otobus mişəvim va saəte həşt be daneşgah miresim.",
+                        "az": "Mən və dostlarım hər gün saat yeddidə avtobusa minirik və saat səkkizdə universitetə çatırıq.",
+                    },
+                    {
+                        "fa": "عمویم هر روز صبح پیاده به محلّ‌کارش می‌رود و شب با مترو یا تاکسی به خانه برمی‌گردد.",
+                        "reading_az": "Əmuyəm hər ruz sobh piyade be məhəllekarəş mirəvəd va şəb ba metro ya taksi be xane bərmigərdəd.",
+                        "az": "Əmim hər gün səhər piyada iş yerinə gedir və gecə metro və ya taksi ilə evə qayıdır.",
+                    },
+                    {
+                        "fa": "تصادف در خیابان‌های شلوغ و پرترافیک، بیشتر از خیابان‌های خلوت و کم‌ترافیک است.",
+                        "reading_az": "Təsadof dər xiyabanhaye şoluğ va porterafik, bişttər əz xiyabanhaye xəlvət va kəmterafik əst.",
+                        "az": "Qəza izdihamlı və tıxaclı küçələrdə, sakit və az sıxlıqlı küçələrdən daha çoxdur.",
+                    },
+                    {
+                        "fa": "خانه‌ی امام خمینی (ره) در شهر قم، خیابان معلّم، اوّل کوچه‌ی ۱۱، سمت چپ قرار دارد.",
+                        "reading_az": "Xaneye Emam Xomeyni dər şəhre Qom, xiyabane Moəllem, əvvəle kuçeye yazdəh, səmte çəp qərar darəd.",
+                        "az": "İmam Xomeyninin (r) evi Qum şəhərində, Müəllim küçəsində, on birinci döngənin başında, sol tərəfdə yerləşir.",
+                    },
+                ],
             },
         ],
         "answer_items": [],

@@ -177,21 +177,6 @@ LESSON = {
             ],
         },
         {
-            "kind": "multiple_choice",
-            "instruction_az": "«سفره‌های ایرانی» mətninə görə düzgün cavabı seçin.",
-            "items": [
-                {"question_fa": "ایرانی‌ها هر روز چند بار غذا می‌خورند؟", "options": ["دو بار", "سه بار", "چهار بار"], "correct_index": 1},
-                {"question_fa": "صبحانه‌ی ایرانی‌ها معمولاً چیست؟", "options": ["پنیر، کره، مربّا، عسل و چای", "چلوکباب و سالاد", "ماکارونی و سوپ"], "correct_index": 0},
-                {"question_fa": "بیشترِ وقت‌ها ناهار ایرانی‌ها چیست؟", "options": ["فقط نان و پنیر", "برنج با خورش‌های گوناگون یا چلومرغ و چلوکباب", "فقط میوه"], "correct_index": 1},
-                {"question_fa": "شام ایرانی‌ها معمولاً چیست؟", "options": ["سوپ، آش، ماکارونی، الویه یا آب‌گوشت", "چلوکباب", "نان و مربّا"], "correct_index": 0},
-                {"question_fa": "خانواده‌های ایرانی شب‌ها معمولاً چه‌طور غذا می‌خورند؟", "options": ["زیاد غذا می‌خورند", "کم غذا می‌خورند و کمتر رستوران می‌روند", "همیشه در رستوران غذا می‌خورند"], "correct_index": 1},
-                {"question_fa": "دوست حمید که به شام دعوت شد، اسمش چیست و اهل کجاست؟", "options": ["سیّد علی؛ لبنانی", "احمد؛ ایرانی", "سعید؛ عراقی"], "correct_index": 0},
-                {"question_fa": "مهمان‌ها ساعت چند آمدند؟", "options": ["هفت‌ونیم شب", "هشت شب", "شش شب"], "correct_index": 0},
-                {"question_fa": "ریحانه سفره‌ی شام را چه ساعتی پهن کرد؟", "options": ["حدود نُهِ شب", "حدود ده شب", "حدود هفتِ شب"], "correct_index": 0},
-                {"question_fa": "سیّد علی و همسرش پس از شام چند ساعت به خانه‌شان برگشتند؟", "options": ["حدود ده و نیم", "حدود یازده", "حدود نُه"], "correct_index": 0},
-            ],
-        },
-        {
             "kind": "practice_reveal",
             "instruction_az": "Saatı «به» ilə deyin: «ساعت، دو و چهل دقیقه است. = ساعت، بیست دقیقه به سه است.»",
             "items": [
@@ -266,17 +251,21 @@ LESSON = {
         },
     ],
     "sentence_practice": {
-        "listen_items": [
-            {"fa": "ما هر شب پس از شام چای و میوه می‌خوریم.", "reading_az": "Ma hər şəb pəs əz şam çay-o-mive mixorim.", "az": "Biz hər gecə şam yeməyindən sonra çay və meyvə yeyirik."},
-            {"fa": "خواهرم زهرا بیمار است؛ مادرم امروز برایش تخم‌مرغ آب‌پز و سوپ می‌پزد.", "reading_az": "Xahərəm Zəhra bimar əst; madərəm emruz bərayəş toxme-morğe abpəz-o-sup mipəzəd.", "az": "Bacım Zəhra xəstədir; anam bu gün onun üçün bişmiş yumurta və şorba bişirir."},
-            {"fa": "من سیب را پوست می‌کنم و می‌خورم؛ امّا برادرم سیب را با پوست می‌خورد.", "reading_az": "Mən sib ra pust mikonəm-o-mixorəm; əmma bəradərəm sib ra ba pust mixorəd.", "az": "Mən almanı soyub yeyirəm; amma qardaşım almanı qabığı ilə yeyir."},
-            {"fa": "بعضی‌از مردم، سیب‌زمینی آب‌پز و بعضی سیب‌زمینی سرخ‌کرده دوست دارند.", "reading_az": "Bəzi əz mərdom, sibzəminiye abpəz-o-bəzi sibzəminiye sorxkərde dust darənd.", "az": "İnsanların bəzisi bişmiş kartof, bəzisi isə qızardılmış kartof sevir."},
-            {"fa": "مادرم گاهی گوشت را در روغن سرخ می‌کند و گاهی روی آتش کباب می‌کند.", "reading_az": "Madərəm gahi guşt ra dər rouğən sorx mikonəd va gahi ruye atəş kəbab mikonəd.", "az": "Anam bəzən əti yağda qızardır, bəzən isə odda kabab bişirir."},
-            {"fa": "من ساعت چهار و نیم بعدازظهر ناهار خوردم؛ الآن سیر هستم و شام نمی‌خورم.", "reading_az": "Mən saəte çəhar-o-nim bədəzzohr nahar xordəm; əl-an sir hastəm va şam nemixorəm.", "az": "Mən günortadan sonra saat dörd yarımda nahar yedim; indi toxam və şam yemirəm."},
-            {"fa": "زینب سیب‌زمینی‌ها را پوست می‌کند؛ در ماهی‌تابه می‌ریزد و در روغن سرخ می‌کند.", "reading_az": "Zeynəb sibzəminiha ra pust mikonəd; dər mahitabe mirizəd va dər rouğən sorx mikonəd.", "az": "Zeynəb kartofları soyur; tavaya töküb yağda qızardır."},
-            {"fa": "مادرم برای پختن غذا، از روغن جامد استفاده نمی‌کند؛ ایشان از روغن مایع استفاده می‌کند.", "reading_az": "Madərəm bəraye poxtəne qəza, əz rouğəne camed estefade nemikonəd; işan əz rouğəne maye estefade mikonəd.", "az": "Anam yemək bişirmək üçün bərk yağdan istifadə etmir; o, maye yağdan istifadə edir."},
-            {"fa": "ما صبحانه، گاهی پنیر و گردو، گاهی کره و مربّا، گاهی عسل و خامه و گاهی نیمرو می‌خوریم.", "reading_az": "Ma sobhane, gahi pənir-o-gərdu, gahi kəre-o-morəbba, gahi əsəl-o-xame va gahi nimru mixorim.", "az": "Biz səhər yeməyində bəzən pendir-qoz, bəzən kərə yağı-mürəbbə, bəzən bal-qaymaq, bəzən də qayğanaq yeyirik."},
-            {"fa": "ایرانی‌ها هنگام خوردن ناهار و شام، علاوه بر آب، بر سرِ سفره، از دوغ یا ماست یا سالاد هم استفاده می‌کنند.", "reading_az": "Iraniha hengame xordəne nahar-o-şam, əlave bər ab, bər səre sofre, əz duğ ya mast ya salad həm estefade mikonənd.", "az": "İranlılar nahar və şam yeyərkən sudan əlavə süfrə başında ayran, qatıq və ya salatdan da istifadə edirlər."},
+        "listen_exercises": [
+            {
+                "items": [
+                    {"fa": "ما هر شب پس از شام چای و میوه می‌خوریم.", "reading_az": "Ma hər şəb pəs əz şam çay-o-mive mixorim.", "az": "Biz hər gecə şam yeməyindən sonra çay və meyvə yeyirik."},
+                    {"fa": "خواهرم زهرا بیمار است؛ مادرم امروز برایش تخم‌مرغ آب‌پز و سوپ می‌پزد.", "reading_az": "Xahərəm Zəhra bimar əst; madərəm emruz bərayəş toxme-morğe abpəz-o-sup mipəzəd.", "az": "Bacım Zəhra xəstədir; anam bu gün onun üçün bişmiş yumurta və şorba bişirir."},
+                    {"fa": "من سیب را پوست می‌کنم و می‌خورم؛ امّا برادرم سیب را با پوست می‌خورد.", "reading_az": "Mən sib ra pust mikonəm-o-mixorəm; əmma bəradərəm sib ra ba pust mixorəd.", "az": "Mən almanı soyub yeyirəm; amma qardaşım almanı qabığı ilə yeyir."},
+                    {"fa": "بعضی‌از مردم، سیب‌زمینی آب‌پز و بعضی سیب‌زمینی سرخ‌کرده دوست دارند.", "reading_az": "Bəzi əz mərdom, sibzəminiye abpəz-o-bəzi sibzəminiye sorxkərde dust darənd.", "az": "İnsanların bəzisi bişmiş kartof, bəzisi isə qızardılmış kartof sevir."},
+                    {"fa": "مادرم گاهی گوشت را در روغن سرخ می‌کند و گاهی روی آتش کباب می‌کند.", "reading_az": "Madərəm gahi guşt ra dər rouğən sorx mikonəd va gahi ruye atəş kəbab mikonəd.", "az": "Anam bəzən əti yağda qızardır, bəzən isə odda kabab bişirir."},
+                    {"fa": "من ساعت چهار و نیم بعدازظهر ناهار خوردم؛ الآن سیر هستم و شام نمی‌خورم.", "reading_az": "Mən saəte çəhar-o-nim bədəzzohr nahar xordəm; əl-an sir hastəm va şam nemixorəm.", "az": "Mən günortadan sonra saat dörd yarımda nahar yedim; indi toxam və şam yemirəm."},
+                    {"fa": "زینب سیب‌زمینی‌ها را پوست می‌کند؛ در ماهی‌تابه می‌ریزد و در روغن سرخ می‌کند.", "reading_az": "Zeynəb sibzəminiha ra pust mikonəd; dər mahitabe mirizəd va dər rouğən sorx mikonəd.", "az": "Zeynəb kartofları soyur; tavaya töküb yağda qızardır."},
+                    {"fa": "مادرم برای پختن غذا، از روغن جامد استفاده نمی‌کند؛ ایشان از روغن مایع استفاده می‌کند.", "reading_az": "Madərəm bəraye poxtəne qəza, əz rouğəne camed estefade nemikonəd; işan əz rouğəne maye estefade mikonəd.", "az": "Anam yemək bişirmək üçün bərk yağdan istifadə etmir; o, maye yağdan istifadə edir."},
+                    {"fa": "ما صبحانه، گاهی پنیر و گردو، گاهی کره و مربّا، گاهی عسل و خامه و گاهی نیمرو می‌خوریم.", "reading_az": "Ma sobhane, gahi pənir-o-gərdu, gahi kəre-o-morəbba, gahi əsəl-o-xame va gahi nimru mixorim.", "az": "Biz səhər yeməyində bəzən pendir-qoz, bəzən kərə yağı-mürəbbə, bəzən bal-qaymaq, bəzən də qayğanaq yeyirik."},
+                    {"fa": "ایرانی‌ها هنگام خوردن ناهار و شام، علاوه بر آب، بر سرِ سفره، از دوغ یا ماست یا سالاد هم استفاده می‌کنند.", "reading_az": "Iraniha hengame xordəne nahar-o-şam, əlave bər ab, bər səre sofre, əz duğ ya mast ya salad həm estefade mikonənd.", "az": "İranlılar nahar və şam yeyərkən sudan əlavə süfrə başında ayran, qatıq və ya salatdan da istifadə edirlər."},
+                ],
+            },
         ],
         "answer_items": [
             {"fa": "شما کدام غذاها را دوست دارید؟", "reading_az": "Şoma kodam qəzaha ra dust darid?", "az": "Siz hansı yeməkləri sevirsiniz?"},

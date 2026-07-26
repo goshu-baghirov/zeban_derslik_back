@@ -209,20 +209,6 @@ LESSON = {
             ],
         },
         {
-            "kind": "multiple_choice",
-            "instruction_az": "«ساعت‌سازی ناصر» mətninə görə düzgün cavabı seçin.",
-            "items": [
-                {"question_fa": "نام خانوادگی ناصر چیست؟", "options": ["مهدوی", "رضوی", "احمدی"], "correct_index": 0},
-                {"question_fa": "ناصر چه‌کاره است و کجا کار می‌کند؟", "options": ["ساعت‌ساز است؛ در مغازه‌ی خودش", "معلّم است؛ در مدرسه", "پزشک است؛ در بیمارستان"], "correct_index": 0},
-                {"question_fa": "مغازه‌ی ناصر کجاست؟", "options": ["خیابان هفده شهریور، پلاک ۱۱۴", "میدان آزادی", "خیابان انقلاب"], "correct_index": 0},
-                {"question_fa": "فاصله‌ی خانه‌ی ناصر تا مغازه‌اش چقدر است؟", "options": ["حدود پانصد متر", "حدود پنج کیلومتر", "حدود صد متر"], "correct_index": 0},
-                {"question_fa": "ناصر هنگام ظهر چه‌کار می‌کند؟", "options": ["مغازه‌اش را تعطیل می‌کند و برای نماز به مسجد می‌رود", "به خانه می‌رود و می‌خوابد", "درس می‌خواند"], "correct_index": 0},
-                {"question_fa": "شاگرد ناصر کیست و از صبح تا ظهر چه‌کار می‌کند؟", "options": ["رضا؛ در دانش‌گاه درس می‌خواند", "رضا؛ در مغازه کار می‌کند", "علی؛ در خانه است"], "correct_index": 0},
-                {"question_fa": "رضا هر روز چه ساعتی به ساعت‌سازی می‌رود؟", "options": ["سرِ ساعت پنج", "سرِ ساعت هشت", "سرِ ساعت دو"], "correct_index": 0},
-                {"question_fa": "دوست رضا ساعتش را برای چه به او داد؟", "options": ["برای تعمیر", "برای هدیه", "برای فروش"], "correct_index": 0},
-            ],
-        },
-        {
             "kind": "practice_reveal",
             "instruction_az": "Saatı deyin: «ساعت، چند است؟»",
             "items": [
@@ -267,56 +253,60 @@ LESSON = {
         },
     ],
     "sentence_practice": {
-        "listen_items": [
+        "listen_exercises": [
             {
-                "fa": "محسن ساعت‌فروش است. در ساعت‌فروشی او ساعت‌های گوناگونی وجود دارد.",
-                "reading_az": "Mohsen saətforuş əst. Dər saətforuşiye u saəthaye gunaguni vocud darəd.",
-                "az": "Möhsün saat satandır. Onun saat mağazasında müxtəlif saatlar var.",
-            },
-            {
-                "fa": "جواد ساعت‌ساز است. او در ساعت‌سازی عمویش، ساعت‌های خراب را تعمیر می‌کند.",
-                "reading_az": "Cəvad saətsaz əst. U dər saətsaziye əmuyəş, saəthaye xərab ra təmir mikonəd.",
-                "az": "Cavad saatsazdır. O, əmisinin saat təmiri emalatxanasında xarab saatları təmir edir.",
-            },
-            {
-                "fa": "در کلاس ما یک ساعت دیواری هست. ساعتِ کلاس ما سالم است، خراب نیست.",
-                "reading_az": "Dər kelase ma yek saəte divari həst. Saəte kelase ma salem əst, xərab nist.",
-                "az": "Bizim sinifdə bir divar saatı var. Sinfimizin saatı sağlamdır, xarab deyil.",
-            },
-            {
-                "fa": "در فصل زمستان، آفتاب حدود هفت صبح طلوع می‌کند و پنج بعدازظهر غروب می‌کند.",
-                "reading_az": "Dər fəsle zemestan, aftab hodude həft sobh toluu mikonəd va pənc bədəzzohr qorub mikonəd.",
-                "az": "Qış fəslində günəş təxminən səhər saat yeddidə doğur və günortadan sonra saat beşdə batır.",
-            },
-            {
-                "fa": "حمید هر شب ده می‌خوابد و ساعت پنج صبح بیدار می‌شود.",
-                "reading_az": "Həmid hər şəb dəh mixabəd va saəte pənc sobh bidar mişəvəd.",
-                "az": "Həmid hər gecə saat onda yatır və səhər saat beşdə oyanır.",
-            },
-            {
-                "fa": "فاطمه و نرگس در شبانه‌روز، چهارده ساعت درس می‌خوانند و شش ساعت می‌خوابند.",
-                "reading_az": "Fateme va Nərges dər şəbaneruz, çəhardəh saət dərs mixanənd va şeş saət mixabənd.",
-                "az": "Fatimə və Nərgiz sutkada on dörd saat dərs oxuyur və altı saat yatırlar.",
-            },
-            {
-                "fa": "من دیروز به ساعت‌فروشی پدرم رفتم. دو ساعت آن‌جا ماندم و به ایشان کمک کردم.",
-                "reading_az": "Mən diruz be saətforuşiye pedərəm rəftəm. Do saət anja mandəm va be işan komək kərdəm.",
-                "az": "Mən dünən atamın saat mağazasına getdim. Orada iki saat qaldım və ona kömək etdim.",
-            },
-            {
-                "fa": "پسرم علی، یک ساعت مچی دارد. عقربه‌ی دقیقه‌ی ساعتش و بند آن خراب است.",
-                "reading_az": "Pesərəm Əli, yek saəte moçi darəd. Əqrəbeye dəqiqeye saətəş va bənde an xərab əst.",
-                "az": "Oğlum Əlinin bir qol saatı var. Saatının dəqiqə əqrəbi və qayışı xarabdır.",
-            },
-            {
-                "fa": "برادرم هادی، تعمیرکار یخچال است. او یخچال‌های خراب را تعمیر می‌کند.",
-                "reading_az": "Bəradərəm Hadi, təmirkare yəxçal əst. U yəxçalhaye xərab ra təmir mikonəd.",
-                "az": "Qardaşım Hadi soyuducu təmirçisidir. O, xarab soyuducuları təmir edir.",
-            },
-            {
-                "fa": "ما دیشب سرشب خوابیدیم و سحر بیدار شدیم.",
-                "reading_az": "Ma dişəb sərşəb xabidim va səhər bidar şodim.",
-                "az": "Biz dünən gecə axşamüstü yatdıq və dan yerində oyandıq.",
+                "items": [
+                    {
+                        "fa": "محسن ساعت‌فروش است. در ساعت‌فروشی او ساعت‌های گوناگونی وجود دارد.",
+                        "reading_az": "Mohsen saətforuş əst. Dər saətforuşiye u saəthaye gunaguni vocud darəd.",
+                        "az": "Möhsün saat satandır. Onun saat mağazasında müxtəlif saatlar var.",
+                    },
+                    {
+                        "fa": "جواد ساعت‌ساز است. او در ساعت‌سازی عمویش، ساعت‌های خراب را تعمیر می‌کند.",
+                        "reading_az": "Cəvad saətsaz əst. U dər saətsaziye əmuyəş, saəthaye xərab ra təmir mikonəd.",
+                        "az": "Cavad saatsazdır. O, əmisinin saat təmiri emalatxanasında xarab saatları təmir edir.",
+                    },
+                    {
+                        "fa": "در کلاس ما یک ساعت دیواری هست. ساعتِ کلاس ما سالم است، خراب نیست.",
+                        "reading_az": "Dər kelase ma yek saəte divari həst. Saəte kelase ma salem əst, xərab nist.",
+                        "az": "Bizim sinifdə bir divar saatı var. Sinfimizin saatı sağlamdır, xarab deyil.",
+                    },
+                    {
+                        "fa": "در فصل زمستان، آفتاب حدود هفت صبح طلوع می‌کند و پنج بعدازظهر غروب می‌کند.",
+                        "reading_az": "Dər fəsle zemestan, aftab hodude həft sobh toluu mikonəd va pənc bədəzzohr qorub mikonəd.",
+                        "az": "Qış fəslində günəş təxminən səhər saat yeddidə doğur və günortadan sonra saat beşdə batır.",
+                    },
+                    {
+                        "fa": "حمید هر شب ده می‌خوابد و ساعت پنج صبح بیدار می‌شود.",
+                        "reading_az": "Həmid hər şəb dəh mixabəd va saəte pənc sobh bidar mişəvəd.",
+                        "az": "Həmid hər gecə saat onda yatır və səhər saat beşdə oyanır.",
+                    },
+                    {
+                        "fa": "فاطمه و نرگس در شبانه‌روز، چهارده ساعت درس می‌خوانند و شش ساعت می‌خوابند.",
+                        "reading_az": "Fateme va Nərges dər şəbaneruz, çəhardəh saət dərs mixanənd va şeş saət mixabənd.",
+                        "az": "Fatimə və Nərgiz sutkada on dörd saat dərs oxuyur və altı saat yatırlar.",
+                    },
+                    {
+                        "fa": "من دیروز به ساعت‌فروشی پدرم رفتم. دو ساعت آن‌جا ماندم و به ایشان کمک کردم.",
+                        "reading_az": "Mən diruz be saətforuşiye pedərəm rəftəm. Do saət anja mandəm va be işan komək kərdəm.",
+                        "az": "Mən dünən atamın saat mağazasına getdim. Orada iki saat qaldım və ona kömək etdim.",
+                    },
+                    {
+                        "fa": "پسرم علی، یک ساعت مچی دارد. عقربه‌ی دقیقه‌ی ساعتش و بند آن خراب است.",
+                        "reading_az": "Pesərəm Əli, yek saəte moçi darəd. Əqrəbeye dəqiqeye saətəş va bənde an xərab əst.",
+                        "az": "Oğlum Əlinin bir qol saatı var. Saatının dəqiqə əqrəbi və qayışı xarabdır.",
+                    },
+                    {
+                        "fa": "برادرم هادی، تعمیرکار یخچال است. او یخچال‌های خراب را تعمیر می‌کند.",
+                        "reading_az": "Bəradərəm Hadi, təmirkare yəxçal əst. U yəxçalhaye xərab ra təmir mikonəd.",
+                        "az": "Qardaşım Hadi soyuducu təmirçisidir. O, xarab soyuducuları təmir edir.",
+                    },
+                    {
+                        "fa": "ما دیشب سرشب خوابیدیم و سحر بیدار شدیم.",
+                        "reading_az": "Ma dişəb sərşəb xabidim va səhər bidar şodim.",
+                        "az": "Biz dünən gecə axşamüstü yatdıq və dan yerində oyandıq.",
+                    },
+                ],
             },
         ],
         "answer_items": [],

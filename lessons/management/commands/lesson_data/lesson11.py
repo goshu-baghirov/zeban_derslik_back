@@ -204,19 +204,6 @@ LESSON = {
             ],
         },
         {
-            "kind": "multiple_choice",
-            "instruction_az": "«گل‌فروشی» mətninə görə düzgün cavabı seçin.",
-            "items": [
-                {"question_fa": "گل‌فروشی نزدیک خانه‌ی آن‌ها چه‌طور است؟", "options": ["کوچک و ساده", "بزرگ با گل‌های زیبا و رنگارنگ", "بسته است"], "correct_index": 1},
-                {"question_fa": "مردم چه گل‌هایی از این گل‌فروشی می‌خرند؟", "options": ["فقط رز", "رز، یاس، لاله، نرگس، شقایق و...", "فقط لاله"], "correct_index": 1},
-                {"question_fa": "مردم به چه مناسبت‌هایی گل می‌خرند؟", "options": ["فقط جشن تولّد", "روز مادر، جشن تولّد، ازدواج و...", "فقط ازدواج"], "correct_index": 1},
-                {"question_fa": "یکی از گل‌های زیبا و خوش‌بو در ایران کدام است؟", "options": ["گل‌محمّدی", "گل نرگس", "گل لاله"], "correct_index": 0},
-                {"question_fa": "از گل محمّدی چه چیزی درست می‌کنند؟", "options": ["گلاب و عطر", "چای", "روغن"], "correct_index": 0},
-                {"question_fa": "خوش‌بوترین گلاب ایران، گلاب کدام شهر است؟", "options": ["گلاب قمصر کاشان", "گلاب شیراز", "گلاب تبریز"], "correct_index": 0},
-                {"question_fa": "هر سال با کدام گلاب، خانه‌ی کعبه را می‌شویند؟", "options": ["گلاب قمصر کاشان", "گلاب اصفهان", "گلاب مشهد"], "correct_index": 0},
-            ],
-        },
-        {
             "kind": "practice_reveal",
             "instruction_az": "«برای + məsdər» quruluşu ilə cümlə düzəldin: «او / لباس دوختن / خیّاطی → او برای لباس دوختن به خیّاطی می‌رود.»",
             "items": [
@@ -281,19 +268,23 @@ LESSON = {
         },
     ],
     "sentence_practice": {
-        "listen_items": [
-            {"fa": "در حوزه‌ی علمیّه‌ی قم، حدود سی‌هزار طلبه درس می‌خوانند.", "reading_az": "Dər houzeye elmiyyeye Qom, hodude si hezar tələbe dərs mixanənd.", "az": "Qumun elmi hövzəsində təxminən otuz min tələbə oxuyur."},
-            {"fa": "کنار دریای خزر، یک کارخانه‌ی بزرگ هست. در آن کارخانه، کشتی و قایق می‌سازند.", "reading_az": "Kənare dəryaye Xəzər, yek karxaneye bozorg həst. Dər an karxane, keşti va qayeq misazənd.", "az": "Xəzər dənizinin kənarında böyük bir zavod var. O zavodda gəmi və qayıq düzəldirlər."},
-            {"fa": "پدرم گاهی من و برادرم را برای دیدن حیوان‌ها به باغ وحش می‌برد.", "reading_az": "Pedərəm gahi mən va bəradərəm ra bəraye didəne heyvanha be bağe vəhş mibərəd.", "az": "Atam bəzən məni və qardaşımı heyvanları görmək üçün zooparka aparır."},
-            {"fa": "کشور پاکستان، نزدیک ایران است و کشور کانادا از ایران دور است.", "reading_az": "Kəşvəre Pakestan, nəzdike Iran əst va kəşvəre Kanada əz Iran dur əst.", "az": "Pakistan İrana yaxındır, Kanada isə İrandan uzaqdır."},
-            {"fa": "ما برای زیارت خانه‌ی خدا به مکّه می‌رویم و ده روز در آن‌جا می‌مانیم.", "reading_az": "Ma bəraye ziyarəte xaneye Xoda be Məkke mirəvim va dəh ruz dər anja mimanim.", "az": "Biz Allahın evini ziyarət etmək üçün Məkkəyə gedirik və orada on gün qalırıq."},
-            {"fa": "من ساعت چهار به کتاب‌خانه می‌روم؛ سه ساعت در آن‌جا می‌مانم و ساعت هفت به خانه برمی‌گردم.", "reading_az": "Mən saəte çəhar be ketabxane mirəvəm; se saət dər anja mimanəm va saəte həft be xane bərmigərdəm.", "az": "Mən saat dörddə kitabxanaya gedirəm; orada üç saat qalıram və saat yeddidə evə qayıdıram."},
-            {"fa": "سلیمان تعمیرکار لباس‌شویی است. او هر روز صبح، تعمیرگاهش را باز می‌کند و شب می‌بندد.", "reading_az": "Solyeman təmirkare lebasşuyi əst. U hər ruz sobh, təmirgahəş ra baz mikonəd va şəb mibəndəd.", "az": "Süleyman paltaryuyan təmirçisidir. O, hər gün səhər təmirxanasını açır və axşam bağlayır."},
-            {"fa": "نزدیک خانه‌ی ما بوستان، کتاب‌فروشی، خیّاطی، عکّاسی، آرایش‌گاه و نانوایی هست.", "reading_az": "Nəzdike xaneye ma bustan, ketabforuşi, xəyyati, əkkasi, arayeşgah va nanvayi həst.", "az": "Evimizin yaxınlığında park, kitab mağazası, dərzixana, fotoatelye, bərbərxana və çörəkxana var."},
-            {"fa": "ماهی‌ها از آب خارج زندگی می‌کنند یا داخل آب؟ ماهی‌ها داخل آب زندگی می‌کنند.", "reading_az": "Mahiha əz ab xarec zendegi mikonənd ya daxele ab? Mahiha daxele ab zendegi mikonənd.", "az": "Balıqlar suyun bayırında yaşayır, yoxsa içində? Balıqlar suyun içində yaşayır."},
-            {"fa": "عمویم نمایش‌گاه ماشین دارد. او در نمایش‌گاهش ماشین‌های مختلف می‌فروشد.", "reading_az": "Əmuyəm nəmayeşgahe maşin darəd. U dər nəmayeşgaheş maşinhaye moxtəlef mifəruşəd.", "az": "Əmimin avtomobil sərgisi var. O, sərgisində müxtəlif avtomobillər satır."},
-            {"fa": "من و دوستانم امروز برای دیدن فیلم حضرت مریم (س) به سینما می‌رویم.", "reading_az": "Mən va dustanəm emruz bəraye didəne filme Həzrəte Məryəm be sinəma mirəvim.", "az": "Mən və dostlarım bu gün Həzrət Məryəm filminə baxmaq üçün kinoteatra gedirik."},
-            {"fa": "پدر من قاضی است و در دادگاه کار می‌کند.", "reading_az": "Pedəre mən qazi əst va dər dadgah kar mikonəd.", "az": "Atam hakimdir və məhkəmədə işləyir."},
+        "listen_exercises": [
+            {
+                "items": [
+                    {"fa": "در حوزه‌ی علمیّه‌ی قم، حدود سی‌هزار طلبه درس می‌خوانند.", "reading_az": "Dər houzeye elmiyyeye Qom, hodude si hezar tələbe dərs mixanənd.", "az": "Qumun elmi hövzəsində təxminən otuz min tələbə oxuyur."},
+                    {"fa": "کنار دریای خزر، یک کارخانه‌ی بزرگ هست. در آن کارخانه، کشتی و قایق می‌سازند.", "reading_az": "Kənare dəryaye Xəzər, yek karxaneye bozorg həst. Dər an karxane, keşti va qayeq misazənd.", "az": "Xəzər dənizinin kənarında böyük bir zavod var. O zavodda gəmi və qayıq düzəldirlər."},
+                    {"fa": "پدرم گاهی من و برادرم را برای دیدن حیوان‌ها به باغ وحش می‌برد.", "reading_az": "Pedərəm gahi mən va bəradərəm ra bəraye didəne heyvanha be bağe vəhş mibərəd.", "az": "Atam bəzən məni və qardaşımı heyvanları görmək üçün zooparka aparır."},
+                    {"fa": "کشور پاکستان، نزدیک ایران است و کشور کانادا از ایران دور است.", "reading_az": "Kəşvəre Pakestan, nəzdike Iran əst va kəşvəre Kanada əz Iran dur əst.", "az": "Pakistan İrana yaxındır, Kanada isə İrandan uzaqdır."},
+                    {"fa": "ما برای زیارت خانه‌ی خدا به مکّه می‌رویم و ده روز در آن‌جا می‌مانیم.", "reading_az": "Ma bəraye ziyarəte xaneye Xoda be Məkke mirəvim va dəh ruz dər anja mimanim.", "az": "Biz Allahın evini ziyarət etmək üçün Məkkəyə gedirik və orada on gün qalırıq."},
+                    {"fa": "من ساعت چهار به کتاب‌خانه می‌روم؛ سه ساعت در آن‌جا می‌مانم و ساعت هفت به خانه برمی‌گردم.", "reading_az": "Mən saəte çəhar be ketabxane mirəvəm; se saət dər anja mimanəm va saəte həft be xane bərmigərdəm.", "az": "Mən saat dörddə kitabxanaya gedirəm; orada üç saat qalıram və saat yeddidə evə qayıdıram."},
+                    {"fa": "سلیمان تعمیرکار لباس‌شویی است. او هر روز صبح، تعمیرگاهش را باز می‌کند و شب می‌بندد.", "reading_az": "Solyeman təmirkare lebasşuyi əst. U hər ruz sobh, təmirgahəş ra baz mikonəd va şəb mibəndəd.", "az": "Süleyman paltaryuyan təmirçisidir. O, hər gün səhər təmirxanasını açır və axşam bağlayır."},
+                    {"fa": "نزدیک خانه‌ی ما بوستان، کتاب‌فروشی، خیّاطی، عکّاسی، آرایش‌گاه و نانوایی هست.", "reading_az": "Nəzdike xaneye ma bustan, ketabforuşi, xəyyati, əkkasi, arayeşgah va nanvayi həst.", "az": "Evimizin yaxınlığında park, kitab mağazası, dərzixana, fotoatelye, bərbərxana və çörəkxana var."},
+                    {"fa": "ماهی‌ها از آب خارج زندگی می‌کنند یا داخل آب؟ ماهی‌ها داخل آب زندگی می‌کنند.", "reading_az": "Mahiha əz ab xarec zendegi mikonənd ya daxele ab? Mahiha daxele ab zendegi mikonənd.", "az": "Balıqlar suyun bayırında yaşayır, yoxsa içində? Balıqlar suyun içində yaşayır."},
+                    {"fa": "عمویم نمایش‌گاه ماشین دارد. او در نمایش‌گاهش ماشین‌های مختلف می‌فروشد.", "reading_az": "Əmuyəm nəmayeşgahe maşin darəd. U dər nəmayeşgaheş maşinhaye moxtəlef mifəruşəd.", "az": "Əmimin avtomobil sərgisi var. O, sərgisində müxtəlif avtomobillər satır."},
+                    {"fa": "من و دوستانم امروز برای دیدن فیلم حضرت مریم (س) به سینما می‌رویم.", "reading_az": "Mən va dustanəm emruz bəraye didəne filme Həzrəte Məryəm be sinəma mirəvim.", "az": "Mən və dostlarım bu gün Həzrət Məryəm filminə baxmaq üçün kinoteatra gedirik."},
+                    {"fa": "پدر من قاضی است و در دادگاه کار می‌کند.", "reading_az": "Pedəre mən qazi əst va dər dadgah kar mikonəd.", "az": "Atam hakimdir və məhkəmədə işləyir."},
+                ],
+            },
         ],
         "answer_items": [
             {"fa": "امروز چند شنبه است؟", "reading_az": "Emruz çənd şənbe əst?", "az": "Bu gün həftənin hansı günüdür?"},

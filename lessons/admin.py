@@ -15,9 +15,8 @@ from .models import (
     GrammarNote,
     Infinitive,
     Lesson,
+    ListenReadExercise,
     ListenReadSentence,
-    MultipleChoiceExercise,
-    MultipleChoiceItem,
     PictureSentenceExercise,
     PictureSentenceItem,
     PictureSentenceLine,
@@ -27,8 +26,6 @@ from .models import (
     ReadingFootnote,
     ReadingText,
     SentencePractice,
-    TrueFalseImageExercise,
-    TrueFalseImageItem,
     VocabWord,
 )
 
@@ -46,8 +43,8 @@ def thumb(url, size=40):
 class VocabWordInline(nested_admin.NestedTabularInline):
     model = VocabWord
     extra = 1
-    fields = ("order", "fa", "reading_az", "az", "image", "preview")
-    readonly_fields = ("preview",)
+    fields = ("order", "fa", "reading_az", "az", "image", "preview", "edited_via_app")
+    readonly_fields = ("preview", "edited_via_app")
 
     def preview(self, obj):
         return thumb(obj.image.url if obj.image else None)
@@ -58,12 +55,15 @@ class VocabWordInline(nested_admin.NestedTabularInline):
 class ConjugationRowInline(nested_admin.NestedTabularInline):
     model = ConjugationRow
     extra = 1
+    fields = ("order", "pronoun_fa", "form_fa", "edited_via_app")
+    readonly_fields = ("edited_via_app",)
 
 
 class ExampleSentenceInline(nested_admin.NestedTabularInline):
     model = ExampleSentence
     extra = 1
-    fields = ("order", "fa", "reading_az", "az")
+    fields = ("order", "fa", "reading_az", "az", "edited_via_app")
+    readonly_fields = ("edited_via_app",)
 
 
 class TopicDrillItemInline(nested_admin.NestedTabularInline):
@@ -92,6 +92,8 @@ class TopicDrillInline(nested_admin.NestedStackedInline):
 class GrammarNoteInline(nested_admin.NestedStackedInline):
     model = GrammarNote
     extra = 0
+    fields = ("order", "title_az", "title_fa", "note_fa", "note_reading_az", "note_az", "edited_via_app")
+    readonly_fields = ("edited_via_app",)
     inlines = [ConjugationRowInline, ExampleSentenceInline, TopicDrillInline]
 
 
@@ -104,24 +106,6 @@ class FillBlankExerciseInline(nested_admin.NestedStackedInline):
     model = FillBlankExercise
     extra = 0
     inlines = [FillBlankItemInline]
-
-
-class TrueFalseImageItemInline(nested_admin.NestedTabularInline):
-    model = TrueFalseImageItem
-    extra = 1
-    fields = ("order", "image", "preview", "statement_fa", "statement_az", "is_true")
-    readonly_fields = ("preview",)
-
-    def preview(self, obj):
-        return thumb(obj.image.url if obj.image else None)
-
-    preview.short_description = "Önizləmə"
-
-
-class TrueFalseImageExerciseInline(nested_admin.NestedStackedInline):
-    model = TrueFalseImageExercise
-    extra = 0
-    inlines = [TrueFalseImageItemInline]
 
 
 class PictureSentenceLineInline(nested_admin.NestedTabularInline):
@@ -163,17 +147,6 @@ class PictureSentenceExerciseInline(nested_admin.NestedStackedInline):
     inlines = [PictureSentenceItemInline]
 
 
-class MultipleChoiceItemInline(nested_admin.NestedTabularInline):
-    model = MultipleChoiceItem
-    extra = 1
-
-
-class MultipleChoiceExerciseInline(nested_admin.NestedStackedInline):
-    model = MultipleChoiceExercise
-    extra = 0
-    inlines = [MultipleChoiceItemInline]
-
-
 class AnswerQuestionExerciseItemInline(nested_admin.NestedTabularInline):
     model = AnswerQuestionExerciseItem
     extra = 1
@@ -183,7 +156,10 @@ class AnswerQuestionExerciseItemInline(nested_admin.NestedTabularInline):
 class AnswerQuestionExerciseInline(nested_admin.NestedStackedInline):
     model = AnswerQuestionExercise
     extra = 0
-    fields = ("order", "title_fa", "instruction_az", "note_fa", "note_reading_az", "note_az")
+    fields = (
+        "order", "title_fa", "example_fa", "example_reading_az", "example_az",
+        "instruction_az", "note_fa", "note_reading_az", "note_az",
+    )
     inlines = [AnswerQuestionExerciseItemInline]
 
 
@@ -203,13 +179,25 @@ class PracticeRevealExerciseInline(nested_admin.NestedStackedInline):
 class ListenReadSentenceInline(nested_admin.NestedTabularInline):
     model = ListenReadSentence
     extra = 1
-    fields = ("order", "fa", "reading_az", "az")
+    fields = ("order", "fa", "reading_az", "az", "edited_via_app")
+    readonly_fields = ("edited_via_app",)
+
+
+class ListenReadExerciseInline(nested_admin.NestedStackedInline):
+    model = ListenReadExercise
+    extra = 0
+    fields = ("order",)
+    inlines = [ListenReadSentenceInline]
 
 
 class AnswerQuestionSentenceInline(nested_admin.NestedTabularInline):
     model = AnswerQuestionSentence
     extra = 1
-    fields = ("order", "fa", "reading_az", "az", "sample_answer_fa", "sample_answer_reading_az", "sample_answer_az")
+    fields = (
+        "order", "fa", "reading_az", "az",
+        "sample_answer_fa", "sample_answer_reading_az", "sample_answer_az", "edited_via_app",
+    )
+    readonly_fields = ("edited_via_app",)
 
 
 class ConjugatedFormInline(nested_admin.NestedTabularInline):
@@ -229,7 +217,7 @@ class SentencePracticeInline(nested_admin.NestedStackedInline):
     model = SentencePractice
     extra = 0
     max_num = 1
-    inlines = [ListenReadSentenceInline, AnswerQuestionSentenceInline, InfinitiveInline]
+    inlines = [ListenReadExerciseInline, AnswerQuestionSentenceInline, InfinitiveInline]
 
 
 class ReadingFootnoteInline(nested_admin.NestedTabularInline):
@@ -300,8 +288,6 @@ class LessonAdmin(nested_admin.NestedModelAdmin):
         SentencePracticeInline,
         GrammarNoteInline,
         FillBlankExerciseInline,
-        TrueFalseImageExerciseInline,
-        MultipleChoiceExerciseInline,
         PracticeRevealExerciseInline,
         PictureSentenceExerciseInline,
         AnswerQuestionExerciseInline,

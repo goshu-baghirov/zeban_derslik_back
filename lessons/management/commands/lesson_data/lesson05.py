@@ -253,19 +253,6 @@ LESSON = {
             ],
         },
         {
-            "kind": "multiple_choice",
-            "instruction_az": "«فرهاد» mətninə görə düzgün cavabı seçin.",
-            "items": [
-                {"question_fa": "فرهاد چه‌کاره است؟", "options": ["کارمند دانش‌گاه مشهد", "کارمند اداره‌ی پست", "مدیر مدرسه"], "correct_index": 0},
-                {"question_fa": "مریم کارمند کدام اداره است؟", "options": ["اداره‌ی بانک", "اداره‌ی پست", "اداره‌ی مدرسه"], "correct_index": 1},
-                {"question_fa": "مریم ناهار را کجا می‌خورد؟", "options": ["در دانش‌گاه", "در اداره", "در خانه، تنها"], "correct_index": 2},
-                {"question_fa": "پدر مریم چه‌کاره است؟", "options": ["مدیر مدرسه", "باغ‌دار", "معلّم"], "correct_index": 0},
-                {"question_fa": "پدر فرهاد چه‌کاره است و کجا زندگی می‌کند؟", "options": ["کشاورز است؛ در شهر", "باغ‌دار است؛ در روستا", "میوه‌فروش است؛ در نیشابور"], "correct_index": 1},
-                {"question_fa": "در باغ پدر فرهاد چه درخت‌هایی وجود دارد؟", "options": ["سیب، انار و هلو", "پرتقال و نارگیل", "گیلاس و زردآلو"], "correct_index": 0},
-                {"question_fa": "فرهاد و مریم روزهای جمعه به کجا می‌روند؟", "options": ["به مشهد", "گاهی به روستا و گاهی به نیشابور", "به فرودگاه"], "correct_index": 1},
-            ],
-        },
-        {
             "kind": "practice_reveal",
             "instruction_az": "İndi əksinə çevirin: «ما خبرنگاریم = ما خبرنگار هستیم»",
             "items": [
@@ -325,56 +312,60 @@ LESSON = {
         },
     ],
     "sentence_practice": {
-        "listen_items": [
+        "listen_exercises": [
             {
-                "fa": "دوستم مهدی، خبرنگار است و در لبنان زندگی می‌کند.",
-                "reading_az": "Dustəm Mehdi, xəbərneqar əst va dər Lobnan zendegi mikonəd.",
-                "az": "Dostum Mehdi jurnalistdir və Livanda yaşayır.",
-            },
-            {
-                "fa": "من خلبان هستم و این خانم‌ها مهمان‌دار هواپیما هستند.",
-                "reading_az": "Mən xələban hastəm va in xanomha mehmandare həvapeyma həstənd.",
-                "az": "Mən pilotam və bu xanımlar təyyarə stüardessalarıdır.",
-            },
-            {
-                "fa": "مریم و فاطمه نویسنده هستند. آن‌ها برای کودکان، کتاب می‌نویسند.",
-                "reading_az": "Məryəm va Fateme nevisənde həstənd. Anha bəraye kudəkan, ketab minevisənd.",
-                "az": "Məryəm və Fatimə yazıçıdır. Onlar uşaqlar üçün kitab yazırlar.",
-            },
-            {
-                "fa": "پدربزرگم باغبان است. او در باغش درخت‌های گیلاس، سیب و انار دارد.",
-                "reading_az": "Pedərbozorgəm bağban əst. U dər bağəş dərəxthaye gilas, sib va anar darəd.",
-                "az": "Babam bağbandır. Onun bağında albalı, alma və nar ağacları var.",
-            },
-            {
-                "fa": "پدرم بازرگانِ فرش است. او از ایران فرش می‌خرد و در اروپا می‌فروشد.",
-                "reading_az": "Pedərəm bazərgane fərş əst. U əz Iran fərş mixərəd va dər Orupa miforuşəd.",
-                "az": "Atam xalça taciridir. O, İrandan xalça alır və Avropada satır.",
-            },
-            {
-                "fa": "امین و رضا آشپز هستند. آن‌ها هر روز در آشپزخانه‌ی دانش‌گاه غذا می‌پزند.",
-                "reading_az": "Əmin va Reza aşpəz həstənd. Anha hər ruz dər aşpəzxane-ye daneşgah qəza mipəzənd.",
-                "az": "Əmin və Rza aşpazdır. Onlar hər gün universitetin mətbəxində yemək bişirirlər.",
-            },
-            {
-                "fa": "ما به فروش‌گاه می‌رویم و برای فرزندمان دفتر نقّاشی و مدادرنگی می‌خریم.",
-                "reading_az": "Ma be foruşgah mirəvim va bəraye fərzəndeman dəftəre nəqqaşi va medadrəngi mixərim.",
-                "az": "Biz mağazaya gedirik və övladımız üçün rəsm dəftəri və rəngli karandaş alırıq.",
-            },
-            {
-                "fa": "این آقا میوه‌فروش است. او در مغازه‌اش پرتقال، انار، سیب، نارگیل و... می‌فروشد.",
-                "reading_az": "İn ağa miveforuş əst. U dər məğazeəş porteqal, anar, sib, nargil va ... miforuşəd.",
-                "az": "Bu kişi meyvə satandır. O, mağazasında portağal, nar, alma, hindistancevizi və s. satır.",
-            },
-            {
-                "fa": "برادرم هر روز، ساعتِ هفت صبح به دانش‌گاه می‌رود و ساعت چهار به خانه می‌آید.",
-                "reading_az": "Bəradərəm hər ruz, saəte həft sobh be daneşgah mirəvəd va saəte çahar be xane miayəd.",
-                "az": "Qardaşım hər gün, səhər saat yeddidə universitetə gedir və saat dörddə evə gəlir.",
-            },
-            {
-                "fa": "ایشان کارمند فرودگاه امام است. او هر روز، هفت ساعت در فرودگاه امام کار می‌کند.",
-                "reading_az": "İşan karmənde forudgahe Emam əst. U hər ruz, həft saət dər forudgahe Emam kar mikonəd.",
-                "az": "O, İmam hava limanının işçisidir. O, hər gün yeddi saat İmam hava limanında işləyir.",
+                "items": [
+                    {
+                        "fa": "دوستم مهدی، خبرنگار است و در لبنان زندگی می‌کند.",
+                        "reading_az": "Dustəm Mehdi, xəbərneqar əst va dər Lobnan zendegi mikonəd.",
+                        "az": "Dostum Mehdi jurnalistdir və Livanda yaşayır.",
+                    },
+                    {
+                        "fa": "من خلبان هستم و این خانم‌ها مهمان‌دار هواپیما هستند.",
+                        "reading_az": "Mən xələban hastəm va in xanomha mehmandare həvapeyma həstənd.",
+                        "az": "Mən pilotam və bu xanımlar təyyarə stüardessalarıdır.",
+                    },
+                    {
+                        "fa": "مریم و فاطمه نویسنده هستند. آن‌ها برای کودکان، کتاب می‌نویسند.",
+                        "reading_az": "Məryəm va Fateme nevisənde həstənd. Anha bəraye kudəkan, ketab minevisənd.",
+                        "az": "Məryəm və Fatimə yazıçıdır. Onlar uşaqlar üçün kitab yazırlar.",
+                    },
+                    {
+                        "fa": "پدربزرگم باغبان است. او در باغش درخت‌های گیلاس، سیب و انار دارد.",
+                        "reading_az": "Pedərbozorgəm bağban əst. U dər bağəş dərəxthaye gilas, sib va anar darəd.",
+                        "az": "Babam bağbandır. Onun bağında albalı, alma və nar ağacları var.",
+                    },
+                    {
+                        "fa": "پدرم بازرگانِ فرش است. او از ایران فرش می‌خرد و در اروپا می‌فروشد.",
+                        "reading_az": "Pedərəm bazərgane fərş əst. U əz Iran fərş mixərəd va dər Orupa miforuşəd.",
+                        "az": "Atam xalça taciridir. O, İrandan xalça alır və Avropada satır.",
+                    },
+                    {
+                        "fa": "امین و رضا آشپز هستند. آن‌ها هر روز در آشپزخانه‌ی دانش‌گاه غذا می‌پزند.",
+                        "reading_az": "Əmin va Reza aşpəz həstənd. Anha hər ruz dər aşpəzxane-ye daneşgah qəza mipəzənd.",
+                        "az": "Əmin və Rza aşpazdır. Onlar hər gün universitetin mətbəxində yemək bişirirlər.",
+                    },
+                    {
+                        "fa": "ما به فروش‌گاه می‌رویم و برای فرزندمان دفتر نقّاشی و مدادرنگی می‌خریم.",
+                        "reading_az": "Ma be foruşgah mirəvim va bəraye fərzəndeman dəftəre nəqqaşi va medadrəngi mixərim.",
+                        "az": "Biz mağazaya gedirik və övladımız üçün rəsm dəftəri və rəngli karandaş alırıq.",
+                    },
+                    {
+                        "fa": "این آقا میوه‌فروش است. او در مغازه‌اش پرتقال، انار، سیب، نارگیل و... می‌فروشد.",
+                        "reading_az": "İn ağa miveforuş əst. U dər məğazeəş porteqal, anar, sib, nargil va ... miforuşəd.",
+                        "az": "Bu kişi meyvə satandır. O, mağazasında portağal, nar, alma, hindistancevizi və s. satır.",
+                    },
+                    {
+                        "fa": "برادرم هر روز، ساعتِ هفت صبح به دانش‌گاه می‌رود و ساعت چهار به خانه می‌آید.",
+                        "reading_az": "Bəradərəm hər ruz, saəte həft sobh be daneşgah mirəvəd va saəte çahar be xane miayəd.",
+                        "az": "Qardaşım hər gün, səhər saat yeddidə universitetə gedir və saat dörddə evə gəlir.",
+                    },
+                    {
+                        "fa": "ایشان کارمند فرودگاه امام است. او هر روز، هفت ساعت در فرودگاه امام کار می‌کند.",
+                        "reading_az": "İşan karmənde forudgahe Emam əst. U hər ruz, həft saət dər forudgahe Emam kar mikonəd.",
+                        "az": "O, İmam hava limanının işçisidir. O, hər gün yeddi saat İmam hava limanında işləyir.",
+                    },
+                ],
             },
         ],
         "answer_items": [

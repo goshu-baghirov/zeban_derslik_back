@@ -3,10 +3,10 @@ from django.db import models
 
 def lesson_image_path(instance, filename):
     """Group uploaded images under media/lessons/lesson_XX/ regardless of
-    which model (VocabWord, TrueFalseImageItem, ReadingText, PracticeRevealItem/
-    Exercise) owns the field. PracticeRevealExercise/Item can be linked either
-    directly to a Lesson or indirectly through a GrammarNote, so both paths
-    are resolved here."""
+    which model (VocabWord, ReadingText, PracticeRevealItem/Exercise) owns
+    the field. PracticeRevealExercise/Item can be linked either directly to
+    a Lesson or indirectly through a GrammarNote, so both paths are resolved
+    here."""
     lesson = None
     if getattr(instance, "lesson_id", None):
         lesson = instance.lesson
@@ -75,6 +75,13 @@ class VocabWord(models.Model):
     az = models.CharField("Azərbaycan", max_length=255)
     image = models.ImageField("Şəkil", upload_to=lesson_image_path, blank=True, null=True)
     order = models.PositiveIntegerField("Sıra", default=0)
+    edited_via_app = models.BooleanField(
+        "Tətbiqdən redaktə olunub",
+        default=False,
+        help_text="Bu söz mobil tətbiqdəki redaktə ekranından dəyişdirilib/əlavə edilib — "
+        "seed_lessons yenidən işlədikdə bu sözün fa/az/oxunuş/şəkli fayldakı "
+        "məzmunla əvəz olunmur.",
+    )
 
     class Meta:
         ordering = ["order", "id"]
@@ -96,6 +103,10 @@ class GrammarNote(models.Model):
     )
     note_reading_az = models.TextField("Qeydin oxunuşu (az hərfləri ilə)", blank=True, default="")
     note_az = models.TextField("Qeydin tərcüməsi (az)", blank=True, default="")
+    edited_via_app = models.BooleanField(
+        "Tətbiqdən redaktə olunub", default=False,
+        help_text="Qeyd mobil tətbiqdən dəyişdirilib — seed_lessons yenidən işlədikdə üstələnmir.",
+    )
 
     class Meta:
         ordering = ["order", "id"]
@@ -111,6 +122,10 @@ class ConjugationRow(models.Model):
     pronoun_fa = models.CharField("Əvəzlik (fars)", max_length=100)
     form_fa = models.CharField("Fel forması (fars)", max_length=255)
     order = models.PositiveIntegerField("Sıra", default=0)
+    edited_via_app = models.BooleanField(
+        "Tətbiqdən redaktə olunub", default=False,
+        help_text="Sətir mobil tətbiqdən dəyişdirilib/əlavə edilib — seed_lessons yenidən işlədikdə üstələnmir.",
+    )
 
     class Meta:
         ordering = ["order", "id"]
@@ -122,6 +137,10 @@ class ExampleSentence(models.Model):
     reading_az = models.CharField("Üzündən oxunuş (az)", max_length=500, blank=True, default="")
     az = models.CharField("Azərbaycan", max_length=500)
     order = models.PositiveIntegerField("Sıra", default=0)
+    edited_via_app = models.BooleanField(
+        "Tətbiqdən redaktə olunub", default=False,
+        help_text="Cümlə mobil tətbiqdən dəyişdirilib/əlavə edilib — seed_lessons yenidən işlədikdə üstələnmir.",
+    )
 
     class Meta:
         ordering = ["order", "id"]
@@ -132,6 +151,7 @@ class FillBlankExercise(models.Model):
     instruction_az = models.TextField("Tapşırıq (az)")
     word_bank = models.JSONField("Söz bankı", default=list, blank=True)
     order = models.PositiveIntegerField("Sıra", default=0)
+    edited_via_app = models.BooleanField("Tətbiqdən redaktə olunub", default=False)
 
     class Meta:
         ordering = ["order", "id"]
@@ -151,32 +171,7 @@ class FillBlankItem(models.Model):
     full_reading_az = models.CharField("Cümlənin oxunuşu (az hərfləri ilə)", max_length=500, blank=True, default="")
     full_translation_az = models.CharField("Cümlənin ümumi tərcüməsi (az)", max_length=500, blank=True, default="")
     order = models.PositiveIntegerField("Sıra", default=0)
-
-    class Meta:
-        ordering = ["order", "id"]
-
-
-class TrueFalseImageExercise(models.Model):
-    lesson = models.ForeignKey(Lesson, related_name="true_false_exercises", on_delete=models.CASCADE)
-    instruction_az = models.TextField("Tapşırıq (az)")
-    order = models.PositiveIntegerField("Sıra", default=0)
-
-    class Meta:
-        ordering = ["order", "id"]
-        verbose_name = "Doğru/Yanlış (şəkilli) məşğələsi"
-        verbose_name_plural = "Doğru/Yanlış (şəkilli) məşğələləri"
-
-    def __str__(self):
-        return self.instruction_az[:60]
-
-
-class TrueFalseImageItem(models.Model):
-    exercise = models.ForeignKey(TrueFalseImageExercise, related_name="items", on_delete=models.CASCADE)
-    image = models.ImageField("Şəkil", upload_to=lesson_image_path, blank=True, null=True)
-    statement_fa = models.CharField("Cümlə (fars)", max_length=500)
-    statement_az = models.CharField("Cümlə (az)", max_length=500)
-    is_true = models.BooleanField("Doğrudur", default=True)
-    order = models.PositiveIntegerField("Sıra", default=0)
+    edited_via_app = models.BooleanField("Tətbiqdən redaktə olunub", default=False)
 
     class Meta:
         ordering = ["order", "id"]
@@ -216,6 +211,7 @@ class PictureSentenceExercise(models.Model):
         "Nümunə şəkli («səhv/həzf olunan» tərəfi)", upload_to=lesson_image_path, blank=True, null=True,
     )
     order = models.PositiveIntegerField("Sıra", default=0)
+    edited_via_app = models.BooleanField("Tətbiqdən redaktə olunub", default=False)
 
     class Meta:
         ordering = ["order", "id"]
@@ -240,6 +236,7 @@ class PictureSentenceItem(models.Model):
         "Şəkil (səhv/həzf olunan tərəf)", upload_to=lesson_image_path, blank=True, null=True,
     )
     order = models.PositiveIntegerField("Sıra", default=0)
+    edited_via_app = models.BooleanField("Tətbiqdən redaktə olunub", default=False)
 
     class Meta:
         ordering = ["order", "id"]
@@ -267,11 +264,18 @@ class AnswerQuestionExercise(models.Model):
 
     lesson = models.ForeignKey(Lesson, related_name="answer_question_exercises", on_delete=models.CASCADE)
     title_fa = models.CharField("Başlıq (fars)", max_length=255, blank=True, default="")
+    example_fa = models.CharField(
+        "Nümunə cümlə (fars)", max_length=500, blank=True, default="",
+        help_text="Çalışmanın başında göstərilən «نمونه» qutusu üçün nümunə cümlə (məs. «خانه‌ی ما ... *دارد*.»).",
+    )
+    example_reading_az = models.CharField("Nümunə cümlənin oxunuşu (az)", max_length=500, blank=True, default="")
+    example_az = models.CharField("Nümunə cümlənin tərcüməsi (az)", max_length=500, blank=True, default="")
     instruction_az = models.TextField("Tapşırıq (az)")
     note_fa = models.TextField("Qeyd (fars, ardıcıl mətn)", blank=True, default="")
     note_reading_az = models.TextField("Qeydin oxunuşu (az hərfləri ilə)", blank=True, default="")
     note_az = models.TextField("Qeydin tərcüməsi (az)", blank=True, default="")
     order = models.PositiveIntegerField("Sıra", default=0)
+    edited_via_app = models.BooleanField("Tətbiqdən redaktə olunub", default=False)
 
     class Meta:
         ordering = ["order", "id"]
@@ -293,31 +297,7 @@ class AnswerQuestionExerciseItem(models.Model):
     )
     sample_answer_az = models.CharField("Nümunə cavabın tərcüməsi (az)", max_length=500, blank=True, default="")
     order = models.PositiveIntegerField("Sıra", default=0)
-
-    class Meta:
-        ordering = ["order", "id"]
-
-
-class MultipleChoiceExercise(models.Model):
-    lesson = models.ForeignKey(Lesson, related_name="multiple_choice_exercises", on_delete=models.CASCADE)
-    instruction_az = models.TextField("Tapşırıq (az)")
-    order = models.PositiveIntegerField("Sıra", default=0)
-
-    class Meta:
-        ordering = ["order", "id"]
-        verbose_name = "Çoxseçimli məşğələ"
-        verbose_name_plural = "Çoxseçimli məşğələlər"
-
-    def __str__(self):
-        return self.instruction_az[:60]
-
-
-class MultipleChoiceItem(models.Model):
-    exercise = models.ForeignKey(MultipleChoiceExercise, related_name="items", on_delete=models.CASCADE)
-    question_fa = models.CharField("Sual (fars)", max_length=500)
-    options = models.JSONField("Variantlar", default=list)
-    correct_index = models.PositiveIntegerField("Düzgün variantın indeksi (0-dan başlar)", default=0)
-    order = models.PositiveIntegerField("Sıra", default=0)
+    edited_via_app = models.BooleanField("Tətbiqdən redaktə olunub", default=False)
 
     class Meta:
         ordering = ["order", "id"]
@@ -368,6 +348,11 @@ class PracticeRevealExercise(models.Model):
         "Nümunə şəkli («yoxdur» tərəfi)", upload_to=lesson_image_path, blank=True, null=True,
     )
     order = models.PositiveIntegerField("Sıra", default=0)
+    edited_via_app = models.BooleanField(
+        "Tətbiqdən redaktə olunub", default=False,
+        help_text="Yalnız Çalışmalar siyahısındakı (lesson-a bağlı) məşğələlər üçün mənalıdır — "
+        "Qrammatika mövzusunun öz drill kartları (grammar_note-a bağlı) tətbiqdən redaktə olunmur.",
+    )
 
     class Meta:
         ordering = ["order", "id"]
@@ -392,6 +377,7 @@ class PracticeRevealItem(models.Model):
         "Şəkil («yoxdur» tərəfi)", upload_to=lesson_image_path, blank=True, null=True,
     )
     order = models.PositiveIntegerField("Sıra", default=0)
+    edited_via_app = models.BooleanField("Tətbiqdən redaktə olunub", default=False)
 
     class Meta:
         ordering = ["order", "id"]
@@ -408,6 +394,10 @@ class SentencePractice(models.Model):
     )
     answer_note_reading_az = models.TextField("Qeydin oxunuşu (az hərfləri ilə)", blank=True, default="")
     answer_note_az = models.TextField("Qeydin tərcüməsi (az)", blank=True, default="")
+    answer_note_edited_via_app = models.BooleanField(
+        "Qeyd tətbiqdən redaktə olunub", default=False,
+        help_text="answer_note_* sahələri tətbiqdən dəyişdirilib — seed_lessons yenidən işlədikdə üstələnmir.",
+    )
 
     class Meta:
         verbose_name = "Sözlərin işləndiyi cümlələr"
@@ -417,12 +407,32 @@ class SentencePractice(models.Model):
         return f"Sözlərin işləndiyi cümlələr — Dərs {self.lesson.number}"
 
 
+class ListenReadExercise(models.Model):
+    """'Dinləyin və oxuyun' (گوش کنید و بخوانید) bölməsindəki bir Çalışma —
+    hər biri öz nömrələnmiş cümlə siyahısına malikdir (bax [[ListenReadSentence]])."""
+
+    practice = models.ForeignKey(SentencePractice, related_name="listen_exercises", on_delete=models.CASCADE)
+    order = models.PositiveIntegerField("Sıra", default=0)
+
+    class Meta:
+        ordering = ["order", "id"]
+        verbose_name = "Dinlə-oxu çalışması"
+        verbose_name_plural = "Dinlə-oxu çalışmaları (گوش کنید و بخوانید)"
+
+    def __str__(self):
+        return f"Çalışma {self.order} — Dərs {self.practice.lesson.number}"
+
+
 class ListenReadSentence(models.Model):
-    practice = models.ForeignKey(SentencePractice, related_name="listen_items", on_delete=models.CASCADE)
+    exercise = models.ForeignKey(ListenReadExercise, related_name="items", on_delete=models.CASCADE)
     fa = models.CharField("Cümlə (fars)", max_length=500)
     reading_az = models.CharField("Oxunuşu (az hərfləri ilə)", max_length=500, blank=True, default="")
     az = models.CharField("Tərcümə (az)", max_length=500)
     order = models.PositiveIntegerField("Sıra", default=0)
+    edited_via_app = models.BooleanField(
+        "Tətbiqdən redaktə olunub", default=False,
+        help_text="Cümlə mobil tətbiqdən dəyişdirilib/əlavə edilib — seed_lessons yenidən işlədikdə üstələnmir.",
+    )
 
     class Meta:
         ordering = ["order", "id"]
@@ -444,6 +454,10 @@ class AnswerQuestionSentence(models.Model):
     )
     sample_answer_az = models.CharField("Nümunə cavabın tərcüməsi (az)", max_length=500, blank=True, default="")
     order = models.PositiveIntegerField("Sıra", default=0)
+    edited_via_app = models.BooleanField(
+        "Tətbiqdən redaktə olunub", default=False,
+        help_text="Sual mobil tətbiqdən dəyişdirilib/əlavə edilib — seed_lessons yenidən işlədikdə üstələnmir.",
+    )
 
     class Meta:
         ordering = ["order", "id"]
@@ -512,6 +526,11 @@ class ReadingText(models.Model):
         blank=True,
         help_text='Hər biri {"fa", "reading_az", "az", "new_paragraph"} formasında. Boşdursa köhnə paraqraf görünüşü işlədilir.',
     )
+    edited_via_app = models.BooleanField(
+        "Tətbiqdən redaktə olunub", default=False,
+        help_text="title_fa/title_az/full_translation_az/paragraphs_fa/sentences tətbiqdən dəyişdirilib — "
+        "seed_lessons yenidən işlədikdə üstələnmir (şəkil ayrıca qorunur, bax _attach_image).",
+    )
 
     class Meta:
         verbose_name = "Oxu mətni"
@@ -526,6 +545,7 @@ class ReadingFootnote(models.Model):
     fa = models.CharField("Fars", max_length=500)
     az = models.CharField("Azərbaycan", max_length=500)
     order = models.PositiveIntegerField("Sıra", default=0)
+    edited_via_app = models.BooleanField("Tətbiqdən redaktə olunub", default=False)
 
     class Meta:
         ordering = ["order", "id"]
@@ -545,6 +565,7 @@ class ReadingComprehensionQuestion(models.Model):
     )
     sample_answer_az = models.CharField("Nümunə cavabın tərcüməsi (az)", max_length=500, blank=True, default="")
     order = models.PositiveIntegerField("Sıra", default=0)
+    edited_via_app = models.BooleanField("Tətbiqdən redaktə olunub", default=False)
 
     class Meta:
         ordering = ["order", "id"]

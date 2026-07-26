@@ -263,20 +263,6 @@ LESSON = {
             ],
         },
         {
-            "kind": "multiple_choice",
-            "instruction_az": "«بدن انسان» mətninə görə düzgün cavabı seçin.",
-            "items": [
-                {"question_fa": "بدن انسان از چه قسمت‌هایی تشکیل شده است؟", "options": ["پوست، گوشت، خون، استخوان و...", "فقط پوست و استخوان", "فقط گوشت"], "correct_index": 0},
-                {"question_fa": "ما با پوستمان چه چیزهایی را احساس می‌کنیم؟", "options": ["گرمی، سردی، زبری و نرمی", "فقط رنگ‌ها", "فقط صداها"], "correct_index": 0},
-                {"question_fa": "در بدن انسان چند عدد استخوان وجود دارد؟", "options": ["بیش از دویست عدد", "پنجاه عدد", "هزار عدد"], "correct_index": 0},
-                {"question_fa": "محکم‌ترین و بلندترین استخوان بدن انسان کدام است؟", "options": ["استخوان ران", "استخوان دست", "استخوان جمجمه"], "correct_index": 0},
-                {"question_fa": "چرا بعضی از مردم از عینک استفاده می‌کنند؟", "options": ["چون چشم‌هایشان ضعیف است و خوب نمی‌بینند", "چون گوش‌هایشان درد می‌کند", "برای زیبایی"], "correct_index": 0},
-                {"question_fa": "با زبان چه چیزی را حس می‌کنیم؟", "options": ["طعم و مزه‌ی خوردنی‌ها", "بوی گل‌ها", "صداها"], "correct_index": 0},
-                {"question_fa": "قلب در بدن چه‌کار می‌کند؟", "options": ["خون را به همه‌جای بدن می‌رساند", "غذا را هضم می‌کند", "صدا را می‌شنود"], "correct_index": 0},
-                {"question_fa": "با دست چه کارهایی می‌کنیم؟", "options": ["می‌نویسیم، غذا می‌خوریم و وسایل را برمی‌داریم", "فقط راه می‌رویم", "فقط می‌شنویم"], "correct_index": 0},
-            ],
-        },
-        {
             "kind": "practice_reveal",
             "instruction_az": "Nümunə kimi cümlə qurun: «گوش: ما به وسیله‌ی گوش می‌شنویم.»",
             "items": [
@@ -314,66 +300,70 @@ LESSON = {
         },
     ],
     "sentence_practice": {
-        "listen_items": [
+        "listen_exercises": [
             {
-                "fa": "مادر، نوزادش را بغل می‌کند و می‌بوسد.",
-                "reading_az": "Madər, nouzadəş ra bəğəl mikonəd va mibusəd.",
-                "az": "Ana körpəsini qucaqlayır və öpür.",
-            },
-            {
-                "fa": "کودکانتان را نوازش کنید و ببوسید.",
-                "reading_az": "Kudəkanetan ra nəvazeş konid va bebusid.",
-                "az": "Uşaqlarınızı sığallayın və öpün.",
-            },
-            {
-                "fa": "هر روز در این بیمارستان حدود بیست نوزاد به دنیا می‌آید.",
-                "reading_az": "Hər ruz dər in bimarestan hodude bist nouzad be donya miayəd.",
-                "az": "Hər gün bu xəstəxanada təxminən iyirmi körpə dünyaya gəlir.",
-            },
-            {
-                "fa": "من دیروز به دیدن مادربزرگم رفتم و با او صحبت کردم.",
-                "reading_az": "Mən diruz be didəne madərbozorgəm rəftəm va ba u sohbət kərdəm.",
-                "az": "Mən dünən nənəmi görməyə getdim və onunla söhbət etdim.",
-            },
-            {
-                "fa": "دوستم معلول است؛ او برای راه رفتن از عصا استفاده می‌کند.",
-                "reading_az": "Dustəm məlul əst; u bəraye rah-rəftən əz əsa estefade mikonəd.",
-                "az": "Dostum əlildir; o yeriməkdən ötrü əl ağacından istifadə edir.",
-            },
-            {
-                "fa": "علی به مرد نابینا کمک کرد و او را به آن طرف خیابان برد.",
-                "reading_az": "Əli be mərde nabina komək kərd va u ra be an tərəfe xiyaban bord.",
-                "az": "Əli kor kişiyə kömək etdi və onu küçənin o tərəfinə apardı.",
-            },
-            {
-                "fa": "مادربزرگ سعید، هفتاد و پنج سال زندگی کرد؛ او پارسال از دنیا رفت.",
-                "reading_az": "Madərbozorge Səid, həftad o pənc sal zendegi kərd; u parsal əz donya rəft.",
-                "az": "Səidin nənəsi yetmiş beş il yaşadı; o keçən il dünyadan köçdü.",
-            },
-            {
-                "fa": "استادمان گفت: روز مادر به دیدن مادرتان بروید و دست ایشان را ببوسید.",
-                "reading_az": "Ostademan goft: ruze madər be didəne madəretan bəravid va dəste işan ra bebusid.",
-                "az": "Müəllimimiz dedi: Ana günü ananızı görməyə gedin və onun əlindən öpün.",
-            },
-            {
-                "fa": "هر روز در جهان هزاران نفر از دنیا می‌روند و هزاران نفر به دنیا می‌آیند.",
-                "reading_az": "Hər ruz dər cəhan hezaran nəfər əz donya mirəvənd va hezaran nəfər be donya miayənd.",
-                "az": "Hər gün dünyada minlərlə insan dünyadan köçür və minlərlə insan dünyaya gəlir.",
-            },
-            {
-                "fa": "پدربزرگم همیشه نوه‌هایش را نوازش می‌کند. او بسیار مهربان است.",
-                "reading_az": "Pedərbozorgəm həmişe nəvehayəş ra nəvazeş mikonəd. U besyar mehrəban əst.",
-                "az": "Babam həmişə nəvələrini sığallayır. O, çox mehribandır.",
-            },
-            {
-                "fa": "نابینا کسی است که چشمانش نمی‌بیند و ناشنوا کسی است که گوش‌هایش نمی‌شنود.",
-                "reading_az": "Nabina kəsi əst ke çeşmanəş nemibinəd va naşenəva kəsi əst ke guşhayəş nemişenəvəd.",
-                "az": "Kor gözləri görməyən adamdır, kar isə qulaqları eşitməyən adamdır.",
-            },
-            {
-                "fa": "طلبه‌های این کلاس مهربان و متواضع هستند. آن‌ها به استادهایشان احترام می‌گذارند.",
-                "reading_az": "Təlabehaye in kelas mehrəban va motəvaze həstənd. Anha be ostadhayeşan ehteram migozarənd.",
-                "az": "Bu sinfin tələbələri mehriban və təvazökardır. Onlar müəllimlərinə hörmət edirlər.",
+                "items": [
+                    {
+                        "fa": "مادر، نوزادش را بغل می‌کند و می‌بوسد.",
+                        "reading_az": "Madər, nouzadəş ra bəğəl mikonəd va mibusəd.",
+                        "az": "Ana körpəsini qucaqlayır və öpür.",
+                    },
+                    {
+                        "fa": "کودکانتان را نوازش کنید و ببوسید.",
+                        "reading_az": "Kudəkanetan ra nəvazeş konid va bebusid.",
+                        "az": "Uşaqlarınızı sığallayın və öpün.",
+                    },
+                    {
+                        "fa": "هر روز در این بیمارستان حدود بیست نوزاد به دنیا می‌آید.",
+                        "reading_az": "Hər ruz dər in bimarestan hodude bist nouzad be donya miayəd.",
+                        "az": "Hər gün bu xəstəxanada təxminən iyirmi körpə dünyaya gəlir.",
+                    },
+                    {
+                        "fa": "من دیروز به دیدن مادربزرگم رفتم و با او صحبت کردم.",
+                        "reading_az": "Mən diruz be didəne madərbozorgəm rəftəm va ba u sohbət kərdəm.",
+                        "az": "Mən dünən nənəmi görməyə getdim və onunla söhbət etdim.",
+                    },
+                    {
+                        "fa": "دوستم معلول است؛ او برای راه رفتن از عصا استفاده می‌کند.",
+                        "reading_az": "Dustəm məlul əst; u bəraye rah-rəftən əz əsa estefade mikonəd.",
+                        "az": "Dostum əlildir; o yeriməkdən ötrü əl ağacından istifadə edir.",
+                    },
+                    {
+                        "fa": "علی به مرد نابینا کمک کرد و او را به آن طرف خیابان برد.",
+                        "reading_az": "Əli be mərde nabina komək kərd va u ra be an tərəfe xiyaban bord.",
+                        "az": "Əli kor kişiyə kömək etdi və onu küçənin o tərəfinə apardı.",
+                    },
+                    {
+                        "fa": "مادربزرگ سعید، هفتاد و پنج سال زندگی کرد؛ او پارسال از دنیا رفت.",
+                        "reading_az": "Madərbozorge Səid, həftad o pənc sal zendegi kərd; u parsal əz donya rəft.",
+                        "az": "Səidin nənəsi yetmiş beş il yaşadı; o keçən il dünyadan köçdü.",
+                    },
+                    {
+                        "fa": "استادمان گفت: روز مادر به دیدن مادرتان بروید و دست ایشان را ببوسید.",
+                        "reading_az": "Ostademan goft: ruze madər be didəne madəretan bəravid va dəste işan ra bebusid.",
+                        "az": "Müəllimimiz dedi: Ana günü ananızı görməyə gedin və onun əlindən öpün.",
+                    },
+                    {
+                        "fa": "هر روز در جهان هزاران نفر از دنیا می‌روند و هزاران نفر به دنیا می‌آیند.",
+                        "reading_az": "Hər ruz dər cəhan hezaran nəfər əz donya mirəvənd va hezaran nəfər be donya miayənd.",
+                        "az": "Hər gün dünyada minlərlə insan dünyadan köçür və minlərlə insan dünyaya gəlir.",
+                    },
+                    {
+                        "fa": "پدربزرگم همیشه نوه‌هایش را نوازش می‌کند. او بسیار مهربان است.",
+                        "reading_az": "Pedərbozorgəm həmişe nəvehayəş ra nəvazeş mikonəd. U besyar mehrəban əst.",
+                        "az": "Babam həmişə nəvələrini sığallayır. O, çox mehribandır.",
+                    },
+                    {
+                        "fa": "نابینا کسی است که چشمانش نمی‌بیند و ناشنوا کسی است که گوش‌هایش نمی‌شنود.",
+                        "reading_az": "Nabina kəsi əst ke çeşmanəş nemibinəd va naşenəva kəsi əst ke guşhayəş nemişenəvəd.",
+                        "az": "Kor gözləri görməyən adamdır, kar isə qulaqları eşitməyən adamdır.",
+                    },
+                    {
+                        "fa": "طلبه‌های این کلاس مهربان و متواضع هستند. آن‌ها به استادهایشان احترام می‌گذارند.",
+                        "reading_az": "Təlabehaye in kelas mehrəban va motəvaze həstənd. Anha be ostadhayeşan ehteram migozarənd.",
+                        "az": "Bu sinfin tələbələri mehriban və təvazökardır. Onlar müəllimlərinə hörmət edirlər.",
+                    },
+                ],
             },
         ],
         "answer_items": [

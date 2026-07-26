@@ -374,19 +374,6 @@ LESSON = {
             ],
         },
         {
-            "kind": "multiple_choice",
-            "instruction_az": "«پرستار مهربان» mətninə görə düzgün cavabı seçin.",
-            "items": [
-                {"question_fa": "سمیّه چگونه شخصیّتی دارد؟", "options": ["خوش‌اخلاق و مهربان", "بی‌ادب و بداخلاق", "ساکت و خجالتی"], "correct_index": 0},
-                {"question_fa": "سمیّه در کدام بخش بیمارستان کار می‌کند؟", "options": ["بخش کودکان بیمارستان امام خمینی", "بخش قلب بیمارستان ابن سینا", "بخش تزریقات"], "correct_index": 0},
-                {"question_fa": "سمیّه هنگام پانسمان‌زدن چه‌کار می‌کند؟", "options": ["زخم را می‌شوید، نوازش می‌کند، پماد می‌زند و باند می‌بندد", "فقط پول می‌گیرد", "کودکان را می‌ترساند"], "correct_index": 0},
-                {"question_fa": "مادر سمیّه چه‌کاره است؟", "options": ["پزشک داروساز و صاحب داروخانه‌ی بزرگ کوثر", "معلّم مدرسه", "پرستار بیمارستان"], "correct_index": 0},
-                {"question_fa": "داروخانه‌ی دکتر کاظمی کجاست؟", "options": ["در خیابان سعدی، کنار بیمارستان امام‌خمینی", "در خیابان انقلاب", "در میدان آزادی"], "correct_index": 0},
-                {"question_fa": "داروخانه‌ی کوثر چه ساعاتی باز است؟", "options": ["شبانه‌روزی است", "فقط صبح‌ها باز است", "فقط شب‌ها باز است"], "correct_index": 0},
-                {"question_fa": "در داروخانه‌ی کوثر علاوه بر دارو چه چیزهایی می‌فروشند؟", "options": ["وسایل پزشکی و بهداشتی، مانند صندلی چرخ‌دار، پنبه، باند و...", "فقط لباس", "فقط کتاب"], "correct_index": 0},
-            ],
-        },
-        {
             "kind": "practice_reveal",
             "instruction_az": "Nümunə kimi əvəz edin: «من دو روز، دندانم درد می‌کند = من دو روز است دندان‌درد دارم.»",
             "items": [
@@ -418,56 +405,60 @@ LESSON = {
         },
     ],
     "sentence_practice": {
-        "listen_items": [
+        "listen_exercises": [
             {
-                "fa": "پدرم پزشک متخصّص قلب است. او رئیس بیمارستان ابن سینا است.",
-                "reading_az": "Pedərəm pezeşke motəxəsese qəlb əst. U rəise bimarestane Ebn-e Sina əst.",
-                "az": "Atam ürək üzrə mütəxəssis həkimdir. O, İbn Sina xəstəxanasının rəisidir.",
-            },
-            {
-                "fa": "دوستم در خیابان تصادف کرد؛ او را زود به بخش اورژانس بردند.",
-                "reading_az": "Dustəm dər xiyaban təsadof kərd; u ra zud be bəxşe orjans bordənd.",
-                "az": "Dostum küçədə qəza keçirdi; onu tez təcili yardım şöbəsinə apardılar.",
-            },
-            {
-                "fa": "برادرم مریض است؛ او امروز علاوه بر خوردن قرص و کپسول، آمپول هم زد.",
-                "reading_az": "Bəradərəm mariz əst; u əmruz əlave bər xordəne qors va kapsul, ampul həm zad.",
-                "az": "Qardaşım xəstədir; o, bu gün həb və kapsul içməkdən əlavə, iynə də vurdurdu.",
-            },
-            {
-                "fa": "دکتر گفت: هر هشت ساعت، یک قرص و یک قاشق غذاخوری شربت بخور.",
-                "reading_az": "Doktor goft: hər həşt saət, yek qors va yek qaşoqe qəzaxori şərbət boxor.",
-                "az": "Həkim dedi: hər səkkiz saatdan bir, bir həb və bir xörək qaşığı şərbət iç.",
-            },
-            {
-                "fa": "دختر کوچکم به خاطر سرماخوردن تب دارد و زیاد سرفه و عطسه می‌کند.",
-                "reading_az": "Doxtəre kuçekəm be xatere sərma-xordən təb darəd va ziyad sorfe va ətse mikonəd.",
-                "az": "Kiçik qızım soyuqladığı üçün qızdırması var və çox öskürüb asqırır.",
-            },
-            {
-                "fa": "دندان علی درد می‌کند. او امروز برای درمان دندان‌هایش به دندان‌پزشکی می‌رود.",
-                "reading_az": "Dəndane Əli dərd mikonəd. U əmruz bəraye dərmane dəndanhayəş be dəndanpezeşki mirəvəd.",
-                "az": "Əlinin dişi ağrıyır. O, bu gün dişlərinin müalicəsi üçün diş həkiminə gedir.",
-            },
-            {
-                "fa": "در بیمارستان‌ها اتاق تزریقات، بخش اورژانس، آزمایش‌گاه، داروخانه و اتاق عمل وجود دارد.",
-                "reading_az": "Dər bimarestanha otaqe təzriqat, bəxşe orjans, azmayeşgah, daruxane va otaqe əməl vocud darəd.",
-                "az": "Xəstəxanalarda inyeksiya otağı, təcili yardım şöbəsi, laboratoriya, aptek və əməliyyat otağı olur.",
-            },
-            {
-                "fa": "در اتاق تزریقات، زخم بیمار را با سرم و بتادین می‌شویند و به وسیله‌ی باند پانسمان می‌کنند.",
-                "reading_az": "Dər otaqe təzriqat, zəxme bimar ra ba serom va betadin mişuyənd va be vasileye band pansman mikonənd.",
-                "az": "İnyeksiya otağında xəstənin yarasını serum və betadinlə yuyur, bintlə sarğı qoyurlar.",
-            },
-            {
-                "fa": "پدربزرگم در بیمارستان بستری است. ما هر روز به عیادت ایشان می‌رویم.",
-                "reading_az": "Pedərbozorgəm dər bimarestan bəstəri əst. Ma hər ruz be eyadəte işan mirəvim.",
-                "az": "Babam xəstəxanaya yatırılıb. Biz hər gün ona baş çəkməyə gedirik.",
-            },
-            {
-                "fa": "فاطمه متخصّص و جرّاح چشم است. ایشان چشم بیماران را معاینه و جرّاحی می‌کند.",
-                "reading_az": "Fateme motəxəses va cərrahe çeşm əst. İşan çeşme bimaran ra moayene va cərrahi mikonəd.",
-                "az": "Fatimə göz həkimi-cərrahdır. O, xəstələrin gözünü müayinə edir və əməliyyat edir.",
+                "items": [
+                    {
+                        "fa": "پدرم پزشک متخصّص قلب است. او رئیس بیمارستان ابن سینا است.",
+                        "reading_az": "Pedərəm pezeşke motəxəsese qəlb əst. U rəise bimarestane Ebn-e Sina əst.",
+                        "az": "Atam ürək üzrə mütəxəssis həkimdir. O, İbn Sina xəstəxanasının rəisidir.",
+                    },
+                    {
+                        "fa": "دوستم در خیابان تصادف کرد؛ او را زود به بخش اورژانس بردند.",
+                        "reading_az": "Dustəm dər xiyaban təsadof kərd; u ra zud be bəxşe orjans bordənd.",
+                        "az": "Dostum küçədə qəza keçirdi; onu tez təcili yardım şöbəsinə apardılar.",
+                    },
+                    {
+                        "fa": "برادرم مریض است؛ او امروز علاوه بر خوردن قرص و کپسول، آمپول هم زد.",
+                        "reading_az": "Bəradərəm mariz əst; u əmruz əlave bər xordəne qors va kapsul, ampul həm zad.",
+                        "az": "Qardaşım xəstədir; o, bu gün həb və kapsul içməkdən əlavə, iynə də vurdurdu.",
+                    },
+                    {
+                        "fa": "دکتر گفت: هر هشت ساعت، یک قرص و یک قاشق غذاخوری شربت بخور.",
+                        "reading_az": "Doktor goft: hər həşt saət, yek qors va yek qaşoqe qəzaxori şərbət boxor.",
+                        "az": "Həkim dedi: hər səkkiz saatdan bir, bir həb və bir xörək qaşığı şərbət iç.",
+                    },
+                    {
+                        "fa": "دختر کوچکم به خاطر سرماخوردن تب دارد و زیاد سرفه و عطسه می‌کند.",
+                        "reading_az": "Doxtəre kuçekəm be xatere sərma-xordən təb darəd va ziyad sorfe va ətse mikonəd.",
+                        "az": "Kiçik qızım soyuqladığı üçün qızdırması var və çox öskürüb asqırır.",
+                    },
+                    {
+                        "fa": "دندان علی درد می‌کند. او امروز برای درمان دندان‌هایش به دندان‌پزشکی می‌رود.",
+                        "reading_az": "Dəndane Əli dərd mikonəd. U əmruz bəraye dərmane dəndanhayəş be dəndanpezeşki mirəvəd.",
+                        "az": "Əlinin dişi ağrıyır. O, bu gün dişlərinin müalicəsi üçün diş həkiminə gedir.",
+                    },
+                    {
+                        "fa": "در بیمارستان‌ها اتاق تزریقات، بخش اورژانس، آزمایش‌گاه، داروخانه و اتاق عمل وجود دارد.",
+                        "reading_az": "Dər bimarestanha otaqe təzriqat, bəxşe orjans, azmayeşgah, daruxane va otaqe əməl vocud darəd.",
+                        "az": "Xəstəxanalarda inyeksiya otağı, təcili yardım şöbəsi, laboratoriya, aptek və əməliyyat otağı olur.",
+                    },
+                    {
+                        "fa": "در اتاق تزریقات، زخم بیمار را با سرم و بتادین می‌شویند و به وسیله‌ی باند پانسمان می‌کنند.",
+                        "reading_az": "Dər otaqe təzriqat, zəxme bimar ra ba serom va betadin mişuyənd va be vasileye band pansman mikonənd.",
+                        "az": "İnyeksiya otağında xəstənin yarasını serum və betadinlə yuyur, bintlə sarğı qoyurlar.",
+                    },
+                    {
+                        "fa": "پدربزرگم در بیمارستان بستری است. ما هر روز به عیادت ایشان می‌رویم.",
+                        "reading_az": "Pedərbozorgəm dər bimarestan bəstəri əst. Ma hər ruz be eyadəte işan mirəvim.",
+                        "az": "Babam xəstəxanaya yatırılıb. Biz hər gün ona baş çəkməyə gedirik.",
+                    },
+                    {
+                        "fa": "فاطمه متخصّص و جرّاح چشم است. ایشان چشم بیماران را معاینه و جرّاحی می‌کند.",
+                        "reading_az": "Fateme motəxəses va cərrahe çeşm əst. İşan çeşme bimaran ra moayene va cərrahi mikonəd.",
+                        "az": "Fatimə göz həkimi-cərrahdır. O, xəstələrin gözünü müayinə edir və əməliyyat edir.",
+                    },
+                ],
             },
         ],
         "answer_items": [

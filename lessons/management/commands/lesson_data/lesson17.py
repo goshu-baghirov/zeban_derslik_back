@@ -448,19 +448,6 @@ LESSON = {
             ],
         },
         {
-            "kind": "multiple_choice",
-            "instruction_az": "«کلاس جالب ما» mətninə görə düzgün cavabı seçin.",
-            "items": [
-                {"question_fa": "کلاس نویسنده چگونه توصیف شده است؟", "options": ["یکی از بهترین و جالب‌ترین کلاس‌های مدرسه", "کوچک‌ترین کلاس مدرسه", "خلوت‌ترین کلاس مدرسه"], "correct_index": 0},
-                {"question_fa": "لاغرترین فرد کلاس کیست و چند کیلو وزن دارد؟", "options": ["بغل‌دستی نویسنده؛ بیشتر از سی و پنج کیلو نیست", "معلّم کلاس؛ چهل کیلو", "دوست نویسنده؛ سی کیلو"], "correct_index": 0},
-                {"question_fa": "قدبلندترین فرد کلاس چند متر قد دارد؟", "options": ["حدود دو متر و ده سانتی‌متر", "یک متر و هشتاد سانتی‌متر", "دو متر و پنجاه سانتی‌متر"], "correct_index": 0},
-                {"question_fa": "کوتاه‌ترین دانش‌آموز کلاس چند قد دارد؟", "options": ["یک متر و بیست سانتی‌متر", "یک متر و پنجاه سانتی‌متر", "نود سانتی‌متر"], "correct_index": 0},
-                {"question_fa": "دو نفر که قدشان خیلی فرق دارد، به چه چیزی تشبیه شده‌اند؟", "options": ["فیل و فنجان", "شیر و روباه", "کوه و دشت"], "correct_index": 0},
-                {"question_fa": "چاق‌ترین فرد کلاس چند کیلو وزن دارد؟", "options": ["حدود صد و بیست کیلو", "حدود هشتاد کیلو", "حدود صد کیلو"], "correct_index": 0},
-                {"question_fa": "چاق‌ترین فرد کلاس چگونه شخصیّتی دارد؟", "options": ["بسیار خوش‌اخلاق و شوخ", "بسیار ساکت و جدّی", "ترسو و ناراحت"], "correct_index": 0},
-            ],
-        },
-        {
             "kind": "practice_reveal",
             "instruction_az": "Müqayisə dərəcəsi ilə cümlə qurun: «من / برنج ارزان / خریدن → من برنج ارزان می‌خرم، برنج گران نمی‌خرم.»",
             "example_prompt_fa": "من / برنج ارزان / خریدن",
@@ -496,56 +483,60 @@ LESSON = {
         },
     ],
     "sentence_practice": {
-        "listen_items": [
+        "listen_exercises": [
             {
-                "fa": "غوره ترش است و انگور شیرین است.",
-                "reading_az": "Qure torş əst va əngur şirin əst.",
-                "az": "Qora turşdur, üzüm isə şirindir.",
-            },
-            {
-                "fa": "موش‌ها از گربه‌ها می‌ترسند.",
-                "reading_az": "Muşha əz gorbeha mitərsənd.",
-                "az": "Siçanlar pişiklərdən qorxur.",
-            },
-            {
-                "fa": "این کودک، گرسنه است و گریه می‌کند؛ او شیر می‌خواهد.",
-                "reading_az": "İn kudək, gorosne əst va gerye mikonəd; u şir mixahəd.",
-                "az": "Bu uşaq acdır və ağlayır; o, süd istəyir.",
-            },
-            {
-                "fa": "بچّه‌ها هنگام جشن تولّدشان خوش‌حال هستند و می‌خندند.",
-                "reading_az": "Bəççeha hengame cəşne touləduşan xoşhal həstənd va mixəndənd.",
-                "az": "Uşaqlar ad günü şənliyində xoşbəxtdirlər və gülürlər.",
-            },
-            {
-                "fa": "پنجره‌ی اتاق باز است یا پنجره‌ی اتاق بسته است.",
-                "reading_az": "Pəncereye otaq baz əst ya pəncereye otaq bəste əst.",
-                "az": "Otağın pəncərəsi açıqdır, yoxsa bağlıdır?",
-            },
-            {
-                "fa": "مادران هنگام بیمار شدنِ کودکانشان، ناراحت هستند.",
-                "reading_az": "Madəran hengame bimar şodəne kudəkaneşan, narahat həstənd.",
-                "az": "Analar uşaqları xəstələndikdə narahat olurlar.",
-            },
-            {
-                "fa": "در جنگل حیوان‌های قوی، حیوان‌های ضعیف را می‌خورند.",
-                "reading_az": "Dər cəngəl heyvanhaye qəvi, heyvanhaye zəif ra mixorənd.",
-                "az": "Meşədə güclü heyvanlar zəif heyvanları yeyir.",
-            },
-            {
-                "fa": "خط بعضی از دانش‌آموزان در کتاب اوّل زشت است و در کتاب‌های بعد زیبا است.",
-                "reading_az": "Xətte bəzi əz danışamuzan dər ketabe əvvəl zeşt əst va dər ketabhaye bəd ziba əst.",
-                "az": "Bəzi şagirdlərin xətti birinci kitabda çirkin, sonrakı kitablarda isə gözəldir.",
-            },
-            {
-                "fa": "پوست درخت، پوست آناناس و خربزه زبر است؛ پنبه، پوست گربه و دم روباه نرم است.",
-                "reading_az": "Puste dərəxt, puste ananas o xərboze zebr əst; pənbe, puste gorbe o dome rubah nərm əst.",
-                "az": "Ağacın qabığı, ananas və qovunun qabığı sərtdir; pambıq, pişiyin dərisi və tülkünün quyruğu yumşaqdır.",
-            },
-            {
-                "fa": "لباس‌های من زیر باران خیس شد؛ آن‌ها را برای خشک‌کردن، کنار بخاری آویزان کردم.",
-                "reading_az": "Ləbashaye mən zire baran xis şod; anha ra bəraye xoşkkərdən, kənare boxari avizan kərdəm.",
-                "az": "Mənim paltarlarım yağış altında islandı; onları qurutmaq üçün soba kənarında asdım.",
+                "items": [
+                    {
+                        "fa": "غوره ترش است و انگور شیرین است.",
+                        "reading_az": "Qure torş əst va əngur şirin əst.",
+                        "az": "Qora turşdur, üzüm isə şirindir.",
+                    },
+                    {
+                        "fa": "موش‌ها از گربه‌ها می‌ترسند.",
+                        "reading_az": "Muşha əz gorbeha mitərsənd.",
+                        "az": "Siçanlar pişiklərdən qorxur.",
+                    },
+                    {
+                        "fa": "این کودک، گرسنه است و گریه می‌کند؛ او شیر می‌خواهد.",
+                        "reading_az": "İn kudək, gorosne əst va gerye mikonəd; u şir mixahəd.",
+                        "az": "Bu uşaq acdır və ağlayır; o, süd istəyir.",
+                    },
+                    {
+                        "fa": "بچّه‌ها هنگام جشن تولّدشان خوش‌حال هستند و می‌خندند.",
+                        "reading_az": "Bəççeha hengame cəşne touləduşan xoşhal həstənd va mixəndənd.",
+                        "az": "Uşaqlar ad günü şənliyində xoşbəxtdirlər və gülürlər.",
+                    },
+                    {
+                        "fa": "پنجره‌ی اتاق باز است یا پنجره‌ی اتاق بسته است.",
+                        "reading_az": "Pəncereye otaq baz əst ya pəncereye otaq bəste əst.",
+                        "az": "Otağın pəncərəsi açıqdır, yoxsa bağlıdır?",
+                    },
+                    {
+                        "fa": "مادران هنگام بیمار شدنِ کودکانشان، ناراحت هستند.",
+                        "reading_az": "Madəran hengame bimar şodəne kudəkaneşan, narahat həstənd.",
+                        "az": "Analar uşaqları xəstələndikdə narahat olurlar.",
+                    },
+                    {
+                        "fa": "در جنگل حیوان‌های قوی، حیوان‌های ضعیف را می‌خورند.",
+                        "reading_az": "Dər cəngəl heyvanhaye qəvi, heyvanhaye zəif ra mixorənd.",
+                        "az": "Meşədə güclü heyvanlar zəif heyvanları yeyir.",
+                    },
+                    {
+                        "fa": "خط بعضی از دانش‌آموزان در کتاب اوّل زشت است و در کتاب‌های بعد زیبا است.",
+                        "reading_az": "Xətte bəzi əz danışamuzan dər ketabe əvvəl zeşt əst va dər ketabhaye bəd ziba əst.",
+                        "az": "Bəzi şagirdlərin xətti birinci kitabda çirkin, sonrakı kitablarda isə gözəldir.",
+                    },
+                    {
+                        "fa": "پوست درخت، پوست آناناس و خربزه زبر است؛ پنبه، پوست گربه و دم روباه نرم است.",
+                        "reading_az": "Puste dərəxt, puste ananas o xərboze zebr əst; pənbe, puste gorbe o dome rubah nərm əst.",
+                        "az": "Ağacın qabığı, ananas və qovunun qabığı sərtdir; pambıq, pişiyin dərisi və tülkünün quyruğu yumşaqdır.",
+                    },
+                    {
+                        "fa": "لباس‌های من زیر باران خیس شد؛ آن‌ها را برای خشک‌کردن، کنار بخاری آویزان کردم.",
+                        "reading_az": "Ləbashaye mən zire baran xis şod; anha ra bəraye xoşkkərdən, kənare boxari avizan kərdəm.",
+                        "az": "Mənim paltarlarım yağış altında islandı; onları qurutmaq üçün soba kənarında asdım.",
+                    },
+                ],
             },
         ],
         "answer_items": [

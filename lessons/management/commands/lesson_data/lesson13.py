@@ -219,19 +219,6 @@ LESSON = {
             ],
         },
         {
-            "kind": "multiple_choice",
-            "instruction_az": "«دماوند» mətninə görə düzgün cavabı seçin.",
-            "items": [
-                {"question_fa": "امیرحسین اهل کجاست؟", "options": ["اندونزی", "ایران", "روسیه"], "correct_index": 0},
-                {"question_fa": "امیرحسین چند ماه قبل به کشورش رفت؟", "options": ["دو ماه", "سه ماه", "یک سال"], "correct_index": 1},
-                {"question_fa": "آب و هوای ایران چگونه است؟", "options": ["فقط گرم", "فقط سرد", "گوناگون: گرم، سرد و معتدل"], "correct_index": 2},
-                {"question_fa": "کوه دماوند چند متر ارتفاع دارد؟", "options": ["۵۶۷۱ متر", "۴۵۰۰ متر", "۶۰۰۰ متر"], "correct_index": 0},
-                {"question_fa": "کوه دماوند بین کدام دو شهر قرار دارد؟", "options": ["تهران و آمل", "قم و مشهد", "شیراز و اصفهان"], "correct_index": 0},
-                {"question_fa": "سبب شلوغ‌بودنِ مسیر دماوند چیست؟", "options": ["زیبایی و نزدیکی به پایتخت", "قیمت ارزان", "آب‌وهوای گرم"], "correct_index": 0},
-                {"question_fa": "در اطراف دماوند دیدن چه چیزهایی لذّت‌بخش است؟", "options": ["قلّه‌ی پر از برف، رودخانه‌ها، دشت گل شقایق و چشمه‌های آب‌گرم", "فقط دریا", "فقط جنگل"], "correct_index": 0},
-            ],
-        },
-        {
             "kind": "practice_reveal",
             "instruction_az": "«چندم» ilə soruşub cavab verin: «شما فرزند چندمِ خانواده هستید؟ من فرزند سومِ خانواده هستم.»",
             "items": [
@@ -323,56 +310,60 @@ LESSON = {
         },
     ],
     "sentence_practice": {
-        "listen_items": [
+        "listen_exercises": [
             {
-                "fa": "در کوه و جنگل باران زیاد می‌بارد و در صحرا باران کم می‌بارد.",
-                "reading_az": "Dər kuh va cəngəl baran ziyad mibarəd va dər səhra baran kəm mibarəd.",
-                "az": "Dağda və meşədə çox yağış yağır, səhrada isə az yağır.",
-            },
-            {
-                "fa": "امدادگران هنگام آتش‌سوزی، آتش را خاموش می‌کنند و مردم را نجات می‌دهند.",
-                "reading_az": "Emdadgəran hengame atəşsuzi, atəş ra xamuş mikonənd va mərdom ra nəcat midəhənd.",
-                "az": "Xilasedicilər yanğın zamanı odu söndürür və insanları xilas edirlər.",
-            },
-            {
-                "fa": "من ساحل دریا و تماشاکردن آن را هنگام غروب خورشید دوست دارم.",
-                "reading_az": "Mən sahele dərya va təmaşakərdəne an ra hengame qorube xorşid dust daram.",
-                "az": "Mən dəniz sahilini və günəş batarkən ona tamaşa etməyi sevirəm.",
-            },
-            {
-                "fa": "حسین و خانواده‌اش برای گردش به جزیره‌ی کیش رفتند و سه روز آن‌جا ماندند.",
-                "reading_az": "Hoseyn va xanevadeəş bəraye gərdeş be cəzireye Kiş rəftənd va se ruz anja mandənd.",
-                "az": "Hüseyn və ailəsi gəzinti üçün Kiş adasına getdilər və orada üç gün qaldılar.",
-            },
-            {
-                "fa": "در بعضی از روستاها مردم از آب چاه‌ها برای خوردن و کشاورزی استفاده می‌کنند.",
-                "reading_az": "Dər bəzi əz rustaha mərdom əz abe çahha bəraye xordən va keşavərzi estefade mikonənd.",
-                "az": "Bəzi kəndlərdə insanlar quyu suyundan içmək və əkinçilik üçün istifadə edirlər.",
-            },
-            {
-                "fa": "در اطراف کوه دماوند درّه‌ها، آبشارها، چشمه‌ها و رودخانه‌های بسیار زیبا وجود دارد.",
-                "reading_az": "Dər ətrafe kuhe Dəmavənd dərreha, abşarha, çeşmeha va rudxanehaye besyar ziba vocud darəd.",
-                "az": "Dəmavənd dağının ətrafında çox gözəl dərələr, şəlalələr, bulaqlar və çaylar var.",
-            },
-            {
-                "fa": "دوستانم، پارسال در تعطیلات تابستان برای گردش به ساحل دریای خزر رفتند.",
-                "reading_az": "Dustanəm, parsal dər tətilate tabestan bəraye gərdeş be sahele dəryaye Xəzər rəftənd.",
-                "az": "Dostlarım keçən il yay tətilində gəzinti üçün Xəzər dənizi sahilinə getdilər.",
-            },
-            {
-                "fa": "هنگام آمدن سیل، بعضی از انسان‌ها غرق می‌شوند.",
-                "reading_az": "Hengame amədəne seyl, bəzi əz insanha qərq mişəvənd.",
-                "az": "Sel gələn zaman insanların bəzisi batır.",
-            },
-            {
-                "fa": "امدادگران هنگام زلزله و سیل به مردم کمک می‌کنند و آن‌ها را نجات می‌دهند.",
-                "reading_az": "Emdadgəran hengame zelzele va seyl be mərdom komək mikonənd va anha ra nəcat midəhənd.",
-                "az": "Xilasedicilər zəlzələ və sel zamanı insanlara kömək edir və onları xilas edirlər.",
-            },
-            {
-                "fa": "در بعضی از کوه‌ها، گیاهان گوناگون، مانند درخت، گُل، قارچ و... وجود دارد.",
-                "reading_az": "Dər bəzi əz kuhha, giyahane gunagun, manənde dərəxt, gol, qarç va... vocud darəd.",
-                "az": "Bəzi dağlarda ağac, gül, göbələk və s. kimi müxtəlif bitkilər var.",
+                "items": [
+                    {
+                        "fa": "در کوه و جنگل باران زیاد می‌بارد و در صحرا باران کم می‌بارد.",
+                        "reading_az": "Dər kuh va cəngəl baran ziyad mibarəd va dər səhra baran kəm mibarəd.",
+                        "az": "Dağda və meşədə çox yağış yağır, səhrada isə az yağır.",
+                    },
+                    {
+                        "fa": "امدادگران هنگام آتش‌سوزی، آتش را خاموش می‌کنند و مردم را نجات می‌دهند.",
+                        "reading_az": "Emdadgəran hengame atəşsuzi, atəş ra xamuş mikonənd va mərdom ra nəcat midəhənd.",
+                        "az": "Xilasedicilər yanğın zamanı odu söndürür və insanları xilas edirlər.",
+                    },
+                    {
+                        "fa": "من ساحل دریا و تماشاکردن آن را هنگام غروب خورشید دوست دارم.",
+                        "reading_az": "Mən sahele dərya va təmaşakərdəne an ra hengame qorube xorşid dust daram.",
+                        "az": "Mən dəniz sahilini və günəş batarkən ona tamaşa etməyi sevirəm.",
+                    },
+                    {
+                        "fa": "حسین و خانواده‌اش برای گردش به جزیره‌ی کیش رفتند و سه روز آن‌جا ماندند.",
+                        "reading_az": "Hoseyn va xanevadeəş bəraye gərdeş be cəzireye Kiş rəftənd va se ruz anja mandənd.",
+                        "az": "Hüseyn və ailəsi gəzinti üçün Kiş adasına getdilər və orada üç gün qaldılar.",
+                    },
+                    {
+                        "fa": "در بعضی از روستاها مردم از آب چاه‌ها برای خوردن و کشاورزی استفاده می‌کنند.",
+                        "reading_az": "Dər bəzi əz rustaha mərdom əz abe çahha bəraye xordən va keşavərzi estefade mikonənd.",
+                        "az": "Bəzi kəndlərdə insanlar quyu suyundan içmək və əkinçilik üçün istifadə edirlər.",
+                    },
+                    {
+                        "fa": "در اطراف کوه دماوند درّه‌ها، آبشارها، چشمه‌ها و رودخانه‌های بسیار زیبا وجود دارد.",
+                        "reading_az": "Dər ətrafe kuhe Dəmavənd dərreha, abşarha, çeşmeha va rudxanehaye besyar ziba vocud darəd.",
+                        "az": "Dəmavənd dağının ətrafında çox gözəl dərələr, şəlalələr, bulaqlar və çaylar var.",
+                    },
+                    {
+                        "fa": "دوستانم، پارسال در تعطیلات تابستان برای گردش به ساحل دریای خزر رفتند.",
+                        "reading_az": "Dustanəm, parsal dər tətilate tabestan bəraye gərdeş be sahele dəryaye Xəzər rəftənd.",
+                        "az": "Dostlarım keçən il yay tətilində gəzinti üçün Xəzər dənizi sahilinə getdilər.",
+                    },
+                    {
+                        "fa": "هنگام آمدن سیل، بعضی از انسان‌ها غرق می‌شوند.",
+                        "reading_az": "Hengame amədəne seyl, bəzi əz insanha qərq mişəvənd.",
+                        "az": "Sel gələn zaman insanların bəzisi batır.",
+                    },
+                    {
+                        "fa": "امدادگران هنگام زلزله و سیل به مردم کمک می‌کنند و آن‌ها را نجات می‌دهند.",
+                        "reading_az": "Emdadgəran hengame zelzele va seyl be mərdom komək mikonənd va anha ra nəcat midəhənd.",
+                        "az": "Xilasedicilər zəlzələ və sel zamanı insanlara kömək edir və onları xilas edirlər.",
+                    },
+                    {
+                        "fa": "در بعضی از کوه‌ها، گیاهان گوناگون، مانند درخت، گُل، قارچ و... وجود دارد.",
+                        "reading_az": "Dər bəzi əz kuhha, giyahane gunagun, manənde dərəxt, gol, qarç va... vocud darəd.",
+                        "az": "Bəzi dağlarda ağac, gül, göbələk və s. kimi müxtəlif bitkilər var.",
+                    },
+                ],
             },
         ],
         "answer_items": [

@@ -225,20 +225,6 @@ LESSON = {
             ],
         },
         {
-            "kind": "multiple_choice",
-            "instruction_az": "«مریم و دوستانش» mətninə görə düzgün cavabı seçin.",
-            "items": [
-                {"question_fa": "مریم و دوستانش اهل کجا هستند؟", "options": ["ایران", "لبنان", "سوریه"], "correct_index": 1},
-                {"question_fa": "مریم اکنون کجا درس می‌خواند؟", "options": ["در شهر قم", "در دمشق", "در بیروت"], "correct_index": 0},
-                {"question_fa": "سوسن در کدام دانش‌گاه و چه رشته‌ای می‌خواند؟", "options": ["دانش‌گاه دمشق؛ رشته‌ی ریاضی", "دانش‌گاه بیروت؛ رشته‌ی پزشکی", "دانش‌گاه قم؛ رشته‌ی ادبیات"], "correct_index": 0},
-                {"question_fa": "نرگس در کجا و چه رشته‌ای می‌خواند؟", "options": ["در دمشق؛ ریاضی", "در بیروت؛ پزشکی", "در قم؛ فارسی"], "correct_index": 1},
-                {"question_fa": "سوسن با چه کسی هم‌سن است؟", "options": ["با مریم", "با نرگس", "با خواهرش"], "correct_index": 0},
-                {"question_fa": "نرگس چه چیزهایی دارد؟", "options": ["گردن‌بند، گوشواره، النگو و ماشین گران‌قیمت", "فقط یک ساعت", "دوچرخه و رایانه"], "correct_index": 0},
-                {"question_fa": "پدر نرگس دارای چیست؟", "options": ["دو هتل بزرگ و سه رستوران", "یک فروش‌گاه پوشاک", "پنج مزرعه"], "correct_index": 0},
-                {"question_fa": "سوسن و نرگس ده روز بعد برای چه به ایران می‌آیند؟", "options": ["برای زیارت امام رضا و دیدن مریم", "برای درس خواندن", "برای خرید"], "correct_index": 0},
-            ],
-        },
-        {
             "kind": "practice_reveal",
             "instruction_az": "«بعد» və «برای» ilə əvəz edin: «احمد دو روز بعد برای دیدن دوستش به تهران می‌رود.»",
             "items": [
@@ -270,51 +256,55 @@ LESSON = {
         },
     ],
     "sentence_practice": {
-        "listen_items": [
+        "listen_exercises": [
             {
-                "fa": "استاد، ماژیک را از روی میز برمی‌دارد و واژه‌ها را روی تابلو می‌نویسد.",
-                "reading_az": "Ostad, majik ra əz ruye miz bərmidarəd va vajeha ra ruye təblo minevisəd.",
-                "az": "Müəllim markeri masanın üstündən götürür və sözləri lövhəyə yazır.",
-            },
-            {
-                "fa": "حسین از پدرش پول می‌گیرد و برای خرید وسایلِ شخصی به بازار می‌رود.",
-                "reading_az": "Hoseyn əz pedərəş pul migirəd va bəraye xəride vəsayele şəxsi be bazar mirəvəd.",
-                "az": "Hüseyn atasından pul alır və şəxsi əşyalar almaq üçün bazara gedir.",
-            },
-            {
-                "fa": "در حمام صابون، تیغ، حوله، خودتراش، آینه، شانه، سشوار و... وجود دارد.",
-                "reading_az": "Dər həmmam sabun, tiğ, houle, xodtəraş, aine, şane, seşvar va ... vocud darəd.",
-                "az": "Hamamda sabun, dişlə, dəsmal, ülgüc, güzgü, daraq, fen və s. var.",
-            },
-            {
-                "fa": "پدرم میوه می‌خرد و به خانه می‌آورد. مادرم میوه‌ها را می‌شوید و در یخچال می‌گذارد.",
-                "reading_az": "Pedərəm mive mixərəd va be xane miavərəd. Madərəm miveha ra mişuyəd va dər yəxçal migozarəd.",
-                "az": "Atam meyvə alır və evə gətirir. Anam meyvələri yuyur və soyuducuya qoyur.",
-            },
-            {
-                "fa": "من و خواهرم برای مادرمان گل و انگشتر طلا می‌خریم و در «روز مادر» به او می‌دهیم.",
-                "reading_az": "Mən va xahərəm bəraye madəreman gol va əngoştəre təla mixərim va dər ruze madər be u midəhim.",
-                "az": "Mən və bacım anamız üçün gül və qızıl üzük alırıq və Ana günündə ona veririk.",
-            },
-            {
-                "fa": "این خانم از بازار کیف زنانه و لوازم آرایش می‌خرد. او لوازم آرایش را در کیفش می‌گذارد.",
-                "reading_az": "İn xanom əz bazar kife zənane va ləvazeme arayeş mixərəd. U ləvazeme arayeş ra dər kifəş migozarəd.",
-                "az": "Bu xanım bazardan qadın çantası və kosmetika alır. O, kosmetikanı çantasına qoyur.",
-            },
-            {
-                "fa": "آقای محمّدی فرزندش را هر روز صبح با تاکسی به مدرسه می‌برد و ظهر به خانه می‌آورد.",
-                "reading_az": "Ağaye Mohəmmədi fərzəndəş ra hər ruz sobh ba taksi be mædrese mibərəd va zohr be xane miavərəd.",
-                "az": "Cənab Məhəmmədi övladını hər gün səhər taksi ilə məktəbə aparır və günorta evə gətirir.",
-            },
-            {
-                "fa": "مادر لیلا هر روز به او میوه و پسته می‌دهد. لیلا آن‌ها را از مادرش می‌گیرد و به مدرسه می‌برد.",
-                "reading_az": "Madəre Leyla hər ruz be u mive va peste midəhəd. Leyla anha ra əz madərəş migirəd va be mædrese mibərəd.",
-                "az": "Leylanın anası hər gün ona meyvə və püstə verir. Leyla onları anasından alır və məktəbə aparır.",
-            },
-            {
-                "fa": "پدر دوستم، طلافروش است. او در مغازه‌اش طلاهای گوناگون، مانند گوشواره، النگو، گردن‌بند، انگشتر و مروارید‌های زیبا دارد.",
-                "reading_az": "Pedəre dustəm, təlaforuş əst. U dər məğazeəş təlahaye gunagun, manənde guşvare, ələngu, gərdənbənd, əngoştər va morvaridhaye ziba darəd.",
-                "az": "Dostumun atası zərgərdir. Onun mağazasında sırğa, qolbaq, boyunbağı, üzük və gözəl mirvarilər kimi müxtəlif qızıl əşyalar var.",
+                "items": [
+                    {
+                        "fa": "استاد، ماژیک را از روی میز برمی‌دارد و واژه‌ها را روی تابلو می‌نویسد.",
+                        "reading_az": "Ostad, majik ra əz ruye miz bərmidarəd va vajeha ra ruye təblo minevisəd.",
+                        "az": "Müəllim markeri masanın üstündən götürür və sözləri lövhəyə yazır.",
+                    },
+                    {
+                        "fa": "حسین از پدرش پول می‌گیرد و برای خرید وسایلِ شخصی به بازار می‌رود.",
+                        "reading_az": "Hoseyn əz pedərəş pul migirəd va bəraye xəride vəsayele şəxsi be bazar mirəvəd.",
+                        "az": "Hüseyn atasından pul alır və şəxsi əşyalar almaq üçün bazara gedir.",
+                    },
+                    {
+                        "fa": "در حمام صابون، تیغ، حوله، خودتراش، آینه، شانه، سشوار و... وجود دارد.",
+                        "reading_az": "Dər həmmam sabun, tiğ, houle, xodtəraş, aine, şane, seşvar va ... vocud darəd.",
+                        "az": "Hamamda sabun, dişlə, dəsmal, ülgüc, güzgü, daraq, fen və s. var.",
+                    },
+                    {
+                        "fa": "پدرم میوه می‌خرد و به خانه می‌آورد. مادرم میوه‌ها را می‌شوید و در یخچال می‌گذارد.",
+                        "reading_az": "Pedərəm mive mixərəd va be xane miavərəd. Madərəm miveha ra mişuyəd va dər yəxçal migozarəd.",
+                        "az": "Atam meyvə alır və evə gətirir. Anam meyvələri yuyur və soyuducuya qoyur.",
+                    },
+                    {
+                        "fa": "من و خواهرم برای مادرمان گل و انگشتر طلا می‌خریم و در «روز مادر» به او می‌دهیم.",
+                        "reading_az": "Mən va xahərəm bəraye madəreman gol va əngoştəre təla mixərim va dər ruze madər be u midəhim.",
+                        "az": "Mən və bacım anamız üçün gül və qızıl üzük alırıq və Ana günündə ona veririk.",
+                    },
+                    {
+                        "fa": "این خانم از بازار کیف زنانه و لوازم آرایش می‌خرد. او لوازم آرایش را در کیفش می‌گذارد.",
+                        "reading_az": "İn xanom əz bazar kife zənane va ləvazeme arayeş mixərəd. U ləvazeme arayeş ra dər kifəş migozarəd.",
+                        "az": "Bu xanım bazardan qadın çantası və kosmetika alır. O, kosmetikanı çantasına qoyur.",
+                    },
+                    {
+                        "fa": "آقای محمّدی فرزندش را هر روز صبح با تاکسی به مدرسه می‌برد و ظهر به خانه می‌آورد.",
+                        "reading_az": "Ağaye Mohəmmədi fərzəndəş ra hər ruz sobh ba taksi be mædrese mibərəd va zohr be xane miavərəd.",
+                        "az": "Cənab Məhəmmədi övladını hər gün səhər taksi ilə məktəbə aparır və günorta evə gətirir.",
+                    },
+                    {
+                        "fa": "مادر لیلا هر روز به او میوه و پسته می‌دهد. لیلا آن‌ها را از مادرش می‌گیرد و به مدرسه می‌برد.",
+                        "reading_az": "Madəre Leyla hər ruz be u mive va peste midəhəd. Leyla anha ra əz madərəş migirəd va be mædrese mibərəd.",
+                        "az": "Leylanın anası hər gün ona meyvə və püstə verir. Leyla onları anasından alır və məktəbə aparır.",
+                    },
+                    {
+                        "fa": "پدر دوستم، طلافروش است. او در مغازه‌اش طلاهای گوناگون، مانند گوشواره، النگو، گردن‌بند، انگشتر و مروارید‌های زیبا دارد.",
+                        "reading_az": "Pedəre dustəm, təlaforuş əst. U dər məğazeəş təlahaye gunagun, manənde guşvare, ələngu, gərdənbənd, əngoştər va morvaridhaye ziba darəd.",
+                        "az": "Dostumun atası zərgərdir. Onun mağazasında sırğa, qolbaq, boyunbağı, üzük və gözəl mirvarilər kimi müxtəlif qızıl əşyalar var.",
+                    },
+                ],
             },
         ],
         "answer_items": [

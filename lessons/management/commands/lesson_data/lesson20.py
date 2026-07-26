@@ -230,19 +230,6 @@ LESSON = {
             ],
         },
         {
-            "kind": "multiple_choice",
-            "instruction_az": "«برنامه‌ی هفتگی من» mətninə görə düzgün cavabı seçin.",
-            "items": [
-                {"question_fa": "مهدی به همراه چه کسانی به ایران آمد؟", "options": ["همسر و فرزندش", "پدر و مادرش", "تنها"], "correct_index": 0},
-                {"question_fa": "مهدی برای یادگرفتن زبان فارسی به کجا رفت؟", "options": ["مرکز آموزش زبان فارسی و معارف اسلامی", "دانش‌گاه تهران", "مدرسه‌ی شهید بهشتی"], "correct_index": 0},
-                {"question_fa": "مهدی برنامه‌ی هفتگی‌اش را به چند بخش تقسیم کرد؟", "options": ["سه بخش: درس خواندن، عبادت کردن، تفریح و استراحت", "دو بخش", "چهار بخش"], "correct_index": 0},
-                {"question_fa": "مهدی هر روز صبح پس از خواندن نماز چه‌کار می‌کند؟", "options": ["حدود یک ربع قرآن می‌خواند", "می‌خوابد", "ورزش می‌کند"], "correct_index": 0},
-                {"question_fa": "مهدی چرا ساعت هشت به مدرسه می‌رود؟", "options": ["چون استادشان سرِ ساعت هشت به کلاس می‌آید", "چون کلاس دور است", "چون دوست دارد زود برود"], "correct_index": 0},
-                {"question_fa": "مهدی برای بهتر یادگرفتن زبان فارسی چه‌کار می‌کند؟", "options": ["فیلم‌ها و سریال‌های ایرانی تماشا می‌کند", "فقط کتاب می‌خواند", "فقط با دوستانش صحبت می‌کند"], "correct_index": 0},
-                {"question_fa": "مهدی و دوستانش عصرهای چه روزهایی ورزش می‌کنند؟", "options": ["شنبه، دوشنبه و چهارشنبه", "یک‌شنبه و سه‌شنبه", "جمعه و شنبه"], "correct_index": 0},
-            ],
-        },
-        {
             "kind": "practice_reveal",
             "instruction_az": "Nümunə kimi cümlə qurun: «پدرم / دو ساعت / کتاب / مطالعه → پدرم هر روز دو ساعت، کتاب مطالعه می‌کند.»",
             "example_prompt_fa": "پدرم / دو ساعت / کتاب / مطالعه",
@@ -318,56 +305,60 @@ LESSON = {
         },
     ],
     "sentence_practice": {
-        "listen_items": [
+        "listen_exercises": [
             {
-                "fa": "ورزش‌گاه آزادی تهران، بزرگ‌ترین ورزش‌گاه ایران است.",
-                "reading_az": "Vərzeşgahe Azadiye Tehran, bozorgtərin vərzeşgahe Iran əst.",
-                "az": "Tehranın Azadi stadionu İranın ən böyük stadionudur.",
-            },
-            {
-                "fa": "ما هفته‌ی قبل دو بار به استخر رفتیم و شنا کردیم.",
-                "reading_az": "Ma həfteye qəbl do bar be estəxr rəftim va şena kərdim.",
-                "az": "Biz keçən həftə iki dəfə hovuza getdik və üzdük.",
-            },
-            {
-                "fa": "آقای محمّدی ورزش‌کار است؛ او قهرمان کشتی است.",
-                "reading_az": "Ağaye Mohəmmədi vərzeşkar əst; u qəhrəmane koşti əst.",
-                "az": "Cənab Məhəmmədi idmançıdır; o, güləş çempionudur.",
-            },
-            {
-                "fa": "بیشتر ورزش‌کاران والیبال و بسکتبال قدبلند هستند.",
-                "reading_az": "Biştər vərzeşkarane valeybal o basketbal qədbolənd həstənd.",
-                "az": "Voleybol və basketbol idmançılarının çoxu uzunboyludur.",
-            },
-            {
-                "fa": "در ورزش فوتبال، بسکتبال، والیبال و پینگ‌پونگ از توپ استفاده می‌کنیم.",
-                "reading_az": "Dər vərzeşe futbal, basketbal, valeybal o ping-pong əz tup estefade mikonim.",
-                "az": "Futbol, basketbol, voleybol və stolüstü tennis idmanlarında topdan istifadə edirik.",
-            },
-            {
-                "fa": "پدرم به ورزش دو و میدانی بسیار علاقه دارد. او هر روز حدود سه کیلومتر می‌دود.",
-                "reading_az": "Pedərəm be vərzeşe dəvo miydani besyar əlaqe darəd. U hər ruz hodude se kilometr midəvəd.",
-                "az": "Atam yüngül atletika idmanını çox sevir. O, hər gün təxminən üç kilometr qaçır.",
-            },
-            {
-                "fa": "ورزش‌کاران هنگامی که مسابقه می‌دهند، گاهی پیروز می‌شوند و گاهی شکست می‌خورند.",
-                "reading_az": "Vərzeşkaran hengami ke mosabeqe midəhənd, gahi piruz mişəvənd va gahi şekəst mixorənd.",
-                "az": "İdmançılar yarışdıqları zaman bəzən qalib gəlir, bəzən məğlub olurlar.",
-            },
-            {
-                "fa": "آقای رضایی، مربّی ورزش‌های رزمی است. او به سالن ورزشی می‌رود و تکواندو درس می‌دهد.",
-                "reading_az": "Ağaye Rezayi, morəbbiye vərzeşhaye rəzmi əst. U be salone vərzeşi mirəvəd va tekvando dərs midəhəd.",
-                "az": "Cənab Rzayi döyüş idmanları məşqçisidir. O, idman zalına gedir və tekvondo dərsi keçir.",
-            },
-            {
-                "fa": "هادی، داور فوتبال است. او هنگام مسابقه، نود دقیقه به همراه بازیکنان در زمین فوتبال می‌دود.",
-                "reading_az": "Hadi, davəre futbal əst. U hengame mosabeqe, nəvəd dəqiqe be həmrahe bazikonan dər zəmine futbal midəvəd.",
-                "az": "Hadi futbol hakimidir. O, yarış zamanı doxsan dəqiqə oyunçularla birlikdə futbol meydanında qaçır.",
-            },
-            {
-                "fa": "خواهرم هم درس می‌خواند، هم ورزش می‌کند. او هر روز به کلاس تیراندازی می‌رود.",
-                "reading_az": "Xahərəm həm dərs mixanəd, həm vərzeş mikonəd. U hər ruz be kelase tirandazi mirəvəd.",
-                "az": "Bacım həm oxuyur, həm də idman edir. O, hər gün atıcılıq dərsinə gedir.",
+                "items": [
+                    {
+                        "fa": "ورزش‌گاه آزادی تهران، بزرگ‌ترین ورزش‌گاه ایران است.",
+                        "reading_az": "Vərzeşgahe Azadiye Tehran, bozorgtərin vərzeşgahe Iran əst.",
+                        "az": "Tehranın Azadi stadionu İranın ən böyük stadionudur.",
+                    },
+                    {
+                        "fa": "ما هفته‌ی قبل دو بار به استخر رفتیم و شنا کردیم.",
+                        "reading_az": "Ma həfteye qəbl do bar be estəxr rəftim va şena kərdim.",
+                        "az": "Biz keçən həftə iki dəfə hovuza getdik və üzdük.",
+                    },
+                    {
+                        "fa": "آقای محمّدی ورزش‌کار است؛ او قهرمان کشتی است.",
+                        "reading_az": "Ağaye Mohəmmədi vərzeşkar əst; u qəhrəmane koşti əst.",
+                        "az": "Cənab Məhəmmədi idmançıdır; o, güləş çempionudur.",
+                    },
+                    {
+                        "fa": "بیشتر ورزش‌کاران والیبال و بسکتبال قدبلند هستند.",
+                        "reading_az": "Biştər vərzeşkarane valeybal o basketbal qədbolənd həstənd.",
+                        "az": "Voleybol və basketbol idmançılarının çoxu uzunboyludur.",
+                    },
+                    {
+                        "fa": "در ورزش فوتبال، بسکتبال، والیبال و پینگ‌پونگ از توپ استفاده می‌کنیم.",
+                        "reading_az": "Dər vərzeşe futbal, basketbal, valeybal o ping-pong əz tup estefade mikonim.",
+                        "az": "Futbol, basketbol, voleybol və stolüstü tennis idmanlarında topdan istifadə edirik.",
+                    },
+                    {
+                        "fa": "پدرم به ورزش دو و میدانی بسیار علاقه دارد. او هر روز حدود سه کیلومتر می‌دود.",
+                        "reading_az": "Pedərəm be vərzeşe dəvo miydani besyar əlaqe darəd. U hər ruz hodude se kilometr midəvəd.",
+                        "az": "Atam yüngül atletika idmanını çox sevir. O, hər gün təxminən üç kilometr qaçır.",
+                    },
+                    {
+                        "fa": "ورزش‌کاران هنگامی که مسابقه می‌دهند، گاهی پیروز می‌شوند و گاهی شکست می‌خورند.",
+                        "reading_az": "Vərzeşkaran hengami ke mosabeqe midəhənd, gahi piruz mişəvənd va gahi şekəst mixorənd.",
+                        "az": "İdmançılar yarışdıqları zaman bəzən qalib gəlir, bəzən məğlub olurlar.",
+                    },
+                    {
+                        "fa": "آقای رضایی، مربّی ورزش‌های رزمی است. او به سالن ورزشی می‌رود و تکواندو درس می‌دهد.",
+                        "reading_az": "Ağaye Rezayi, morəbbiye vərzeşhaye rəzmi əst. U be salone vərzeşi mirəvəd va tekvando dərs midəhəd.",
+                        "az": "Cənab Rzayi döyüş idmanları məşqçisidir. O, idman zalına gedir və tekvondo dərsi keçir.",
+                    },
+                    {
+                        "fa": "هادی، داور فوتبال است. او هنگام مسابقه، نود دقیقه به همراه بازیکنان در زمین فوتبال می‌دود.",
+                        "reading_az": "Hadi, davəre futbal əst. U hengame mosabeqe, nəvəd dəqiqe be həmrahe bazikonan dər zəmine futbal midəvəd.",
+                        "az": "Hadi futbol hakimidir. O, yarış zamanı doxsan dəqiqə oyunçularla birlikdə futbol meydanında qaçır.",
+                    },
+                    {
+                        "fa": "خواهرم هم درس می‌خواند، هم ورزش می‌کند. او هر روز به کلاس تیراندازی می‌رود.",
+                        "reading_az": "Xahərəm həm dərs mixanəd, həm vərzeş mikonəd. U hər ruz be kelase tirandazi mirəvəd.",
+                        "az": "Bacım həm oxuyur, həm də idman edir. O, hər gün atıcılıq dərsinə gedir.",
+                    },
+                ],
             },
         ],
         "answer_items": [

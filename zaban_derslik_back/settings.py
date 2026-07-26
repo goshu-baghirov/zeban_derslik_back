@@ -39,8 +39,8 @@ else:
 
 # The Lesson admin page nests many inline formsets several levels deep
 # (VocabWord, GrammarNote -> ConjugationRow/ExampleSentence/TopicDrill ->
-# TopicDrillItem, FillBlank/TrueFalseImage/MultipleChoice/PracticeReveal ->
-# Items, PictureSentenceExercise -> Items -> Sentences, etc.) — a content-rich
+# TopicDrillItem, FillBlank/PracticeReveal -> Items, PictureSentenceExercise ->
+# Items -> Sentences, etc.) — a content-rich
 # lesson easily produces more POST fields than Django's default limit
 # (1000), raising TooManyFieldsSent when saving. This is an internal,
 # authenticated admin panel (not a public form), so a much higher cap is safe.

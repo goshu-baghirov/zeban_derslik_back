@@ -292,19 +292,6 @@ LESSON = {
             ],
         },
         {
-            "kind": "multiple_choice",
-            "instruction_az": "«زندگی در روستا» mətninə görə düzgün cavabı seçin.",
-            "items": [
-                {"question_fa": "بیشتر مردم روستا چه‌کاره‌اند؟", "options": ["کشاورز و دامدار", "معلّم و مهندس", "خیّاط و نقّاش"], "correct_index": 0},
-                {"question_fa": "روستای آن‌ها نزدیک کجاست؟", "options": ["نزدیک شهر", "نزدیک جنگل", "نزدیک دریا"], "correct_index": 1},
-                {"question_fa": "محمّد و مهدی با چه به مدرسه می‌روند؟", "options": ["با اتوبوس", "با ماشین", "با دوچرخه"], "correct_index": 2},
-                {"question_fa": "پدر محمّد هر روز صبح به کجا می‌رود؟", "options": ["به مزرعه و باغ", "به اداره", "به فروش‌گاه"], "correct_index": 0},
-                {"question_fa": "مادر محمّد چه‌کاره است؟", "options": ["خیّاط است", "خانه‌دار است", "معلّم است"], "correct_index": 1},
-                {"question_fa": "برادر بزرگ محمّد، جواد چه‌کاره است؟", "options": ["کشاورز است", "دامدار است", "نقّاش (رنگ‌کار) است"], "correct_index": 2},
-                {"question_fa": "خواهر محمّد (عمه زهرا) چه‌کاره است؟", "options": ["خیّاط است", "پرستار است", "آشپز است"], "correct_index": 0},
-            ],
-        },
-        {
             "kind": "practice_reveal",
             "instruction_az": "«علاوه بر» ilə deyin: «دوستم / تمیز کردن اتاق / غذا پختن → دوستم علاوه بر تمیز کردن اتاق، غذا می‌پزد.»",
             "items": [
@@ -408,46 +395,50 @@ LESSON = {
         },
     ],
     "sentence_practice": {
-        "listen_items": [
+        "listen_exercises": [
             {
-                "fa": "در خانه‌ی ما یک چهارپایه‌ی قهوه‌ای وجود دارد.",
-                "reading_az": "Dər xane-ye ma yek çəharpaye-ye qəhvei vocud darəd.",
-                "az": "Bizim evimizdə bir qəhvəyi kətil var.",
-            },
-            {
-                "fa": "من برای دختر کوچکم، جوراب صورتی می‌خرم.",
-                "reading_az": "Mən bəraye doxtəre kuçekəm, curabe surəti mixərəm.",
-                "az": "Mən balaca qızım üçün çəhrayı corab alıram.",
-            },
-            {
-                "fa": "پسرم جواد، یک خط‌کش کوچک دارد؛ خط‌کش او بنفش است.",
-                "reading_az": "Pesərəm Cavad, yek xətkeşe kuçek darəd; xətkeşe u bənəfş əst.",
-                "az": "Oğlum Cavadın kiçik bir xətkeşi var; onun xətkeşi bənövşəyidir.",
-            },
-            {
-                "fa": "دوستم رضا خودکار مشکی دارد؛ او خودکار آبی و قرمز می‌خواهد.",
-                "reading_az": "Dustəm Reza xodkare meşki darəd; u xodkare abi va qermez mixahəd.",
-                "az": "Dostum Rza qara tükənməz qələm var; o, mavi və qırmızı tükənməz qələm istəyir.",
-            },
-            {
-                "fa": "آن مرد، رنگ‌فروش نیست؛ او رنگ‌کار است. او الآن خانه‌ی ما را رنگ می‌زند.",
-                "reading_az": "An mərd, rəngforuş nist; u rəngkar əst. U əl-an xane-ye ma ra rəng mizənəd.",
-                "az": "O kişi rəng satan deyil; o, rəngsazdır. O, indi bizim evimizi rəngləyir.",
-            },
-            {
-                "fa": "آیا این عکس، رنگی نیست؟ نه این عکس نیست؛ سیاه و سفید است.",
-                "reading_az": "Aya in əks, rəngi nist? Nə in əks nist; siyah o sefid əst.",
-                "az": "Bu şəkil rəngli deyilmi? Xeyr, bu şəkil rəngli deyil; ağ-qaradır.",
-            },
-            {
-                "fa": "شما کدام جامدادی را می‌خواهید؟ من جامدادی نارنجی را می‌خواهم.",
-                "reading_az": "Şoma kodam camedadi ra mixahid? Mən camedadiye narenci ra mixahəm.",
-                "az": "Siz hansı qələmqabını istəyirsiniz? Mən narıncı qələmqabını istəyirəm.",
-            },
-            {
-                "fa": "ایشان برای نوشتن از ماژیک قرمز استفاده می‌کند یا آبی؟ او از ماژیک آبی استفاده می‌کند.",
-                "reading_az": "İşan bəraye neveştən əz majike qermez estefade mikonəd ya abi? U əz majike abi estefade mikonəd.",
-                "az": "O, yazmaq üçün qırmızı markerdən istifadə edir, yoxsa mavi? O, mavi markerdən istifadə edir.",
+                "items": [
+                    {
+                        "fa": "در خانه‌ی ما یک چهارپایه‌ی قهوه‌ای وجود دارد.",
+                        "reading_az": "Dər xane-ye ma yek çəharpaye-ye qəhvei vocud darəd.",
+                        "az": "Bizim evimizdə bir qəhvəyi kətil var.",
+                    },
+                    {
+                        "fa": "من برای دختر کوچکم، جوراب صورتی می‌خرم.",
+                        "reading_az": "Mən bəraye doxtəre kuçekəm, curabe surəti mixərəm.",
+                        "az": "Mən balaca qızım üçün çəhrayı corab alıram.",
+                    },
+                    {
+                        "fa": "پسرم جواد، یک خط‌کش کوچک دارد؛ خط‌کش او بنفش است.",
+                        "reading_az": "Pesərəm Cavad, yek xətkeşe kuçek darəd; xətkeşe u bənəfş əst.",
+                        "az": "Oğlum Cavadın kiçik bir xətkeşi var; onun xətkeşi bənövşəyidir.",
+                    },
+                    {
+                        "fa": "دوستم رضا خودکار مشکی دارد؛ او خودکار آبی و قرمز می‌خواهد.",
+                        "reading_az": "Dustəm Reza xodkare meşki darəd; u xodkare abi va qermez mixahəd.",
+                        "az": "Dostum Rza qara tükənməz qələm var; o, mavi və qırmızı tükənməz qələm istəyir.",
+                    },
+                    {
+                        "fa": "آن مرد، رنگ‌فروش نیست؛ او رنگ‌کار است. او الآن خانه‌ی ما را رنگ می‌زند.",
+                        "reading_az": "An mərd, rəngforuş nist; u rəngkar əst. U əl-an xane-ye ma ra rəng mizənəd.",
+                        "az": "O kişi rəng satan deyil; o, rəngsazdır. O, indi bizim evimizi rəngləyir.",
+                    },
+                    {
+                        "fa": "آیا این عکس، رنگی نیست؟ نه این عکس نیست؛ سیاه و سفید است.",
+                        "reading_az": "Aya in əks, rəngi nist? Nə in əks nist; siyah o sefid əst.",
+                        "az": "Bu şəkil rəngli deyilmi? Xeyr, bu şəkil rəngli deyil; ağ-qaradır.",
+                    },
+                    {
+                        "fa": "شما کدام جامدادی را می‌خواهید؟ من جامدادی نارنجی را می‌خواهم.",
+                        "reading_az": "Şoma kodam camedadi ra mixahid? Mən camedadiye narenci ra mixahəm.",
+                        "az": "Siz hansı qələmqabını istəyirsiniz? Mən narıncı qələmqabını istəyirəm.",
+                    },
+                    {
+                        "fa": "ایشان برای نوشتن از ماژیک قرمز استفاده می‌کند یا آبی؟ او از ماژیک آبی استفاده می‌کند.",
+                        "reading_az": "İşan bəraye neveştən əz majike qermez estefade mikonəd ya abi? U əz majike abi estefade mikonəd.",
+                        "az": "O, yazmaq üçün qırmızı markerdən istifadə edir, yoxsa mavi? O, mavi markerdən istifadə edir.",
+                    },
+                ],
             },
         ],
         "answer_items": [],

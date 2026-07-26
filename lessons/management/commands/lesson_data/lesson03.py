@@ -216,18 +216,6 @@ LESSON = {
             ],
         },
         {
-            "kind": "multiple_choice",
-            "instruction_az": "«دوستم سعید» mətninə görə düzgün cavabı seçin.",
-            "items": [
-                {"question_fa": "محمّد اهل کجاست؟", "options": ["استرالیا", "روسیه", "ایران"], "correct_index": 0},
-                {"question_fa": "محمّد الآن در کدام کشور زندگی می‌کند؟", "options": ["استرالیا", "لبنان", "ایران"], "correct_index": 2},
-                {"question_fa": "سعید اهل کجاست؟", "options": ["ایران", "روسیه", "استرالیا"], "correct_index": 1},
-                {"question_fa": "پدر سعید چه‌کاره است؟", "options": ["پرستار است", "استاد دانشگاه است", "پزشک است"], "correct_index": 1},
-                {"question_fa": "عموی سعید در کدام کشور درس می‌خواند؟", "options": ["لبنان", "روسیه", "ایران"], "correct_index": 0},
-                {"question_fa": "خاله‌ی سعید چه‌کاره است و کجا زندگی می‌کند؟", "options": ["پرستار است؛ در روسیه", "معلّم است؛ در ایران", "پزشک است؛ در استرالیا"], "correct_index": 0},
-            ],
-        },
-        {
             "kind": "practice_reveal",
             "instruction_az": "Nümunə kimi deyin: «پدربزرگم / نوه‌هایش → پدربزرگم نوه‌هایش را بسیار دوست دارد.»",
             "items": [
@@ -355,61 +343,113 @@ LESSON = {
         },
     ],
     "sentence_practice": {
-        "listen_items": [
+        "listen_exercises": [
             {
-                "fa": "پدربزرگ و مادربزرگم پیر هستند؛ آن‌ها در دِه زندگی می‌کنند.",
-                "reading_az": "Pedərbozorg va madərbozorgəm pir həstənd; anha dər deh zendegi mikonənd.",
-                "az": "Babam və nənəm qocadırlar; onlar kənddə yaşayırlar.",
+                "items": [
+                    {
+                        "fa": "پدربزرگ و مادربزرگم پیر هستند؛ آن‌ها در دِه زندگی می‌کنند.",
+                        "reading_az": "Pedərbozorg va madərbozorgəm pir həstənd; anha dər deh zendegi mikonənd.",
+                        "az": "Babam və nənəm qocadırlar; onlar kənddə yaşayırlar.",
+                    },
+                    {
+                        "fa": "ما هر روز، سه ساعت مطالعه می‌کنیم و یک ساعت تکلیف می‌نویسیم.",
+                        "reading_az": "Ma hər ruz, se saət motaleə mikonim va yek saət təklif minevisim.",
+                        "az": "Biz hər gün üç saat mütaliə edirik və bir saat tapşırıq yazırıq.",
+                    },
+                    {
+                        "fa": "مادرم هر روز خانه را جارو می‌کند؛ غذا می‌پزد و دو ساعت مطالعه می‌کند.",
+                        "reading_az": "Madərəm hər ruz xane ra caru mikonəd; qəza mipəzəd va do saət motaleə mikonəd.",
+                        "az": "Anam hər gün evi süpürür, yemək bişirir və iki saat mütaliə edir.",
+                    },
+                    {
+                        "fa": "این مرد اهل ایران است. او در شهر اصفهان زندگی می‌کند.",
+                        "reading_az": "İn mərd əhle Iran əst. U dər şəhre Esfəhan zendegi mikonəd.",
+                        "az": "Bu kişi İranlıdır. O, İsfahan şəhərində yaşayır.",
+                    },
+                    {
+                        "fa": "من هر روز به مادرم کمک می‌کنم؛ اتاق‌ها را تمیز می‌کنم و ظرف‌ها را می‌شویم.",
+                        "reading_az": "Mən hər ruz be madərəm komək mikonəm; otaqha ra təmiz mikonəm va zərfha ra mişuyəm.",
+                        "az": "Mən hər gün anama kömək edirəm; otaqları təmizləyirəm və qabları yuyuram.",
+                    },
+                    {
+                        "fa": "صادق، همسرِ دخترم زهرا است. دختر و دامادم در شهر بیروت زندگی می‌کنند.",
+                        "reading_az": "Sadeq, həmsəre doxtərəm Zəhra əst. Doxtər va damadəm dər şəhre Beyrut zendegi mikonənd.",
+                        "az": "Sadiq qızım Zəhranın həyat yoldaşıdır. Qızım və kürəkənim Beyrut şəhərində yaşayırlar.",
+                    },
+                    {
+                        "fa": "من مجرّد هستم. دوستم سجّاد، متأهل است. او دو فرزند دختر دارد و فرزند پسر ندارد.",
+                        "reading_az": "Mən mocərrəd hastəm. Dustəm Səccad, motəəhhel əst. U do fərzəde doxtər darəd va fərzəde pesər nədarəd.",
+                        "az": "Mən subayam. Dostum Səccad evlidir. Onun iki qız övladı var, oğlu yoxdur.",
+                    },
+                    {
+                        "fa": "فرزندم متأهل است. او یک پسر به نام مهدی و یک دختر به نام ریحانه دارد.",
+                        "reading_az": "Fərzendəm motəəhhel əst. U yek pesər be name Mehdi va yek doxtər be name Reyhane darəd.",
+                        "az": "Övladım evlidir. Onun Mehdi adında bir oğlu və Reyhanə adında bir qızı var.",
+                    },
+                    {
+                        "fa": "جواد و سمیّه نوه‌های حسین آقا هستند و حسین آقا پدربزرگ آن‌هاست.",
+                        "reading_az": "Cəvad va Sommeyye nəvehaye Hoseyn Ağa həstənd va Hoseyn Ağa pedərbozorge anhast.",
+                        "az": "Cavad və Sümeyyə Hüseyn ağanın nəvələridir, Hüseyn ağa isə onların babasıdır.",
+                    },
+                    {
+                        "fa": "من هر روز درس می‌خوانم و در تمیز کردن اتاق به دوستم کمک می‌کنم.",
+                        "reading_az": "Mən hər ruz dərs mixanəm va dər təmiz kərdəne otaq be dustəm komək mikonəm.",
+                        "az": "Mən hər gün dərs oxuyuram və otağı təmizləməkdə dostuma kömək edirəm.",
+                    },
+                    {
+                        "fa": "پدرم نه پیر است نه جوان؛ ایشان میان‌سال است و چهل و هفت سال دارد.",
+                        "reading_az": "Pedərəm nə pir əst nə cavan; işan miyansal əst va çehel va həft sal darəd.",
+                        "az": "Atam nə qocadır, nə cavan; o, orta yaşlıdır və qırx yeddi yaşındadır.",
+                    },
+                ],
             },
             {
-                "fa": "ما هر روز، سه ساعت مطالعه می‌کنیم و یک ساعت تکلیف می‌نویسیم.",
-                "reading_az": "Ma hər ruz, se saət motaleə mikonim va yek saət təklif minevisim.",
-                "az": "Biz hər gün üç saat mütaliə edirik və bir saat tapşırıq yazırıq.",
+                "items": [
+                    {
+                        "fa": "حسین، شوهرِ لیلا و لیلا، خانمِ حسین است. آن‌ها همسر هم هستند.",
+                        "reading_az": "Hoseyn, şohəre Leyla va Leyla, xanome Hoseyn əst. Anha həmsəre həm həstənd.",
+                        "az": "Hüseyn Leylanın əridir, Leyla isə Hüseynin xanımıdır (arvadıdır). Onlar bir-birinin həyat yoldaşlarıdır.",
+                    },
+                    {
+                        "fa": "احمد، پدرشوهرِ لیلا و سکینه، مادرشوهرِ لیلا است. لیلا عروسِ آن‌ها است.",
+                        "reading_az": "Əhməd, pedərşohəre Leyla va Səkine, madərşohəre Leyla əst. Leyla əruse anha əst.",
+                        "az": "Əhməd Leylanın qayınatası, Səkinə isə Leylanın qayınanasıdır. Leyla onların gəlinidir.",
+                    },
+                    {
+                        "fa": "صادق، پدرخانمِ حسین، و خدیجه، مادرخانمِ حسین است. حسین دامادِ خدیجه و صادق است.",
+                        "reading_az": "Sadeq, pedərxanome Hoseyn, va Xədice, madərxanome Hoseyn əst. Hoseyn damade Xədice va Sadeq əst.",
+                        "az": "Sadiq Hüseynin qayınatası (arvadının atası), Xədicə isə Hüseynin qayınanasıdır (arvadının anası). Hüseyn Xədicə və Sadiqin kürəkənidir.",
+                    },
+                    {
+                        "fa": "پدرشوهرِ لیلا یک خانه‌ی سه طبقه دارد. لیلا و حسین در خانه‌ی او زندگی می‌کنند.",
+                        "reading_az": "Pedərşohəre Leyla yek xane-ye se təbəqe darəd. Leyla va Hoseyn dər xane-ye u zendegi mikonənd.",
+                        "az": "Leylanın qayınatasının üç mərtəbəli bir evi var. Leyla və Hüseyn onun evində yaşayırlar.",
+                    },
+                ],
             },
             {
-                "fa": "مادرم هر روز خانه را جارو می‌کند؛ غذا می‌پزد و دو ساعت مطالعه می‌کند.",
-                "reading_az": "Madərəm hər ruz xane ra caru mikonəd; qəza mipəzəd va do saət motaleə mikonəd.",
-                "az": "Anam hər gün evi süpürür, yemək bişirir və iki saat mütaliə edir.",
-            },
-            {
-                "fa": "این مرد اهل ایران است. او در شهر اصفهان زندگی می‌کند.",
-                "reading_az": "İn mərd əhle Iran əst. U dər şəhre Esfəhan zendegi mikonəd.",
-                "az": "Bu kişi İranlıdır. O, İsfahan şəhərində yaşayır.",
-            },
-            {
-                "fa": "من هر روز به مادرم کمک می‌کنم؛ اتاق‌ها را تمیز می‌کنم و ظرف‌ها را می‌شویم.",
-                "reading_az": "Mən hər ruz be madərəm komək mikonəm; otaqha ra təmiz mikonəm va zərfha ra mişuyəm.",
-                "az": "Mən hər gün anama kömək edirəm; otaqları təmizləyirəm və qabları yuyuram.",
-            },
-            {
-                "fa": "صادق، همسرِ دخترم زهرا است. دختر و دامادم در شهر بیروت زندگی می‌کنند.",
-                "reading_az": "Sadeq, həmsəre doxtərəm Zəhra əst. Doxtər va damadəm dər şəhre Beyrut zendegi mikonənd.",
-                "az": "Sadiq qızım Zəhranın həyat yoldaşıdır. Qızım və kürəkənim Beyrut şəhərində yaşayırlar.",
-            },
-            {
-                "fa": "من مجرّد هستم. دوستم سجّاد، متأهل است. او دو فرزند دختر دارد و فرزند پسر ندارد.",
-                "reading_az": "Mən mocərrəd hastəm. Dustəm Səccad, motəəhhel əst. U do fərzəde doxtər darəd va fərzəde pesər nədarəd.",
-                "az": "Mən subayam. Dostum Səccad evlidir. Onun iki qız övladı var, oğlu yoxdur.",
-            },
-            {
-                "fa": "فرزندم متأهل است. او یک پسر به نام مهدی و یک دختر به نام ریحانه دارد.",
-                "reading_az": "Fərzendəm motəəhhel əst. U yek pesər be name Mehdi va yek doxtər be name Reyhane darəd.",
-                "az": "Övladım evlidir. Onun Mehdi adında bir oğlu və Reyhanə adında bir qızı var.",
-            },
-            {
-                "fa": "جواد و سمیّه نوه‌های حسین آقا هستند و حسین آقا پدربزرگ آن‌هاست.",
-                "reading_az": "Cəvad va Sommeyye nəvehaye Hoseyn Ağa həstənd va Hoseyn Ağa pedərbozorge anhast.",
-                "az": "Cavad və Sümeyyə Hüseyn ağanın nəvələridir, Hüseyn ağa isə onların babasıdır.",
-            },
-            {
-                "fa": "من هر روز درس می‌خوانم و در تمیز کردن اتاق به دوستم کمک می‌کنم.",
-                "reading_az": "Mən hər ruz dərs mixanəm va dər təmiz kərdəne otaq be dustəm komək mikonəm.",
-                "az": "Mən hər gün dərs oxuyuram və otağı təmizləməkdə dostuma kömək edirəm.",
-            },
-            {
-                "fa": "پدرم نه پیر است نه جوان؛ ایشان میان‌سال است و چهل و هفت سال دارد.",
-                "reading_az": "Pedərəm nə pir əst nə cavan; işan miyansal əst va çehel va həft sal darəd.",
-                "az": "Atam nə qocadır, nə cavan; o, orta yaşlıdır və qırx yeddi yaşındadır.",
+                "items": [
+                    {
+                        "fa": "اسم من مهدی است و اسم خواهرم ریحانه است. حسین آقا و لیلا خانم پدر و مادرم هستند.",
+                        "reading_az": "Esme mən Mehdi əst va esme xahərəm Reyhane əst. Hoseyn ağa va Leyla xanom pedər va madərəm həstənd.",
+                        "az": "Mənim adım Mehdidir, bacımın adı isə Reyhanədir. Hüseyn ağa və Leyla xanım mənim ata-anamdır.",
+                    },
+                    {
+                        "fa": "پدرم یک برادر به نام محمّد و یک خواهر به نام زهرا خانم دارد. محمّد آقا، عموی من و زهرا خانم، عمّه‌ی من است. من و خواهرم ریحانه، برادرزاده‌های آن‌ها هستیم.",
+                        "reading_az": "Pedərəm yek bəradər be name Mohəmməd va yek xahər be name Zəhra xanom darəd. Mohəmməd ağa əmuye mən va Zəhra xanom, əmmeye mən əst. Mən va xahərəm Reyhane, bəradərzadehaye anha hastim.",
+                        "az": "Atamın Məhəmməd adında bir qardaşı və Zəhra xanım adında bir bacısı var. Məhəmməd ağa mənim əmim, Zəhra xanım isə bibimdir. Mən və bacım Reyhanə onların qardaş uşaqlarıyıq.",
+                    },
+                    {
+                        "fa": "مادرم هم یک برادر و یک خواهر دارد. اسم آن‌ها یوسف و فاطمه است. آقا یوسف، دایی من و فاطمه خانم، خاله‌ی من است. من و ریحانه، خواهرزاده‌های آن‌ها هستیم.",
+                        "reading_az": "Madərəm həm yek bəradər va yek xahər darəd. Esme anha Yusof va Fateme əst. Ağa Yusof, dayiye mən va Fateme xanom, xaleye mən əst. Mən va Reyhane, xahərzadehaye anha hastim.",
+                        "az": "Anamın da bir qardaşı və bir bacısı var. Onların adı Yusif və Fatimədir. Yusif ağa mənim dayım, Fatimə xanım isə xalamdır. Mən və Reyhanə onların bacı uşaqlarıyıq.",
+                    },
+                    {
+                        "fa": "احمد آقا و آقا صادق، پدربزرگ‌های من هستند و سکینه خانم و خدیجه خانم، مادربزرگ‌های من هستند. من و خواهرم ریحانه، نوه‌های آن‌ها هستیم.",
+                        "reading_az": "Əhməd ağa va ağa Sadeq, pedərbozorghaye mən həstənd va Səkine xanom va Xədice xanom, madərbozorghaye mən həstənd. Mən va xahərəm Reyhane, nəvehaye anha hastim.",
+                        "az": "Əhməd ağa və Sadiq ağa mənim babalarımdır, Səkinə xanım və Xədicə xanım isə nənələrimdir. Mən və bacım Reyhanə onların nəvələriyik.",
+                    },
+                ],
             },
         ],
         "answer_items": [
