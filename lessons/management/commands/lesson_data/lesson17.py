@@ -54,6 +54,11 @@ LESSON = {
         {
             "title_az": "Deyək — deməyək: sifət isimlə uzlaşmır",
             "title_fa": "بگوییم – نگوییم",
+            "explanation_az": (
+                "Fars dilində sifət isimdən SONRA gəlir: خانه‌ی بزرگ — «böyük ev».\n"
+                "İsimlə sifət arasında kəsrə (izafə) olur.\n"
+                "Bu, Azərbaycan dilinin əksinədir — sözlərin yerini dəyişmək olmaz: یک بزرگ خانه ✗"
+            ),
             "conjugations": [
                 {"pronoun_fa": "آن مرد یک خانه‌ی بزرگ دارد. ✓", "form_fa": "آن مرد یک بزرگ خانه دارد. ✗"},
                 {"pronoun_fa": "ما امروز غذای خوش‌مزه خوردیم. ✓", "form_fa": "ما امروز خوش‌مزه غذا خوردیم. ✗"},
@@ -122,6 +127,11 @@ LESSON = {
         {
             "title_az": "Deyək — deməyək: cəm halında sifət «ها»sız gəlir",
             "title_fa": "بگوییم – نگوییم (صفتِ جمع)",
+            "explanation_az": (
+                "Cəm şəkilçisi yalnız isimə qoşulur, sifətə yox.\n"
+                "لباس‌های تمیز ✓ — لباس‌های تمیزها ✗\n"
+                "Sifət həmişə tək formada qalır, isim isə cəmlənir."
+            ),
             "conjugations": [
                 {"pronoun_fa": "من لباس تمیز می‌پوشم. ✓ / لباس‌های تمیز می‌پوشم. ✓", "form_fa": "لباس‌های تمیزها می‌پوشم. ✗"},
             ],
@@ -193,6 +203,11 @@ LESSON = {
         {
             "title_az": "Müqayisə (تفضیلی) və üstünlük (عالی) dərəcə şəkilçiləri: تر / ترین",
             "title_fa": "صفتِ برتر (تفضیلی) و برترین (عالی)",
+            "explanation_az": (
+                "İki şeyi müqayisə edəndə sifətə «تر» qoşulur və «از» işlənir: چاق‌تر از آن پسر.\n"
+                "Üç və daha çoxun ən üstünü «ترین» ilə deyilir və isimdən ƏVVƏL gəlir: چاق‌ترین پسر.\n"
+                "Diqqət: «ترین» ilə «از» işlənmir."
+            ),
             "conjugations": [
                 {"pronoun_fa": "صفت ساده", "form_fa": "این پسر، چاق است."},
                 {"pronoun_fa": "صفت برتر (تفضیلی) + از", "form_fa": "این پسر، چاق‌تر از آن پسر است."},
@@ -314,6 +329,11 @@ LESSON = {
         {
             "title_az": "«چرا» ؛ «چون» و «برای این‌که» (niyə? çünki, ona görə ki)",
             "title_fa": "«چرا» ؛ «چون» و «برای این‌که»",
+            "explanation_az": (
+                "«چرا» səbəbi soruşur — «niyə?».\n"
+                "Cavab «چون» və ya «برای این‌که» ilə başlayır; hər ikisi «çünki, ona görə ki» deməkdir.\n"
+                "Səbəb cümləsi cavabın əvvəlində gəlir: چون سیر هستم."
+            ),
             "conjugations": [
                 {"pronoun_fa": "چرا امروز خیلی خوش‌حال هستی؟", "form_fa": "چون روز تولّد من است."},
                 {"pronoun_fa": "چرا روسری و مانتوی آبی می‌پوشی؟", "form_fa": "برای این‌که رنگ آبی را زیاد دوست دارم."},

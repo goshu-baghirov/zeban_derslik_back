@@ -12,7 +12,10 @@ from .views import (
     GrammarNoteViewSet,
     InfinitiveViewSet,
     LessonViewSet,
+    ListenReadExerciseNoteViewSet,
     ListenReadSentenceViewSet,
+    MultiBlankExerciseViewSet,
+    MultiBlankItemViewSet,
     PictureSentenceExerciseViewSet,
     PictureSentenceItemViewSet,
     PictureSentenceLineViewSet,
@@ -33,6 +36,7 @@ router.register("grammar-notes", GrammarNoteViewSet, basename="grammar-note")
 router.register("conjugation-rows", ConjugationRowViewSet, basename="conjugation-row")
 router.register("example-sentences", ExampleSentenceViewSet, basename="example-sentence")
 router.register("listen-sentences", ListenReadSentenceViewSet, basename="listen-sentence")
+router.register("listen-exercise-notes", ListenReadExerciseNoteViewSet, basename="listen-exercise-note")
 router.register("answer-sentences", AnswerQuestionSentenceViewSet, basename="answer-sentence")
 router.register("infinitives", InfinitiveViewSet, basename="infinitive")
 router.register("reading-texts", ReadingTextViewSet, basename="reading-text")
@@ -43,6 +47,8 @@ router.register(
 router.register("sentence-practice-notes", SentencePracticeNoteViewSet, basename="sentence-practice-note")
 router.register("fill-blank-exercises", FillBlankExerciseViewSet, basename="fill-blank-exercise")
 router.register("fill-blank-items", FillBlankItemViewSet, basename="fill-blank-item")
+router.register("multi-blank-exercises", MultiBlankExerciseViewSet, basename="multi-blank-exercise")
+router.register("multi-blank-items", MultiBlankItemViewSet, basename="multi-blank-item")
 router.register("practice-reveal-exercises", PracticeRevealExerciseViewSet, basename="practice-reveal-exercise")
 router.register("practice-reveal-items", PracticeRevealItemViewSet, basename="practice-reveal-item")
 router.register("picture-sentence-exercises", PictureSentenceExerciseViewSet, basename="picture-sentence-exercise")

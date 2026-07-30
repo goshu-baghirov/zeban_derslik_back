@@ -16,6 +16,8 @@ from .models import (
     Lesson,
     ListenReadExercise,
     ListenReadSentence,
+    MultiBlankExercise,
+    MultiBlankItem,
     PictureSentenceExercise,
     PictureSentenceItem,
     PictureSentenceLine,
@@ -67,13 +69,14 @@ class ExampleSentenceSerializer(serializers.ModelSerializer):
 
 
 class GrammarNoteWriteSerializer(serializers.ModelSerializer):
-    """'Qeyd' kartının (note_fa/reading_az/az) mobil tətbiqdən redaktəsi üçün.
-    Başlıq (title_fa/az) qəsdən yazıla bilən deyil — seed_lessons.py bu sahəni
-    mövzunun sabit açarı kimi istifadə edir (bax seed_lessons.py-dəki şərh)."""
+    """'Qeyd' kartının (note_fa/reading_az/az) və izah qutusunun (explanation_az)
+    mobil tətbiqdən redaktəsi üçün. Başlıq (title_fa/az) qəsdən yazıla bilən
+    deyil — seed_lessons.py bu sahəni mövzunun sabit açarı kimi istifadə edir
+    (bax seed_lessons.py-dəki şərh)."""
 
     class Meta:
         model = GrammarNote
-        fields = ("id", "note_fa", "note_reading_az", "note_az")
+        fields = ("id", "note_fa", "note_reading_az", "note_az", "explanation_az")
         read_only_fields = ("id",)
 
 
@@ -124,6 +127,7 @@ class GrammarNoteSerializer(serializers.ModelSerializer):
             "id",
             "title_az",
             "title_fa",
+            "explanation_az",
             "conjugations",
             "examples",
             "drills",
@@ -157,6 +161,35 @@ class FillBlankExerciseSerializer(serializers.ModelSerializer):
 
     def get_type(self, obj):
         return "fill_blank"
+
+
+class MultiBlankItemSerializer(serializers.ModelSerializer):
+    exercise = serializers.PrimaryKeyRelatedField(
+        queryset=MultiBlankExercise.objects.all(), write_only=True, required=True
+    )
+
+    class Meta:
+        model = MultiBlankItem
+        fields = (
+            "id", "exercise", "fa_with_blanks", "correct_answers",
+            "full_reading_az", "full_translation_az",
+        )
+        read_only_fields = ("id",)
+
+
+class MultiBlankExerciseSerializer(serializers.ModelSerializer):
+    items = MultiBlankItemSerializer(many=True, read_only=True)
+    type = serializers.SerializerMethodField()
+
+    class Meta:
+        model = MultiBlankExercise
+        fields = (
+            "id", "type", "title_fa", "instruction_az", "word_bank",
+            "example_fa", "example_reading_az", "example_az", "items",
+        )
+
+    def get_type(self, obj):
+        return "multi_blank"
 
 
 class PictureSentenceLineSerializer(serializers.ModelSerializer):
@@ -265,7 +298,16 @@ class ListenReadExerciseSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = ListenReadExercise
-        fields = ("id", "order", "items")
+        fields = ("id", "order", "items", "note_fa", "note_reading_az", "note_az")
+
+
+class ListenReadExerciseNoteWriteSerializer(serializers.ModelSerializer):
+    """Çalışmanın sonundakı 'Qeyd' kartının (note_*) mobil tətbiqdən redaktəsi üçün."""
+
+    class Meta:
+        model = ListenReadExercise
+        fields = ("id", "note_fa", "note_reading_az", "note_az")
+        read_only_fields = ("id",)
 
 
 class AnswerQuestionSentenceSerializer(serializers.ModelSerializer):
@@ -453,6 +495,8 @@ class LessonSerializer(serializers.ModelSerializer):
             exercises.append((exercise.order, PictureSentenceExerciseSerializer(exercise, context=self.context).data))
         for exercise in obj.answer_question_exercises.all():
             exercises.append((exercise.order, AnswerQuestionExerciseSerializer(exercise, context=self.context).data))
+        for exercise in obj.multi_blank_exercises.all():
+            exercises.append((exercise.order, MultiBlankExerciseSerializer(exercise, context=self.context).data))
         exercises.sort(key=lambda pair: pair[0])
         return [data for _, data in exercises]
 

@@ -50,6 +50,11 @@ LESSON = {
         {
             "title_az": "Sual sözü «چه رنگ» (nə rəngdədir?)",
             "title_fa": "واژه‌ی پرسشی «چه رنگ»",
+            "explanation_az": (
+                "«چه رنگ است؟» rəngi soruşur — «nə rəngdədir?».\n"
+                "Cavabda rəngin adı «است» ilə verilir: این رایانه مشکی است.\n"
+                "«چه رنگی» forması da işlənir, xüsusən «دوست داری» kimi fellərlə."
+            ),
             "conjugations": [],
             "examples": [
                 {"fa": "این رایانه چه رنگ است؟ این رایانه، مشکی است.", "reading_az": "İn rayane çe rəng əst? İn rayane, meşki əst.", "az": "Bu kompüter nə rəngdədir? Bu kompüter qaradır."},
@@ -78,6 +83,11 @@ LESSON = {
         {
             "title_az": "İzafət əlaməti (1): پیراهنِ من (kəsrə ilə bağlama)",
             "title_fa": "نشانه‌ی اضافه (۱)",
+            "explanation_az": (
+                "İki sözü bağlamaq üçün birinci sözün sonuna kəsrə ( ـِ ) qoyulur: پیراهنِ من.\n"
+                "Kəsrə yazılmır, ancaq oxunur: pirahən-e mən.\n"
+                "Bu bağlama həm sahiblik (mənim köynəyim), həm də əlamət (mavi köynək) bildirir."
+            ),
             "conjugations": [
                 {"pronoun_fa": "پیراهن + ـِ + من", "form_fa": "پیراهنِ من"},
                 {"pronoun_fa": "پیراهن + ـِ + آبی", "form_fa": "پیراهنِ آبی"},
@@ -94,6 +104,11 @@ LESSON = {
         {
             "title_az": "İzafət əlaməti (2): «ه» ilə bitən sözlərdə «ی» (خانه‌ی پدرم)",
             "title_fa": "نشانه‌ی اضافه (۲)",
+            "explanation_az": (
+                "Söz oxunmayan «ه» ilə bitirsə, kəsrə yerinə «ی» yazılır: خانه‌ی پدرم، راننده‌ی تاکسی.\n"
+                "«ه» oxunursa, adi kəsrə qalır: کلاهِ صورتی، تهِ چاه.\n"
+                "«ی»-dən əvvəl yarımboşluq (nim-fasilə) qoyulur."
+            ),
             "conjugations": [
                 {"pronoun_fa": "خانه + ی + پدرم", "form_fa": "خانه‌ی پدرم"},
                 {"pronoun_fa": "راننده + ی + تاکسی", "form_fa": "راننده‌ی تاکسی"},
@@ -112,6 +127,11 @@ LESSON = {
         {
             "title_az": "İzafət əlaməti (3): «ی/ا/و» ilə bitən sözlərdə «ی» (موی بلند)",
             "title_fa": "نشانه‌ی اضافه (۳)",
+            "explanation_az": (
+                "Söz «ا» və ya «و» ilə bitirsə, izafə «ی» ilə yazılır: موی بلند، عصای پدربزرگ.\n"
+                "Söz onsuz da «ی» ilə bitirsə, əlavə hərf yazılmır — sadəcə kəsrə oxunur: صندلیِ کوچک.\n"
+                "Yəni izafənin özü dəyişmir, ancaq yazılış qaydası sözün son hərfindən asılıdır."
+            ),
             "conjugations": [
                 {"pronoun_fa": "مو + ی + بلند", "form_fa": "موی بلند"},
                 {"pronoun_fa": "عصا + ی + پدربزرگ", "form_fa": "عصای پدربزرگ"},

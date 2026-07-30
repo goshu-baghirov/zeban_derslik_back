@@ -50,6 +50,11 @@ LESSON = {
         {
             "title_az": "Saatların öyrədilməsi",
             "title_fa": "آموزش ساعت",
+            "explanation_az": (
+                "Saat «ساعت ... است» quruluşu ilə deyilir: ساعت شش است.\n"
+                "Günün hissəsi əlavə olunur: صبح (səhər), ظهر (günorta), بعدازظهر/عصر, شب (gecə), نیمه‌شب (gecəyarı).\n"
+                "24 saatlıq sistemlə də demək olar: یک بعدازظهر = سیزده."
+            ),
             "conjugations": [
                 {"pronoun_fa": "ساعت شش است.", "form_fa": "Saat altıdır."},
                 {"pronoun_fa": "ساعت، هشت صبح است.", "form_fa": "Saat səhər səkkizdir."},
@@ -69,6 +74,11 @@ LESSON = {
         {
             "title_az": "Dəqiqələrin bildirilməsi: «ربع» və «نیم»",
             "title_fa": "ساعت با «دقیقه»؛ «ربع» و «نیم»",
+            "explanation_az": (
+                "Dəqiqələr «و ... دقیقه» ilə verilir: ساعت دوازده و پنج دقیقه است.\n"
+                "15 dəqiqə üçün «ربع», 30 dəqiqə üçün «نیم» deyilir: دوازده و ربع، دوازده و نیم.\n"
+                "«ربع» və «نیم» sözləri «دقیقه» sözü ilə birlikdə işlənmir."
+            ),
             "conjugations": [
                 {"pronoun_fa": "ساعت، دوازده و پنج دقیقه است.", "form_fa": "Saat on iki və beş dəqiqədir."},
                 {"pronoun_fa": "ساعت، دوازده و پانزده دقیقه است.", "form_fa": "= ساعت، دوازده و ربع است."},
@@ -93,6 +103,11 @@ LESSON = {
         {
             "title_az": "Sual sözü «ساعت، چند است؟» (saat neçədir?)",
             "title_fa": "واژه‌ی پرسشی «ساعت، چند است؟»",
+            "explanation_az": (
+                "Saatı soruşmaq üçün «ساعت، چند است؟» işlənir — «Saat neçədir?».\n"
+                "Cavab: ساعت + rəqəm (+ dəqiqə və ya günün hissəsi) + است.\n"
+                "Cavabda da «ساعت» sözü təkrarlanır: ساعت، یازده است."
+            ),
             "conjugations": [
                 {"pronoun_fa": "ساعت، چند است؟", "form_fa": "ساعت، هفت و بیست دقیقه است."},
             ],
@@ -107,6 +122,11 @@ LESSON = {
         {
             "title_az": "Sual sözü «چه وقت» (nə vaxt?)",
             "title_fa": "واژه‌ی پرسشی «چه وقت»",
+            "explanation_az": (
+                "«چه وقت» vaxtı soruşur — «nə vaxt?».\n"
+                "Cavab dəqiq saat da ola bilər, ümumi vaxt da: آخر تابستان، بعد از نماز ظهر.\n"
+                "Sual hansı zamandadırsa, cavab da həmin zamanda verilir."
+            ),
             "conjugations": [
                 {"pronoun_fa": "چه وقت به کلاس آمدی؟", "form_fa": "من ساعت هشت به کلاس آمدم."},
                 {"pronoun_fa": "چه وقت به مسافرت می‌روی؟", "form_fa": "من آخر تابستان به مسافرت می‌روم."},

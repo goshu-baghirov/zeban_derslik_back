@@ -97,6 +97,20 @@ class GrammarNote(models.Model):
     title_az = models.CharField("Başlıq (az)", max_length=255)
     title_fa = models.CharField("Başlıq (fars)", max_length=255)
     order = models.PositiveIntegerField("Sıra", default=0)
+    explanation_az = models.TextField(
+        "Qaydanın izahı (az)", blank=True, default="",
+        help_text=(
+            "«Qaydalar / Birləşmələr» cədvəlinin altında göstərilən izah qutusu — "
+            "qaydanın qısa və aydın Azərbaycan dilində şərhi. Sətirlər \\n ilə ayrılır."
+        ),
+    )
+    explanation_edited_via_app = models.BooleanField(
+        "İzah tətbiqdən redaktə olunub", default=False,
+        help_text=(
+            "İzah qutusu mobil tətbiqdən dəyişdirilib — seed_lessons yenidən işlədikdə "
+            "üstələnmir. 'Qeyd' kartının öz bayrağından (edited_via_app) ayrıdır."
+        ),
+    )
     note_fa = models.TextField(
         "Qeyd (fars, ardıcıl mətn)", blank=True, default="",
         help_text="Nümunə cümlələrdən sonra göstərilən ayrıca 'Qeyd' kartı — bütün mətn tək blok kimi.",
@@ -175,6 +189,58 @@ class FillBlankItem(models.Model):
 
     class Meta:
         ordering = ["order", "id"]
+
+
+class MultiBlankExercise(models.Model):
+    """«مانند مثال کامل کنید» tipli məşğələ: FillBlankExercise-dən fərqi —
+    hər cümlədə BİR NEÇƏ boşluq ola bilər (məs. «مریم معلّم ___؛ مدیر ___ .»).
+    FillBlankItem-in tək `correct_answer` sahəsi bunu ifadə edə bilmədiyi üçün
+    ayrıca tip kimi quruldu; söz bankı və sürüklə-burax qarşılıqlı təsiri eynidir.
+    example_* sahələri çalışmanın başındakı könüllü «نمونه» qutusu üçündür."""
+
+    lesson = models.ForeignKey(Lesson, related_name="multi_blank_exercises", on_delete=models.CASCADE)
+    title_fa = models.CharField("Başlıq (fars)", max_length=255, blank=True, default="")
+    instruction_az = models.TextField("Tapşırıq (az)")
+    word_bank = models.JSONField("Söz bankı", default=list, blank=True)
+    example_fa = models.CharField(
+        "Nümunə cümlə (fars)", max_length=500, blank=True, default="",
+        help_text="Vurğulanacaq sözlər `*ulduz*` (yaşıl) / `**iki ulduz**` (qırmızı) içinə alına bilər.",
+    )
+    example_reading_az = models.CharField("Nümunənin oxunuşu (az)", max_length=500, blank=True, default="")
+    example_az = models.CharField("Nümunənin tərcüməsi (az)", max_length=500, blank=True, default="")
+    order = models.PositiveIntegerField("Sıra", default=0)
+    edited_via_app = models.BooleanField("Tətbiqdən redaktə olunub", default=False)
+
+    class Meta:
+        ordering = ["order", "id"]
+        verbose_name = "Çoxboşluqlu doldurma məşğələsi"
+        verbose_name_plural = "Çoxboşluqlu doldurma məşğələləri"
+
+    def __str__(self):
+        return self.title_fa or self.instruction_az[:60]
+
+
+class MultiBlankItem(models.Model):
+    exercise = models.ForeignKey(MultiBlankExercise, related_name="items", on_delete=models.CASCADE)
+    fa_with_blanks = models.CharField(
+        "Cümlə (boşluqlu)", max_length=500,
+        help_text="Hər boşluq üçün `___` yazın, məs. «مریم معلّم ___؛ مدیر ___ .»",
+    )
+    correct_answers = models.JSONField(
+        "Düzgün cavablar", default=list,
+        help_text="Boşluqların sırası ilə eyni ardıcıllıqda siyahı, məs. [\"است\", \"نیست\"].",
+    )
+    full_reading_az = models.CharField("Cümlənin oxunuşu (az)", max_length=500, blank=True, default="")
+    full_translation_az = models.CharField("Cümlənin tərcüməsi (az)", max_length=500, blank=True, default="")
+    order = models.PositiveIntegerField("Sıra", default=0)
+    edited_via_app = models.BooleanField("Tətbiqdən redaktə olunub", default=False)
+
+    class Meta:
+        ordering = ["order", "id"]
+
+    @property
+    def blank_count(self):
+        return self.fa_with_blanks.count("___")
 
 
 class PictureSentenceExercise(models.Model):
@@ -413,6 +479,16 @@ class ListenReadExercise(models.Model):
 
     practice = models.ForeignKey(SentencePractice, related_name="listen_exercises", on_delete=models.CASCADE)
     order = models.PositiveIntegerField("Sıra", default=0)
+    note_fa = models.TextField(
+        "Qeyd (fars)", blank=True, default="",
+        help_text="Çalışmanın sonunda göstərilən nömrələnmiş izah (məs. sözlərin sinonimləri).",
+    )
+    note_reading_az = models.TextField("Qeydin oxunuşu (az hərfləri ilə)", blank=True, default="")
+    note_az = models.TextField("Qeydin tərcüməsi (az)", blank=True, default="")
+    note_edited_via_app = models.BooleanField(
+        "Qeyd tətbiqdən redaktə olunub", default=False,
+        help_text="note_* sahələri tətbiqdən dəyişdirilib — seed_lessons yenidən işlədikdə üstələnmir.",
+    )
 
     class Meta:
         ordering = ["order", "id"]

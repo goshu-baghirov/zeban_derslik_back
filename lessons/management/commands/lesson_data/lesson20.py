@@ -46,6 +46,11 @@ LESSON = {
         {
             "title_az": "«… خوردن» quruluşu — «yemək» felinin geniş mənaları",
             "title_fa": "«....... خوردن»",
+            "explanation_az": (
+                "«خوردن» əsl mənada «yemək, içmək» olsa da, isimlə birləşəndə tamam başqa məna verir.\n"
+                "شکست خوردن (məğlub olmaq), سرما خوردن (soyuqlamaq), زمین خوردن (yıxılmaq), قسم خوردن (and içmək).\n"
+                "Belə mürəkkəb felləri bütöv birləşmə kimi öyrənmək lazımdır."
+            ),
             "conjugations": [
                 {"pronoun_fa": "شکست خوردن", "form_fa": "məğlub olmaq"},
                 {"pronoun_fa": "سرما خوردن", "form_fa": "soyuqlamaq"},
@@ -96,6 +101,12 @@ LESSON = {
         {
             "title_az": "Fellər və onlarla işlənən ön qoşmalar (حروف اضافه)",
             "title_fa": "فعل‌ها و حروف اضافه",
+            "explanation_az": (
+                "Bəzi fellər həmişə müəyyən bir ön qoşma (حرف اضافه) ilə işlənir.\n"
+                "«از» ilə: استفاده کردن، تشکّر کردن، ترسیدن، پرسیدن، خواستن، پیاده شدن.\n"
+                "«به» ilə: کمک کردن، دادن، گفتن، تلفن زدن — «با» ilə: صحبت کردن، بازی کردن، ازدواج کردن — «در» ilə: زندگی کردن، ماندن.\n"
+                "Ön qoşmanı feldən ayrı deyil, felin bir hissəsi kimi yadda saxlayın."
+            ),
             "conjugations": [
                 {"pronoun_fa": "از … استفاده کردن", "form_fa": "استاد از ماژیک استفاده می‌کند."},
                 {"pronoun_fa": "از … پذیرایی کردن", "form_fa": "ما از مهمان‌ها پذیرایی کردیم."},

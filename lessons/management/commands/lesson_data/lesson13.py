@@ -50,6 +50,11 @@ LESSON = {
         {
             "title_az": "Fəsillər",
             "title_fa": "فصل‌ها",
+            "explanation_az": (
+                "İlin dörd fəsli var: بهار (yaz), تابستان (yay), پاییز (payız), زمستان (qış).\n"
+                "Şəmsi ildə il yazla başlayır, qışla bitir.\n"
+                "Hər fəsil üç aydan ibarətdir."
+            ),
             "conjugations": [
                 {"pronoun_fa": "بهار", "form_fa": "Yaz"},
                 {"pronoun_fa": "تابستان", "form_fa": "Yay"},
@@ -68,6 +73,11 @@ LESSON = {
         {
             "title_az": "İran təqviminin ayları",
             "title_fa": "ماه‌ها",
+            "explanation_az": (
+                "Şəmsi təqvimdə 12 ay var: ilk ay فروردین, son ay اسفند.\n"
+                "Yaz: فروردین، اردیبهشت، خرداد — Yay: تیر، مرداد، شهریور.\n"
+                "Payız: مهر، آبان، آذر — Qış: دی، بهمن، اسفند."
+            ),
             "conjugations": [
                 {"pronoun_fa": "بهار", "form_fa": "فروردین؛ اردیبهشت؛ خرداد"},
                 {"pronoun_fa": "تابستان", "form_fa": "تیر؛ مرداد؛ شهریور"},
@@ -88,6 +98,11 @@ LESSON = {
         {
             "title_az": "Sıra sayları",
             "title_fa": "عددهای ترتیبی",
+            "explanation_az": (
+                "Sıra sayı adi ədədin sonuna «ـُم» artırmaqla düzəlir: دو → دوم، یازده → یازدهم.\n"
+                "«یک» üçün iki forma var: sadə halda «اوّل» (کلاس اوّل), mürəkkəb ədədlərdə «یکم» (بیست و یکم).\n"
+                "«ی» ilə bitən ədədlərə «ام» qoşulur: سی → سی‌ام."
+            ),
             "conjugations": [
                 {"pronoun_fa": "یک → یکم (اوّل)", "form_fa": "ده → دهم"},
                 {"pronoun_fa": "دو → دوم", "form_fa": "یازده → یازدهم"},
@@ -109,6 +124,11 @@ LESSON = {
         {
             "title_az": "Sual sözü «چندم» (neçənci?)",
             "title_fa": "واژه‌ی پرسشی «چندم»",
+            "explanation_az": (
+                "«چندم» sıra nömrəsini soruşur — «neçənci?».\n"
+                "«چند» miqdarı (neçə), «چندم» isə sıranı (neçənci) soruşur — qarışdırmayın.\n"
+                "Cavabda sıra sayı işlənir: مهر، ماه هفتم سال است."
+            ),
             "conjugations": [
                 {"pronoun_fa": "یک هفته چند روز است؟", "form_fa": "یک هفته هفت روز است."},
                 {"pronoun_fa": "دوشنبه روز چندم هفته است؟", "form_fa": "دوشنبه روز سوم هفته است."},

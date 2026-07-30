@@ -54,14 +54,54 @@ LESSON = {
         {
             "title_az": "Ayrı və bitişik əvəzliklər (کتابِ من → کتابم)",
             "title_fa": "ضمیرهای گسسته و پیوسته",
+            "explanation_az": (
+                "Mənsubiyyət iki cür bildirilir: ayrı (کتابِ من) və bitişik (کتابم) — mənaları eynidir.\n"
+                "Bitişik əvəzliklər isimin sonuna qoşulur: ـَم، ـَت، ـَش، ـِمان، ـِتان، ـِشان.\n"
+                "Danışıqda qısa (bitişik) forma daha çox işlənir."
+            ),
             "conjugations": [
                 {"pronoun_fa": "کتاب من", "form_fa": "کتاب + ـَم → کتابم"},
                 {"pronoun_fa": "کتاب تو", "form_fa": "کتاب + ـَت → کتابت"},
                 {"pronoun_fa": "کتاب او", "form_fa": "کتاب + ـَش → کتابش"},
-                {"pronoun_fa": "کتاب ما", "form_fa": "کتاب + ـمان → کتابمان"},
-                {"pronoun_fa": "کتاب شما", "form_fa": "کتاب + ـتان → کتابتان"},
-                {"pronoun_fa": "کتاب آن‌ها", "form_fa": "کتاب + ـشان → کتابشان"},
+                {"pronoun_fa": "کتاب ما", "form_fa": "کتاب + ـِمان → کتابمان"},
+                {"pronoun_fa": "کتاب شما", "form_fa": "کتاب + ـِتان → کتابتان"},
+                {"pronoun_fa": "کتاب آن‌ها", "form_fa": "کتاب + ـِشان → کتابشان"},
             ],
+            "note_fa": (
+                "۱. «ضمیرِ گسسته» (جدا)، اسم را با «ِ» اضافه به ضمیر وصل می‌کند: کتابِ من، کتابِ تو، کتابِ او...\n"
+                "۲. «ضمیرِ پیوسته» (چسبیده) مستقیماً به آخرِ اسم می‌چسبد و «ِ» اضافه حذف می‌شود: کتاب + َم ← کتابم. "
+                "هر دو یک معنا دارند، ولی ضمیرِ پیوسته در فارسیِ روزمره بیشتر به‌کار می‌رود.\n"
+                "۳. همان‌طور که در ضمیرهای گسسته برای احترام «تو» و «او» را به «شما» و «ایشان» تبدیل می‌کنیم، "
+                "در ضمیرهای پیوسته هم برای احترام «ت» و «ش» را به «تان» و «شان» تبدیل می‌کنیم: "
+                "فرزندت (تو) → فرزندتان (شما)، فرزندش (او) → فرزندشان (ایشان).\n"
+                "۴. توجّه: «شان» هم برای احترام (ایشان) و هم برای جمع (آن‌ها) به‌کار می‌رود: "
+                "فرزندشان = هم «فرزندِ ایشان» و هم «فرزندِ آن‌ها»."
+            ),
+            "note_reading_az": (
+                "1. «Zamire gosaste» (cəda), esmi «e» ezafe ilə zamirə vəsl mikonəd: ketabe mən, ketabe to, ketabe u...\n"
+                "2. «Zamire peyvəste» (çəsbide) mostəqiman be axəre esm miçəsbəd va «e» ezafe hazf mişəvəd: "
+                "ketab + əm ← ketabəm. Hər do yek mə'na darənd, vəli zamire peyvəste dər farsiye ruzəmərre "
+                "biştər be-kar mirəvəd.\n"
+                "3. Həman-tor ke dər zamirhaye gosaste bəraye ehteram «to» va «u» ra be «şoma» va «işan» "
+                "təbdil mikonim, dər zamirhaye peyvəste həm bəraye ehteram «t» va «ş» ra be «tan» va «şan» "
+                "təbdil mikonim: fərzəndət (to) → fərzəndetan (şoma), fərzəndəş (u) → fərzəndeşan (işan).\n"
+                "4. Toəccoh: «şan» həm bəraye ehteram (işan) va həm bəraye cəm (anha) be-kar mirəvəd: "
+                "fərzəndeşan = həm «fərzəndé işan» va həm «fərzəndé anha»."
+            ),
+            "note_az": (
+                "1. «Ayrı (gəsəstə) əvəzlik» isimlə əvəzlik arasında izafə «e» səsi ilə bağlanır: "
+                "کتابِ من (mənim kitabım), کتابِ تو (sənin kitabın)...\n"
+                "2. «Bitişik (peyvəstə) əvəzlik» isə isim + şəkilçi kimi birbaşa sözün sonuna qoşulur, "
+                "izafə «e» səsi düşür: کتاب + َم → کتابم (kitabım). Hər ikisi eyni mənanı verir, lakin "
+                "gündəlik danışıqda bitişik forma daha çox işlənir.\n"
+                "3. Necə ki ayrı əvəzliklərdə hörmət üçün «تو» (sən) və «او» (o) yerinə «شما» (siz) və "
+                "«ایشان» (hörmətli o) işlədirik, bitişik əvəzliklərdə də hörmət üçün «ت» və «ش» şəkilçilərini "
+                "«تان» və «شان»-a çeviririk: فرزندت (sənin övladın) → فرزندتان (hörmətlə: sizin övladınız), "
+                "فرزندش (onun övladı) → فرزندشان (hörmətlə).\n"
+                "4. Diqqət: «شان» həm hörmət (ایشان) məqsədilə, həm də cəm (آن‌ها/onlar) mənasında işlənir: "
+                "فرزندشان = ya hörmətli şəxsin övladı, ya da onların övladı ola bilər — məna kontekstdən "
+                "müəyyən olunur."
+            ),
             "examples": [
                 {
                     "fa": "کتابِ من، روی میز است. = کتابم، روی میز است.",
@@ -69,52 +109,55 @@ LESSON = {
                     "az": "Mənim kitabım masanın üstündədir. = Kitabım masanın üstündədir.",
                 },
                 {
-                    "fa": "پدربزرگ و مادربزرگم پیر هستند؛ آن‌ها در دهِ زندگی می‌کنند.",
-                    "reading_az": "Pedərbozorg va madərbozorgəm pir həstənd; anha dər dehe zendegi mikonənd.",
-                    "az": "Babam və nənəm qocadırlar; onlar kənddə yaşayırlar.",
+                    "fa": "برادرت چه دارد؟ برادرم تاکسی دارد.",
+                    "reading_az": "Bəradərət çe darəd? Bəradərəm taksi darəd.",
+                    "az": "Sənin qardaşının nəyi var? Mənim qardaşımın taksisi var.",
                 },
                 {
-                    "fa": "مادرم هر روز خانه را جارو می‌کند؛ غذا می‌پزد و دو ساعت مطالعه می‌کند.",
-                    "reading_az": "Madərəm hər ruz xane ra caru mikonəd; qəza mipəzəd va do saət motaleə mikonəd.",
-                    "az": "Anam hər gün evi süpürür, yemək bişirir və iki saat mütaliə edir.",
+                    "fa": "پدرت کجاست؟ پدرم در فروشگاه است.",
+                    "reading_az": "Pedərət kocast? Pedərəm dər foruşgah əst.",
+                    "az": "Sənin atan haradadır? Mənim atam mağazadadır.",
                 },
                 {
-                    "fa": "صادق، همسرِ دخترم زهرا است. دختر و دامادم در شهر بیروت زندگی می‌کنند.",
-                    "reading_az": "Sadeq, həmsəre doxtərəm Zəhra əst. Doxtər va damadəm dər şəhre Beyrut zendegi mikonənd.",
-                    "az": "Sadiq qızım Zəhranın həyat yoldaşıdır. Qızım və kürəkənim Beyrut şəhərində yaşayırlar.",
+                    "fa": "آیا همسر علی، معلّم است؟ نه، همسرش معلّم نیست؛ پرستار است.",
+                    "reading_az": "Aya həmsəre Əli, moəllem əst? Nə, həmsərəş moəllem nist; pərəstar əst.",
+                    "az": "Əlinin həyat yoldaşı müəllimdirmi? Xeyr, onun həyat yoldaşı müəllim deyil; tibb bacısıdır.",
                 },
                 {
-                    "fa": "من مجرّد هستم. دوستم سجّاد، متأهل است. او دو فرزند دختر دارد.",
-                    "reading_az": "Mən mocərrəd hastəm. Dustəm Səccad, motəəhhel əst. U do fərzəde doxtər darəd.",
-                    "az": "Mən subayam. Dostum Səccad evlidir. Onun iki qız övladı var.",
+                    "fa": "آیا فرزندت هر روز مطالعه می‌کند؟ بله، فرزندم هر روز مطالعه می‌کند.",
+                    "reading_az": "Aya fərzəndət hər ruz motaleə mikonəd? Bəle, fərzəndəm hər ruz motaleə mikonəd.",
+                    "az": "Sənin övladın hər gün mütaliə edirmi? Bəli, mənim övladım hər gün mütaliə edir.",
                 },
-            ],
-            "drills": [
                 {
-                    "title_fa": "مانند مثال تبدیل کنید",
-                    "instruction_az": "Nümunə kimi əvəzliyi dəyişin (ayrı ↔ bitişik)",
-                    "example_fa": "برادر من → *برادرم* / کیف آن‌ها → *کیفشان*",
-                    "example_reading_az": "Bəradəre mən → bəradərəm. Kife anha → kifeşan.",
-                    "example_az": "Mənim qardaşım → qardaşım. Onların çantası → çantaları.",
-                    "items": [
-                        {"prompt_fa": "پدر آن‌ها", "answer_fa": "پدرشان", "reading_az": "pedərşan", "az": "onların atası"},
-                        {"prompt_fa": "خودکار او", "answer_fa": "خودکارش", "reading_az": "xodkarəş", "az": "onun tükənməz qələmi"},
-                        {"prompt_fa": "مادربزرگ ما", "answer_fa": "مادربزرگمان", "reading_az": "madərbozorgəman", "az": "bizim nənəmiz"},
-                        {"prompt_fa": "چتر شما", "answer_fa": "چترتان", "reading_az": "çətretan", "az": "sizin çətriniz"},
-                        {"prompt_fa": "فرزند بزرگ شما", "answer_fa": "فرزند بزرگتان", "reading_az": "fərzəde bozorgetan", "az": "sizin böyük övladınız"},
-                        {"prompt_fa": "چشمم", "answer_fa": "چشم من", "reading_az": "çeşme mən", "az": "mənim gözüm"},
-                        {"prompt_fa": "پولتان", "answer_fa": "پول شما", "reading_az": "pule şoma", "az": "sizin pulunuz"},
-                        {"prompt_fa": "جانمازشان", "answer_fa": "جانماز آن‌ها", "reading_az": "canəmaze anha", "az": "onların namazlığı"},
-                        {"prompt_fa": "دامادش", "answer_fa": "داماد او", "reading_az": "damade u", "az": "onun kürəkəni"},
-                        {"prompt_fa": "اتاق‌خوابم", "answer_fa": "اتاق‌خواب من", "reading_az": "otağe xabe mən", "az": "mənim yataq otağım"},
-                        {"prompt_fa": "پرچم کشورمان", "answer_fa": "پرچم کشور ما", "reading_az": "pərçəme kəşvəre ma", "az": "bizim ölkəmizin bayrağı"},
-                    ],
+                    "fa": "آیا پدربزرگ و مادربزرگتان در ایران زندگی می‌کنند؟ نه، پدربزرگ و مادربزرگمان در سوریه زندگی می‌کنند.",
+                    "reading_az": "Aya pedərbozorg va madərbozorgetan dər Iran zendegi mikonənd? Nə, pedərbozorg va madərbozorgeman dər Suriye zendegi mikonənd.",
+                    "az": "Sizin baba-nənəniz İranda yaşayırmı? Xeyr, bizim baba-nənəmiz Suriyada yaşayır.",
+                },
+                {
+                    "fa": "آیا آن‌ها به پدر و مادرشان کمک می‌کنند؟ بله، آن‌ها به پدر و مادرشان کمک می‌کنند.",
+                    "reading_az": "Aya anha be pedər va madərşan komək mikonənd? Bəle, anha be pedər va madərşan komək mikonənd.",
+                    "az": "Onlar ata-analarına kömək edirlərmi? Bəli, onlar ata-analarına kömək edirlər.",
+                },
+                {
+                    "fa": "آیا فرزندتان اتاق‌ها را تمیز نمی‌کند؟ چرا، فرزندم اتاق‌ها را تمیز می‌کند.",
+                    "reading_az": "Aya fərzəndetan otaqha ra təmiz nemikonəd? Çera, fərzəndəm otaqha ra təmiz mikonəd.",
+                    "az": "Sizin övladınız otaqları təmizləmir? Əksinə, mənim övladım otaqları təmizləyir.",
+                },
+                {
+                    "fa": "آیا عمو و عمّه‌ات پرستار هستند؟ نه، عمویم استاد دانش‌گاه و عمّه‌ام پزشک است.",
+                    "reading_az": "Aya əmu va əmmeət pərəstar həstənd? Nə, əmuyəm ostade daneşgah va əmməəm pezeşk əst.",
+                    "az": "Sənin əmin və bibin tibb bacısıdır? Xeyr, mənim əmim universitet müəllimi, bibim isə həkimdir.",
                 },
             ],
         },
         {
             "title_az": "Deyək — deməyək (بگوییم – نگوییم)",
             "title_fa": "بگوییم – نگوییم",
+            "explanation_az": (
+                "Cümlənin mübtədası ilə sahib eyni şəxsdirsə, bitişik əvəzlik işlədilir.\n"
+                "من اتاقم را تمیز می‌کنم. ✓ — من اتاق من را تمیز می‌کنم. ✗\n"
+                "Yəni «mənim otağım» yox, sadəcə «otağım» deyilir; qayda bütün şəxslərə aiddir."
+            ),
             "conjugations": [
                 {"pronoun_fa": "من اتاقم را تمیز می‌کنم. ✓", "form_fa": "من اتاق من را تمیز می‌کنم. ✗"},
                 {"pronoun_fa": "ما اتاق شما را تمیز می‌کنیم. ✓", "form_fa": "ما اتاق ما را تمیز می‌کنیم. ✗"},
@@ -141,41 +184,223 @@ LESSON = {
                     "az": "Mən və nənəm evin həyətini süpürürük — “مادربزرگم” düzgün formadır.",
                 },
             ],
-            "drills": [
-                {
-                    "title_fa": "لطفاً تصحیح کنید",
-                    "instruction_az": "Cümlələri düzəldin (bitişik əvəzlik işlədin)",
-                    "items": [
-                        {
-                            "prompt_fa": "شما در دفتر شما نقّاشی می‌کشید.",
-                            "answer_fa": "شما در دفترتان نقّاشی می‌کشید.",
-                            "reading_az": "Şoma dər dəftəretan nəqqaşi mikeşid.",
-                            "az": "Siz dəftərinizdə rəsm çəkirsiniz.",
-                        },
-                        {
-                            "prompt_fa": "من و مادر من در آشپزخانه غذا می‌پزیم.",
-                            "answer_fa": "من و مادرم در آشپزخانه غذا می‌پزیم.",
-                            "reading_az": "Mən va madərəm dər aşpəzxane qəza mipəzim.",
-                            "az": "Mən və anam mətbəxdə yemək bişiririk.",
-                        },
-                        {
-                            "prompt_fa": "ما روزهای جمعه، اتاق ما را تمیز می‌کنیم.",
-                            "answer_fa": "ما روزهای جمعه، اتاقمان را تمیز می‌کنیم.",
-                            "reading_az": "Ma ruzhaye come, otağeman ra təmiz mikonim.",
-                            "az": "Biz cümə günləri otağımızı təmizləyirik.",
-                        },
-                        {
-                            "prompt_fa": "آن‌ها کتاب‌های آن‌ها را در کیف می‌گذارند.",
-                            "answer_fa": "آن‌ها کتاب‌هایشان را در کیف می‌گذارند.",
-                            "reading_az": "Anha ketabhayeşan ra dər kif migozarənd.",
-                            "az": "Onlar kitablarını çantaya qoyurlar.",
-                        },
-                    ],
-                },
-            ],
         },
     ],
     "exercises": [
+        {
+            # 'Ev' dərsinin (Dərs 2) Çalışma 1-i ilə eyni quruluş: sualın üzərinə
+            # toxunanda yalnız ONUN oxunuşu açılır, «nümunə» düyməsi cavabı
+            # (və toxunanda onun da öz oxunuşunu), tərcümə düyməsi isə
+            # tərcümələri göstərir — hər üçü bir-birindən asılı olmadan.
+            "kind": "answer_question",
+            "title_fa": "مانند مثال تبدیل کنید",
+            "instruction_az": "Nümunə kimi əvəzliyi dəyişin (ayrı ↔ bitişik)",
+            # Yaşıl = ayrı (gəsəstə) əvəzlik, qırmızı = bitişik (peyvəstə) şəkilçi.
+            "example_fa": "برادر *من* : برادر**م**\nکیف**شان** : کیف *آن‌ها*",
+            "example_reading_az": "Bəradəre mən : bəradərəm.\nKifeşan : kife anha.",
+            "example_az": "Mənim qardaşım : qardaşım.\nOnların çantası : onların çantası.",
+            "items": [
+                {
+                    "fa": "پدر آن‌ها",
+                    "reading_az": "pedəre anha",
+                    "az": "onların atası",
+                    "sample_answer_fa": "پدرشان",
+                    "sample_answer_reading_az": "pedərşan",
+                    "sample_answer_az": "onların atası",
+                },
+                {
+                    "fa": "خودکار او",
+                    "reading_az": "xodkare u",
+                    "az": "onun tükənməz qələmi",
+                    "sample_answer_fa": "خودکارش",
+                    "sample_answer_reading_az": "xodkarəş",
+                    "sample_answer_az": "onun tükənməz qələmi",
+                },
+                {
+                    "fa": "مادربزرگ ما",
+                    "reading_az": "madərbozorge ma",
+                    "az": "bizim nənəmiz",
+                    "sample_answer_fa": "مادربزرگمان",
+                    "sample_answer_reading_az": "madərbozorgəman",
+                    "sample_answer_az": "bizim nənəmiz",
+                },
+                {
+                    "fa": "چتر شما",
+                    "reading_az": "çətre şoma",
+                    "az": "sizin çətriniz",
+                    "sample_answer_fa": "چترتان",
+                    "sample_answer_reading_az": "çətretan",
+                    "sample_answer_az": "sizin çətriniz",
+                },
+                {
+                    "fa": "فرزند بزرگ شما",
+                    "reading_az": "fərzənde bozorge şoma",
+                    "az": "sizin böyük övladınız",
+                    "sample_answer_fa": "فرزند بزرگتان",
+                    "sample_answer_reading_az": "fərzəde bozorgetan",
+                    "sample_answer_az": "sizin böyük övladınız",
+                },
+                {
+                    "fa": "چشمم",
+                    "reading_az": "çeşməm",
+                    "az": "mənim gözüm",
+                    "sample_answer_fa": "چشم من",
+                    "sample_answer_reading_az": "çeşme mən",
+                    "sample_answer_az": "mənim gözüm",
+                },
+                {
+                    "fa": "پولتان",
+                    "reading_az": "puletan",
+                    "az": "sizin pulunuz",
+                    "sample_answer_fa": "پول شما",
+                    "sample_answer_reading_az": "pule şoma",
+                    "sample_answer_az": "sizin pulunuz",
+                },
+                {
+                    "fa": "جانمازشان",
+                    "reading_az": "canəmazeşan",
+                    "az": "onların namazlığı",
+                    "sample_answer_fa": "جانماز آن‌ها",
+                    "sample_answer_reading_az": "canəmaze anha",
+                    "sample_answer_az": "onların namazlığı",
+                },
+                {
+                    "fa": "دامادش",
+                    "reading_az": "damadəş",
+                    "az": "onun kürəkəni",
+                    "sample_answer_fa": "داماد او",
+                    "sample_answer_reading_az": "damade u",
+                    "sample_answer_az": "onun kürəkəni",
+                },
+                {
+                    "fa": "اتاق‌خوابم",
+                    "reading_az": "otağ-xabəm",
+                    "az": "mənim yataq otağım",
+                    "sample_answer_fa": "اتاق‌خواب من",
+                    "sample_answer_reading_az": "otağe xabe mən",
+                    "sample_answer_az": "mənim yataq otağım",
+                },
+                {
+                    "fa": "پرچم کشورمان",
+                    "reading_az": "pərçəme kəşvəreman",
+                    "az": "bizim ölkəmizin bayrağı",
+                    "sample_answer_fa": "پرچم کشور ما",
+                    "sample_answer_reading_az": "pərçəme kəşvəre ma",
+                    "sample_answer_az": "bizim ölkəmizin bayrağı",
+                },
+            ],
+        },
+        {
+            # Çalışma 1 ilə eyni quruluş: səhv cümləyə toxunanda onun oxunuşu,
+            # «nümunə» düyməsi düzəldilmiş cümləni (və onun öz oxunuşunu),
+            # tərcümə düyməsi isə tərcüməni açır.
+            "kind": "answer_question",
+            "title_fa": "لطفاً تصحیح کنید",
+            "instruction_az": "Cümlələri düzəldin (bitişik əvəzlik işlədin)",
+            "items": [
+                {
+                    "fa": "شما در دفتر شما نقّاشی می‌کشید.",
+                    "reading_az": "Şoma dər dəftəre şoma nəqqaşi mikeşid.",
+                    "az": "Siz dəftərinizdə rəsm çəkirsiniz.",
+                    "sample_answer_fa": "شما در دفترتان نقّاشی می‌کشید.",
+                    "sample_answer_reading_az": "Şoma dər dəftəretan nəqqaşi mikeşid.",
+                    "sample_answer_az": "Siz dəftərinizdə rəsm çəkirsiniz.",
+                },
+                {
+                    "fa": "من و مادر من در آشپزخانه غذا می‌پزیم.",
+                    "reading_az": "Mən va madəre mən dər aşpəzxane qəza mipəzim.",
+                    "az": "Mən və anam mətbəxdə yemək bişiririk.",
+                    "sample_answer_fa": "من و مادرم در آشپزخانه غذا می‌پزیم.",
+                    "sample_answer_reading_az": "Mən va madərəm dər aşpəzxane qəza mipəzim.",
+                    "sample_answer_az": "Mən və anam mətbəxdə yemək bişiririk.",
+                },
+                {
+                    "fa": "ما روزهای جمعه، اتاق ما را تمیز می‌کنیم.",
+                    "reading_az": "Ma ruzhaye come, otağe ma ra təmiz mikonim.",
+                    "az": "Biz cümə günləri otağımızı təmizləyirik.",
+                    "sample_answer_fa": "ما روزهای جمعه، اتاقمان را تمیز می‌کنیم.",
+                    "sample_answer_reading_az": "Ma ruzhaye come, otağeman ra təmiz mikonim.",
+                    "sample_answer_az": "Biz cümə günləri otağımızı təmizləyirik.",
+                },
+                {
+                    "fa": "آن‌ها کتاب‌های آن‌ها را در کیف می‌گذارند.",
+                    "reading_az": "Anha ketabhaye anha ra dər kif migozarənd.",
+                    "az": "Onlar kitablarını çantaya qoyurlar.",
+                    "sample_answer_fa": "آن‌ها کتاب‌هایشان را در کیف می‌گذارند.",
+                    "sample_answer_reading_az": "Anha ketabhayeşan ra dər kif migozarənd.",
+                    "sample_answer_az": "Onlar kitablarını çantaya qoyurlar.",
+                },
+            ],
+        },
+        {
+            # Çalışma 2 ilə eyni quruluş (answer_question). NÜMUNƏ qutusunda
+            # iki sətir var: verilən söz dəsti, sonra ondan qurulan tam cümlə.
+            # Qırmızı «را» = təsirlik hal əlaməti, yaşıl «دوست دارد» = şəxsə
+            # görə dəyişən fel — izahı example_az-dadır.
+            "kind": "answer_question",
+            "title_fa": "مانند مثال بگویید",
+            "instruction_az": "Nümunə kimi cümlə qurun",
+            "example_fa": "پدربزرگم / نوه‌هایش\nپدربزرگم نوه‌هایش **را** بسیار *دوست دارد*.",
+            "example_reading_az": "Pedərbozorgəm / nəvehayeş\nPedərbozorgəm nəvehayeş ra besyar dust darəd.",
+            "example_az": (
+                "Verilən sözlər: «پدربزرگم» (babam) + «نوه‌هایش» (onun nəvələri).\n"
+                "Quruluş: SUBYEKT + OBYEKT + را + بسیار + دوست دارد.\n"
+                "Qırmızı «را» — təsirlik hal əlamətidir, obyektdən sonra gəlir.\n"
+                "Yaşıl «دوست دارد» — fel subyektə görə dəyişir: "
+                "دارم / داری / دارد / داریم / دارید / دارند.\n"
+                "Tərcümə: Babam nəvələrini çox sevir."
+            ),
+            "items": [
+                {
+                    "fa": "محمّدعلی / پدر و مادرش",
+                    "reading_az": "Mohəmmədəli / pedər va madərəş",
+                    "az": "Məhəmmədəli / onun ata-anası",
+                    "sample_answer_fa": "محمّدعلی پدر و مادرش را بسیار دوست دارد.",
+                    "sample_answer_reading_az": "Mohəmmədəli pedər va madərəş ra besyar dust darəd.",
+                    "sample_answer_az": "Məhəmmədəli ata-anasını çox sevir.",
+                },
+                {
+                    "fa": "ما / قرآن خواندن",
+                    "reading_az": "Ma / Qoran xandən",
+                    "az": "biz / Quran oxumaq",
+                    "sample_answer_fa": "ما قرآن خواندن را بسیار دوست داریم.",
+                    "sample_answer_reading_az": "Ma Qoran xandən ra besyar dust darim.",
+                    "sample_answer_az": "Biz Quran oxumağı çox sevirik.",
+                },
+                {
+                    "fa": "آن کودک / نقّاشی کشیدن",
+                    "reading_az": "An kudək / nəqqaşi keşidən",
+                    "az": "o uşaq / rəsm çəkmək",
+                    "sample_answer_fa": "آن کودک نقّاشی کشیدن را بسیار دوست دارد.",
+                    "sample_answer_reading_az": "An kudək nəqqaşi keşidən ra besyar dust darəd.",
+                    "sample_answer_az": "O uşaq rəsm çəkməyi çox sevir.",
+                },
+                {
+                    "fa": "من و خواهرم / عمّه و خاله‌مان",
+                    "reading_az": "Mən va xahərəm / əmme va xaleman",
+                    "az": "mən və bacım / bibimiz və xalamız",
+                    "sample_answer_fa": "من و خواهرم عمّه و خاله‌مان را بسیار دوست داریم.",
+                    "sample_answer_reading_az": "Mən va xahərəm əmme va xaleman ra besyar dust darim.",
+                    "sample_answer_az": "Mən və bacım bibimizi və xalamızı çox sevirik.",
+                },
+                {
+                    "fa": "فاطمه و زینب / مطالعه کردن",
+                    "reading_az": "Fateme va Zeynəb / motaleə kərdən",
+                    "az": "Fatimə və Zeynəb / mütaliə etmək",
+                    "sample_answer_fa": "فاطمه و زینب مطالعه کردن را بسیار دوست دارند.",
+                    "sample_answer_reading_az": "Fateme va Zeynəb motaleə kərdən ra besyar dust darənd.",
+                    "sample_answer_az": "Fatimə və Zeynəb mütaliə etməyi çox sevirlər.",
+                },
+                {
+                    "fa": "پدرم / برادرزاده و خواهرزاده‌اش",
+                    "reading_az": "Pedərəm / bəradərzade va xahərzadeəş",
+                    "az": "atam / onun qardaşı və bacısı uşaqları",
+                    "sample_answer_fa": "پدرم برادرزاده و خواهرزاده‌اش را بسیار دوست دارد.",
+                    "sample_answer_reading_az": "Pedərəm bəradərzade va xahərzadeəş ra besyar dust darəd.",
+                    "sample_answer_az": "Atam qardaşı və bacısının uşaqlarını çox sevir.",
+                },
+            ],
+        },
         {
             "kind": "fill_blank",
             "instruction_az": "Bitişik əvəzliklərdən istifadə edərək cavabları tamamlayın.",
@@ -216,128 +441,145 @@ LESSON = {
             ],
         },
         {
-            "kind": "practice_reveal",
-            "instruction_az": "Nümunə kimi deyin: «پدربزرگم / نوه‌هایش → پدربزرگم نوه‌هایش را بسیار دوست دارد.»",
+            # Çalışma 3 ilə eyni quruluş. NÜMUNƏ qutusunda üç rəng işlənir:
+            # qırmızı = subyekt, mavi = kömək edilən şəxs (subyektə uyğun
+            # bitişik əvəzlik alır), yaşıl = subyektə görə dəyişən fel.
+            "kind": "answer_question",
+            "title_fa": "لطفاً جایگزین کنید",
+            "instruction_az": "Sözləri nümunədəki kimi əvəz edin",
+            "example_fa": (
+                "**من** در تمیز کردن اتاق به ***دوستانم*** *کمک می‌کنم*.\n"
+                "زینب / شستن ظرف‌ها / مادر ← "
+                "**زینب** در شستن ظرف‌ها به ***مادرش*** *کمک می‌کند*."
+            ),
+            "example_reading_az": (
+                "Mən dər təmiz kərdəne otaq be dustanəm komək mikonəm.\n"
+                "Zeynəb / şostəne zərfha / madər ← "
+                "Zeynəb dər şostəne zərfha be madərəş komək mikonəd."
+            ),
+            "example_az": (
+                "Nümunə: «Mən otağı təmizləməkdə dostlarıma kömək edirəm.»\n"
+                "Quruluş: SUBYEKT + در + İŞ + به + ŞƏXS + کمک می‌کند.\n"
+                "Qırmızı — subyekt.\n"
+                "Mavi — kömək edilən şəxs; subyektə uyğun bitişik əvəzlik alır "
+                "(مادر → مادرش).\n"
+                "Yaşıl — fel; subyektə görə dəyişir (می‌کنم / می‌کند / می‌کنیم / می‌کنند).\n"
+                "Tərcümə: Zeynəb qabları yumaqda anasına kömək edir."
+            ),
             "items": [
                 {
-                    "prompt_fa": "محمّدعلی / پدر و مادرش",
-                    "answer_fa": "محمّدعلی پدر و مادرش را بسیار دوست دارد.",
-                    "reading_az": "Mohəmmədəli pedər va madərəş ra besyar dust darəd.",
-                    "az": "Məhəmmədəli ata-anasını çox sevir.",
+                    "fa": "ما / پاک‌کردن تابلو / استاد",
+                    "reading_az": "Ma / pak-kərdəne təblo / ostad",
+                    "az": "biz / lövhəni təmizləmək / müəllim",
+                    "sample_answer_fa": "ما در پاک‌کردن تابلو به استادمان کمک می‌کنیم.",
+                    "sample_answer_reading_az": "Ma dər pak-kərdəne təblo be ostademan komək mikonim.",
+                    "sample_answer_az": "Biz lövhəni təmizləməkdə müəllimimizə kömək edirik.",
                 },
                 {
-                    "prompt_fa": "ما / قرآن خواندن",
-                    "answer_fa": "ما قرآن خواندن را بسیار دوست داریم.",
-                    "reading_az": "Ma Qoran xandən ra besyar dust darim.",
-                    "az": "Biz Quran oxumağı çox sevirik.",
+                    "fa": "ابراهیم / نقّاشی‌کشیدن / فرزند",
+                    "reading_az": "Ebrahim / nəqqaşi-keşidən / fərzənd",
+                    "az": "İbrahim / rəsm çəkmək / övlad",
+                    "sample_answer_fa": "ابراهیم در نقّاشی‌کشیدن به فرزندش کمک می‌کند.",
+                    "sample_answer_reading_az": "Ebrahim dər nəqqaşi-keşidən be fərzendeş komək mikonəd.",
+                    "sample_answer_az": "İbrahim rəsm çəkməkdə övladına kömək edir.",
                 },
                 {
-                    "prompt_fa": "آن کودک / نقّاشی کشیدن",
-                    "answer_fa": "آن کودک نقّاشی کشیدن را بسیار دوست دارد.",
-                    "reading_az": "An kudək nəqqaşi keşidən ra besyar dust darəd.",
-                    "az": "O uşaq rəsm çəkməyi çox sevir.",
+                    "fa": "دایی‌ام / تمیزکردن خانه / همسر",
+                    "reading_az": "Dayiəm / təmiz-kərdəne xane / həmsər",
+                    "az": "dayım / evi təmizləmək / həyat yoldaşı",
+                    "sample_answer_fa": "دایی‌ام در تمیزکردن خانه به همسرش کمک می‌کند.",
+                    "sample_answer_reading_az": "Dayiəm dər təmiz-kərdəne xane be həmsərəş komək mikonəd.",
+                    "sample_answer_az": "Dayım evi təmizləməkdə həyat yoldaşına kömək edir.",
                 },
                 {
-                    "prompt_fa": "من و خواهرم / عمّه و خاله‌مان",
-                    "answer_fa": "من و خواهرم عمّه و خاله‌مان را بسیار دوست داریم.",
-                    "reading_az": "Mən va xahərəm əmme va xaleman ra besyar dust darim.",
-                    "az": "Mən və bacım bibimizi və xalamızı çox sevirik.",
+                    "fa": "پدربزرگ / خواندن درس / نوه",
+                    "reading_az": "Pedərbozorg / xandəne dərs / nəve",
+                    "az": "baba / dərs oxumaq / nəvə",
+                    "sample_answer_fa": "پدربزرگ در خواندن درس به نوه‌اش کمک می‌کند.",
+                    "sample_answer_reading_az": "Pedərbozorg dər xandəne dərs be nəveəş komək mikonəd.",
+                    "sample_answer_az": "Baba dərs oxumaqda nəvəsinə kömək edir.",
                 },
                 {
-                    "prompt_fa": "فاطمه و زینب / مطالعه کردن",
-                    "answer_fa": "فاطمه و زینب مطالعه کردن را بسیار دوست دارند.",
-                    "reading_az": "Fateme va Zeynəb motaleə kərdən ra besyar dust darənd.",
-                    "az": "Fatimə və Zeynəb mütaliə etməyi çox sevirlər.",
+                    "fa": "نرگس و سوسن / جارو کردن حیاط / مادر",
+                    "reading_az": "Nərges va Susən / caru kərdəne həyat / madər",
+                    "az": "Nərgiz və Susən / həyəti süpürmək / ana",
+                    "sample_answer_fa": "نرگس و سوسن در جارو کردن حیاط به مادرشان کمک می‌کنند.",
+                    "sample_answer_reading_az": "Nərges va Susən dər caru kərdəne həyat be madərşan komək mikonənd.",
+                    "sample_answer_az": "Nərgiz və Susən həyəti süpürməkdə analarına kömək edirlər.",
                 },
                 {
-                    "prompt_fa": "پدرم / برادرزاده و خواهرزاده‌اش",
-                    "answer_fa": "پدرم برادرزاده و خواهرزاده‌اش را بسیار دوست دارد.",
-                    "reading_az": "Pedərəm bəradərzade va xahərzadeəş ra besyar dust darəd.",
-                    "az": "Atam qardaşı və bacısının uşaqlarını çox sevir.",
+                    "fa": "من و خواهرم / پختن غذا / مادربزرگ",
+                    "reading_az": "Mən va xahərəm / poxtəne qəza / madərbozorg",
+                    "az": "mən və bacım / yemək bişirmək / nənə",
+                    "sample_answer_fa": "من و خواهرم در پختن غذا به مادربزرگمان کمک می‌کنیم.",
+                    "sample_answer_reading_az": "Mən va xahərəm dər poxtəne qəza be madərbozorgeman komək mikonim.",
+                    "sample_answer_az": "Mən və bacım yemək bişirməkdə nənəmizə kömək edirik.",
                 },
             ],
         },
         {
-            "kind": "practice_reveal",
-            "instruction_az": "Əvəz edin: «زینب / شستن ظرف‌ها / مادر → زینب در شستن ظرف‌ها به مادرش کمک می‌کند.»",
+            # Çalışma 3/4 ilə eyni quruluş. NÜMUNƏ qutusunda: yaşıl = qohumluq
+            # adı (sualdakı ipucu və cavabda açılmış forması), qırmızı = əlavə
+            # olunan bitişik əvəzlik (پدر → پدرم).
+            "kind": "answer_question",
+            "title_fa": "مانند مثال بگویید",
+            "instruction_az": "Nümunə kimi qohumluq adını deyin",
+            "example_fa": "برادرِ پدر (*عمو*)\nبرادر **پدرم**، *عموی من* است.",
+            "example_reading_az": "Bəradəre pedər (əmu)\nBəradəre pedərəm, əmuye mən əst.",
+            "example_az": (
+                "Sual: «برادرِ پدر» — atanın qardaşı; mötərizədəki «عمو» ipucudur (əmi).\n"
+                "Cavab: برادر پدرم، عموی من است. = «Atamın qardaşı mənim əmimdir.»\n"
+                "Qırmızı — «پدر» sözünə bitişik əvəzlik «ـم» əlavə olunur (پدر → پدرم).\n"
+                "Yaşıl — qohumluq adı; cavabda «عموی من» şəklində açılır."
+            ),
             "items": [
                 {
-                    "prompt_fa": "ما / پاک‌کردن تابلو / استاد",
-                    "answer_fa": "ما در پاک‌کردن تابلو به استادمان کمک می‌کنیم.",
-                    "reading_az": "Ma dər pak-kərdəne təblo be ostademan komək mikonim.",
-                    "az": "Biz lövhəni təmizləməkdə müəllimimizə kömək edirik.",
+                    "fa": "برادرِ مادر",
+                    "reading_az": "Bəradəre madər",
+                    "az": "ananın qardaşı",
+                    "sample_answer_fa": "برادر مادرم، دایی من است.",
+                    "sample_answer_reading_az": "Bəradəre madərəm, dayiye mən əst.",
+                    "sample_answer_az": "Anamın qardaşı mənim dayımdır.",
                 },
                 {
-                    "prompt_fa": "ابراهیم / نقّاشی‌کشیدن / فرزند",
-                    "answer_fa": "ابراهیم در نقّاشی‌کشیدن به فرزندش کمک می‌کند.",
-                    "reading_az": "Ebrahim dər nəqqaşi-keşidən be fərzendeş komək mikonəd.",
-                    "az": "İbrahim rəsm çəkməkdə övladına kömək edir.",
+                    "fa": "مادرِ پدر",
+                    "reading_az": "Madəre pedər",
+                    "az": "atanın anası",
+                    "sample_answer_fa": "مادر پدرم، مادربزرگ من است.",
+                    "sample_answer_reading_az": "Madəre pedərəm, madərbozorge mən əst.",
+                    "sample_answer_az": "Atamın anası mənim nənəmdir.",
                 },
                 {
-                    "prompt_fa": "دایی‌ام / تمیزکردن خانه / همسر",
-                    "answer_fa": "دایی‌ام در تمیزکردن خانه به همسرش کمک می‌کند.",
-                    "reading_az": "Dayiəm dər təmiz-kərdəne xane be həmsərəş komək mikonəd.",
-                    "az": "Dayım evi təmizləməkdə həyat yoldaşına kömək edir.",
+                    "fa": "خواهرِ پدر",
+                    "reading_az": "Xahəre pedər",
+                    "az": "atanın bacısı",
+                    "sample_answer_fa": "خواهر پدرم، عمّه‌ی من است.",
+                    "sample_answer_reading_az": "Xahəre pedərəm, əmme-ye mən əst.",
+                    "sample_answer_az": "Atamın bacısı mənim bibimdir.",
                 },
                 {
-                    "prompt_fa": "پدربزرگ / خواندن درس / نوه",
-                    "answer_fa": "پدربزرگ در خواندن درس به نوه‌اش کمک می‌کند.",
-                    "reading_az": "Pedərbozorg dər xandəne dərs be nəveəş komək mikonəd.",
-                    "az": "Baba dərs oxumaqda nəvəsinə kömək edir.",
+                    "fa": "دختر و پسرِ فرزند",
+                    "reading_az": "Doxtər va pesəre fərzənd",
+                    "az": "övladın qızı və oğlu",
+                    "sample_answer_fa": "دختر و پسر فرزندم، نوه‌های من هستند.",
+                    "sample_answer_reading_az": "Doxtər va pesəre fərzendəm, nəvehaye mən həstənd.",
+                    "sample_answer_az": "Övladımın qızı və oğlu mənim nəvələrimdir.",
                 },
                 {
-                    "prompt_fa": "نرگس و سوسن / جارو کردن حیاط / مادر",
-                    "answer_fa": "نرگس و سوسن در جارو کردن حیاط به مادرشان کمک می‌کنند.",
-                    "reading_az": "Nərges va Susən dər caru kərdəne həyat be madərşan komək mikonənd.",
-                    "az": "Nərgiz və Susən həyəti süpürməkdə analarına kömək edirlər.",
+                    "fa": "همسرِ پسر",
+                    "reading_az": "Həmsəre pesər",
+                    "az": "oğlun həyat yoldaşı",
+                    "sample_answer_fa": "همسر پسرم، عروس من است.",
+                    "sample_answer_reading_az": "Həmsəre pesərəm, əruse mən əst.",
+                    "sample_answer_az": "Oğlumun həyat yoldaşı mənim gəlinimdir.",
                 },
                 {
-                    "prompt_fa": "من و خواهرم / پختن غذا / مادربزرگ",
-                    "answer_fa": "من و خواهرم در پختن غذا به مادربزرگمان کمک می‌کنیم.",
-                    "reading_az": "Mən va xahərəm dər poxtəne qəza be madərbozorgeman komək mikonim.",
-                    "az": "Mən və bacım yemək bişirməkdə nənəmizə kömək edirik.",
-                },
-            ],
-        },
-        {
-            "kind": "practice_reveal",
-            "instruction_az": "Nümunə kimi deyin: «برادرِ پدر (عمو) → برادر پدرم، عموی من است.»",
-            "items": [
-                {
-                    "prompt_fa": "برادرِ مادر",
-                    "answer_fa": "برادر مادرم، دایی من است.",
-                    "reading_az": "Bəradəre madərəm, dayiye mən əst.",
-                    "az": "Anamın qardaşı mənim dayımdır.",
-                },
-                {
-                    "prompt_fa": "مادرِ پدر",
-                    "answer_fa": "مادر پدرم، مادربزرگ من است.",
-                    "reading_az": "Madəre pedərəm, madərbozorge mən əst.",
-                    "az": "Atamın anası mənim nənəmdir.",
-                },
-                {
-                    "prompt_fa": "خواهرِ پدر",
-                    "answer_fa": "خواهر پدرم، عمّه‌ی من است.",
-                    "reading_az": "Xahəre pedərəm, əmme-ye mən əst.",
-                    "az": "Atamın bacısı mənim bibimdir.",
-                },
-                {
-                    "prompt_fa": "دختر و پسرِ فرزند",
-                    "answer_fa": "دختر و پسر فرزندم، نوه‌های من هستند.",
-                    "reading_az": "Doxtər va pesəre fərzendəm, nəvehaye mən həstənd.",
-                    "az": "Övladımın qızı və oğlu mənim nəvələrimdir.",
-                },
-                {
-                    "prompt_fa": "همسرِ پسر",
-                    "answer_fa": "همسر پسرم، عروس من است.",
-                    "reading_az": "Həmsəre pesərəm, əruse mən əst.",
-                    "az": "Oğlumun həyat yoldaşı mənim gəlinimdir.",
-                },
-                {
-                    "prompt_fa": "خواهرِ مادر",
-                    "answer_fa": "خواهر مادرم، خاله‌ی من است.",
-                    "reading_az": "Xahəre madərəm, xale-ye mən əst.",
-                    "az": "Anamın bacısı mənim xalamdır.",
+                    "fa": "خواهرِ مادر",
+                    "reading_az": "Xahəre madər",
+                    "az": "ananın bacısı",
+                    "sample_answer_fa": "خواهر مادرم، خاله‌ی من است.",
+                    "sample_answer_reading_az": "Xahəre madərəm, xale-ye mən əst.",
+                    "sample_answer_az": "Anamın bacısı mənim xalamdır.",
                 },
             ],
         },
@@ -426,6 +668,9 @@ LESSON = {
                         "az": "Leylanın qayınatasının üç mərtəbəli bir evi var. Leyla və Hüseyn onun evində yaşayırlar.",
                     },
                 ],
+                "note_fa": "۱. بستگان: فامیل‌ها\n۲. لیلا خانم حسین است: لیلا زن حسین است.\n۳. (پدرخانم: پدرزن)؛ (مادرخانم: مادرزن)",
+                "note_reading_az": "1. Bəstegan: familiha.\n2. Leyla xanome Hoseyn əst: Leyla zəne Hoseyn əst.\n3. (Pedərxanom: pedərzən); (Madərxanom: madərzən)",
+                "note_az": "1. «بستگان» (bəstegan) sözü «فامیل‌ها» (qohumlar) mənasındadır.\n2. «لیلا خانم حسین است» = «لیلا زن حسین است» — yəni Leyla, Hüseynin arvadıdır.\n3. (پدرخانم = qayınata); (مادرخانم = qayınana)",
             },
             {
                 "items": [

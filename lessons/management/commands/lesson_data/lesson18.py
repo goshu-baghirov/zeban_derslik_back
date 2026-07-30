@@ -46,6 +46,11 @@ LESSON = {
         {
             "title_az": "«دست، دسته و…» — bənzər sözlərin fərqi",
             "title_fa": "دست، دسته و ...",
+            "explanation_az": (
+                "Bəzi sözlərin sonuna «ه» əlavə olunanda məna tamamilə dəyişir.\n"
+                "دست (əl) → دسته (qulp), پا (ayaq) → پایه (dayaq), چشم (göz) → چشمه (bulaq), دندان (diş) → دندانه (dişcik).\n"
+                "Bu sözləri tək-tək yox, cümlə içində yadda saxlamaq lazımdır."
+            ),
             "conjugations": [
                 {"pronoun_fa": "دست (əl)", "form_fa": "انسان دو دست دارد."},
                 {"pronoun_fa": "دسته (qulp/dəstə)", "form_fa": "پارچ و سطل دسته دارند."},
@@ -91,6 +96,11 @@ LESSON = {
         {
             "title_az": "«مالِ …» quruluşu — sahiblik (kimindir?)",
             "title_fa": "مالِ ........",
+            "explanation_az": (
+                "«مالِ ...» sahibliyi bildirir — «kimindir?».\n"
+                "Sual: این ... مالِ کیست؟ — Cavab: مالِ من است.\n"
+                "«مالِ» sözündən sonra sahibin adı və ya əvəzliyi gəlir, cümlə «است» ilə bitir."
+            ),
             "conjugations": [
                 {"pronoun_fa": "این دوچرخه‌ی آبی، مالِ کیست؟", "form_fa": "این دوچرخه‌ی آبی، مالِ من است."},
             ],

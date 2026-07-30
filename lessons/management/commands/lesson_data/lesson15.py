@@ -49,6 +49,11 @@ LESSON = {
         {
             "title_az": "«Saatın yaxınlaşması»: «... به ...» quruluşu",
             "title_fa": "ساعت با «به»",
+            "explanation_az": (
+                "Yarım saatı keçəndən sonra vaxtı «neçə dəqiqə qalıb» şəklində də demək olar.\n"
+                "Quruluş: qalan dəqiqə + «به» + növbəti saat: بیست دقیقه به سه — «üçə iyirmi dəqiqə qalıb».\n"
+                "15 dəqiqə qalanda «یک ربع به ...» deyilir."
+            ),
             "conjugations": [
                 {"pronoun_fa": "ساعت، دو و چهل دقیقه است.", "form_fa": "= ساعت، بیست دقیقه به سه است."},
                 {"pronoun_fa": "ساعت، هشت و چهل و پنج دقیقه است.", "form_fa": "= ساعت، پانزده دقیقه به نه است. = ساعت، یک ربع به نه است."},
@@ -64,6 +69,11 @@ LESSON = {
         {
             "title_az": "Sual sözü «ساعتِ چند» / «چند ساعت» fərqi",
             "title_fa": "«ساعتِ چند» ؛ «چند ساعت»",
+            "explanation_az": (
+                "«ساعتِ چند» — hansı vaxtda (saat neçədə); cavab: ساعتِ هشت.\n"
+                "«چند ساعت» — nə qədər müddət (neçə saat); cavab: دو ساعت.\n"
+                "Fərq yalnız söz sırasındadır, mənası isə tamamilə başqadır."
+            ),
             "conjugations": [
                 {"pronoun_fa": "ساعتِ چند؟", "form_fa": "ساعت، چند است؟ (saat kimin vaxtı → ساعت هشت است)"},
                 {"pronoun_fa": "چند ساعت؟", "form_fa": "چند ساعت درس می‌دهد؟ (neçə saat müddət → دو ساعت)"},
@@ -81,6 +91,11 @@ LESSON = {
         {
             "title_az": "«هم؛ هم … هم» (da/də; həm … həm)",
             "title_fa": "«هم» ؛ «هم ... هم»",
+            "explanation_az": (
+                "Tək «هم» «da/də» mənasını verir və aid olduğu sözdən SONRA gəlir: پسرم هم عسل می‌خورد.\n"
+                "«هم … هم» — «həm … həm də»: هم عسل، هم کره می‌خورد.\n"
+                "İnkarda isə «نه … نه» işlənir: نه ماکارونی، نه کنسرو."
+            ),
             "conjugations": [
                 {"pronoun_fa": "من عسل می‌خورم؛ پسرم حسین هم عسل می‌خورد.", "form_fa": "Mən bal yeyirəm; oğlum Hüseyn də bal yeyir."},
                 {"pronoun_fa": "پسرم هم عسل می‌خورد، هم کره می‌خورد.", "form_fa": "Oğlum həm bal, həm kərə yağı yeyir."},

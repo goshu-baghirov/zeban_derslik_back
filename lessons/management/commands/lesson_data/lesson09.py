@@ -65,6 +65,11 @@ LESSON = {
         {
             "title_az": "Ədədlərin yazılışı və oxunuşu",
             "title_fa": "نوشتن و خواندن عددها",
+            "explanation_az": (
+                "Yazıda «و» ayrı yazılır, oxunuşda isə əvvəlki sözə qoşulur: بیست و پنج → «bistop-pənc».\n"
+                "Danışıqda bəzi ədədlər qısalır: چهار → چار، شش → شیش، چهل → چل.\n"
+                "Bəzi ədədlərin iki yazılışı var: هجده = هیجده."
+            ),
             "conjugations": [
                 {"pronoun_fa": "۲۵ می‌نویسیم: بیست و پنج", "form_fa": "می‌خوانیم: بیستُ پنج"},
                 {"pronoun_fa": "۵۴ می‌نویسیم: پنجاه و چهار", "form_fa": "می‌خوانیم: پنجاهُ چهار"},
@@ -111,6 +116,11 @@ LESSON = {
         {
             "title_az": "Deyək — deməyək: saydan sonra isim TƏK olur",
             "title_fa": "بگوییم – نگوییم",
+            "explanation_az": (
+                "Ədəddən sonra isim cəm şəkilçisi ALMIR: سه پیراهن ✓ — سه پیراهن‌ها ✗\n"
+                "Say özü çoxluğu bildirdiyi üçün «ها» artıq olur.\n"
+                "Azərbaycan dilində də eyni qayda var: «üç köynək» deyilir, «üç köynəklər» yox."
+            ),
             "conjugations": [
                 {"pronoun_fa": "من سه پیراهن دارم. ✓", "form_fa": "من سه پیراهن‌ها دارم. ✗"},
                 {"pronoun_fa": "او دوازده نان می‌خواهد. ✓", "form_fa": "او دوازده نان‌ها می‌خواهد. ✗"},
@@ -140,6 +150,11 @@ LESSON = {
         {
             "title_az": "Riyazi işarələr (1): + − × ÷ =",
             "title_fa": "نشانه‌های ریاضی (۱)",
+            "explanation_az": (
+                "İşarələrin adları: + به‌علاوه(ی)، − منها، × ضرب در، ÷ تقسیم بر، = مساوی است با.\n"
+                "Nəticə həmişə «مساوی است با ...» ilə deyilir.\n"
+                "Fars yazısında ifadə sağdan sola yazılır: ۷=۴+۳ — «سه به‌علاوه‌ی چهار مساوی است با هفت»."
+            ),
             "conjugations": [
                 {"pronoun_fa": "۲=۲ (مساوی)", "form_fa": "دو مساوی است با دو"},
                 {"pronoun_fa": "۷=۴+۳ (جمع)", "form_fa": "سه به علاوه‌ی چهار، مساوی است با هفت"},
@@ -174,6 +189,11 @@ LESSON = {
         {
             "title_az": "Riyazi işarələr (2): faiz (٪) və onluq kəsr (ممیّز)",
             "title_fa": "نشانه‌های ریاضی (۲)",
+            "explanation_az": (
+                "«٪» işarəsi faiz bildirir və «درصد» oxunur: ٪۲۵ — بیست و پنج درصد.\n"
+                "Onluq kəsrdə vergülün yerinə «ممیّز» deyilir: ۹/۷۵ — نه ممیّز هفتاد و پنج صدم.\n"
+                "«۴/۵» üçün «چهار و نیم» (dörd yarım) demək də olar."
+            ),
             "conjugations": [
                 {"pronoun_fa": "٪۲۵", "form_fa": "بیست و پنج درصد"},
                 {"pronoun_fa": "٪۱۰۰", "form_fa": "صد درصد"},

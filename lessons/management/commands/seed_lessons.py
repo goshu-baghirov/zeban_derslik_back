@@ -25,6 +25,8 @@ from lessons.models import (
     Lesson,
     ListenReadExercise,
     ListenReadSentence,
+    MultiBlankExercise,
+    MultiBlankItem,
     PictureSentenceExercise,
     PictureSentenceItem,
     PictureSentenceLine,
@@ -39,6 +41,17 @@ from lessons.models import (
 from .lesson_data import LESSONS as EXTRA_LESSONS
 
 DEFAULT_ASSETS_DIR = Path(r"C:\Users\bagir\Desktop\zeban_derslik_mobile")
+
+# Bitmiş ("dondurulmuş") dərslər: bu nömrələrə seed ZAMANI ÜMUMİYYƏTLƏ toxunulmur.
+# Səbəb: bu dərslərin məzmunu yekunlaşıb və admin panelindən yüklənmiş şəkillər/
+# mətnlər fayldakı köhnə versiya ilə üstələnməməlidir (_attach_image diskdəki fayl
+# fərqli ölçüdədirsə media-dakını silib yenidən yazır — admin-dən dəyişdirilmiş
+# şəkillər məhz belə itirdi).
+#
+# Yeni dərs üzərində işləyəndə bura toxunmaq lazım deyil — yalnız həmin dərs seed olunur.
+# Dondurulmuş dərsi bilərəkdən yenidən seed etmək üçün:
+#     manage.py seed_lessons --include-frozen
+FROZEN_LESSONS = {1, 2, 3}
 
 UPCOMING_TITLES = [
     ("انسان؛ خانواده و بستگان", "İnsan; ailə və qohumlar"),
@@ -101,6 +114,12 @@ LESSON_1 = {
         {
             "title_az": 'Mənfi fel "نیست" (deyil)',
             "title_fa": "فعل منفیِ «نیست»",
+            "explanation_az": (
+                "«است» cümləni təsdiq edir: این کتاب است. — Bu, kitabdır.\n"
+                "İnkar üçün «است» yerinə «نیست» işlənir: این کتاب نیست. — Bu, kitab deyil.\n"
+                "Adətən əvvəlcə nə OLMADIĞI, sonra nə olduğu deyilir: این کتاب نیست؛ این دفتر است.\n"
+                "Fel həmişə cümlənin sonunda gəlir."
+            ),
             "conjugations": [],
             "examples": [
                 {"fa": "این کتاب است.", "az": "Bu kitabdır."},
@@ -174,6 +193,12 @@ LESSON_1 = {
         {
             "title_az": 'Mənfi fel "ندارم؛ نداری؛ ..." (yoxdur)',
             "title_fa": "فعل منفیِ «ندارم؛ نداری؛ ...»",
+            "explanation_az": (
+                "«داشتن» feli sahibliyi bildirir: من ... دارم — mənim ...-ım var.\n"
+                "İnkar üçün felin əvvəlinə «ن» artırılır: دارم → ندارم (yoxdur).\n"
+                "Fel şəxsə görə dəyişir: دارم / داری / دارد / داریم / دارید / دارند.\n"
+                "Əşyanın adı dəyişmir — yalnız fel şəxs şəkilçisi alır."
+            ),
             "conjugations": [
                 {"pronoun_fa": "من", "form_fa": "دارم / ندارم"},
                 {"pronoun_fa": "تو", "form_fa": "داری / نداری"},
@@ -331,6 +356,12 @@ LESSON_1 = {
         {
             "title_az": "Mənfi sual cümləsi",
             "title_fa": "جمله‌ی پرسشی منفی",
+            "explanation_az": (
+                "Mənfi sual «آیا» ilə başlayır və feli inkarda olur: آیا ... ندارد؟\n"
+                "«چرا» ilə cavab inkarı RƏDD edir: «Xeyr, əksinə, var».\n"
+                "«نه» ilə cavab isə inkarı TƏSDİQ edir: «Bəli, yoxdur».\n"
+                "Diqqət: burada «چرا» «niyə» yox, «əksinə» mənasındadır."
+            ),
             "conjugations": [],
             "examples": [
                 {
@@ -1015,6 +1046,11 @@ LESSON_2 = {
         {
             "title_az": 'Sual cümləsində "یا" (ya)',
             "title_fa": "«یا» در جمله‌ی پرسشی",
+            "explanation_az": (
+                "«یا» iki variantı qarşılaşdırır: A است یا B؟ — A-dır, yoxsa B?\n"
+                "Cavabda yalnız düzgün variant təkrarlanır, «یا» işlənmir.\n"
+                "İkinci hissədə təkrarlanan söz buraxıla bilər: این بزرگ است یا کوچک؟"
+            ),
             "conjugations": [],
             "examples": [
                 {
@@ -1082,6 +1118,11 @@ LESSON_2 = {
         {
             "title_az": 'Sual cümləsi "چه‌کار می‌کند؟" (O nə edir?)',
             "title_fa": "جمله‌ی پرسشی «چه‌کار می‌کند؟»",
+            "explanation_az": (
+                "«چه‌کار می‌کند؟» görülən işi soruşur — «nə edir?».\n"
+                "Fel şəxsə görə dəyişir: چه‌کار می‌کنی؟ / چه‌کار می‌کنید؟ / چه‌کار می‌کنند؟\n"
+                "Cavabda sual sözünün yerinə konkret fel qoyulur: ... روزنامه می‌خواند."
+            ),
             "conjugations": [],
             "examples": [
                 {
@@ -1144,6 +1185,11 @@ LESSON_2 = {
         {
             "title_az": "Hörmət forması (تو → شما, او → ایشان)",
             "title_fa": "جمله‌ی محترمانه",
+            "explanation_az": (
+                "Hörmətlə müraciətdə «تو» → «شما», «او» → «ایشان» olur.\n"
+                "«شما» ilə fel həm təkdə (هستی), həm cəmdə (هستید) işlənə bilər; cəm forma daha nəzakətlidir.\n"
+                "«ایشان» bir nəfər üçün deyilsə də, feli çox vaxt cəm olur: ایشان استاد هستند."
+            ),
             "conjugations": [
                 {"pronoun_fa": "تو", "form_fa": "شما"},
                 {"pronoun_fa": "تو استاد هستی.", "form_fa": "شما استاد هستی. / شما استاد هستید."},
@@ -2087,23 +2133,50 @@ class Command(BaseCommand):
             default=str(DEFAULT_ASSETS_DIR),
             help="zeban_derslik_mobile layihəsinin kök qovluğu (assets/images/... buradan oxunur).",
         )
+        parser.add_argument(
+            "--include-frozen",
+            action="store_true",
+            help=(
+                f"Dondurulmuş dərsləri {sorted(FROZEN_LESSONS)} də yenidən seed edir. "
+                "DİQQƏT: admin panelindən yüklənmiş şəkilləri və mətnləri fayldakı "
+                "köhnə versiya ilə əvəz edə bilər."
+            ),
+        )
 
     def handle(self, *args, **options):
         assets_dir = Path(options["assets_dir"])
         if not assets_dir.exists():
             raise CommandError(f"Mobil layihə qovluğu tapılmadı: {assets_dir}")
 
+        frozen = set() if options["include_frozen"] else FROZEN_LESSONS
+
         with transaction.atomic():
-            self._seed_full_lesson(LESSON_1, assets_dir)
-            self._seed_full_lesson(LESSON_2, assets_dir)
-            seeded_numbers = {1, 2}
-            for lesson_data in EXTRA_LESSONS:
+            seeded_numbers = set()
+            for lesson_data in (LESSON_1, LESSON_2, *EXTRA_LESSONS):
+                number = lesson_data["number"]
+                # Dondurulmuş dərs seed olunmasa da, nömrəsi "seeded" sayılır —
+                # əks halda _seed_placeholders onu kilidli boş dərslə əvəz edərdi.
+                seeded_numbers.add(number)
+                if number in frozen:
+                    self._write(self.style.WARNING(f"Ders {number} dondurulub - kecildi."))
+                    continue
                 self._seed_full_lesson(lesson_data, assets_dir)
-                seeded_numbers.add(lesson_data["number"])
             self._seed_placeholders(seeded_numbers)
 
+        if frozen:
+            self._write(
+                self.style.WARNING(
+                    f"Dondurulmus dersler ({', '.join(str(n) for n in sorted(frozen))}) "
+                    "toxunulmadi. Onlari da seed etmek ucun: --include-frozen"
+                )
+            )
+        self._write(self.style.SUCCESS("Dersler ugurla kecirildi."))
+
+    def _write(self, message):
+        """Konsol cp1252 olanda qeyri-ASCII simvollar UnicodeEncodeError verir —
+        çıxış mesajları heç vaxt əməliyyatı dayandırmamalıdır."""
         try:
-            self.stdout.write(self.style.SUCCESS("Dersler ugurla kecirildi."))
+            self.stdout.write(message)
         except Exception:
             pass
 
@@ -2174,6 +2247,7 @@ class Command(BaseCommand):
         # sıralamaq nadir hal olduğundan bu kifayət qədər etibarlıdır. Elementlər
         # isə (vocab/qrammatika kimi) öz mətn açarlarına görə ayrıca qorunur.
         existing_fill_blank = list(lesson.fill_blank_exercises.all().prefetch_related("items"))
+        existing_multi_blank = list(lesson.multi_blank_exercises.all().prefetch_related("items"))
         existing_practice_reveal = list(lesson.practice_reveal_exercises.all().prefetch_related("items"))
         existing_picture_sentences = list(lesson.picture_sentence_exercises.all().prefetch_related("items__sentences"))
         existing_answer_question = list(lesson.answer_question_exercises.all().prefetch_related("items"))
@@ -2188,6 +2262,7 @@ class Command(BaseCommand):
         # sözlərin anbara götürülməsindən SONRA silinir — bax aşağı şərh.)
         lesson.grammar_notes.all().delete()
         lesson.fill_blank_exercises.all().delete()
+        lesson.multi_blank_exercises.all().delete()
         lesson.practice_reveal_exercises.all().delete()
         lesson.picture_sentence_exercises.all().delete()
         lesson.answer_question_exercises.all().delete()
@@ -2242,6 +2317,16 @@ class Command(BaseCommand):
                 title_az=note_data["title_az"],
                 title_fa=note_data["title_fa"],
                 order=order,
+                # İzah qutusunun öz bayrağı var (note_* sahələrindən ayrı):
+                # tətbiqdən redaktə olunubsa, fayldakı mətn onu üstələmir.
+                explanation_az=(
+                    prior_note.explanation_az
+                    if prior_note is not None and prior_note.explanation_edited_via_app
+                    else note_data.get("explanation_az", "")
+                ),
+                explanation_edited_via_app=(
+                    prior_note is not None and prior_note.explanation_edited_via_app
+                ),
                 note_fa=(prior_note.note_fa if note_prior_ok else note_data.get("note_fa", "")),
                 note_reading_az=(
                     prior_note.note_reading_az if note_prior_ok else note_data.get("note_reading_az", "")
@@ -2321,7 +2406,7 @@ class Command(BaseCommand):
                     drill_item.save()
 
         exercise_order = {
-            "fill_blank": 0, "practice_reveal": 0,
+            "fill_blank": 0, "multi_blank": 0, "practice_reveal": 0,
             "picture_sentences": 0, "answer_question": 0,
         }
         for overall_order, ex_data in enumerate(data["exercises"]):
@@ -2357,6 +2442,46 @@ class Command(BaseCommand):
                 next_item_order = len(ex_data["items"])
                 for fa_blank, i in prior_items.items():
                     if fa_blank not in seed_blanks and i.edited_via_app:
+                        i.pk = None
+                        i.exercise = exercise
+                        i.order = next_item_order
+                        i.save()
+                        next_item_order += 1
+
+            elif kind == "multi_blank":
+                prior = existing_multi_blank[position] if position < len(existing_multi_blank) else None
+                prior_ok = prior is not None and prior.edited_via_app
+                exercise = MultiBlankExercise.objects.create(
+                    lesson=lesson,
+                    title_fa=(prior.title_fa if prior_ok else ex_data.get("title_fa", "")),
+                    instruction_az=(prior.instruction_az if prior_ok else ex_data["instruction_az"]),
+                    word_bank=(prior.word_bank if prior_ok else ex_data["word_bank"]),
+                    example_fa=(prior.example_fa if prior_ok else ex_data.get("example_fa", "")),
+                    example_reading_az=(
+                        prior.example_reading_az if prior_ok else ex_data.get("example_reading_az", "")
+                    ),
+                    example_az=(prior.example_az if prior_ok else ex_data.get("example_az", "")),
+                    order=overall_order,
+                    edited_via_app=prior_ok,
+                )
+                prior_items = {i.fa_with_blanks: i for i in prior.items.all()} if prior else {}
+                seed_blanks = {item["fa_with_blanks"] for item in ex_data["items"]}
+                for i_order, item in enumerate(ex_data["items"]):
+                    prior_item = prior_items.get(item["fa_with_blanks"])
+                    item_ok = prior_item is not None and prior_item.edited_via_app
+                    if item_ok:
+                        MultiBlankItem.objects.create(
+                            exercise=exercise, order=i_order, edited_via_app=True,
+                            fa_with_blanks=prior_item.fa_with_blanks,
+                            correct_answers=prior_item.correct_answers,
+                            full_reading_az=prior_item.full_reading_az,
+                            full_translation_az=prior_item.full_translation_az,
+                        )
+                    else:
+                        MultiBlankItem.objects.create(exercise=exercise, order=i_order, **item)
+                next_item_order = len(ex_data["items"])
+                for fa_blanks, i in prior_items.items():
+                    if fa_blanks not in seed_blanks and i.edited_via_app:
                         i.pk = None
                         i.exercise = exercise
                         i.order = next_item_order
@@ -2557,7 +2682,17 @@ class Command(BaseCommand):
                     existing_listen_exercises[ex_position]
                     if ex_position < len(existing_listen_exercises) else None
                 )
-                exercise = ListenReadExercise.objects.create(practice=practice, order=ex_position + 1)
+                note_prior_ok = prior_exercise is not None and prior_exercise.note_edited_via_app
+                exercise = ListenReadExercise.objects.create(
+                    practice=practice,
+                    order=ex_position + 1,
+                    note_fa=(prior_exercise.note_fa if note_prior_ok else ex_data.get("note_fa", "")),
+                    note_reading_az=(
+                        prior_exercise.note_reading_az if note_prior_ok else ex_data.get("note_reading_az", "")
+                    ),
+                    note_az=(prior_exercise.note_az if note_prior_ok else ex_data.get("note_az", "")),
+                    note_edited_via_app=note_prior_ok,
+                )
                 prior_items = {s.fa: s for s in prior_exercise.items.all()} if prior_exercise else {}
                 seed_item_fas = {item["fa"] for item in ex_data["items"]}
                 for l_order, item in enumerate(ex_data["items"]):

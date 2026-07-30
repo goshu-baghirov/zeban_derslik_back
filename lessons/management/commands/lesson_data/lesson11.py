@@ -45,6 +45,11 @@ LESSON = {
         {
             "title_az": "Deyək — deməyək: «برای + məsdər» quruluşu",
             "title_fa": "بگوییم – نگوییم",
+            "explanation_az": (
+                "Məqsəd bildirmək üçün «برای»dan sonra fel MƏSDƏR formasında gəlir: برای درس خواندن.\n"
+                "Şəxsli fel işlətmək olmaz: برای درس می‌خوانم ✗\n"
+                "Azərbaycancası «…-maq üçün» olur: oxumaq üçün."
+            ),
             "conjugations": [
                 {"pronoun_fa": "من برای لباس دوختن به خیّاطی می‌روم. ✓", "form_fa": "من برای لباس می‌دوزم، به خیّاطی می‌روم. ✗"},
                 {"pronoun_fa": "حسین برای درس خواندن به قم می‌آید. ✓", "form_fa": "حسین برای درس می‌خواند به قم می‌آید. ✗"},
@@ -60,6 +65,11 @@ LESSON = {
         {
             "title_az": "Həftənin günləri",
             "title_fa": "روزهای هفته",
+            "explanation_az": (
+                "Fars həftəsi «شنبه» (şənbə) günü ilə başlayır.\n"
+                "Günlərin çoxu «شنبه» sözü üzərində qurulur: یک‌شنبه، دوشنبه، سه‌شنبه، چهارشنبه، پنج‌شنبه; yalnız «جمعه» fərqlidir.\n"
+                "İranda istirahət günü cümədir — məktəb və idarələr bağlı olur."
+            ),
             "conjugations": [
                 {"pronoun_fa": "۱", "form_fa": "شنبه"},
                 {"pronoun_fa": "۲", "form_fa": "یک‌شنبه"},
@@ -94,6 +104,11 @@ LESSON = {
         {
             "title_az": "Sual sözü «چند شنبه» (həftənin hansı günü?)",
             "title_fa": "واژه‌ی پرسشی «چند شنبه»",
+            "explanation_az": (
+                "«چند شنبه» həftənin hansı günü olduğunu soruşur: امروز چند شنبه است؟\n"
+                "Cavabda birbaşa günün adı deyilir: امروز پنج‌شنبه است.\n"
+                "Təkrarlanan günlər üçün «روزهای ...» işlənir: روزهای دوشنبه و جمعه."
+            ),
             "conjugations": [
                 {"pronoun_fa": "امروز چند شنبه است؟", "form_fa": "امروز پنج‌شنبه است."},
                 {"pronoun_fa": "پدرت چند شنبه به ایران می‌آید؟", "form_fa": "پدرم دوشنبه به ایران می‌آید."},
@@ -108,6 +123,11 @@ LESSON = {
         {
             "title_az": "Zaman zərfləri: پریروز؛ دیروز؛ امروز؛ فردا؛ پس‌فردا",
             "title_fa": "قید زمان «... دیروز؛ امروز؛ فردا؛ ...»",
+            "explanation_az": (
+                "Gün zərfləri: پریروز (srağagün), دیروز (dünən), امروز (bu gün), فردا (sabah), پس‌فردا (birigün).\n"
+                "Keçmiş günlərdən danışanda fel keçmiş zamanda olur: دیروز ... بودم.\n"
+                "Bu gün və gələcək üçün indiki zaman feli işlənir: فردا ... هستم."
+            ),
             "conjugations": [
                 {"pronoun_fa": "سه روز قبل", "form_fa": "شنبه"},
                 {"pronoun_fa": "پریروز", "form_fa": "دوشنبه"},
@@ -127,6 +147,11 @@ LESSON = {
         {
             "title_az": "Keçmiş zaman feli «بودم؛ بودی؛ بود؛ ...» (idim, idin, idi...)",
             "title_fa": "فعل گذشته‌ی «بودم؛ بودی؛ بود؛ ...»",
+            "explanation_az": (
+                "«بودن» feli «هستن» felinin keçmiş zaman qarşılığıdır — «idim, idin, idi…».\n"
+                "هستم → بودم، هستی → بودی، هست → بود، هستیم → بودیم، هستید → بودید، هستند → بودند.\n"
+                "Zaman zərfi ilə uzlaşır: دیروز ... بودم, امروز ... هستم."
+            ),
             "conjugations": [
                 {"pronoun_fa": "من", "form_fa": "هستم (امروز) → بودم (دیروز)"},
                 {"pronoun_fa": "تو", "form_fa": "هستی → بودی"},

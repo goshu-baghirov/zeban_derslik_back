@@ -45,6 +45,12 @@ LESSON = {
         {
             "title_az": "Əmr (buyruq) feli",
             "title_fa": "فعل امر",
+            "explanation_az": (
+                "Əmr feli məsdərin indiki zaman kökünə «بـ» artırmaqla düzəlir: خوردن → بخور.\n"
+                "Cəm və nəzakətli formada «ید» əlavə olunur: بخورید.\n"
+                "Mürəkkəb fellərdə «بـ» ikinci hissəyə qoşulur: پاک کن، مسواک بزن.\n"
+                "Bəzi fellər qaydasızdır: رفتن → برو، آمدن → بیا."
+            ),
             "conjugations": [
                 {"pronoun_fa": "خوردن (məsdər)", "form_fa": "بخور (tək) / بخورید (cəm)"},
                 {"pronoun_fa": "پاک کردن", "form_fa": "پاک کن / پاک کنید"},
@@ -74,6 +80,11 @@ LESSON = {
         {
             "title_az": "«لطفاً» və «خواهش می‌کنم» quruluşları",
             "title_fa": "«لطفاً» ؛ «خواهش می‌کنم»",
+            "explanation_az": (
+                "Əmri nəzakətli etmək üçün cümlənin əvvəlinə «لطفاً» və ya «خواهش می‌کنم» qoyulur.\n"
+                "Fel yenə də əmr formasında qalır: لطفاً بنویسید.\n"
+                "«لطفاً» — zəhmət olmasa; «خواهش می‌کنم» — xahiş edirəm."
+            ),
             "conjugations": [
                 {"pronoun_fa": "نوشتن", "form_fa": "لطفاً بنویسید (بنویس)"},
                 {"pronoun_fa": "بازکردن", "form_fa": "خواهش می‌کنم پنجره را باز کن (باز کنید)"},
@@ -91,6 +102,11 @@ LESSON = {
         {
             "title_az": "«در حالِ» quruluşu (…etməkdə olarkən) — keçmişdə davam edən iş",
             "title_fa": "«در حالِ ........ بودم که ........»",
+            "explanation_az": (
+                "Bu quruluş keçmişdə DAVAM EDƏN işi bildirir: «… etməkdə idim ki, …».\n"
+                "Quruluş: در حالِ + məsdər + بودم/بودی/بود… + که + ikinci iş.\n"
+                "İkinci iş birinci davam edərkən baş verir və keçmiş zamanda deyilir."
+            ),
             "conjugations": [
                 {"pronoun_fa": "استراحت‌کردن + مادرم صدا زدن", "form_fa": "در حال استراحت کردن بودم که مادرم مرا صدا زد."},
                 {"pronoun_fa": "دیدن فیلم + تلویزیون خراب‌شدن", "form_fa": "در حال دیدن فیلم بودیم که تلویزیون خراب شد."},

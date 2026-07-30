@@ -17,6 +17,8 @@ from .models import (
     Lesson,
     ListenReadExercise,
     ListenReadSentence,
+    MultiBlankExercise,
+    MultiBlankItem,
     PictureSentenceExercise,
     PictureSentenceItem,
     PictureSentenceLine,
@@ -92,8 +94,11 @@ class TopicDrillInline(nested_admin.NestedStackedInline):
 class GrammarNoteInline(nested_admin.NestedStackedInline):
     model = GrammarNote
     extra = 0
-    fields = ("order", "title_az", "title_fa", "note_fa", "note_reading_az", "note_az", "edited_via_app")
-    readonly_fields = ("edited_via_app",)
+    fields = (
+        "order", "title_az", "title_fa", "explanation_az", "explanation_edited_via_app",
+        "note_fa", "note_reading_az", "note_az", "edited_via_app",
+    )
+    readonly_fields = ("edited_via_app", "explanation_edited_via_app")
     inlines = [ConjugationRowInline, ExampleSentenceInline, TopicDrillInline]
 
 
@@ -106,6 +111,23 @@ class FillBlankExerciseInline(nested_admin.NestedStackedInline):
     model = FillBlankExercise
     extra = 0
     inlines = [FillBlankItemInline]
+
+
+class MultiBlankItemInline(nested_admin.NestedTabularInline):
+    model = MultiBlankItem
+    extra = 1
+    fields = ("order", "fa_with_blanks", "correct_answers", "full_reading_az", "full_translation_az")
+
+
+class MultiBlankExerciseInline(nested_admin.NestedStackedInline):
+    model = MultiBlankExercise
+    extra = 0
+    fields = (
+        "order", "title_fa", "instruction_az", "word_bank",
+        "example_fa", "example_reading_az", "example_az", "edited_via_app",
+    )
+    readonly_fields = ("edited_via_app",)
+    inlines = [MultiBlankItemInline]
 
 
 class PictureSentenceLineInline(nested_admin.NestedTabularInline):
@@ -186,7 +208,8 @@ class ListenReadSentenceInline(nested_admin.NestedTabularInline):
 class ListenReadExerciseInline(nested_admin.NestedStackedInline):
     model = ListenReadExercise
     extra = 0
-    fields = ("order",)
+    fields = ("order", "note_fa", "note_reading_az", "note_az", "note_edited_via_app")
+    readonly_fields = ("note_edited_via_app",)
     inlines = [ListenReadSentenceInline]
 
 
@@ -288,6 +311,7 @@ class LessonAdmin(nested_admin.NestedModelAdmin):
         SentencePracticeInline,
         GrammarNoteInline,
         FillBlankExerciseInline,
+        MultiBlankExerciseInline,
         PracticeRevealExerciseInline,
         PictureSentenceExerciseInline,
         AnswerQuestionExerciseInline,

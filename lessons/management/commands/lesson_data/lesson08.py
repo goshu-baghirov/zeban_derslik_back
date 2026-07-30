@@ -47,6 +47,11 @@ LESSON = {
         {
             "title_az": "«دارای ... است» quruluşu (malikdir)",
             "title_fa": "دارای ........ است.",
+            "explanation_az": (
+                "«دارای ... است» «دارد» ilə eyni mənanı verən rəsmi (kitab) üslubudur.\n"
+                "Quruluş: mübtəda + دارای + sahib olunan şey + است.\n"
+                "این خانه چهار اتاق دارد. = این خانه دارای چهار اتاق است."
+            ),
             "conjugations": [
                 {"pronoun_fa": "این خانه یک آشپزخانه و چهار اتاق دارد.", "form_fa": "این خانه دارای یک آشپزخانه و چهار اتاق است."},
             ],
@@ -72,6 +77,11 @@ LESSON = {
         {
             "title_az": "Sual sözü «کیست؟» (kimdir?)",
             "title_fa": "واژه‌ی پرسشی «کیست؟»",
+            "explanation_az": (
+                "«کیست؟» şəxs haqqında soruşur: این خانم کیست؟ — Bu xanım kimdir?\n"
+                "Əşya üçün isə «چیست؟» işlənir: این چیست؟\n"
+                "«کیست» = «کی است»in qısa formasıdır; cavabda ad, qohumluq və ya peşə deyilə bilər."
+            ),
             "conjugations": [
                 {"pronoun_fa": "این چیست؟", "form_fa": "این گردن‌بند است. (əşya üçün)"},
                 {"pronoun_fa": "این خانم کیست؟", "form_fa": "این خانم، زینب است. (şəxs üçün)"},
@@ -100,6 +110,11 @@ LESSON = {
         {
             "title_az": "Sual sözləri «چه چیزی» (nə?) və «چه کسی» (kim?)",
             "title_fa": "واژه‌های پرسشی «چه چیزی» و «چه کسی»",
+            "explanation_az": (
+                "«چه چیزی (چه)» əşyanı, «چه کسی» isə şəxsi soruşur.\n"
+                "Cəm forması: «چه چیزهایی» və «چه کسانی».\n"
+                "Sual sözü cümlədə hansı üzvün yerində durursa, cavab da həmin yerdə verilir."
+            ),
             "conjugations": [
                 {"pronoun_fa": "علی چه چیزی (چه) دارد؟", "form_fa": "علی تلفن همراه دارد."},
                 {"pronoun_fa": "چه‌کسی تلفن همراه دارد؟", "form_fa": "علی تلفن همراه دارد."},

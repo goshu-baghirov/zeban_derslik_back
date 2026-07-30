@@ -47,6 +47,11 @@ LESSON = {
         {
             "title_az": "Cəm şəkilçiləri «ها» və «ان»",
             "title_fa": "نشانه‌های جمع «ها» و «ان»",
+            "explanation_az": (
+                "«ها» bütün isimlərin cəmində işlənə bilər: کتاب‌ها، اسب‌ها، استادها.\n"
+                "«ان» əsasən canlılara aiddir: مردان، دختران، کودکان، درختان.\n"
+                "Cansız sözlərdə «ان» işlənmir: لباس‌ها ✓ — لباسان ✗"
+            ),
             "conjugations": [
                 {"pronoun_fa": "پسر", "form_fa": "پسرها / پسران"},
                 {"pronoun_fa": "شتر", "form_fa": "شترها / شتران"},
@@ -83,6 +88,11 @@ LESSON = {
         {
             "title_az": "Cəm mübtəda və feli (نهادِ جمع و فعل آن)",
             "title_fa": "نهادِ جمع و فعل آن",
+            "explanation_az": (
+                "Mübtəda CANLI və cəm olarsa, fel mütləq cəm olur: این دخترها مانتو می‌پوشند. ✓\n"
+                "Cansız cəm mübtəda ilə fel həm cəm, həm tək ola bilər: این کاغذها سفید هستند = ... سفید است.\n"
+                "Buna görə «پزشکان ... معاینه می‌کنند» düzgün, «معاینه می‌کند» yanlışdır."
+            ),
             "conjugations": [
                 {"pronoun_fa": "دانش‌آموزها در کلاس هستند. ✓", "form_fa": "دانش‌آموزها در کلاس است. ✗"},
                 {"pronoun_fa": "این صندلی‌ها تمیز هستند. ✓", "form_fa": "این صندلی‌ها تمیز است. ✓ (cansız üçün hər ikisi olar)"},
@@ -110,6 +120,11 @@ LESSON = {
         {
             "title_az": "Deyək — deməyək: برادرِ من (mənim qardaşım) fel uzlaşması",
             "title_fa": "بگوییم – نگوییم",
+            "explanation_az": (
+                "Fel danışanla yox, cümlənin ÖZ mübtədası ilə uzlaşır.\n"
+                "برادر من درس می‌خواند. ✓ — برادر من درس می‌خوانم. ✗\n"
+                "«من ... هستم. برادرم ... است.» — hər cümlənin öz mübtədası və öz feli var."
+            ),
             "conjugations": [
                 {"pronoun_fa": "برادر من درس فارسی می‌خواند. ✓", "form_fa": "برادر من درس فارسی می‌خوانم. ✗"},
                 {"pronoun_fa": "برادرهای ما درس فارسی می‌خوانند. ✓", "form_fa": "برادرهای ما درس فارسی می‌خوانیم. ✗"},

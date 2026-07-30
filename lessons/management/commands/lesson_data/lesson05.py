@@ -40,59 +40,34 @@ LESSON = {
         {
             "title_az": "«از» (…-dan) və «به» (…-a) ön qoşmaları",
             "title_fa": "حرف اضافه‌ی «از» ؛ «به»",
+            "explanation_az": (
+                "«از» başlanğıc nöqtəni bildirir (…-dan/-dən), «به» isə istiqaməti (…-a/-ə).\n"
+                "Cümlədə əvvəlcə «از ...», sonra «به ...» gəlir: از خانه به مدرسه می‌روم.\n"
+                "Nəqliyyat vasitəsi isə «با» ilə verilir: با تاکسی."
+            ),
             "conjugations": [],
             "examples": [
                 {"fa": "من ساعت هفتِ صبح از خانه به مدرسه می‌روم.", "reading_az": "Mən saəte həfte sobh əz xane be mædrese mirəvəm.", "az": "Mən səhər saat yeddidə evdən məktəbə gedirəm."},
                 {"fa": "من ساعت دوازده از مدرسه به خانه می‌آیم.", "reading_az": "Mən saəte davazdə əz mædrese be xane miayəm.", "az": "Mən saat on ikidə məktəbdən evə gəlirəm."},
                 {"fa": "من با تاکسی از قم به فرودگاه تهران می‌روم.", "reading_az": "Mən ba taksi əz Qom be forudgahe Tehran mirəvəm.", "az": "Mən taksi ilə Qumdan Tehran hava limanına gedirəm."},
+                {"fa": "پدرم باغبان است و یک باغ بزرگ دارد. او هر روز صبح از خانه به باغ می‌رود.", "reading_az": "Pedərəm bağban əst va yek bağe bozorg darəd. U hər ruz sobh əz xane be bağ mirəvəd.", "az": "Atam bağbandır və böyük bir bağı var. O, hər gün səhər evdən bağa gedir."},
+                {"fa": "من هر روز صبح برای درس خواندن از خانه به این دانش‌گاه می‌آیم.", "reading_az": "Mən hər ruz sobh bəraye dərs xandən əz xane be in daneşgah miayəm.", "az": "Mən hər gün səhər dərs oxumaq üçün evdən bu universitetə gəlirəm."},
                 {"fa": "خانواده‌ام روز یک‌شنبه از پاکستان به ایران می‌آیند.", "reading_az": "Xanevadeəm ruze yekşənbe əz Pakestan be Iran miayənd.", "az": "Ailəm bazar günü Pakistandan İrana gəlir."},
                 {"fa": "شما از این‌جا به کجا می‌روید؟ من از این‌جا به خانه‌ی دوستم می‌روم.", "reading_az": "Şoma əz inja be koca mirəvid? Mən əz inja be xane-ye dustəm mirəvəm.", "az": "Siz buradan hara gedirsiniz? Mən buradan dostumun evinə gedirəm."},
             ],
-            "drills": [
-                {
-                    "title_fa": "مانند مثال بگویید",
-                    "instruction_az": '"از … به …" ilə nümunə kimi deyin',
-                    "example_fa": "فاطمه و مریم می‌روند. (دانش‌گاه ـ خانه) ← فاطمه و مریم *از* دانش‌گاه *به* خانه می‌روند.",
-                    "example_reading_az": "Fateme va Məryəm mirəvənd. (Daneşgah - xane) ← Fateme va Məryəm əz daneşgah be xane mirəvənd.",
-                    "example_az": "Fatimə və Məryəm gedir. (Universitet - ev) ← Fatimə və Məryəm universitetdən evə gedirlər.",
-                    "items": [
-                        {
-                            "prompt_fa": "این هواپیما می‌رود. (ایران ـ چین)",
-                            "answer_fa": "این هواپیما از ایران به چین می‌رود.",
-                            "reading_az": "İn həvapeyma əz Iran be Çin mirəvəd.",
-                            "az": "Bu təyyarə İrandan Çinə gedir.",
-                        },
-                        {
-                            "prompt_fa": "استادمان با قطار می‌رود. (اصفهان ـ شیراز)",
-                            "answer_fa": "استادمان با قطار از اصفهان به شیراز می‌رود.",
-                            "reading_az": "Ostademan ba qatar əz Esfəhan be Şiraz mirəvəd.",
-                            "az": "Müəllimimiz qatarla İsfahandan Şiraza gedir.",
-                        },
-                        {
-                            "prompt_fa": "زینب و نرگس هر روز می‌آیند. (مدرسه ـ مسجد)",
-                            "answer_fa": "زینب و نرگس هر روز از مدرسه به مسجد می‌آیند.",
-                            "reading_az": "Zeynəb va Nərges hər ruz əz mædrese be məsced miayənd.",
-                            "az": "Zeynəb və Nərgiz hər gün məktəbdən məscidə gəlirlər.",
-                        },
-                        {
-                            "prompt_fa": "من برای دیدن دوستم با قطار می‌روم. (پاکستان ـ هند)",
-                            "answer_fa": "من برای دیدن دوستم با قطار از پاکستان به هند می‌روم.",
-                            "reading_az": "Mən bəraye didəne dustəm ba qatar əz Pakestan be Hend mirəvəm.",
-                            "az": "Mən dostumu görmək üçün qatarla Pakistandan Hindistana gedirəm.",
-                        },
-                        {
-                            "prompt_fa": "من و خواهرم برای درس‌خواندن می‌آییم. (کشورمان ـ ایران)",
-                            "answer_fa": "من و خواهرم برای درس‌خواندن از کشورمان به ایران می‌آییم.",
-                            "reading_az": "Mən va xahərəm bəraye dərs-xandən əz kəşvəreman be Iran miayim.",
-                            "az": "Mən və bacım oxumaq üçün ölkəmizdən İrana gəlirik.",
-                        },
-                    ],
-                },
-            ],
+            # Qeyd: «مانند مثال بگویید» drill-i bu mövzudan çıxarılıb — indi
+            # lessonun öz «Çalışmalar» siyahısındadır (Çalışma 2,
+            # answer_question quruluşu).
+            "drills": [],
         },
         {
             "title_az": "«هستم؛ هستی؛ ...» felinin əvəzedicisi (1): استادم = استاد هستم",
             "title_fa": "جانشین فعل «هستم؛ هستی؛ ...» (۱)",
+            "explanation_az": (
+                "«هستم» felini yazmadan da eyni mənanı vermək olar — şəxs şəkilçisi birbaşa sözün sonuna qoşulur.\n"
+                "استاد هستم = استادم; استاد هستند = استادند.\n"
+                "Şəkilçilər: ـَم، ی، است، یم، ید، ـَند. Bu qayda samitlə bitən sözlərə aiddir."
+            ),
             "conjugations": [
                 {"pronoun_fa": "من", "form_fa": "استاد + ـَم → استادم"},
                 {"pronoun_fa": "تو", "form_fa": "استاد + ی → استادی"},
@@ -113,6 +88,11 @@ LESSON = {
         {
             "title_az": "«هستم؛ ...» felinin əvəzedicisi (2): «ه» ilə bitən sözlər (فروشنده‌ام)",
             "title_fa": "جانشین فعل «هستم؛ هستی؛ ...» (۲)",
+            "explanation_az": (
+                "Söz «ه» ilə bitəndə şəkilçidən əvvəl «ا» gəlir: فروشنده‌ام، فروشنده‌ای، فروشنده‌ایم، فروشنده‌اید، فروشنده‌اند.\n"
+                "3-cü şəxs təkdə forma dəyişmir: فروشنده است.\n"
+                "Söz ilə şəkilçi arasında yarımboşluq (nim-fasilə) yazılır."
+            ),
             "conjugations": [
                 {"pronoun_fa": "من", "form_fa": "فروشنده + ام → فروشنده‌ام"},
                 {"pronoun_fa": "تو", "form_fa": "فروشنده + ای → فروشنده‌ای"},
@@ -159,49 +139,119 @@ LESSON = {
     ],
     "exercises": [
         {
-            "kind": "fill_blank",
-            "instruction_az": "Boşluqları «از» və ya «به» ilə doldurun.",
-            "word_bank": ["از", "به"],
+            # Dərslikdəki «با حرف‌های «از» و «به» کامل کنید» — bir cümlədə
+            # 2-4 boşluq ola bilir, ona görə Dərs 4-ün Çalışma 1 quruluşu
+            # (multi_blank). Əvvəllər fill_blank idi və hər cümlənin yalnız bir
+            # boşluğu açıq qalırdı, qalan söz hazır verilirdi.
+            "kind": "multi_blank",
+            "title_fa": "با حرف‌های «از» و «به» کامل کنید",
+            "instruction_az": "Boşluqları «از» və «به» ön qoşmaları ilə doldurun",
+            "example_fa": (
+                "من ساعت هفتِ صبح ___ خانه ___ مدرسه می‌روم.\n"
+                "من ساعت هفتِ صبح **از** خانه *به* مدرسه می‌روم."
+            ),
+            "example_reading_az": "Mən saəte həfte sobh əz xane be mædrese mirəvəm.",
+            "example_az": (
+                "Mən səhər saat yeddidə evdən məktəbə gedirəm.\n"
+                "Qırmızı «از» — başlanğıc nöqtə (hardan?), yaşıl «به» — istiqamət (haraya?).\n"
+                "Cümlədə həmişə əvvəlcə «از …», sonra «به …» gəlir."
+            ),
+            # 9 boşluq = 9 çip (4 dəfə «از», 5 dəfə «به»). Eyni söz təkrarlanır,
+            # çünki hər çip ayrı indeksdir; uyğunluq mətnə görə yoxlanılır.
+            "word_bank": ["از", "از", "از", "از", "به", "به", "به", "به", "به"],
             "items": [
                 {
-                    "fa_with_blank": "ما ___ لبنان به ایران می‌آییم.",
-                    "correct_answer": "از",
-                    "reading_az": "əz",
-                    "az": "-dan",
+                    "fa_with_blanks": "ما ___ لبنان ___ ایران می‌آییم.",
+                    "correct_answers": ["از", "به"],
                     "full_reading_az": "Ma əz Lobnan be Iran miayim.",
                     "full_translation_az": "Biz Livandan İrana gəlirik.",
                 },
                 {
-                    "fa_with_blank": "آن‌ها ساعت یک از مسجد ___ خانه می‌آیند.",
-                    "correct_answer": "به",
-                    "reading_az": "be",
-                    "az": "-a",
+                    "fa_with_blanks": "آن‌ها ساعت یک ___ مسجد ___ خانه می‌آیند.",
+                    "correct_answers": ["از", "به"],
                     "full_reading_az": "Anha saəte yek əz məsced be xane miayənd.",
                     "full_translation_az": "Onlar saat birdə məsciddən evə gəlirlər.",
                 },
                 {
-                    "fa_with_blank": "من برای خریدن لباس و کفش ___ فروش‌گاه می‌روم.",
-                    "correct_answer": "به",
-                    "reading_az": "be",
-                    "az": "-a",
+                    "fa_with_blanks": "من برای خریدن لباس و کفش ___ فروش‌گاه می‌روم.",
+                    "correct_answers": ["به"],
                     "full_reading_az": "Mən bəraye xəridəne lebas va kəfş be foruşgah mirəvəm.",
                     "full_translation_az": "Mən paltar və ayaqqabı almaq üçün mağazaya gedirəm.",
                 },
                 {
-                    "fa_with_blank": "شما ___ کجا می‌آیید و به کجا می‌روید؟",
-                    "correct_answer": "از",
-                    "reading_az": "əz",
-                    "az": "-dan",
-                    "full_reading_az": "Şoma əz koca miayid va be koca mirəvid?",
-                    "full_translation_az": "Siz haradan gəlir və haraya gedirsiniz?",
+                    "fa_with_blanks": "شما ___ کجا می‌آیید و ___ کجا می‌روید؟ من ___ استخر می‌آیم و ___ رستوران می‌روم.",
+                    "correct_answers": ["از", "به", "از", "به"],
+                    "full_reading_az": "Şoma əz koca miayid va be koca mirəvid? Mən əz estəxr miayəm va be restoran mirəvəm.",
+                    "full_translation_az": "Siz haradan gəlir və haraya gedirsiniz? Mən hovuzdan gəlirəm və restorana gedirəm.",
+                },
+            ],
+        },
+        {
+            # Çalışma 2 — dərslikdəki «مانند مثال بگویید» (از … به … ilə cümlə
+            # qurma). Əvvəllər Mövzu 1-in daxili drill-i idi; Dərs 3-ün
+            # Çalışma 5 quruluşuna (answer_question + çoxrəngli NÜMUNƏ qutusu)
+            # keçirilib.
+            "kind": "answer_question",
+            "title_fa": "مانند مثال بگویید",
+            "instruction_az": "Nümunə kimi deyin",
+            # Qırmızı «از» — başlanğıc nöqtə, yaşıl «به» — istiqamət.
+            "example_fa": (
+                "فاطمه و مریم می‌روند. (دانش‌گاه ـ خانه)\n"
+                "فاطمه و مریم **از** دانش‌گاه *به* خانه می‌روند."
+            ),
+            "example_reading_az": (
+                "Fateme va Məryəm mirəvənd. (Daneşgah - xane)\n"
+                "Fateme va Məryəm əz daneşgah be xane mirəvənd."
+            ),
+            "example_az": (
+                "Verilən: CÜMLƏ + mötərizədə iki yer (BAŞLANĞIC ـ SON).\n"
+                "Qırmızı «از» mötərizədəki BİRİNCİ yerin, yaşıl «به» İKİNCİ yerin "
+                "qarşısına qoyulur.\n"
+                "Quruluş: SUBYEKT + از YER1 + به YER2 + FEL.\n"
+                "Fel dəyişmir — cümlədə necə verilibsə, elə də qalır "
+                "(می‌رود / می‌آیند / می‌آییم).\n"
+                "Tərcümə: Fatimə və Məryəm universitetdən evə gedirlər."
+            ),
+            "items": [
+                {
+                    "fa": "این هواپیما می‌رود. (ایران ـ چین)",
+                    "reading_az": "İn həvapeyma mirəvəd. (Iran - Çin)",
+                    "az": "Bu təyyarə gedir. (İran - Çin)",
+                    "sample_answer_fa": "این هواپیما از ایران به چین می‌رود.",
+                    "sample_answer_reading_az": "İn həvapeyma əz Iran be Çin mirəvəd.",
+                    "sample_answer_az": "Bu təyyarə İrandan Çinə gedir.",
                 },
                 {
-                    "fa_with_blank": "من از این‌جا ___ استخر می‌آیم و به رستوران می‌روم.",
-                    "correct_answer": "به",
-                    "reading_az": "be",
-                    "az": "-a",
-                    "full_reading_az": "Mən əz inja be estəxr miayəm va be restoran mirəvəm.",
-                    "full_translation_az": "Mən buradan hovuza gəlirəm və restorana gedirəm.",
+                    "fa": "استادمان با قطار می‌رود. (اصفهان ـ شیراز)",
+                    "reading_az": "Ostademan ba qatar mirəvəd. (Esfəhan - Şiraz)",
+                    "az": "Müəllimimiz qatarla gedir. (İsfahan - Şiraz)",
+                    "sample_answer_fa": "استادمان با قطار از اصفهان به شیراز می‌رود.",
+                    "sample_answer_reading_az": "Ostademan ba qatar əz Esfəhan be Şiraz mirəvəd.",
+                    "sample_answer_az": "Müəllimimiz qatarla İsfahandan Şiraza gedir.",
+                },
+                {
+                    "fa": "زینب و نرگس هر روز می‌آیند. (مدرسه ـ مسجد)",
+                    "reading_az": "Zeynəb va Nərges hər ruz miayənd. (Mædrese - məsced)",
+                    "az": "Zeynəb və Nərgiz hər gün gəlirlər. (məktəb - məscid)",
+                    "sample_answer_fa": "زینب و نرگس هر روز از مدرسه به مسجد می‌آیند.",
+                    "sample_answer_reading_az": "Zeynəb va Nərges hər ruz əz mædrese be məsced miayənd.",
+                    "sample_answer_az": "Zeynəb və Nərgiz hər gün məktəbdən məscidə gəlirlər.",
+                },
+                {
+                    "fa": "من برای دیدن دوستم با قطار می‌روم. (پاکستان ـ هند)",
+                    "reading_az": "Mən bəraye didəne dustəm ba qatar mirəvəm. (Pakestan - Hend)",
+                    "az": "Mən dostumu görmək üçün qatarla gedirəm. (Pakistan - Hindistan)",
+                    "sample_answer_fa": "من برای دیدن دوستم با قطار از پاکستان به هند می‌روم.",
+                    "sample_answer_reading_az": "Mən bəraye didəne dustəm ba qatar əz Pakestan be Hend mirəvəm.",
+                    "sample_answer_az": "Mən dostumu görmək üçün qatarla Pakistandan Hindistana gedirəm.",
+                },
+                {
+                    "fa": "من و خواهرم برای درس‌خواندن می‌آییم. (کشورمان ـ ایران)",
+                    "reading_az": "Mən va xahərəm bəraye dərs-xandən miayim. (Kəşvəreman - Iran)",
+                    "az": "Mən və bacım oxumaq üçün gəlirik. (ölkəmiz - İran)",
+                    "sample_answer_fa": "من و خواهرم برای درس‌خواندن از کشورمان به ایران می‌آییم.",
+                    "sample_answer_reading_az": "Mən va xahərəm bəraye dərs-xandən əz kəşvəreman be Iran miayim.",
+                    "sample_answer_az": "Mən və bacım oxumaq üçün ölkəmizdən İrana gəlirik.",
                 },
             ],
         },

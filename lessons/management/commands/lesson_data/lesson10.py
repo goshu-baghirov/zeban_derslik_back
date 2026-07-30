@@ -53,6 +53,11 @@ LESSON = {
         {
             "title_az": "Say vahidləri (1): نفر، بار، عدد (تا)",
             "title_fa": "واحدهای شمارش (۱)",
+            "explanation_az": (
+                "Fars dilində say ilə isim arasında xüsusi say vahidi işlənir.\n"
+                "نفر — insanlar üçün, بار/دفعه — təkrar olunan işlər üçün, عدد/تا — əşyalar üçün.\n"
+                "«تا» danışıq, «عدد» isə daha rəsmi formadır."
+            ),
             "conjugations": [
                 {"pronoun_fa": "نفر (insan üçün)", "form_fa": "در کلاس ما دوازده نفر درس می‌خوانند."},
                 {"pronoun_fa": "بار / دفعه (iş üçün)", "form_fa": "ما هر روز سه بار غذا می‌خوریم."},
@@ -71,6 +76,11 @@ LESSON = {
         {
             "title_az": "Say vahidləri (2): جلد، جفت، بسته، دستگاه، فروند، دانه",
             "title_fa": "واحدهای شمارش (۲)",
+            "explanation_az": (
+                "Hər əşya qrupunun öz say vahidi var: جلد (kitab, dəftər), جفت (cüt), بسته (bağlama), دستگاه (texnika), فروند (gəmi, təyyarə), دانه (dənə).\n"
+                "Quruluş: ədəd + vahid + isim (təkdə): سه جلد کتاب، یک جفت جوراب.\n"
+                "Vahidi düzgün seçmək lazımdır — kitab üçün «جلد», corab üçün «جفت» deyilir."
+            ),
             "conjugations": [
                 {"pronoun_fa": "جلد (kitab)", "form_fa": "روی میز من، سه جلد کتاب هست."},
                 {"pronoun_fa": "جفت (cüt əşya)", "form_fa": "پدرم امروز یک جفت جوراب برای من می‌خرد."},
@@ -89,6 +99,11 @@ LESSON = {
         {
             "title_az": "Sual sözü «چند» (1): چند عدد؛ چند نفر؛ چند جفت؛ چند بار",
             "title_fa": "واژه‌ی پرسشی «چند» (۱)",
+            "explanation_az": (
+                "«چند» miqdarı soruşur və adətən say vahidi ilə birlikdə işlənir: چند نفر؟ چند عدد؟ چند بار؟\n"
+                "Cavabda da eyni vahid təkrarlanır: سه عدد خودکار دارم.\n"
+                "Danışıqda vahid buraxıla da bilər: شما چند تا دفتر داری؟"
+            ),
             "conjugations": [
                 {"pronoun_fa": "چند عدد", "form_fa": "شما چند عدد خودکار دارید؟ من سه عدد خودکار دارم."},
                 {"pronoun_fa": "چند نفر", "form_fa": "در کلاس شما چند نفر دانش‌جو هست؟ چهارده نفر."},
@@ -107,6 +122,11 @@ LESSON = {
         {
             "title_az": "Sual sözü «چند» (2): metr, kilometr, kiloqram, tümən, yaş",
             "title_fa": "واژه‌ی پرسشی «چند» (۲)",
+            "explanation_az": (
+                "Ölçü, çəki, məsafə, qiymət və yaş da «چند» ilə soruşulur.\n"
+                "چند متر، چند کیلومتر، چند کیلوگرم، چند تومان، چند سال.\n"
+                "Yaş «داشتن» feli ilə deyilir: من بیست و سه سال دارم — «23 yaşım var»."
+            ),
             "conjugations": [
                 {"pronoun_fa": "چند متر", "form_fa": "این پارچه چند متر است؟ شش متر و سی سانتی‌متر."},
                 {"pronoun_fa": "چند کیلومتر", "form_fa": "از تهران تا قم چند کیلومتر است؟ صد و بیست و پنج کیلومتر."},

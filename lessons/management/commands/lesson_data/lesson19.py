@@ -50,6 +50,11 @@ LESSON = {
         {
             "title_az": "«بفرمایید» sözü — nəzakət ifadəsi",
             "title_fa": "«بفرمایید»",
+            "explanation_az": (
+                "«بفرمایید» nəzakət sözüdür və mənası vəziyyətə görə dəyişir: buyurun, alın, keçin, oturun.\n"
+                "Yemək təklif edəndə, hədiyyə verəndə, yer göstərəndə və içəri dəvət edəndə işlənir.\n"
+                "Samimi (tək) forması «بفرما», nəzakətli forması «بفرمایید»dir."
+            ),
             "conjugations": [
                 {"pronoun_fa": "qonağa yer göstərəndə", "form_fa": "بفرمایید (buyurun)"},
                 {"pronoun_fa": "hədiyyə verəndə", "form_fa": "بفرمایید (buyurun, alın)"},
@@ -113,6 +118,11 @@ LESSON = {
         {
             "title_az": "«… زدن» quruluşu — geniş mənalı «vurmaq/etmək» feli",
             "title_fa": "«....... زدن»",
+            "explanation_az": (
+                "«زدن» (vurmaq) feli isimlə birləşib tamamilə yeni məna verir.\n"
+                "لبخند زدن (gülümsəmək), حرف زدن (danışmaq), زنگ زدن (zəng etmək), اتو زدن (ütüləmək).\n"
+                "Mənanı sözbəsöz yox, birləşmə kimi bütöv öyrənmək lazımdır."
+            ),
             "conjugations": [
                 {"pronoun_fa": "لبخند زدن", "form_fa": "gülümsəmək"},
                 {"pronoun_fa": "شانه زدن", "form_fa": "daramaq"},
@@ -189,6 +199,11 @@ LESSON = {
         {
             "title_az": "Şəmsi tarixin yazılışı və oxunuşu",
             "title_fa": "نوشتن و خواندن «تاریخ»",
+            "explanation_az": (
+                "Tarix belə oxunur: gün (sıra sayı) + ay + il.\n"
+                "۱۳۹۱/۷/۴ — «چهارمِ مهرِ هزار و سیصد و نود و یک».\n"
+                "Yazıda ardıcıllıq il/ay/gün olur, oxunuş isə gündən başlayır; sözlər izafə (kəsrə) ilə bağlanır."
+            ),
             "conjugations": [
                 {"pronoun_fa": "۱۳۹۱/۷/۴", "form_fa": "چهارمِ مهر، هزار و سیصد و نود و یک"},
                 {"pronoun_fa": "گün + Ay + İl", "form_fa": "روز + مِ/ + ماه + ِ + هزار و ..."},

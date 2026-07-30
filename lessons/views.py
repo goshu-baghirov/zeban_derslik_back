@@ -16,7 +16,10 @@ from .models import (
     GrammarNote,
     Infinitive,
     Lesson,
+    ListenReadExercise,
     ListenReadSentence,
+    MultiBlankExercise,
+    MultiBlankItem,
     PictureSentenceExercise,
     PictureSentenceItem,
     PictureSentenceLine,
@@ -40,7 +43,10 @@ from .serializers import (
     GrammarNoteWriteSerializer,
     InfinitiveSerializer,
     LessonSerializer,
+    ListenReadExerciseNoteWriteSerializer,
     ListenReadSentenceSerializer,
+    MultiBlankExerciseSerializer,
+    MultiBlankItemSerializer,
     PictureSentenceExerciseSerializer,
     PictureSentenceItemSerializer,
     PictureSentenceLineSerializer,
@@ -75,6 +81,7 @@ class LessonViewSet(viewsets.ReadOnlyModelViewSet):
         "grammar_notes__examples",
         "grammar_notes__drills__items",
         "fill_blank_exercises__items",
+        "multi_blank_exercises__items",
         "practice_reveal_exercises__items",
         "picture_sentence_exercises__items__sentences",
         "answer_question_exercises__items",
@@ -106,16 +113,25 @@ class VocabWordViewSet(viewsets.ModelViewSet):
 
 
 class GrammarNoteViewSet(viewsets.ModelViewSet):
-    """Yalnız 'Qeyd' kartının (note_fa/reading_az/az) redaktəsi üçün — yeni
-    mövzu (GrammarNote) yaratmaq bu endpoint-dən mümkün deyil, ona görə
-    create/list/destroy açılmayıb."""
+    """Yalnız 'Qeyd' kartının (note_fa/reading_az/az) və izah qutusunun
+    (explanation_az) redaktəsi üçün — yeni mövzu (GrammarNote) yaratmaq bu
+    endpoint-dən mümkün deyil, ona görə create/list/destroy açılmayıb."""
 
     queryset = GrammarNote.objects.all()
     serializer_class = GrammarNoteWriteSerializer
     http_method_names = ["get", "patch", "head", "options"]
 
     def perform_update(self, serializer):
-        serializer.save(edited_via_app=True)
+        # İki müstəqil bayraq: izahı redaktə etmək 'Qeyd' mətnini fayl
+        # yeniləməsindən dondurmamalıdır (və əksinə). PATCH yalnız dəyişən
+        # sahələri göndərdiyinə görə hansının gəldiyinə baxırıq.
+        touched = set(serializer.validated_data)
+        flags = {}
+        if touched & {"note_fa", "note_reading_az", "note_az"}:
+            flags["edited_via_app"] = True
+        if "explanation_az" in touched:
+            flags["explanation_edited_via_app"] = True
+        serializer.save(**flags)
 
 
 class ConjugationRowViewSet(viewsets.ModelViewSet):
@@ -234,6 +250,18 @@ class SentencePracticeNoteViewSet(viewsets.ModelViewSet):
         serializer.save(answer_note_edited_via_app=True)
 
 
+class ListenReadExerciseNoteViewSet(viewsets.ModelViewSet):
+    """Bir 'Dinləyin və oxuyun' Çalışmasının sonundakı 'Qeyd' kartının
+    (note_*) redaktəsi üçün."""
+
+    queryset = ListenReadExercise.objects.all()
+    serializer_class = ListenReadExerciseNoteWriteSerializer
+    http_method_names = ["get", "patch", "head", "options"]
+
+    def perform_update(self, serializer):
+        serializer.save(note_edited_via_app=True)
+
+
 # --- Çalışmalar (Boşluq doldurma) ---
 
 class FillBlankExerciseViewSet(viewsets.ModelViewSet):
@@ -248,6 +276,29 @@ class FillBlankExerciseViewSet(viewsets.ModelViewSet):
 class FillBlankItemViewSet(viewsets.ModelViewSet):
     queryset = FillBlankItem.objects.all()
     serializer_class = FillBlankItemSerializer
+    http_method_names = ["get", "post", "patch", "head", "options"]
+
+    def perform_create(self, serializer):
+        exercise = serializer.validated_data["exercise"]
+        next_order = (exercise.items.aggregate(Max("order"))["order__max"] or 0) + 1
+        serializer.save(order=next_order, edited_via_app=True)
+
+    def perform_update(self, serializer):
+        serializer.save(edited_via_app=True)
+
+
+class MultiBlankExerciseViewSet(viewsets.ModelViewSet):
+    queryset = MultiBlankExercise.objects.all()
+    serializer_class = MultiBlankExerciseSerializer
+    http_method_names = ["get", "patch", "head", "options"]
+
+    def perform_update(self, serializer):
+        serializer.save(edited_via_app=True)
+
+
+class MultiBlankItemViewSet(viewsets.ModelViewSet):
+    queryset = MultiBlankItem.objects.all()
+    serializer_class = MultiBlankItemSerializer
     http_method_names = ["get", "post", "patch", "head", "options"]
 
     def perform_create(self, serializer):

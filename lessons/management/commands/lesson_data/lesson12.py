@@ -47,6 +47,11 @@ LESSON = {
         {
             "title_az": "«بعد؛ بعد از» ↔ «قبل؛ قبل از»",
             "title_fa": "«بعد»؛ «بعد از» — «قبل»؛ «قبل از»",
+            "explanation_az": (
+                "«بعد» — sonra, «قبل» — əvvəl deməkdir.\n"
+                "Müddət deyiləndə sözdən sonra gəlir: دو روز بعد (iki gün sonra), دو روز قبل (iki gün əvvəl).\n"
+                "Bir şeyə nisbətdə deyiləndə «از» əlavə olunur: بعد از یک‌شنبه، قبل از دوشنبه."
+            ),
             "conjugations": [
                 {"pronoun_fa": "من دو روز بعد در تهران هستم.", "form_fa": "من دو روز قبل در مشهد بودم."},
                 {"pronoun_fa": "دوشنبه، بعد از یک‌شنبه است.", "form_fa": "یک‌شنبه، قبل از دوشنبه است."},
@@ -63,6 +68,11 @@ LESSON = {
         {
             "title_az": "Zaman zərfi «دیشب؛ امشب؛ فردا شب» + keçmiş zaman feli «رفتم؛ رفتی؛ …»",
             "title_fa": "قید زمان «... دیشب؛ امشب؛ فردا شب؛ ...» و فعل گذشته‌ی «رفتم؛ رفتی؛ ...»",
+            "explanation_az": (
+                "Gecə zərfləri: پریشب (iki gecə əvvəl), دیشب (dünən gecə), امشب (bu gecə), فرداشب، پس‌فرداشب.\n"
+                "Keçmiş zaman feli məsdərin kökünə şəxs şəkilçisi qoşmaqla düzəlir: رفتم، رفتی، رفت، رفتیم، رفتید، رفتند.\n"
+                "Keçmiş zərflə keçmiş fel, bu gün və gələcək zərflə indiki zaman feli işlənir."
+            ),
             "conjugations": [
                 {"pronoun_fa": "پریشب", "form_fa": "دو شب قبل"},
                 {"pronoun_fa": "دیشب", "form_fa": "یک شب قبل"},
@@ -86,6 +96,11 @@ LESSON = {
         {
             "title_az": "Zaman zərfi «پارسال؛ امسال؛ سال بعد» + keçmiş zaman feli «آمدم؛ آمدی؛ …»",
             "title_fa": "قید زمان «... پارسال؛ امسال؛ سال بعد؛ ...» و فعل گذشته‌ی «آمدم؛ آمدی؛ ...»",
+            "explanation_az": (
+                "İl zərfləri: پیرارسال (iki il əvvəl), پارسال (keçən il), امسال (bu il), سال بعد، دو سال بعد.\n"
+                "«آمدن» felinin keçmişi: آمدم، آمدی، آمد، آمدیم، آمدید، آمدند.\n"
+                "Zərf keçmişi göstərirsə fel də keçmiş zamanda olmalıdır: پارسال ... آمدم."
+            ),
             "conjugations": [
                 {"pronoun_fa": "دو سال قبل", "form_fa": "پیرارسال"},
                 {"pronoun_fa": "پارسال", "form_fa": "سال قبل"},
@@ -123,6 +138,11 @@ LESSON = {
         {
             "title_az": "«بعضی از» quruluşu (…-lərdən bəzisi)",
             "title_fa": "«بعضی از»",
+            "explanation_az": (
+                "«بعضی از» bir qrupun bir hissəsini bildirir — «bəzisi, bir qismi».\n"
+                "Quruluş: بعضی از + cəm isim: بعضی از طلبه‌ها، بعضی از مردم.\n"
+                "İkinci dəfə təkrarlananda «از»sız da işlənir: ... و بعضی هم ..."
+            ),
             "conjugations": [
                 {"pronoun_fa": "طلبه / شهر مشهد / درس", "form_fa": "بعضی از طلبه‌ها در شهر مشهد درس می‌خوانند."},
             ],
