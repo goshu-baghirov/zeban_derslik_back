@@ -117,9 +117,33 @@ class GrammarNote(models.Model):
     )
     note_reading_az = models.TextField("Qeydin oxunuşu (az hərfləri ilə)", blank=True, default="")
     note_az = models.TextField("Qeydin tərcüməsi (az)", blank=True, default="")
+    # Eyni 'Qeyd' kartının içindəki İKİNCİ qutu — dərslikdə bəzi mövzuların
+    # qeydi bir-birindən ayrı iki bənddən ibarətdir (məs. dərs 5, mövzu 3:
+    # «ه»nin oxunmaması). Boş qalanda kartda yalnız bir qutu göstərilir.
+    note2_fa = models.TextField(
+        "Qeyd — 2-ci qutu (fars)", blank=True, default="",
+        help_text="Doldurulanda eyni 'Qeyd' kartının içində birincidən sonra ayrıca qutu kimi göstərilir.",
+    )
+    note2_reading_az = models.TextField("2-ci qutunun oxunuşu (az hərfləri ilə)", blank=True, default="")
+    note2_az = models.TextField("2-ci qutunun tərcüməsi (az)", blank=True, default="")
     edited_via_app = models.BooleanField(
         "Tətbiqdən redaktə olunub", default=False,
         help_text="Qeyd mobil tətbiqdən dəyişdirilib — seed_lessons yenidən işlədikdə üstələnmir.",
+    )
+    # «Şəkilçi cədvəli» rejimi — dərslikdəki «جانشین فعل هستم» lövhəsi kimi.
+    # Doldurulanda mobil tətbiq sadə iki sütunlu siyahı əvəzinə struktur
+    # cədvəl göstərir: nümunə söz + hər şəxs üçün şəkilçi / qısa forma /
+    # tam forma. Boş qalanda köhnə görünüş işləyir (bax ConjugationRow).
+    pattern_word_fa = models.CharField(
+        "Nümunə söz (fars)", max_length=100, blank=True, default="",
+        help_text="Cədvəlin başındakı nümunə söz, məs. «استاد». Boş olduqda struktur cədvəl göstərilmir.",
+    )
+    pattern_word_az = models.CharField(
+        "Nümunə sözün tərcüməsi (az)", max_length=200, blank=True, default="",
+    )
+    pattern_caption_az = models.CharField(
+        "Cədvəlin altyazısı (az)", max_length=300, blank=True, default="",
+        help_text="Cədvəlin başlığının altında göstərilən bir sətirlik izah.",
     )
 
     class Meta:
@@ -136,6 +160,23 @@ class ConjugationRow(models.Model):
     pronoun_fa = models.CharField("Əvəzlik (fars)", max_length=100)
     form_fa = models.CharField("Fel forması (fars)", max_length=255)
     order = models.PositiveIntegerField("Sıra", default=0)
+    # Aşağıdakılar yalnız «şəkilçi cədvəli» rejimi üçündür (bax
+    # GrammarNote.pattern_word_fa). Boş qalanda sətir köhnə kimi
+    # «pronoun_fa | form_fa» şəklində göstərilir.
+    suffix_fa = models.CharField(
+        "Şəkilçi (fars)", max_length=60, blank=True, default="",
+        help_text="Həmin şəxsin şəkilçisi, məs. «ـَم».",
+    )
+    short_fa = models.CharField(
+        "Qısa forma (fars)", max_length=255, blank=True, default="",
+        help_text="Şəkilçili qısa cümlə, məs. «من استادم.»",
+    )
+    full_fa = models.CharField(
+        "Tam forma (fars)", max_length=255, blank=True, default="",
+        help_text="«هستم» ilə tam cümlə, məs. «من استاد هستم.»",
+    )
+    reading_az = models.CharField("Üzündən oxunuş (az)", max_length=255, blank=True, default="")
+    az = models.CharField("Tərcümə (az)", max_length=255, blank=True, default="")
     edited_via_app = models.BooleanField(
         "Tətbiqdən redaktə olunub", default=False,
         help_text="Sətir mobil tətbiqdən dəyişdirilib/əlavə edilib — seed_lessons yenidən işlədikdə üstələnmir.",

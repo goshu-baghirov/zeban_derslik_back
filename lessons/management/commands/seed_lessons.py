@@ -2332,7 +2332,17 @@ class Command(BaseCommand):
                     prior_note.note_reading_az if note_prior_ok else note_data.get("note_reading_az", "")
                 ),
                 note_az=(prior_note.note_az if note_prior_ok else note_data.get("note_az", "")),
+                # Qeydin 2-ci qutusu bu fayllarda ümumiyyətlə yazılmır (yalnız
+                # bazada/tətbiqdə yaşayır), ona görə həmişə köhnə dəyər saxlanılır.
+                note2_fa=(prior_note.note2_fa if prior_note is not None else ""),
+                note2_reading_az=(prior_note.note2_reading_az if prior_note is not None else ""),
+                note2_az=(prior_note.note2_az if prior_note is not None else ""),
                 edited_via_app=note_prior_ok,
+                # «Şəkilçi cədvəli» başlığı — yalnız bu fayldan gəlir,
+                # tətbiqdən redaktə olunmur.
+                pattern_word_fa=note_data.get("pattern_word_fa", ""),
+                pattern_word_az=note_data.get("pattern_word_az", ""),
+                pattern_caption_az=note_data.get("pattern_caption_az", ""),
             )
 
             prior_conjugations = {r.pronoun_fa: r for r in prior_note.conjugations.all()} if prior_note else {}
@@ -2344,6 +2354,11 @@ class Command(BaseCommand):
                     grammar_note=note,
                     pronoun_fa=row["pronoun_fa"],
                     form_fa=(prior_row.form_fa if row_prior_ok else row["form_fa"]),
+                    suffix_fa=(prior_row.suffix_fa if row_prior_ok else row.get("suffix_fa", "")),
+                    short_fa=(prior_row.short_fa if row_prior_ok else row.get("short_fa", "")),
+                    full_fa=(prior_row.full_fa if row_prior_ok else row.get("full_fa", "")),
+                    reading_az=(prior_row.reading_az if row_prior_ok else row.get("reading_az", "")),
+                    az=(prior_row.az if row_prior_ok else row.get("az", "")),
                     order=c_order,
                     edited_via_app=row_prior_ok,
                 )

@@ -53,7 +53,18 @@ class ConjugationRowSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = ConjugationRow
-        fields = ("id", "grammar_note", "pronoun_fa", "form_fa", "order")
+        fields = (
+            "id",
+            "grammar_note",
+            "pronoun_fa",
+            "form_fa",
+            "suffix_fa",
+            "short_fa",
+            "full_fa",
+            "reading_az",
+            "az",
+            "order",
+        )
         read_only_fields = ("id", "order")
 
 
@@ -76,7 +87,12 @@ class GrammarNoteWriteSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = GrammarNote
-        fields = ("id", "note_fa", "note_reading_az", "note_az", "explanation_az")
+        fields = (
+            "id",
+            "note_fa", "note_reading_az", "note_az",
+            "note2_fa", "note2_reading_az", "note2_az",
+            "explanation_az",
+        )
         read_only_fields = ("id",)
 
 
@@ -128,12 +144,18 @@ class GrammarNoteSerializer(serializers.ModelSerializer):
             "title_az",
             "title_fa",
             "explanation_az",
+            "pattern_word_fa",
+            "pattern_word_az",
+            "pattern_caption_az",
             "conjugations",
             "examples",
             "drills",
             "note_fa",
             "note_reading_az",
             "note_az",
+            "note2_fa",
+            "note2_reading_az",
+            "note2_az",
         )
 
 

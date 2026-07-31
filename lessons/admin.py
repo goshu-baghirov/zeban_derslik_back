@@ -57,7 +57,11 @@ class VocabWordInline(nested_admin.NestedTabularInline):
 class ConjugationRowInline(nested_admin.NestedTabularInline):
     model = ConjugationRow
     extra = 1
-    fields = ("order", "pronoun_fa", "form_fa", "edited_via_app")
+    fields = (
+        "order", "pronoun_fa", "form_fa",
+        "suffix_fa", "short_fa", "full_fa", "reading_az", "az",
+        "edited_via_app",
+    )
     readonly_fields = ("edited_via_app",)
 
 
@@ -96,7 +100,9 @@ class GrammarNoteInline(nested_admin.NestedStackedInline):
     extra = 0
     fields = (
         "order", "title_az", "title_fa", "explanation_az", "explanation_edited_via_app",
-        "note_fa", "note_reading_az", "note_az", "edited_via_app",
+        "pattern_word_fa", "pattern_word_az", "pattern_caption_az",
+        "note_fa", "note_reading_az", "note_az",
+        "note2_fa", "note2_reading_az", "note2_az", "edited_via_app",
     )
     readonly_fields = ("edited_via_app", "explanation_edited_via_app")
     inlines = [ConjugationRowInline, ExampleSentenceInline, TopicDrillInline]

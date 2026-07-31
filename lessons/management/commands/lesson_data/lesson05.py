@@ -64,17 +64,84 @@ LESSON = {
             "title_az": "«هستم؛ هستی؛ ...» felinin əvəzedicisi (1): استادم = استاد هستم",
             "title_fa": "جانشین فعل «هستم؛ هستی؛ ...» (۱)",
             "explanation_az": (
-                "«هستم» felini yazmadan da eyni mənanı vermək olar — şəxs şəkilçisi birbaşa sözün sonuna qoşulur.\n"
-                "استاد هستم = استادم; استاد هستند = استادند.\n"
-                "Şəkilçilər: ـَم، ی، است، یم، ید، ـَند. Bu qayda samitlə bitən sözlərə aiddir."
+                "«هستم، هستی، است، هستیم، هستید، هستند» feli cümlədə yazılmaya da bilər — "
+                "onun mənası şəxs şəkilçisi kimi sözün öz sonuna qoşulur. Məna tam eynidir: "
+                "من استاد هستم = من استادم.\n"
+                "Şəkilçilər: من ← ـَم، تو ← ی، او ← است، ما ← ـیم، شما ← ـید، آن‌ها ← ـَند. "
+                "Bunlar «هستن» felinin qısaldılmış qalığıdır, ona görə eyni şəxsi göstərirlər.\n"
+                "Bu qayda SAMİTLƏ bitən sözlərə aiddir: استاد، مهندس، پلیس، خلبان، آهنگر. "
+                "«ه» ilə bitən sözlərin (فروشنده، راننده) öz qaydası var — bax növbəti mövzu.\n"
+                "3-cü şəxs təkdə (او) heç nə birləşmir: او استاد است. Burada «است» ayrıca söz "
+                "kimi qalır — «او استادست» yazılmır.\n"
+                "Şəkilçi sözə bitişik yazılır və vurğu sözün öz sonunda qalır: "
+                "استاد + ـَم → استادم (ostadəm), استاد + ـَند → استادند (ostadənd).\n"
+                "Söz birləşməsi olanda şəkilçi birləşmənin SON sözünə qoşulur: "
+                "تعمیرکار یخچال هستم → تعمیرکار یخچالم؛ کارمند بانک هستید → کارمند بانکید.\n"
+                "İNKARDA qısaltma yoxdur — «نیستم» həmişə ayrıca yazılır: "
+                "من فروشنده نیستم، خریدارم.\n"
+                "Sual cümləsində də eyni cür işlənir: شما چوپانی؟ = شما چوپان هستی؟؛ "
+                "شما پلیسید؟ = شما پلیس هستید؟\n"
+                "Hər iki forma düzgündür: uzun forma («... هستم») daha rəsmi, qısa forma "
+                "(«...م») isə gündəlik danışıqda daha çox işlənir."
             ),
+            "pattern_word_fa": "استاد",
+            "pattern_word_az": "müəllim (professor)",
+            "pattern_caption_az": "Samitlə bitən söz + şəxs şəkilçisi = «هستم»-li cümlə ilə eyni məna",
             "conjugations": [
-                {"pronoun_fa": "من", "form_fa": "استاد + ـَم → استادم"},
-                {"pronoun_fa": "تو", "form_fa": "استاد + ی → استادی"},
-                {"pronoun_fa": "او", "form_fa": "استاد + است → استاد است"},
-                {"pronoun_fa": "ما", "form_fa": "استاد + یم → استادیم"},
-                {"pronoun_fa": "شما", "form_fa": "استاد + ید → استادید"},
-                {"pronoun_fa": "آن‌ها", "form_fa": "استاد + ـَند → استادند"},
+                {
+                    "pronoun_fa": "من",
+                    "form_fa": "استاد + ـَم → استادم",
+                    "suffix_fa": "ـَم",
+                    "short_fa": "من استادم.",
+                    "full_fa": "من استاد هستم.",
+                    "reading_az": "Mən ostadəm. = Mən ostad hastəm.",
+                    "az": "Mən müəlliməm.",
+                },
+                {
+                    "pronoun_fa": "تو",
+                    "form_fa": "استاد + ی → استادی",
+                    "suffix_fa": "ی",
+                    "short_fa": "تو استادی.",
+                    "full_fa": "تو استاد هستی.",
+                    "reading_az": "To ostadi. = To ostad hasti.",
+                    "az": "Sən müəllimsən.",
+                },
+                {
+                    "pronoun_fa": "او",
+                    "form_fa": "استاد + است → استاد است",
+                    "suffix_fa": "است",
+                    "short_fa": "او استاد است.",
+                    "full_fa": "او استاد است.",
+                    "reading_az": "U ostad əst.",
+                    "az": "O, müəllimdir. (bu şəxsdə forma dəyişmir)",
+                },
+                {
+                    "pronoun_fa": "ما",
+                    "form_fa": "استاد + یم → استادیم",
+                    "suffix_fa": "ـیم",
+                    "short_fa": "ما استادیم.",
+                    "full_fa": "ما استاد هستیم.",
+                    "reading_az": "Ma ostadim. = Ma ostad hastim.",
+                    "az": "Biz müəllimik.",
+                },
+                {
+                    "pronoun_fa": "شما",
+                    "form_fa": "استاد + ید → استادید",
+                    "suffix_fa": "ـید",
+                    "short_fa": "شما استادید.",
+                    "full_fa": "شما استاد هستید.",
+                    "reading_az": "Şoma ostadid. = Şoma ostad hastid.",
+                    "az": "Siz müəllimsiniz.",
+                },
+                {
+                    "pronoun_fa": "آن‌ها",
+                    "form_fa": "استاد + ـَند → استادند",
+                    "suffix_fa": "ـَند",
+                    "short_fa": "آن‌ها استادند.",
+                    "full_fa": "آن‌ها استاد هستند.",
+                    "reading_az": "Anha ostadənd. = Anha ostad həstənd.",
+                    "az": "Onlar müəllimdirlər.",
+                },
             ],
             "examples": [
                 {"fa": "من خلبانم و برادرم مهندس رایانه است.", "reading_az": "Mən xələbanəm va bəradərəm mohəndese rayane əst.", "az": "Mən pilotam və qardaşım kompüter mühəndisidir."},
@@ -84,22 +151,90 @@ LESSON = {
                 {"fa": "شما چوپانی یا شکارچی؟ من چوپانم.", "reading_az": "Şoma çupani ya şekarçi? Mən çupanəm.", "az": "Sən çobansan, yoxsa ovçu? Mən çobanam."},
                 {"fa": "شما پلیسید یا امدادگرید؟ ما پلیس نیستیم؛ ما امدادگریم.", "reading_az": "Şoma polisid ya emdadgərid? Ma polis nistim; ma emdadgərim.", "az": "Siz polissiniz, yoxsa xilasedici? Biz polis deyilik; biz xilasediciyik."},
             ],
+            "note_fa": "استاد هستم = استادم؛ استاد هستند = استادند.",
+            "note_reading_az": "Ostad hastəm = ostadəm; ostad həstənd = ostadənd.",
+            "note_az": (
+                "Yadda saxla: hər iki cümlə eyni mənadadır — sağdakı uzun formada «هستم» "
+                "feli ayrıca yazılır, soldakı qısa formada isə həmin fel şəkilçiyə çevrilib "
+                "sözə birləşir."
+            ),
         },
         {
             "title_az": "«هستم؛ ...» felinin əvəzedicisi (2): «ه» ilə bitən sözlər (فروشنده‌ام)",
             "title_fa": "جانشین فعل «هستم؛ هستی؛ ...» (۲)",
             "explanation_az": (
-                "Söz «ه» ilə bitəndə şəkilçidən əvvəl «ا» gəlir: فروشنده‌ام، فروشنده‌ای، فروشنده‌ایم، فروشنده‌اید، فروشنده‌اند.\n"
-                "3-cü şəxs təkdə forma dəyişmir: فروشنده است.\n"
-                "Söz ilə şəkilçi arasında yarımboşluq (nim-fasilə) yazılır."
+                "Qayda əvvəlki mövzu ilə eynidir — yalnız sözün son hərfi dəyişiklik yaradır. "
+                "Söz «ه» ilə bitəndə şəkilçidən əvvəl bir «ا» artırılır.\n"
+                "Şəkilçilər: من ← ـام، تو ← ـای، او ← است، ما ← ـایم، شما ← ـاید، آن‌ها ← ـاند.\n"
+                "Səbəb budur: «ه» saitlə bitən səs verir, iki saiti birbaşa yanaşı yazmaq olmur — "
+                "aralarına «ا» girir: فروشنده + م ✗ → فروشنده‌ام ✓.\n"
+                "Söz ilə şəkilçi arasında yarımboşluq (nim-fasilə) yazılır: فروشنده‌ایم — "
+                "bitişik «فروشندهایم» yazmaq səhvdir.\n"
+                "3-cü şəxs təkdə (او) yenə heç nə birləşmir: او فروشنده است.\n"
+                "Oxunuşda «ا» eşidilmir, sadəcə iki sait birləşir: فروشنده‌ام → foruşəndeəm، "
+                "راننده‌اند → ranəndeand.\n"
+                "Bu qayda bütün «ه» ilə bitən sözlərə aiddir: نویسنده، راننده، مدرسه، طلبه، "
+                "نگهبان مدرسه، چه‌کاره.\n"
+                "İnkar yenə ayrı yazılır: آن‌ها خریدار نیستند؛ آن‌ها فروشنده‌اند."
             ),
+            "pattern_word_fa": "فروشنده",
+            "pattern_word_az": "satıcı",
+            "pattern_caption_az": "«ه» ilə bitən söz + «ا»lı şəkilçi (yarımboşluqla yazılır)",
             "conjugations": [
-                {"pronoun_fa": "من", "form_fa": "فروشنده + ام → فروشنده‌ام"},
-                {"pronoun_fa": "تو", "form_fa": "فروشنده + ای → فروشنده‌ای"},
-                {"pronoun_fa": "او", "form_fa": "فروشنده + است → فروشنده است"},
-                {"pronoun_fa": "ما", "form_fa": "فروشنده + ایم → فروشنده‌ایم"},
-                {"pronoun_fa": "شما", "form_fa": "فروشنده + اید → فروشنده‌اید"},
-                {"pronoun_fa": "آن‌ها", "form_fa": "فروشنده + اند → فروشنده‌اند"},
+                {
+                    "pronoun_fa": "من",
+                    "form_fa": "فروشنده + ام → فروشنده‌ام",
+                    "suffix_fa": "ـام",
+                    "short_fa": "من فروشنده‌ام.",
+                    "full_fa": "من فروشنده هستم.",
+                    "reading_az": "Mən foruşəndeəm. = Mən foruşənde hastəm.",
+                    "az": "Mən satıcıyam.",
+                },
+                {
+                    "pronoun_fa": "تو",
+                    "form_fa": "فروشنده + ای → فروشنده‌ای",
+                    "suffix_fa": "ـای",
+                    "short_fa": "تو فروشنده‌ای.",
+                    "full_fa": "تو فروشنده هستی.",
+                    "reading_az": "To foruşəndei. = To foruşənde hasti.",
+                    "az": "Sən satıcısan.",
+                },
+                {
+                    "pronoun_fa": "او",
+                    "form_fa": "فروشنده + است → فروشنده است",
+                    "suffix_fa": "است",
+                    "short_fa": "او فروشنده است.",
+                    "full_fa": "او فروشنده است.",
+                    "reading_az": "U foruşənde əst.",
+                    "az": "O, satıcıdır. (bu şəxsdə forma dəyişmir)",
+                },
+                {
+                    "pronoun_fa": "ما",
+                    "form_fa": "فروشنده + ایم → فروشنده‌ایم",
+                    "suffix_fa": "ـایم",
+                    "short_fa": "ما فروشنده‌ایم.",
+                    "full_fa": "ما فروشنده هستیم.",
+                    "reading_az": "Ma foruşəndeim. = Ma foruşənde hastim.",
+                    "az": "Biz satıcıyıq.",
+                },
+                {
+                    "pronoun_fa": "شما",
+                    "form_fa": "فروشنده + اید → فروشنده‌اید",
+                    "suffix_fa": "ـاید",
+                    "short_fa": "شما فروشنده‌اید.",
+                    "full_fa": "شما فروشنده هستید.",
+                    "reading_az": "Şoma foruşəndeid. = Şoma foruşənde hastid.",
+                    "az": "Siz satıcısınız.",
+                },
+                {
+                    "pronoun_fa": "آن‌ها",
+                    "form_fa": "فروشنده + اند → فروشنده‌اند",
+                    "suffix_fa": "ـاند",
+                    "short_fa": "آن‌ها فروشنده‌اند.",
+                    "full_fa": "آن‌ها فروشنده هستند.",
+                    "reading_az": "Anha foruşəndeand. = Anha foruşənde həstənd.",
+                    "az": "Onlar satıcıdırlar.",
+                },
             ],
             "examples": [
                 {"fa": "ما کتاب‌فروشیم؛ آن‌ها نویسنده‌اند.", "reading_az": "Ma ketabforuşim; anha nevisəndeand.", "az": "Biz kitab satanıq; onlar yazıçıdırlar."},
@@ -109,32 +244,16 @@ LESSON = {
                 {"fa": "آیا شما طلبه‌اید؟ بله، ما طلبه‌ایم.", "reading_az": "Aya şoma təllabeid? Bəle, ma təllabeim.", "az": "Siz tələbəsiniz? Bəli, biz tələbəyik."},
                 {"fa": "سعید و برادرش چه‌کاره‌اند؟ آن‌ها راننده‌اند.", "reading_az": "Səid va bəradərəş çekareand? Anha ranəndeand.", "az": "Səid və qardaşı nəçidirlər? Onlar sürücüdürlər."},
             ],
-            "drills": [
-                {
-                    "title_fa": "مانند مثال تبدیل کنید",
-                    "instruction_az": 'Nümunə kimi çevirin: "من آهنگر هستم = من آهنگرم؛ من راننده هستم = من راننده‌ام"',
-                    "items": [
-                        {"prompt_fa": "من معلّم هستم.", "answer_fa": "من معلّمم.", "reading_az": "Mən moəlleməm.", "az": "Mən müəlliməm."},
-                        {"prompt_fa": "ما مهندس هستیم.", "answer_fa": "ما مهندسیم.", "reading_az": "Ma mohəndesim.", "az": "Biz mühəndisik."},
-                        {"prompt_fa": "من و دوستم طلبه هستیم.", "answer_fa": "من و دوستم طلبه‌ایم.", "reading_az": "Mən va dustəm təllabeim.", "az": "Mən və dostum tələbəyik."},
-                        {"prompt_fa": "آن‌ها نویسنده هستند.", "answer_fa": "آن‌ها نویسنده‌اند.", "reading_az": "Anha nevisəndeand.", "az": "Onlar yazıçıdır."},
-                        {
-                            "prompt_fa": "من پرستار هستم؛ پزشک نیستم.",
-                            "answer_fa": "من پرستارم؛ پزشک نیستم.",
-                            "reading_az": "Mən pərəstaram; pezeşk nistəm.",
-                            "az": "Mən tibb bacısıyam; həkim deyiləm.",
-                        },
-                        {
-                            "prompt_fa": "ما امدادگر هستیم؛ پلیس نیستیم.",
-                            "answer_fa": "ما امدادگریم؛ پلیس نیستیم.",
-                            "reading_az": "Ma emdadgərim; polis nistim.",
-                            "az": "Biz xilasediciyik; polis deyilik.",
-                        },
-                        {"prompt_fa": "آیا شما فروشنده هستی؟", "answer_fa": "آیا شما فروشنده‌ای؟", "reading_az": "Aya şoma foruşəndei?", "az": "Sən satıcısanmı?"},
-                        {"prompt_fa": "آیا شما تاجر فرش هستید؟", "answer_fa": "آیا شما تاجر فرشید؟", "reading_az": "Aya şoma tacere fərşid?", "az": "Siz xalça tacirisinizmi?"},
-                    ],
-                },
-            ],
+            "note_fa": "فروشنده هستم = فروشنده‌ام؛ راننده هستند = راننده‌اند.",
+            "note_reading_az": "Foruşənde hastəm = foruşəndeəm; ranənde həstənd = ranəndeand.",
+            "note_az": (
+                "Fərq yalnız yazılışdadır: «ه» ilə bitən sözdə şəkilçidən əvvəl «ا» gəlir və "
+                "arada yarımboşluq qoyulur. Samitlə bitən sözlərdə isə şəkilçi birbaşa qoşulur "
+                "(استادم) — bax əvvəlki mövzu."
+            ),
+            # «مانند مثال تبدیل کنید» drill-i buradan Çalışmalara (Çalışma 4,
+            # answer_question) köçürülüb — bax "exercises".
+            "drills": [],
         },
     ],
     "exercises": [
@@ -303,60 +422,434 @@ LESSON = {
             ],
         },
         {
-            "kind": "practice_reveal",
-            "instruction_az": "İndi əksinə çevirin: «ما خبرنگاریم = ما خبرنگار هستیم»",
+            # Çalışma 4 — dərslikdəki «مانند مثال تبدیل کنید». Əvvəllər Mövzu 3-ün
+            # daxili drill-i idi; Dərs 3-ün Çalışma 5 quruluşuna (answer_question
+            # + çoxrəngli NÜMUNƏ qutusu) keçirilib.
+            "kind": "answer_question",
+            "title_fa": "مانند مثال تبدیل کنید",
+            "instruction_az": "Nümunə kimi qısa formaya çevirin",
+            # Yaşıl «هستم» — atılan fel, qırmızı — onun əvəzinə gələn şəkilçi.
+            "example_fa": (
+                "من آهنگر *هستم* = من آهنگر**م**\n"
+                "من راننده *هستم* = من راننده**‌ام**"
+            ),
+            "example_reading_az": (
+                "Mən ahəngər həstəm = mən ahəngərəm.\n"
+                "Mən ranənde həstəm = mən ranəndeəm."
+            ),
+            "example_az": (
+                "«هستم؛ هستی؛ ...» feli atılır, onun əvəzinə sözün sonuna şəxs şəkilçisi qoşulur.\n"
+                "Yaşıl — atılan fel, qırmızı — onun yerini tutan şəkilçi.\n"
+                "Samitlə bitən sözə şəkilçi birbaşa qoşulur: آهنگر → آهنگرم.\n"
+                "«ه» ilə bitən sözdə şəkilçidən əvvəl «ا» gəlir: راننده → راننده‌ام.\n"
+                "Tərcümə: Mən dəmirçiyəm. / Mən sürücüyəm."
+            ),
             "items": [
-                {"prompt_fa": "آن‌ها راننده‌اند.", "answer_fa": "آن‌ها راننده هستند.", "reading_az": "Anha ranənde həstənd.", "az": "Onlar sürücüdür."},
-                {"prompt_fa": "من و برادرم کشاورزیم.", "answer_fa": "من و برادرم کشاورز هستیم.", "reading_az": "Mən va bəradərəm keşavərz hastim.", "az": "Mən və qardaşım əkinçiyik."},
-                {"prompt_fa": "من تعمیرکار یخچالم.", "answer_fa": "من تعمیرکار یخچال هستم.", "reading_az": "Mən təmirkare yəxçal hastəm.", "az": "Mən soyuducu təmirçisiyəm."},
-                {"prompt_fa": "شما کارمند بانکید.", "answer_fa": "شما کارمند بانک هستید.", "reading_az": "Şoma karmənde bank hastid.", "az": "Siz bank işçisisiniz."},
                 {
-                    "prompt_fa": "شما کارمند کدام اداره‌اید؟",
-                    "answer_fa": "شما کارمند کدام اداره هستید؟",
-                    "reading_az": "Şoma karmənde kodam edare hastid?",
-                    "az": "Siz hansı idarənin işçisisiniz?",
+                    "fa": "من معلّم هستم.",
+                    "reading_az": "Mən moəllem həstəm.",
+                    "az": "Mən müəlliməm.",
+                    "sample_answer_fa": "من معلّمم.",
+                    "sample_answer_reading_az": "Mən moəlleməm.",
+                    "sample_answer_az": "Mən müəlliməm.",
                 },
                 {
-                    "prompt_fa": "آن‌ها باغبانند یا میوه‌فروشند؟",
-                    "answer_fa": "آن‌ها باغبان هستند یا میوه‌فروش هستند؟",
-                    "reading_az": "Anha bağban həstənd ya miveforuş həstənd?",
-                    "az": "Onlar bağbandır, yoxsa meyvə satan?",
+                    "fa": "ما مهندس هستیم.",
+                    "reading_az": "Ma mohəndes həstim.",
+                    "az": "Biz mühəndisik.",
+                    "sample_answer_fa": "ما مهندسیم.",
+                    "sample_answer_reading_az": "Ma mohəndesim.",
+                    "sample_answer_az": "Biz mühəndisik.",
                 },
                 {
-                    "prompt_fa": "شما فروشنده‌ای یا خریدار؟",
-                    "answer_fa": "شما فروشنده هستی یا خریدار هستی؟",
-                    "reading_az": "Şoma foruşənde hasti ya xəridar hasti?",
-                    "az": "Sən satıcısan, yoxsa alıcı?",
+                    "fa": "من و دوستم طلبه هستیم.",
+                    "reading_az": "Mən va dustəm təllabe həstim.",
+                    "az": "Mən və dostum tələbəyik.",
+                    "sample_answer_fa": "من و دوستم طلبه‌ایم.",
+                    "sample_answer_reading_az": "Mən va dustəm təllabeim.",
+                    "sample_answer_az": "Mən və dostum tələbəyik.",
+                },
+                {
+                    "fa": "آن‌ها نویسنده هستند.",
+                    "reading_az": "Anha nevisənde həstənd.",
+                    "az": "Onlar yazıçıdır.",
+                    "sample_answer_fa": "آن‌ها نویسنده‌اند.",
+                    "sample_answer_reading_az": "Anha nevisəndeand.",
+                    "sample_answer_az": "Onlar yazıçıdır.",
+                },
+                {
+                    "fa": "من پرستار هستم؛ پزشک نیستم.",
+                    "reading_az": "Mən pərəstar həstəm; pezeşk nistəm.",
+                    "az": "Mən tibb bacısıyam; həkim deyiləm.",
+                    "sample_answer_fa": "من پرستارم؛ پزشک نیستم.",
+                    "sample_answer_reading_az": "Mən pərəstaram; pezeşk nistəm.",
+                    "sample_answer_az": "Mən tibb bacısıyam; həkim deyiləm.",
+                },
+                {
+                    "fa": "ما امدادگر هستیم؛ پلیس نیستیم.",
+                    "reading_az": "Ma emdadgər həstim; polis nistim.",
+                    "az": "Biz xilasediciyik; polis deyilik.",
+                    "sample_answer_fa": "ما امدادگریم؛ پلیس نیستیم.",
+                    "sample_answer_reading_az": "Ma emdadgərim; polis nistim.",
+                    "sample_answer_az": "Biz xilasediciyik; polis deyilik.",
+                },
+                {
+                    "fa": "آیا شما فروشنده هستی؟",
+                    "reading_az": "Aya şoma foruşənde həsti?",
+                    "az": "Sən satıcısanmı?",
+                    "sample_answer_fa": "آیا شما فروشنده‌ای؟",
+                    "sample_answer_reading_az": "Aya şoma foruşəndei?",
+                    "sample_answer_az": "Sən satıcısanmı?",
+                },
+                {
+                    "fa": "آیا شما تاجر فرش هستید؟",
+                    "reading_az": "Aya şoma tacere fərş həstid?",
+                    "az": "Siz xalça tacirisinizmi?",
+                    "sample_answer_fa": "آیا شما تاجر فرشید؟",
+                    "sample_answer_reading_az": "Aya şoma tacere fərşid?",
+                    "sample_answer_az": "Siz xalça tacirisinizmi?",
                 },
             ],
         },
         {
-            "kind": "practice_reveal",
-            "instruction_az": "«تنها / باهم» ilə nümunə kimi deyin: «من / مدرسه رفتن / دوستم → من تنها به مدرسه نمی‌روم؛ من و دوستم باهم به مدرسه می‌رویم.»",
+            # Çalışma 5 — dərslikdəki ikinci «مانند مثال تبدیل کنید» (hər iki
+            # istiqamət: «هستم»-li ↔ şəkilçili). Əvvəllər sadə practice_reveal
+            # idi və dərslikdəki 8 bəndin yalnız 7-si vardı (bəziləri əks
+            # istiqamətdə yazılmışdı); Dərs 3-ün Çalışma 3 quruluşuna
+            # (answer_question + çoxrəngli NÜMUNƏ qutusu) keçirilib və bəndlər
+            # dərslikdəki kimi bərpa olunub.
+            "kind": "answer_question",
+            "title_fa": "مانند مثال تبدیل کنید",
+            "instruction_az": "Nümunə kimi digər formaya çevirin",
+            # Yaşıl «هستیم» — fel, qırmızı «ـیم» — onun əvəzinə gələn şəkilçi.
+            "example_fa": (
+                "ما خبرنگار *هستیم*. = ما خبرنگار**یم**.\n"
+                "ما امدادگر**یم**. = ما امدادگر *هستیم*."
+            ),
+            "example_reading_az": (
+                "Ma xəbərneqar həstim. = Ma xəbərneqarim.\n"
+                "Ma emdadgərim. = Ma emdadgər həstim."
+            ),
+            "example_az": (
+                "Çevrilmə hər iki istiqamətdə olur: cümlə «هستم؛ هستی؛ ...» feli ilə "
+                "yazılıbsa — şəkilçili qısa formaya, qısa formadadırsa — «هستم»-li tam formaya.\n"
+                "Yaşıl — fel, qırmızı — onun yerini tutan şəkilçi.\n"
+                "Sual cümlələrində də eyni qayda işləyir: شما خلبانی؟ = شما خلبان هستی؟\n"
+                "Tərcümə: Biz jurnalistik. / Biz xilasediciyik."
+            ),
             "items": [
                 {
-                    "prompt_fa": "سعید / غذاخوردن / پدربزرگش",
-                    "answer_fa": "سعید تنها غذا نمی‌خورد؛ سعید و پدربزرگش باهم غذا می‌خورند.",
-                    "reading_az": "Səid tənha qəza nemixorəd; Səid va pedərbozorgəş bahəm qəza mixorənd.",
-                    "az": "Səid tək yemək yemir; Səid və babası birlikdə yemək yeyirlər.",
+                    "fa": "آن‌ها راننده هستند.",
+                    "reading_az": "Anha ranənde həstənd.",
+                    "az": "Onlar sürücüdürlər.",
+                    "sample_answer_fa": "آن‌ها راننده‌اند.",
+                    "sample_answer_reading_az": "Anha ranəndeand.",
+                    "sample_answer_az": "Onlar sürücüdürlər.",
                 },
                 {
-                    "prompt_fa": "فرزندم / خانه آمدن / برادرش",
-                    "answer_fa": "فرزندم تنها به خانه نمی‌آید؛ فرزندم و برادرش باهم به خانه می‌آیند.",
-                    "reading_az": "Fərzendəm tənha be xane nemiayəd; fərzendəm va bəradərəş bahəm be xane miayənd.",
-                    "az": "Övladım evə tək gəlmir; övladım və qardaşı birlikdə evə gəlirlər.",
+                    "fa": "من و برادرم کشاورزیم.",
+                    "reading_az": "Mən va bəradərəm keşavərzim.",
+                    "az": "Mən və qardaşım əkinçiyik.",
+                    "sample_answer_fa": "من و برادرم کشاورز هستیم.",
+                    "sample_answer_reading_az": "Mən va bəradərəm keşavərz həstim.",
+                    "sample_answer_az": "Mən və qardaşım əkinçiyik.",
                 },
                 {
-                    "prompt_fa": "دخترم / فروش‌گاه رفتن / مادرش",
-                    "answer_fa": "دخترم تنها به فروش‌گاه نمی‌رود؛ دخترم و مادرش باهم به فروش‌گاه می‌روند.",
-                    "reading_az": "Doxtərəm tənha be foruşgah nemirəvəd; doxtərəm va madərəş bahəm be foruşgah mirəvənd.",
-                    "az": "Qızım mağazaya tək getmir; qızım və anası birlikdə mağazaya gedirlər.",
+                    "fa": "من تعمیرکار یخچالم.",
+                    "reading_az": "Mən təmirkare yəxçaləm.",
+                    "az": "Mən soyuducu təmirçisiyəm.",
+                    "sample_answer_fa": "من تعمیرکار یخچال هستم.",
+                    "sample_answer_reading_az": "Mən təmirkare yəxçal həstəm.",
+                    "sample_answer_az": "Mən soyuducu təmirçisiyəm.",
                 },
                 {
-                    "prompt_fa": "مادربزرگم / زندگی‌کردن / مادرم",
-                    "answer_fa": "مادربزرگم تنها زندگی نمی‌کند؛ مادربزرگم و مادرم باهم زندگی می‌کنند.",
-                    "reading_az": "Madərbozorgəm tənha zendegi nemikonəd; madərbozorgəm va madərəm bahəm zendegi mikonənd.",
-                    "az": "Nənəm tək yaşamır; nənəm və anam birlikdə yaşayırlar.",
+                    "fa": "شما کارمند بانک هستید.",
+                    "reading_az": "Şoma karmənde bank həstid.",
+                    "az": "Siz bank işçisisiniz.",
+                    "sample_answer_fa": "شما کارمند بانکید.",
+                    "sample_answer_reading_az": "Şoma karmənde bankid.",
+                    "sample_answer_az": "Siz bank işçisisiniz.",
+                },
+                {
+                    "fa": "شما کارمند کدام اداره‌اید؟",
+                    "reading_az": "Şoma karmənde kodam edareid?",
+                    "az": "Siz hansı idarənin işçisisiniz?",
+                    "sample_answer_fa": "شما کارمند کدام اداره هستید؟",
+                    "sample_answer_reading_az": "Şoma karmənde kodam edare həstid?",
+                    "sample_answer_az": "Siz hansı idarənin işçisisiniz?",
+                },
+                {
+                    "fa": "شما خلبانی یا پلیسی؟",
+                    "reading_az": "Şoma xələbani ya polisi?",
+                    "az": "Sən pilotsan, yoxsa polis?",
+                    "sample_answer_fa": "شما خلبان هستی یا پلیس؟",
+                    "sample_answer_reading_az": "Şoma xələban həsti ya polis?",
+                    "sample_answer_az": "Sən pilotsan, yoxsa polis?",
+                },
+                {
+                    "fa": "آن‌ها باغبانند یا میوه‌فروشند؟",
+                    "reading_az": "Anha bağbanənd ya miveforuşənd?",
+                    "az": "Onlar bağbandır, yoxsa meyvə satan?",
+                    "sample_answer_fa": "آن‌ها باغبان هستند یا میوه‌فروش؟",
+                    "sample_answer_reading_az": "Anha bağban həstənd ya miveforuş?",
+                    "sample_answer_az": "Onlar bağbandır, yoxsa meyvə satan?",
+                },
+                {
+                    "fa": "شما فروشنده هستی یا خریدار؟",
+                    "reading_az": "Şoma foruşənde həsti ya xəridar?",
+                    "az": "Sən satıcısan, yoxsa alıcı?",
+                    "sample_answer_fa": "شما فروشنده‌ای یا خریدار؟",
+                    "sample_answer_reading_az": "Şoma foruşəndei ya xəridar?",
+                    "sample_answer_az": "Sən satıcısan, yoxsa alıcı?",
+                },
+            ],
+        },
+        {
+            # Çalışma 6 — dərslikdəki «مانند مثال بگویید» (تنها / باهم). Əvvəllər
+            # sadə practice_reveal idi (nümunə cümlə tapşırıq mətninin içində
+            # yazılırdı); Dərs 3-ün Çalışma 3 quruluşuna (answer_question +
+            # çoxrəngli NÜMUNƏ qutusu) keçirilib.
+            "kind": "answer_question",
+            "title_fa": "مانند مثال بگویید",
+            "instruction_az": "Nümunə kimi cümlə qurun",
+            # Qırmızı «تنها» — inkar cümləsində, yaşıl «باهم» — müsbət cümlədə.
+            "example_fa": (
+                "من / مدرسه رفتن / دوستم\n"
+                "من **تنها** به مدرسه نمی‌روم؛ من و دوستم *باهم* به مدرسه می‌رویم."
+            ),
+            "example_reading_az": (
+                "Mən / mædrese rəftən / dustəm\n"
+                "Mən tənha be mædrese nemirəvəm; mən va dustəm bahəm be mædrese mirəvim."
+            ),
+            "example_az": (
+                "Verilən sözlər: SUBYEKT / İŞ / İKİNCİ ŞƏXS.\n"
+                "Quruluş: SUBYEKT + تنها + İŞ (inkar)؛ SUBYEKT و İKİNCİ ŞƏXS + باهم + İŞ (müsbət).\n"
+                "Qırmızı «تنها» (tək) inkar hissədə, yaşıl «باهم» (birlikdə) müsbət hissədə gəlir.\n"
+                "Fel hər iki hissədə subyektə görə dəyişir: نمی‌روم → می‌رویم.\n"
+                "Tərcümə: Mən məktəbə tək getmirəm; mən və dostum məktəbə birlikdə gedirik."
+            ),
+            "items": [
+                {
+                    "fa": "سعید / غذاخوردن / پدربزرگش",
+                    "reading_az": "Səid / qəza xordən / pedərbozorgəş",
+                    "az": "Səid / yemək yemək / onun babası",
+                    "sample_answer_fa": "سعید تنها غذا نمی‌خورد؛ سعید و پدربزرگش باهم غذا می‌خورند.",
+                    "sample_answer_reading_az": "Səid tənha qəza nemixorəd; Səid va pedərbozorgəş bahəm qəza mixorənd.",
+                    "sample_answer_az": "Səid tək yemək yemir; Səid və babası birlikdə yemək yeyirlər.",
+                },
+                {
+                    "fa": "فرزندم / خانه آمدن / برادرش",
+                    "reading_az": "Fərzendəm / xane amədən / bəradərəş",
+                    "az": "övladım / evə gəlmək / onun qardaşı",
+                    "sample_answer_fa": "فرزندم تنها به خانه نمی‌آید؛ فرزندم و برادرش باهم به خانه می‌آیند.",
+                    "sample_answer_reading_az": "Fərzendəm tənha be xane nemiayəd; fərzendəm va bəradərəş bahəm be xane miayənd.",
+                    "sample_answer_az": "Övladım evə tək gəlmir; övladım və qardaşı birlikdə evə gəlirlər.",
+                },
+                {
+                    "fa": "دخترم / فروش‌گاه رفتن / مادرش",
+                    "reading_az": "Doxtərəm / foruşgah rəftən / madərəş",
+                    "az": "qızım / mağazaya getmək / onun anası",
+                    "sample_answer_fa": "دخترم تنها به فروش‌گاه نمی‌رود؛ دخترم و مادرش باهم به فروش‌گاه می‌روند.",
+                    "sample_answer_reading_az": "Doxtərəm tənha be foruşgah nemirəvəd; doxtərəm va madərəş bahəm be foruşgah mirəvənd.",
+                    "sample_answer_az": "Qızım mağazaya tək getmir; qızım və anası birlikdə mağazaya gedirlər.",
+                },
+                {
+                    "fa": "مادربزرگم / زندگی‌کردن / مادرم",
+                    "reading_az": "Madərbozorgəm / zendegi kərdən / madərəm",
+                    "az": "nənəm / yaşamaq / anam",
+                    "sample_answer_fa": "مادربزرگم تنها زندگی نمی‌کند؛ مادربزرگم و مادرم باهم زندگی می‌کنند.",
+                    "sample_answer_reading_az": "Madərbozorgəm tənha zendegi nemikonəd; madərbozorgəm va madərəm bahəm zendegi mikonənd.",
+                    "sample_answer_az": "Nənəm tək yaşamır; nənəm və anam birlikdə yaşayırlar.",
+                },
+            ],
+        },
+        {
+            # Çalışma 7 — dərslikdəki «مانند مثال بپرسید و پاسخ دهید» (چه‌کاره؟).
+            # Quruluş Dərs 2-nin Çalışma 3-ü ilə eynidir: nömrələnmiş şəkillər,
+            # hər şəkil üçün bir sual+cavab cümləsi. Şəkillər dərslikdən real
+            # foto olduğu üçün burada boş qalır — admin panelindən yüklənir.
+            "kind": "picture_sentences",
+            "title_fa": "مانند مثال بپرسید و پاسخ دهید",
+            "instruction_az": "Nümunə kimi soruşun və cavab verin",
+            "example_fa": "شما چه‌کاره‌اید؟",
+            "example_reading_az": "Şoma çekareid?",
+            "example_az": "Siz nəçisiniz? (Peşəniz nədir?)",
+            "example_answer_fa": "ما خیّاطیم.",
+            "example_answer_reading_az": "Ma xəyyatim.",
+            "example_answer_az": "Biz dərziyik.",
+            "items": [
+                {
+                    "sentences": [
+                        {
+                            "fa": "شما چه‌کاره‌اید؟ ما طلبه‌ایم.",
+                            "reading_az": "Şoma çekareid? Ma təllabeim.",
+                            "az": "Siz nəçisiniz? Biz dini tələbəyik.",
+                        },
+                    ],
+                },
+                {
+                    "sentences": [
+                        {
+                            "fa": "آن خانم چه‌کاره است؟ او پلیس است.",
+                            "reading_az": "An xanom çekare əst? U polis əst.",
+                            "az": "O xanım nəçidir? O, polisdir.",
+                        },
+                    ],
+                },
+                {
+                    "sentences": [
+                        {
+                            "fa": "شما چه‌کاره‌اید؟ ما آشپزیم.",
+                            "reading_az": "Şoma çekareid? Ma aşpəzim.",
+                            "az": "Siz nəçisiniz? Biz aşpazıq.",
+                        },
+                    ],
+                },
+                {
+                    "sentences": [
+                        {
+                            "fa": "حسین و عبّاس چه‌کاره‌اند؟ آن‌ها دانش‌آموزند.",
+                            "reading_az": "Hoseyn va Əbbas çekareənd? Anha daneşamuzənd.",
+                            "az": "Hüseyn və Abbas nəçidirlər? Onlar şagirddirlər.",
+                        },
+                    ],
+                },
+                {
+                    "sentences": [
+                        {
+                            "fa": "آن‌ها چه‌کاره‌اند؟ آن‌ها امدادگرند.",
+                            "reading_az": "Anha çekareənd? Anha emdadgərənd.",
+                            "az": "Onlar nəçidirlər? Onlar xilasedicidirlər.",
+                        },
+                    ],
+                },
+                {
+                    "sentences": [
+                        {
+                            "fa": "تو چه‌کاره‌ای؟ من خبرنگارم.",
+                            "reading_az": "To çekarei? Mən xəbərneqarəm.",
+                            "az": "Sən nəçisən? Mən jurnalistəm.",
+                        },
+                    ],
+                },
+                {
+                    "sentences": [
+                        {
+                            "fa": "شما چه‌کاره‌اید؟ من راننده‌ام.",
+                            "reading_az": "Şoma çekareid? Mən ranəndeəm.",
+                            "az": "Siz nəçisiniz? Mən sürücüyəm.",
+                        },
+                    ],
+                },
+                {
+                    "sentences": [
+                        {
+                            "fa": "شما چه‌کاره‌اید؟ ما آرایش‌گریم.",
+                            "reading_az": "Şoma çekareid? Ma arayeşgərim.",
+                            "az": "Siz nəçisiniz? Biz bərbərik.",
+                        },
+                    ],
+                },
+            ],
+        },
+        {
+            # Çalışma 8 — dərslikdəki «لطفاً بگویید، این‌ها چه‌کاره‌اند؟»: sual
+            # başlıqda bir dəfə verilir, hər şəkil üçün yalnız cavab cümləsi
+            # deyilir, ona görə «نمونه» qutusu yoxdur. Şəkillər dərslikdən real
+            # foto olduğu üçün boş qalır — admin panelindən yüklənir.
+            "kind": "picture_sentences",
+            "title_fa": "لطفاً بگویید، این‌ها چه‌کاره‌اند؟",
+            "instruction_az": "Deyin: bunlar nəçidirlər?",
+            "items": [
+                {
+                    "sentences": [
+                        {
+                            "fa": "این آقا کتاب‌فروش است.",
+                            "reading_az": "İn aqa ketabforuş əst.",
+                            "az": "Bu bəy kitab satandır.",
+                        },
+                    ],
+                },
+                {
+                    "sentences": [
+                        {
+                            "fa": "این آقا کشاورز است.",
+                            "reading_az": "İn aqa keşavərz əst.",
+                            "az": "Bu bəy əkinçidir.",
+                        },
+                    ],
+                },
+                {
+                    "sentences": [
+                        {
+                            "fa": "این آقا باغبان است.",
+                            "reading_az": "İn aqa bağban əst.",
+                            "az": "Bu bəy bağbandır.",
+                        },
+                    ],
+                },
+                {
+                    "sentences": [
+                        {
+                            "fa": "این‌ها خبرنگارند.",
+                            "reading_az": "İnha xəbərneqarənd.",
+                            "az": "Bunlar jurnalistdirlər.",
+                        },
+                    ],
+                },
+                {
+                    "sentences": [
+                        {
+                            "fa": "این‌ها آشپزند.",
+                            "reading_az": "İnha aşpəzənd.",
+                            "az": "Bunlar aşpazdırlar.",
+                        },
+                    ],
+                },
+                {
+                    "sentences": [
+                        {
+                            "fa": "این آقا آرایش‌گر است.",
+                            "reading_az": "İn aqa arayeşgər əst.",
+                            "az": "Bu bəy bərbərdir.",
+                        },
+                    ],
+                },
+                {
+                    "sentences": [
+                        {
+                            "fa": "این آقا تعمیرکار است.",
+                            "reading_az": "İn aqa təmirkar əst.",
+                            "az": "Bu bəy təmirçidir.",
+                        },
+                    ],
+                },
+                {
+                    "sentences": [
+                        {
+                            "fa": "این آقا نانوا است.",
+                            "reading_az": "İn aqa nanva əst.",
+                            "az": "Bu bəy çörəkçidir.",
+                        },
+                    ],
+                },
+                {
+                    "sentences": [
+                        {
+                            "fa": "این خانم کارمند است.",
+                            "reading_az": "İn xanom karmənd əst.",
+                            "az": "Bu xanım idarə işçisidir.",
+                        },
+                    ],
+                },
+                {
+                    "sentences": [
+                        {
+                            "fa": "این آقا بازرگان (تاجر) است.",
+                            "reading_az": "İn aqa bazərgan (tacer) əst.",
+                            "az": "Bu bəy tacirdir.",
+                        },
+                    ],
                 },
             ],
         },
