@@ -2332,11 +2332,18 @@ class Command(BaseCommand):
                     prior_note.note_reading_az if note_prior_ok else note_data.get("note_reading_az", "")
                 ),
                 note_az=(prior_note.note_az if note_prior_ok else note_data.get("note_az", "")),
-                # Qeydin 2-ci qutusu bu fayllarda ümumiyyətlə yazılmır (yalnız
-                # bazada/tətbiqdə yaşayır), ona görə həmişə köhnə dəyər saxlanılır.
-                note2_fa=(prior_note.note2_fa if prior_note is not None else ""),
-                note2_reading_az=(prior_note.note2_reading_az if prior_note is not None else ""),
-                note2_az=(prior_note.note2_az if prior_note is not None else ""),
+                # Qeydin 2-ci qutusu: faylda açar varsa oradan götürülür, yoxsa
+                # bazadakı köhnə dəyər saxlanılır (bəzi mövzularda bu qutu yalnız
+                # admin panelindən/tətbiqdən doldurulub — onlar itməməlidir).
+                note2_fa=note_data.get(
+                    "note2_fa", prior_note.note2_fa if prior_note is not None else ""
+                ),
+                note2_reading_az=note_data.get(
+                    "note2_reading_az", prior_note.note2_reading_az if prior_note is not None else ""
+                ),
+                note2_az=note_data.get(
+                    "note2_az", prior_note.note2_az if prior_note is not None else ""
+                ),
                 edited_via_app=note_prior_ok,
                 # «Şəkilçi cədvəli» başlığı — yalnız bu fayldan gəlir,
                 # tətbiqdən redaktə olunmur.
