@@ -122,20 +122,29 @@ LESSON = {
                 "Göründüyü kimi اسب sözünün hər iki cəmi var — اسب‌ها və اسبان — çünki at canlıdır."
             ),
             "note2_fa": (
-                "می‌گوییم: لباس‌ها ✓\n"
-                "نمی‌گوییم: لباسان ✗\n"
-                "اسم‌های بی‌جان فقط با «ها» جمع بسته می‌شوند: کتاب‌ها، میزها، پیراهن‌ها، کفش‌ها."
+                "می‌گوییم: لباس‌ها ✓ / نمی‌گوییم: لباسان ✗\n"
+                "اسم‌های بی‌جان فقط با «ها» جمع بسته می‌شوند: کتاب‌ها، میزها، پیراهن‌ها، کفش‌ها.\n"
+                "توجّه: در برخی واژه‌ها «ان» جزء کلمه است و نشانه‌ی جمع نیست، مانند: "
+                "رستوران، بیمارستان، خیابان، تهران، دندان، زبان، نگهبان، لیوان، حیوان، عریان و ...\n"
+                "این واژه‌ها هم با «ها» جمع بسته می‌شوند: خیابان‌ها، دندان‌ها، لیوان‌ها."
             ),
             "note2_reading_az": (
-                "Miguyim: lebasha\n"
-                "Nemiguyim: lebasan\n"
-                "Esmhaye bican fəqət ba «ha» cəm' bəste mişəvənd: ketabha, mizha, pirahənha, kəfşha."
+                "Miguyim: lebasha / Nemiguyim: lebasan\n"
+                "Esmhaye bican fəqət ba «ha» cəm' bəste mişəvənd: ketabha, mizha, pirahənha, kəfşha.\n"
+                "Təvəccoh: dər bərxi vajeha «an» cozve kəlame əst va neşane-ye cəm' nist, manənde: "
+                "restoran, bimarestan, xiyaban, Tehran, dəndan, zəban, negəhban, livan, heyvan, əryan va ...\n"
+                "İn vajeha həm ba «ha» cəm' bəste mişəvənd: xiyabanha, dəndanha, livanha."
             ),
             "note2_az": (
                 "Deyirik: لباس‌ها ✓ — Demirik: لباسان ✗\n"
                 "Cansız isimlər yalnız «ها» ilə cəmlənir: کتاب‌ها (kitablar), میزها (masalar), "
                 "پیراهن‌ها (köynəklər), کفش‌ها (ayaqqabılar).\n"
-                "Dərslikdə də məhz bu səbəbdən «لباسان» formasının üstündən qırmızı xətt çəkilib."
+                "Dərslikdə də məhz bu səbəbdən «لباسان» formasının üstündən qırmızı xətt çəkilib.\n"
+                "DİQQƏT (dərslikdəki ayrıca qeyd): bəzi sözlərin sonundakı «ان» cəm əlaməti DEYİL, "
+                "sözün öz hissəsidir — رستوران (restoran), بیمارستان (xəstəxana), خیابان (küçə), "
+                "تهران (Tehran), دندان (diş), زبان (dil), نگهبان (gözətçi), لیوان (stəkan), "
+                "حیوان (heyvan), عریان (çılpaq).\n"
+                "Bu sözlər onsuz da cəm deyil — cəmlənəndə «ها» alırlar: خیابان‌ها، دندان‌ها، لیوان‌ها."
             ),
             # QEYD: dərslikdəki «مانند مثال، جمله بسازید» tapşırığı burada drill
             # kimi deyil, aşağıda ÇALIŞMA 2 (answer_question) kimi verilib.
@@ -200,17 +209,7 @@ LESSON = {
                 "این صندلی‌ها تمیز هستند. ✓ = این صندلی‌ها تمیز است. ✓ (Bu stullar təmizdir.)\n"
                 "Yəni səhv etmək yalnız birinci halda mümkündür — canlı mübtədada tək fel işlətmək olmaz."
             ),
-            "drills": [
-                {
-                    "title_fa": "جمله‌های اشتباه را تصحیح کنید",
-                    "instruction_az": "Səhv cümlələri düzəldin (cəm mübtəda → cəm fel)",
-                    "items": [
-                        {"prompt_fa": "کارگران بیل و تیشه دارد.", "answer_fa": "کارگران بیل و تیشه دارند.", "reading_az": "Kargəran bil va tişe darənd.", "az": "Fəhlələrin beli və külüngü var."},
-                        {"prompt_fa": "جوانان به پیرمردها کمک می‌کند.", "answer_fa": "جوانان به پیرمردها کمک می‌کنند.", "reading_az": "Cəvanan be pirmərdha komək mikonənd.", "az": "Gənclər qocalara kömək edirlər."},
-                        {"prompt_fa": "آن کودکان درس می‌خواند و تکلیف می‌نویسد.", "answer_fa": "آن کودکان درس می‌خوانند و تکلیف می‌نویسند.", "reading_az": "An kudəkan dərs mixanənd va təklif minevisənd.", "az": "O uşaqlar dərs oxuyur və tapşırıq yazırlar."},
-                    ],
-                },
-            ],
+            # QEYD: dərslikdəki bu tapşırıq artıq ÇALIŞMALAR siyahısındadır.
         },
         {
             "title_az": "Deyək — deməyək: برادرِ من (mənim qardaşım) fel uzlaşması",
@@ -229,18 +228,7 @@ LESSON = {
                 {"fa": "شما مهندس هستی. خواهرت دانش‌آموز است و برادرانت دانش‌جو هستند.", "reading_az": "Şoma mohəndes hasti. Xahərət daneşamuz əst va bəradəranət daneşcu həstənd.", "az": "Sən mühəndissən. Bacın şagirddir, qardaşların isə tələbədirlər."},
                 {"fa": "دوستان شما پالتو می‌پوشند یا کاپشن؟ دوستان ما گاهی پالتو و گاهی کاپشن می‌پوشند.", "reading_az": "Dustane şoma palto mipuşənd ya kapşen? Dustane ma gahi palto va gahi kapşen mipuşənd.", "az": "Sizin dostlarınız palto geyinirlər, yoxsa gödəkcə? Dostlarımız bəzən palto, bəzən gödəkcə geyinirlər."},
             ],
-            "drills": [
-                {
-                    "title_fa": "تصحیح کنید",
-                    "instruction_az": "Səhv cümlələri düzəldin (fel uzlaşması)",
-                    "items": [
-                        {"prompt_fa": "استادِ شما درس می‌دهید.", "answer_fa": "استادِ شما درس می‌دهد.", "reading_az": "Ostade şoma dərs midəhəd.", "az": "Sizin müəlliminiz dərs deyir."},
-                        {"prompt_fa": "فرزندان ما دندان‌پزشک هستیم.", "answer_fa": "فرزندان ما دندان‌پزشک هستند.", "reading_az": "Fərzəndane ma dəndanpezeşk həstənd.", "az": "Övladlarımız diş həkimidir."},
-                        {"prompt_fa": "دوستان او لباس‌ها را اتو می‌زند.", "answer_fa": "دوستان او لباس‌ها را اتو می‌زنند.", "reading_az": "Dustane u lebasha ra otu mizənənd.", "az": "Onun dostları paltarları ütüləyirlər."},
-                        {"prompt_fa": "هم‌کلاس من این پیراهن را می‌پوشم.", "answer_fa": "هم‌کلاس من این پیراهن را می‌پوشد.", "reading_az": "Həmkelase mən in pirahən ra mipuşəd.", "az": "Mənim sinif yoldaşım bu köynəyi geyinir."},
-                    ],
-                },
-            ],
+            # QEYD: dərslikdəki bu tapşırıq artıq ÇALIŞMALAR siyahısındadır.
         },
     ],
     "exercises": [
@@ -382,17 +370,88 @@ LESSON = {
             ],
         },
         {
+            # Çalışma 3 — səh. 93 «جمله‌های اشتباه را تصحیح کنید» (5 bənd).
+            # Əvvəllər Mövzu 2-nin drill-i idi və yalnız 3 bəndi vardı;
+            # dərslikdəki 5 bəndlə tam şəkildə çalışmaya çevrilib.
+            "kind": "answer_question",
+            "title_fa": "جمله‌های اشتباه را تصحیح کنید",
+            "instruction_az": "Səhv cümlələri düzəldin",
+            # Qırmızı — səhv (tək) fel, yaşıl — düzgün (cəm) fel.
+            "example_fa": (
+                "دانش‌آموزها در کلاس **است**.\n"
+                "دانش‌آموزها در کلاس *هستند*."
+            ),
+            "example_reading_az": (
+                "Daneşamuzha dər kelas əst. (ğələt)\n"
+                "Daneşamuzha dər kelas həstənd."
+            ),
+            "example_az": (
+                "Mübtəda cəm və CANLI olanda fel mütləq cəm olmalıdır.\n"
+                "Qırmızı — səhv tək fel, yaşıl — düzgün cəm fel.\n"
+                "Mübtəda CANSIZ olanda tək fel də düzgündür, amma bu tapşırıqda hamısı cəm formaya çevrilir.\n"
+                "Tərcümə: Şagirdlər sinifdədirlər."
+            ),
+            "items": [
+                {
+                    "fa": "کارگران بیل و تیشه دارد.",
+                    "reading_az": "Kargəran bil va tişe darəd. (səhv)",
+                    "az": "Fəhlələrin beli və külüngü var. — کارگران canlı və cəmdir",
+                    "sample_answer_fa": "کارگران بیل و تیشه دارند.",
+                    "sample_answer_reading_az": "Kargəran bil va tişe darənd.",
+                    "sample_answer_az": "Fəhlələrin beli və külüngü var. (canlı cəm → fel mütləq cəm)",
+                },
+                {
+                    "fa": "این کلاه‌ها آبی و صورتی است.",
+                    "reading_az": "İn kolahha abi va surəti əst.",
+                    "az": "Bu papaqlar mavi və çəhrayıdır. — کلاه cansızdır",
+                    "sample_answer_fa": "این کلاه‌ها آبی و صورتی هستند.",
+                    "sample_answer_reading_az": "İn kolahha abi va surəti həstənd.",
+                    "sample_answer_az": "Bu papaqlar mavi və çəhrayıdır. (cansız olduğu üçün «است» də düzgündür, amma burada cəm forma istənir)",
+                },
+                {
+                    "fa": "جوانان به پیرمردها کمک می‌کند.",
+                    "reading_az": "Cəvanan be pirmərdha komək mikonəd. (səhv)",
+                    "az": "Gənclər qocalara kömək edirlər. — جوانان canlı və cəmdir",
+                    "sample_answer_fa": "جوانان به پیرمردها کمک می‌کنند.",
+                    "sample_answer_reading_az": "Cəvanan be pirmərdha komək mikonənd.",
+                    "sample_answer_az": "Gənclər qocalara kömək edirlər. (canlı cəm → fel mütləq cəm)",
+                },
+                {
+                    "fa": "سرویس‌های بهداشتی، شیر آب دارد.",
+                    "reading_az": "Servishaye behdaşti, şire ab darəd.",
+                    "az": "Sanitar qovşaqlarının su kranı var. — سرویس cansızdır",
+                    "sample_answer_fa": "سرویس‌های بهداشتی، شیر آب دارند.",
+                    "sample_answer_reading_az": "Servishaye behdaşti, şire ab darənd.",
+                    "sample_answer_az": "Sanitar qovşaqlarının su kranı var. (cansız olduğu üçün «دارد» da düzgündür)",
+                },
+                {
+                    "fa": "آن کودکان درس می‌خواند و تکلیف می‌نویسد.",
+                    "reading_az": "An kudəkan dərs mixanəd va təklif minevisəd. (səhv)",
+                    "az": "O uşaqlar dərs oxuyur və tapşırıq yazırlar. — کودکان canlı və cəmdir",
+                    "sample_answer_fa": "آن کودکان درس می‌خوانند و تکلیف می‌نویسند.",
+                    "sample_answer_reading_az": "An kudəkan dərs mixanənd va təklif minevisənd.",
+                    "sample_answer_az": "O uşaqlar dərs oxuyur və tapşırıq yazırlar. (hər iki fel cəm olmalıdır)",
+                },
+            ],
+        },
+        {
+            # Çalışma 4 — səh. 94 «با واژه یا واژه‌های درست کامل کنید».
+            # Dərslikdə hər bənd üçün İKİ variant verilir və biri seçilir, ona
+            # görə söz bankında 12 çip var (6 düzgün + 6 çeldirici).
             "kind": "fill_blank",
-            "instruction_az": "Düzgün söz və ya sözlərlə tamamlayın.",
-            "word_bank": ["کتاب‌ها", "خانم", "هستند", "کودکان", "می‌پزند", "دارند"],
+            "instruction_az": "با واژه یا واژه‌های درست کامل کنید — düzgün söz və ya sözlərlə tamamlayın (hər cümlə üçün iki variantdan biri düzgündür).",
+            "word_bank": [
+                "کتاب", "کتاب‌ها", "خانم", "خانم‌ها", "است", "هستند",
+                "کودک", "کودکان", "می‌پزد", "می‌پزند", "دارد", "دارند",
+            ],
             "items": [
                 {
                     "fa_with_blank": "این ___ رنگی است.",
-                    "correct_answer": "کتاب‌ها",
-                    "reading_az": "ketabha",
-                    "az": "kitablar",
-                    "full_reading_az": "İn ketabha rəngi əst.",
-                    "full_translation_az": "Bu kitablar rənglidir.",
+                    "correct_answer": "کتاب",
+                    "reading_az": "ketab",
+                    "az": "kitab",
+                    "full_reading_az": "İn ketab rəngi əst.",
+                    "full_translation_az": "Bu kitab rənglidir. — «است» tək olduğu üçün mübtəda da tək olur.",
                 },
                 {
                     "fa_with_blank": "آن ___ ، لباس می‌دوزد.",
@@ -400,15 +459,15 @@ LESSON = {
                     "reading_az": "xanom",
                     "az": "xanım",
                     "full_reading_az": "An xanom, lebas miduzəd.",
-                    "full_translation_az": "O xanım paltar tikir.",
+                    "full_translation_az": "O xanım paltar tikir. — fel tək və mübtəda canlıdır, ona görə «خانم‌ها» olmaz.",
                 },
                 {
                     "fa_with_blank": "آن کفش‌ها زنانه ___ .",
                     "correct_answer": "هستند",
                     "reading_az": "həstənd",
-                    "az": "-dır",
+                    "az": "-dır (cəm)",
                     "full_reading_az": "An kəfşha zənane həstənd.",
-                    "full_translation_az": "O ayaqqabılar qadın ayaqqabısıdır.",
+                    "full_translation_az": "O ayaqqabılar qadın ayaqqabısıdır. — کفش cansızdır, ona görə «است» də düzgün sayılır.",
                 },
                 {
                     "fa_with_blank": "این ___ ، آبرنگ می‌خواهند.",
@@ -416,7 +475,7 @@ LESSON = {
                     "reading_az": "kudəkan",
                     "az": "uşaqlar",
                     "full_reading_az": "İn kudəkan, abrəng mixahənd.",
-                    "full_translation_az": "Bu uşaqlar akvarel istəyirlər.",
+                    "full_translation_az": "Bu uşaqlar akvarel istəyirlər. — fel cəmdir («می‌خواهند»), ona görə mübtəda da cəm olmalıdır.",
                 },
                 {
                     "fa_with_blank": "آشپزها در آشپزخانه غذا ___ .",
@@ -424,21 +483,267 @@ LESSON = {
                     "reading_az": "mipəzənd",
                     "az": "bişirirlər",
                     "full_reading_az": "Aşpəzha dər aşpəzxane qəza mipəzənd.",
-                    "full_translation_az": "Aşpazlar mətbəxdə yemək bişirirlər.",
+                    "full_translation_az": "Aşpazlar mətbəxdə yemək bişirirlər. — آشپزها canlı və cəmdir, fel mütləq cəm olur.",
                 },
                 {
                     "fa_with_blank": "آن پیراهن‌ها آستین و یقه ___ .",
                     "correct_answer": "دارند",
                     "reading_az": "darənd",
-                    "az": "var",
+                    "az": "var (cəm)",
                     "full_reading_az": "An pirahənha astin va yəqe darənd.",
-                    "full_translation_az": "O köynəklərin qolu və yaxası var.",
+                    "full_translation_az": "O köynəklərin qolu və yaxası var. — پیراهن cansızdır, ona görə «دارد» da düzgündür.",
                 },
             ],
         },
         {
+            # Çalışma 5 — səh. 94 «جمع کدام واژه‌ها با «ان» درست است.»
+            # Dərslikdə 15 söz verilir; hər sözün «ان» ilə cəmlənə bilib-
+            # bilməməsi canlı/cansız qaydası ilə yoxlanır.
+            "kind": "answer_question",
+            "title_fa": "جمع کدام واژه‌ها با «ان» درست است؟",
+            "instruction_az": "Hansı sözlərin «ان» ilə cəmi düzgündür? Hər söz üçün cavabı yoxlayın",
+            # Yaşıl — «ان» mümkün olan söz, qırmızı — mümkün olmayan.
+            "example_fa": (
+                "پسر ← *پسران* ✓ (جان‌دار)\n"
+                "پیراهن ← **پیراهنان** ✗ — پیراهن‌ها ✓ (بی‌جان)"
+            ),
+            "example_reading_az": (
+                "pesər → pesəran ✓ (candar)\n"
+                "pirahən → pirahənan ✗ — pirahənha ✓ (bican)"
+            ),
+            "example_az": (
+                "Qayda: «ان» yalnız CANLI varlıqlara qoşulur (insan, heyvan, bitki).\n"
+                "Cansız sözlərdə yalnız «ها» işlənir.\n"
+                "Diqqət: bəzi sözlərin sonundakı «ان» cəm əlaməti deyil, sözün öz hissəsidir — "
+                "خیابان، خلبان، بیمارستان kimi. Onlar da «ها» ilə cəmlənir: خیابان‌ها، خلبان‌ها.\n"
+                "Yaşıl — «ان» düzgündür, qırmızı — düzgün deyil."
+            ),
+            "items": [
+                {
+                    "fa": "پسر", "reading_az": "pesər", "az": "oğlan",
+                    "sample_answer_fa": "پسران ✓ (پسرها هم درست است)",
+                    "sample_answer_reading_az": "pesəran ✓ / pesərha ✓",
+                    "sample_answer_az": "Düzgündür — insandır, canlıdır.",
+                },
+                {
+                    "fa": "پیراهن", "reading_az": "pirahən", "az": "köynək",
+                    "sample_answer_fa": "پیراهنان ✗ — پیراهن‌ها ✓",
+                    "sample_answer_reading_az": "pirahənan ✗ — pirahənha ✓",
+                    "sample_answer_az": "Düzgün deyil — köynək cansızdır.",
+                },
+                {
+                    "fa": "خلبان", "reading_az": "xəlleban", "az": "pilot",
+                    "sample_answer_fa": "خلبانان ✓ (خلبان‌ها هم درست است)",
+                    "sample_answer_reading_az": "xəllebanan ✓ / xəllebanha ✓",
+                    "sample_answer_az": "Düzgündür — pilot canlıdır. Diqqət: sözün öz sonundakı «ان» cəm əlaməti deyil.",
+                },
+                {
+                    "fa": "فرزند", "reading_az": "fərzənd", "az": "övlad",
+                    "sample_answer_fa": "فرزندان ✓ (فرزندها هم درست است)",
+                    "sample_answer_reading_az": "fərzəndan ✓ / fərzəndha ✓",
+                    "sample_answer_az": "Düzgündür — insandır, canlıdır.",
+                },
+                {
+                    "fa": "چسب", "reading_az": "çəsb", "az": "yapışqan",
+                    "sample_answer_fa": "چسبان ✗ — چسب‌ها ✓",
+                    "sample_answer_reading_az": "çəsban ✗ — çəsbha ✓",
+                    "sample_answer_az": "Düzgün deyil — yapışqan cansızdır.",
+                },
+                {
+                    "fa": "همسر", "reading_az": "həmsər", "az": "həyat yoldaşı",
+                    "sample_answer_fa": "همسران ✓ (همسرها هم درست است)",
+                    "sample_answer_reading_az": "həmsəran ✓ / həmsərha ✓",
+                    "sample_answer_az": "Düzgündür — insandır, canlıdır.",
+                },
+                {
+                    "fa": "هواپیما", "reading_az": "həvapeyma", "az": "təyyarə",
+                    "sample_answer_fa": "هواپیمایان ✗ — هواپیماها ✓",
+                    "sample_answer_reading_az": "həvapeymaha ✓",
+                    "sample_answer_az": "Düzgün deyil — təyyarə cansızdır.",
+                },
+                {
+                    "fa": "خیابان", "reading_az": "xiyaban", "az": "küçə",
+                    "sample_answer_fa": "خیابان‌ها ✓ (سونداکی «ان» جزء کلمه است)",
+                    "sample_answer_reading_az": "xiyabanha ✓",
+                    "sample_answer_az": "«ان» ilə cəmlənmir — küçə cansızdır; üstəlik sonundakı «ان» sözün öz hissəsidir.",
+                },
+                {
+                    "fa": "دانش‌آموز", "reading_az": "daneşamuz", "az": "şagird",
+                    "sample_answer_fa": "دانش‌آموزان ✓ (دانش‌آموزها هم درست است)",
+                    "sample_answer_reading_az": "daneşamuzan ✓ / daneşamuzha ✓",
+                    "sample_answer_az": "Düzgündür — insandır, canlıdır.",
+                },
+                {
+                    "fa": "معلّم", "reading_az": "moəllem", "az": "müəllim",
+                    "sample_answer_fa": "معلّمان ✓ (معلّم‌ها هم درست است)",
+                    "sample_answer_reading_az": "moəlleman ✓ / moəllemha ✓",
+                    "sample_answer_az": "Düzgündür — insandır, canlıdır.",
+                },
+                {
+                    "fa": "درخت", "reading_az": "dəraxt", "az": "ağac",
+                    "sample_answer_fa": "درختان ✓ (درخت‌ها هم درست است)",
+                    "sample_answer_reading_az": "dərəxtan ✓ / dəraxtha ✓",
+                    "sample_answer_az": "Düzgündür — farscada bitkilər canlı sayılır.",
+                },
+                {
+                    "fa": "پشت‌بام", "reading_az": "poştbam", "az": "dam",
+                    "sample_answer_fa": "پشت‌بامان ✗ — پشت‌بام‌ها ✓",
+                    "sample_answer_reading_az": "poştbamha ✓",
+                    "sample_answer_az": "Düzgün deyil — dam cansızdır.",
+                },
+                {
+                    "fa": "تکلیف", "reading_az": "təklif", "az": "ev tapşırığı",
+                    "sample_answer_fa": "تکلیفان ✗ — تکلیف‌ها ✓",
+                    "sample_answer_reading_az": "təklifha ✓",
+                    "sample_answer_az": "Düzgün deyil — tapşırıq cansızdır.",
+                },
+                {
+                    "fa": "زیپ", "reading_az": "zip", "az": "zəncirbənd",
+                    "sample_answer_fa": "زیپان ✗ — زیپ‌ها ✓",
+                    "sample_answer_reading_az": "zipha ✓",
+                    "sample_answer_az": "Düzgün deyil — zəncirbənd cansızdır.",
+                },
+                {
+                    "fa": "مادر", "reading_az": "madər", "az": "ana",
+                    "sample_answer_fa": "مادران ✓ (مادرها هم درست است)",
+                    "sample_answer_reading_az": "madəran ✓ / madərha ✓",
+                    "sample_answer_az": "Düzgündür — insandır, canlıdır.",
+                },
+            ],
+        },
+        {
+            # Çalışma 6 — səh. 94 «لطفاً جایگزین کنید» («برای … انتخاب کردن»).
+            # Əvvəllər sadə practice_reveal idi; Dərs 5/6 quruluşuna keçirilib.
+            "kind": "answer_question",
+            "title_fa": "لطفاً جایگزین کنید",
+            "instruction_az": "Nümunə kimi əvəz edin («برای … انتخاب کردن»)",
+            # Qırmızı «را» — obyekt əlaməti, yaşıl «برای» — məqsəd.
+            "example_fa": (
+                "من / پیراهن سفید / پوشیدن\n"
+                "من پیراهن سفید **را** *برای* پوشیدن انتخاب می‌کنم."
+            ),
+            "example_reading_az": (
+                "Mən / pirahəne sefid / puşidən\n"
+                "Mən pirahəne sefid ra bəraye puşidən entexab mikonəm."
+            ),
+            "example_az": (
+                "Verilən sözlər: SUBYEKT / SEÇİLƏN ŞEY / MƏQSƏD (məsdər).\n"
+                "Quruluş: SUBYEKT + SEÇİLƏN ŞEY + را + برای + MƏSDƏR + انتخاب می‌کند.\n"
+                "Qırmızı «را» seçilən şeyin, yaşıl «برای» məqsədin qarşısında gəlir.\n"
+                "«انتخاب کردن» feli subyektin şəxsinə görə hallanır.\n"
+                "Tərcümə: Mən geyinmək üçün ağ köynəyi seçirəm."
+            ),
+            "items": [
+                {
+                    "fa": "شما / خودکار آبی / نوشتن",
+                    "reading_az": "Şoma / xodkare abi / neveştən",
+                    "az": "siz / mavi tükənməz qələm / yazmaq",
+                    "sample_answer_fa": "شما خودکار آبی را برای نوشتن انتخاب می‌کنید.",
+                    "sample_answer_reading_az": "Şoma xodkare abi ra bəraye neveştən entexab mikonid.",
+                    "sample_answer_az": "Siz yazmaq üçün mavi tükənməz qələmi seçirsiniz.",
+                },
+                {
+                    "fa": "آن‌ها / جامعة المصطفی / درس خواندن",
+                    "reading_az": "Anha / Cameətol-Mostəfa / dərs xandən",
+                    "az": "onlar / əl-Müstəfa Cəmiyyəti / oxumaq",
+                    "sample_answer_fa": "آن‌ها جامعة المصطفی را برای درس خواندن انتخاب می‌کنند.",
+                    "sample_answer_reading_az": "Anha Cameətol-Mostəfa ra bəraye dərs-xandən entexab mikonənd.",
+                    "sample_answer_az": "Onlar oxumaq üçün əl-Müstəfa Cəmiyyətini seçirlər.",
+                },
+                {
+                    "fa": "مادرم / این فروش‌گاه / خریدن پوشاک",
+                    "reading_az": "Madərəm / in foruşgah / xəridəne puşak",
+                    "az": "anam / bu mağaza / geyim almaq",
+                    "sample_answer_fa": "مادرم این فروش‌گاه را برای خریدن پوشاک انتخاب می‌کند.",
+                    "sample_answer_reading_az": "Madərəm in foruşgah ra bəraye xəridəne puşak entexab mikonəd.",
+                    "sample_answer_az": "Anam geyim almaq üçün bu mağazanı seçir.",
+                },
+                {
+                    "fa": "فرزندان او / مقوّای رنگی / نقّاشی کشیدن",
+                    "reading_az": "Fərzəndane u / moqəvvaye rəngi / nəqqaşi keşidən",
+                    "az": "onun övladları / rəngli karton / rəsm çəkmək",
+                    "sample_answer_fa": "فرزندان او مقوّای رنگی را برای نقّاشی کشیدن انتخاب می‌کنند.",
+                    "sample_answer_reading_az": "Fərzəndane u moqəvvaye rəngi ra bəraye nəqqaşi-keşidən entexab mikonənd.",
+                    "sample_answer_az": "Onun övladları rəsm çəkmək üçün rəngli kartonu seçirlər.",
+                },
+                {
+                    "fa": "برادرم / اداره‌ی پست / کار کردن",
+                    "reading_az": "Bəradərəm / edareye post / kar kərdən",
+                    "az": "qardaşım / poçt idarəsi / işləmək",
+                    "sample_answer_fa": "برادرم اداره‌ی پست را برای کار کردن انتخاب می‌کند.",
+                    "sample_answer_reading_az": "Bəradərəm edareye post ra bəraye kar-kərdən entexab mikonəd.",
+                    "sample_answer_az": "Qardaşım işləmək üçün poçt idarəsini seçir.",
+                },
+                {
+                    "fa": "پدرم / آن بنّا / ساختن خانه",
+                    "reading_az": "Pedərəm / an bənna / saxtəne xane",
+                    "az": "atam / o bənna / ev tikmək",
+                    "sample_answer_fa": "پدرم آن بنّا را برای ساختن خانه انتخاب می‌کند.",
+                    "sample_answer_reading_az": "Pedərəm an bənna ra bəraye saxtəne xane entexab mikonəd.",
+                    "sample_answer_az": "Atam ev tikmək üçün o bənnanı seçir.",
+                },
+            ],
+        },
+        {
+            # Çalışma 7 — səh. 95 «تصحیح کنید» (بگوییم – نگوییم mövzusu).
+            # Əvvəllər Mövzu 3-ün drill-i idi.
+            "kind": "answer_question",
+            "title_fa": "تصحیح کنید",
+            "instruction_az": "Səhv cümlələri düzəldin (fel cümlənin öz mübtədası ilə uzlaşmalıdır)",
+            # Qırmızı — səhv fel, yaşıl — düzgün fel.
+            "example_fa": (
+                "برادر من درس فارسی **می‌خوانم**.\n"
+                "برادر من درس فارسی *می‌خواند*."
+            ),
+            "example_reading_az": (
+                "Bəradəre mən dərse farsi mixanəm. (ğələt)\n"
+                "Bəradəre mən dərse farsi mixanəd."
+            ),
+            "example_az": (
+                "Fel danışanla («من»/«ما») deyil, cümlənin ÖZ mübtədası ilə uzlaşır.\n"
+                "«برادر من» üçüncü şəxs təkdir, ona görə fel «می‌خواند» olur.\n"
+                "Mübtədanın tərkibindəki «من/ما/شما» sözü aldadıcıdır — əsas söz onun önündəki isimdir.\n"
+                "Tərcümə: Mənim qardaşım fars dili oxuyur."
+            ),
+            "items": [
+                {
+                    "fa": "استادِ شما درس می‌دهید.",
+                    "reading_az": "Ostade şoma dərs midəhid. (səhv)",
+                    "az": "Sizin müəlliminiz dərs deyir. — mübtəda «استاد»dır, «شما» deyil",
+                    "sample_answer_fa": "استادِ شما درس می‌دهد.",
+                    "sample_answer_reading_az": "Ostade şoma dərs midəhəd.",
+                    "sample_answer_az": "Sizin müəlliminiz dərs deyir. (3-cü şəxs tək)",
+                },
+                {
+                    "fa": "فرزندان ما دندان‌پزشک هستیم.",
+                    "reading_az": "Fərzəndane ma dəndanpezeşk hastim. (səhv)",
+                    "az": "Bizim övladlarımız diş həkimidir. — mübtəda «فرزندان»dır",
+                    "sample_answer_fa": "فرزندان ما دندان‌پزشک هستند.",
+                    "sample_answer_reading_az": "Fərzəndane ma dəndanpezeşk həstənd.",
+                    "sample_answer_az": "Bizim övladlarımız diş həkimidirlər. (3-cü şəxs cəm)",
+                },
+                {
+                    "fa": "دوستان او لباس‌ها را اتو می‌زند.",
+                    "reading_az": "Dustane u lebasha ra otu mizənəd. (səhv)",
+                    "az": "Onun dostları paltarları ütüləyirlər. — mübtəda «دوستان» cəmdir",
+                    "sample_answer_fa": "دوستان او لباس‌ها را اتو می‌زنند.",
+                    "sample_answer_reading_az": "Dustane u lebasha ra otu mizənənd.",
+                    "sample_answer_az": "Onun dostları paltarları ütüləyirlər. (canlı cəm → fel cəm)",
+                },
+                {
+                    "fa": "هم‌کلاس من این پیراهن را می‌پوشم.",
+                    "reading_az": "Həmkelase mən in pirahən ra mipuşəm. (səhv)",
+                    "az": "Mənim sinif yoldaşım bu köynəyi geyinir. — mübtəda «هم‌کلاس»dır",
+                    "sample_answer_fa": "هم‌کلاس من این پیراهن را می‌پوشد.",
+                    "sample_answer_reading_az": "Həmkelase mən in pirahən ra mipuşəd.",
+                    "sample_answer_az": "Mənim sinif yoldaşım bu köynəyi geyinir. (3-cü şəxs tək)",
+                },
+            ],
+        },
+        {
+            # Çalışma 8 — səh. 98 «لطفاً با فعل مناسب کامل کنید».
             "kind": "fill_blank",
-            "instruction_az": "Uyğun fellə tamamlayın.",
+            "instruction_az": "لطفاً با فعل مناسب کامل کنید — uyğun fellə tamamlayın.",
             "word_bank": ["اتو می‌زنند", "انتخاب می‌کند", "می‌گذارد", "می‌شوید", "می‌کنند"],
             "items": [
                 {
@@ -463,7 +768,7 @@ LESSON = {
                     "reading_az": "migozarəd",
                     "az": "qoyur",
                     "full_reading_az": "Xahəre mən lebasha ra dər ləbasşuyi migozarəd.",
-                    "full_translation_az": "Bacım paltarları paltaryuyana qoyur.",
+                    "full_translation_az": "Bacım paltarları paltaryuyana qoyur. — «در لباس‌شویی» (içinə) olduğu üçün «می‌گذارد».",
                 },
                 {
                     "fa_with_blank": "خواهر من لباس‌ها را با لباس‌شویی ___ .",
@@ -471,7 +776,7 @@ LESSON = {
                     "reading_az": "mişuyəd",
                     "az": "yuyur",
                     "full_reading_az": "Xahəre mən lebasha ra ba ləbasşuyi mişuyəd.",
-                    "full_translation_az": "Bacım paltarları paltaryuyanla yuyur.",
+                    "full_translation_az": "Bacım paltarları paltaryuyanla yuyur. — «با لباس‌شویی» (vasitə) olduğu üçün «می‌شوید».",
                 },
                 {
                     "fa_with_blank": "آیا دوستانتان در تمیزکردن اتاق به شما کمک ___ ؟",
@@ -484,134 +789,116 @@ LESSON = {
             ],
         },
         {
-            "kind": "practice_reveal",
-            "instruction_az": "Nümunə kimi əvəz edin: «علی پیراهنش را درمی‌آورد و ژاکت می‌پوشد. — من / کاپشن / پالتو → من کاپشنم را درمی‌آورم و پالتو می‌پوشم.»",
+            # Çalışma 9 — səh. 98 «مانند مثال، جمله‌های زیر را تغییر دهید».
+            # Əvvəllər sadə practice_reveal idi.
+            "kind": "answer_question",
+            "title_fa": "مانند مثال، جمله‌های زیر را تغییر دهید",
+            "instruction_az": "Nümunə kimi cümlələri dəyişin (mötərizədəki yeni mübtəda ilə)",
+            # Qırmızı — köhnə mübtəda, yaşıl — yeni mübtəda (fel ona görə dəyişir).
+            "example_fa": (
+                "**شما** از خودکار آبی و قرمز استفاده می‌کنید. (استاد شما)\n"
+                "*استاد شما* از خودکار آبی و قرمز استفاده می‌کند."
+            ),
+            "example_reading_az": (
+                "Şoma əz xodkare abi va qermez estefade mikonid. (Ostade şoma)\n"
+                "Ostade şoma əz xodkare abi va qermez estefade mikonəd."
+            ),
+            "example_az": (
+                "Cümlədəki mübtəda mötərizədə verilən yeni mübtəda ilə əvəz olunur.\n"
+                "Qırmızı — köhnə mübtəda, yaşıl — yeni mübtəda.\n"
+                "Fel YENİ mübtədanın şəxsinə görə dəyişir: می‌کنید → می‌کند.\n"
+                "Cümlənin qalan hissəsi olduğu kimi qalır.\n"
+                "Tərcümə: Sizin müəlliminiz mavi və qırmızı qələmdən istifadə edir."
+            ),
             "items": [
                 {
-                    "prompt_fa": "ما / کفش / دمپایی",
-                    "answer_fa": "ما کفش‌هایمان را درمی‌آوریم و دمپایی می‌پوشیم.",
-                    "reading_az": "Ma kəfşhayeman ra dərmiavərim va dəmpayi mipuşim.",
-                    "az": "Biz ayaqqabılarımızı çıxarırıq və şəpşəp geyinirik.",
+                    "fa": "آن‌ها اتاق را تمیز می‌کنند. (دوست آن‌ها)",
+                    "reading_az": "Anha otaq ra təmiz mikonənd. (Duste anha)",
+                    "az": "Onlar otağı təmizləyirlər. (onların dostu)",
+                    "sample_answer_fa": "دوست آن‌ها اتاق را تمیز می‌کند.",
+                    "sample_answer_reading_az": "Duste anha otaq ra təmiz mikonəd.",
+                    "sample_answer_az": "Onların dostu otağı təmizləyir. (yeni mübtəda tək → fel tək)",
                 },
                 {
-                    "prompt_fa": "من / جوراب نازک / جوراب ضخیم",
-                    "answer_fa": "من جوراب نازکم را درمی‌آورم و جوراب ضخیم می‌پوشم.",
-                    "reading_az": "Mən curabe nazokəm ra dərmiavəram va curabe zəxim mipuşəm.",
-                    "az": "Mən nazik corabımı çıxarıram və qalın corab geyinirəm.",
+                    "fa": "من روسری قهوه‌ای را انتخاب می‌کنم. (مادر من)",
+                    "reading_az": "Mən rusəriye qəhvei ra entexab mikonəm. (Madəre mən)",
+                    "az": "Mən qəhvəyi baş örtüyünü seçirəm. (mənim anam)",
+                    "sample_answer_fa": "مادر من روسری قهوه‌ای را انتخاب می‌کند.",
+                    "sample_answer_reading_az": "Madəre mən rusəriye qəhvei ra entexab mikonəd.",
+                    "sample_answer_az": "Anam qəhvəyi baş örtüyünü seçir. (3-cü şəxs tək)",
                 },
                 {
-                    "prompt_fa": "شما / پیراهن / بلوز",
-                    "answer_fa": "شما پیراهنتان را درمی‌آورید و بلوز می‌پوشید.",
-                    "reading_az": "Şoma pirahənetan ra dərmiavərid va boluz mipuşid.",
-                    "az": "Siz köynəyinizi çıxarırsınız və bluz geyinirsiniz.",
+                    "fa": "شما لباس‌ها را می‌شویی و اتو می‌زنی. (همسر شما)",
+                    "reading_az": "Şoma lebasha ra mişuyi va otu mizəni. (Həmsəre şoma)",
+                    "az": "Sən paltarları yuyub ütüləyirsən. (sizin həyat yoldaşınız)",
+                    "sample_answer_fa": "همسر شما لباس‌ها را می‌شوید و اتو می‌زند.",
+                    "sample_answer_reading_az": "Həmsəre şoma lebasha ra mişuyəd va otu mizənəd.",
+                    "sample_answer_az": "Həyat yoldaşınız paltarları yuyur və ütüləyir. (hər iki fel dəyişir)",
                 },
                 {
-                    "prompt_fa": "او / پیراهن آستین‌کوتاه / پیراهن آستین‌بلند",
-                    "answer_fa": "او پیراهن آستین‌کوتاهش را درمی‌آورد و پیراهن آستین‌بلند می‌پوشد.",
-                    "reading_az": "U pirahəne astin-kutaheş ra dərmiavərəd va pirahəne astin-bolənd mipuşəd.",
-                    "az": "O, qısaqollu köynəyini çıxarır və uzunqollu köynək geyinir.",
+                    "fa": "ما در زمستان لباس‌های نازک را درمی‌آوریم و لباس‌های ضخیم می‌پوشیم. (دوستان ما)",
+                    "reading_az": "Ma dər zemestan lebashaye nazok ra dər-miavərim va lebashaye zəxim mipuşim. (Dustane ma)",
+                    "az": "Biz qışda nazik paltarları çıxarıb qalın paltar geyinirik. (bizim dostlarımız)",
+                    "sample_answer_fa": "دوستان ما در زمستان لباس‌های نازک را درمی‌آورند و لباس‌های ضخیم می‌پوشند.",
+                    "sample_answer_reading_az": "Dustane ma dər zemestan lebashaye nazok ra dər-miavərənd va lebashaye zəxim mipuşənd.",
+                    "sample_answer_az": "Dostlarımız qışda nazik paltarları çıxarır və qalın paltarlar geyinirlər.",
                 },
             ],
         },
         {
-            "kind": "practice_reveal",
-            "instruction_az": "Nümunə kimi əvəz edin: «شما از خودکار آبی استفاده می‌کنید. (استاد شما) → استاد شما از خودکار آبی استفاده می‌کند.»",
+            # Çalışma 10 — səh. 98 «با استفاده از واژه‌ی «هنگام» جمله بسازید».
+            # Əvvəllər sadə practice_reveal idi.
+            "kind": "answer_question",
+            "title_fa": "با استفاده از واژه‌ی «هنگام» جمله بسازید",
+            "instruction_az": "«هنگام» sözü ilə cümlə qurun",
+            # Yaşıl «هنگام» — «…-arkən, … vaxtı» mənasında məsdərin önündə.
+            "example_fa": (
+                "من / درس خواندن / اتاق مطالعه / رفتن\n"
+                "من *هنگام* درس خواندن به اتاق مطالعه می‌روم."
+            ),
+            "example_reading_az": (
+                "Mən / dərs xandən / otaqe motaleə / rəftən\n"
+                "Mən hengame dərs-xandən be otaqe motaleə mirəvəm."
+            ),
+            "example_az": (
+                "Verilən sözlər: SUBYEKT / 1-ci İŞ (məsdər) / YER və ya VASİTƏ / 2-ci İŞ (məsdər).\n"
+                "Quruluş: SUBYEKT + هنگام + 1-ci MƏSDƏR + ... + 2-ci FEL (hallanmış).\n"
+                "Yaşıl «هنگام» məsdərin önündə gəlir və «…-arkən / … vaxtı» mənasını verir; izafətlə oxunur: هنگامِ.\n"
+                "Yalnız SONUNCU fel hallanır, «هنگام»dan sonrakı fel məsdər olaraq qalır.\n"
+                "Tərcümə: Mən dərs oxuyarkən mütaliə otağına gedirəm."
+            ),
             "items": [
                 {
-                    "prompt_fa": "آن‌ها اتاق را تمیز می‌کنند. (دوست آن‌ها)",
-                    "answer_fa": "دوست آن‌ها اتاق را تمیز می‌کند.",
-                    "reading_az": "Duste anha otaq ra təmiz mikonəd.",
-                    "az": "Onların dostu otağı təmizləyir.",
+                    "fa": "دوستم / ظرف شستن / مادرش / کمک کردن",
+                    "reading_az": "Dustəm / zərf şostən / madərəş / komək kərdən",
+                    "az": "dostum / qab yumaq / onun anası / kömək etmək",
+                    "sample_answer_fa": "دوستم هنگام ظرف شستن به مادرش کمک می‌کند.",
+                    "sample_answer_reading_az": "Dustəm hengame zərf-şostən be madərəş komək mikonəd.",
+                    "sample_answer_az": "Dostum qab yuyarkən anasına kömək edir.",
                 },
                 {
-                    "prompt_fa": "من روسری قهوه‌ای را انتخاب می‌کنم. (مادر من)",
-                    "answer_fa": "مادر من روسری قهوه‌ای را انتخاب می‌کند.",
-                    "reading_az": "Madəre mən rusəriye qəhvei ra entexab mikonəd.",
-                    "az": "Anam qəhvəyi baş örtüyünü seçir.",
+                    "fa": "استاد / درس دادن / تابلو و ماژیک / استفاده کردن",
+                    "reading_az": "Ostad / dərs dadən / təblo va majik / estefade kərdən",
+                    "az": "müəllim / dərs demək / lövhə və marker / istifadə etmək",
+                    "sample_answer_fa": "استاد هنگام درس دادن از تابلو و ماژیک استفاده می‌کند.",
+                    "sample_answer_reading_az": "Ostad hengame dərs-dadən əz təblo va majik estefade mikonəd.",
+                    "sample_answer_az": "Müəllim dərs deyərkən lövhə və markerdən istifadə edir.",
                 },
                 {
-                    "prompt_fa": "شما لباس‌ها را می‌شویی و اتو می‌زنی. (همسر شما)",
-                    "answer_fa": "همسر شما لباس‌ها را می‌شوید و اتو می‌زند.",
-                    "reading_az": "Həmsəre şoma lebasha ra mişuyəd va otu mizənəd.",
-                    "az": "Sizin həyat yoldaşınız paltarları yuyur və ütüləyir.",
+                    "fa": "ما / عید / لباس‌های نو / انتخاب کردن و خریدن",
+                    "reading_az": "Ma / eyd / lebashaye nou / entexab kərdən va xəridən",
+                    "az": "biz / bayram / təzə paltarlar / seçmək və almaq",
+                    "sample_answer_fa": "ما هنگام عید لباس‌های نو انتخاب می‌کنیم و می‌خریم.",
+                    "sample_answer_reading_az": "Ma hengame eyd lebashaye nou entexab mikonim va mixərim.",
+                    "sample_answer_az": "Biz bayram vaxtı təzə paltarlar seçib alırıq.",
                 },
                 {
-                    "prompt_fa": "ما در زمستان لباس‌های نازک را درمی‌آوریم و لباس‌های ضخیم می‌پوشیم. (دوستان ما)",
-                    "answer_fa": "دوستان ما در زمستان لباس‌های نازک را درمی‌آورند و لباس‌های ضخیم می‌پوشند.",
-                    "reading_az": "Dustane ma dər zemestan lebashaye nazok ra dərmiavərənd va lebashaye zəxim mipuşənd.",
-                    "az": "Dostlarımız qışda nazik paltarları çıxarır və qalın paltarlar geyinirlər.",
-                },
-            ],
-        },
-        {
-            "kind": "practice_reveal",
-            "instruction_az": "«هنگام» sözü ilə cümlə qurun: «من / درس خواندن / اتاق مطالعه / رفتن → من هنگام درس خواندن به اتاق مطالعه می‌روم.»",
-            "items": [
-                {
-                    "prompt_fa": "دوستم / ظرف شستن / مادرش / کمک کردن",
-                    "answer_fa": "دوستم هنگام ظرف شستن به مادرش کمک می‌کند.",
-                    "reading_az": "Dustəm hengame zərf-şostən be madərəş komək mikonəd.",
-                    "az": "Dostum qab yuyarkən anasına kömək edir.",
-                },
-                {
-                    "prompt_fa": "استاد / درس دادن / تابلو و ماژیک / استفاده کردن",
-                    "answer_fa": "استاد هنگام درس دادن از تابلو و ماژیک استفاده می‌کند.",
-                    "reading_az": "Ostad hengame dərs-dadən əz təblo va majik estefade mikonəd.",
-                    "az": "Müəllim dərs deyərkən lövhə və markerdən istifadə edir.",
-                },
-                {
-                    "prompt_fa": "ما / عید / لباس‌های نو / انتخاب کردن و خریدن",
-                    "answer_fa": "ما هنگام عید لباس‌های نو انتخاب می‌کنیم و می‌خریم.",
-                    "reading_az": "Ma hengame eyd lebashaye nou entexab mikonim va mixərim.",
-                    "az": "Biz bayram vaxtı təzə paltarlar seçib alırıq.",
-                },
-                {
-                    "prompt_fa": "آن‌ها / زمستان / لباس‌های ضخیم / خریدن و پوشیدن",
-                    "answer_fa": "آن‌ها هنگام زمستان لباس‌های ضخیم می‌خرند و می‌پوشند.",
-                    "reading_az": "Anha hengame zemestan lebashaye zəxim mixərənd va mipuşənd.",
-                    "az": "Onlar qış vaxtı qalın paltarlar alıb geyinirlər.",
-                },
-            ],
-        },
-        {
-            "kind": "practice_reveal",
-            "instruction_az": "Nümunə kimi əvəz edin: «من پیراهن سفید را برای پوشیدن انتخاب می‌کنم.»",
-            "items": [
-                {
-                    "prompt_fa": "شما / خودکار آبی / نوشتن",
-                    "answer_fa": "شما خودکار آبی را برای نوشتن انتخاب می‌کنید.",
-                    "reading_az": "Şoma xodkare abi ra bəraye neveştən entexab mikonid.",
-                    "az": "Siz yazmaq üçün mavi tükənməz qələmi seçirsiniz.",
-                },
-                {
-                    "prompt_fa": "آن‌ها / جامعة المصطفی / درس خواندن",
-                    "answer_fa": "آن‌ها جامعة المصطفی را برای درس خواندن انتخاب می‌کنند.",
-                    "reading_az": "Anha Cameətol-Mostəfa ra bəraye dərs-xandən entexab mikonənd.",
-                    "az": "Onlar oxumaq üçün əl-Müstəfa Cəmiyyətini seçirlər.",
-                },
-                {
-                    "prompt_fa": "مادرم / این فروش‌گاه / خریدن پوشاک",
-                    "answer_fa": "مادرم این فروش‌گاه را برای خریدن پوشاک انتخاب می‌کند.",
-                    "reading_az": "Madərəm in foruşgah ra bəraye xəridəne puşak entexab mikonəd.",
-                    "az": "Anam geyim almaq üçün bu mağazanı seçir.",
-                },
-                {
-                    "prompt_fa": "فرزندان او / مقوّای رنگی / نقّاشی کشیدن",
-                    "answer_fa": "فرزندان او مقوّای رنگی را برای نقّاشی کشیدن انتخاب می‌کنند.",
-                    "reading_az": "Fərzəndane u moqəvvaye rəngi ra bəraye nəqqaşi-keşidən entexab mikonənd.",
-                    "az": "Onun övladları rəsm çəkmək üçün rəngli kartonu seçirlər.",
-                },
-                {
-                    "prompt_fa": "برادرم / اداره‌ی پست / کارکردن",
-                    "answer_fa": "برادرم اداره‌ی پست را برای کارکردن انتخاب می‌کند.",
-                    "reading_az": "Bəradərəm edareye post ra bəraye kar-kərdən entexab mikonəd.",
-                    "az": "Qardaşım işləmək üçün poçt idarəsini seçir.",
-                },
-                {
-                    "prompt_fa": "پدرم / آن بنّا / ساختن خانه",
-                    "answer_fa": "پدرم آن بنّا را برای ساختن خانه انتخاب می‌کند.",
-                    "reading_az": "Pedərəm an bənna ra bəraye saxtəne xane entexab mikonəd.",
-                    "az": "Atam ev tikmək üçün o bənnanı seçir.",
+                    "fa": "آن‌ها / زمستان / لباس‌های ضخیم / خریدن و پوشیدن",
+                    "reading_az": "Anha / zemestan / lebashaye zəxim / xəridən va puşidən",
+                    "az": "onlar / qış / qalın paltarlar / almaq və geyinmək",
+                    "sample_answer_fa": "آن‌ها هنگام زمستان لباس‌های ضخیم می‌خرند و می‌پوشند.",
+                    "sample_answer_reading_az": "Anha hengame zemestan lebashaye zəxim mixərənd va mipuşənd.",
+                    "sample_answer_az": "Onlar qış vaxtı qalın paltarlar alıb geyinirlər.",
                 },
             ],
         },

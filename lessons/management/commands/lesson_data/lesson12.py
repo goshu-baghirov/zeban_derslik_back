@@ -48,9 +48,32 @@ LESSON = {
             "title_az": "«بعد؛ بعد از» ↔ «قبل؛ قبل از»",
             "title_fa": "«بعد»؛ «بعد از» — «قبل»؛ «قبل از»",
             "explanation_az": (
-                "«بعد» — sonra, «قبل» — əvvəl deməkdir.\n"
-                "Müddət deyiləndə sözdən sonra gəlir: دو روز بعد (iki gün sonra), دو روز قبل (iki gün əvvəl).\n"
-                "Bir şeyə nisbətdə deyiləndə «از» əlavə olunur: بعد از یک‌شنبه، قبل از دوشنبه."
+                "Dörd forma var və seçim ondan asılıdır ki, sonra MÜDDƏT gəlir, yoxsa İSİM/MƏSDƏR.\n"
+                "MÜDDƏTdən SONRA gəlirsə «بعد» / «قبل» (tək halda) işlənir: من دو روز بعد در تهران هستم.\n"
+                "İSİM və ya MƏSDƏRdən ƏVVƏL gəlirsə «بعد از» / «قبل از» işlənir: دوشنبه، بعد از یک‌شنبه است.\n"
+                "Yəni «از» yalnız qarşısında söz olanda əlavə olunur.\n"
+                "Nümunə: من دو روز قبل در مشهد بودم. (müddət + قبل) / دوشنبه، قبل از سه‌شنبه است. (قبل از + isim)\n"
+                "MƏSDƏRlə: صندوق‌دار بعد از گرفتنِ پول، آن را می‌شمارد — «بعد از» + məsdər + izafət.\n"
+                "Yer bildirməkdə də işlənir: کتاب‌خانه بعد از حرم و قبل از چهارراه شهدا است.\n"
+                "Dərsliyin qeydi: «بعد از» = «پس از», «قبل از» = «پیش از» — tam sinonimlərdir.\n"
+                "Zaman uyğunluğu: «قبل» keçmişə, «بعد» gələcəyə işarə edir və felin zamanını müəyyən edə bilər."
+            ),
+            "note_fa": (
+                "● بعد از: پس از\n"
+                "● قبل از: پیش از\n"
+                "من دو روز بعد در تهران هستم. (مدّت + بعد)\n"
+                "دوشنبه، بعد از یک‌شنبه است. (بعد از + اسم)"
+            ),            "note_reading_az": (
+                "● Bə'd əz: pəs əz\n"
+                "● Qəbl əz: piş əz\n"
+                "Mən do ruz bə'd dər Tehran hastəm. (moddət + bə'd)\n"
+                "Doşənbe, bə'd əz yekşənbe əst. (bə'd əz + esm)"
+            ),            "note_az": (
+                "Dərsliyin qeydi: «بعد از» = «پس از» (…-dan sonra), «قبل از» = «پیش از» (…-dan əvvəl).\n"
+                "Seçim qaydası:\n"
+                "• MÜDDƏTdən sonra → «بعد» / «قبل» («از» olmadan): من دو روز بعد در تهران هستم.\n"
+                "• İSİM və ya MƏSDƏRdən əvvəl → «بعد از» / «قبل از»: دوشنبه، بعد از یک‌شنبه است.\n"
+                "Sadə yoxlama: qarşısında söz varsa «از» lazımdır, yoxsa lazım deyil."
             ),
             "conjugations": [
                 {"pronoun_fa": "من دو روز بعد در تهران هستم.", "form_fa": "من دو روز قبل در مشهد بودم."},
@@ -69,9 +92,30 @@ LESSON = {
             "title_az": "Zaman zərfi «دیشب؛ امشب؛ فردا شب» + keçmiş zaman feli «رفتم؛ رفتی؛ …»",
             "title_fa": "قید زمان «... دیشب؛ امشب؛ فردا شب؛ ...» و فعل گذشته‌ی «رفتم؛ رفتی؛ ...»",
             "explanation_az": (
-                "Gecə zərfləri: پریشب (iki gecə əvvəl), دیشب (dünən gecə), امشب (bu gecə), فرداشب، پس‌فرداشب.\n"
-                "Keçmiş zaman feli məsdərin kökünə şəxs şəkilçisi qoşmaqla düzəlir: رفتم، رفتی، رفت، رفتیم، رفتید، رفتند.\n"
-                "Keçmiş zərflə keçmiş fel, bu gün və gələcək zərflə indiki zaman feli işlənir."
+                "Gecə zərfləri gündüz zərfləri ilə eyni məntiqlə düzəlir, sadəcə «شب» sözü əlavə olunur.\n"
+                "Keçmişə doğru: سه شب قبل ← پریشب (iki gecə əvvəl) ← دیشب (dünən gecə).\n"
+                "Bu gecə: امشب.\n"
+                "Gələcəyə doğru: فرداشب (sabah axşam) → پس‌فرداشب (birisi gün axşam) → سه شب بعد.\n"
+                "Dərsliyin qeydi: «دیشب» = «یک شب قبل», «فردا شب» = «یک شب بعد».\n"
+                "«رفتن» felinin keçmiş zamanı: رفتم، رفتی، رفت، رفتیم، رفتید، رفتند.\n"
+                "Keçmiş zaman kökü «رفت»-dir və şəxs şəkilçiləri ona qoşulur — «می» ön şəkilçisi YOXDUR.\n"
+                "Müqayisə: من دیشب به تهران رفتم. (keçmiş) / من فرداشب به مشهد می‌روم. (indiki-gələcək)\n"
+                "Yəni zaman zərfi keçmişdirsə fel «رفتم», gələcəkdirsə «می‌روم» olur."
+            ),
+            "note_fa": (
+                "۱. دیشب: یک شب قبل\n"
+                "۲. فردا شب: یک شب بعد\n"
+                "پریشب: دو شب قبل / پس فردا شب: دو شب بعد"
+            ),            "note_reading_az": (
+                "1. Dişəb: yek şəb qəbl\n"
+                "2. Færda şəb: yek şəb bə'd\n"
+                "Pərişəb: do şəb qəbl / Pəs færda şəb: do şəb bə'd"
+            ),            "note_az": (
+                "1. «دیشب» = «یک شب قبل» — dünən gecə (bir gecə əvvəl).\n"
+                "2. «فردا شب» = «یک شب بعد» — sabah axşam (bir gecə sonra).\n"
+                "«پریشب» = iki gecə əvvəl, «پس‌فرداشب» = iki gecə sonra.\n"
+                "Keçmiş zaman quruluşu: KÖK + şəxs şəkilçisi — رفت + م = رفتم. «می» qoyulmur.\n"
+                "رفتم، رفتی، رفت، رفتیم، رفتید، رفتند."
             ),
             "conjugations": [
                 {"pronoun_fa": "پریشب", "form_fa": "دو شب قبل"},
@@ -97,9 +141,15 @@ LESSON = {
             "title_az": "Zaman zərfi «پارسال؛ امسال؛ سال بعد» + keçmiş zaman feli «آمدم؛ آمدی؛ …»",
             "title_fa": "قید زمان «... پارسال؛ امسال؛ سال بعد؛ ...» و فعل گذشته‌ی «آمدم؛ آمدی؛ ...»",
             "explanation_az": (
-                "İl zərfləri: پیرارسال (iki il əvvəl), پارسال (keçən il), امسال (bu il), سال بعد، دو سال بعد.\n"
-                "«آمدن» felinin keçmişi: آمدم، آمدی، آمد، آمدیم، آمدید، آمدند.\n"
-                "Zərf keçmişi göstərirsə fel də keçmiş zamanda olmalıdır: پارسال ... آمدم."
+                "İl zərfləri də eyni sxemlə düzəlir — dərslikdəki təqvim İran (şəmsi) illərini göstərir.\n"
+                "Keçmişə doğru: دو سال قبل (پیرارسال) ← پارسال (keçən il).\n"
+                "Bu il: امسال.\n"
+                "Gələcəyə doğru: یک سال بعد (سال آینده / سال بعد) → دو سال بعد.\n"
+                "Dərsliyin qeydi: «پارسال» = «سال قبل» = «سال گذشته»; «دو سال قبل» = «پیرارسال».\n"
+                "Danışıqda «یک سال بعد» əvəzinə qısaca «سال بعد» deyilir.\n"
+                "«آمدن» felinin keçmiş zamanı: آمدم، آمدی، آمد، آمدیم، آمدید، آمدند.\n"
+                "Keçmiş kök «آمد»-dir; «می» ön şəkilçisi yoxdur — müqayisə et: می‌آیم (gəlirəm) / آمدم (gəldim).\n"
+                "Nümunə: من پارسال به ایران آمدم. (keçmiş) / من یک سال بعد به ایران می‌آیم. (gələcək)"
             ),
             "conjugations": [
                 {"pronoun_fa": "دو سال قبل", "form_fa": "پیرارسال"},
@@ -120,28 +170,20 @@ LESSON = {
                 {"fa": "شما چند سال بعد به کشورتان برمی‌گردید؟ من سه سال بعد به کشورم برمی‌گردم.", "reading_az": "Şoma çənd sal bəd be kəşvəretan bərmigərdid? Mən se sal bəd be kəşvərəm bərmigərdəm.", "az": "Siz neçə il sonra ölkənizə qayıdırsınız? Mən üç il sonra ölkəmə qayıdıram."},
                 {"fa": "پدرم پارسال از بحرین تا مکّه پیاده رفت؛ ایشان امسال هم پیاده به مکّه می‌رود.", "reading_az": "Pedərəm parsal əz Bəhreyn ta Məkke piyade rəft; işan əmsal həm piyade be Məkke mirəvəd.", "az": "Atam keçən il Bəhreyndən Məkkəyə piyada getdi; o bu il də piyada Məkkəyə gedir."},
             ],
-            "drills": [
-                {
-                    "title_fa": "مانند مثال تبدیل کنید",
-                    "instruction_az": "Nümunə kimi əvəz edin: «دوستم سال بعد برای درس خواندن به این‌جا می‌آید. (پارسال) → دوستم پارسال برای درس خواندن به این‌جا آمد.»",
-                    "items": [
-                        {"prompt_fa": "ما سال آینده به کشورتان می‌آییم. (دو سال قبل)", "answer_fa": "ما دو سال قبل به کشورتان آمدیم.", "reading_az": "Ma do sal qəbl be kəşvəretan amədim.", "az": "Biz iki il əvvəl sizin ölkənizə gəldik."},
-                        {"prompt_fa": "مهندس‌ها امسال برای ساختن پل به این‌جا می‌آیند. (پارسال)", "answer_fa": "مهندس‌ها پارسال برای ساختن پل به این‌جا آمدند.", "reading_az": "Mohəndesha parsal bəraye saxtəne pol be inja amədənd.", "az": "Mühəndislər keçən il körpü tikmək üçün buraya gəldilər."},
-                        {"prompt_fa": "دوستانم پارسال برای دیدن من به این‌جا می‌آیند. (سال آینده)", "answer_fa": "دوستانم سال آینده برای دیدن من به این‌جا می‌آیند.", "reading_az": "Dustanəm sale ayənde bəraye didəne mən be inja miayənd.", "az": "Dostlarım gələn il məni görmək üçün buraya gəlirlər."},
-                        {"prompt_fa": "حسین و همسرش سال بعد برای زندگی‌کردن به این شهر می‌آیند. (سال قبل)", "answer_fa": "حسین و همسرش سال قبل برای زندگی‌کردن به این شهر آمدند.", "reading_az": "Hoseyn va həmsərəş sale qəbl bəraye zendegikərdən be in şəhr amədənd.", "az": "Hüseyn və həyat yoldaşı keçən il bu şəhərdə yaşamaq üçün gəldilər."},
-                        {"prompt_fa": "من امسال برای زیارت امام علی (ع) با هواپیما به شهر نجف می‌روم. (سال گذشته)", "answer_fa": "من سال گذشته برای زیارت امام علی (ع) با هواپیما به شهر نجف رفتم.", "reading_az": "Mən sale gozəşte bəraye ziyarəte Emam Əli ba həvapeyma be şəhre Nəcəf rəftəm.", "az": "Mən keçən il İmam Əlini (ə) ziyarət etmək üçün təyyarə ilə Nəcəf şəhərinə getdim."},
-                        {"prompt_fa": "دکتر جوادی دیروز برای معاینه‌ی بیماران به این بیمارستان آمد. (پس‌فردا)", "answer_fa": "دکتر جوادی پس‌فردا برای معاینه‌ی بیماران به این بیمارستان می‌آید.", "reading_az": "Doktor Cavadi pəsfərda bəraye moayeneye bimaran be in bimarestan miayəd.", "az": "Doktor Cavadi birigün xəstələrin müayinəsi üçün bu xəstəxanaya gəlir."},
-                    ],
-                },
-            ],
+            # QEYD: dərslikdəki bu tapşırıq artıq ÇALIŞMALAR siyahısındadır.
         },
         {
             "title_az": "«بعضی از» quruluşu (…-lərdən bəzisi)",
             "title_fa": "«بعضی از»",
             "explanation_az": (
-                "«بعضی از» bir qrupun bir hissəsini bildirir — «bəzisi, bir qismi».\n"
-                "Quruluş: بعضی از + cəm isim: بعضی از طلبه‌ها، بعضی از مردم.\n"
-                "İkinci dəfə təkrarlananda «از»sız da işlənir: ... و بعضی هم ..."
+                "«بعضی از» = «…-ların bəzisi» — bütövün bir hissəsini bildirir.\n"
+                "Quruluş: بعضی از + İSİM(CƏM) + … + FEL(cəm).\n"
+                "İsim mütləq CƏM olur: بعضی از طلبه‌ها ✓ — بعضی از طلبه ✗\n"
+                "Fel də cəm gəlir, çünki mübtəda mənaca çoxdur: بعضی از خانم‌ها در بیمارستان کار می‌کنند.\n"
+                "«بعضی» tək başına da işlənə bilər: بعضی مردم («bəzi insanlar») — amma «از» ilə daha çox yayılıb.\n"
+                "Yaxın mənalı ifadələr: «یکی از» (…-lardan biri) — TƏK bir şeyi, «بعضی از» — bir neçəsini bildirir.\n"
+                "Müqayisə: یکی از دوستانم آمد (bir dostum gəldi) / بعضی از دوستانم آمدند (bəzi dostlarım gəldilər).\n"
+                "«بیشتر» ilə də müqayisə edin: «بیشتر» çoxluğu, «بعضی از» isə azlığı və ya bir hissəni bildirir."
             ),
             "conjugations": [
                 {"pronoun_fa": "طلبه / شهر مشهد / درس", "form_fa": "بعضی از طلبه‌ها در شهر مشهد درس می‌خوانند."},
@@ -154,142 +196,252 @@ LESSON = {
                 {"fa": "بعضی از انسان‌ها با ماشین شخصی مسافرت می‌کنند.", "reading_az": "Bəzi əz insanha ba maşine şəxsi mosaferət mikonənd.", "az": "İnsanların bəzisi şəxsi avtomobillə səyahət edir."},
                 {"fa": "در زبان فارسی پس از واژه‌های «بعضی از»، «بسیاری از» و «بیشتر»، واژه‌ی جمع یا اسم جمع می‌آید.", "reading_az": "Dər zəbane farsi pəs əz vajehaye «bəzi əz», «besyari əz» va «bişttər», vajeye cəm ya esme cəm miayəd.", "az": "Fars dilində «بعضی از», «بسیاری از» və «بیشتر» sözlərindən sonra cəm isim gəlir."},
             ],
-            "drills": [
-                {
-                    "title_fa": "مانند مثال با واژه‌ی «بعضی از» جمله بگویید",
-                    "instruction_az": "«بعضی از» ilə cümlə qurun: «طلبه / شهر مشهد / درس → بعضی از طلبه‌ها در شهر مشهد درس می‌خوانند.»",
-                    "items": [
-                        {"prompt_fa": "دوست من / قارّه‌ی اروپا / زندگی", "answer_fa": "بعضی از دوستان من در قارّه‌ی اروپا زندگی می‌کنند.", "reading_az": "Bəzi əz dustane mən dər qarreye Orupa zendegi mikonənd.", "az": "Dostlarımın bəzisi Avropa qitəsində yaşayır."},
-                        {"prompt_fa": "خانم / بیمارستان / کار", "answer_fa": "بعضی از خانم‌ها در بیمارستان کار می‌کنند.", "reading_az": "Bəzi əz xanomha dər bimarestan kar mikonənd.", "az": "Xanımların bəzisi xəstəxanada işləyir."},
-                        {"prompt_fa": "انسان / ماشین شخصی / مسافرت", "answer_fa": "بعضی از انسان‌ها با ماشین شخصی مسافرت می‌کنند.", "reading_az": "Bəzi əz insanha ba maşine şəxsi mosaferət mikonənd.", "az": "İnsanların bəzisi şəxsi avtomobillə səyahət edir."},
-                        {"prompt_fa": "دانش‌جو / کتاب‌خانه / مطالعه", "answer_fa": "بعضی از دانش‌جوها در کتاب‌خانه مطالعه می‌کنند.", "reading_az": "Bəzi əz daneşcuha dər ketabxane motaleə mikonənd.", "az": "Tələbələrin bəzisi kitabxanada mütaliə edir."},
-                    ],
-                },
-            ],
+            # QEYD: dərslikdəki bu tapşırıq artıq ÇALIŞMALAR siyahısındadır.
         },
     ],
     "exercises": [
         {
+            # Çalışma 1 — səh. 151 «با واژه‌های «قبل»، «بعد»، «قبل از» و «بعد از» کامل کنید».
             "kind": "fill_blank",
-            "instruction_az": "«قبل، قبل از، بعد، بعد از» ilə tamamlayın.",
-            "word_bank": ["بعد از", "قبل از", "بعد", "قبل"],
+            "instruction_az": "با واژه‌های «قبل»، «بعد»، «قبل از» و «بعد از» کامل کنید — uyğun sözlə tamamlayın.",
+            "word_bank": ["بعد", "قبل", "بعد از", "قبل از", "بعد از", "قبل از"],
             "items": [
                 {
                     "fa_with_blank": "او ده روز ___ به کشورش می‌رود.",
-                    "correct_answer": "بعد",
-                    "reading_az": "bəd",
-                    "az": "sonra",
-                    "full_reading_az": "U dəh ruz bəd be kəşvərəş mirəvəd.",
-                    "full_translation_az": "O, on gün sonra öz ölkəsinə gedir.",
+                    "correct_answer": "بعد", "reading_az": "bə'd", "az": "sonra",
+                    "full_reading_az": "U dəh ruz bə'd be kəşvəreş mirəvəd.",
+                    "full_translation_az": "O, on gün sonra ölkəsinə gedir. — MÜDDƏTdən sonra «بعد» (tək), isimdən əvvəl «بعد از».",
                 },
                 {
                     "fa_with_blank": "پدر و مادرم دو هفته ___ در ایران بودند.",
-                    "correct_answer": "قبل",
-                    "reading_az": "qəbl",
-                    "az": "əvvəl",
+                    "correct_answer": "قبل", "reading_az": "qəbl", "az": "əvvəl",
                     "full_reading_az": "Pedər va madərəm do həfte qəbl dər Iran budənd.",
-                    "full_translation_az": "Ata-anam iki həftə əvvəl İranda idi.",
+                    "full_translation_az": "Atam və anam iki həftə əvvəl İranda idilər. — müddətdən sonra «قبل».",
                 },
                 {
                     "fa_with_blank": "صندوق‌دار ___ گرفتنِ پول، آن را می‌شمارد.",
-                    "correct_answer": "بعد از",
-                    "reading_az": "bəd əz",
-                    "az": "-dan sonra",
-                    "full_reading_az": "Sənduqdar bəd əz gereftəne pul, an ra mişomarəd.",
-                    "full_translation_az": "Kassir pulu aldıqdan sonra onu sayır.",
+                    "correct_answer": "بعد از", "reading_az": "bə'd əz", "az": "…-dan sonra",
+                    "full_reading_az": "Sənduqdar bə'd əz gereftəne pul, an ra mişomarəd.",
+                    "full_translation_az": "Kassir pulu aldıqdan sonra onu sayır. — MƏSDƏRdən əvvəl «بعد از».",
                 },
                 {
-                    "fa_with_blank": "پنج‌شنبه ___ جمعه و ___ چهارشنبه است.",
-                    "correct_answer": "قبل از",
-                    "reading_az": "qəbl əz",
-                    "az": "-dan əvvəl",
-                    "full_reading_az": "Pəncşənbe qəbl əz come va bəd əz çəharşənbe əst.",
-                    "full_translation_az": "Cümə axşamı cümədən əvvəl və çərşənbədən sonradır.",
+                    "fa_with_blank": "پنج‌شنبه ___ جمعه و قبل از شنبه است.",
+                    "correct_answer": "قبل از", "reading_az": "qəbl əz", "az": "…-dan əvvəl",
+                    "full_reading_az": "Pəncşənbe qəbl əz come va qəbl əz şənbe əst.",
+                    "full_translation_az": "Cümə axşamı cümədən əvvəldir. — İSİMdən əvvəl «قبل از».",
                 },
                 {
                     "fa_with_blank": "مسافران ___ مسافرت از دفتر مسافرتی بلیت اتوبوس، قطار یا هواپیما می‌خرند.",
-                    "correct_answer": "قبل از",
-                    "reading_az": "qəbl əz",
-                    "az": "-dan əvvəl",
-                    "full_reading_az": "Mosaferan qəbl əz mosaferət əz dəftəre mosaferəti belite otobus, qətar ya həvapeyma mixərənd.",
-                    "full_translation_az": "Sərnişinlər səyahətdən əvvəl turizm agentliyindən avtobus, qatar və ya təyyarə bileti alırlar.",
+                    "correct_answer": "قبل از", "reading_az": "qəbl əz", "az": "…-dan əvvəl",
+                    "full_reading_az": "Mosaferan qəbl əz mosaferət əz dəftəre mosafərəti belite otobus, qatar ya həvapeyma mixərənd.",
+                    "full_translation_az": "Sərnişinlər səfərdən əvvəl səyahət ofisindən avtobus, qatar və ya təyyarə bileti alırlar.",
                 },
             ],
         },
         {
+            # Çalışma 2 — «مانند مثال تبدیل کنید» (zaman zərfinə görə fel zamanı).
+            # Əvvəllər Mövzu 3-ün drill-i idi.
+            "kind": "answer_question",
+            "title_fa": "مانند مثال تبدیل کنید",
+            "instruction_az": "Nümunə kimi çevirin (mötərizədəki zaman zərfinə görə feli dəyişin)",
+            # Qırmızı — indiki zaman, yaşıl — keçmiş zaman.
+            "example_fa": (
+                "دوستم سال بعد برای درس خواندن به این‌جا **می‌آید**. (پارسال)\n"
+                "دوستم پارسال برای درس خواندن به این‌جا *آمد*."
+            ),
+            "example_reading_az": (
+                "Dustəm sale bə'd bəraye dərs-xandən be inca miayəd. (parsal)\n"
+                "Dustəm parsal bəraye dərs-xandən be inca aməd."
+            ),
+            "example_az": (
+                "Cümlədəki zaman zərfi mötərizədəki zərflə əvəz olunur, FEL də ona uyğunlaşır.\n"
+                "Qırmızı — indiki/gələcək zaman (می‌آید، می‌رود), yaşıl — keçmiş zaman (آمد، رفت).\n"
+                "KEÇMİŞ zərflər: پارسال، سال قبل، سال گذشته، دیشب، پریروز → fel KEÇMİŞ olur.\n"
+                "GƏLƏCƏK zərflər: سال آینده، سال بعد، فرداشب، پس‌فردا → fel İNDİKİ formada qalır.\n"
+                "Keçmiş formalar: آمدن → آمدم، آمدی، آمد، آمدیم، آمدید، آمدند; رفتن → رفتم، رفتی، رفت …\n"
+                "Tərcümə: Dostum keçən il burada oxumaq üçün gəldi."
+            ),
+            "items": [
+                {"fa": "ما سال آینده به کشورتان می‌آییم. (دو سال قبل)", "reading_az": "Ma sale ayənde be kəşvəretan miayim. (do sal qəbl)", "az": "Biz gələn il ölkənizə gəlirik. (→ iki il əvvəl)",
+                 "sample_answer_fa": "ما دو سال قبل به کشورتان آمدیم.", "sample_answer_reading_az": "Ma do sal qəbl be kəşvəretan amədim.",
+                 "sample_answer_az": "Biz iki il əvvəl ölkənizə gəldik."},
+                {"fa": "مهندس‌ها امسال برای ساختن پل به این‌جا می‌آیند. (پارسال)", "reading_az": "Mohəndesha emsal bəraye saxtəne pol be inca miayənd. (parsal)", "az": "Mühəndislər bu il körpü tikmək üçün bura gəlirlər. (→ keçən il)",
+                 "sample_answer_fa": "مهندس‌ها پارسال برای ساختن پل به این‌جا آمدند.", "sample_answer_reading_az": "Mohəndesha parsal bəraye saxtəne pol be inca amədənd.",
+                 "sample_answer_az": "Mühəndislər keçən il körpü tikmək üçün bura gəldilər."},
+                {"fa": "دوستانم پارسال برای دیدن من به این‌جا آمدند. (سال آینده)", "reading_az": "Dustanəm parsal bəraye didəne mən be inca amədənd. (sale ayənde)", "az": "Dostlarım keçən il məni görmək üçün bura gəldilər. (→ gələn il)",
+                 "sample_answer_fa": "دوستانم سال آینده برای دیدن من به این‌جا می‌آیند.", "sample_answer_reading_az": "Dustanəm sale ayənde bəraye didəne mən be inca miayənd.",
+                 "sample_answer_az": "Dostlarım gələn il məni görmək üçün bura gələcəklər. (gələcək → indiki forma)"},
+                {"fa": "حسین و همسرش سال بعد برای زندگی‌کردن به این شهر می‌آیند. (سال قبل)", "reading_az": "Hoseyn va həmsərəş sale bə'd … miayənd. (sale qəbl)", "az": "Hüseyn və həyat yoldaşı gələn il bu şəhərə köçürlər. (→ keçən il)",
+                 "sample_answer_fa": "حسین و همسرش سال قبل برای زندگی‌کردن به این شهر آمدند.", "sample_answer_reading_az": "Hoseyn va həmsərəş sale qəbl bəraye zendegi-kərdən be in şəhr amədənd.",
+                 "sample_answer_az": "Hüseyn və həyat yoldaşı keçən il yaşamaq üçün bu şəhərə gəldilər."},
+                {"fa": "من امسال برای زیارت امام علی (ع) با هواپیما به شهر نجف می‌روم. (سال گذشته)", "reading_az": "Mən emsal … mirəvəm. (sale gozəşte)", "az": "Mən bu il İmam Əlini (ə) ziyarət üçün təyyarə ilə Nəcəfə gedirəm. (→ keçən il)",
+                 "sample_answer_fa": "من سال گذشته برای زیارت امام علی (ع) با هواپیما به شهر نجف رفتم.", "sample_answer_reading_az": "Mən sale gozəşte bəraye ziyarəte Emam Əli ba həvapeyma be şəhre Nəcəf rəftəm.",
+                 "sample_answer_az": "Mən keçən il İmam Əlini (ə) ziyarət etmək üçün təyyarə ilə Nəcəf şəhərinə getdim."},
+                {"fa": "دکتر جوادی دیروز برای معاینه‌ی بیماران به این بیمارستان آمد. (پس‌فردا)", "reading_az": "Doktor Cəvadi diruz … aməd. (pəsfærda)", "az": "Doktor Cavadi dünən xəstələri müayinə üçün bu xəstəxanaya gəldi. (→ birisi gün)",
+                 "sample_answer_fa": "دکتر جوادی پس‌فردا برای معاینه‌ی بیماران به این بیمارستان می‌آید.", "sample_answer_reading_az": "Doktor Cəvadi pəsfærda bəraye moayene-ye bimaran be in bimarestan miayəd.",
+                 "sample_answer_az": "Doktor Cavadi birisi gün xəstələri müayinə etmək üçün bu xəstəxanaya gələcək."},
+            ],
+        },
+        {
+            # Çalışma 3 — «لطفاً کامل کنید» (keçmiş zaman: رفتم / آمدند …).
             "kind": "fill_blank",
-            "instruction_az": "Uyğun felin keçmiş zaman formasını yazın.",
-            "word_bank": ["رفتم", "رفت", "برمی‌گردد", "رفتند", "آمدند"],
+            "instruction_az": "لطفاً کامل کنید — felin uyğun keçmiş zaman formasını seçin.",
+            "word_bank": ["رفتم", "رفت", "رفتند", "آمدند", "آمد", "رفتیم"],
             "items": [
                 {
                     "fa_with_blank": "من پریشب به خانه‌ی برادرم ___ .",
-                    "correct_answer": "رفتم",
-                    "reading_az": "rəftəm",
-                    "az": "getdim",
-                    "full_reading_az": "Mən perişəb be xaneye bəradərəm rəftəm.",
-                    "full_translation_az": "Mən iki gecə əvvəl qardaşımın evinə getdim.",
+                    "correct_answer": "رفتم", "reading_az": "rəftəm", "az": "getdim",
+                    "full_reading_az": "Mən pərişəb be xane-ye bəradərəm rəftəm.",
+                    "full_translation_az": "Mən srağagün gecə qardaşımın evinə getdim. — «پریشب» = iki gecə əvvəl.",
                 },
                 {
                     "fa_with_blank": "دوستم دیشب به شمال ___ و فرداشب برمی‌گردد.",
-                    "correct_answer": "رفت",
-                    "reading_az": "rəft",
-                    "az": "getdi",
-                    "full_reading_az": "Dustəm dişəb be şomal rəft va fərdaşəb bərmigərdəd.",
-                    "full_translation_az": "Dostum dünən gecə şimala getdi və sabah gecə qayıdır.",
+                    "correct_answer": "رفت", "reading_az": "rəft", "az": "getdi",
+                    "full_reading_az": "Dustəm dişəb be şomal rəft va færdaşəb bər-migərdəd.",
+                    "full_translation_az": "Dostum dünən gecə şimala getdi və sabah axşam qayıdır. — «دیشب» keçmiş, «فرداشب» gələcək.",
                 },
                 {
                     "fa_with_blank": "علی سه شب قبل برای زیارت به مشهد رفت؛ برادرش دو شب بعد ___ .",
-                    "correct_answer": "رفت",
-                    "reading_az": "rəft",
-                    "az": "getdi",
-                    "full_reading_az": "Əli se şəb qəbl bəraye ziyarət be Məşhəd rəft; bəradərəş do şəb bəd rəft.",
-                    "full_translation_az": "Əli üç gecə əvvəl ziyarət üçün Məşhədə getdi; qardaşı iki gecə sonra getdi.",
+                    "correct_answer": "رفت", "reading_az": "rəft", "az": "getdi",
+                    "full_reading_az": "Əli se şəb qəbl bəraye ziyarət be Məşhəd rəft; bəradərəş do şəb bə'd rəft.",
+                    "full_translation_az": "Əli üç gecə əvvəl ziyarətə Məşhədə getdi; qardaşı isə iki gecə sonra getdi.",
                 },
                 {
                     "fa_with_blank": "محسن و برادرش دیشب به خانه‌ی پدربزرگشان ___ و پس‌فردا شب برمی‌گردند.",
-                    "correct_answer": "آمدند",
-                    "reading_az": "amədənd",
-                    "az": "gəldilər",
-                    "full_reading_az": "Mohsen va bəradərəş dişəb be xaneye pedərbozorgeşan amədənd va pəsfərdaşəb bərmigərdənd.",
-                    "full_translation_az": "Möhsün və qardaşı dünən gecə babalarının evinə gəldilər və srağagün gecə qayıdırlar.",
+                    "correct_answer": "آمدند", "reading_az": "amədənd", "az": "gəldilər",
+                    "full_reading_az": "Mohsen va bəradərəş dişəb be xane-ye pedərbozorgeşan amədənd va pəsfærda şəb bər-migərdənd.",
+                    "full_translation_az": "Möhsün və qardaşı dünən gecə babalarının evinə gəldilər və birisi gün axşam qayıdırlar.",
                 },
                 {
                     "fa_with_blank": "طلبه‌ها هفته‌ی قبل به اصفهان ___ .",
-                    "correct_answer": "رفتند",
-                    "reading_az": "rəftənd",
-                    "az": "getdilər",
-                    "full_reading_az": "Tələbeha həfteye qəbl be Esfəhan rəftənd.",
-                    "full_translation_az": "Tələbələr keçən həftə İsfahana getdilər.",
+                    "correct_answer": "رفتند", "reading_az": "rəftənd", "az": "getdilər",
+                    "full_reading_az": "Təlbeha həfte-ye qəbl be Esfəhan rəftənd.",
+                    "full_translation_az": "Tələbələr keçən həftə İsfahana getdilər. — mübtəda cəm, fel də cəm keçmişdir.",
                 },
             ],
         },
         {
-            "kind": "practice_reveal",
-            "instruction_az": "Nümunə kimi cümlə qurun: «ما ساعت هفت سوار اتوبوس می‌شویم و ساعت هشت به مدرسه می‌رسیم.»",
+            # Çalışma 4 — səh. 158 «مانند مثال با واژه‌ی «بعضی از» جمله بگویید».
+            # Əvvəllər Mövzu 4-ün drill-i idi.
+            "kind": "answer_question",
+            "title_fa": "مانند مثال با واژه‌ی «بعضی از» جمله بگویید",
+            "instruction_az": "Nümunə kimi «بعضی از» ilə cümlə qurun",
+            # Yaşıl «بعضی از» — cəm isimdən əvvəl.
+            "example_fa": (
+                "طلبه / شهر مشهد / درس\n"
+                "*بعضی از* طلبه‌ها در شهر مشهد درس می‌خوانند."
+            ),
+            "example_reading_az": (
+                "Təlbe / şəhre Məşhəd / dərs\n"
+                "Bə'zi əz təlbeha dər şəhre Məşhəd dərs mixanənd."
+            ),
+            "example_az": (
+                "Verilən sözlər: İSİM / YER / İŞ.\n"
+                "Quruluş: بعضی از + İSİM(CƏM) + در/با + YER/VASİTƏ + FEL(cəm).\n"
+                "Yaşıl «بعضی از» («…-ların bəzisi») və ondan sonrakı isim mütləq CƏM olur: طلبه‌ها.\n"
+                "Fel də cəm gəlir, çünki mübtəda mənaca çoxdur: می‌خوانند، زندگی می‌کنند.\n"
+                "Yer üçün «در», vasitə üçün «با» işlənir: در کتاب‌خانه، با ماشین شخصی.\n"
+                "Tərcümə: Dini tələbələrin bəzisi Məşhəd şəhərində oxuyur."
+            ),
+            "items": [
+                {"fa": "دانش‌جو / کتاب‌خانه / مطالعه", "reading_az": "Daneşcu / ketabxane / motaleə", "az": "tələbə / kitabxana / mütaliə",
+                 "sample_answer_fa": "بعضی از دانش‌جوها در کتاب‌خانه مطالعه می‌کنند.", "sample_answer_reading_az": "Bə'zi əz daneşcuha dər ketabxane motaleə mikonənd.",
+                 "sample_answer_az": "Tələbələrin bəzisi kitabxanada mütaliə edir."},
+                {"fa": "دوست من / قارّه‌ی اروپا / زندگی", "reading_az": "Duste mən / qarre-ye Orupa / zendegi", "az": "dostum / Avropa qitəsi / yaşamaq",
+                 "sample_answer_fa": "بعضی از دوستان من در قارّه‌ی اروپا زندگی می‌کنند.", "sample_answer_reading_az": "Bə'zi əz dustane mən dər qarre-ye Orupa zendegi mikonənd.",
+                 "sample_answer_az": "Dostlarımın bəzisi Avropa qitəsində yaşayır."},
+                {"fa": "خانم / بیمارستان / کار", "reading_az": "Xanom / bimarestan / kar", "az": "xanım / xəstəxana / iş",
+                 "sample_answer_fa": "بعضی از خانم‌ها در بیمارستان کار می‌کنند.", "sample_answer_reading_az": "Bə'zi əz xanomha dər bimarestan kar mikonənd.",
+                 "sample_answer_az": "Xanımların bəzisi xəstəxanada işləyir."},
+                {"fa": "انسان / ماشین شخصی / مسافرت", "reading_az": "Ensan / maşine şəxsi / mosaferət", "az": "insan / şəxsi maşın / səyahət",
+                 "sample_answer_fa": "بعضی از انسان‌ها با ماشین شخصی مسافرت می‌کنند.", "sample_answer_reading_az": "Bə'zi əz ensanha ba maşine şəxsi mosaferət mikonənd.",
+                 "sample_answer_az": "İnsanların bəzisi şəxsi maşınla səyahət edir. (vasitə olduğu üçün «با»)"},
+            ],
+        },
+        {
+            # Çalışma 5 — səh. 158 «لطفاً جایگزین کنید» («سوار … می‌شویم و به … می‌رسیم»).
+            # Əvvəllər sadə practice_reveal idi.
+            "kind": "answer_question",
+            "title_fa": "لطفاً جایگزین کنید",
+            "instruction_az": "Nümunə kimi əvəz edin («سوار … شدن» və «به … رسیدن»)",
+            # Yaşıl «سوار … می‌شویم» — minmək, qırmızı «می‌رسیم» — çatmaq.
+            "example_fa": (
+                "ما ساعت هفت *سوار* اتوبوس *می‌شویم* و ساعت هشت به مدرسه **می‌رسیم**."
+            ),
+            "example_reading_az": (
+                "Ma saəte həft səvare otobus mişəvim va saəte həşt be mədrese miresim."
+            ),
+            "example_az": (
+                "Verilən sözlər: SUBYEKT / NƏQLİYYAT / YER.\n"
+                "Quruluş: SUBYEKT + سوار + NƏQLİYYAT + می‌شود + و + به + YER + می‌رسد.\n"
+                "Yaşıl «سوار شدن» — nəqliyyata minmək; qırmızı «رسیدن» — yerə çatmaq.\n"
+                "«سوار» sözündən sonra vasitə birbaşa gəlir, ön qoşma lazım deyil: سوار اتوبوس.\n"
+                "Hər iki fel subyektə görə hallanır: می‌شوم/می‌رسم، می‌شویم/می‌رسیم، می‌شوند/می‌رسند.\n"
+                "Tərcümə: Biz saat yeddidə avtobusa minirik və saat səkkizdə məktəbə çatırıq."
+            ),
+            "items": [
+                {"fa": "مسافران / هواپیما / مشهد", "reading_az": "Mosaferan / həvapeyma / Məşhəd", "az": "sərnişinlər / təyyarə / Məşhəd",
+                 "sample_answer_fa": "مسافران سوار هواپیما می‌شوند و به مشهد می‌رسند.", "sample_answer_reading_az": "Mosaferan səvare həvapeyma mişəvənd va be Məşhəd miresənd.",
+                 "sample_answer_az": "Sərnişinlər təyyarəyə minirlər və Məşhədə çatırlar."},
+                {"fa": "کارگرها / مترو / کارخانه", "reading_az": "Kargərha / metro / karxane", "az": "fəhlələr / metro / zavod",
+                 "sample_answer_fa": "کارگرها سوار مترو می‌شوند و به کارخانه می‌رسند.", "sample_answer_reading_az": "Kargərha səvare metro mişəvənd va be karxane miresənd.",
+                 "sample_answer_az": "Fəhlələr metroya minirlər və zavoda çatırlar."},
+                {"fa": "آن کشاورز / اسب / مزرعه", "reading_az": "An keşavərz / əsb / məzrəe", "az": "o əkinçi / at / tarla",
+                 "sample_answer_fa": "آن کشاورز سوار اسب می‌شود و به مزرعه می‌رسد.", "sample_answer_reading_az": "An keşavərz səvare əsb mişəvəd va be məzrəe mirəsəd.",
+                 "sample_answer_az": "O əkinçi ata minir və tarlaya çatır."},
+                {"fa": "من / ماشینم / دانش‌گاه", "reading_az": "Mən / maşinəm / daneşgah", "az": "mən / maşınım / universitet",
+                 "sample_answer_fa": "من سوار ماشینم می‌شوم و به دانش‌گاه می‌رسم.", "sample_answer_reading_az": "Mən səvare maşinəm mişəvəm va be daneşgah mirəsəm.",
+                 "sample_answer_az": "Mən maşınıma minirəm və universitetə çatıram."},
+            ],
+        },
+        {
+            # Çalışma 6 — səh. 158 «کامل کنید». Dərslikdə bəzi cümlələrdə İKİ
+            # boşluq var (məsdər + fel), ona görə multi_blank quruluşu seçilib.
+            "kind": "multi_blank",
+            "title_fa": "کامل کنید",
+            "instruction_az": "Söz bankından uyğun sözlərlə tamamlayın (bəzi cümlələrdə iki boşluq var)",
+            "example_fa": "من دیروز بعد از ___ غذا به کلاس ___ .\nمن دیروز بعد از **خوردن** غذا به کلاس *رفتم*.",
+            "example_reading_az": "Mən diruz bə'd əz xordəne qəza be kelas rəftəm.",
+            "example_az": (
+                "Mən dünən yemək yedikdən sonra sinfə getdim.\n"
+                "Qırmızı — «بعد از / قبل از»dan sonrakı MƏSDƏR, yaşıl — cümlənin hallanmış feli.\n"
+                "Fel zamanı cümlədəki zaman zərfinə uyğun seçilir: دیروز → رفتم, امروز → می‌روم."
+            ),
+            # 8 çip — dərslikdəki mötərizədəki siyahının eynisi.
+            "word_bank": [
+                "سال آینده", "قبل از", "رفتم", "خواندن",
+                "خریدن", "بعد از", "آمدند", "می‌روم",
+            ],
             "items": [
                 {
-                    "prompt_fa": "مسافران / هواپیما / مشهد",
-                    "answer_fa": "مسافران سوار هواپیما می‌شوند و به مشهد می‌رسند.",
-                    "reading_az": "Mosaferan səvare həvapeyma mişəvənd va be Məşhəd miresənd.",
-                    "az": "Sərnişinlər təyyarəyə minirlər və Məşhədə çatırlar.",
+                    "fa_with_blanks": "من دو روز قبل برای ___ بلیت به دفتر مسافرتی ___ .",
+                    "correct_answers": ["خریدن", "رفتم"],
+                    "full_reading_az": "Mən do ruz qəbl bəraye xəridəne belit be dəftəre mosafərəti rəftəm.",
+                    "full_translation_az": "Mən iki gün əvvəl bilet almaq üçün səyahət ofisinə getdim. — «دو روز قبل» keçmiş zaman tələb edir.",
                 },
                 {
-                    "prompt_fa": "کارگرها / مترو / کارخانه",
-                    "answer_fa": "کارگرها سوار مترو می‌شوند و به کارخانه می‌رسند.",
-                    "reading_az": "Kargərha səvare metro mişəvənd va be karxane miresənd.",
-                    "az": "Fəhlələr metroya minirlər və zavoda çatırlar.",
+                    "fa_with_blanks": "من امروز بعد از ___ نماز به سالن غذاخوری ___ .",
+                    "correct_answers": ["خواندن", "می‌روم"],
+                    "full_reading_az": "Mən emruz bə'd əz xandəne nəmaz be salone qəzaxori mirəvəm.",
+                    "full_translation_az": "Mən bu gün namaz qıldıqdan sonra yeməkxanaya gedirəm. — «امروز» indiki zaman.",
                 },
                 {
-                    "prompt_fa": "آن کشاورز / اسب / مزرعه",
-                    "answer_fa": "آن کشاورز سوار اسب می‌شود و به مزرعه می‌رسد.",
-                    "reading_az": "An keşavərz səvare əsb mişəvəd va be məzree miresəd.",
-                    "az": "O əkinçi ata minir və tarlaya çatır.",
+                    "fa_with_blanks": "آن‌ها پارسال به ایران ___ و ___ به کشورشان برمی‌گردند.",
+                    "correct_answers": ["آمدند", "سال آینده"],
+                    "full_reading_az": "Anha parsal be Iran amədənd va sale ayənde be kəşvəreşan bər-migərdənd.",
+                    "full_translation_az": "Onlar keçən il İrana gəldilər və gələn il ölkələrinə qayıdırlar. — bir cümlədə iki fərqli zaman.",
                 },
                 {
-                    "prompt_fa": "من / ماشینم / دانش‌گاه",
-                    "answer_fa": "من سوار ماشینم می‌شوم و به دانش‌گاه می‌رسم.",
-                    "reading_az": "Mən səvare maşinəm mişəvəm va be daneşgah miresəm.",
-                    "az": "Mən maşınıma minirəm və universitetə çatıram.",
+                    "fa_with_blanks": "مادرم ___ شستن لباس‌ها، آن‌ها را اتو می‌زند.",
+                    "correct_answers": ["بعد از"],
+                    "full_reading_az": "Madərəm bə'd əz şostəne lebasha, anha ra otu mizənəd.",
+                    "full_translation_az": "Anam paltarları yuduqdan sonra onları ütüləyir.",
+                },
+                {
+                    "fa_with_blanks": "ما ___ خریدن لباس، آن را انتخاب می‌کنیم.",
+                    "correct_answers": ["قبل از"],
+                    "full_reading_az": "Ma qəbl əz xəridəne lebas, an ra entexab mikonim.",
+                    "full_translation_az": "Biz paltar almazdan əvvəl onu seçirik.",
                 },
             ],
         },

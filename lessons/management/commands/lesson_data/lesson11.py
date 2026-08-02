@@ -46,9 +46,28 @@ LESSON = {
             "title_az": "Deyək — deməyək: «برای + məsdər» quruluşu",
             "title_fa": "بگوییم – نگوییم",
             "explanation_az": (
-                "Məqsəd bildirmək üçün «برای»dan sonra fel MƏSDƏR formasında gəlir: برای درس خواندن.\n"
-                "Şəxsli fel işlətmək olmaz: برای درس می‌خوانم ✗\n"
-                "Azərbaycancası «…-maq üçün» olur: oxumaq üçün."
+                "«برای» məqsəd bildirir və ondan sonra fel MƏSDƏR formasında gəlir — hallanmış formada yox.\n"
+                "Deyirik: من برای لباس دوختن به خیّاطی می‌روم. ✓\n"
+                "Demirik: من برای لباس می‌دوزم، به خیّاطی می‌روم. ✗\n"
+                "Deyirik: حسین برای درس خواندن به قم می‌آید. ✓ — Demirik: حسین برای درس می‌خواند به قم می‌آید. ✗\n"
+                "Quruluş: SUBYEKT + برای + OBYEKT + MƏSDƏR + به + YER + FEL.\n"
+                "Cümlədə YALNIZ BİR hallanmış fel olur — o da sonuncudur («می‌روم», «می‌آید»).\n"
+                "Məsdər obyektlə izafətlə də bağlana bilər: برای اندازه گرفتنِ قدّش، برای خریدنِ نان.\n"
+                "Dərsliyin qeydi: eyni səhv keçmiş zamanda da təkrarlanır — «من برای لباس دوختم به خیّاطی می‌روم» ✗ demək olmaz, çünki «برای»dan sonra keçmiş fel də gələ bilməz."
+            ),
+            "note_fa": (
+                "این خطا در قالب فعل گذشته نیز گفته می‌شود که به سبب نخواندن فعل‌های گذشته از آوردن آن خودداری نمودیم:\n"
+                "من برای لباس دوختم به خیّاطی می‌روم. ✗\n"
+                "من برای درس خواندم به قم می‌روم. ✗"
+            ),            "note_reading_az": (
+                "İn xəta dər qalebe fe'le gozəşte niz gofte mişəvəd ke be səbəbe nəxandəne fe'lhaye gozəşte əz avərdəne an xoddari nemudim:\n"
+                "Mən bəraye lebas duxtəm be xəyyati mirəvəm. (ğələt)\n"
+                "Mən bəraye dərs xandəm be Qom mirəvəm. (ğələt)"
+            ),            "note_az": (
+                "Dərsliyin qeydi: bu səhv keçmiş zaman formasında da edilir, amma keçmiş zaman fellər hələ oxunmadığı üçün kitab onları nümunə kimi verməkdən çəkinir:\n"
+                "من برای لباس دوختم به خیّاطی می‌روم. ✗\n"
+                "من برای درس خواندم به قم می‌روم. ✗\n"
+                "Düzgün forma həmişə MƏSDƏRdir: برای لباس دوختن، برای درس خواندن."
             ),
             "conjugations": [
                 {"pronoun_fa": "من برای لباس دوختن به خیّاطی می‌روم. ✓", "form_fa": "من برای لباس می‌دوزم، به خیّاطی می‌روم. ✗"},
@@ -66,9 +85,31 @@ LESSON = {
             "title_az": "Həftənin günləri",
             "title_fa": "روزهای هفته",
             "explanation_az": (
-                "Fars həftəsi «شنبه» (şənbə) günü ilə başlayır.\n"
-                "Günlərin çoxu «شنبه» sözü üzərində qurulur: یک‌شنبه، دوشنبه، سه‌شنبه، چهارشنبه، پنج‌شنبه; yalnız «جمعه» fərqlidir.\n"
-                "İranda istirahət günü cümədir — məktəb və idarələr bağlı olur."
+                "Fars həftəsi ŞƏNBƏ günü başlayır və CÜMƏ günü bitir — Azərbaycandakı ilə eyni ardıcıllıq.\n"
+                "Günlər: ۱ شنبه، ۲ یک‌شنبه، ۳ دوشنبه، ۴ سه‌شنبه، ۵ چهارشنبه، ۶ پنج‌شنبه، ۷ جمعه.\n"
+                "Adların məntiqi: «شنبه»dən neçə gün keçdiyi sayılır — یک‌شنبه = şənbədən 1 gün sonra və s.\n"
+                "Yalnız «جمعه» bu qəlibdən kənardır və öz adı var (ərəbcə «cümə»).\n"
+                "İranda istirahət günü CÜMƏdir: در ایران کارخانه‌ها، اداره‌ها و مدرسه‌ها روزهای جمعه تعطیل هستند.\n"
+                "«Hər … günü» mənası üçün cəm işlənir: شنبه‌ها، جمعه‌ها — və ya «روزهای» + gün: روزهای پنج‌شنبه.\n"
+                "Gün adı ilə «در» işlənmir: شنبه به کشورم می‌روم ✓ (در شنبه ✗).\n"
+                "TƏLƏFFÜZ QAYDASI: sözün ortasında «ن» hərfindən sonra «ب» gəlirsə, «ن» → «م» kimi oxunur: شنبه yazılır, «şəmbe» oxunur; دنبه → «dəmbe»; سنبل → «somböl»."
+            ),
+            "note_fa": (
+                "معمولاً در زبان فارسی، اگر حرف «ن» در وسط کلمه بیاید و پس از آن حرف «ب» آورده شود، حرف «ن» را «م» می‌خوانیم:\n"
+                "می‌نویسیم: شنبه — می‌خوانیم: شَمبه\n"
+                "می‌نویسیم: دنبه — می‌خوانیم: دمبه\n"
+                "می‌نویسیم: سنبل — می‌خوانیم: سُمبل"
+            ),            "note_reading_az": (
+                "Mə'mulən dər zəbane farsi, əgər hərfe «n» dər vəsəte kəlame biayəd va pəs əz an hərfe «b» avərde şəvəd, hərfe «n» ra «m» mixanim:\n"
+                "Minevisim: şənbe — mixanim: şəmbe\n"
+                "Minevisim: dənbe — mixanim: dəmbe\n"
+                "Minevisim: sonbol — mixanim: sombol"
+            ),            "note_az": (
+                "TƏLƏFFÜZ QAYDASI: sözün ortasında «ن»dən sonra «ب» gələrsə, «ن» hərfi «م» kimi oxunur:\n"
+                "Yazırıq شنبه — oxuyuruq «şəmbe» (şənbə)\n"
+                "Yazırıq دنبه — oxuyuruq «dəmbe» (quyruq yağı)\n"
+                "Yazırıq سنبل — oxuyuruq «sombol» (sünbül)\n"
+                "Bu qayda bütün həftə günlərinə aiddir: یک‌شنبه → «yekşəmbe», دوشنبه → «doşəmbe» və s."
             ),
             "conjugations": [
                 {"pronoun_fa": "۱", "form_fa": "شنبه"},
@@ -88,26 +129,20 @@ LESSON = {
                 {"fa": "محلّ‌کار ناصر خیلی دور است. او هر هفته شنبه به آن‌جا می‌رود و تا چهارشنبه آن‌جا می‌ماند.", "reading_az": "Məhəlle kare Naser xeyli dur əst. U hər həfte şənbe be anja mirəvəd va ta çəharşənbe anja mimanəd.", "az": "Nasirin iş yeri çox uzaqdır. O, hər həftə şənbə günü ora gedir və çərşənbəyə qədər orada qalır."},
                 {"fa": "لغزش «ن» به «م» پیش از «ب»: شنبه → شمبه (تلفّظ)", "reading_az": "Şənbe (nəvis) → şəmbe (təlæffoz).", "az": "Fars dilində «ن» hərfi «ب»-dan əvvəl «م» kimi tələffüz olunur: شنبه → «şəmbe»."},
             ],
-            "drills": [
-                {
-                    "title_fa": "جایگزین کنید",
-                    "instruction_az": "Nümunə kimi əvəz edin: «مادربزرگم / دوشنبه / خانه‌ی ما / جمعه → مادربزرگم دوشنبه به خانه‌ی ما می‌آید و تا جمعه روز آن‌جا می‌ماند.»",
-                    "items": [
-                        {"prompt_fa": "من / شنبه / کشورم / سه‌شنبه", "answer_fa": "من شنبه به کشورم می‌روم و تا سه‌شنبه آن‌جا می‌مانم.", "reading_az": "Mən şənbe be kəşvərəm mirəvəm va ta seşənbe anja mimanəm.", "az": "Mən şənbə günü öz ölkəmə gedirəm və çərşənbəyədək orada qalıram."},
-                        {"prompt_fa": "برادرم / یک‌شنبه / تهران / یک سال", "answer_fa": "برادرم یک‌شنبه به تهران می‌آید و یک سال آن‌جا می‌ماند.", "reading_az": "Bəradərəm yekşənbe be Tehran miayəd va yek sal anja mimanəd.", "az": "Qardaşım bazar günü Tehrana gəlir və orada bir il qalır."},
-                        {"prompt_fa": "ما / چهارشنبه / روستا / جمعه", "answer_fa": "ما چهارشنبه به روستا می‌رویم و تا جمعه آن‌جا می‌مانیم.", "reading_az": "Ma çəharşənbe be rusta mirəvim va ta come anja mimanim.", "az": "Biz çərşənbə günü kəndə gedirik və cüməyədək orada qalırıq."},
-                        {"prompt_fa": "رئیس‌جمهور / امروز / شهر ما / دو روز", "answer_fa": "رئیس‌جمهور امروز به شهر ما می‌آید و دو روز آن‌جا می‌ماند.", "reading_az": "Rəisecomhur emruz be şəhre ma miayəd va do ruz anja mimanəd.", "az": "Prezident bu gün bizim şəhərimizə gəlir və orada iki gün qalır."},
-                    ],
-                },
-            ],
+            # QEYD: dərslikdəki bu tapşırıq artıq ÇALIŞMALAR siyahısındadır.
         },
         {
             "title_az": "Sual sözü «چند شنبه» (həftənin hansı günü?)",
             "title_fa": "واژه‌ی پرسشی «چند شنبه»",
             "explanation_az": (
-                "«چند شنبه» həftənin hansı günü olduğunu soruşur: امروز چند شنبه است؟\n"
-                "Cavabda birbaşa günün adı deyilir: امروز پنج‌شنبه است.\n"
-                "Təkrarlanan günlər üçün «روزهای ...» işlənir: روزهای دوشنبه و جمعه."
+                "«چند شنبه» həftənin hansı günü olduğunu soruşur — hərfi mənada «neçənci şənbə».\n"
+                "Quruluş: امروز چند شنبه است؟ ← امروز پنج‌شنبه است.\n"
+                "Cavabda «چند شنبه»nin yerinə gün adı qoyulur, cümlənin qalan hissəsi dəyişmir.\n"
+                "Fel ilə də işlənir: پدرت چند شنبه به ایران می‌آید؟ ← پدرم دوشنبه به ایران می‌آید.\n"
+                "Təkrarlanan hərəkət üçün cəm forma: شما چند شنبه‌ها به استخر می‌روید؟ ← یک‌شنبه‌ها و پنج‌شنبه‌ها.\n"
+                "«چند شنبه» — bir dəfəlik gün; «چند شنبه‌ها» — hər həftə təkrarlanan gün.\n"
+                "Keçmiş zamanda «بود» ilə işlənir: دیروز چند شنبه بود؟ ← دیروز یک‌شنبه بود.\n"
+                "Cavabda gün adından əvvəl «روزهای» də işlənə bilər: ما روزهای پنج‌شنبه اتاقمان را تمیز می‌کنیم."
             ),
             "conjugations": [
                 {"pronoun_fa": "امروز چند شنبه است؟", "form_fa": "امروز پنج‌شنبه است."},
@@ -124,9 +159,25 @@ LESSON = {
             "title_az": "Zaman zərfləri: پریروز؛ دیروز؛ امروز؛ فردا؛ پس‌فردا",
             "title_fa": "قید زمان «... دیروز؛ امروز؛ فردا؛ ...»",
             "explanation_az": (
-                "Gün zərfləri: پریروز (srağagün), دیروز (dünən), امروز (bu gün), فردا (sabah), پس‌فردا (birigün).\n"
-                "Keçmiş günlərdən danışanda fel keçmiş zamanda olur: دیروز ... بودم.\n"
-                "Bu gün və gələcək üçün indiki zaman feli işlənir: فردا ... هستم."
+                "Gün zərfləri bugünkü gündən nə qədər uzaq olduğunu bildirir — dərslikdəki təqvim lövhəsi bunu göstərir.\n"
+                "Keçmişə doğru: سه روز قبل (üç gün əvvəl) ← پریروز (srağagün) ← دیروز (dünən).\n"
+                "Bu gün: امروز.\n"
+                "Gələcəyə doğru: فردا (sabah) → پس‌فردا (birisi gün) → سه روز بعد (üç gün sonra).\n"
+                "Dərsliyin qeydi: «پریروز» = دو روز قبل, «پس‌فردا» = دو روز بعد.\n"
+                "KEÇMİŞ zərflərlə fel keçmiş olur: دیروز دوشنبه بود ✓ (دیروز دوشنبه است ✗).\n"
+                "İNDİKİ və GƏLƏCƏK zərflərlə «است» işlənir: امروز سه‌شنبه است، فردا چهارشنبه است.\n"
+                "Fars dilində gələcək zaman üçün ayrıca forma lazım deyil — indiki zaman feli kifayətdir: فردا به تهران می‌روم («sabah Tehrana gedəcəyəm»)."
+            ),
+            "note_fa": (
+                "۱. پریروز: دو روز قبل\n"
+                "۲. پس‌فردا: دو روز بعد"
+            ),            "note_reading_az": (
+                "1. Pəriruz: do ruz qəbl\n"
+                "2. Pəsfærda: do ruz bə'd"
+            ),            "note_az": (
+                "1. «پریروز» = «دو روز قبل» — srağagün (iki gün əvvəl).\n"
+                "2. «پس‌فردا» = «دو روز بعد» — birisi gün (iki gün sonra).\n"
+                "Daha uzaq günlər üçün sadəcə ədəd dəyişir: سه روز قبل، چهار روز بعد."
             ),
             "conjugations": [
                 {"pronoun_fa": "سه روز قبل", "form_fa": "شنبه"},
@@ -148,9 +199,30 @@ LESSON = {
             "title_az": "Keçmiş zaman feli «بودم؛ بودی؛ بود؛ ...» (idim, idin, idi...)",
             "title_fa": "فعل گذشته‌ی «بودم؛ بودی؛ بود؛ ...»",
             "explanation_az": (
-                "«بودن» feli «هستن» felinin keçmiş zaman qarşılığıdır — «idim, idin, idi…».\n"
-                "هستم → بودم، هستی → بودی، هست → بود، هستیم → بودیم، هستید → بودید، هستند → بودند.\n"
-                "Zaman zərfi ilə uzlaşır: دیروز ... بودم, امروز ... هستم."
+                "«بودن» felinin keçmiş zamanı — indiki «هستم» formasının qarşılığıdır.\n"
+                "Keçmiş: بودم، بودی، بود، بودیم، بودید، بودند («idim, idin, idi …»).\n"
+                "İndiki: هستم، هستی، هست (است)، هستیم، هستید، هستند («-am, -san, -dır …»).\n"
+                "Müqayisə: من دیروز در دانش‌گاه بودم. / من فردا در خانه هستم.\n"
+                "Zaman zərfi feli müəyyən edir: دیروز، پریروز، سه روز قبل → «بودم»; امروز، فردا، پس‌فردا → «هستم».\n"
+                "İnkar «ن» ilə düzəlir: نبودم، نبودی، نبود، نبودیم، نبودید، نبودند.\n"
+                "Nümunə: ما دیروز در خانه نبودیم؛ ما در خانه‌ی پدربزرگمان بودیم.\n"
+                "Sual formasında da eynidir: شما پریروز کجا بودید؟ ← من در خانه‌ی برادرم بودم.\n"
+                "Diqqət: «بود» 3-cü şəxs təkdir və «است»in keçmişidir — «هست» ilə qarışdırmayın."
+            ),
+            "note_fa": (
+                "قید زمان، زمانِ فعل را مشخّص می‌کند:\n"
+                "دیروز / پریروز / سه روز قبل ← بودم؛ بودی؛ بود؛ بودیم؛ بودید؛ بودند\n"
+                "امروز / فردا / پس‌فردا ← هستم؛ هستی؛ هست (است)؛ هستیم؛ هستید؛ هستند"
+            ),            "note_reading_az": (
+                "Qeyde zəman, zəmane fe'l ra moşəxxəs mikonəd:\n"
+                "Diruz / pəriruz / se ruz qəbl ← budəm; budi; bud; budim; budid; budənd\n"
+                "Emruz / færda / pəsfærda ← hastəm; hasti; həst (əst); hastim; hastid; həstənd"
+            ),            "note_az": (
+                "Zaman zərfi felin zamanını müəyyən edir:\n"
+                "KEÇMİŞ (دیروز، پریروز، سه روز قبل) → بودم / بودی / بود / بودیم / بودید / بودند\n"
+                "İNDİKİ-GƏLƏCƏK (امروز، فردا، پس‌فردا) → هستم / هستی / هست (است) / هستیم / هستید / هستند\n"
+                "İnkar üçün əvvələ «ن» qoyulur: نبودم (deyildim), نیستم (deyiləm).\n"
+                "Nümunə: من دیروز در دانش‌گاه بودم؛ من امروز در خانه هستم."
             ),
             "conjugations": [
                 {"pronoun_fa": "من", "form_fa": "هستم (امروز) → بودم (دیروز)"},
@@ -174,121 +246,425 @@ LESSON = {
     ],
     "exercises": [
         {
+            # Çalışma 1 — səh. 139 «لطفاً تصحیح کنید» («برای» + MƏSDƏR).
+            "kind": "answer_question",
+            "title_fa": "لطفاً تصحیح کنید",
+            "instruction_az": "Səhv cümlələri düzəldin («برای»dan sonra MƏSDƏR gəlir)",
+            # Qırmızı — səhv hallanmış fel, yaşıl — düzgün məsdər.
+            "example_fa": (
+                "من برای لباس **می‌دوزم**، به خیّاطی می‌روم. ✗\n"
+                "من برای لباس *دوختن* به خیّاطی می‌روم. ✓"
+            ),
+            "example_reading_az": (
+                "Mən bəraye lebas miduzəm, be xəyyati mirəvəm. (ğələt)\n"
+                "Mən bəraye lebas-duxtən be xəyyati mirəvəm."
+            ),
+            "example_az": (
+                "«برای» məqsəd bildirir və ondan sonra fel MƏSDƏR formasında gəlir, hallanmış formada yox.\n"
+                "Qırmızı — səhv (hallanmış fel), yaşıl — düzgün (məsdər).\n"
+                "Quruluş: SUBYEKT + برای + OBYEKT + MƏSDƏR + به + YER + FEL.\n"
+                "Dərsliyin qeydi: bu səhv keçmiş zamanda da olur — «برای لباس دوختم» ✗ demək olmaz.\n"
+                "Tərcümə: Mən paltar tikdirmək üçün dərziyə gedirəm."
+            ),
+            "items": [
+                {
+                    "fa": "یوسف برای گوشت می‌خرد به قصّابی می‌رود.",
+                    "reading_az": "Yusef bəraye guşt mixərəd be qəssabi mirəvəd. (səhv)",
+                    "az": "Yusif ət almaq üçün qəssaba gedir. — «می‌خرد» səhvdir",
+                    "sample_answer_fa": "یوسف برای گوشت خریدن به قصّابی می‌رود.",
+                    "sample_answer_reading_az": "Yusef bəraye guşt-xəridən be qəssabi mirəvəd.",
+                    "sample_answer_az": "Yusif ət almaq üçün qəssaba gedir.",
+                },
+                {
+                    "fa": "مریم برای اندازه می‌گیرد قدّش، از متر استفاده می‌کند.",
+                    "reading_az": "Məryəm bəraye əndaze migirəd qəddəş, əz metr estefade mikonəd. (səhv)",
+                    "az": "Məryəm boyunu ölçmək üçün metrdən istifadə edir.",
+                    "sample_answer_fa": "مریم برای اندازه گرفتنِ قدّش، از متر استفاده می‌کند.",
+                    "sample_answer_reading_az": "Məryəm bəraye əndaze-gereftəne qəddəş, əz metr estefade mikonəd.",
+                    "sample_answer_az": "Məryəm boyunu ölçmək üçün metrdən istifadə edir. (məsdər izafətlə obyektə bağlanır)",
+                },
+                {
+                    "fa": "زهرا و پدرش برای نماز می‌خوانند به مسجد می‌آیند.",
+                    "reading_az": "Zəhra va pedərəş bəraye nəmaz mixanənd be məsced miayənd. (səhv)",
+                    "az": "Zəhra və atası namaz qılmaq üçün məscidə gəlirlər.",
+                    "sample_answer_fa": "زهرا و پدرش برای نماز خواندن به مسجد می‌آیند.",
+                    "sample_answer_reading_az": "Zəhra va pedərəş bəraye nəmaz-xandən be məsced miayənd.",
+                    "sample_answer_az": "Zəhra və atası namaz qılmaq üçün məscidə gəlirlər.",
+                },
+                {
+                    "fa": "خواهرم برای کمک می‌کند به مادرم، هر روز ظرف‌ها را می‌شوید.",
+                    "reading_az": "Xahərəm bəraye komək mikonəd be madərəm, hər ruz zərfha ra mişuyəd. (səhv)",
+                    "az": "Bacım anama kömək etmək üçün hər gün qabları yuyur.",
+                    "sample_answer_fa": "خواهرم برای کمک کردن به مادرم، هر روز ظرف‌ها را می‌شوید.",
+                    "sample_answer_reading_az": "Xahərəm bəraye komək-kərdən be madərəm, hər ruz zərfha ra mişuyəd.",
+                    "sample_answer_az": "Bacım anama kömək etmək üçün hər gün qabları yuyur.",
+                },
+            ],
+        },
+        {
+            # Çalışma 2 — səh. 139 «مانند مثال بپرسید و پاسخ دهید» («برای … به کجا؟»).
+            # Əvvəllər sadə practice_reveal idi.
+            "kind": "answer_question",
+            "title_fa": "مانند مثال بپرسید و پاسخ دهید",
+            "instruction_az": "Nümunə kimi soruşun və cavab verin («برای … به کجا می‌روی؟»)",
+            # Qırmızı «کجا» — sual, yaşıl — cavabdakı konkret yer.
+            "example_fa": (
+                "شما / خریدن نوشت‌افزار\n"
+                "شما برای خریدن نوشت‌افزار به **کجا** می‌روی؟\n"
+                "من برای خریدن نوشت‌افزار به *فروش‌گاه* می‌روم."
+            ),
+            "example_reading_az": (
+                "Şoma / xəridəne neveştəfzar\n"
+                "Şoma bəraye xəridəne neveştəfzar be koca mirəvi?\n"
+                "Mən bəraye xəridəne neveştəfzar be foruşgah mirəvəm."
+            ),
+            "example_az": (
+                "Verilən sözlər: SUBYEKT / İŞ (məsdər).\n"
+                "Sual: SUBYEKT + برای + MƏSDƏR + به کجا می‌رود؟\n"
+                "Cavab: eyni cümlə, «کجا»nın yerinə konkret YER qoyulur.\n"
+                "«برای»dan sonra həmişə məsdər gəlir; məsdər obyektlə izafətlə bağlanır: خریدنِ نوشت‌افزار.\n"
+                "Tərcümə: Sən dəftərxana ləvazimatı almaq üçün hara gedirsən? — Mağazaya."
+            ),
+            "items": [
+                {"fa": "آن‌ها / غذا پختن", "reading_az": "Anha / qəza poxtən", "az": "onlar / yemək bişirmək",
+                 "sample_answer_fa": "آن‌ها برای غذا پختن به کجا می‌روند؟ آن‌ها برای غذا پختن به آشپزخانه می‌روند.",
+                 "sample_answer_reading_az": "Anha bəraye qəza-poxtən be koca mirəvənd? … be aşpəzxane mirəvənd.",
+                 "sample_answer_az": "Onlar yemək bişirmək üçün hara gedirlər? — Mətbəxə."},
+                {"fa": "ما / دیدن فیلم", "reading_az": "Ma / didəne film", "az": "biz / film baxmaq",
+                 "sample_answer_fa": "ما برای دیدن فیلم به کجا می‌رویم؟ ما برای دیدن فیلم به سینما می‌رویم.",
+                 "sample_answer_reading_az": "Ma bəraye didəne film be koca mirəvim? … be sinəma mirəvim.",
+                 "sample_answer_az": "Biz film baxmaq üçün hara gedirik? — Kinoteatra."},
+                {"fa": "او / دوش گرفتن", "reading_az": "U / duş gereftən", "az": "o / duş qəbul etmək",
+                 "sample_answer_fa": "او برای دوش گرفتن به کجا می‌رود؟ او برای دوش گرفتن به حمّام می‌رود.",
+                 "sample_answer_reading_az": "U bəraye duş-gereftən be koca mirəvəd? … be həmmam mirəvəd.",
+                 "sample_answer_az": "O, duş qəbul etmək üçün hara gedir? — Hamama."},
+                {"fa": "حسن / خریدن میوه", "reading_az": "Həsən / xəridəne mive", "az": "Həsən / meyvə almaq",
+                 "sample_answer_fa": "حسن برای خریدن میوه به کجا می‌رود؟ او برای خریدن میوه به میوه‌فروشی می‌رود.",
+                 "sample_answer_reading_az": "Həsən bəraye xəridəne mive be koca mirəvəd? … be miveforuşi mirəvəd.",
+                 "sample_answer_az": "Həsən meyvə almaq üçün hara gedir? — Meyvə mağazasına."},
+                {"fa": "شما / درس خواندن", "reading_az": "Şoma / dərs xandən", "az": "siz / dərs oxumaq",
+                 "sample_answer_fa": "شما برای درس خواندن به کجا می‌روید؟ ما برای درس خواندن به کتاب‌خانه می‌رویم.",
+                 "sample_answer_reading_az": "Şoma bəraye dərs-xandən be koca mirəvid? … be ketabxane mirəvim.",
+                 "sample_answer_az": "Siz dərs oxumaq üçün hara gedirsiniz? — Kitabxanaya."},
+                {"fa": "زهرا و برادرش / مطالعه کردن", "reading_az": "Zəhra va bəradərəş / motaleə kərdən", "az": "Zəhra və qardaşı / mütaliə etmək",
+                 "sample_answer_fa": "زهرا و برادرش برای مطالعه کردن به کجا می‌روند؟ آن‌ها به اتاق مطالعه می‌روند.",
+                 "sample_answer_reading_az": "Zəhra va bəradərəş bəraye motaleə-kərdən be koca mirəvənd? Anha be otaqe motaleə mirəvənd.",
+                 "sample_answer_az": "Zəhra və qardaşı mütaliə etmək üçün hara gedirlər? — Mütaliə otağına."},
+            ],
+        },
+        {
+            # Çalışma 3 — səh. 140 «جایگزین کنید» (həftə günləri + «تا … می‌ماند»).
+            # Əvvəllər Mövzu 2-nin drill-i idi.
+            "kind": "answer_question",
+            "title_fa": "جایگزین کنید",
+            "instruction_az": "Nümunə kimi əvəz edin (həftə günü + «تا … آن‌جا می‌ماند»)",
+            # Yaşıl «تا» — müddətin sonu, qırmızı «می‌ماند» — qalma feli.
+            "example_fa": (
+                "مادربزرگم / دوشنبه / خانه‌ی ما / جمعه\n"
+                "مادربزرگم دوشنبه به خانه‌ی ما می‌آید و *تا* روز جمعه آن‌جا **می‌ماند**."
+            ),
+            "example_reading_az": (
+                "Madərbozorgəm / doşənbe / xane-ye ma / come\n"
+                "Madərbozorgəm doşənbe be xane-ye ma miayəd va ta ruze come anca mimanəd."
+            ),
+            "example_az": (
+                "Verilən sözlər: SUBYEKT / GƏLİŞ GÜNÜ / YER / QALMA MÜDDƏTİ.\n"
+                "Quruluş: SUBYEKT + GÜN + به + YER + می‌آید/می‌رود + و + تا + MÜDDƏT + آن‌جا می‌ماند.\n"
+                "Yaşıl «تا» müddətin sonunu bildirir: تا روز جمعه («cümə gününə qədər»).\n"
+                "Müddət gün adı yox, uzunluq olarsa «تا» işlənmir: یک سال آن‌جا می‌ماند.\n"
+                "Fel seçimi: danışan həmin yerdədirsə «می‌آید», deyilsə «می‌رود».\n"
+                "Tərcümə: Nənəm bazar ertəsi bizim evə gəlir və cümə gününə qədər orada qalır."
+            ),
+            "items": [
+                {"fa": "من / شنبه / کشورم / سه‌شنبه", "reading_az": "Mən / şənbe / kəşvərəm / seşənbe", "az": "mən / şənbə / ölkəm / çərşənbə axşamı",
+                 "sample_answer_fa": "من شنبه به کشورم می‌روم و تا سه‌شنبه آن‌جا می‌مانم.",
+                 "sample_answer_reading_az": "Mən şənbe be kəşvərəm mirəvəm va ta seşənbe anca mimanəm.",
+                 "sample_answer_az": "Mən şənbə günü ölkəmə gedirəm və çərşənbə axşamına qədər orada qalıram."},
+                {"fa": "برادرم / یک‌شنبه / تهران / یک سال", "reading_az": "Bəradərəm / yekşənbe / Tehran / yek sal", "az": "qardaşım / bazar / Tehran / bir il",
+                 "sample_answer_fa": "برادرم یک‌شنبه به تهران می‌آید و یک سال آن‌جا می‌ماند.",
+                 "sample_answer_reading_az": "Bəradərəm yekşənbe be Tehran miayəd va yek sal anca mimanəd.",
+                 "sample_answer_az": "Qardaşım bazar günü Tehrana gəlir və bir il orada qalır. (müddət uzunluqdursa «تا» işlənmir)"},
+                {"fa": "ما / چهارشنبه / روستا / جمعه", "reading_az": "Ma / çəharşənbe / rusta / come", "az": "biz / cümə axşamı / kənd / cümə",
+                 "sample_answer_fa": "ما چهارشنبه به روستا می‌رویم و تا جمعه آن‌جا می‌مانیم.",
+                 "sample_answer_reading_az": "Ma çəharşənbe be rusta mirəvim va ta come anca mimanim.",
+                 "sample_answer_az": "Biz cümə axşamı kəndə gedirik və cüməyə qədər orada qalırıq."},
+                {"fa": "رئیس‌جمهور / امروز / شهر ما / دو روز", "reading_az": "Rəis-comhur / emruz / şəhre ma / do ruz", "az": "prezident / bu gün / şəhərimiz / iki gün",
+                 "sample_answer_fa": "رئیس‌جمهور امروز به شهر ما می‌آید و دو روز آن‌جا می‌ماند.",
+                 "sample_answer_reading_az": "Rəis-comhur emruz be şəhre ma miayəd va do ruz anca mimanəd.",
+                 "sample_answer_az": "Prezident bu gün bizim şəhərə gəlir və iki gün orada qalır."},
+            ],
+        },
+        {
+            # Çalışma 4 — səh. 141 «لطفاً پاسخ دهید» («چند شنبه»).
+            "kind": "answer_question",
+            "title_fa": "لطفاً پاسخ دهید",
+            "instruction_az": "Suallara cavab verin («چند شنبه؟»)",
+            "example_fa": "امروز *چند شنبه* است؟ ← امروز **پنج‌شنبه** است.",
+            "example_reading_az": "Emruz çənd şənbe əst? — Emruz pəncşənbe əst.",
+            "example_az": (
+                "«چند شنبه» həftənin hansı günü olduğunu soruşur — hərfi mənada «neçənci şənbə».\n"
+                "Fars həftəsi ŞƏNBƏ ilə başlayır: شنبه، یک‌شنبه، دوشنبه، سه‌شنبه، چهارشنبه، پنج‌شنبه، جمعه.\n"
+                "Cavabda «چند شنبه»nin yerinə gün adı qoyulur.\n"
+                "Günün cəmi «-ها» ilə düzəlir və «hər … günü» mənasını verir: شنبه‌ها، جمعه‌ها.\n"
+                "İranda istirahət günü CÜMƏdir (جمعه)."
+            ),
+            "items": [
+                {"fa": "امروز چند شنبه است؟", "reading_az": "Emruz çənd şənbe əst?", "az": "Bu gün həftənin hansı günüdür?",
+                 "sample_answer_fa": "امروز سه‌شنبه است.", "sample_answer_reading_az": "Emruz seşənbe əst.",
+                 "sample_answer_az": "Bu gün çərşənbə axşamıdır. (öz gününüzə görə cavab verin)"},
+                {"fa": "شما چند شنبه‌ها به استخر می‌روید؟", "reading_az": "Şoma çənd şənbeha be estəxr mirəvid?", "az": "Siz hansı günlər hovuza gedirsiniz?",
+                 "sample_answer_fa": "ما یک‌شنبه‌ها و پنج‌شنبه‌ها به استخر می‌رویم.", "sample_answer_reading_az": "Ma yekşənbeha va pəncşənbeha be estəxr mirəvim.",
+                 "sample_answer_az": "Biz bazar və cümə axşamı günləri hovuza gedirik. («-ها» = hər həftə təkrarlanan)"},
+                {"fa": "شما چند شنبه‌ها اتاقتان را تمیز می‌کنید؟", "reading_az": "Şoma çənd şənbeha otaqetan ra təmiz mikonid?", "az": "Siz hansı günlər otağınızı təmizləyirsiniz?",
+                 "sample_answer_fa": "ما روزهای پنج‌شنبه اتاقمان را تمیز می‌کنیم.", "sample_answer_reading_az": "Ma ruzhaye pəncşənbe otaqeman ra təmiz mikonim.",
+                 "sample_answer_az": "Biz cümə axşamı günləri otağımızı təmizləyirik."},
+                {"fa": "دوستتان چند شنبه به کشورش برمی‌گردد؟", "reading_az": "Dustetan çənd şənbe be kəşvəreş bər-migərdəd?", "az": "Dostunuz hansı gün ölkəsinə qayıdır?",
+                 "sample_answer_fa": "دوستم شنبه به کشورش برمی‌گردد.", "sample_answer_reading_az": "Dustəm şənbe be kəşvəreş bər-migərdəd.",
+                 "sample_answer_az": "Dostum şənbə günü ölkəsinə qayıdır."},
+                {"fa": "چند شنبه‌ها دانش‌گاه تعطیل است؟", "reading_az": "Çənd şənbeha daneşgah tə'til əst?", "az": "Hansı günlər universitet bağlıdır?",
+                 "sample_answer_fa": "جمعه‌ها دانش‌گاه تعطیل است.", "sample_answer_reading_az": "Comeha daneşgah tə'til əst.",
+                 "sample_answer_az": "Cümə günləri universitet bağlıdır. (İranda istirahət günü cümədir)"},
+            ],
+        },
+        {
+            # Çalışma 5 — səh. 143 «لطفاً کامل کنید» («بود / نبود / هستم / بودم»).
             "kind": "fill_blank",
-            "instruction_az": "«بود؛ نبود؛ هستم؛ بودم» ilə tamamlayın.",
-            "word_bank": ["بود", "هستید", "بودند", "بودیم", "نبودیم", "است"],
+            "instruction_az": "لطفاً کامل کنید — «بود؛ نبود؛ هستم؛ بودم» formaları ilə tamamlayın.",
+            "word_bank": ["بود", "است", "نبودیم", "بودیم", "هستید", "بودند", "بودم", "هستم"],
             "items": [
                 {
                     "fa_with_blank": "دیروز جمعه ___ ؛ من دیروز در خانه بودم.",
-                    "correct_answer": "بود",
-                    "reading_az": "bud",
-                    "az": "idi",
+                    "correct_answer": "بود", "reading_az": "bud", "az": "idi",
                     "full_reading_az": "Diruz come bud; mən diruz dər xane budəm.",
-                    "full_translation_az": "Dünən cümə idi; mən dünən evdə idim.",
+                    "full_translation_az": "Dünən cümə idi; mən dünən evdə idim. — «دیروز» keçmiş zaman tələb edir.",
                 },
                 {
-                    "fa_with_blank": "امروز شنبه ___ ؛ من امروز در دانش‌گاه ___ .",
-                    "correct_answer": "است",
-                    "reading_az": "əst",
-                    "az": "-dir",
+                    "fa_with_blank": "امروز شنبه ___ ؛ من امروز در دانش‌گاه هستم.",
+                    "correct_answer": "است", "reading_az": "əst", "az": "-dır",
                     "full_reading_az": "Emruz şənbe əst; mən emruz dər daneşgah hastəm.",
-                    "full_translation_az": "Bu gün şənbədir; mən bu gün universitetdəyəm.",
+                    "full_translation_az": "Bu gün şənbədir; mən bu gün universitetdəyəm. — «امروز» indiki zaman.",
                 },
                 {
                     "fa_with_blank": "ما دیروز و پریروز در خانه ___ ؛ ما در خانه‌ی پدربزرگمان بودیم.",
-                    "correct_answer": "نبودیم",
-                    "reading_az": "nəbudim",
-                    "az": "deyildik",
-                    "full_reading_az": "Ma diruz va pəriruz dər xane nəbudim; ma dər xaneye pedərbozorgeman budim.",
-                    "full_translation_az": "Biz dünən və srağagün evdə deyildik; biz babamızın evində idik.",
-                },
-                {
-                    "fa_with_blank": "ما دیروز درخانه‌ی پدربزرگمان ___ .",
-                    "correct_answer": "بودیم",
-                    "reading_az": "budim",
-                    "az": "idik",
-                    "full_reading_az": "Ma diruz dər xaneye pedərbozorgeman budim.",
-                    "full_translation_az": "Biz dünən babamızın evində idik.",
+                    "correct_answer": "نبودیم", "reading_az": "nəbudim", "az": "deyildik",
+                    "full_reading_az": "Ma diruz va pəriruz dər xane nəbudim; ma dər xane-ye pedərbozorgeman budim.",
+                    "full_translation_az": "Biz dünən və srağagün evdə deyildik; babamızın evində idik. — inkar: «ن» + «بودیم».",
                 },
                 {
                     "fa_with_blank": "شما الآن کجا ___ ؟ ما الآن در کلاس هستیم.",
-                    "correct_answer": "هستید",
-                    "reading_az": "hastid",
-                    "az": "-siniz",
+                    "correct_answer": "هستید", "reading_az": "hastid", "az": "-siniz",
                     "full_reading_az": "Şoma əlan koca hastid? Ma əlan dər kelas hastim.",
-                    "full_translation_az": "Siz indi haradasınız? Biz indi sinifdəyik.",
+                    "full_translation_az": "Siz indi haradasınız? Biz indi sinifdəyik. — «الآن» indiki zaman.",
                 },
                 {
-                    "fa_with_blank": "دوستانت پریروز اینجا ___ ؟ بله، دوستانم پریروز اینجا بودند.",
-                    "correct_answer": "بودند",
-                    "reading_az": "budənd",
-                    "az": "idilər",
-                    "full_reading_az": "Dustanet pəriruz inja budənd? Bəle, dustanəm pəriruz inja budənd.",
-                    "full_translation_az": "Dostların srağagün burada idilərmi? Bəli, dostlarım srağagün burada idilər.",
+                    "fa_with_blank": "شما پریروز کجا ___ ؟ من پریروز در خانه‌ی برادرم بودم.",
+                    "correct_answer": "بودید", "reading_az": "budid", "az": "idiniz",
+                    "full_reading_az": "Şoma pəriruz koca budid? Mən pəriruz dər xane-ye bəradərəm budəm.",
+                    "full_translation_az": "Siz srağagün harada idiniz? Mən srağagün qardaşımın evində idim.",
+                },
+                {
+                    "fa_with_blank": "دوستانت پریروز این‌جا ___ ؟ بله، دوستانم پریروز این‌جا بودند.",
+                    "correct_answer": "بودند", "reading_az": "budənd", "az": "idilər",
+                    "full_reading_az": "Dustanət pəriruz inca budənd? Bəle, dustanəm pəriruz inca budənd.",
+                    "full_translation_az": "Dostların srağagün burada idilər? Bəli, dostlarım srağagün burada idilər.",
                 },
             ],
         },
         {
-            "kind": "practice_reveal",
-            "instruction_az": "«برای + məsdər» quruluşu ilə cümlə düzəldin: «او / لباس دوختن / خیّاطی → او برای لباس دوختن به خیّاطی می‌رود.»",
+            # Çalışma 6 — vaxt zərflərinin məşqi (səh. 142-dəki təqvim lövhəsi).
+            "kind": "answer_question",
+            "title_fa": "با قید زمان پاسخ دهید",
+            "instruction_az": "Vaxt zərfləri ilə cavab verin (təqvim lövhəsinə əsasən)",
+            "example_fa": "امروز سه‌شنبه است. *دیروز* چند شنبه بود؟ ← دیروز **دوشنبه** بود.",
+            "example_reading_az": "Emruz seşənbe əst. Diruz çənd şənbe bud? — Diruz doşənbe bud.",
+            "example_az": (
+                "Vaxt zərfləri: پریروز (srağagün) — دیروز (dünən) — امروز (bu gün) — "
+                "فردا (sabah) — پس‌فردا (birisi gün).\n"
+                "Daha uzaq günlər: سه روز قبل (üç gün əvvəl), سه روز بعد (üç gün sonra).\n"
+                "Keçmiş zərflərlə fel KEÇMİŞ olur («بود»), gələcək/indiki zərflərlə «است».\n"
+                "دیروز دوشنبه بود ✓ — دیروز دوشنبه است ✗"
+            ),
             "items": [
-                {"prompt_fa": "ما / درس خواندن / حوزه‌ی علمیّه", "answer_fa": "ما برای درس خواندن به حوزه‌ی علمیّه می‌رویم.", "reading_az": "Ma bəraye dərs xandən be houzeye elmiyye mirəvim.", "az": "Biz dərs oxumaq üçün elmi hövzəyə gedirik."},
-                {"prompt_fa": "دانش‌جوها / مطالعه‌کردن / کتاب‌خانه", "answer_fa": "دانش‌جوها برای مطالعه‌کردن به کتاب‌خانه می‌روند.", "reading_az": "Daneşcuha bəraye motaleə kərdən be ketabxane mirəvənd.", "az": "Tələbələr mütaliə etmək üçün kitabxanaya gedirlər."},
-                {"prompt_fa": "خواهرم / دیدن فیلم / سینما", "answer_fa": "خواهرم برای دیدن فیلم به سینما می‌رود.", "reading_az": "Xahərəm bəraye didəne film be sinəma mirəvəd.", "az": "Bacım film görmək üçün kinoteatra gedir."},
-                {"prompt_fa": "من و دوستم / خریدنِ نان / نانوایی", "answer_fa": "من و دوستم برای خریدنِ نان به نانوایی می‌رویم.", "reading_az": "Mən va dustəm bəraye xəridəne nan be nanvayi mirəvim.", "az": "Mən və dostum çörək almaq üçün çörəkxanaya gedirik."},
-                {"prompt_fa": "پدرم / تعمیرکردنِ ماشین / تعمیرگاه", "answer_fa": "پدرم برای تعمیرکردنِ ماشین به تعمیرگاه می‌رود.", "reading_az": "Pedərəm bəraye təmir kərdəne maşin be təmirgah mirəvəd.", "az": "Atam maşını təmir etmək üçün təmir emalatxanasına gedir."},
-                {"prompt_fa": "او / گرفتنِ عکس / عکّاسی", "answer_fa": "او برای گرفتنِ عکس به عکّاسی می‌رود.", "reading_az": "U bəraye gereftəne əks be əkkasi mirəvəd.", "az": "O, şəkil çəkdirmək üçün fotoateljeyə gedir."},
+                {"fa": "امروز چهارشنبه است. دیروز چند شنبه بود؟", "reading_az": "Emruz çəharşənbe əst. Diruz çənd şənbe bud?", "az": "Bu gün cümə axşamıdır. Dünən hansı gün idi?",
+                 "sample_answer_fa": "دیروز سه‌شنبه بود.", "sample_answer_reading_az": "Diruz seşənbe bud.",
+                 "sample_answer_az": "Dünən çərşənbə axşamı idi."},
+                {"fa": "امروز چهارشنبه است. فردا چند شنبه است؟", "reading_az": "Emruz çəharşənbe əst. Færda çənd şənbe əst?", "az": "Bu gün cümə axşamıdır. Sabah hansı gündür?",
+                 "sample_answer_fa": "فردا پنج‌شنبه است.", "sample_answer_reading_az": "Færda pəncşənbe əst.",
+                 "sample_answer_az": "Sabah cümə axşamıdır. (gələcək → «است»)"},
+                {"fa": "امروز چهارشنبه است. پس‌فردا چند شنبه است؟", "reading_az": "Emruz çəharşənbe əst. Pəsfærda çənd şənbe əst?", "az": "Bu gün cümə axşamıdır. Birisi gün hansı gündür?",
+                 "sample_answer_fa": "پس‌فردا جمعه است.", "sample_answer_reading_az": "Pəsfærda come əst.",
+                 "sample_answer_az": "Birisi gün cümədir."},
+                {"fa": "امروز چهارشنبه است. پریروز چند شنبه بود؟", "reading_az": "Emruz çəharşənbe əst. Pəriruz çənd şənbe bud?", "az": "Bu gün cümə axşamıdır. Srağagün hansı gün idi?",
+                 "sample_answer_fa": "پریروز دوشنبه بود.", "sample_answer_reading_az": "Pəriruz doşənbe bud.",
+                 "sample_answer_az": "Srağagün bazar ertəsi idi. (keçmiş → «بود»)"},
             ],
         },
         {
-            "kind": "practice_reveal",
-            "instruction_az": "«یکی از» ilə cümlə qurun: «ما / کتاب‌های فارسی / خواندن → ما یکی از کتاب‌های فارسی را می‌خوانیم.»",
+            # Çalışma 7 — səh. 146 «با واژه‌ی «یکی از» جمله بسازید».
+            # Əvvəllər sadə practice_reveal idi.
+            "kind": "answer_question",
+            "title_fa": "با واژه‌ی «یکی از» جمله بسازید",
+            "instruction_az": "«یکی از» ifadəsi ilə cümlə qurun",
+            # Yaşıl «یکی از» — cəm isimdən əvvəl.
+            "example_fa": (
+                "ما / کتاب فارسی / خواندن\n"
+                "ما *یکی از* کتاب‌های فارسی را می‌خوانیم."
+            ),
+            "example_reading_az": (
+                "Ma / ketabe farsi / xandən\n"
+                "Ma yeki əz ketabhaye farsi ra mixanim."
+            ),
+            "example_az": (
+                "Verilən sözlər: SUBYEKT / İSİM / MƏSDƏR.\n"
+                "Quruluş: SUBYEKT + یکی از + İSİM(CƏM) + را + FEL.\n"
+                "Yaşıl «یکی از» («…-lardan biri») və ondan sonrakı isim mütləq CƏM olur: کتاب‌های فارسی.\n"
+                "Obyekt olduqda «را» qoyulur; yer olduqda «به»/«در» işlənir: به یکی از کتاب‌فروشی‌ها.\n"
+                "Tərcümə: Biz fars dili kitablarından birini oxuyuruq."
+            ),
             "items": [
-                {"prompt_fa": "فرزندم / سیب‌ها / خوردن", "answer_fa": "فرزندم یکی از سیب‌ها را می‌خورد.", "reading_az": "Fərzəndəm yeki əz sibha ra mixorəd.", "az": "Övladım almalardan birini yeyir."},
-                {"prompt_fa": "احمد / پنجره‌ها / بازکردن", "answer_fa": "احمد یکی از پنجره‌ها را باز می‌کند.", "reading_az": "Əhməd yeki əz pəncereha ra baz mikonəd.", "az": "Əhməd pəncərələrdən birini açır."},
-                {"prompt_fa": "مریم / کتاب‌ها / هدیه‌دادن", "answer_fa": "مریم یکی از کتاب‌ها را هدیه می‌دهد.", "reading_az": "Məryəm yeki əz ketabha ra hedye midəhəd.", "az": "Məryəm kitablardan birini hədiyyə edir."},
-                {"prompt_fa": "ما / کتاب‌فروشی‌ها / رفتن", "answer_fa": "ما به یکی از کتاب‌فروشی‌ها می‌رویم.", "reading_az": "Ma be yeki əz ketabforuşiha mirəvim.", "az": "Biz kitab mağazalarından birinə gedirik."},
-                {"prompt_fa": "من / پیراهن سفید / پوشیدن", "answer_fa": "من یکی از پیراهن‌های سفید را می‌پوشم.", "reading_az": "Mən yeki əz pirahənhaye səfid ra mipuşəm.", "az": "Mən ağ köynəklərdən birini geyinirəm."},
-                {"prompt_fa": "پدرم / فرودگاه‌ها / کارکردن", "answer_fa": "پدرم در یکی از فرودگاه‌ها کار می‌کند.", "reading_az": "Pedərəm dər yeki əz forudgahha kar mikonəd.", "az": "Atam hava limanlarından birində işləyir."},
+                {"fa": "فرزندم / سیب / خوردن", "reading_az": "Fərzəndəm / sib / xordən", "az": "övladım / alma / yemək",
+                 "sample_answer_fa": "فرزندم یکی از سیب‌ها را می‌خورد.", "sample_answer_reading_az": "Fərzəndəm yeki əz sibha ra mixorəd.",
+                 "sample_answer_az": "Övladım almalardan birini yeyir."},
+                {"fa": "احمد / پنجره / باز کردن", "reading_az": "Əhməd / pəncəre / baz kərdən", "az": "Əhməd / pəncərə / açmaq",
+                 "sample_answer_fa": "احمد یکی از پنجره‌ها را باز می‌کند.", "sample_answer_reading_az": "Əhməd yeki əz pəncəreha ra baz mikonəd.",
+                 "sample_answer_az": "Əhməd pəncərələrdən birini açır."},
+                {"fa": "مریم / کتاب / هدیه دادن", "reading_az": "Məryəm / ketab / hedye dadən", "az": "Məryəm / kitab / hədiyyə vermək",
+                 "sample_answer_fa": "مریم یکی از کتاب‌ها را هدیه می‌دهد.", "sample_answer_reading_az": "Məryəm yeki əz ketabha ra hedye midəhəd.",
+                 "sample_answer_az": "Məryəm kitablardan birini hədiyyə verir."},
+                {"fa": "ما / کتاب‌فروشی / رفتن", "reading_az": "Ma / ketabforuşi / rəftən", "az": "biz / kitab mağazası / getmək",
+                 "sample_answer_fa": "ما به یکی از کتاب‌فروشی‌ها می‌رویم.", "sample_answer_reading_az": "Ma be yeki əz ketabforuşiha mirəvim.",
+                 "sample_answer_az": "Biz kitab mağazalarından birinə gedirik. (yer olduğu üçün «به», «را» yox)"},
+                {"fa": "من / پیراهن سفید / پوشیدن", "reading_az": "Mən / pirahəne sefid / puşidən", "az": "mən / ağ köynək / geyinmək",
+                 "sample_answer_fa": "من یکی از پیراهن‌های سفید را می‌پوشم.", "sample_answer_reading_az": "Mən yeki əz pirahənhaye sefid ra mipuşəm.",
+                 "sample_answer_az": "Mən ağ köynəklərdən birini geyinirəm."},
+                {"fa": "پدرم / فرودگاه / کار کردن", "reading_az": "Pedərəm / forudgah / kar kərdən", "az": "atam / hava limanı / işləmək",
+                 "sample_answer_fa": "پدرم در یکی از فرودگاه‌ها کار می‌کند.", "sample_answer_reading_az": "Pedərəm dər yeki əz forudgahha kar mikonəd.",
+                 "sample_answer_az": "Atam hava limanlarından birində işləyir. (yer olduğu üçün «در»)"},
             ],
         },
         {
-            "kind": "practice_reveal",
-            "instruction_az": "Nümunə kimi əvəz edin: «مردم برای خرید گُل به گُل‌فروشی می‌روند.»",
+            # Çalışma 8 — səh. 146 «لطفاً جایگزین کنید» («برای … به …»).
+            # Əvvəllər sadə practice_reveal idi.
+            "kind": "answer_question",
+            "title_fa": "لطفاً جایگزین کنید",
+            "instruction_az": "Nümunə kimi əvəz edin («برای … به … می‌روند»)",
+            "example_fa": "مردم *برای* خریدنِ گُل به گُل‌فروشی **می‌روند**.",
+            "example_reading_az": "Mərdom bəraye xəridəne gol be golforuşi mirəvənd.",
+            "example_az": (
+                "Verilən sözlər: SUBYEKT / MƏQSƏD (məsdər) / YER.\n"
+                "Quruluş: SUBYEKT + برای + MƏSDƏR + به + YER + می‌رود/می‌روند.\n"
+                "Yaşıl «برای» məqsədin, «به» isə yerin önündə gəlir.\n"
+                "Fel subyektə görə hallanır: می‌روم / می‌رویم / می‌روند.\n"
+                "Tərcümə: İnsanlar gül almaq üçün gül mağazasına gedirlər."
+            ),
             "items": [
-                {"prompt_fa": "دانش‌جوها / خریدنِ کتاب / کتاب‌فروشی", "answer_fa": "دانش‌جوها برای خریدن کتاب به کتاب‌فروشی می‌روند.", "reading_az": "Daneşcuha bəraye xəridəne ketab be ketabforuşi mirəvənd.", "az": "Tələbələr kitab almaq üçün kitab mağazasına gedirlər."},
-                {"prompt_fa": "دانش‌آموزان / دیدنِ حیوان‌ها / باغ وحش", "answer_fa": "دانش‌آموزان برای دیدنِ حیوان‌ها به باغ وحش می‌روند.", "reading_az": "Daneşamuzan bəraye didəne heyvanha be bağe vəhş mirəvənd.", "az": "Şagirdlər heyvanları görmək üçün zooparka gedirlər."},
-                {"prompt_fa": "پدر و مادرم / زیارت‌کردنِ حرم امام رضا / مشهد", "answer_fa": "پدر و مادرم برای زیارت‌کردنِ حرم امام رضا به مشهد می‌روند.", "reading_az": "Pedər va madərəm bəraye ziyarət kərdəne hərəme Emam Reza be Məşhəd mirəvənd.", "az": "Ata-anam İmam Rzanın hərəmini ziyarət etmək üçün Məşhədə gedirlər."},
-                {"prompt_fa": "من / گرفتنِ پول / بانک", "answer_fa": "من برای گرفتنِ پول به بانک می‌روم.", "reading_az": "Mən bəraye gereftəne pul be bank mirəvəm.", "az": "Mən pul almaq üçün banka gedirəm."},
+                {"fa": "دانش‌جوها / خریدنِ کتاب / کتاب‌فروشی", "reading_az": "Daneşcuha / xəridəne ketab / ketabforuşi", "az": "tələbələr / kitab almaq / kitab mağazası",
+                 "sample_answer_fa": "دانش‌جوها برای خریدنِ کتاب به کتاب‌فروشی می‌روند.",
+                 "sample_answer_reading_az": "Daneşcuha bəraye xəridəne ketab be ketabforuşi mirəvənd.",
+                 "sample_answer_az": "Tələbələr kitab almaq üçün kitab mağazasına gedirlər."},
+                {"fa": "دانش‌آموزان / دیدنِ حیوان‌ها / باغ وحش", "reading_az": "Daneşamuzan / didəne heyvanha / bağe vəhş", "az": "şagirdlər / heyvanlara baxmaq / zoopark",
+                 "sample_answer_fa": "دانش‌آموزان برای دیدنِ حیوان‌ها به باغ وحش می‌روند.",
+                 "sample_answer_reading_az": "Daneşamuzan bəraye didəne heyvanha be bağe vəhş mirəvənd.",
+                 "sample_answer_az": "Şagirdlər heyvanlara baxmaq üçün zooparka gedirlər."},
+                {"fa": "پدر و مادرم / زیارت‌کردنِ حرم امام رضا (ع) / مشهد", "reading_az": "Pedər va madərəm / ziyarət-kərdəne hərəme Emam Reza / Məşhəd", "az": "atam və anam / İmam Rzanın hərəmini ziyarət / Məşhəd",
+                 "sample_answer_fa": "پدر و مادرم برای زیارت‌کردنِ حرم امام رضا (ع) به مشهد می‌روند.",
+                 "sample_answer_reading_az": "Pedər va madərəm bəraye ziyarət-kərdəne hərəme Emam Reza be Məşhəd mirəvənd.",
+                 "sample_answer_az": "Atam və anam İmam Rzanın (ə) hərəmini ziyarət etmək üçün Məşhədə gedirlər."},
+                {"fa": "من / گرفتنِ پول / بانک", "reading_az": "Mən / gereftəne pul / bank", "az": "mən / pul çıxarmaq / bank",
+                 "sample_answer_fa": "من برای گرفتنِ پول به بانک می‌روم.",
+                 "sample_answer_reading_az": "Mən bəraye gereftəne pul be bank mirəvəm.",
+                 "sample_answer_az": "Mən pul çıxarmaq üçün banka gedirəm."},
             ],
         },
         {
-            "kind": "practice_reveal",
-            "instruction_az": "Vaxt zərfləri ilə cavab verin.",
+            # Çalışma 9 — səh. 146 «لطفاً جایگزین کنید» (saat + gediş-qayıdış).
+            # Əvvəllər sadə practice_reveal idi.
+            "kind": "answer_question",
+            "title_fa": "لطفاً جایگزین کنید — ساعت",
+            "instruction_az": "Nümunə kimi əvəz edin (gediş və qayıdış vaxtı)",
+            # Yaşıl «می‌روم» — gediş, qırmızı «برمی‌گردم» — qayıdış.
+            "example_fa": (
+                "من ساعت هفت به مدرسه *می‌روم* و ساعت دوازده به خانه **برمی‌گردم**."
+            ),
+            "example_reading_az": (
+                "Mən saəte həft be mədrese mirəvəm va saəte dəvazdəh be xane bər-migərdəm."
+            ),
+            "example_az": (
+                "Verilən sözlər: SUBYEKT / GEDİŞ VAXTI / YER / QAYIDIŞ VAXTI.\n"
+                "Quruluş: SUBYEKT + VAXT + به + YER + می‌رود + و + VAXT + به خانه + برمی‌گردد.\n"
+                "Yaşıl «رفتن» — getmək, qırmızı «برگشتن» — qayıtmaq.\n"
+                "Saat «ساعت + ədəd» şəklində deyilir: ساعت هفت، ساعت دوازده.\n"
+                "Tərcümə: Mən saat yeddidə məktəbə gedirəm və saat on ikidə evə qayıdıram."
+            ),
             "items": [
-                {"prompt_fa": "امروز چهارشنبه است. دیروز چند شنبه بود؟", "answer_fa": "دیروز سه‌شنبه بود.", "reading_az": "Diruz seşənbe bud.", "az": "Dünən çərşənbə axşamı idi."},
-                {"prompt_fa": "امروز چهارشنبه است. فردا چند شنبه است؟", "answer_fa": "فردا پنج‌شنبه است.", "reading_az": "Fərda pəncşənbe əst.", "az": "Sabah cümə axşamıdır."},
-                {"prompt_fa": "امروز چهارشنبه است. پس‌فردا چند شنبه است؟", "answer_fa": "پس‌فردا جمعه است.", "reading_az": "Pəsfərda come əst.", "az": "Birigün cümədir."},
-                {"prompt_fa": "امروز چهارشنبه است. پریروز چند شنبه بود؟", "answer_fa": "پریروز دوشنبه بود.", "reading_az": "Pəriruz doşənbe bud.", "az": "Srağagün bazar ertəsi idi."},
+                {"fa": "کارمندها / ساعت هفت / اداره / ساعت سه", "reading_az": "Karməndha / saəte həft / edare / saəte se", "az": "işçilər / saat 7 / idarə / saat 3",
+                 "sample_answer_fa": "کارمندها ساعت هفت به اداره می‌روند و ساعت سه به خانه برمی‌گردند.",
+                 "sample_answer_reading_az": "Karməndha saəte həft be edare mirəvənd va saəte se be xane bər-migərdənd.",
+                 "sample_answer_az": "İşçilər saat yeddidə idarəyə gedirlər və saat üçdə evə qayıdırlar."},
+                {"fa": "علی / ساعت ده / آرایش‌گاه / یک ساعت بعد", "reading_az": "Əli / saəte dəh / arayeşgah / yek saət bəd", "az": "Əli / saat 10 / bərbərxana / bir saat sonra",
+                 "sample_answer_fa": "علی ساعت ده به آرایش‌گاه می‌رود و یک ساعت بعد به خانه برمی‌گردد.",
+                 "sample_answer_reading_az": "Əli saəte dəh be arayeşgah mirəvəd va yek saət bəd be xane bər-migərdəd.",
+                 "sample_answer_az": "Əli saat onda bərbərxanaya gedir və bir saat sonra evə qayıdır."},
+                {"fa": "ما / فردا / کشورمان / ده روز بعد", "reading_az": "Ma / færda / kəşvəreman / dəh ruz bəd", "az": "biz / sabah / ölkəmiz / on gün sonra",
+                 "sample_answer_fa": "ما فردا به کشورمان می‌رویم و ده روز بعد برمی‌گردیم.",
+                 "sample_answer_reading_az": "Ma færda be kəşvəreman mirəvim va dəh ruz bəd bər-migərdim.",
+                 "sample_answer_az": "Biz sabah ölkəmizə gedirik və on gün sonra qayıdırıq."},
+                {"fa": "آن کارگران / صبح / کارخانه / شب", "reading_az": "An kargəran / sobh / karxane / şəb", "az": "o fəhlələr / səhər / zavod / axşam",
+                 "sample_answer_fa": "آن کارگران صبح به کارخانه می‌روند و شب به خانه برمی‌گردند.",
+                 "sample_answer_reading_az": "An kargəran sobh be karxane mirəvənd va şəb be xane bər-migərdənd.",
+                 "sample_answer_az": "O fəhlələr səhər zavoda gedirlər və axşam evə qayıdırlar."},
             ],
         },
         {
-            "kind": "practice_reveal",
-            "instruction_az": "«چند شنبه» ilə soruşub cavab verin: «شما چند شنبه به استخر می‌روید؟ ما یک‌شنبه و پنج‌شنبه به استخر می‌رویم.»",
+            # Çalışma 10 — səh. 146 «با تصویرهای زیر دو جمله بگویید» (6 şəkil).
+            # Şəkillər dərslikdən real foto olduğu üçün boş qalır — admin
+            # panelindən yüklənir.
+            "kind": "picture_sentences",
+            "title_fa": "با تصویرهای زیر دو جمله بگویید",
+            "instruction_az": "Aşağıdakı şəkillərə görə iki cümlə deyin",
             "items": [
-                {"prompt_fa": "دوستانتان / برگشتن به کشورشان / یک‌شنبه", "answer_fa": "دوستانتان چند شنبه به کشورشان برمی‌گردند؟ آن‌ها یک‌شنبه برمی‌گردند.", "reading_az": "Dustanetan çənd şənbe be kəşvəreşan bərmigərdənd? Anha yekşənbe bərmigərdənd.", "az": "Dostlarınız həftənin hansı günü öz ölkələrinə qayıdırlar? Onlar bazar günü qayıdırlar."},
-                {"prompt_fa": "شما / تمیزکردنِ اتاق / پنج‌شنبه", "answer_fa": "شما چند شنبه اتاقتان را تمیز می‌کنید؟ ما پنج‌شنبه اتاقمان را تمیز می‌کنیم.", "reading_az": "Şoma çənd şənbe otaqetan ra təmiz mikonid? Ma pəncşənbe otaqeman ra təmiz mikonim.", "az": "Siz otağınızı həftənin hansı günü təmizləyirsiniz? Biz cümə axşamı təmizləyirik."},
-                {"prompt_fa": "دانش‌گاه شما / تعطیل بودن / جمعه", "answer_fa": "دانش‌گاه شما چند شنبه تعطیل است؟ دانش‌گاه ما جمعه تعطیل است.", "reading_az": "Daneşgahe şoma çənd şənbe tətil əst? Daneşgahe ma come tətil əst.", "az": "Sizin universitetiniz həftənin hansı günü bağlıdır? Bizim universitetimiz cümə günü bağlıdır."},
-            ],
-        },
-        {
-            "kind": "practice_reveal",
-            "instruction_az": "Nümunə kimi cümlə qurun: «من ساعت هفت به مدرسه می‌روم و ساعت دوازده به خانه برمی‌گردم.»",
-            "items": [
-                {"prompt_fa": "کارمندها / ساعت هفت / اداره / سه", "answer_fa": "کارمندها ساعت هفت به اداره می‌روند و ساعت سه به خانه برمی‌گردند.", "reading_az": "Karməndha saəte həft be edare mirəvənd va saəte se be xane bərmigərdənd.", "az": "Əməkdaşlar saat yeddidə idarəyə gedirlər və saat üçdə evə qayıdırlar."},
-                {"prompt_fa": "علی / ساعت ده / آرایش‌گاه / یک ساعت بعد", "answer_fa": "علی ساعت ده به آرایش‌گاه می‌رود و یک ساعت بعد به خانه برمی‌گردد.", "reading_az": "Əli saəte dəh be arayeşgah mirəvəd va yek saət bəd be xane bərmigərdəd.", "az": "Əli saat onda bərbərxanaya gedir və bir saat sonra evə qayıdır."},
-                {"prompt_fa": "ما / فردا / کشورمان / ده روز بعد", "answer_fa": "ما فردا به کشورمان می‌رویم و ده روز بعد برمی‌گردیم.", "reading_az": "Ma fərda be kəşvəreman mirəvim va dəh ruz bəd bərmigərdim.", "az": "Biz sabah öz ölkəmizə gedirik və on gün sonra qayıdırıq."},
-                {"prompt_fa": "آن کارگران / صبح / کارخانه / شب", "answer_fa": "آن کارگران صبح به کارخانه می‌روند و شب به خانه برمی‌گردند.", "reading_az": "An kargəran sobh be karxane mirəvənd va şəb be xane bərmigərdənd.", "az": "O fəhlələr səhər zavoda gedirlər və axşam evə qayıdırlar."},
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "این خانم برای خریدن لباس به فروش‌گاه می‌رود.", "reading_az": "İn xanom bəraye xəridəne lebas be foruşgah mirəvəd.", "az": "Bu xanım paltar almaq üçün mağazaya gedir."},
+                        {"fa": "او یکی از لباس‌ها را انتخاب می‌کند و می‌خرد.", "reading_az": "U yeki əz lebasha ra entexab mikonəd va mixərəd.", "az": "O, paltarlardan birini seçib alır."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "این مردم برای زیارت به حرم می‌روند.", "reading_az": "İn mərdom bəraye ziyarət be hərəm mirəvənd.", "az": "Bu insanlar ziyarət üçün hərəmə gedirlər."},
+                        {"fa": "آن‌ها جمعه‌ها به آن‌جا می‌روند و نماز می‌خوانند.", "reading_az": "Anha comeha be anca mirəvənd va nəmaz mixanənd.", "az": "Onlar cümə günləri oraya gedir və namaz qılırlar."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "این آقا برای تعمیرکردنِ ساعت به تعمیرگاه می‌رود.", "reading_az": "İn ağa bəraye təmir-kərdəne saət be təmirgah mirəvəd.", "az": "Bu kişi saatı təmir etdirmək üçün emalatxanaya gedir."},
+                        {"fa": "او یکی از ساعت‌ها را تعمیر می‌کند.", "reading_az": "U yeki əz saətha ra təmir mikonəd.", "az": "O, saatlardan birini təmir edir."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "این خانواده برای استراحت به پارک می‌روند.", "reading_az": "İn xanevade bəraye esterahət be park mirəvənd.", "az": "Bu ailə istirahət üçün parka gedir."},
+                        {"fa": "آن‌ها پنج‌شنبه‌ها به پارک می‌روند و تا شب آن‌جا می‌مانند.", "reading_az": "Anha pəncşənbeha be park mirəvənd va ta şəb anca mimanənd.", "az": "Onlar cümə axşamı günləri parka gedir və axşama qədər orada qalırlar."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "این آقا برای دادنِ هدیه به خانه‌ی دوستش می‌رود.", "reading_az": "İn ağa bəraye dadəne hedye be xane-ye dustəş mirəvəd.", "az": "Bu kişi hədiyyə vermək üçün dostunun evinə gedir."},
+                        {"fa": "او یکی از هدیه‌ها را به دوستش می‌دهد.", "reading_az": "U yeki əz hedyeha ra be dustəş midəhəd.", "az": "O, hədiyyələrdən birini dostuna verir."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "این بچّه‌ها برای جشن تولّد به خانه‌ی دوستشان می‌آیند.", "reading_az": "İn bəççeha bəraye cəşne təvəllod be xane-ye dusteşan miayənd.", "az": "Bu uşaqlar ad günü şənliyi üçün dostlarının evinə gəlirlər."},
+                        {"fa": "آن‌ها یکی از کیک‌ها را می‌خورند.", "reading_az": "Anha yeki əz keykha ra mixorənd.", "az": "Onlar tortlardan birini yeyirlər."},
+                    ],
+                },
             ],
         },
     ],

@@ -66,9 +66,25 @@ LESSON = {
             "title_az": "Ədədlərin yazılışı və oxunuşu",
             "title_fa": "نوشتن و خواندن عددها",
             "explanation_az": (
-                "Yazıda «و» ayrı yazılır, oxunuşda isə əvvəlki sözə qoşulur: بیست و پنج → «bistop-pənc».\n"
+                "Ədədlərdə YAZILIŞ ilə OXUNUŞ fərqlənir — dərslikdəki lövhə məhz bunu göstərir.\n"
+                "Yazırıq: بیست و پنج (üç ayrı söz). Oxuyuruq: «bistO-pənc» — «و» əvvəlki ədədə «-o» kimi qoşulur.\n"
+                "Eyni qayda hamısında: پنجاه و چهار → «pəncahO-çəhar», نود و هشت → «nəvədO-həşt».\n"
+                "Quruluş: ONLUQ + و + TƏKLİK — Azərbaycan dilindəki kimi böyük hissə əvvəl gəlir.\n"
+                "Onluqlar: ده، بیست، سی، چهل، پنجاه، شصت، هفتاد، هشتاد، نود، صد.\n"
+                "11-19 xüsusi formalardır və qayda ilə düzəlmir: یازده، دوازده، سیزده … نوزده — əzbərlənməlidir.\n"
                 "Danışıqda bəzi ədədlər qısalır: چهار → چار، شش → شیش، چهل → چل.\n"
-                "Bəzi ədədlərin iki yazılışı var: هجده = هیجده."
+                "Bəzi ədədlərin iki yazılışı var: هجده = هیجده، هفده = هیفده — hər ikisi düzgündür."
+            ),
+            "note_fa": (
+                "می‌نویسیم: بیست و پنج / پنجاه و چهار / نود و هشت\n"
+                "می‌خوانیم: بیستُ پنج / پنجاهُ چهار / نودُ هشت"
+            ),            "note_reading_az": (
+                "Minevisim: bist va pənc / pəncah va çəhar / nəvəd va həşt\n"
+                "Mixanim: bistO-pənc / pəncahO-çəhar / nəvədO-həşt"
+            ),            "note_az": (
+                "Yazırıq: بیست و پنج، پنجاه و چهار، نود و هشت — «و» ayrı söz kimi.\n"
+                "Oxuyuruq: bistO-pənc, pəncahO-çəhar, nəvədO-həşt — «و» əvvəlki ədədə «-o» kimi qoşulur və ayrıca söz kimi eşidilmir.\n"
+                "Yəni yazıda üç söz görünür, tələffüzdə isə vahid bir söz kimi səslənir."
             ),
             "conjugations": [
                 {"pronoun_fa": "۲۵ می‌نویسیم: بیست و پنج", "form_fa": "می‌خوانیم: بیستُ پنج"},
@@ -80,46 +96,34 @@ LESSON = {
                 {"fa": "در زبان فارسی عدد «هجده» را «هیجده» هم می‌نویسند.", "reading_az": "Dər zəbane farsi ədəde «hejdəh» ra «hicdəh» həm minevisənd.", "az": "Fars dilində «hejdəh» (18) həm də «hijdəh» yazılır."},
                 {"fa": "عدد «چهل» را در گفت‌وگو «چل» می‌گویند.", "reading_az": "Ədəde «çehel» ra dər goftogu «çel» miguyənd.", "az": "«Çehel» (40) danışıqda «çel» deyilir."},
             ],
-            "drills": [
-                {
-                    "title_fa": "لطفاً بخوانید",
-                    "instruction_az": "Ədədləri sözlə oxuyun.",
-                    "items": [
-                        {
-                            "prompt_fa": "۱۲ ؛ ۱۹ ؛ ۲۵ ؛ ۲۹ ؛ ۳۳",
-                            "answer_fa": "دوازده؛ نوزده؛ بیست و پنج؛ بیست و نه؛ سی و سه",
-                            "reading_az": "Dəvazdəh; nuzdəh; bist o pənc; bist o noh; si o se.",
-                            "az": "on iki; on doqquz; iyirmi beş; iyirmi doqquz; otuz üç",
-                        },
-                        {
-                            "prompt_fa": "۳۸ ؛ ۴۰ ؛ ۴۵ ؛ ۴۹ ؛ ۵۷",
-                            "answer_fa": "سی و هشت؛ چهل؛ چهل و پنج؛ چهل و نه؛ پنجاه و هفت",
-                            "reading_az": "Si o həşt; çehel; çehel o pənc; çehel o noh; pəncah o həft.",
-                            "az": "otuz səkkiz; qırx; qırx beş; qırx doqquz; əlli yeddi",
-                        },
-                        {
-                            "prompt_fa": "۶۲ ؛ ۶۵ ؛ ۷۳ ؛ ۷۸ ؛ ۸۱",
-                            "answer_fa": "شصت و دو؛ شصت و پنج؛ هفتاد و سه؛ هفتاد و هشت؛ هشتاد و یک",
-                            "reading_az": "Şəst o do; şəst o pənc; həftad o se; həftad o həşt; həştad o yek.",
-                            "az": "altmış iki; altmış beş; yetmiş üç; yetmiş səkkiz; səksən bir",
-                        },
-                        {
-                            "prompt_fa": "۸۲ ؛ ۸۷ ؛ ۹۳ ؛ ۹۴ ؛ ۱۰۰",
-                            "answer_fa": "هشتاد و دو؛ هشتاد و هفت؛ نود و سه؛ نود و چهار؛ صد",
-                            "reading_az": "Həştad o do; həştad o həft; nəvəd o se; nəvəd o çəhar; səd.",
-                            "az": "səksən iki; səksən yeddi; doxsan üç; doxsan dörd; yüz",
-                        },
-                    ],
-                },
-            ],
+            # QEYD: dərslikdəki bu tapşırıq artıq ÇALIŞMALAR siyahısındadır.
         },
         {
             "title_az": "Deyək — deməyək: saydan sonra isim TƏK olur",
             "title_fa": "بگوییم – نگوییم",
             "explanation_az": (
-                "Ədəddən sonra isim cəm şəkilçisi ALMIR: سه پیراهن ✓ — سه پیراهن‌ها ✗\n"
-                "Say özü çoxluğu bildirdiyi üçün «ها» artıq olur.\n"
-                "Azərbaycan dilində də eyni qayda var: «üç köynək» deyilir, «üç köynəklər» yox."
+                "Ədəddən sonra gələn isim (معدود) HEÇ VAXT cəm şəkilçisi almır.\n"
+                "Deyirik: من سه پیراهن دارم. ✓ — Demirik: من سه پیراهن‌ها دارم. ✗\n"
+                "Deyirik: او دوازده نان می‌خواهد. ✓ — Demirik: او دوازده نان‌ها می‌خواهد. ✗\n"
+                "Səbəb: ədəd özü çoxluğu bildirir, ona görə «ها» artıq olur.\n"
+                "Azərbaycan dilində də eyni qayda var: «üç köynək» ✓ — «üç köynəklər» ✗\n"
+                "Bu qayda BÜTÜN sayılan sözlərə aiddir: ölçü vahidləri də daxil (هفده کیلومتر ✓، هفده کیلومترها ✗).\n"
+                "Cümlənin mübtədası cəm olsa belə, ədəddən sonrakı isim tək qalır: شاگردان ده جمله می‌نویسند. (mübtəda cəm, معدود tək).\n"
+                "Dərsliyin qeydi: «همیشه پس از عدد، معدود مفرد می‌آید» — ədəddən sonra sayılan söz həmişə təkdir."
+            ),
+            "note_fa": (
+                "همیشه پس از عدد، معدود مفرد می‌آید:\n"
+                "در کلاس ما دوازده طلبه درس می‌خوانند.\n"
+                "(دوازده = عدد، طلبه = معدود)"
+            ),            "note_reading_az": (
+                "Həmişe pəs əz ədəd, mə'dud mofrəd miayəd:\n"
+                "Dər kelase ma dəvazdəh təlbe dərs mixanənd.\n"
+                "(dəvazdəh = ədəd, təlbe = mə'dud)"
+            ),            "note_az": (
+                "Ədəddən sonra sayılan söz həmişə TƏK gəlir:\n"
+                "در کلاس ما دوازده طلبه درس می‌خوانند. (Bizim sinifdə on iki tələbə oxuyur.)\n"
+                "Burada «دوازده» — ədəd (عدد), «طلبه» — sayılan söz (معدود) və o, tək formadadır.\n"
+                "Fel isə cəm ola bilər (می‌خوانند), çünki mübtəda mənaca çoxdur."
             ),
             "conjugations": [
                 {"pronoun_fa": "من سه پیراهن دارم. ✓", "form_fa": "من سه پیراهن‌ها دارم. ✗"},
@@ -133,27 +137,34 @@ LESSON = {
                 {"fa": "طول این خانه نوزده متر و عرض آن ده متر است.", "reading_az": "Tule in xane nuzdəh metr va ərze an dəh metr əst.", "az": "Bu evin uzunluğu on doqquz metr, eni isə on metrdir."},
                 {"fa": "آقای حسینی، دکتر قلب است. او هر روز بیست و دو بیمار را معاینه می‌کند.", "reading_az": "Aqaye Hoseyni, doktore qəlb əst. U hər ruz bist o do bimar ra moayene mikonəd.", "az": "Hüseyni cənabları ürək həkimidir. O hər gün iyirmi iki xəstəni müayinə edir."},
             ],
-            "drills": [
-                {
-                    "title_fa": "لطفاً تصحیح کنید",
-                    "instruction_az": "Səhv cümlələri düzəldin (ədəddən sonra isim təkdə olmalıdır).",
-                    "items": [
-                        {"prompt_fa": "پدربزرگم چهارده نوه‌ها دارد.", "answer_fa": "پدربزرگم چهارده نوه دارد.", "reading_az": "Pedərbozorgəm çəhardəh nəve darəd.", "az": "Babam on dörd nəvəsi var."},
-                        {"prompt_fa": "طول این خیابان هفده کیلومترها است.", "answer_fa": "طول این خیابان هفده کیلومتر است.", "reading_az": "Tule in xiyaban hevdəh kilometr əst.", "az": "Bu küçənin uzunluğu on yeddi kilometrdir."},
-                        {"prompt_fa": "شاگردان هر روز ده جمله‌ها در دفتر می‌نویسند.", "answer_fa": "شاگردان هر روز ده جمله در دفتر می‌نویسند.", "reading_az": "Şagerdan hər ruz dəh comle dər dəftər minevisənd.", "az": "Şagirdlər hər gün dəftərə on cümlə yazırlar."},
-                        {"prompt_fa": "این میوه‌فروش سه جعبه‌های سیب را وزن می‌کند.", "answer_fa": "این میوه‌فروش سه جعبه سیب را وزن می‌کند.", "reading_az": "In meyvəforuş se cəbe sib ra vəzn mikonəd.", "az": "Bu meyvəsatan üç qutu almanı çəkir."},
-                        {"prompt_fa": "دوستم هر روز ظهر سه بشقاب‌ها غذا و دو لیوان‌ها نوشابه می‌خورد.", "answer_fa": "دوستم هر روز ظهر سه بشقاب غذا و دو لیوان نوشابه می‌خورد.", "reading_az": "Dustəm hər ruz zohr se bəşqab qəza va do livan nuşabe mixorəd.", "az": "Dostum hər gün günorta üç boşqab yemək və iki stəkan içki içir."},
-                    ],
-                },
-            ],
+            # QEYD: dərslikdəki bu tapşırıq artıq ÇALIŞMALAR siyahısındadır.
         },
         {
             "title_az": "Riyazi işarələr (1): + − × ÷ =",
             "title_fa": "نشانه‌های ریاضی (۱)",
             "explanation_az": (
-                "İşarələrin adları: + به‌علاوه(ی)، − منها، × ضرب در، ÷ تقسیم بر، = مساوی است با.\n"
-                "Nəticə həmişə «مساوی است با ...» ilə deyilir.\n"
-                "Fars yazısında ifadə sağdan sola yazılır: ۷=۴+۳ — «سه به‌علاوه‌ی چهار مساوی است با هفت»."
+                "Riyazi işarələrin fars adları: + به‌علاوه(ی)، − منها، × ضرب در، ÷ تقسیم بر، = مساوی است با.\n"
+                "Fars yazısında ifadə SAĞDAN SOLA yazılır: «۱۰=۲+۸» sətri «8 + 2 = 10» deməkdir.\n"
+                "Oxunuş qəlibi: 1-ci ədəd + İŞARƏ + 2-ci ədəd + «، مساوی است با» + nəticə.\n"
+                "Nümunə: ۳+۴=۷ → سه به‌علاوه‌ی چهار، مساوی است با هفت.\n"
+                "«به‌علاوه» izafətlə oxunur — «be-əlave-YE çəhar»; digər işarələrdə izafət yoxdur.\n"
+                "«منها» da izafətlə işlənir: هشت منهایِ دو (səkkiz çıx iki).\n"
+                "«ضرب در» və «تقسیم بر» ön qoşma ilə gəlir: دو ضرب در پنج، دوازده تقسیم بر سه.\n"
+                "Danışıqda «مساوی است با» yerinə qısaca «می‌شه» deyilir: دو ضرب در پنج می‌شه ده (dərsliyin qeydi)."
+            ),
+            "note_fa": (
+                "معمولاً در زبان گفتار به جای واژه‌ی «مساوی است» از واژه‌ی گفتاریِ «می‌شه» استفاده می‌کنیم:\n"
+                "دو ضرب در پنج می‌شه ده (۲×۵=۱۰)\n"
+                "چهار به علاوه‌ی سه می‌شه، هفت (۴+۳=۷)"
+            ),            "note_reading_az": (
+                "Mə'mulən dər zəbane goftar be caye vaje-ye «mosavi əst» əz vaje-ye goftariye «mişe» estefade mikonim:\n"
+                "Do zərb dər pənc mişe dəh (2×5=10)\n"
+                "Çəhar be-əlave-ye se mişe, həft (4+3=7)"
+            ),            "note_az": (
+                "Danışıq dilində «مساوی است با» əvəzinə qısa «می‌شه» işlədilir:\n"
+                "دو ضرب در پنج می‌شه ده. (İki vurulsun beşə — on olur.)\n"
+                "چهار به علاوه‌ی سه می‌شه هفت. (Dörd üstəgəl üç — yeddi olur.)\n"
+                "Yazıda və rəsmi danışıqda isə tam forma — «مساوی است با» — işlədilir."
             ),
             "conjugations": [
                 {"pronoun_fa": "۲=۲ (مساوی)", "form_fa": "دو مساوی است با دو"},
@@ -169,30 +180,32 @@ LESSON = {
                 {"fa": "هشت تقسیم بر چهار، مساوی است با دو. (۲=۴÷۸)", "reading_az": "Həşt təqsim bər çəhar, mosavi əst ba do.", "az": "Səkkiz bölünsün dörd bərabərdir iki."},
                 {"fa": "در گفتار به جای «مساوی است» می‌گوییم «می‌شه»: دو ضرب در پنج می‌شه ده.", "reading_az": "Dər goftar be caye «mosavi əst» miguyim «mişe»: do zərb dər pənc mişe dəh.", "az": "Danışıqda «مساوی است» əvəzinə «می‌شه» deyilir."},
             ],
-            "drills": [
-                {
-                    "title_fa": "لطفاً بخوانید",
-                    "instruction_az": "Riyazi ifadələri farsca oxuyun.",
-                    "items": [
-                        {"prompt_fa": "۹۹=۱۹+۸۰", "answer_fa": "هشتاد به علاوه‌ی نوزده، مساوی است با نود و نه.", "reading_az": "Həştad be ezafeye nuzdəh, mosavi əst ba nəvəd o noh.", "az": "Səksən üstəgəl on doqquz bərabərdir doxsan doqquz."},
-                        {"prompt_fa": "۲۴=۱۵−۳۹", "answer_fa": "سی و نه منهای پانزده، مساوی است با بیست و چهار.", "reading_az": "Si o noh mənhaye panzdəh, mosavi əst ba bist o çəhar.", "az": "Otuz doqquz çıx on beş bərabərdir iyirmi dörd."},
-                        {"prompt_fa": "۵=۸÷۴۰", "answer_fa": "چهل تقسیم بر هشت، مساوی است با پنج.", "reading_az": "Çehel təqsim bər həşt, mosavi əst ba pənc.", "az": "Qırx bölünsün səkkiz bərabərdir beş."},
-                        {"prompt_fa": "۲۰=۴×۵", "answer_fa": "پنج ضرب در چهار، مساوی است با بیست.", "reading_az": "Pənc zərb dər çəhar, mosavi əst ba bist.", "az": "Beş vurulsun dörd bərabərdir iyirmi."},
-                        {"prompt_fa": "۷۳=۱۷+۵۶", "answer_fa": "پنجاه و شش به علاوه‌ی هفده، مساوی است با هفتاد و سه.", "reading_az": "Pəncah o şeş be ezafeye hevdəh, mosavi əst ba həftad o se.", "az": "Əlli altı üstəgəl on yeddi bərabərdir yetmiş üç."},
-                        {"prompt_fa": "۲۵=۷۵−۱۰۰", "answer_fa": "صد منهای هفتاد و پنج، مساوی است با بیست و پنج.", "reading_az": "Səd mənhaye həftad o pənc, mosavi əst ba bist o pənc.", "az": "Yüz çıx yetmiş beş bərabərdir iyirmi beş."},
-                        {"prompt_fa": "۸=۹÷۷۲", "answer_fa": "هفتاد و دو تقسیم بر نه، مساوی است با هشت.", "reading_az": "Həftad o do təqsim bər noh, mosavi əst ba həşt.", "az": "Yetmiş iki bölünsün doqquz bərabərdir səkkiz."},
-                        {"prompt_fa": "۷۵=۳×۲۵", "answer_fa": "بیست و پنج ضرب در سه، مساوی است با هفتاد و پنج.", "reading_az": "Bist o pənc zərb dər se, mosavi əst ba həftad o pənc.", "az": "İyirmi beş vurulsun üç bərabərdir yetmiş beş."},
-                    ],
-                },
-            ],
+            # QEYD: dərslikdəki bu tapşırıq artıq ÇALIŞMALAR siyahısındadır.
         },
         {
             "title_az": "Riyazi işarələr (2): faiz (٪) və onluq kəsr (ممیّز)",
             "title_fa": "نشانه‌های ریاضی (۲)",
             "explanation_az": (
-                "«٪» işarəsi faiz bildirir və «درصد» oxunur: ٪۲۵ — بیست و پنج درصد.\n"
-                "Onluq kəsrdə vergülün yerinə «ممیّز» deyilir: ۹/۷۵ — نه ممیّز هفتاد و پنج صدم.\n"
-                "«۴/۵» üçün «چهار و نیم» (dörd yarım) demək də olar."
+                "«٪» faiz işarəsidir və «درصد» oxunur; ədəddən SONRA deyilir: ٪۲۵ → بیست و پنج درصد.\n"
+                "Yazıda işarə ədədin solunda görünsə də (٪۲۵), oxunuşda sonda gəlir — «bistO-pənc dərsəd».\n"
+                "٪۱۰۰ → صد درصد (yüz faiz), ٪۵۰ → پنجاه درصد (əlli faiz — yarısı).\n"
+                "Onluq kəsrdə ayırıcı «/» işarəsidir və «ممیّز» oxunur: ۹/۷۵ → نه ممیّز …\n"
+                "Kəsr hissəsi İKİ rəqəmlidirsə «صدم» (yüzdə): ۹/۷۵ → نه ممیّز هفتاد و پنج صدم.\n"
+                "Kəsr hissəsi BİR rəqəmlidirsə «دهم» (onda): ۴/۵ → چهار ممیّز پنج دهم.\n"
+                "«۴/۵» üçün daha qısa «چهار و نیم» (dörd yarım) demək də düzgündür.\n"
+                "Diqqət: fars dilində onluq ayırıcısı «/»-dir, Avropadakı nöqtə və ya vergül deyil."
+            ),
+            "note_fa": (
+                "۱. بیست و پنج درصد (۲۵٪) / پنجاه درصد (۵۰٪) / نود و پنج درصد (۹۵٪)\n"
+                "۲. «۹/۷۵» را «نهٔ هفتادُ پنج صدم» و «۴/۵» را «چهارُ پنج دهم» یا «چهارُ نیم» می‌خوانیم."
+            ),            "note_reading_az": (
+                "1. BistO-pənc dərsəd (25%) / pəncah dərsəd (50%) / nəvədO-pənc dərsəd (95%)\n"
+                "2. «9/75» ra «nohe həftadO-pənc sədom» va «4/5» ra «çəharO-pənc dəhom» ya «çəharO-nim» mixanim."
+            ),            "note_az": (
+                "1. Faiz həmişə ədəddən sonra oxunur: ۲۵٪ → بیست و پنج درصد, ۵۰٪ → پنجاه درصد, ۹۵٪ → نود و پنج درصد. Dərslikdə hər biri dairə diaqramı ilə göstərilib.\n"
+                "2. Onluq kəsr iki cür oxuna bilər:\n"
+                "۹/۷۵ → «نه ممیّز هفتاد و پنج صدم» (doqquz tam yüzdə yetmiş beş)\n"
+                "۴/۵ → «چهار ممیّز پنج دهم» və ya qısaca «چهار و نیم» (dörd yarım)."
             ),
             "conjugations": [
                 {"pronoun_fa": "٪۲۵", "form_fa": "بیست و پنج درصد"},
@@ -206,147 +219,465 @@ LESSON = {
                 {"fa": "٪۶۰ دانشجوهای این دانش‌گاه، مجرّدند و ٪۴۰ آن‌ها متأهل هستند.", "reading_az": "Şəst dərsəde daneşcuhaye in daneşgah, mocərrədənd va çehel dərsəde anha moteəhel həstənd.", "az": "Bu universitetin tələbələrinin 60%-i subay, 40%-i evlidir."},
                 {"fa": "نمره‌ی املای من (۱۷/۷۵) و نمره‌ی دوستم (۱۹/۲۵) است.", "reading_az": "Nomreye emlaye mən hefdəh momayyez həftad o pənc sədom va nomreye dustəm nuzdəh momayyez bist o pənc sədom əst.", "az": "Mənim imla qiymətim 17,75, dostumunku isə 19,25-dir."},
             ],
-            "drills": [
-                {
-                    "title_fa": "اعداد زیر را بخوانید",
-                    "instruction_az": "Aşağıdakı ədədləri fars dilində oxuyun.",
-                    "items": [
-                        {"prompt_fa": "٪۸۳", "answer_fa": "هشتاد و سه درصد", "reading_az": "Həştad o se dərsəd.", "az": "səksən üç faiz"},
-                        {"prompt_fa": "۱۲/۷۵", "answer_fa": "دوازده ممیّز هفتاد و پنج صدم", "reading_az": "Dəvazdəh momayyez həftad o pənc sədom.", "az": "on iki tam yetmiş beş yüzdə"},
-                        {"prompt_fa": "۱۶/۵", "answer_fa": "شانزده و نیم", "reading_az": "Şanzdəh o nim.", "az": "on altı yarım"},
-                        {"prompt_fa": "۹/۷", "answer_fa": "نه ممیّز هفت دهم", "reading_az": "Noh momayyez həft dəhom.", "az": "doqquz tam yeddi onda"},
-                        {"prompt_fa": "۶۷/۲۵", "answer_fa": "شصت و هفت ممیّز بیست و پنج صدم", "reading_az": "Şəst o həft momayyez bist o pənc sədom.", "az": "altmış yeddi tam iyirmi beş yüzdə"},
-                        {"prompt_fa": "۱۸/۲۵", "answer_fa": "هجده ممیّز بیست و پنج صدم", "reading_az": "Hejdəh momayyez bist o pənc sədom.", "az": "on səkkiz tam iyirmi beş yüzdə"},
-                        {"prompt_fa": "٪۲۸", "answer_fa": "بیست و هشت درصد", "reading_az": "Bist o həşt dərsəd.", "az": "iyirmi səkkiz faiz"},
-                        {"prompt_fa": "۱۴/۵", "answer_fa": "چهارده و نیم", "reading_az": "Çəhardəh o nim.", "az": "on dörd yarım"},
-                        {"prompt_fa": "۷۲/۲۵", "answer_fa": "هفتاد و دو ممیّز بیست و پنج صدم", "reading_az": "Həftad o do momayyez bist o pənc sədom.", "az": "yetmiş iki tam iyirmi beş yüzdə"},
-                        {"prompt_fa": "٪۵۰", "answer_fa": "پنجاه درصد", "reading_az": "Pəncah dərsəd.", "az": "əlli faiz"},
-                    ],
-                },
-            ],
+            # QEYD: dərslikdəki bu tapşırıq artıq ÇALIŞMALAR siyahısındadır.
         },
     ],
     "exercises": [
         {
+            # Çalışma 1 — səh. 116 «لطفاً بخوانید» (20 ədəd, 4 sətirdə).
+            # Əvvəllər Mövzu 1-in drill-i idi.
+            "kind": "answer_question",
+            "title_fa": "لطفاً بخوانید",
+            "instruction_az": "Ədədləri fars dilində sözlə oxuyun",
+            "example_fa": "۲۵ ← *بیست و پنج* ← **بیستُ پنج**",
+            "example_reading_az": "25 → «bist va pənc» yazılır → «bistO-pənc» oxunur",
+            "example_az": (
+                "Yaşıl — yazılışı (می‌نویسیم), qırmızı — oxunuşu (می‌خوانیم).\n"
+                "Yazıda «و» ayrıca söz kimi yazılır, oxunuşda isə əvvəlki ədədə «-o» kimi qoşulur.\n"
+                "پنجاه و چهار → «pəncahO-çəhar», نود و هشت → «nəvəd-O-həşt».\n"
+                "Onluq əvvəl, təklik sonra gəlir — Azərbaycan dilindəki kimi."
+            ),
+            "items": [
+                {
+                    "fa": "۱۲ ؛ ۱۹ ؛ ۲۵ ؛ ۲۹ ؛ ۳۳",
+                    "reading_az": "12 ؛ 19 ؛ 25 ؛ 29 ؛ 33",
+                    "az": "on iki, on doqquz, iyirmi beş, iyirmi doqquz, otuz üç",
+                    "sample_answer_fa": "دوازده؛ نوزده؛ بیست و پنج؛ بیست و نه؛ سی و سه",
+                    "sample_answer_reading_az": "dəvazdəh; nuzdəh; bistO-pənc; bistO-noh; siyO-se",
+                    "sample_answer_az": "on iki; on doqquz; iyirmi beş; iyirmi doqquz; otuz üç",
+                },
+                {
+                    "fa": "۳۸ ؛ ۴۰ ؛ ۴۵ ؛ ۴۹ ؛ ۵۷",
+                    "reading_az": "38 ؛ 40 ؛ 45 ؛ 49 ؛ 57",
+                    "az": "otuz səkkiz, qırx, qırx beş, qırx doqquz, əlli yeddi",
+                    "sample_answer_fa": "سی و هشت؛ چهل؛ چهل و پنج؛ چهل و نه؛ پنجاه و هفت",
+                    "sample_answer_reading_az": "siyO-həşt; çehel; çehelO-pənc; çehelO-noh; pəncahO-həft",
+                    "sample_answer_az": "otuz səkkiz; qırx; qırx beş; qırx doqquz; əlli yeddi",
+                },
+                {
+                    "fa": "۶۲ ؛ ۶۵ ؛ ۷۳ ؛ ۷۸ ؛ ۸۱",
+                    "reading_az": "62 ؛ 65 ؛ 73 ؛ 78 ؛ 81",
+                    "az": "altmış iki, altmış beş, yetmiş üç, yetmiş səkkiz, səksən bir",
+                    "sample_answer_fa": "شصت و دو؛ شصت و پنج؛ هفتاد و سه؛ هفتاد و هشت؛ هشتاد و یک",
+                    "sample_answer_reading_az": "şəstO-do; şəstO-pənc; həftadO-se; həftadO-həşt; həştadO-yek",
+                    "sample_answer_az": "altmış iki; altmış beş; yetmiş üç; yetmiş səkkiz; səksən bir",
+                },
+                {
+                    "fa": "۸۲ ؛ ۸۷ ؛ ۹۳ ؛ ۹۴ ؛ ۱۰۰",
+                    "reading_az": "82 ؛ 87 ؛ 93 ؛ 94 ؛ 100",
+                    "az": "səksən iki, səksən yeddi, doxsan üç, doxsan dörd, yüz",
+                    "sample_answer_fa": "هشتاد و دو؛ هشتاد و هفت؛ نود و سه؛ نود و چهار؛ صد",
+                    "sample_answer_reading_az": "həştadO-do; həştadO-həft; nəvədO-se; nəvədO-çəhar; səd",
+                    "sample_answer_az": "səksən iki; səksən yeddi; doxsan üç; doxsan dörd; yüz",
+                },
+            ],
+        },
+        {
+            # Çalışma 2 — səh. 116 «لطفاً بشمارید» (on aralıq üzrə sayma).
+            # Dərslikdə nöqtəli sətirlər var; burada hər aralıq bir bənddir.
+            "kind": "answer_question",
+            "title_fa": "لطفاً بشمارید",
+            "instruction_az": "Verilən aralıqları fars dilində sayın",
+            "example_fa": "۱ …………… ۱۰ ← *یک، دو، سه، چهار، پنج، شش، هفت، هشت، نه، ده*",
+            "example_reading_az": "yek, do, se, çəhar, pənc, şeş, həft, həşt, noh, dəh",
+            "example_az": (
+                "Hər aralığı əvvəldən sona doğru ucadan sayın.\n"
+                "10-dan sonra ədədlər «onluq + و + təklik» qəlibi ilə düzəlir: بیست و یک، بیست و دو …\n"
+                "Onluqlar: ده، بیست، سی، چهل، پنجاه، شصت، هفتاد، هشتاد، نود، صد."
+            ),
+            "items": [
+                {
+                    "fa": "۱ …………… ۱۰", "reading_az": "1 → 10", "az": "birdən ona qədər",
+                    "sample_answer_fa": "یک، دو، سه، چهار، پنج، شش، هفت، هشت، نه، ده",
+                    "sample_answer_reading_az": "yek, do, se, çəhar, pənc, şeş, həft, həşt, noh, dəh",
+                    "sample_answer_az": "bir, iki, üç, dörd, beş, altı, yeddi, səkkiz, doqquz, on",
+                },
+                {
+                    "fa": "۱۱ …………… ۲۰", "reading_az": "11 → 20", "az": "on birdən iyirmiyə qədər",
+                    "sample_answer_fa": "یازده، دوازده، سیزده، چهارده، پانزده، شانزده، هفده، هجده، نوزده، بیست",
+                    "sample_answer_reading_az": "yazdəh, dəvazdəh, sizdəh, çəhardəh, panzdəh, şanzdəh, hefdəh, hicdəh, nuzdəh, bist",
+                    "sample_answer_az": "on bir … iyirmi (11-19 xüsusi formalardır, əzbərlənməlidir)",
+                },
+                {
+                    "fa": "۲۱ …………… ۳۰", "reading_az": "21 → 30", "az": "iyirmi birdən otuza qədər",
+                    "sample_answer_fa": "بیست و یک، بیست و دو، … بیست و نه، سی",
+                    "sample_answer_reading_az": "bistO-yek, bistO-do, … bistO-noh, si",
+                    "sample_answer_az": "iyirmi bir, iyirmi iki … iyirmi doqquz, otuz",
+                },
+                {
+                    "fa": "۳۱ …………… ۴۰", "reading_az": "31 → 40", "az": "otuz birdən qırxa qədər",
+                    "sample_answer_fa": "سی و یک، سی و دو، … سی و نه، چهل",
+                    "sample_answer_reading_az": "siyO-yek, siyO-do, … siyO-noh, çehel",
+                    "sample_answer_az": "otuz bir, otuz iki … otuz doqquz, qırx",
+                },
+                {
+                    "fa": "۴۱ …………… ۵۰", "reading_az": "41 → 50", "az": "qırx birdən əlliyə qədər",
+                    "sample_answer_fa": "چهل و یک، چهل و دو، … چهل و نه، پنجاه",
+                    "sample_answer_reading_az": "çehelO-yek, çehelO-do, … çehelO-noh, pəncah",
+                    "sample_answer_az": "qırx bir, qırx iki … qırx doqquz, əlli",
+                },
+                {
+                    "fa": "۵۱ …………… ۶۰", "reading_az": "51 → 60", "az": "əlli birdən altmışa qədər",
+                    "sample_answer_fa": "پنجاه و یک، پنجاه و دو، … پنجاه و نه، شصت",
+                    "sample_answer_reading_az": "pəncahO-yek, pəncahO-do, … pəncahO-noh, şəst",
+                    "sample_answer_az": "əlli bir, əlli iki … əlli doqquz, altmış",
+                },
+                {
+                    "fa": "۶۱ …………… ۷۰", "reading_az": "61 → 70", "az": "altmış birdən yetmişə qədər",
+                    "sample_answer_fa": "شصت و یک، شصت و دو، … شصت و نه، هفتاد",
+                    "sample_answer_reading_az": "şəstO-yek, şəstO-do, … şəstO-noh, həftad",
+                    "sample_answer_az": "altmış bir, altmış iki … altmış doqquz, yetmiş",
+                },
+                {
+                    "fa": "۷۱ …………… ۸۰", "reading_az": "71 → 80", "az": "yetmiş birdən səksənə qədər",
+                    "sample_answer_fa": "هفتاد و یک، هفتاد و دو، … هفتاد و نه، هشتاد",
+                    "sample_answer_reading_az": "həftadO-yek, həftadO-do, … həftadO-noh, həştad",
+                    "sample_answer_az": "yetmiş bir, yetmiş iki … yetmiş doqquz, səksən",
+                },
+                {
+                    "fa": "۸۱ …………… ۹۰", "reading_az": "81 → 90", "az": "səksən birdən doxsana qədər",
+                    "sample_answer_fa": "هشتاد و یک، هشتاد و دو، … هشتاد و نه، نود",
+                    "sample_answer_reading_az": "həştadO-yek, həştadO-do, … həştadO-noh, nəvəd",
+                    "sample_answer_az": "səksən bir, səksən iki … səksən doqquz, doxsan",
+                },
+                {
+                    "fa": "۹۱ …………… ۱۰۰", "reading_az": "91 → 100", "az": "doxsan birdən yüzə qədər",
+                    "sample_answer_fa": "نود و یک، نود و دو، … نود و نه، صد",
+                    "sample_answer_reading_az": "nəvədO-yek, nəvədO-do, … nəvədO-noh, səd",
+                    "sample_answer_az": "doxsan bir, doxsan iki … doxsan doqquz, yüz",
+                },
+            ],
+        },
+        {
+            # Çalışma 3 — səh. 117 «لطفاً تصحیح کنید» (ədəddən sonra cəm şəkilçisi).
+            # Əvvəllər Mövzu 2-nin drill-i idi.
+            "kind": "answer_question",
+            "title_fa": "لطفاً تصحیح کنید",
+            "instruction_az": "Səhv cümlələri düzəldin (ədəddən sonra isim TƏK olmalıdır)",
+            # Qırmızı — səhv cəm forma, yaşıl — düzgün tək forma.
+            "example_fa": (
+                "من سه **پیراهن‌ها** دارم. ✗\n"
+                "من سه *پیراهن* دارم. ✓"
+            ),
+            "example_reading_az": (
+                "Mən se pirahənha darəm. (ğələt)\n"
+                "Mən se pirahən darəm."
+            ),
+            "example_az": (
+                "Ədəddən sonra gələn isim (معدود) HEÇ VAXT cəm şəkilçisi almır.\n"
+                "Qırmızı — səhv «ها»lı forma, yaşıl — düzgün tək forma.\n"
+                "Səbəb: ədəd özü çoxluğu bildirir, «ها» artıq olur.\n"
+                "Azərbaycan dilində də eynidir: «üç köynək» ✓ — «üç köynəklər» ✗\n"
+                "Tərcümə: Mənim üç köynəyim var."
+            ),
+            "items": [
+                {
+                    "fa": "پدربزرگم چهارده نوه‌ها دارد.",
+                    "reading_az": "Pedərbozorgəm çəhardəh nəveha darəd. (səhv)",
+                    "az": "Babamın on dörd nəvəsi var. — «نوه‌ها» səhvdir",
+                    "sample_answer_fa": "پدربزرگم چهارده نوه دارد.",
+                    "sample_answer_reading_az": "Pedərbozorgəm çəhardəh nəve darəd.",
+                    "sample_answer_az": "Babamın on dörd nəvəsi var.",
+                },
+                {
+                    "fa": "طول این خیابان هفده کیلومترها است.",
+                    "reading_az": "Tule in xiyaban hefdəh kilumetrha əst. (səhv)",
+                    "az": "Bu küçənin uzunluğu on yeddi kilometrdir.",
+                    "sample_answer_fa": "طول این خیابان هفده کیلومتر است.",
+                    "sample_answer_reading_az": "Tule in xiyaban hefdəh kilumetr əst.",
+                    "sample_answer_az": "Bu küçənin uzunluğu on yeddi kilometrdir.",
+                },
+                {
+                    "fa": "شاگردان هر روز ده جمله‌ها در دفتر می‌نویسند.",
+                    "reading_az": "Şagerdan hər ruz dəh comleha dər dəftər minevisənd. (səhv)",
+                    "az": "Şagirdlər hər gün dəftərdə on cümlə yazırlar.",
+                    "sample_answer_fa": "شاگردان هر روز ده جمله در دفتر می‌نویسند.",
+                    "sample_answer_reading_az": "Şagerdan hər ruz dəh comle dər dəftər minevisənd.",
+                    "sample_answer_az": "Şagirdlər hər gün dəftərdə on cümlə yazırlar. (mübtəda cəmdir, amma «ده جمله» tək qalır)",
+                },
+                {
+                    "fa": "این میوه‌فروش سه جعبه‌های سیب را وزن می‌کند.",
+                    "reading_az": "İn miveforuş se cəbehaye sib ra vəzn mikonəd. (səhv)",
+                    "az": "Bu meyvə satan üç qutu almanı çəkir.",
+                    "sample_answer_fa": "این میوه‌فروش سه جعبه سیب را وزن می‌کند.",
+                    "sample_answer_reading_az": "İn miveforuş se cəbe sib ra vəzn mikonəd.",
+                    "sample_answer_az": "Bu meyvə satan üç qutu almanı çəkir.",
+                },
+                {
+                    "fa": "دوستم هر روز ظهر سه بشقاب‌ها غذا و دو لیوان‌ها نوشابه می‌خورد.",
+                    "reading_az": "Dustəm hər ruz zohr se boşqabha qəza va do livanha nuşabe mixorəd. (səhv)",
+                    "az": "Dostum hər gün günorta üç boşqab yemək və iki stəkan içki içir.",
+                    "sample_answer_fa": "دوستم هر روز ظهر سه بشقاب غذا و دو لیوان نوشابه می‌خورد.",
+                    "sample_answer_reading_az": "Dustəm hər ruz zohr se boşqab qəza va do livan nuşabe mixorəd.",
+                    "sample_answer_az": "Dostum hər gün günorta üç boşqab yemək yeyir və iki stəkan içki içir. (iki səhv də düzəlir)",
+                },
+            ],
+        },
+        {
+            # Çalışma 4 — səh. 118 «لطفاً بخوانید» (riyazi ifadələr).
+            # Əvvəllər Mövzu 3-ün drill-i idi.
+            "kind": "answer_question",
+            "title_fa": "لطفاً بخوانید — نشانه‌های ریاضی",
+            "instruction_az": "Riyazi ifadələri fars dilində oxuyun",
+            "example_fa": "۱۰=۲+۸ ← *هشت به‌علاوه‌ی دو، مساوی است با ده*",
+            "example_reading_az": "həşt be-əlave-ye do, mosavi əst ba dəh",
+            "example_az": (
+                "İşarələrin adları: + به‌علاوه(ی) — «üstəgəl», − منها — «çıx», "
+                "× ضرب در — «vur», ÷ تقسیم بر — «böl», = مساوی است با — «bərabərdir».\n"
+                "Fars yazısında ifadə SAĞDAN SOLA yazılır: ۱۰=۲+۸ yazılışı «8 + 2 = 10» deməkdir.\n"
+                "Nəticə həmişə «مساوی است با …» ilə deyilir.\n"
+                "Danışıqda «مساوی است» yerinə qısaca «می‌شه» deyilir: دو ضرب در پنج می‌شه ده."
+            ),
+            "items": [
+                {"fa": "۹۹=۱۹+۸۰", "reading_az": "80 + 19 = 99", "az": "80 üstəgəl 19 bərabərdir 99",
+                 "sample_answer_fa": "هشتاد به‌علاوه‌ی نوزده، مساوی است با نود و نه.",
+                 "sample_answer_reading_az": "həştad be-əlave-ye nuzdəh, mosavi əst ba nəvədO-noh",
+                 "sample_answer_az": "Səksən üstəgəl on doqquz bərabərdir doxsan doqquz."},
+                {"fa": "۲۴=۱۵−۳۹", "reading_az": "39 − 15 = 24", "az": "39 çıx 15 bərabərdir 24",
+                 "sample_answer_fa": "سی و نه منهای پانزده، مساوی است با بیست و چهار.",
+                 "sample_answer_reading_az": "siyO-noh mənhaye panzdəh, mosavi əst ba bistO-çəhar",
+                 "sample_answer_az": "Otuz doqquz çıx on beş bərabərdir iyirmi dörd."},
+                {"fa": "۵=۸÷۴۰", "reading_az": "40 ÷ 8 = 5", "az": "40 bölünsün 8 bərabərdir 5",
+                 "sample_answer_fa": "چهل تقسیم بر هشت، مساوی است با پنج.",
+                 "sample_answer_reading_az": "çehel təqsim bər həşt, mosavi əst ba pənc",
+                 "sample_answer_az": "Qırx bölünsün səkkizə bərabərdir beş."},
+                {"fa": "۲۰=۴×۵", "reading_az": "5 × 4 = 20", "az": "5 vurulsun 4 bərabərdir 20",
+                 "sample_answer_fa": "پنج ضرب در چهار، مساوی است با بیست.",
+                 "sample_answer_reading_az": "pənc zərb dər çəhar, mosavi əst ba bist",
+                 "sample_answer_az": "Beş vurulsun dördə bərabərdir iyirmi."},
+                {"fa": "۷۳=۱۷+۵۶", "reading_az": "56 + 17 = 73", "az": "56 üstəgəl 17 bərabərdir 73",
+                 "sample_answer_fa": "پنجاه و شش به‌علاوه‌ی هفده، مساوی است با هفتاد و سه.",
+                 "sample_answer_reading_az": "pəncahO-şeş be-əlave-ye hefdəh, mosavi əst ba həftadO-se",
+                 "sample_answer_az": "Əlli altı üstəgəl on yeddi bərabərdir yetmiş üç."},
+                {"fa": "۲۵=۷۵−۱۰۰", "reading_az": "100 − 75 = 25", "az": "100 çıx 75 bərabərdir 25",
+                 "sample_answer_fa": "صد منهای هفتاد و پنج، مساوی است با بیست و پنج.",
+                 "sample_answer_reading_az": "səd mənhaye həftadO-pənc, mosavi əst ba bistO-pənc",
+                 "sample_answer_az": "Yüz çıx yetmiş beş bərabərdir iyirmi beş."},
+                {"fa": "۸=۹÷۷۲", "reading_az": "72 ÷ 9 = 8", "az": "72 bölünsün 9 bərabərdir 8",
+                 "sample_answer_fa": "هفتاد و دو تقسیم بر نه، مساوی است با هشت.",
+                 "sample_answer_reading_az": "həftadO-do təqsim bər noh, mosavi əst ba həşt",
+                 "sample_answer_az": "Yetmiş iki bölünsün doqquza bərabərdir səkkiz."},
+                {"fa": "۷۵=۳×۲۵", "reading_az": "25 × 3 = 75", "az": "25 vurulsun 3 bərabərdir 75",
+                 "sample_answer_fa": "بیست و پنج ضرب در سه، مساوی است با هفتاد و پنج.",
+                 "sample_answer_reading_az": "bistO-pənc zərb dər se, mosavi əst ba həftadO-pənc",
+                 "sample_answer_az": "İyirmi beş vurulsun üçə bərabərdir yetmiş beş."},
+            ],
+        },
+        {
+            # Çalışma 5 — səh. 119 «عددهای زیر را بخوانید» (faiz və onluq kəsr).
+            # Əvvəllər Mövzu 4-ün drill-i idi.
+            "kind": "answer_question",
+            "title_fa": "عددهای زیر را بخوانید",
+            "instruction_az": "Aşağıdakı ədədləri fars dilində oxuyun (درصد və ممیّز)",
+            "example_fa": "٪۲۵ ← *بیست و پنج درصد* | ۹/۷۵ ← **نه ممیّز هفتاد و پنج صدم**",
+            "example_reading_az": "bistO-pənc dərsəd | noh moməyyeze həftadO-pənc sədom",
+            "example_az": (
+                "«٪» faiz işarəsidir və «درصد» oxunur — ədəddən SONRA deyilir: ٪۲۵ → بیست و پنج درصد.\n"
+                "Onluq kəsrdə «/» ayırıcısı «ممیّز» oxunur: ۹/۷۵ → نه ممیّز …\n"
+                "Kəsr hissəsi iki rəqəmlidirsə «صدم» (yüzdə), bir rəqəmlidirsə «دهم» (onda) əlavə olunur.\n"
+                "«۴/۵» üçün «چهار و نیم» (dörd yarım) demək də düzgündür."
+            ),
+            "items": [
+                {"fa": "٪۸۳", "reading_az": "83%", "az": "83 faiz",
+                 "sample_answer_fa": "هشتاد و سه درصد", "sample_answer_reading_az": "həştadO-se dərsəd",
+                 "sample_answer_az": "səksən üç faiz"},
+                {"fa": "۱۲/۷۵", "reading_az": "12,75", "az": "12 tam 75",
+                 "sample_answer_fa": "دوازده ممیّز هفتاد و پنج صدم", "sample_answer_reading_az": "dəvazdəh moməyyeze həftadO-pənc sədom",
+                 "sample_answer_az": "on iki tam yüzdə yetmiş beş"},
+                {"fa": "۱۶/۵", "reading_az": "16,5", "az": "16 tam 5",
+                 "sample_answer_fa": "شانزده ممیّز پنج دهم (شانزده و نیم)", "sample_answer_reading_az": "şanzdəh moməyyeze pənc dəhom (şanzdəh o nim)",
+                 "sample_answer_az": "on altı tam onda beş — və ya «on altı yarım»"},
+                {"fa": "۹/۷", "reading_az": "9,7", "az": "9 tam 7",
+                 "sample_answer_fa": "نه ممیّز هفت دهم", "sample_answer_reading_az": "noh moməyyeze həft dəhom",
+                 "sample_answer_az": "doqquz tam onda yeddi"},
+                {"fa": "۶۷/۲۵", "reading_az": "67,25", "az": "67 tam 25",
+                 "sample_answer_fa": "شصت و هفت ممیّز بیست و پنج صدم", "sample_answer_reading_az": "şəstO-həft moməyyeze bistO-pənc sədom",
+                 "sample_answer_az": "altmış yeddi tam yüzdə iyirmi beş"},
+                {"fa": "۱۸/۲۵", "reading_az": "18,25", "az": "18 tam 25",
+                 "sample_answer_fa": "هجده ممیّز بیست و پنج صدم", "sample_answer_reading_az": "hicdəh moməyyeze bistO-pənc sədom",
+                 "sample_answer_az": "on səkkiz tam yüzdə iyirmi beş"},
+                {"fa": "٪۲۸", "reading_az": "28%", "az": "28 faiz",
+                 "sample_answer_fa": "بیست و هشت درصد", "sample_answer_reading_az": "bistO-həşt dərsəd",
+                 "sample_answer_az": "iyirmi səkkiz faiz"},
+                {"fa": "۱۴/۵", "reading_az": "14,5", "az": "14 tam 5",
+                 "sample_answer_fa": "چهارده ممیّز پنج دهم (چهارده و نیم)", "sample_answer_reading_az": "çəhardəh moməyyeze pənc dəhom (çəhardəh o nim)",
+                 "sample_answer_az": "on dörd tam onda beş — və ya «on dörd yarım»"},
+                {"fa": "۷۲/۲۵", "reading_az": "72,25", "az": "72 tam 25",
+                 "sample_answer_fa": "هفتاد و دو ممیّز بیست و پنج صدم", "sample_answer_reading_az": "həftadO-do moməyyeze bistO-pənc sədom",
+                 "sample_answer_az": "yetmiş iki tam yüzdə iyirmi beş"},
+                {"fa": "٪۵۰", "reading_az": "50%", "az": "50 faiz",
+                 "sample_answer_fa": "پنجاه درصد", "sample_answer_reading_az": "pəncah dərsəd",
+                 "sample_answer_az": "əlli faiz — dərslikdəki şəkildə dairənin yarısı"},
+            ],
+        },
+        {
+            # Çalışma 6 — səh. 122 «مانند مثال با واژه‌ی «گوناگون» جمله بسازید».
+            # Əvvəllər sadə practice_reveal idi.
+            "kind": "answer_question",
+            "title_fa": "مانند مثال با واژه‌ی «گوناگون» جمله بسازید",
+            "instruction_az": "Nümunə kimi «گوناگون» sözü ilə cümlə qurun",
+            # Yaşıl «گوناگون» — cəm isimdən sonra, «مانند» sadalamanı açır.
+            "example_fa": (
+                "ما / غذا / خوردن\n"
+                "ما غذاهای *گوناگون*، *مانند* برنج، نیمرو، گوشت و ساندویچ می‌خوریم."
+            ),
+            "example_reading_az": (
+                "Ma / qəza / xordən\n"
+                "Ma qəzahaye gunagun, manənde berenc, nimru, guşt va sandeviç mixorim."
+            ),
+            "example_az": (
+                "Verilən sözlər: SUBYEKT / İSİM / MƏSDƏR.\n"
+                "Quruluş: SUBYEKT + İSİM(cəm) + izafət + گوناگون + ، مانند + 3-4 nümunə + FEL.\n"
+                "Yaşıl «گوناگون» («müxtəlif») cəm isimdən sonra izafətlə bağlanır: غذاهایِ گوناگون.\n"
+                "«مانند» sadalamanı açır — ən azı üç nümunə sadalamaq yaxşıdır.\n"
+                "Tərcümə: Biz plov, qayğanaq, ət və sendviç kimi müxtəlif yeməklər yeyirik."
+            ),
+            "items": [
+                {
+                    "fa": "او / لباس / فروختن",
+                    "reading_az": "U / lebas / foruxtən",
+                    "az": "o / paltar / satmaq",
+                    "sample_answer_fa": "او لباس‌های گوناگون، مانند پیراهن، شلوار و کاپشن می‌فروشد.",
+                    "sample_answer_reading_az": "U lebashaye gunagun, manənde pirahən, şəlvar va kapşen miforuşəd.",
+                    "sample_answer_az": "O, köynək, şalvar və gödəkcə kimi müxtəlif paltarlar satır.",
+                },
+                {
+                    "fa": "در جنگل / حیوان / زندگی کردن",
+                    "reading_az": "Dər cəngəl / heyvan / zendegi kərdən",
+                    "az": "meşədə / heyvan / yaşamaq",
+                    "sample_answer_fa": "در جنگل حیوان‌های گوناگون، مانند ببر، خرس و آهو زندگی می‌کنند.",
+                    "sample_answer_reading_az": "Dər cəngəl heyvanhaye gunagun, manənde bəbr, xers va ahu zendegi mikonənd.",
+                    "sample_answer_az": "Meşədə pələng, ayı və ceyran kimi müxtəlif heyvanlar yaşayır.",
+                },
+                {
+                    "fa": "در این باغ / میوه / وجود داشتن",
+                    "reading_az": "Dər in bağ / mive / vocud daştən",
+                    "az": "bu bağda / meyvə / olmaq",
+                    "sample_answer_fa": "در این باغ میوه‌های گوناگون، مانند سیب، انار و هلو وجود دارد.",
+                    "sample_answer_reading_az": "Dər in bağ mivehaye gunagun, manənde sib, anar va holu vocud darəd.",
+                    "sample_answer_az": "Bu bağda alma, nar və şaftalı kimi müxtəlif meyvələr var.",
+                },
+                {
+                    "fa": "مرد تاجر / کشور / مسافرت کردن",
+                    "reading_az": "Mərde tacer / kəşvər / mosaferət kərdən",
+                    "az": "tacir kişi / ölkə / səfər etmək",
+                    "sample_answer_fa": "مرد تاجر به کشورهای گوناگون، مانند ایران، چین و هند مسافرت می‌کند.",
+                    "sample_answer_reading_az": "Mərde tacer be kəşvərhaye gunagun, manənde Iran, Çin va Hend mosaferət mikonəd.",
+                    "sample_answer_az": "Tacir kişi İran, Çin və Hindistan kimi müxtəlif ölkələrə səfər edir.",
+                },
+            ],
+        },
+        {
+            # Çalışma 7 — səh. 122 «با گزینه‌ی صحیح کامل کنید».
+            # Dərslikdə hər bənd üçün mötərizədə İKİ variant verilir, ona görə
+            # söz bankında 14 çip var (7 düzgün + 7 çeldirici).
             "kind": "fill_blank",
-            "instruction_az": "Düzgün variantla tamamlayın.",
-            "word_bank": ["کیلوگرم", "منهای", "حیوان‌های", "ضرب در", "طلبه", "متر", "فرزند"],
+            "instruction_az": "با گزینه‌ی صحیح کامل کنید — düzgün variantla tamamlayın (hər cümlə üçün iki variantdan biri).",
+            "word_bank": [
+                "کیلوگرم", "کیلومتر", "منهای", "تقسیم بر", "حیوان‌های", "حیوان",
+                "ضرب در", "به علاوه‌ی", "طلبه", "طلبه‌ها", "متر", "گرم",
+                "فرزند", "فرزندان",
+            ],
             "items": [
                 {
                     "fa_with_blank": "وزن دوستم شصت ___ است.",
-                    "correct_answer": "کیلوگرم",
-                    "reading_az": "kiloqerəm",
-                    "az": "kiloqram",
-                    "full_reading_az": "Vəzne dustəm şəst kiloqerəm əst.",
-                    "full_translation_az": "Dostumun çəkisi altmış kiloqramdır.",
+                    "correct_answer": "کیلوگرم", "reading_az": "kiluqerm", "az": "kiloqram",
+                    "full_reading_az": "Vəzne dustəm şəst kiluqerm əst.",
+                    "full_translation_az": "Dostumun çəkisi altmış kiloqramdır. — ÇƏKİ üçün کیلوگرم, məsafə üçün کیلومتر.",
                 },
                 {
                     "fa_with_blank": "ده ___ دو مساوی است با هشت.",
-                    "correct_answer": "منهای",
-                    "reading_az": "mənhaye",
-                    "az": "çıx",
+                    "correct_answer": "منهای", "reading_az": "mənhaye", "az": "çıx",
                     "full_reading_az": "Dəh mənhaye do mosavi əst ba həşt.",
-                    "full_translation_az": "On çıx iki bərabərdir səkkiz.",
+                    "full_translation_az": "On çıx iki bərabərdir səkkiz. (10 − 2 = 8)",
                 },
                 {
                     "fa_with_blank": "در جنگل ___ گوناگون زندگی می‌کنند.",
-                    "correct_answer": "حیوان‌های",
-                    "reading_az": "heyvanhaye",
-                    "az": "heyvanlar",
-                    "full_reading_az": "Dər cəngəl heyvanhaye qunaqun zendegi mikonənd.",
-                    "full_translation_az": "Meşədə müxtəlif heyvanlar yaşayır.",
+                    "correct_answer": "حیوان‌های", "reading_az": "heyvanhaye", "az": "heyvanlar",
+                    "full_reading_az": "Dər cəngəl heyvanhaye gunagun zendegi mikonənd.",
+                    "full_translation_az": "Meşədə müxtəlif heyvanlar yaşayır. — «گوناگون» sifəti CƏM isimlə işlənir, fel də cəmdir.",
                 },
                 {
                     "fa_with_blank": "سه ___ چهار، مساوی است با دوازده.",
-                    "correct_answer": "ضرب در",
-                    "reading_az": "zərb dər",
-                    "az": "vurulsun",
+                    "correct_answer": "ضرب در", "reading_az": "zərb dər", "az": "vurulsun",
                     "full_reading_az": "Se zərb dər çəhar, mosavi əst ba dəvazdəh.",
-                    "full_translation_az": "Üç vurulsun dörd bərabərdir on iki.",
+                    "full_translation_az": "Üç vurulsun dördə bərabərdir on iki. (3 × 4 = 12)",
                 },
                 {
                     "fa_with_blank": "در کلاس ما دوازده ___ درس فارسی می‌خوانند.",
-                    "correct_answer": "طلبه",
-                    "reading_az": "tələbe",
-                    "az": "tələbə (dini hövzə tələbəsi)",
-                    "full_reading_az": "Dər kelase ma dəvazdəh tələbe dərse farsi mixanənd.",
-                    "full_translation_az": "Sinfimizdə on iki elmi hövzə tələbəsi fars dili oxuyur.",
+                    "correct_answer": "طلبه", "reading_az": "təlbe", "az": "dini tələbə",
+                    "full_reading_az": "Dər kelase ma dəvazdəh təlbe dərse farsi mixanənd.",
+                    "full_translation_az": "Bizim sinifdə on iki tələbə fars dili oxuyur. — ədəddən sonra isim TƏK olur («طلبه‌ها» səhvdir).",
                 },
                 {
                     "fa_with_blank": "طول آن اتاق، شش ___ و عرض آن چهار متر است.",
-                    "correct_answer": "متر",
-                    "reading_az": "metr",
-                    "az": "metr",
+                    "correct_answer": "متر", "reading_az": "metr", "az": "metr",
                     "full_reading_az": "Tule an otaq, şeş metr va ərze an çəhar metr əst.",
-                    "full_translation_az": "O otağın uzunluğu altı metr, eni isə dörd metrdir.",
+                    "full_translation_az": "O otağın uzunluğu altı metr, eni dörd metrdir. — UZUNLUQ üçün متر, çəki üçün گرم.",
                 },
                 {
                     "fa_with_blank": "پدرم سه ___ پسر و دو فرزند دختر دارد.",
-                    "correct_answer": "فرزند",
-                    "reading_az": "fərzəde",
-                    "az": "övlad",
+                    "correct_answer": "فرزند", "reading_az": "fərzənd", "az": "övlad",
                     "full_reading_az": "Pedərəm se fərzəde pesər va do fərzəde doxtər darəd.",
-                    "full_translation_az": "Atamın üç oğlu və iki qızı var.",
+                    "full_translation_az": "Atamın üç oğlu və iki qızı var. — ədəddən sonra tək forma («فرزندان» səhvdir).",
                 },
             ],
         },
         {
-            "kind": "practice_reveal",
-            "instruction_az": "«گوناگون» sözü ilə cümlə qurun: «ما غذاهای گوناگون، مانند برنج، نیمرو، گوشت و ساندویچ می‌خوریم.»",
+            # Çalışma 8 — səh. 122 «مانند مثال جمله بسازید» (yer + ədəd + peşə + iş).
+            # Əvvəllər sadə practice_reveal idi.
+            "kind": "answer_question",
+            "title_fa": "مانند مثال جمله بسازید",
+            "instruction_az": "Nümunə kimi cümlə qurun (yer + ədəd + peşə + iş)",
+            # Yaşıl — cəm mübtədaya görə hallanmış fel.
+            "example_fa": (
+                "آن آشپزخانه / سه / آشپز / غذا\n"
+                "در آن آشپزخانه، سه آشپز غذا *می‌پزند*."
+            ),
+            "example_reading_az": (
+                "An aşpəzxane / se / aşpəz / qəza\n"
+                "Dər an aşpəzxane, se aşpəz qəza mipəzənd."
+            ),
+            "example_az": (
+                "Verilən sözlər: YER / ƏDƏD / PEŞƏ / İŞ (obyekt).\n"
+                "Quruluş: در + YER + ، + ƏDƏD + PEŞƏ(tək!) + OBYEKT + FEL(cəm).\n"
+                "Diqqət: ədəddən sonra peşə adı TƏK qalır (سه آشپز), amma fel CƏM olur (می‌پزند) — "
+                "çünki mübtəda mənaca çoxdur və canlıdır.\n"
+                "Hər peşəyə uyğun fel seçilir: آشپز → می‌پزد، نجّار → کار می‌کند، خیّاط → می‌دوزد.\n"
+                "Tərcümə: O mətbəxdə üç aşpaz yemək bişirir."
+            ),
             "items": [
                 {
-                    "prompt_fa": "او / لباس / فروختن",
-                    "answer_fa": "او لباس‌های گوناگون، مانند پیراهن، شلوار و کاپشن می‌فروشد.",
-                    "reading_az": "U lebashaye qunaqun, manənde pirahən, şəlvar va kapşen miforuşəd.",
-                    "az": "O müxtəlif paltarlar, məsələn köynək, şalvar və gödəkcə satır.",
+                    "fa": "آن‌جا / بیست / نجّار / کار",
+                    "reading_az": "Anca / bist / nəccar / kar",
+                    "az": "ora / iyirmi / dülgər / iş",
+                    "sample_answer_fa": "در آن‌جا، بیست نجّار کار می‌کنند.",
+                    "sample_answer_reading_az": "Dər anca, bist nəccar kar mikonənd.",
+                    "sample_answer_az": "Orada iyirmi dülgər işləyir.",
                 },
                 {
-                    "prompt_fa": "در جنگل / حیوان / زندگی کردن",
-                    "answer_fa": "در جنگل حیوان‌های گوناگون، مانند ببر، خرس و آهو زندگی می‌کنند.",
-                    "reading_az": "Dər cəngəl heyvanhaye qunaqun, manənde bəbr, xers va ahu zendegi mikonənd.",
-                    "az": "Meşədə müxtəlif heyvanlar, məsələn pələng, ayı və ceyran yaşayır.",
+                    "fa": "این‌جا / ۸۶ / دانش‌جو / درس",
+                    "reading_az": "İnca / 86 / daneşcu / dərs",
+                    "az": "bura / 86 / tələbə / dərs",
+                    "sample_answer_fa": "در این‌جا، هشتاد و شش دانش‌جو درس می‌خوانند.",
+                    "sample_answer_reading_az": "Dər inca, həştadO-şeş daneşcu dərs mixanənd.",
+                    "sample_answer_az": "Burada səksən altı tələbə oxuyur.",
                 },
                 {
-                    "prompt_fa": "در این باغ / میوه / وجود داشتن",
-                    "answer_fa": "در این باغ میوه‌های گوناگون، مانند سیب، انار و هلو وجود دارد.",
-                    "reading_az": "Dər in bağ mivehaye qunaqun, manənde sib, ənar va holu vocud darəd.",
-                    "az": "Bu bağda müxtəlif meyvələr, məsələn alma, nar və şaftalı var.",
+                    "fa": "آن‌جا / دو / خیّاط / لباس",
+                    "reading_az": "Anca / do / xəyyat / lebas",
+                    "az": "ora / iki / dərzi / paltar",
+                    "sample_answer_fa": "در آن‌جا، دو خیّاط لباس می‌دوزند.",
+                    "sample_answer_reading_az": "Dər anca, do xəyyat lebas miduzənd.",
+                    "sample_answer_az": "Orada iki dərzi paltar tikir.",
                 },
                 {
-                    "prompt_fa": "مرد تاجر / کشور / مسافرت کردن",
-                    "answer_fa": "مرد تاجر به کشورهای گوناگون، مانند ایران، چین و هند مسافرت می‌کند.",
-                    "reading_az": "Mərde tacer be kəşvərhaye qunaqun, manənde Iran, Çin va Hend mosaferət mikonəd.",
-                    "az": "Tacir kişi müxtəlif ölkələrə, məsələn İran, Çin və Hindistana səyahət edir.",
-                },
-            ],
-        },
-        {
-            "kind": "practice_reveal",
-            "instruction_az": "Nümunə kimi cümlə qurun: «آن آشپزخانه / سه / آشپز / غذا → در آن آشپزخانه، سه آشپز غذا می‌پزند.»",
-            "items": [
-                {
-                    "prompt_fa": "آن‌جا / بیست / نجّار / کار",
-                    "answer_fa": "در آن‌جا، بیست نجّار کار می‌کنند.",
-                    "reading_az": "Dər anja, bist nəccar kar mikonənd.",
-                    "az": "Orada iyirmi dülgər işləyir.",
-                },
-                {
-                    "prompt_fa": "این‌جا / ۸۶ / دانش‌جو / درس",
-                    "answer_fa": "در این‌جا، هشتاد و شش دانش‌جو درس می‌خوانند.",
-                    "reading_az": "Dər inja, həştad o şeş daneşcu dərs mixanənd.",
-                    "az": "Burada səksən altı tələbə oxuyur.",
-                },
-                {
-                    "prompt_fa": "آن‌جا / دو / خیّاط / لباس",
-                    "answer_fa": "در آن‌جا، دو خیّاط لباس می‌دوزند.",
-                    "reading_az": "Dər anja, do xəyyat lebas miduzənd.",
-                    "az": "Orada iki dərzi paltar tikir.",
-                },
-                {
-                    "prompt_fa": "آن دانش‌گاه / ۴۳ / استاد / درس",
-                    "answer_fa": "در آن دانش‌گاه، چهل و سه استاد درس می‌دهند.",
-                    "reading_az": "Dər an daneşgah, çehel o se ostad dərs midəhənd.",
-                    "az": "O universitetdə qırx üç müəllim dərs deyir.",
+                    "fa": "آن دانش‌گاه / ۴۳ / استاد / درس",
+                    "reading_az": "An daneşgah / 43 / ostad / dərs",
+                    "az": "o universitet / 43 / müəllim / dərs",
+                    "sample_answer_fa": "در آن دانش‌گاه، چهل و سه استاد درس می‌دهند.",
+                    "sample_answer_reading_az": "Dər an daneşgah, çehelO-se ostad dərs midəhənd.",
+                    "sample_answer_az": "O universitetdə qırx üç müəllim dərs deyir.",
                 },
             ],
         },

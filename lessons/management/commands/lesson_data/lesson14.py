@@ -51,9 +51,34 @@ LESSON = {
             "title_az": "Saatların öyrədilməsi",
             "title_fa": "آموزش ساعت",
             "explanation_az": (
-                "Saat «ساعت ... است» quruluşu ilə deyilir: ساعت شش است.\n"
-                "Günün hissəsi əlavə olunur: صبح (səhər), ظهر (günorta), بعدازظهر/عصر, شب (gecə), نیمه‌شب (gecəyarı).\n"
-                "24 saatlıq sistemlə də demək olar: یک بعدازظهر = سیزده."
+                "Saat soruşulanda cavab «ساعت، … است» qəlibi ilə verilir.\n"
+                "Dəqiqə sıfırdırsa yalnız saat deyilir: ساعت شش است (saat altıdır).\n"
+                "Günün hissəsi əlavə oluna bilər: صبح (səhər), ظهر (günorta), بعدازظهر (günortadan sonra), عصر (axşamüstü), شب (gecə), نیمه‌شب (gecə yarısı).\n"
+                "Nümunələr: ساعت، هشت صبح است / ساعت، دوازده ظهر است / ساعت، پنج بعدازظهر است / ساعت، نه شب است.\n"
+                "Dərsliyin qeydi: «عصر» günortadan sonra günəş batana qədərki vaxta deyilir — «پنج بعدازظهر» = «پنج عصر».\n"
+                "«نصف شب» = «نیمه‌شب» (gecə yarısı): ساعت، سه بعد از نصف شب است.\n"
+                "Dəqiq olmayan vaxt üçün «حدود» işlənir: ساعت، حدود دوازده است (təxminən on iki).\n"
+                "24 saatlıq sistem: günortadan sonrakı saatlar həm «بعدازظهر» ilə, həm də 13-24 kimi deyilə bilər.\n"
+                "Dərsliyin cədvəli: یک بعدازظهر = سیزده، دو بعدازظهر = چهارده … ده شب = بیست و دو."
+            ),
+            "note_fa": (
+                "۱. ساعت «یک» بعدازظهر تا «دوازده» شب را، به این شکل هم می‌گوییم:\n"
+                "یک بعدازظهر = سیزده / دو بعدازظهر = چهارده / سه بعدازظهر = پانزده / چهار بعدازظهر = شانزده / پنج عصر = هفده / شش عصر = هجده / هفت عصر = نوزده / هشت شب = بیست / نه شب = بیست و یک / ده شب = بیست و دو / یازده شب = بیست و سه / دوازده شب = بیست و چهار\n"
+                "۲. عصر: از اواسط بعدازظهر تا غروب آفتاب را «عصر» هم می‌گویند.\n"
+                "۳. نصف شب: نیمه شب"
+            ),            "note_reading_az": (
+                "1. Saəte «yek» bə'dəzzohr ta «dəvazdəh» şəb ra, be in şekl həm miguyim:\n"
+                "yek bə'dəzzohr = sizdəh / do bə'dəzzohr = çəhardəh / … / dəvazdəh şəb = bistO-çəhar\n"
+                "2. Əsr: əz əvaset bə'dəzzohr ta qorube aftab ra «əsr» həm miguyənd.\n"
+                "3. Nesfe şəb: nime şəb"
+            ),            "note_az": (
+                "1. Günortadan sonrakı saatlar iki cür deyilir (12-lik və 24-lük sistem):\n"
+                "یک بعدازظهر = سیزده (13) | دو بعدازظهر = چهارده (14) | سه بعدازظهر = پانزده (15)\n"
+                "چهار بعدازظهر = شانزده (16) | پنج عصر = هفده (17) | شش عصر = هجده (18)\n"
+                "هفت عصر = نوزده (19) | هشت شب = بیست (20) | نه شب = بیست و یک (21)\n"
+                "ده شب = بیست و دو (22) | یازده شب = بیست و سه (23) | دوازده شب = بیست و چهار (24)\n"
+                "2. «عصر» — günortadan sonranın ortasından gün batımına qədərki vaxtdır.\n"
+                "3. «نصف شب» = «نیمه شب» — gecə yarısı."
             ),
             "conjugations": [
                 {"pronoun_fa": "ساعت شش است.", "form_fa": "Saat altıdır."},
@@ -75,9 +100,14 @@ LESSON = {
             "title_az": "Dəqiqələrin bildirilməsi: «ربع» və «نیم»",
             "title_fa": "ساعت با «دقیقه»؛ «ربع» و «نیم»",
             "explanation_az": (
-                "Dəqiqələr «و ... دقیقه» ilə verilir: ساعت دوازده و پنج دقیقه است.\n"
-                "15 dəqiqə üçün «ربع», 30 dəqiqə üçün «نیم» deyilir: دوازده و ربع، دوازده و نیم.\n"
-                "«ربع» və «نیم» sözləri «دقیقه» sözü ilə birlikdə işlənmir."
+                "Dəqiqə saatdan sonra «و» ilə əlavə olunur: ساعت، دوازده و پنج دقیقه است.\n"
+                "Quruluş: ساعت + SAAT + و + DƏQİQƏ + دقیقه + است.\n"
+                "Nümunələr: چهار و ده دقیقه / هفت و پانزده دقیقه / ده و چهل و هفت دقیقه.\n"
+                "15 dəqiqə üçün «ربع» (rüb) da işlənir: ساعت، چهار و ربع است = چهار و پانزده دقیقه.\n"
+                "30 dəqiqə üçün «نیم» (yarım) işlənir: ساعت، هشت و نیم است = هشت و سی دقیقه.\n"
+                "«ربع» və «نیم» ilə «دقیقه» sözü DEYİLMİR: هشت و نیم ✓ — هشت و نیم دقیقه ✗\n"
+                "Saat tama yaxın olanda «حدود» ilə yuvarlaqlaşdırıla bilər: دوازده و پنجاه و هفت دقیقه = حدود یک.\n"
+                "Fars dilində dəqiqə həmişə ƏLAVƏ olunur — Azərbaycan dilindəki «bir dəqiqə qalıb» quruluşu işlənmir."
             ),
             "conjugations": [
                 {"pronoun_fa": "ساعت، دوازده و پنج دقیقه است.", "form_fa": "Saat on iki və beş dəqiqədir."},
@@ -104,9 +134,23 @@ LESSON = {
             "title_az": "Sual sözü «ساعت، چند است؟» (saat neçədir?)",
             "title_fa": "واژه‌ی پرسشی «ساعت، چند است؟»",
             "explanation_az": (
-                "Saatı soruşmaq üçün «ساعت، چند است؟» işlənir — «Saat neçədir?».\n"
-                "Cavab: ساعت + rəqəm (+ dəqiqə və ya günün hissəsi) + است.\n"
-                "Cavabda da «ساعت» sözü təkrarlanır: ساعت، یازده است."
+                "Saat soruşmaq üçün «ساعت، چند است؟» işlənir — hərfi mənada «saat neçədir?».\n"
+                "Cavab: «ساعت، … است» — sual sözünün yerinə vaxt qoyulur.\n"
+                "Dərsliyin qeydi: danışıq dilində «ساعت، چند است؟» əvəzinə «ساعت، چندِ؟» deyilir.\n"
+                "Cavab formaları: ساعت، یازده است / ساعت، پنج و ده دقیقه است / ساعت، هفت و نیم است.\n"
+                "Günün hissəsi ilə: ساعت، چهارِ بعدازظهر است.\n"
+                "Diqqət: burada «چند» MİQDAR sual sözüdür — «چندم» (sıra) ilə qarışdırmayın.\n"
+                "Konkret bir işin vaxtını soruşmaq üçün «ساعت چند» işlənir: شما ساعت چند به کلاس می‌روید؟\n"
+                "Cavabda «ساعت» sözü təkrarlanır: من ساعت هشت به کلاس می‌روم."
+            ),
+            "note_fa": (
+                "در زبان گفتار «ساعت، چند است؟» را «ساعت، چندِ؟» می‌گوییم."
+            ),            "note_reading_az": (
+                "Dər zəbane goftar «saət, çənd əst?» ra «saət, çəndE?» miguyim."
+            ),            "note_az": (
+                "Danışıq dilində «ساعت، چند است؟» qısaldılıb «ساعت، چندِ؟» deyilir.\n"
+                "Yazıda və rəsmi danışıqda tam forma işlənir.\n"
+                "Cavab həmişə «ساعت، … است» qəlibi ilə verilir."
             ),
             "conjugations": [
                 {"pronoun_fa": "ساعت، چند است؟", "form_fa": "ساعت، هفت و بیست دقیقه است."},
@@ -123,9 +167,14 @@ LESSON = {
             "title_az": "Sual sözü «چه وقت» (nə vaxt?)",
             "title_fa": "واژه‌ی پرسشی «چه وقت»",
             "explanation_az": (
-                "«چه وقت» vaxtı soruşur — «nə vaxt?».\n"
-                "Cavab dəqiq saat da ola bilər, ümumi vaxt da: آخر تابستان، بعد از نماز ظهر.\n"
-                "Sual hansı zamandadırsa, cavab da həmin zamanda verilir."
+                "«چه وقت» = «nə vaxt?» — hərəkətin zamanını soruşur.\n"
+                "Danışıq dilində qısaca «کی» deyilir: جشن تولّد کی است؟ = جشن تولّد چه وقت است؟\n"
+                "Cavab müxtəlif zaman ifadələri ilə verilə bilər: ساعat, gün, tarix və ya təxmini vaxt.\n"
+                "Nümunə: چه وقت فیلم تماشا می‌کنیم؟ ← ما ساعت نه شب فیلم تماشا می‌کنیم.\n"
+                "Nümunə: چه وقت کتاب اوّل را خواندی؟ ← حدود بیست روز قبل.\n"
+                "«چه وقت» cümlənin əvvəlində və ya felin önündə gələ bilər.\n"
+                "Fərq: «ساعت چند» dəqiq saatı, «چه وقت» isə ümumi vaxtı soruşur.\n"
+                "Yaxın sual sözləri: «کی» (nə vaxt), «چند شنبه» (hansı gün), «چه ماهی» (hansı ay)."
             ),
             "conjugations": [
                 {"pronoun_fa": "چه وقت به کلاس آمدی؟", "form_fa": "من ساعت هشت به کلاس آمدم."},
@@ -143,132 +192,278 @@ LESSON = {
     ],
     "exercises": [
         {
+            # Çalışma 1 — səh. 178 «مانند مثال بپرسید و پاسخ دهید» (saat oxumaq).
+            # Dərslikdə hər bəndin öz saat şəkli var; şəkillər admin paneldən yüklənir.
+            "kind": "picture_sentences",
+            "title_fa": "مانند مثال بپرسید و پاسخ دهید — ساعت",
+            "instruction_az": "Nümunə kimi soruşun və cavab verin (saatı oxuyun)",
+            "example_fa": "ساعت، چند است؟",
+            "example_reading_az": "Saət, çənd əst?",
+            "example_az": "Saat neçədir? (danışıqda «ساعت، چندِ؟» deyilir)",
+            "example_answer_fa": "ساعت، ده و بیست دقیقه است.",
+            "example_answer_reading_az": "Saət, dəh o bist dəqiqe əst.",
+            "example_answer_az": "Saat onu iyirmi dəqiqə keçib.",
+            "items": [
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "ساعت، چند است؟", "reading_az": "Saət, çənd əst?", "az": "Saat neçədir? (۱۱:۰۰)"},
+                        {"fa": "ساعت، یازده است.", "reading_az": "Saət, yazdəh əst.", "az": "Saat on birdir. — dəqiqə sıfırdırsa yalnız saat deyilir."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "ساعت، چند است؟", "reading_az": "Saət, çənd əst?", "az": "Saat neçədir? (۵:۱۰)"},
+                        {"fa": "ساعت، پنج و ده دقیقه است.", "reading_az": "Saət, pənc o dəh dəqiqe əst.", "az": "Saat beşi on dəqiqə keçib."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "ساعت، چند است؟", "reading_az": "Saət, çənd əst?", "az": "Saat neçədir? (۴:۱۵)"},
+                        {"fa": "ساعت، چهار و ربع است.", "reading_az": "Saət, çəhar o rob' əst.", "az": "Saat dördün rübüdür. — 15 dəqiqə üçün «ربع»."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "ساعت، چند است؟", "reading_az": "Saət, çənd əst?", "az": "Saat neçədir? (۸:۳۰)"},
+                        {"fa": "ساعت، هشت و نیم است.", "reading_az": "Saət, həşt o nim əst.", "az": "Saat səkkizin yarısıdır. — 30 dəqiqə üçün «نیم»."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "ساعت، چند است؟", "reading_az": "Saət, çənd əst?", "az": "Saat neçədir? (۱۰:۴۷)"},
+                        {"fa": "ساعت، ده و چهل و هفت دقیقه است.", "reading_az": "Saət, dəh o çehelO-həft dəqiqe əst.", "az": "Saat onu qırx yeddi dəqiqə keçib."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "ساعت، چند است؟", "reading_az": "Saət, çənd əst?", "az": "Saat neçədir? (۷:۲۵)"},
+                        {"fa": "ساعت، هفت و بیست و پنج دقیقه است.", "reading_az": "Saət, həft o bistO-pənc dəqiqe əst.", "az": "Saat yeddini iyirmi beş dəqiqə keçib."},
+                    ],
+                },
+            ],
+        },
+        {
+            # Çalışma 2 — səh. 182 «مانند مثال بگویید» (saatları oxumaq — təkrar).
+            "kind": "picture_sentences",
+            "title_fa": "مانند مثال بگویید — ساعت",
+            "instruction_az": "Nümunə kimi saatları deyin",
+            "example_fa": "ساعت، سه و بیست و پنج دقیقه است.",
+            "example_reading_az": "Saət, se o bistO-pənc dəqiqe əst.",
+            "example_az": "Saat üçü iyirmi beş dəqiqə keçib.",
+            "items": [
+                {"image": "", "sentences": [{"fa": "ساعت، شش و ده دقیقه است.", "reading_az": "Saət, şeş o dəh dəqiqe əst.", "az": "Saat altını on dəqiqə keçib. (۶:۱۰)"}]},
+                {"image": "", "sentences": [{"fa": "ساعت، نه و ربع است.", "reading_az": "Saət, noh o rob' əst.", "az": "Saat doqquzun rübüdür. (۹:۱۵)"}]},
+                {"image": "", "sentences": [{"fa": "ساعت، دوازده و نیم است.", "reading_az": "Saət, dəvazdəh o nim əst.", "az": "Saat on ikinin yarısıdır. (۱۲:۳۰)"}]},
+                {"image": "", "sentences": [{"fa": "ساعت، دو و چهل دقیقه است.", "reading_az": "Saət, do o çehel dəqiqe əst.", "az": "Saat ikini qırx dəqiqə keçib. (۲:۴۰)"}]},
+                {"image": "", "sentences": [{"fa": "ساعت، پنج و پنجاه و پنج دقیقه است.", "reading_az": "Saət, pənc o pəncahO-pənc dəqiqe əst.", "az": "Saat beşi əlli beş dəqiqə keçib — «حدود شش» də demək olar. (۵:۵۵)"}]},
+                {"image": "", "sentences": [{"fa": "ساعت، هشت است.", "reading_az": "Saət, həşt əst.", "az": "Saat səkkizdir. (۸:۰۰)"}]},
+            ],
+        },
+        {
+            # Çalışma 3 — «چه وقت» sual sözü ilə tamamlama.
             "kind": "fill_blank",
-            "instruction_az": "«چه وقت» sualını uyğun cümlə ilə tamamlayın.",
-            "word_bank": ["چه وقت", "کی"],
+            "instruction_az": "«چه وقت» və «کی» sual sözləri ilə tamamlayın.",
+            "word_bank": ["چه وقت", "کی", "چه وقت", "چه وقت"],
             "items": [
                 {
                     "fa_with_blank": "___ فیلم تماشا می‌کنیم؟ ما ساعت نه شب فیلم تماشا می‌کنیم.",
-                    "correct_answer": "چه وقت",
-                    "reading_az": "çe vaqt",
-                    "az": "nə vaxt",
-                    "full_reading_az": "Çe vaqt film təmaşa mikonim? Ma saəte noh şəb film təmaşa mikonim.",
-                    "full_translation_az": "Nə vaxt film tamaşa edirik? Biz gecə saat doqquzda film tamaşa edirik.",
+                    "correct_answer": "چه وقت", "reading_az": "çe vəqt", "az": "nə vaxt",
+                    "full_reading_az": "Çe vəqt film təmaşa mikonim? Ma saəte noh şəb film təmaşa mikonim.",
+                    "full_translation_az": "Nə vaxt film baxırıq? Biz axşam saat doqquzda film baxırıq.",
                 },
                 {
                     "fa_with_blank": "___ به مادرم هدیه می‌دهی؟ من امروز عصر به مادرم هدیه می‌دهم.",
-                    "correct_answer": "چه وقت",
-                    "reading_az": "çe vaqt",
-                    "az": "nə vaxt",
-                    "full_reading_az": "Çe vaqt be madərəm hedye midəhi? Mən emruz əsr be madərəm hedye midəhəm.",
-                    "full_translation_az": "Nə vaxt anama hədiyyə verirsən? Mən bu gün axşamüstü anama hədiyyə verirəm.",
+                    "correct_answer": "چه وقت", "reading_az": "çe vəqt", "az": "nə vaxt",
+                    "full_reading_az": "Çe vəqt be madərəm hedye midəhi? Mən emruz əsr be madərəm hedye midəhəm.",
+                    "full_translation_az": "Anama nə vaxt hədiyyə verirsən? Mən bu gün axşamüstü anama hədiyyə verirəm.",
                 },
                 {
                     "fa_with_blank": "جشن تولّد فرزندم ___ است؟ پس‌فردا است.",
-                    "correct_answer": "کی",
-                    "reading_az": "key",
-                    "az": "nə vaxt",
-                    "full_reading_az": "Cəşne touləde fərzəndəm key əst? Pəsfərda əst.",
-                    "full_translation_az": "Övladımın ad günü nə vaxtdır? Birigündür.",
+                    "correct_answer": "کی", "reading_az": "key", "az": "nə vaxt",
+                    "full_reading_az": "Cəşne təvəllode fərzəndəm key əst? Pəsfærda əst.",
+                    "full_translation_az": "Övladımın ad günü nə vaxtdır? Birisi gündür. — «کی» = «چه وقت»in qısa formasıdır.",
                 },
                 {
                     "fa_with_blank": "___ کتاب اوّل را خواندی؟ حدود بیست روز قبل.",
-                    "correct_answer": "چه وقت",
-                    "reading_az": "çe vaqt",
-                    "az": "nə vaxt",
-                    "full_reading_az": "Çe vaqt ketabe əvvəl ra xandi? Hodude bist ruz qəbl.",
+                    "correct_answer": "چه وقت", "reading_az": "çe vəqt", "az": "nə vaxt",
+                    "full_reading_az": "Çe vəqt ketabe əvvəl ra xandi? Hodude bist ruz qəbl.",
                     "full_translation_az": "Birinci kitabı nə vaxt oxudun? Təxminən iyirmi gün əvvəl.",
                 },
             ],
         },
         {
-            "kind": "fill_blank",
-            "instruction_az": "Uyğun sözlə tamamlayın.",
-            "word_bank": ["مچی", "ساعت‌سازی", "تعمیر", "سالم", "ساعت‌ساز", "خراب"],
+            # Çalışma 4 — səh. 182 «لطفاً جایگزین کنید» («سرِ ساعت»).
+            # Əvvəllər sadə practice_reveal idi.
+            "kind": "answer_question",
+            "title_fa": "لطفاً جایگزین کنید — «سرِ ساعت»",
+            "instruction_az": "Nümunə kimi əvəz edin («سرِ ساعت …» — düz saatda)",
+            # Yaşıl «سرِ ساعت» — dəqiq vaxt, qırmızı — keçmiş zaman feli.
+            "example_fa": (
+                "استاد / هشت / کلاس / آمدن\n"
+                "استاد *سرِ ساعت* هشت به کلاس **آمد**."
+            ),
+            "example_reading_az": (
+                "Ostad / həşt / kelas / amədən\n"
+                "Ostad səre saəte həşt be kelas aməd."
+            ),
+            "example_az": (
+                "Verilən sözlər: SUBYEKT / SAAT / YER / MƏSDƏR.\n"
+                "Quruluş: SUBYEKT + سرِ ساعت + SAAT + به + YER + KEÇMİŞ FEL.\n"
+                "Yaşıl «سرِ ساعت» — «düz saatda, dəqiq saatda» mənasını verir və izafətlə oxunur.\n"
+                "Qırmızı fel KEÇMİŞ zamandadır: آمد، رفت، خوابید.\n"
+                "Tərcümə: Müəllim düz saat səkkizdə sinfə gəldi."
+            ),
+            "items": [
+                {"fa": "هواپیما / ده / مشهد / رفتن", "reading_az": "Həvapeyma / dəh / Məşhəd / rəftən", "az": "təyyarə / saat 10 / Məşhəd / getmək",
+                 "sample_answer_fa": "هواپیما سرِ ساعت ده به مشهد رفت.", "sample_answer_reading_az": "Həvapeyma səre saəte dəh be Məşhəd rəft.",
+                 "sample_answer_az": "Təyyarə düz saat onda Məşhədə getdi."},
+                {"fa": "مادربزرگمان / نه / دارو / خوردن", "reading_az": "Madərbozorgeman / noh / daru / xordən", "az": "nənəmiz / saat 9 / dərman / içmək",
+                 "sample_answer_fa": "مادربزرگمان سرِ ساعت نه دارو خورد.", "sample_answer_reading_az": "Madərbozorgeman səre saəte noh daru xord.",
+                 "sample_answer_az": "Nənəmiz düz saat doqquzda dərman içdi."},
+                {"fa": "ما / یازده / اتاقمان / خوابیدن", "reading_az": "Ma / yazdəh / otaqeman / xabidən", "az": "biz / saat 11 / otağımız / yatmaq",
+                 "sample_answer_fa": "ما سرِ ساعت یازده در اتاقمان خوابیدیم.", "sample_answer_reading_az": "Ma səre saəte yazdəh dər otaqeman xabidim.",
+                 "sample_answer_az": "Biz düz saat on birdə otağımızda yatdıq."},
+                {"fa": "کارمندها / هفت و نیم / محل کار / آمدن", "reading_az": "Karməndha / həft o nim / məhəlle kar / amədən", "az": "işçilər / 7:30 / iş yeri / gəlmək",
+                 "sample_answer_fa": "کارمندها سرِ ساعت هفت و نیم به محل کار آمدند.", "sample_answer_reading_az": "Karməndha səre saəte həft o nim be məhəlle kar amədənd.",
+                 "sample_answer_az": "İşçilər düz saat yeddi otuzda iş yerinə gəldilər."},
+            ],
+        },
+        {
+            # Çalışma 5 — səh. 182 «لطفاً جایگزین کنید» («فاصله‌ی … تا …»).
+            # Əvvəllər sadə practice_reveal idi.
+            "kind": "answer_question",
+            "title_fa": "لطفاً جایگزین کنید — «فاصله‌ی … تا …»",
+            "instruction_az": "Nümunə kimi məsafəni deyin («فاصله‌ی … تا … حدود … است»)",
+            # Yaşıl «فاصله‌ی … تا …» — məsafə, qırmızı «حدود» — təxmini.
+            "example_fa": (
+                "خانه‌ی ناصر / مغازه‌اش / پانصد متر\n"
+                "*فاصله‌ی* خانه‌ی ناصر *تا* مغازه‌اش **حدود** پانصد متر است."
+            ),
+            "example_reading_az": (
+                "Xane-ye Naser / məğazeəş / pansəd metr\n"
+                "Fasele-ye xane-ye Naser ta məğazeəş hodude pansəd metr əst."
+            ),
+            "example_az": (
+                "Verilən sözlər: BAŞLANĞIC YER / SON YER / MƏSAFƏ.\n"
+                "Quruluş: فاصله‌ی + YER1 + تا + YER2 + (حدود) + MƏSAFƏ + است.\n"
+                "Yaşıl «فاصله‌ی … تا …» — «…-dan …-a qədər olan məsafə»; izafətlə bağlanır.\n"
+                "Qırmızı «حدود» («təxminən») dəqiq olmayan məsafələrdə işlənir, məcburi deyil.\n"
+                "Ölçü vahidi: qısa məsafə → متر, uzun məsafə → کیلومتر.\n"
+                "Tərcümə: Nasirin evindən mağazasına qədər təxminən beş yüz metrdir."
+            ),
+            "items": [
+                {"fa": "تهران / قم / صد و سی کیلومتر", "reading_az": "Tehran / Qom / sədO-si kilumetr", "az": "Tehran / Qum / 130 km",
+                 "sample_answer_fa": "فاصله‌ی تهران تا قم صد و سی کیلومتر است.", "sample_answer_reading_az": "Fasele-ye Tehran ta Qom sədO-si kilumetr əst.",
+                 "sample_answer_az": "Tehrandan Quma qədər yüz otuz kilometrdir."},
+                {"fa": "روستای ما / شهر / بیست کیلومتر", "reading_az": "Rustaye ma / şəhr / bist kilumetr", "az": "kəndimiz / şəhər / 20 km",
+                 "sample_answer_fa": "فاصله‌ی روستای ما تا شهر بیست کیلومتر است.", "sample_answer_reading_az": "Fasele-ye rustaye ma ta şəhr bist kilumetr əst.",
+                 "sample_answer_az": "Kəndimizdən şəhərə qədər iyirmi kilometrdir."},
+                {"fa": "کشور من / ایران / … کیلومتر", "reading_az": "Kəşvəre mən / Iran / … kilumetr", "az": "ölkəm / İran / … km",
+                 "sample_answer_fa": "فاصله‌ی کشور من تا ایران حدود هزار کیلومتر است.", "sample_answer_reading_az": "Fasele-ye kəşvəre mən ta Iran hodude hezar kilumetr əst.",
+                 "sample_answer_az": "Ölkəmdən İrana qədər təxminən min kilometrdir. (öz ölkənizə görə cavab verin)"},
+                {"fa": "خانه‌ام / دانش‌گاه / سه کیلومتر", "reading_az": "Xaneəm / daneşgah / se kilumetr", "az": "evim / universitet / 3 km",
+                 "sample_answer_fa": "فاصله‌ی خانه‌ام تا دانش‌گاه سه کیلومتر است.", "sample_answer_reading_az": "Fasele-ye xaneəm ta daneşgah se kilumetr əst.",
+                 "sample_answer_az": "Evimdən universitetə qədər üç kilometrdir."},
+            ],
+        },
+        {
+            # Çalışma 6 — «تعمیر کردن» ilə peşə cümlələri.
+            # Əvvəllər sadə practice_reveal idi.
+            "kind": "answer_question",
+            "title_fa": "مانند مثال بگویید — «تعمیر کردن»",
+            "instruction_az": "Nümunə kimi cümlə qurun (peşə + təmir etdiyi əşya)",
+            "example_fa": (
+                "پدربزرگم / ساعت‌ساز / ساعت\n"
+                "پدربزرگم ساعت‌ساز است. او ساعت‌های *خراب* را **تعمیر می‌کند**."
+            ),
+            "example_reading_az": (
+                "Pedərbozorgəm / saətsaz / saət\n"
+                "Pedərbozorgəm saətsaz əst. U saəthaye xərab ra təmir mikonəd."
+            ),
+            "example_az": (
+                "Verilən sözlər: SUBYEKT / PEŞƏ / TƏMİR ETDİYİ ƏŞYA.\n"
+                "Quruluş: SUBYEKT + PEŞƏ + است. + او + ƏŞYA(cəm) + یِ خراب + را + تعمیر می‌کند.\n"
+                "Yaşıl «خراب» — xarab, sınıq; qarşılığı «سالم» — saz, bütöv.\n"
+                "Qırmızı «تعمیر کردن» — təmir etmək.\n"
+                "Peşə adları «-ساز» (düzəldən) və «تعمیرکار» (təmirçi) ilə düzəlir: ساعت‌ساز، تعمیرکار ماشین.\n"
+                "Tərcümə: Babam saatsazdır. O, xarab saatları təmir edir."
+            ),
+            "items": [
+                {"fa": "برادرمان / نجّار / صندلی", "reading_az": "Bəradəreman / nəccar / səndəli", "az": "qardaşımız / dülgər / stul",
+                 "sample_answer_fa": "برادرمان نجّار است. او صندلی‌های خراب را تعمیر می‌کند.",
+                 "sample_answer_reading_az": "Bəradəreman nəccar əst. U səndəlihaye xərab ra təmir mikonəd.",
+                 "sample_answer_az": "Qardaşımız dülgərdir. O, xarab stulları təmir edir."},
+                {"fa": "خواهرزاده‌ام / مهندس رایانه / رایانه", "reading_az": "Xahərzadeəm / mohəndese rayane / rayane", "az": "bacım oğlu / kompüter mühəndisi / kompüter",
+                 "sample_answer_fa": "خواهرزاده‌ام مهندس رایانه است. او رایانه‌های خراب را تعمیر می‌کند.",
+                 "sample_answer_reading_az": "Xahərzadeəm mohəndese rayane əst. U rayanehaye xərab ra təmir mikonəd.",
+                 "sample_answer_az": "Bacımın oğlu kompüter mühəndisidir. O, xarab kompüterləri təmir edir."},
+                {"fa": "دوستم / آهنگر / در و پنجره", "reading_az": "Dustəm / ahəngər / dər o pəncəre", "az": "dostum / dəmirçi / qapı-pəncərə",
+                 "sample_answer_fa": "دوستم آهنگر است. او در و پنجره‌های خراب را تعمیر می‌کند.",
+                 "sample_answer_reading_az": "Dustəm ahəngər əst. U dər o pəncərehaye xərab ra təmir mikonəd.",
+                 "sample_answer_az": "Dostum dəmirçidir. O, xarab qapı-pəncərələri təmir edir."},
+                {"fa": "عموی سعید / تعمیرکار ماشین / ماشین", "reading_az": "Əmuye Səid / təmirkare maşin / maşin", "az": "Səidin əmisi / maşın təmirçisi / maşın",
+                 "sample_answer_fa": "عموی سعید تعمیرکار ماشین است. او ماشین‌های خراب را تعمیر می‌کند.",
+                 "sample_answer_reading_az": "Əmuye Səid təmirkare maşin əst. U maşinhaye xərab ra təmir mikonəd.",
+                 "sample_answer_az": "Səidin əmisi maşın təmirçisidir. O, xarab maşınları təmir edir."},
+                {"fa": "حامد / تعمیرکار تلفن / تلفن", "reading_az": "Hamed / təmirkare telefon / telefon", "az": "Hamid / telefon təmirçisi / telefon",
+                 "sample_answer_fa": "حامد تعمیرکار تلفن است. او تلفن‌های خراب را تعمیر می‌کند.",
+                 "sample_answer_reading_az": "Hamed təmirkare telefon əst. U telefonhaye xərab ra təmir mikonəd.",
+                 "sample_answer_az": "Hamid telefon təmirçisidir. O, xarab telefonları təmir edir."},
+                {"fa": "هادی / دوچرخه‌ساز / دوچرخه", "reading_az": "Hadi / doçərxesaz / doçərxe", "az": "Hadi / velosiped ustası / velosiped",
+                 "sample_answer_fa": "هادی دوچرخه‌ساز است. او دوچرخه‌های خراب را تعمیر می‌کند.",
+                 "sample_answer_reading_az": "Hadi doçərxesaz əst. U doçərxehaye xərab ra təmir mikonəd.",
+                 "sample_answer_az": "Hadi velosiped ustasıdır. O, xarab velosipedləri təmir edir."},
+            ],
+        },
+        {
+            # Çalışma 7 — səh. 182 «کامل کنید» (saat lüğəti).
+            # Dərslikdə bəzi cümlələrdə iki boşluq var, ona görə multi_blank.
+            "kind": "multi_blank",
+            "title_fa": "کامل کنید",
+            "instruction_az": "Söz bankından uyğun sözlərlə tamamlayın (bəzi cümlələrdə iki boşluq var)",
+            "example_fa": "آن ساعت دیواری ___ نیست، ___ است.\nآن ساعت دیواری *سالم* نیست، **خراب** است.",
+            "example_reading_az": "An saəte divari salem nist, xərab əst.",
+            "example_az": (
+                "O divar saatı saz deyil, xarabdır.\n"
+                "Yaşıl «سالم» — saz, işlək; qırmızı «خراب» — xarab, sınıq. Bu iki söz antonimdir.\n"
+                "Peşə və yer adları: ساعت‌ساز (usta) — ساعت‌سازی (emalatxana) — ساعت‌فروشی (mağaza)."
+            ),
+            # 8 boşluq = 8 çip.
+            "word_bank": [
+                "سالم", "خراب", "ساعت‌ساز", "تعمیر",
+                "ساعت‌فروشی", "مچی", "تعمیر", "ساعت‌سازی",
+            ],
             "items": [
                 {
-                    "fa_with_blank": "آن ساعت دیواری ___ نیست؛ خراب است.",
-                    "correct_answer": "سالم",
-                    "reading_az": "salem",
-                    "az": "sağlam",
-                    "full_reading_az": "An saəte divari salem nist; xərab əst.",
-                    "full_translation_az": "O divar saatı sağlam deyil, xarabdır.",
+                    "fa_with_blanks": "آن ساعت دیواری ___ نیست، ___ است.",
+                    "correct_answers": ["سالم", "خراب"],
+                    "full_reading_az": "An saəte divari salem nist, xərab əst.",
+                    "full_translation_az": "O divar saatı saz deyil, xarabdır.",
                 },
                 {
-                    "fa_with_blank": "برادرم ___ است. او ساعت‌های خراب را تعمیر می‌کند.",
-                    "correct_answer": "ساعت‌ساز",
-                    "reading_az": "saətsaz",
-                    "az": "saatsaz",
+                    "fa_with_blanks": "برادرم ___ است. او ساعت‌های خراب را ___ می‌کند.",
+                    "correct_answers": ["ساعت‌ساز", "تعمیر"],
                     "full_reading_az": "Bəradərəm saətsaz əst. U saəthaye xərab ra təmir mikonəd.",
                     "full_translation_az": "Qardaşım saatsazdır. O, xarab saatları təmir edir.",
                 },
                 {
-                    "fa_with_blank": "من پریروز رفتم و برای فرزندم یک ساعتِ ___ خریدم.",
-                    "correct_answer": "مچی",
-                    "reading_az": "moçi",
-                    "az": "qol (saatı)",
-                    "full_reading_az": "Mən pəriruz rəftəm va bəraye fərzəndəm yek saəte moçi xəridəm.",
-                    "full_translation_az": "Mən srağagün gedib övladım üçün bir qol saatı aldım.",
+                    "fa_with_blanks": "من پریروز به ___ رفتم و برای فرزندم یک ساعتِ ___ خریدم.",
+                    "correct_answers": ["ساعت‌فروشی", "مچی"],
+                    "full_reading_az": "Mən pəriruz be saətforuşi rəftəm va bəraye fərzəndəm yek saəte moçi xəridəm.",
+                    "full_translation_az": "Mən srağagün saat mağazasına getdim və övladım üçün bir qol saatı aldım.",
                 },
                 {
-                    "fa_with_blank": "ساعت پدرم خراب است. من امروز ساعت او را برای ___ به ایشان می‌برم.",
-                    "correct_answer": "تعمیر",
-                    "reading_az": "təmir",
-                    "az": "təmir",
-                    "full_reading_az": "Saəte pedərəm xərab əst. Mən emruz saəte u ra bəraye təmir be işan mibəram.",
-                    "full_translation_az": "Atamın saatı xarabdır. Mən bu gün onun saatını təmir üçün ona aparıram.",
+                    "fa_with_blanks": "ساعت پدرم، خراب است. من امروز ساعت ایشان را برای ___ به ___ می‌برم.",
+                    "correct_answers": ["تعمیر", "ساعت‌سازی"],
+                    "full_reading_az": "Saəte pedərəm, xərab əst. Mən emruz saəte işan ra bəraye təmir be saətsazi mibərəm.",
+                    "full_translation_az": "Atamın saatı xarabdır. Mən bu gün onun saatını təmir üçün saat emalatxanasına aparıram.",
                 },
-                {
-                    "fa_with_blank": "پدرم هر روز صبح به ___ آقا ناصر می‌رود.",
-                    "correct_answer": "ساعت‌سازی",
-                    "reading_az": "saətsazi",
-                    "az": "saat təmiri emalatxanası",
-                    "full_reading_az": "Pedərəm hər ruz sobh be saətsaziye Ağa Naser mirəvəd.",
-                    "full_translation_az": "Atam hər gün səhər Ağa Nasirin saat təmiri emalatxanasına gedir.",
-                },
-            ],
-        },
-        {
-            "kind": "practice_reveal",
-            "instruction_az": "Saatı deyin: «ساعت، چند است؟»",
-            "items": [
-                {"prompt_fa": "۱۱:۰۰", "answer_fa": "ساعت، یازده است.", "reading_az": "Saət, yazdəh əst.", "az": "Saat on birdir."},
-                {"prompt_fa": "۵:۱۰", "answer_fa": "ساعت، پنج و ده دقیقه است.", "reading_az": "Saət, pənc va dəh dəqiqe əst.", "az": "Saat beş və on dəqiqədir."},
-                {"prompt_fa": "۴:۱۵", "answer_fa": "ساعت، چهار و ربع است.", "reading_az": "Saət, çəhar va rob əst.", "az": "Saat dörd rübdür."},
-                {"prompt_fa": "۸:۳۰", "answer_fa": "ساعت، هشت و نیم است.", "reading_az": "Saət, həşt va nim əst.", "az": "Saat səkkiz yarımdır."},
-                {"prompt_fa": "۱۰:۴۷", "answer_fa": "ساعت، ده و چهل و هفت دقیقه است.", "reading_az": "Saət, dəh va çəhel o həft dəqiqe əst.", "az": "Saat on və qırx yeddi dəqiqədir."},
-                {"prompt_fa": "۱۲:۰۰ (شب)", "answer_fa": "ساعت، دوازده نیمه‌شب است.", "reading_az": "Saət, davazdəh nimeşəb əst.", "az": "Saat gecəyarısı on ikidir."},
-                {"prompt_fa": "۷:۲۵", "answer_fa": "ساعت، هفت و بیست و پنج دقیقه است.", "reading_az": "Saət, həft va bist o pənc dəqiqe əst.", "az": "Saat yeddi və iyirmi beş dəqiqədir."},
-            ],
-        },
-        {
-            "kind": "practice_reveal",
-            "instruction_az": "Nümunə kimi əvəz edin: «استاد سرِ ساعت هشت به کلاس آمد. — مادربزرگم / نه / دارو خوردن → مادربزرگم سرِ ساعت نه دارو خورد.»",
-            "items": [
-                {"prompt_fa": "کارمندها / هفت و نیم / محل کار آمدن", "answer_fa": "کارمندها سرِ ساعت هفت و نیم به محل کار آمدند.", "reading_az": "Karməndha səre saəte həft o nim be məhəlle kar amədənd.", "az": "İşçilər saat yeddi yarımda iş yerinə gəldilər."},
-                {"prompt_fa": "ما / یازده / اتاقمان خوابیدن", "answer_fa": "ما سرِ ساعت یازده در اتاقمان خوابیدیم.", "reading_az": "Ma səre saəte yazdəh dər otaqeman xabidim.", "az": "Biz saat on birdə otağımızda yatdıq."},
-                {"prompt_fa": "هواپیما / ده / مشهد رفتن", "answer_fa": "هواپیما سرِ ساعت ده به مشهد رفت.", "reading_az": "Həvapeyma səre saəte dəh be Məşhəd rəft.", "az": "Təyyarə saat onda Məşhədə getdi."},
-            ],
-        },
-        {
-            "kind": "practice_reveal",
-            "instruction_az": "Nümunə kimi məsafəni deyin: «فاصله‌ی خانه‌ی ناصر تا مغازه‌اش حدود پانصد متر است. — تهران / قم / صد و سی کیلومتر»",
-            "items": [
-                {"prompt_fa": "روستای ما / شهر / بیست کیلومتر", "answer_fa": "فاصله‌ی روستای ما تا شهر بیست کیلومتر است.", "reading_az": "Faseleye rustaye ma ta şəhr bist kilometr əst.", "az": "Kəndimizdən şəhərə qədər məsafə iyirmi kilometrdir."},
-                {"prompt_fa": "کشور من / ایران / … کیلومتر", "answer_fa": "فاصله‌ی کشور من تا ایران هزار کیلومتر است.", "reading_az": "Faseleye kəşvəre mən ta Iran hezar kilometr əst.", "az": "Ölkəmdən İrana qədər məsafə min kilometrdir."},
-                {"prompt_fa": "خانه‌ام / دانش‌گاه / سه کیلومتر", "answer_fa": "فاصله‌ی خانه‌ام تا دانش‌گاه سه کیلومتر است.", "reading_az": "Faseleye xaneəm ta daneşgah se kilometr əst.", "az": "Evimdən universitetə qədər məsafə üç kilometrdir."},
-            ],
-        },
-        {
-            "kind": "practice_reveal",
-            "instruction_az": "Nümunə kimi əvəz edin: «پدربزرگم ساعت‌ساز است. او ساعت‌های خراب را تعمیر می‌کند. — برادرمان / نجّار / صندلی → برادرمان نجّار است. او صندلی‌های خراب را تعمیر می‌کند.»",
-            "items": [
-                {"prompt_fa": "برادرمان / نجّار / صندلی", "answer_fa": "برادرمان نجّار است. او صندلی‌های خراب را تعمیر می‌کند.", "reading_az": "Bəradəreman nəccar əst. U səndəlihaye xərab ra təmir mikonəd.", "az": "Qardaşımız dülgərdir. O, xarab stulları təmir edir."},
-                {"prompt_fa": "خواهرزاده‌ام / مهندس رایانه", "answer_fa": "خواهرزاده‌ام مهندس رایانه است. او رایانه‌های خراب را تعمیر می‌کند.", "reading_az": "Xahərzadeəm mohəndese rayane əst. U rayanehaye xərab ra təmir mikonəd.", "az": "Bacımın oğlu kompüter mühəndisidir. O, xarab kompüterləri təmir edir."},
-                {"prompt_fa": "دوستم / آهنگر / در و پنجره", "answer_fa": "دوستم آهنگر است. او در و پنجره‌های خراب را تعمیر می‌کند.", "reading_az": "Dustəm ahəngər əst. U dər o pəncerehaye xərab ra təmir mikonəd.", "az": "Dostum dəmirçidir. O, xarab qapı-pəncərələri təmir edir."},
-                {"prompt_fa": "عموی سعید / تعمیرکار ماشین", "answer_fa": "عموی سعید تعمیرکار ماشین است. او ماشین‌های خراب را تعمیر می‌کند.", "reading_az": "Əmuye Səid təmirkare maşin əst. U maşinhaye xərab ra təmir mikonəd.", "az": "Səidin əmisi maşın təmirçisidir. O, xarab maşınları təmir edir."},
-                {"prompt_fa": "حامد / تعمیرکار تلفن", "answer_fa": "حامد تعمیرکار تلفن است. او تلفن‌های خراب را تعمیر می‌کند.", "reading_az": "Hamed təmirkare telefon əst. U telefonhaye xərab ra təmir mikonəd.", "az": "Hamid telefon təmirçisidir. O, xarab telefonları təmir edir."},
-                {"prompt_fa": "هادی / دوچرخه‌ساز", "answer_fa": "هادی دوچرخه‌ساز است. او دوچرخه‌های خراب را تعمیر می‌کند.", "reading_az": "Hadi doçərxesaz əst. U doçərxehaye xərab ra təmir mikonəd.", "az": "Hadi velosiped ustasıdır. O, xarab velosipedləri təmir edir."},
             ],
         },
     ],
