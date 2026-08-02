@@ -47,20 +47,50 @@ LESSON = {
         {
             "title_az": "Cəm şəkilçiləri «ها» və «ان»",
             "title_fa": "نشانه‌های جمع «ها» و «ان»",
+            # Hər sətir tətbiqdə ayrıca bənd (•) kimi görünür; izah dərslikdəki
+            # diaqramın (پسر / شتر / درخت / لباس) məntiqini addım-addım açır.
             "explanation_az": (
-                "«ها» bütün isimlərin cəmində işlənə bilər: کتاب‌ها، اسب‌ها، استادها.\n"
-                "«ان» əsasən canlılara aiddir: مردان، دختران، کودکان، درختان.\n"
-                "Cansız sözlərdə «ان» işlənmir: لباس‌ها ✓ — لباسان ✗"
+                "Fars dilində cəm iki şəkilçi ilə düzəlir: «ها» və «ان». Türk dilindəki «-lar/-lər»in qarşılığıdır.\n"
+                "Diaqramın oxunuşu: SÖZ + ها → bir cəm forması, SÖZ + ان → ikinci cəm forması; hər iki forma eyni mənanı verir.\n"
+                "«ها» UNİVERSALDIR — istənilən ismə qoşula bilər: canlı da (پسرها، شترها), cansız da (لباس‌ها، کتاب‌ها).\n"
+                "«ان» isə YALNIZ CANLILARA qoşulur: پسران، شتران، دختران، کودکان.\n"
+                "Diqqət: fars dilində AĞAC və bitkilər də canlı sayılır — ona görə درختان düzgündür.\n"
+                "Cansız sözlərdə «ان» İŞLƏNMİR: لباس‌ها ✓ — لباسان ✗ (dərslikdə bu forma qırmızı ilə pozulub).\n"
+                "Yazılış fərqi: «ها» sözdən yarımboşluqla ayrıla bilər (درخت‌ها، لباس‌ها), «ان» isə həmişə bitişik yazılır (درختان).\n"
+                "Üslub fərqi: «ان» kitab və rəsmi dildə çox işlənir; gündəlik danışıqda «ها» üstünlük təşkil edir.\n"
+                "Yəni پسرها və پسران eyni mənadadır — biri danışıq, digəri kitab üslubudur."
             ),
+            # Dərslikdəki dörd sətirlik lövhə: SÖZ + (ها / ان) → alınan cəm formaları.
+            # Sonuncu sətir qəsdən «xəttli» nümunədir: cansız sözdə «ان» olmur.
             "conjugations": [
-                {"pronoun_fa": "پسر", "form_fa": "پسرها / پسران"},
-                {"pronoun_fa": "شتر", "form_fa": "شترها / شتران"},
-                {"pronoun_fa": "درخت", "form_fa": "درخت‌ها / درختان"},
-                {"pronoun_fa": "لباس (cansız)", "form_fa": "لباس‌ها ✓ (لباسان ✗)"},
+                {
+                    "pronoun_fa": "پسر + ها / ان",
+                    "form_fa": "پسرها = پسران",
+                    "reading_az": "pesərha = pesəran",
+                    "az": "oğlanlar — canlı, ona görə hər iki şəkilçi olar",
+                },
+                {
+                    "pronoun_fa": "شتر + ها / ان",
+                    "form_fa": "شترها = شتران",
+                    "reading_az": "şotorha = şotoran",
+                    "az": "dəvələr — heyvanlar da canlı sayılır",
+                },
+                {
+                    "pronoun_fa": "درخت + ها / ان",
+                    "form_fa": "درخت‌ها = درختان",
+                    "reading_az": "dəraxtha = dərəxtan",
+                    "az": "ağaclar — farscada bitkilər canlı sayılır",
+                },
+                {
+                    "pronoun_fa": "لباس + ها / ان ✗",
+                    "form_fa": "لباس‌ها ✓ — لباسان ✗",
+                    "reading_az": "lebasha ✓ — lebasan ✗",
+                    "az": "paltarlar — cansız olduğu üçün yalnız «ها» olur",
+                },
             ],
+            # Dərslikdəki «لطفاً بخوانید» cümlələri (səhifənin alt qeydləri
+            # nümunə deyil, aşağıdakı «Qeyd» kartına köçürülüb).
             "examples": [
-                {"fa": "«ها» برای جمع همه‌ی اسم‌ها استفاده می‌شود: استادها؛ دفترها؛ اسب‌ها.", "reading_az": "Ha: ostadha; dəftərha; əsbha.", "az": "«ها» bütün isimlərin cəmində işlənir: müəllimlər, dəftərlər, atlar."},
-                {"fa": "«ان» معمولاً برای جمع اسم جان‌داران: زنان؛ مردان؛ دختران؛ پسران؛ کودکان؛ مرغان؛ شیران؛ درختان.", "reading_az": "An: zənan; mərdan; doxtəran; pesəran; kudəkan; morğan; şiran; dərəxtan.", "az": "«ان» adətən canlıların cəmində işlənir: qadınlar, kişilər, qızlar, oğlanlar, uşaqlar."},
                 {"fa": "آن‌آقا هر روز پلّه‌های مدرسه را تمیز و جارو می‌کند.", "reading_az": "An ağa hər ruz pellehaye mædrese ra təmiz va caru mikonəd.", "az": "O kişi hər gün məktəbin pillələrini təmizləyir və süpürür."},
                 {"fa": "چادر، روسری، مقنعه و مانتو لباس‌های زنانه هستند.", "reading_az": "Çador, rusəri, məqnəe va manto lebashaye zənane həstənd.", "az": "Çadra, yaylıq, məqnəə və manto qadın geyimləridir."},
                 {"fa": "صادق به بازار می‌رود و برای فرزندانش لباس‌های زیبا انتخاب می‌کند و می‌خرد.", "reading_az": "Sadeq be bazar mirəvəd va bəraye fərzəndanəş lebashaye ziba entexab mikonəd va mixərəd.", "az": "Sadiq bazara gedir və övladları üçün gözəl paltarlar seçib alır."},
@@ -70,41 +100,106 @@ LESSON = {
                 {"fa": "در جنگل، درختان و حیوان‌های زیادی وجود دارد.", "reading_az": "Dər cəngəl, dərəxtan va heyvanhaye ziyadi vocud darəd.", "az": "Meşədə çoxlu ağac və heyvan var."},
                 {"fa": "فرزندان شما پسرند یا دختر؟ من یک فرزند پسر به نام علی و دو فرزند دختر به نام‌های فاطمه و زینب دارم.", "reading_az": "Fərzəndane şoma pesərand ya doxtər? Mən yek fərzəde pesər be name Əli va do fərzəde doxtər be namhaye Fateme va Zeynəb daram.", "az": "Sizin övladlarınız oğlandır, yoxsa qız? Mənim Əli adında bir oğlum, Fatimə və Zeynəb adında iki qızım var."},
             ],
-            "drills": [
-                {
-                    "title_fa": "مانند مثال جمله بسازید",
-                    "instruction_az": 'Nümunə kimi cümlə qurun: "خیّاط / لباس / اتو زدن → خیّاط‌ها، لباس‌ها را اتو می‌زنند."',
-                    "items": [
-                        {"prompt_fa": "آن پسر / کفش / پوشیدن", "answer_fa": "آن پسرها، کفش‌ها را می‌پوشند.", "reading_az": "An pesərha, kəfşha ra mipuşənd.", "az": "O oğlanlar ayaqqabıları geyinirlər."},
-                        {"prompt_fa": "استاد / دانش‌جو / درس دادن", "answer_fa": "استادها، به دانش‌جوها درس می‌دهند.", "reading_az": "Ostadha, be daneşcuha dərs midəhənd.", "az": "Müəllimlər tələbələrə dərs deyirlər."},
-                        {"prompt_fa": "جوان / پیر / کمک کردن", "answer_fa": "جوان‌ها، به پیرها کمک می‌کنند.", "reading_az": "Cavanha, be pirha komək mikonənd.", "az": "Cavanlar qocalara kömək edirlər."},
-                        {"prompt_fa": "رنگ‌کار / دیوار / رنگ زدن", "answer_fa": "رنگ‌کارها، دیوارها را رنگ می‌زنند.", "reading_az": "Rəngkarha, divarha ra rəng mizənənd.", "az": "Rəngsazlar divarları rəngləyirlər."},
-                        {"prompt_fa": "پزشک / بیمار / معاینه کردن", "answer_fa": "پزشک‌ها، بیمارها را معاینه می‌کنند.", "reading_az": "Pezeşkha, bimarha ra moayene mikonənd.", "az": "Həkimlər xəstələri müayinə edirlər."},
-                        {"prompt_fa": "مادر / فرزند / دوست داشتن", "answer_fa": "مادرها، فرزندانشان را دوست دارند.", "reading_az": "Madərha, fərzəndanəşan ra dust darənd.", "az": "Analar övladlarını sevirlər."},
-                    ],
-                },
-            ],
+            # Səhifənin altındakı iki nömrəli qeyd (dərslikdəki mətnin özü).
+            "note_fa": (
+                "۱. «ها» و «ان» علامت‌های جمع در فارسی هستند.\n"
+                "«ها» برای جمع همه‌ی اسم‌ها استفاده می‌شود، مانند: استادها، دفترها، اسب‌ها و ...\n"
+                "۲. «ان» معمولاً برای جمع‌بستن اسم جان‌داران استفاده می‌شود، مانند: زنان، مردان، "
+                "دختران، پسران، کودکان، اسبان، شتران، مرغان، شیران، درختان و ..."
+            ),
+            "note_reading_az": (
+                "1. «Ha» va «an» əlaməthaye cəm' dər farsi həstənd.\n"
+                "«Ha» bəraye cəm'e həme-ye esmha estefade mişəvəd, manənde: ostadha, dəftərha, əsbha va ...\n"
+                "2. «An» mə'mulən bəraye cəm'-bəstəne esme candaran estefade mişəvəd, manənde: zənan, mərdan, "
+                "doxtəran, pesəran, kudəkan, əsban, şotoran, morğan, şiran, dərəxtan va ..."
+            ),
+            "note_az": (
+                "1. «ها» və «ان» fars dilində cəm əlamətləridir.\n"
+                "«ها» BÜTÜN isimlərin cəmində işlənir: استادها (müəllimlər), دفترها (dəftərlər), اسب‌ها (atlar) və s.\n"
+                "2. «ان» adətən CANLI varlıqların cəmində işlənir: زنان (qadınlar), مردان (kişilər), "
+                "دختران (qızlar), پسران (oğlanlar), کودکان (uşaqlar), اسبان (atlar), شتران (dəvələr), "
+                "مرغان (quşlar), شیران (aslanlar), درختان (ağaclar) və s.\n"
+                "Göründüyü kimi اسب sözünün hər iki cəmi var — اسب‌ها və اسبان — çünki at canlıdır."
+            ),
+            "note2_fa": (
+                "می‌گوییم: لباس‌ها ✓\n"
+                "نمی‌گوییم: لباسان ✗\n"
+                "اسم‌های بی‌جان فقط با «ها» جمع بسته می‌شوند: کتاب‌ها، میزها، پیراهن‌ها، کفش‌ها."
+            ),
+            "note2_reading_az": (
+                "Miguyim: lebasha\n"
+                "Nemiguyim: lebasan\n"
+                "Esmhaye bican fəqət ba «ha» cəm' bəste mişəvənd: ketabha, mizha, pirahənha, kəfşha."
+            ),
+            "note2_az": (
+                "Deyirik: لباس‌ها ✓ — Demirik: لباسان ✗\n"
+                "Cansız isimlər yalnız «ها» ilə cəmlənir: کتاب‌ها (kitablar), میزها (masalar), "
+                "پیراهن‌ها (köynəklər), کفش‌ها (ayaqqabılar).\n"
+                "Dərslikdə də məhz bu səbəbdən «لباسان» formasının üstündən qırmızı xətt çəkilib."
+            ),
+            # QEYD: dərslikdəki «مانند مثال، جمله بسازید» tapşırığı burada drill
+            # kimi deyil, aşağıda ÇALIŞMA 2 (answer_question) kimi verilib.
         },
         {
             "title_az": "Cəm mübtəda və feli (نهادِ جمع و فعل آن)",
             "title_fa": "نهادِ جمع و فعل آن",
+            # Hər sətir tətbiqdə ayrıca bənd (•) kimi görünür; izahın açarı —
+            # mübtədanın CANLI, yoxsa CANSIZ olması.
             "explanation_az": (
-                "Mübtəda CANLI və cəm olarsa, fel mütləq cəm olur: این دخترها مانتو می‌پوشند. ✓\n"
-                "Cansız cəm mübtəda ilə fel həm cəm, həm tək ola bilər: این کاغذها سفید هستند = ... سفید است.\n"
-                "Buna görə «پزشکان ... معاینه می‌کنند» düzgün, «معاینه می‌کند» yanlışdır."
+                "Mübtəda (نهاد) cəm olanda felin də cəm olub-olmaması mübtədanın CANLI, yoxsa CANSIZ olmasından asılıdır.\n"
+                "CANLI cəm mübtəda (insan, heyvan) → fel MÜTLƏQ cəm olur: دانش‌آموزها در کلاس هستند. ✓ / ... در کلاس است. ✗\n"
+                "CANSIZ cəm mübtəda (əşya) → fel həm cəm, həm TƏK ola bilər; hər iki forma düzgündür: این صندلی‌ها تمیز هستند. ✓ = این صندلی‌ها تمیز است. ✓\n"
+                "Səbəb: farscada cansız əşyaların cəmi çox vaxt bir bütöv, bir yığın kimi qəbul edilir, ona görə tək fel də qəbul olunur.\n"
+                "Qayda yalnız «هستند/است»-ə yox, BÜTÜN fellərə aiddir: می‌پوشند، دارند، معاینه می‌کنند.\n"
+                "Cəm şəkilçisinin «ها», yoxsa «ان» olması fərq etmir: دانش‌آموزها və دانش‌آموزان eyni qaydaya tabedir.\n"
+                "Yazılı dildə cansız mübtəda üçün daha çox TƏK fel işlədilir: این کاغذها سفید است.\n"
+                "Praktik məsləhət: canlıda həmişə CƏM fel işlədin; cansızda seçim sərbəstdir — şübhə edəndə cəm fel həmişə düzgündür."
             ),
+            # Dərslikdəki mavi lövhə: solda düzgün (cəm) forma, sağda tək forma —
+            # birincidə ✗ (canlı), ikincidə ✓ (cansız).
             "conjugations": [
-                {"pronoun_fa": "دانش‌آموزها در کلاس هستند. ✓", "form_fa": "دانش‌آموزها در کلاس است. ✗"},
-                {"pronoun_fa": "این صندلی‌ها تمیز هستند. ✓", "form_fa": "این صندلی‌ها تمیز است. ✓ (cansız üçün hər ikisi olar)"},
+                {
+                    "pronoun_fa": "دانش‌آموزها در کلاس هستند. ✓",
+                    "form_fa": "دانش‌آموزها در کلاس است. ✗",
+                    "reading_az": "Daneşamuzha dər kelas həstənd. / ... dər kelas əst. ✗",
+                    "az": "Şagirdlər sinifdədir — CANLI mübtəda, ona görə yalnız cəm fel olar",
+                },
+                {
+                    "pronoun_fa": "این صندلی‌ها تمیز هستند. ✓",
+                    "form_fa": "این صندلی‌ها تمیز است. ✓",
+                    "reading_az": "İn səndəliha təmiz həstənd. = İn səndəliha təmiz əst.",
+                    "az": "Bu stullar təmizdir — CANSIZ mübtəda, hər iki forma düzgündür",
+                },
             ],
+            # Dərslikdəki «لطفاً بخوانید» siyahısı: hər bənddə eyni cümlənin
+            # cəm və tək variantı yan-yana verilir — ikincinin ✓/✗ olması
+            # mübtədanın canlı/cansız olmasından asılıdır.
             "examples": [
-                {"fa": "این کاغذها سفید هستند. = این کاغذها سفید است.", "reading_az": "İn kağəzha sefid həstənd. = İn kağəzha sefid əst.", "az": "Cansız isimlərdə fel həm cəm, həm tək ola bilər: bu kağızlar ağdır."},
-                {"fa": "این دخترها مانتو می‌پوشند. (این دخترها مانتو می‌پوشد ✗)", "reading_az": "İn doxtərha manto mipuşənd.", "az": "Canlı mübtəda cəm olanda fel mütləq cəm olur: bu qızlar manto geyinirlər."},
-                {"fa": "پزشکان، بیماران را معاینه می‌کنند. (معاینه می‌کند ✗)", "reading_az": "Pezeşkan, bimaran ra moayene mikonənd.", "az": "Həkimlər xəstələri müayinə edirlər."},
-                {"fa": "کارگران بیل و تیشه دارند.", "reading_az": "Kargəran bil va tişe darənd.", "az": "Fəhlələrin beli və külüngü var."},
-                {"fa": "جوانان به پیرمردها کمک می‌کنند.", "reading_az": "Cəvanan be pirmərdha komək mikonənd.", "az": "Gənclər qocalara kömək edirlər."},
-                {"fa": "آن کودکان درس می‌خوانند و تکلیف می‌نویسند.", "reading_az": "An kudəkan dərs mixanənd va təklif minevisənd.", "az": "O uşaqlar dərs oxuyur və tapşırıq yazırlar."},
+                {"fa": "این کاغذها سفید هستند. ✓ ⟵ این کاغذها سفید است. ✓", "reading_az": "İn kağəzha sefid həstənd. = İn kağəzha sefid əst.", "az": "Bu kağızlar ağdır. — کاغذ CANSIZdır, ona görə hər iki fel forması düzgündür."},
+                {"fa": "این دخترها مانتو می‌پوشند. ✓ ⟵ این دخترها مانتو می‌پوشد. ✗", "reading_az": "İn doxtərha manto mipuşənd. (mipuşəd ✗)", "az": "Bu qızlar manto geyinirlər. — دختر CANLIdır, tək fel («می‌پوشد») SƏHVdir."},
+                {"fa": "پیراهن‌های مردانه، جیب دارند. ✓ ⟵ پیراهن‌های مردانه، جیب دارد. ✓", "reading_az": "Pirahənhaye mərdane, cib darənd. = ... cib darəd.", "az": "Kişi köynəklərinin cibi var. — پیراهن CANSIZdır, hər iki forma düzgündür."},
+                {"fa": "پزشکان، بیماران را معاینه می‌کنند. ✓ ⟵ پزشکان، بیماران را معاینه می‌کند. ✗", "reading_az": "Pezeşkan, bimaran ra moayene mikonənd. (mikonəd ✗)", "az": "Həkimlər xəstələri müayinə edirlər. — پزشک CANLIdır, tək fel SƏHVdir."},
             ],
+            # Mavi lövhədəki qaydanın öz sözləri ilə yekunu.
+            "note_fa": (
+                "۱. اگر نهاد، جمع و جان‌دار باشد، فعل حتماً جمع می‌آید:\n"
+                "دانش‌آموزها در کلاس هستند. ✓ / دانش‌آموزها در کلاس است. ✗\n"
+                "۲. اگر نهاد، جمع و بی‌جان باشد، فعل هم جمع و هم مفرد می‌تواند بیاید:\n"
+                "این صندلی‌ها تمیز هستند. ✓ = این صندلی‌ها تمیز است. ✓"
+            ),
+            "note_reading_az": (
+                "1. Əgər nəhad, cəm' va candar başəd, fe'l hətmən cəm' miayəd:\n"
+                "Daneşamuzha dər kelas həstənd. / Daneşamuzha dər kelas əst. (ğələt)\n"
+                "2. Əgər nəhad, cəm' va bican başəd, fe'l həm cəm' va həm mofrəd mitəvanəd biayəd:\n"
+                "İn səndəliha təmiz həstənd. = İn səndəliha təmiz əst."
+            ),
+            "note_az": (
+                "1. Mübtəda cəm və CANLI olarsa, fel mütləq cəm gəlir:\n"
+                "دانش‌آموزها در کلاس هستند. ✓ (Şagirdlər sinifdədirlər.) / دانش‌آموزها در کلاس است. ✗\n"
+                "2. Mübtəda cəm və CANSIZ olarsa, fel həm cəm, həm tək gələ bilər:\n"
+                "این صندلی‌ها تمیز هستند. ✓ = این صندلی‌ها تمیز است. ✓ (Bu stullar təmizdir.)\n"
+                "Yəni səhv etmək yalnız birinci halda mümkündür — canlı mübtədada tək fel işlətmək olmaz."
+            ),
             "drills": [
                 {
                     "title_fa": "جمله‌های اشتباه را تصحیح کنید",
@@ -149,6 +244,143 @@ LESSON = {
         },
     ],
     "exercises": [
+        {
+            # Çalışma 1 — dərslikdəki «لطفاً جایگزین کنید» (درآوردن / پوشیدن).
+            # Dərs 6-nın Çalışma 8 quruluşu: answer_question + çoxrəngli
+            # NÜMUNƏ qutusu (verilən sözlər → hazır cavab).
+            "kind": "answer_question",
+            "title_fa": "لطفاً جایگزین کنید",
+            "instruction_az": "Nümunə kimi əvəz edin",
+            # Qırmızı — «درآوردن» (çıxarmaq), yaşıl — «پوشیدن» (geyinmək);
+            # hər iki fel subyektə görə hallanır.
+            "example_fa": (
+                "علی پیراهنش را **درمی‌آورد** و ژاکت *می‌پوشد*.\n"
+                "من / کاپشن / پالتو\n"
+                "من کاپشنم را **درمی‌آورم** و پالتو *می‌پوشم*."
+            ),
+            "example_reading_az": (
+                "Əli pirahənəş ra dər-miavərəd va jaket mipuşəd.\n"
+                "Mən / kapşen / palto\n"
+                "Mən kapşenəm ra dər-miavərəm va palto mipuşəm."
+            ),
+            "example_az": (
+                "Verilən sözlər: SUBYEKT / ÇIXARILAN GEYİM / GEYİLƏN GEYİM.\n"
+                "Quruluş: SUBYEKT + 1-ci geyim + mənsubiyyət şəkilçisi + را درمی‌آورد و + 2-ci geyim + می‌پوشد.\n"
+                "Qırmızı «درمی‌آورد» — çıxarır, yaşıl «می‌پوشد» — geyinir.\n"
+                "Birinci geyim şəkilçi alır (کاپشنم، پیراهنش، کفشمان) və «را» ilə işlənir; ikincisi şəkilçisiz qalır.\n"
+                "Hər iki fel şəxsə görə dəyişir: درمی‌آورم / می‌پوشم — درمی‌آوریم / می‌پوشیم.\n"
+                "Tərcümə: Əli köynəyini çıxarır və jaket geyinir."
+            ),
+            "items": [
+                {
+                    "fa": "ما / کفش / دمپایی",
+                    "reading_az": "Ma / kəfş / dəmpayi",
+                    "az": "biz / ayaqqabı / ev başmağı (terlik)",
+                    "sample_answer_fa": "ما کفشمان را درمی‌آوریم و دمپایی می‌پوشیم.",
+                    "sample_answer_reading_az": "Ma kəfşeman ra dər-miavərim va dəmpayi mipuşim.",
+                    "sample_answer_az": "Biz ayaqqabımızı çıxarırıq və ev başmağı geyinirik.",
+                },
+                {
+                    "fa": "من / جوراب نازک / جوراب ضخیم",
+                    "reading_az": "Mən / curabe nazok / curabe zəxim",
+                    "az": "mən / nazik corab / qalın corab",
+                    "sample_answer_fa": "من جوراب نازکم را درمی‌آورم و جوراب ضخیم می‌پوشم.",
+                    "sample_answer_reading_az": "Mən curabe nazokəm ra dər-miavərəm va curabe zəxim mipuşəm.",
+                    "sample_answer_az": "Mən nazik corabımı çıxarıram və qalın corab geyinirəm.",
+                },
+                {
+                    "fa": "شما / پیراهن / بلوز",
+                    "reading_az": "Şoma / pirahən / boluz",
+                    "az": "siz / köynək / bluz",
+                    "sample_answer_fa": "شما پیراهنتان را درمی‌آورید و بلوز می‌پوشید.",
+                    "sample_answer_reading_az": "Şoma pirahənetan ra dər-miavərid va boluz mipuşid.",
+                    "sample_answer_az": "Siz köynəyinizi çıxarırsınız və bluz geyinirsiniz.",
+                },
+                {
+                    "fa": "او / پیراهن آستین‌کوتاه / پیراهن آستین‌بلند",
+                    "reading_az": "U / pirahəne astin-kutah / pirahəne astin-bolənd",
+                    "az": "o / qısaqol köynək / uzunqol köynək",
+                    "sample_answer_fa": "او پیراهن آستین‌کوتاهش را درمی‌آورد و پیراهن آستین‌بلند می‌پوشد.",
+                    "sample_answer_reading_az": "U pirahəne astin-kutaheş ra dər-miavərəd va pirahəne astin-bolənd mipuşəd.",
+                    "sample_answer_az": "O, qısaqol köynəyini çıxarır və uzunqol köynək geyinir.",
+                },
+            ],
+        },
+        {
+            # Çalışma 2 — dərslikdəki «مانند مثال، جمله بسازید» (cəm «ها» + «را»).
+            # Əvvəllər Mövzu 1-in daxili drill-i idi; Çalışma 1 ilə eyni
+            # quruluşa (answer_question + çoxrəngli NÜMUNƏ qutusu) keçirilib.
+            "kind": "answer_question",
+            "title_fa": "مانند مثال، جمله بسازید",
+            "instruction_az": "Nümunə kimi cümlə qurun",
+            # Yaşıl «ها» — cəm şəkilçisi (hər iki isimdə), qırmızı «را» — obyekt əlaməti.
+            "example_fa": (
+                "خیّاط / لباس / اتو زدن\n"
+                "*خیّاط‌ها*، *لباس‌ها* **را** اتو می‌زنند."
+            ),
+            "example_reading_az": (
+                "Xəyyat / lebas / otu zədən\n"
+                "Xəyyatha, lebasha ra otu mizənənd."
+            ),
+            "example_az": (
+                "Verilən sözlər: SUBYEKT / OBYEKT / MƏSDƏR.\n"
+                "Quruluş: SUBYEKT + ها، OBYEKT + ها + را + FEL (cəm).\n"
+                "Yaşıl «ها» — hər iki isim CƏM olur; qırmızı «را» — müəyyən obyektin əlamətidir.\n"
+                "Məsdər cəm mübtədaya görə hallanır: اتو زدن → اتو می‌زنند.\n"
+                "«درس دادن» və «کمک کردن» kimi fellərdə «را» yox, «به» işlənir: به دانش‌جوها درس می‌دهند.\n"
+                "Tərcümə: Dərzilər paltarları ütüləyirlər."
+            ),
+            "items": [
+                {
+                    "fa": "آن پسر / کفش / پوشیدن",
+                    "reading_az": "An pesər / kəfş / puşidən",
+                    "az": "o oğlan / ayaqqabı / geyinmək",
+                    "sample_answer_fa": "آن پسرها، کفش‌ها را می‌پوشند.",
+                    "sample_answer_reading_az": "An pesərha, kəfşha ra mipuşənd.",
+                    "sample_answer_az": "O oğlanlar ayaqqabıları geyinirlər.",
+                },
+                {
+                    "fa": "استاد / دانش‌جو / درس دادن",
+                    "reading_az": "Ostad / daneşcu / dərs dadən",
+                    "az": "müəllim / tələbə / dərs demək",
+                    "sample_answer_fa": "استادها، به دانش‌جوها درس می‌دهند.",
+                    "sample_answer_reading_az": "Ostadha, be daneşcuha dərs midəhənd.",
+                    "sample_answer_az": "Müəllimlər tələbələrə dərs deyirlər.",
+                },
+                {
+                    "fa": "جوان / پیر / کمک کردن",
+                    "reading_az": "Cavan / pir / komək kərdən",
+                    "az": "cavan / qoca / kömək etmək",
+                    "sample_answer_fa": "جوان‌ها، به پیرها کمک می‌کنند.",
+                    "sample_answer_reading_az": "Cavanha, be pirha komək mikonənd.",
+                    "sample_answer_az": "Cavanlar qocalara kömək edirlər.",
+                },
+                {
+                    "fa": "رنگ‌کار / دیوار / رنگ زدن",
+                    "reading_az": "Rəngkar / divar / rəng zədən",
+                    "az": "rəngsaz / divar / rəngləmək",
+                    "sample_answer_fa": "رنگ‌کارها، دیوارها را رنگ می‌زنند.",
+                    "sample_answer_reading_az": "Rəngkarha, divarha ra rəng mizənənd.",
+                    "sample_answer_az": "Rəngsazlar divarları rəngləyirlər.",
+                },
+                {
+                    "fa": "پزشک / بیمار / معاینه کردن",
+                    "reading_az": "Pezeşk / bimar / moayene kərdən",
+                    "az": "həkim / xəstə / müayinə etmək",
+                    "sample_answer_fa": "پزشک‌ها، بیمارها را معاینه می‌کنند.",
+                    "sample_answer_reading_az": "Pezeşkha, bimarha ra moayene mikonənd.",
+                    "sample_answer_az": "Həkimlər xəstələri müayinə edirlər.",
+                },
+                {
+                    "fa": "مادر / فرزند / دوست داشتن",
+                    "reading_az": "Madər / fərzənd / dust daştən",
+                    "az": "ana / övlad / sevmək",
+                    "sample_answer_fa": "مادرها، فرزندانشان را دوست دارند.",
+                    "sample_answer_reading_az": "Madərha, fərzəndanəşan ra dust darənd.",
+                    "sample_answer_az": "Analar övladlarını sevirlər.",
+                },
+            ],
+        },
         {
             "kind": "fill_blank",
             "instruction_az": "Düzgün söz və ya sözlərlə tamamlayın.",
