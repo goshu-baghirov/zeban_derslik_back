@@ -114,154 +114,410 @@ LESSON = {
     ],
     "exercises": [
         {
+            # Çalışma 1 — səh. 187 «مانند جمله‌های بالا بگویید «ساعت چند است؟»».
+            # Dərslikdə 6 saat şəkli var; hər saat İKİ cür deyilir (keçib / qalıb).
+            "kind": "picture_sentences",
+            "title_fa": "مانند جمله‌های بالا بگویید — «ساعت، چند است؟»",
+            "instruction_az": "Nümunə kimi hər saatı iki cür deyin («و … دقیقه» və «… دقیقه به»)",
+            "example_fa": "ساعت، چند است؟",
+            "example_reading_az": "Saət, çənd əst?",
+            "example_az": "Saat neçədir? — hər vaxtı iki cür demək olar.",
+            "example_answer_fa": "ساعت، دو و چهل دقیقه است. = ساعت، بیست دقیقه به سه است.",
+            "example_answer_reading_az": "Saət, do o çehel dəqiqe əst. = Saət, bist dəqiqe be se əst.",
+            "example_answer_az": "Saat ikini qırx dəqiqə keçib. = Saat üçə iyirmi dəqiqə qalıb.",
+            "items": [
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "ساعت، هشت و چهل و پنج دقیقه است.", "reading_az": "Saət, həşt o çehelO-pənc dəqiqe əst.", "az": "Saat səkkizi qırx beş dəqiqə keçib. (۸:۴۵)"},
+                        {"fa": "ساعت، یک ربع به نه است.", "reading_az": "Saət, yek rob' be noh əst.", "az": "Saat doqquza on beş dəqiqə qalıb. — «یک ربع» = 15 dəqiqə."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "ساعت، یازده و پنجاه و پنج دقیقه است.", "reading_az": "Saət, yazdəh o pəncahO-pənc dəqiqe əst.", "az": "Saat on biri əlli beş dəqiqə keçib. (۱۱:۵۵)"},
+                        {"fa": "ساعت، پنج دقیقه به دوازده است.", "reading_az": "Saət, pənc dəqiqe be dəvazdəh əst.", "az": "Saat on ikiyə beş dəqiqə qalıb."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "ساعت، سه و پنجاه دقیقه است.", "reading_az": "Saət, se o pəncah dəqiqe əst.", "az": "Saat üçü əlli dəqiqə keçib. (۳:۵۰)"},
+                        {"fa": "ساعت، ده دقیقه به چهار است.", "reading_az": "Saət, dəh dəqiqe be çəhar əst.", "az": "Saat dördə on dəqiqə qalıb."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "ساعت، شش و چهل دقیقه است.", "reading_az": "Saət, şeş o çehel dəqiqe əst.", "az": "Saat altını qırx dəqiqə keçib. (۶:۴۰)"},
+                        {"fa": "ساعت، بیست دقیقه به هفت است.", "reading_az": "Saət, bist dəqiqe be həft əst.", "az": "Saat yeddiyə iyirmi dəqiqə qalıb."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "ساعت، سه و سی و پنج دقیقه است.", "reading_az": "Saət, se o siyO-pənc dəqiqe əst.", "az": "Saat üçü otuz beş dəqiqə keçib. (۳:۳۵)"},
+                        {"fa": "ساعت، بیست و پنج دقیقه به چهار است.", "reading_az": "Saət, bistO-pənc dəqiqe be çəhar əst.", "az": "Saat dördə iyirmi beş dəqiqə qalıb."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "ساعت، یازده و پنجاه دقیقه است.", "reading_az": "Saət, yazdəh o pəncah dəqiqe əst.", "az": "Saat on biri əlli dəqiqə keçib. (۱۱:۵۰)"},
+                        {"fa": "ساعت، ده دقیقه به دوازده است.", "reading_az": "Saət, dəh dəqiqe be dəvazdəh əst.", "az": "Saat on ikiyə on dəqiqə qalıb."},
+                    ],
+                },
+            ],
+        },
+        {
+            # Çalışma 2 — «ساعتِ چند» / «چند ساعت» fərqi.
             "kind": "fill_blank",
-            "instruction_az": "«ساعتِ چند» yoxsa «چند ساعت» ilə tamamlayın.",
-            "word_bank": ["ساعتِ چند", "چند ساعت"],
+            "instruction_az": "«ساعتِ چند» (nə vaxt?) və «چند ساعت» (nə qədər?) ilə tamamlayın.",
+            "word_bank": ["ساعتِ چند", "چند ساعت", "ساعتِ چند", "چند ساعت"],
             "items": [
                 {
                     "fa_with_blank": "شما دیشب ___ خوابیدید؟ من دیشب هفت ساعت خوابیدم.",
-                    "correct_answer": "چند ساعت",
-                    "reading_az": "çənd saət",
-                    "az": "neçə saat",
+                    "correct_answer": "چند ساعت", "reading_az": "çənd saət", "az": "neçə saat",
                     "full_reading_az": "Şoma dişəb çənd saət xabidid? Mən dişəb həft saət xabidəm.",
-                    "full_translation_az": "Siz dünən gecə neçə saat yatdınız? Mən dünən gecə yeddi saat yatdım.",
+                    "full_translation_az": "Siz dünən gecə neçə saat yatdınız? Yeddi saat. — cavab MÜDDƏTdir, ona görə «چند ساعت».",
                 },
                 {
                     "fa_with_blank": "قطار ___ به ایستگاه رسید؟ قطار، ساعتِ دوازده رسید.",
-                    "correct_answer": "ساعتِ چند",
-                    "reading_az": "saəte çənd",
-                    "az": "saat neçədə",
-                    "full_reading_az": "Qətar saəte çənd be istqah residə? Qətar, saəte davazdəh residə.",
-                    "full_translation_az": "Qatar stansiyaya saat neçədə çatdı? Qatar saat on ikidə çatdı.",
+                    "correct_answer": "ساعتِ چند", "reading_az": "saəte çənd", "az": "saat neçədə",
+                    "full_reading_az": "Qatar saəte çənd be istgah resid? Qatar, saəte dəvazdəh resid.",
+                    "full_translation_az": "Qatar saat neçədə stansiyaya çatdı? Saat on ikidə. — cavab VAXTdır, ona görə «ساعتِ چند».",
                 },
                 {
                     "fa_with_blank": "استاد هر روز ___ درس می‌دهد؟ او هر روز دو ساعت درس می‌دهد.",
-                    "correct_answer": "چند ساعت",
-                    "reading_az": "çənd saət",
-                    "az": "neçə saat",
+                    "correct_answer": "چند ساعت", "reading_az": "çənd saət", "az": "neçə saat",
                     "full_reading_az": "Ostad hər ruz çənd saət dərs midəhəd? U hər ruz do saət dərs midəhəd.",
-                    "full_translation_az": "Müəllim hər gün neçə saat dərs deyir? O, hər gün iki saat dərs deyir.",
+                    "full_translation_az": "Müəllim hər gün neçə saat dərs deyir? İki saat.",
                 },
                 {
                     "fa_with_blank": "پدرت امروز ___ به خانه آمد؟ او امروز ساعت چهار آمد.",
-                    "correct_answer": "ساعتِ چند",
-                    "reading_az": "saəte çənd",
-                    "az": "saat neçədə",
+                    "correct_answer": "ساعتِ چند", "reading_az": "saəte çənd", "az": "saat neçədə",
                     "full_reading_az": "Pedərət emruz saəte çənd be xane aməd? U emruz saəte çəhar aməd.",
-                    "full_translation_az": "Atan bu gün evə saat neçədə gəldi? O, bu gün saat dörddə gəldi.",
+                    "full_translation_az": "Atan bu gün saat neçədə evə gəldi? Saat dörddə.",
                 },
             ],
         },
         {
+            # Çalışma 3 — verilən cavaba görə uyğun sual qurmaq.
+            # Əvvəllər sadə practice_reveal idi.
+            "kind": "answer_question",
+            "title_fa": "سؤال مناسب بگویید",
+            "instruction_az": "Verilən cavaba görə uyğun sual qurun",
+            "example_fa": "ساعت، هفت و بیست دقیقه است. ← *ساعت، چند است؟*",
+            "example_reading_az": "Saət, həft o bist dəqiqe əst. — Saət, çənd əst?",
+            "example_az": (
+                "Cavabdakı hansı hissəni soruşduğunuza görə sual sözü seçilir.\n"
+                "VAXT bildirilirsə → «ساعتِ چند»; MÜDDƏT bildirilirsə → «چند ساعت».\n"
+                "Sadəcə saat soruşulursa → «ساعت، چند است؟»\n"
+                "Sualda cümlənin şəxsi dəyişir: «من … خوابیدم» → «شما … خوابیدید؟»"
+            ),
+            "items": [
+                {"fa": "ساعت، دوازده دقیقه به هفت است.", "reading_az": "Saət, dəvazdəh dəqiqe be həft əst.", "az": "Saat yeddiyə on iki dəqiqə qalıb. → sual qurun",
+                 "sample_answer_fa": "ساعت، چند است؟", "sample_answer_reading_az": "Saət, çənd əst?",
+                 "sample_answer_az": "Saat neçədir?"},
+                {"fa": "امروز، ساعتِ پنج و نیم صبح بیدار شدم.", "reading_az": "Emruz, saəte pənc o nim sobh bidar şodəm.", "az": "Bu gün səhər beş yarımda oyandım. → sual qurun",
+                 "sample_answer_fa": "شما امروز ساعتِ چند صبح بیدار شدید؟", "sample_answer_reading_az": "Şoma emruz saəte çənd sobh bidar şodid?",
+                 "sample_answer_az": "Siz bu gün səhər saat neçədə oyandınız? — cavab VAXTdır."},
+                {"fa": "من و دوستانم هر روز یک ساعت قرآن می‌خوانیم.", "reading_az": "Mən va dustanəm hər ruz yek saət Quran mixanim.", "az": "Mən və dostlarım hər gün bir saat Quran oxuyuruq. → sual qurun",
+                 "sample_answer_fa": "شما هر روز چند ساعت قرآن می‌خوانید؟", "sample_answer_reading_az": "Şoma hər ruz çənd saət Quran mixanid?",
+                 "sample_answer_az": "Siz hər gün neçə saat Quran oxuyursunuz? — cavab MÜDDƏTdir."},
+                {"fa": "پدرم امروز ساعت چهار و بیست دقیقه به خانه آمد.", "reading_az": "Pedərəm emruz saəte çəhar o bist dəqiqe be xane aməd.", "az": "Atam bu gün saat dördü iyirmi keçmiş evə gəldi. → sual qurun",
+                 "sample_answer_fa": "پدرتان ساعتِ چند به خانه آمد؟", "sample_answer_reading_az": "Pedəretan saəte çənd be xane aməd?",
+                 "sample_answer_az": "Atanız saat neçədə evə gəldi?"},
+                {"fa": "آشپزها هر روز نیم‌ساعت سیب‌زمینی پوست می‌کنند.", "reading_az": "Aşpəzha hər ruz nim-saət sibzəmini pust mikonənd.", "az": "Aşpazlar hər gün yarım saat kartof soyurlar. → sual qurun",
+                 "sample_answer_fa": "آشپزها هر روز چند ساعت سیب‌زمینی پوست می‌کنند؟", "sample_answer_reading_az": "Aşpəzha hər ruz çənd saət sibzəmini pust mikonənd?",
+                 "sample_answer_az": "Aşpazlar hər gün neçə saat kartof soyurlar?"},
+            ],
+        },
+        {
+            # Çalışma 4 — «هم» / «نه … نه» ilə tamamlama.
             "kind": "fill_blank",
-            "instruction_az": "«هم» yoxsa «نه … نه» ilə tamamlayın.",
-            "word_bank": ["هم", "نه", "هم … هم"],
+            "instruction_az": "«هم»، «هم … هم» və «نه … نه» ilə tamamlayın.",
+            "word_bank": ["هم", "نه", "هم … هم", "نه"],
             "items": [
                 {
                     "fa_with_blank": "علی عینک دارد؛ همسرش سوسن ___ عینک دارد.",
-                    "correct_answer": "هم",
-                    "reading_az": "həm",
-                    "az": "da",
-                    "full_reading_az": "Əli eynək darəd; həmsərəş Susən həm eynək darəd.",
-                    "full_translation_az": "Əlinin eynəyi var; həyat yoldaşı Susənin də eynəyi var.",
+                    "correct_answer": "هم", "reading_az": "həm", "az": "də/da",
+                    "full_reading_az": "Əli eynək darəd; həmsəreş Susən həm eynək darəd.",
+                    "full_translation_az": "Əlinin eynəyi var; həyat yoldaşı Susənin də eynəyi var. — tək «هم» sözdən SONRA gəlir.",
                 },
                 {
                     "fa_with_blank": "او ___ ماکارونی دوست دارد، ___ کنسرو.",
-                    "correct_answer": "نه",
-                    "reading_az": "nə",
-                    "az": "nə",
-                    "full_reading_az": "U nə makaroni dust darəd, nə konsərv.",
-                    "full_translation_az": "O, nə makaron, nə də konserv sevmir.",
+                    "correct_answer": "نه", "reading_az": "nə", "az": "nə … nə",
+                    "full_reading_az": "U nə makaroni dust darəd, nə konserv.",
+                    "full_translation_az": "O, nə makaron sevir, nə konserv. — «نه … نه» hər ikisini inkar edir.",
                 },
                 {
                     "fa_with_blank": "آن‌ها شام ___ سوپ می‌خورند، ___ سیب‌زمینی سرخ‌کرده.",
-                    "correct_answer": "هم … هم",
-                    "reading_az": "həm … həm",
-                    "az": "həm … həm də",
-                    "full_reading_az": "Anha şam həm sup mixorənd, həm sibzəminiye sorxkərde.",
-                    "full_translation_az": "Onlar şam yeməyində həm şorba, həm də qızardılmış kartof yeyirlər.",
+                    "correct_answer": "هم … هم", "reading_az": "həm … həm", "az": "həm … həm",
+                    "full_reading_az": "Anha şam həm sup mixorənd, həm sibzəminiye sorx-kərde.",
+                    "full_translation_az": "Onlar axşam həm şorba, həm qızardılmış kartof yeyirlər. — hər ikisini təsdiq edir.",
                 },
                 {
                     "fa_with_blank": "من ___ با اتوبوس مسافرت می‌کنم، ___ با قطار.",
-                    "correct_answer": "نه",
-                    "reading_az": "nə",
-                    "az": "nə",
-                    "full_reading_az": "Mən nə ba otobus mosaferət mikonəm, nə ba qətar.",
-                    "full_translation_az": "Mən nə avtobusla, nə də qatarla səyahət edirəm.",
+                    "correct_answer": "نه", "reading_az": "nə", "az": "nə … nə",
+                    "full_reading_az": "Mən nə ba otobus mosaferət mikonəm, nə ba qatar.",
+                    "full_translation_az": "Mən nə avtobusla səyahət edirəm, nə qatarla.",
                 },
             ],
         },
         {
-            "kind": "practice_reveal",
-            "instruction_az": "Saatı «به» ilə deyin: «ساعت، دو و چهل دقیقه است. = ساعت، بیست دقیقه به سه است.»",
+            # Çalışma 5 — «هم» ilə cümlə qurmaq.
+            # Əvvəllər sadə practice_reveal idi.
+            "kind": "answer_question",
+            "title_fa": "با واژه‌ی «هم» جمله بسازید",
+            "instruction_az": "«هم» ilə cümlə qurun (eyni işi başqası da edir)",
+            "example_fa": (
+                "من / چلوکباب / خوردن / برادرم\n"
+                "من چلوکباب می‌خورم؛ برادرم *هم* چلوکباب می‌خورد."
+            ),
+            "example_reading_az": (
+                "Mən / çelokəbab / xordən / bəradərəm\n"
+                "Mən çelokəbab mixorəm; bəradərəm həm çelokəbab mixorəd."
+            ),
+            "example_az": (
+                "Verilən sözlər: 1-ci SUBYEKT / ƏŞYA / MƏSDƏR / 2-ci SUBYEKT.\n"
+                "Quruluş: SUBYEKT1 + ... + FEL؛ SUBYEKT2 + هم + eyni cümlə.\n"
+                "Yaşıl «هم» («də/da») subyektdən SONRA gəlir — Azərbaycan dilindəki kimi.\n"
+                "Fel hər iki hissədə öz şəxsinə görə hallanır: می‌خورم / می‌خورد.\n"
+                "Tərcümə: Mən çelovkabab yeyirəm; qardaşım da çelovkabab yeyir."
+            ),
             "items": [
-                {"prompt_fa": "۸:۴۵", "answer_fa": "ساعت، یک ربع به نه است.", "reading_az": "Saət, yek robe be no əst.", "az": "Saat doqquza bir rübə (on beş dəqiqəyə) qalıb."},
-                {"prompt_fa": "۱۱:۵۵", "answer_fa": "ساعت، پنج دقیقه به دوازده است.", "reading_az": "Saət, pənc dəqiqe be davazdəh əst.", "az": "Saat on ikiyə beş dəqiqə qalıb."},
-                {"prompt_fa": "۳:۵۰", "answer_fa": "ساعت، ده دقیقه به چهار است.", "reading_az": "Saət, dəh dəqiqe be çəhar əst.", "az": "Saat dördə on dəqiqə qalıb."},
-                {"prompt_fa": "۶:۴۰", "answer_fa": "ساعت، بیست دقیقه به هفت است.", "reading_az": "Saət, bist dəqiqe be həft əst.", "az": "Saat yeddiyə iyirmi dəqiqə qalıb."},
+                {"fa": "آن‌ها / درس فارسی / خواندن / ما", "reading_az": "Anha / dərse farsi / xandən / ma", "az": "onlar / fars dili dərsi / oxumaq / biz",
+                 "sample_answer_fa": "آن‌ها درس فارسی می‌خوانند؛ ما هم درس فارسی می‌خوانیم.",
+                 "sample_answer_reading_az": "Anha dərse farsi mixanənd; ma həm dərse farsi mixanim.",
+                 "sample_answer_az": "Onlar fars dili oxuyurlar; biz də fars dili oxuyuruq."},
+                {"fa": "نرگس / سیب‌زمینی / سرخ کردن / مادرم", "reading_az": "Nərges / sibzəmini / sorx kərdən / madərəm", "az": "Nərgiz / kartof / qızartmaq / anam",
+                 "sample_answer_fa": "نرگس سیب‌زمینی سرخ می‌کند؛ مادرم هم سیب‌زمینی سرخ می‌کند.",
+                 "sample_answer_reading_az": "Nərges sibzəmini sorx mikonəd; madərəm həm sibzəmini sorx mikonəd.",
+                 "sample_answer_az": "Nərgiz kartof qızardır; anam da kartof qızardır."},
+                {"fa": "زهرا / روغن مایع / استفاده کردن / لیلا", "reading_az": "Zəhra / roğəne maye / estefade kərdən / Leyla", "az": "Zəhra / maye yağ / istifadə etmək / Leyla",
+                 "sample_answer_fa": "زهرا از روغن مایع استفاده می‌کند؛ لیلا هم از روغن مایع استفاده می‌کند.",
+                 "sample_answer_reading_az": "Zəhra əz roğəne maye estefade mikonəd; Leyla həm əz roğəne maye estefade mikonəd.",
+                 "sample_answer_az": "Zəhra maye yağdan istifadə edir; Leyla da maye yağdan istifadə edir."},
+                {"fa": "من / سیب‌زمینی / پوست کندن / همسرم", "reading_az": "Mən / sibzəmini / pust kəndən / həmsərəm", "az": "mən / kartof / soymaq / həyat yoldaşım",
+                 "sample_answer_fa": "من سیب‌زمینی پوست می‌کنم؛ همسرم هم سیب‌زمینی پوست می‌کند.",
+                 "sample_answer_reading_az": "Mən sibzəmini pust mikonəm; həmsərəm həm sibzəmini pust mikonəd.",
+                 "sample_answer_az": "Mən kartof soyuram; həyat yoldaşım da kartof soyur."},
             ],
         },
         {
-            "kind": "practice_reveal",
-            "instruction_az": "Nümunə kimi cümlə qurun: «من / چلوکباب / خوردن / برادرم → من چلوکباب می‌خورم؛ برادرم هم چلوکباب می‌خورد.»",
+            # Çalışma 6 — «هم … هم» / «نه … نه» ilə cümlə qurmaq.
+            # Əvvəllər sadə practice_reveal idi.
+            "kind": "answer_question",
+            "title_fa": "با «هم … هم» و «نه … نه» جمله بسازید",
+            "instruction_az": "Mötərizədə göstərilən qəliblə cümlə qurun",
+            # Yaşıl «هم … هم» — hər ikisi, qırmızı «نه … نه» — heç biri.
+            "example_fa": (
+                "(هم … هم) من / امشب / سوپ و سالاد / خوردن\n"
+                "من امشب *هم* سوپ می‌خورم، *هم* سالاد.\n"
+                "(نه … نه) من امشب **نه** سوپ می‌خورم، **نه** سالاد."
+            ),
+            "example_reading_az": (
+                "Mən emşəb həm sup mixorəm, həm salad.\n"
+                "Mən emşəb nə sup mixorəm, nə salad."
+            ),
+            "example_az": (
+                "Verilən sözlər: QƏLİB / SUBYEKT / VAXT / İKİ ƏŞYA / MƏSDƏR.\n"
+                "Yaşıl «هم … هم» hər ikisini TƏSDİQ edir; fel MÜSBƏT formada qalır.\n"
+                "Qırmızı «نه … نه» hər ikisini İNKAR edir, amma fel yenə MÜSBƏT formada olur — "
+                "inkarı «نه» sözü daşıyır, felə «نـ» əlavə edilmir.\n"
+                "Diqqət: «نه سوپ نمی‌خورم» ✗ — «نه سوپ می‌خورم» ✓\n"
+                "Vaxt zərfi keçmişdirsə fel də keçmiş olur: نه پالتو پوشیدند، نه کاپشن."
+            ),
             "items": [
-                {"prompt_fa": "آن‌ها / درس فارسی / خواندن / ما", "answer_fa": "آن‌ها درس فارسی می‌خوانند؛ ما هم درس فارسی می‌خوانیم.", "reading_az": "Anha dərse farsi mixanənd; ma həm dərse farsi mixanim.", "az": "Onlar fars dili dərsi oxuyurlar; biz də fars dili dərsi oxuyuruq."},
-                {"prompt_fa": "نرگس / سیب‌زمینی سرخ‌کردن / مادرم", "answer_fa": "نرگس سیب‌زمینی سرخ می‌کند؛ مادرم هم سیب‌زمینی سرخ می‌کند.", "reading_az": "Nərges sibzəmini sorx mikonəd; madərəm həm sibzəmini sorx mikonəd.", "az": "Nərgiz kartof qızardır; anam da kartof qızardır."},
-                {"prompt_fa": "زهرا / روغن مایع / استفاده کردن / لیلا", "answer_fa": "زهرا روغن مایع استفاده می‌کند؛ لیلا هم روغن مایع استفاده می‌کند.", "reading_az": "Zəhra rouğəne maye estefade mikonəd; Leyla həm rouğəne maye estefade mikonəd.", "az": "Zəhra maye yağ istifadə edir; Leyla da maye yağ istifadə edir."},
-                {"prompt_fa": "من / سیب‌زمینی پوست‌کندن / همسرم", "answer_fa": "من سیب‌زمینی پوست می‌کنم؛ همسرم هم سیب‌زمینی پوست می‌کند.", "reading_az": "Mən sibzəmini pust mikonəm; həmsərəm həm sibzəmini pust mikonəd.", "az": "Mən kartof soyuram; həyat yoldaşım da kartof soyur."},
+                {"fa": "(نه … نه) آن‌ها / دیروز / پالتو و کاپشن / پوشیدن", "reading_az": "Anha / diruz / palto va kapşen / puşidən", "az": "onlar / dünən / palto və gödəkcə / geyinmək",
+                 "sample_answer_fa": "آن‌ها دیروز نه پالتو پوشیدند، نه کاپشن.",
+                 "sample_answer_reading_az": "Anha diruz nə palto puşidənd, nə kapşen.",
+                 "sample_answer_az": "Onlar dünən nə palto geyindilər, nə gödəkcə."},
+                {"fa": "(هم … هم) او / امشب / سیب‌زمینی و پیاز / پوست کندن", "reading_az": "U / emşəb / sibzəmini va piyaz / pust kəndən", "az": "o / bu gecə / kartof və soğan / soymaq",
+                 "sample_answer_fa": "او امشب هم سیب‌زمینی پوست می‌کند، هم پیاز.",
+                 "sample_answer_reading_az": "U emşəb həm sibzəmini pust mikonəd, həm piyaz.",
+                 "sample_answer_az": "O, bu gecə həm kartof soyur, həm soğan."},
+                {"fa": "(هم … هم) ما / فردا / مرغ و ماهی / پختن", "reading_az": "Ma / færda / morğ va mahi / poxtən", "az": "biz / sabah / toyuq və balıq / bişirmək",
+                 "sample_answer_fa": "ما فردا هم مرغ می‌پزیم، هم ماهی.",
+                 "sample_answer_reading_az": "Ma færda həm morğ mipəzim, həm mahi.",
+                 "sample_answer_az": "Biz sabah həm toyuq bişiririk, həm balıq."},
+                {"fa": "(نه … نه) مادرم / دیشب / چلومرغ و چلوکباب / درست کردن", "reading_az": "Madərəm / dişəb / çelomorğ va çelokəbab / dorost kərdən", "az": "anam / dünən gecə / çelovtoyuq və çelovkabab / hazırlamaq",
+                 "sample_answer_fa": "مادرم دیشب نه چلومرغ درست کرد، نه چلوکباب.",
+                 "sample_answer_reading_az": "Madərəm dişəb nə çelomorğ dorost kərd, nə çelokəbab.",
+                 "sample_answer_az": "Anam dünən gecə nə çelovtoyuq hazırladı, nə çelovkabab."},
             ],
         },
         {
-            "kind": "practice_reveal",
-            "instruction_az": "Nümunə kimi cümlə qurun, hər dəfə göstərilən «هم ... هم» və ya «نه ... نه» qəlibini işlədin: «احمد / دیشب / شام و میوه / خوردن (نه...نه) → احمد دیشب نه شام خورد، نه میوه.»",
+            # Çalışma 7 — «درست کردن» ilə yemək cümlələri (zaman uyğunluğu).
+            # Əvvəllər sadə practice_reveal idi.
+            "kind": "answer_question",
+            "title_fa": "مانند مثال جمله بسازید — «درست کردن»",
+            "instruction_az": "Nümunə kimi cümlə qurun (zaman zərfinə uyğun fel seçin)",
+            "example_fa": "مادرم / امروز / چلومرغ\nمادرم امروز برای ناهار، چلومرغ *درست می‌کند*.",
+            "example_reading_az": "Madərəm / emruz / çelomorğ\nMadərəm emruz bəraye nahar, çelomorğ dorost mikonəd.",
+            "example_az": (
+                "Verilən sözlər: SUBYEKT / VAXT / YEMƏK.\n"
+                "Quruluş: SUBYEKT + VAXT + YEMƏK + درست می‌کند / درست کرد.\n"
+                "Fel zamanı VAXT ZƏRFİnə görə seçilir:\n"
+                "امروز، امشب، فردا → «درست می‌کند» (indiki-gələcək)\n"
+                "دیروز، دیشب، سه ساعت قبل → «درست کرد» (keçmiş)\n"
+                "Tərcümə: Anam bu gün nahar üçün çelovtoyuq hazırlayır."
+            ),
             "items": [
-                {"prompt_fa": "(نه ... نه) آن‌ها / دیروز / پالتو و کاپشن / پوشیدن", "answer_fa": "آن‌ها دیروز نه پالتو پوشیدند، نه کاپشن.", "reading_az": "Anha diruz nə palto pušidənd, nə kapşən.", "az": "Onlar dünən nə palto, nə də kurtka geyindilər."},
-                {"prompt_fa": "(هم ... هم) او / امشب / سیب‌زمینی و پیاز / پوست‌کندن", "answer_fa": "او امشب هم سیب‌زمینی پوست می‌کند، هم پیاز.", "reading_az": "U əmşəb həm sibzəmini pust mikonəd, həm piyaz.", "az": "O bu axşam həm kartofu, həm də soğanı soyur."},
-                {"prompt_fa": "(هم ... هم) ما / فردا / مرغ و ماهی / پختن", "answer_fa": "ما فردا هم مرغ می‌پزیم، هم ماهی.", "reading_az": "Ma fərda həm morğ mipəzim, həm mahi.", "az": "Biz sabah həm toyuq, həm də balıq bişiririk."},
-                {"prompt_fa": "(نه ... نه) مادرم / دیشب / چلومرغ و چلوکباب / درست‌کردن", "answer_fa": "مادرم دیشب نه چلومرغ درست کرد، نه چلوکباب.", "reading_az": "Madərəm dişəb nə çelomorğ dorost kərd, nə çelokəbab.", "az": "Anam dünən gecə nə toyuqlu plov, nə də kabablı plov hazırladı."},
+                {"fa": "خواهرم / امشب / ماکارونی", "reading_az": "Xahərəm / emşəb / makaroni", "az": "bacım / bu gecə / makaron",
+                 "sample_answer_fa": "خواهرم امشب ماکارونی درست می‌کند.", "sample_answer_reading_az": "Xahərəm emşəb makaroni dorost mikonəd.",
+                 "sample_answer_az": "Bacım bu gecə makaron hazırlayır."},
+                {"fa": "مادربزرگم / دیروز / چلوخورش", "reading_az": "Madərbozorgəm / diruz / çeloxoreş", "az": "nənəm / dünən / çelovxörək",
+                 "sample_answer_fa": "مادربزرگم دیروز چلوخورش درست کرد.", "sample_answer_reading_az": "Madərbozorgəm diruz çeloxoreş dorost kərd.",
+                 "sample_answer_az": "Nənəm dünən çelovxörək hazırladı. (keçmiş zərf → keçmiş fel)"},
+                {"fa": "آن‌ها / فردا / تخم‌مرغ آب‌پز", "reading_az": "Anha / færda / toxmemorğe abpəz", "az": "onlar / sabah / bişmiş yumurta",
+                 "sample_answer_fa": "آن‌ها فردا تخم‌مرغ آب‌پز درست می‌کنند.", "sample_answer_reading_az": "Anha færda toxmemorğe abpəz dorost mikonənd.",
+                 "sample_answer_az": "Onlar sabah bişmiş yumurta hazırlayırlar."},
+                {"fa": "برادرزاده‌ام فاطمه / دیشب / ماهی", "reading_az": "Bəradərzadeəm Fateme / dişəb / mahi", "az": "qardaşım qızı Fatimə / dünən gecə / balıq",
+                 "sample_answer_fa": "برادرزاده‌ام فاطمه دیشب ماهی درست کرد.", "sample_answer_reading_az": "Bəradərzadeəm Fateme dişəb mahi dorost kərd.",
+                 "sample_answer_az": "Qardaşımın qızı Fatimə dünən gecə balıq hazırladı."},
+                {"fa": "من / فردا شب / سالاد", "reading_az": "Mən / færda şəb / salad", "az": "mən / sabah axşam / salat",
+                 "sample_answer_fa": "من فردا شب سالاد درست می‌کنم.", "sample_answer_reading_az": "Mən færda şəb salad dorost mikonəm.",
+                 "sample_answer_az": "Mən sabah axşam salat hazırlayıram."},
+                {"fa": "دوستم / سه ساعت قبل / نیم‌رو", "reading_az": "Dustəm / se saət qəbl / nimru", "az": "dostum / üç saat əvvəl / qayğanaq",
+                 "sample_answer_fa": "دوستم سه ساعت قبل نیم‌رو درست کرد.", "sample_answer_reading_az": "Dustəm se saət qəbl nimru dorost kərd.",
+                 "sample_answer_az": "Dostum üç saat əvvəl qayğanaq hazırladı."},
             ],
         },
         {
-            "kind": "practice_reveal",
-            "instruction_az": "Vaxtı soruşub cavab verin: «شما امشب چند ساعت شام می‌خورید؟ ما امشب، بیست دقیقه به نه شام می‌خوریم.»",
+            # Çalışma 8 — səh. 194 «مانند نمونه جمله بگویید» («بیشتر وقت‌ها»).
+            # Əvvəllər sadə practice_reveal idi.
+            "kind": "answer_question",
+            "title_fa": "مانند نمونه جمله بگویید — «بیشتر وقت‌ها»",
+            "instruction_az": "Nümunə kimi cümlə qurun («بیشتر وقت‌ها» — çox vaxt)",
+            "example_fa": (
+                "من / پدر و مادرم / مسافرت\n"
+                "من *بیشتر وقت‌ها* با پدر و مادرم به مسافرت می‌روم."
+            ),
+            "example_reading_az": (
+                "Mən / pedər va madərəm / mosaferət\n"
+                "Mən biştəre vəqtha ba pedər va madərəm be mosaferət mirəvəm."
+            ),
+            "example_az": (
+                "Verilən sözlər: SUBYEKT / VASİTƏ və ya YER / İŞ.\n"
+                "Quruluş: SUBYEKT + بیشتر وقت‌ها + با/در + … + FEL.\n"
+                "Yaşıl «بیشتر وقت‌ها» («çox vaxt, əksər hallarda») subyektdən sonra gəlir.\n"
+                "Vasitə üçün «با», yer üçün «در» işlənir: با هواپیما، در مزرعه.\n"
+                "Tərcümə: Mən çox vaxt ata-anamla səyahətə gedirəm."
+            ),
             "items": [
-                {"prompt_fa": "آن‌ها / دیشب / میوه خوردن / یازده و ربع", "answer_fa": "آن‌ها دیشب، ساعتِ چند میوه خوردند؟ آن‌ها دیشب، یازده و ربع میوه خوردند.", "reading_az": "Anha dişəb, saəte çənd mive xordənd? Anha dişəb, yazdəh-o-robe mive xordənd.", "az": "Onlar dünən gecə saat neçədə meyvə yedilər? Onlar dünən gecə on birə on beş dəqiqə işləmiş meyvə yedilər."},
-                {"prompt_fa": "شما / امروز / ناهار خوردن / یک و نیم", "answer_fa": "شما امروز، ساعتِ چند ناهار می‌خورید؟ ما امروز، یک و نیم ناهار می‌خوریم.", "reading_az": "Şoma emruz, saəte çənd nahar mixorid? Ma emruz, yek-o-nim nahar mixorim.", "az": "Siz bu gün saat neçədə nahar yeyirsiniz? Biz bu gün saat bir yarımda nahar yeyirik."},
-                {"prompt_fa": "شما / دیروز / خانه برگشتن / پنج به هفت", "answer_fa": "شما دیروز، ساعتِ چند به خانه برگشتید؟ ما دیروز، پنج دقیقه به هفت برگشتیم.", "reading_az": "Şoma diruz, saəte çənd be xane bərgəştid? Ma diruz, pənc dəqiqe be həft bərgəştim.", "az": "Siz dünən saat neçədə evə qayıtdınız? Biz dünən saat yeddiyə beş dəqiqə qalmış qayıtdıq."},
-                {"prompt_fa": "ریحانه / دیشب / پذیرایی‌کردنِ دوستانش / هشت و ده دقیقه", "answer_fa": "ریحانه دیشب، ساعتِ چند دوستانش را پذیرایی کرد؟ او دیشب، هشت و ده دقیقه دوستانش را پذیرایی کرد.", "reading_az": "Reyhane dişəb, saəte çənd dustanəş ra pəzirayi kərd? U dişəb, həşt-o-dəh dəqiqe dustanəş ra pəzirayi kərd.", "az": "Reyhanə dünən gecə dostlarını saat neçədə qarşıladı? O, dünən gecə saat səkkiz on dəqiqədə dostlarını qarşıladı."},
+                {"fa": "پدر حسین / هواپیما / سفر", "reading_az": "Pedəre Hoseyn / həvapeyma / səfər", "az": "Hüseynin atası / təyyarə / səfər",
+                 "sample_answer_fa": "پدر حسین بیشتر وقت‌ها با هواپیما سفر می‌کند.",
+                 "sample_answer_reading_az": "Pedəre Hoseyn biştəre vəqtha ba həvapeyma səfər mikonəd.",
+                 "sample_answer_az": "Hüseynin atası çox vaxt təyyarə ilə səfər edir."},
+                {"fa": "کشاورزان / مزرعه / کار", "reading_az": "Keşavərzan / məzrəe / kar", "az": "əkinçilər / tarla / iş",
+                 "sample_answer_fa": "کشاورزان بیشتر وقت‌ها در مزرعه کار می‌کنند.",
+                 "sample_answer_reading_az": "Keşavərzan biştəre vəqtha dər məzrəe kar mikonənd.",
+                 "sample_answer_az": "Əkinçilər çox vaxt tarlada işləyirlər."},
+                {"fa": "ما / بعدازظهر / استراحت", "reading_az": "Ma / bə'dəzzohr / esterahət", "az": "biz / günortadan sonra / istirahət",
+                 "sample_answer_fa": "ما بیشتر وقت‌ها بعدازظهر استراحت می‌کنیم.",
+                 "sample_answer_reading_az": "Ma biştəre vəqtha bə'dəzzohr esterahət mikonim.",
+                 "sample_answer_az": "Biz çox vaxt günortadan sonra istirahət edirik."},
+                {"fa": "در زمستان / برف و باران / باریدن", "reading_az": "Dər zemestan / bərf va baran / baridən", "az": "qışda / qar və yağış / yağmaq",
+                 "sample_answer_fa": "در زمستان بیشتر وقت‌ها برف و باران می‌بارد.",
+                 "sample_answer_reading_az": "Dər zemestan biştəre vəqtha bərf va baran mibarəd.",
+                 "sample_answer_az": "Qışda çox vaxt qar və yağış yağır."},
             ],
         },
         {
-            "kind": "practice_reveal",
-            "instruction_az": "Nümunə kimi cümlə qurun: «مادرم امروز برای ناهار، چلومرغ درست می‌کند.»",
+            # Çalışma 9 — səh. 194 «کامل کنید». Hər cümlədə İKİ boşluq var
+            # (ön qoşma + fel), ona görə multi_blank quruluşu.
+            "kind": "multi_blank",
+            "title_fa": "کامل کنید",
+            "instruction_az": "Ön qoşma və feli söz bankından seçib tamamlayın",
+            "example_fa": "او دیشب ___ مهمان‌ها پذیرایی ___ .\nاو دیشب **از** مهمان‌ها پذیرایی *کرد*.",
+            "example_reading_az": "U dişəb əz mehmanha pəziraiy kərd.",
+            "example_az": (
+                "O, dünən gecə qonaqları qarşıladı (ağırladı).\n"
+                "Bəzi mürəkkəb fellər sabit ön qoşma tələb edir:\n"
+                "پذیرایی کردن + از / تشکّر کردن + از / پهن کردن + را / پوست کندن + را / دعوت کردن + را … به"
+            ),
+            # 10 boşluq = 10 çip.
+            "word_bank": [
+                "از", "کرد", "از", "کردیم", "کند",
+                "کرد", "را", "می‌کنیم", "را", "نداریم",
+            ],
             "items": [
-                {"prompt_fa": "خواهرم / امشب / ماکارونی", "answer_fa": "خواهرم امشب ماکارونی درست می‌کند.", "reading_az": "Xahərəm əmşəb makaroni dorost mikonəd.", "az": "Bacım bu axşam makaron hazırlayır."},
-                {"prompt_fa": "مادربزرگم / دیروز / چلوخورش", "answer_fa": "مادربزرگم دیروز چلوخورش درست کرد.", "reading_az": "Madərbozorgəm diruz çeloxoreş dorost kərd.", "az": "Nənəm dünən plov-xörəşt hazırladı."},
-                {"prompt_fa": "آن‌ها / فردا / تخم‌مرغ آب‌پز", "answer_fa": "آن‌ها فردا تخم‌مرغ آب‌پز درست می‌کنند.", "reading_az": "Anha fərda toxme-morğe abpəz dorost mikonənd.", "az": "Onlar sabah bişmiş yumurta hazırlayacaqlar."},
-                {"prompt_fa": "برادرزاده‌ام فاطمه / دیشب / ماهی", "answer_fa": "برادرزاده‌ام فاطمه دیشب ماهی درست کرد.", "reading_az": "Bəradərzadeəm Fateme dişəb mahi dorost kərd.", "az": "Qardaşımın qızı Fatimə dünən gecə balıq hazırladı."},
-                {"prompt_fa": "من / فردا شب / سالاد", "answer_fa": "من فردا شب سالاد درست می‌کنم.", "reading_az": "Mən fərdaşəb salad dorost mikonəm.", "az": "Mən sabah gecə salat hazırlayıram."},
-                {"prompt_fa": "دوستم / سه ساعت قبل / نیم‌رو", "answer_fa": "دوستم سه ساعت قبل نیم‌رو درست کرد.", "reading_az": "Dustəm se saət qəbl nimru dorost kərd.", "az": "Dostum üç saat əvvəl qayğanaq hazırladı."},
+                {
+                    "fa_with_blanks": "او دیشب با میوه و شام ___ مهمان‌ها پذیرایی ___ .",
+                    "correct_answers": ["از", "کرد"],
+                    "full_reading_az": "U dişəb ba mive va şam əz mehmanha pəziraiy kərd.",
+                    "full_translation_az": "O, dünən gecə meyvə və şam yeməyi ilə qonaqları ağırladı. — «پذیرایی کردن» həmişə «از» ilə.",
+                },
+                {
+                    "fa_with_blanks": "من و هم‌کلاسی‌هایم امروز ___ استادمان تشکّر ___ .",
+                    "correct_answers": ["از", "کردیم"],
+                    "full_reading_az": "Mən va həmkelasihayəm emruz əz ostademan təşəkkor kərdim.",
+                    "full_translation_az": "Mən və sinif yoldaşlarım bu gün müəllimimizə təşəkkür etdik. — «تشکّر کردن» də «از» ilə.",
+                },
+                {
+                    "fa_with_blanks": "آشپز سیب‌زمینی‌ها را پوست ___ و در ماهی‌تابه سرخ ___ .",
+                    "correct_answers": ["کند", "کرد"],
+                    "full_reading_az": "Aşpəz sibzəminiha ra pust kənd va dər mahitabe sorx kərd.",
+                    "full_translation_az": "Aşpaz kartofları soydu və tavada qızartdı. — «پوست کندن» keçmişi «کند».",
+                },
+                {
+                    "fa_with_blanks": "من و خواهرم هر شب سفره‌ی شام ___ پهن ___ .",
+                    "correct_answers": ["را", "می‌کنیم"],
+                    "full_reading_az": "Mən va xahərəm hər şəb sofre-ye şam ra pəhn mikonim.",
+                    "full_translation_az": "Mən və bacım hər axşam süfrəni açırıq. — «هر شب» təkrarlanan iş, indiki zaman.",
+                },
+                {
+                    "fa_with_blanks": "ما تنها غذا خوردن ___ دوست ___ .",
+                    "correct_answers": ["را", "نداریم"],
+                    "full_reading_az": "Ma tənha qəza xordən ra dust nədarim.",
+                    "full_translation_az": "Biz tək yemək yeməyi sevmirik. — «دوست داشتن» obyektlə «را» tələb edir.",
+                },
             ],
         },
         {
-            "kind": "practice_reveal",
-            "instruction_az": "Uyğun sual qurun (verilən cavaba görə).",
+            # Çalışma 10 — səh. 194 «مانند نمونه بپرسید و پاسخ دهید» (saatlı).
+            # Dərslikdə hər bəndin öz saat şəkli var.
+            "kind": "picture_sentences",
+            "title_fa": "مانند نمونه بپرسید و پاسخ دهید",
+            "instruction_az": "Nümunə kimi soruşun və cavab verin («ساعتِ چند …؟»)",
+            "example_fa": "شما امشب، ساعتِ چند شام می‌خورید؟",
+            "example_reading_az": "Şoma emşəb, saəte çənd şam mixorid?",
+            "example_az": "Siz bu gecə saat neçədə şam yeyirsiniz? (شما / امشب / شام / خوردن)",
+            "example_answer_fa": "ما امشب، بیست دقیقه به نه شام می‌خوریم.",
+            "example_answer_reading_az": "Ma emşəb, bist dəqiqe be noh şam mixorim.",
+            "example_answer_az": "Biz bu gecə doqquza iyirmi dəqiqə qalmış şam yeyirik.",
             "items": [
-                {"prompt_fa": "ساعت، دوازده دقیقه به هفت است.", "answer_fa": "ساعت چند است؟", "reading_az": "Saət çənd əst?", "az": "Saat neçədir?"},
-                {"prompt_fa": "امروز، ساعتِ پنج و نیم صبح بیدار شدم.", "answer_fa": "شما ساعتِ چند صبح بیدار شدید؟", "reading_az": "Şoma saəte çənd sobh bidar şodid?", "az": "Siz səhər saat neçədə oyandınız?"},
-                {"prompt_fa": "من و دوستانم هر روز یک ساعت قرآن می‌خوانیم.", "answer_fa": "شما هر روز چند ساعت قرآن می‌خوانید؟", "reading_az": "Şoma hər ruz çənd saət Qoran mixanid?", "az": "Siz hər gün neçə saat Quran oxuyursunuz?"},
-                {"prompt_fa": "پدرم امروز ساعت چهار و بیست دقیقه به خانه آمد.", "answer_fa": "پدرتان ساعتِ چند به خانه آمد؟", "reading_az": "Pedəretan saəte çənd be xane aməd?", "az": "Atanız saat neçədə evə gəldi?"},
-                {"prompt_fa": "آشپزها هر روز نیم‌ساعت سیب‌زمینی پوست می‌کنند.", "answer_fa": "آشپزها هر روز چند ساعت سیب‌زمینی پوست می‌کنند؟", "reading_az": "Aşpəzha hər ruz çənd saət sibzəmini pust mikonənd?", "az": "Aşpazlar hər gün neçə saat kartof təmizləyirlər?"},
-            ],
-        },
-        {
-            "kind": "practice_reveal",
-            "instruction_az": "Nümunə kimi cümlə qurun: «من / پدر و مادرم / مسافرت → من بیشتر وقت‌ها با پدر و مادرم به مسافرت می‌روم.»",
-            "items": [
-                {"prompt_fa": "پدر حسین / هواپیما / سفر", "answer_fa": "پدر حسین بیشتر وقت‌ها با هواپیما سفر می‌کند.", "reading_az": "Pedəre Hoseyn bişttəre vəqtha ba həvapeyma səfər mikonəd.", "az": "Hüseynin atası çox vaxt təyyarə ilə səyahət edir."},
-                {"prompt_fa": "کشاورزان / مزرعه / کار", "answer_fa": "کشاورزان بیشتر وقت‌ها در مزرعه کار می‌کنند.", "reading_az": "Keşavərzan bişttəre vəqtha dər məzree kar mikonənd.", "az": "Əkinçilər çox vaxt tarlada işləyirlər."},
-                {"prompt_fa": "ما / بعدازظهر / استراحت", "answer_fa": "ما بیشتر وقت‌ها بعدازظهر استراحت می‌کنیم.", "reading_az": "Ma bişttəre vəqtha bədəzzohr esterahət mikonim.", "az": "Biz çox vaxt günortadan sonra istirahət edirik."},
-                {"prompt_fa": "در زمستان / برف و باران / باریدن", "answer_fa": "در زمستان بیشتر وقت‌ها برف و باران می‌بارد.", "reading_az": "Dər zemestan bişttəre vəqtha bərf-o-baran mibarəd.", "az": "Qışda çox vaxt qar və yağış yağır."},
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "آن‌ها دیشب، ساعتِ چند میوه خوردند؟", "reading_az": "Anha dişəb, saəte çənd mive xordənd?", "az": "Onlar dünən gecə saat neçədə meyvə yedilər? (آن‌ها / دیشب / میوه / خوردن)"},
+                        {"fa": "آن‌ها دیشب، ساعتِ یازده و ربع میوه خوردند.", "reading_az": "Anha dişəb, saəte yazdəh o rob' mive xordənd.", "az": "Onlar dünən gecə saat on birin rübündə meyvə yedilər."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "شما امروز، ساعتِ چند ناهار می‌خورید؟", "reading_az": "Şoma emruz, saəte çənd nahar mixorid?", "az": "Siz bu gün saat neçədə nahar edirsiniz? (شما / امروز / ناهار / خوردن)"},
+                        {"fa": "ما امروز، ساعتِ یک و نیم ناهار می‌خوریم.", "reading_az": "Ma emruz, saəte yek o nim nahar mixorim.", "az": "Biz bu gün saat bir yarımda nahar edirik."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "شما دیروز، ساعتِ چند به خانه برگشتید؟", "reading_az": "Şoma diruz, saəte çənd be xane bərgəştid?", "az": "Siz dünən saat neçədə evə qayıtdınız? (شما / دیروز / خانه / برگشتن)"},
+                        {"fa": "ما دیروز، پنج دقیقه به هفت به خانه برگشتیم.", "reading_az": "Ma diruz, pənc dəqiqe be həft be xane bərgəştim.", "az": "Biz dünən yeddiyə beş dəqiqə qalmış evə qayıtdıq."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "ریحانه دیشب، ساعتِ چند از دوستانش پذیرایی کرد؟", "reading_az": "Reyhane dişəb, saəte çənd əz dustanəş pəziraiy kərd?", "az": "Reyhanə dünən gecə saat neçədə dostlarını qarşıladı? (ریحانه / دیشب / دوستانش / پذیرایی کردن)"},
+                        {"fa": "او دیشب، ساعتِ هشت و ده دقیقه از دوستانش پذیرایی کرد.", "reading_az": "U dişəb, saəte həşt o dəh dəqiqe əz dustanəş pəziraiy kərd.", "az": "O, dünən gecə saat səkkizi on dəqiqə keçmiş dostlarını ağırladı."},
+                    ],
+                },
             ],
         },
     ],

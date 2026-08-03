@@ -45,6 +45,21 @@ LESSON = {
         {"fa": "ویزیت", "reading": "vizit", "az": "Həkim müayinə haqqı"},
         {"fa": "تخفیف می‌دهد", "reading": "təxfif midəhəd", "az": "endirim edir"},
         {"fa": "علاقه دارد", "reading": "əlaqe darəd", "az": "maraq göstərir, sevir"},
+        # Səh. 233-dəki «واژه‌های خوانده شده» bölməsi.
+        {"fa": "بیمارستان", "reading": "bimarestan", "az": "Xəstəxana"},
+        {"fa": "بیمار", "reading": "bimar", "az": "Xəstə"},
+        {"fa": "مریض", "reading": "mariz", "az": "Xəstə"},
+        {"fa": "پزشک", "reading": "pezeşk", "az": "Həkim"},
+        {"fa": "دندان‌پزشک", "reading": "dandanpezeşk", "az": "Diş həkimi"},
+        {"fa": "پرستار", "reading": "pərəstar", "az": "Tibb bacısı"},
+        {"fa": "امدادگر", "reading": "əmdadgər", "az": "Təcili yardım əməkdaşı"},
+        {"fa": "دارو", "reading": "daru", "az": "Dərman"},
+        {"fa": "واکسن", "reading": "vaksən", "az": "Peyvənd"},
+        {"fa": "خون", "reading": "xun", "az": "Qan"},
+        {"fa": "معاینه می‌کند", "reading": "moayene mikonəd", "az": "Müayinə edir"},
+        {"fa": "نسخه می‌نویسد", "reading": "nosxe minevisəd", "az": "Resept yazır"},
+        {"fa": "اورژانس", "reading": "orjans", "az": "Təcili yardım şöbəsi"},
+        {"fa": "فوریت‌های پزشکی", "reading": "foriyyathaye pezeşki", "az": "Təcili tibbi yardım"},
     ],
     "grammar_notes": [
         {
@@ -416,6 +431,60 @@ LESSON = {
                     "reading_az": "Ma yek sal əst çeşmdərd darim.",
                     "az": "Bizim bir ildir ki, gözümüz ağrıyır.",
                 },
+            ],
+        },
+        {
+            # Səh. 235: «بفرمایید» sözünün şəkillərdəki müxtəlif nəzakət mənaları.
+            "kind": "answer_question",
+            "title_fa": "بفرمایید",
+            "instruction_az": "Vəziyyətə uyğun «بفرمایید» ilə qısa cavab deyin.",
+            "example_fa": "میزبان چای را به مهمان می‌دهد. ← بفرمایید.",
+            "example_reading_az": "Mizban çay ra be mehman midəhəd. — Bəfərmayid.",
+            "example_az": "Ev sahibi qonağa çay verir. — Buyurun.",
+            "items": [
+                {"fa": "کودک به مادربزرگش هدیه می‌دهد.", "reading_az": "Kudək be madərbozorgeş hədiye midəhəd.", "az": "Uşaq nənəsinə hədiyyə verir.", "sample_answer_fa": "بفرمایید.", "sample_answer_reading_az": "Bəfərmayid.", "sample_answer_az": "Buyurun, alın."},
+                {"fa": "معلم به دانش‌آموز اجازه می‌دهد وارد کلاس شود.", "reading_az": "Moəlləm be daneşamuz ecazeye vorud be kelas midəhəd.", "az": "Müəllim şagirdə sinfə girməyə icazə verir.", "sample_answer_fa": "بفرمایید.", "sample_answer_reading_az": "Bəfərmayid.", "sample_answer_az": "Buyurun, içəri keçin."},
+                {"fa": "منشی به بیمار می‌گوید وارد مطب شود.", "reading_az": "Mənşi be bimar miguyəd varede mətəb şəvəd.", "az": "Katibə xəstəyə kabinetə girməsini deyir.", "sample_answer_fa": "سلام، بفرمایید.", "sample_answer_reading_az": "Səlam, bəfərmayid.", "sample_answer_az": "Salam, buyurun."},
+                {"fa": "رانندهٔ تاکسی پول را به مسافر می‌دهد.", "reading_az": "Ranəndeye taksi pul ra be mosafer midəhəd.", "az": "Taksi sürücüsü pulu sərnişinə verir.", "sample_answer_fa": "بفرمایید.", "sample_answer_reading_az": "Bəfərmayid.", "sample_answer_az": "Buyurun, alın."},
+            ],
+        },
+        {
+            # Səh. 237: «... زدن» birləşmələri ilə boşluqları tamamlamaq.
+            "kind": "fill_blank",
+            "instruction_az": "Uyğun «... زدن» birləşməsini seçib boşluğu doldurun.",
+            "word_bank": ["رنگ می‌زنند", "اتو می‌زنم", "آمپول زد", "تلفن زد", "به هم زدم"],
+            "items": [
+                {"fa_with_blank": "رنگ‌کارها فردا دیوارهای مدرسه را ___ .", "correct_answer": "رنگ می‌زنند", "reading_az": "rəng mizənənd", "az": "rəngləyirlər", "full_reading_az": "Rəngkarha fərda divarhaye mədrəse ra rəng mizənənd.", "full_translation_az": "Rəngsazlar sabah məktəbin divarlarını rəngləyəcəklər."},
+                {"fa_with_blank": "پس از شستن لباس‌ها، پیراهنم را ___ .", "correct_answer": "اتو می‌زنم", "reading_az": "otu mizənəm", "az": "ütüləyirəm", "full_reading_az": "Pəs əz şostəne lebas-ha, pirahənəm ra otu mizənəm.", "full_translation_az": "Paltarları yuduqdan sonra köynəyimi ütüləyirəm."},
+                {"fa_with_blank": "دوستم علاوه‌بر خوردن کپسول و شربت، یک سرم و دو تا ___ .", "correct_answer": "آمپول زد", "reading_az": "ampul zad", "az": "iynə vurdurdu", "full_reading_az": "Dustəm əlave bər xordəne kapsul va şərbət, yek serom va do ta ampul zad.", "full_translation_az": "Dostum kapsul və şərbət içməklə yanaşı, serum və iki iynə də vurdurdu."},
+                {"fa_with_blank": "دیروز مریض بودم؛ دوستم به من ___ و حالم را پرسید.", "correct_answer": "تلفن زد", "reading_az": "telefon zad", "az": "telefon etdi", "full_reading_az": "Diruz mariz budəm; dustəm be mən telefon zad va haləm ra porsid.", "full_translation_az": "Dünən xəstə idim; dostum mənə telefon edib halımı soruşdu."},
+                {"fa_with_blank": "امروز صبحانه، مقداری شکر در شیر ریختم و با قاشق آن را ___ .", "correct_answer": "به هم زدم", "reading_az": "be həm zadəm", "az": "qarışdırdım", "full_reading_az": "Əmruz sobhane, məqdari şəkər dər şir rixtəm va ba qaşoq an ra be həm zadəm.", "full_translation_az": "Bu gün səhər yeməyində südün içinə şəkər tökdüm və qaşıqla qarışdırdım."},
+            ],
+        },
+        {
+            # Səh. 239: tarixlə verilən sözlərdən cümlə qurmaq.
+            "kind": "answer_question",
+            "title_fa": "تاریخ را بگویید",
+            "instruction_az": "Verilən sözlərdən tarixlə birlikdə tam cümlə qurun.",
+            "example_fa": "من / چشم‌درد / ۱۳۹۱/۱۲/۲۵ / بیمارستان ← من به خاطر چشم‌درد در تاریخ ۱۳۹۱/۱۲/۲۵ به بیمارستان می‌روم.",
+            "example_reading_az": "Mən / çeşmdərd / 1391/12/25 / bimarestan. — Mən be xatere çeşmdərd dər tarix 1391/12/25 be bimarestan mirəvəm.",
+            "example_az": "Mən göz ağrısına görə 1391/12/25 tarixində xəstəxanaya gedirəm.",
+            "items": [
+                {"fa": "آیت‌الله بهجت / ۱۳۸۸/۳/۲۷ / قم / از دنیا رفتن", "reading_az": "Ayətollah Behcət / 1388/3/27 / Qom / əz donya rəftən", "az": "Ayətullah Behcət / 1388/3/27 / Qum / vəfat etmək", "sample_answer_fa": "آیت‌الله بهجت در بیست‌وهفتمِ تیرِ هزار و سیصد و هشتاد و هشت در قم از دنیا رفت.", "sample_answer_reading_az": "Ayətollah Behcət dər bist-o-həftome tire hezar va sisəd va həştad va həşt dər Qom əz donya rəft.", "sample_answer_az": "Ayətullah Behcət 1388-ci il Tir ayının 27-də Qumda vəfat etdi."},
+                {"fa": "پدرم / ۱۳۹۰/۴/۱۶ / بیمارستان / بستری شدن", "reading_az": "Pedərəm / 1390/4/16 / bimarestan / bəstəri şodən", "az": "atam / 1390/4/16 / xəstəxana / yatızdırılmaq", "sample_answer_fa": "پدرم در شانزدهمِ تیرِ هزار و سیصد و نود در بیمارستان بستری شد.", "sample_answer_reading_az": "Pedərəm dər şanzdəhome tire hezar va sisəd va nəvad dər bimarestan bəstəri şod.", "sample_answer_az": "Atam 1390-cı il Tir ayının 16-da xəstəxanaya yatırıldı."},
+                {"fa": "من و دوستم / ۱۳۹۱/۲/۱۹ / آزمایش‌گاه / رفتن", "reading_az": "Mən va dustəm / 1391/2/19 / azmayeşgah / rəftən", "az": "mən və dostum / 1391/2/19 / laboratoriya / getmək", "sample_answer_fa": "من و دوستم در نوزدهمِ اردیبهشتِ هزار و سیصد و نود و یک به آزمایش‌گاه رفتیم.", "sample_answer_reading_az": "Mən va dustəm dər nozdəhome ordibeheşte hezar va sisəd va nəvad va yek be azmayeşgah rəftim.", "sample_answer_az": "Mən və dostum 1391-ci il Ordibeheşt ayının 19-da laboratoriyaya getdik."},
+            ],
+        },
+        {
+            # Səh. 242: oxu mətninə aid düzgün cavabı tapmaq.
+            "kind": "fill_blank",
+            "instruction_az": "Oxu mətninə əsasən uyğun sözü seçin.",
+            "word_bank": ["به", "با", "را", "می‌زنند", "می‌گیرد", "وجود دارد"],
+            "items": [
+                {"fa_with_blank": "بچّه‌ها پدر و مادرشان ___ بسیار دوست دارند.", "correct_answer": "را", "reading_az": "ra", "az": "təsirlik hal şəkilçisi", "full_reading_az": "Bəççeha pedər va madərəşan ra besyar dust darənd.", "full_translation_az": "Uşaqlar ata-analarını çox sevirlər."},
+                {"fa_with_blank": "کودکان بیمار ___ سمیّه‌خانم بسیار علاقه دارند.", "correct_answer": "به", "reading_az": "be", "az": "-a/-ə", "full_reading_az": "Kudəkane bimar be Səmiyyexanom besyar əlaqe darənd.", "full_translation_az": "Xəstə uşaqlar xanım Səmiyyəni çox sevirlər."},
+                {"fa_with_blank": "پرستارها با مهربانی زخم بیماران را می‌شویند و پماد ___ .", "correct_answer": "می‌زنند", "reading_az": "mizənənd", "az": "sürtürlər", "full_reading_az": "Pərəstarha ba mehrəbani zəxme bimaran ra mişuyənd va pəmad mizənənd.", "full_translation_az": "Tibb bacıları xəstələrin yarasını mehribanlıqla yuyur və məlhəm sürtürlər."},
+                {"fa_with_blank": "در داروخانهٔ کوثر، انواع داروها مانند قرص و کپسول ___ .", "correct_answer": "وجود دارد", "reading_az": "vocud darəd", "az": "var", "full_reading_az": "Dər daruxaneye Kousər, ənvaye daruha manənde qors va kapsul vocud darəd.", "full_translation_az": "Kovsər aptekində həb və kapsul kimi müxtəlif dərmanlar var."},
             ],
         },
     ],
