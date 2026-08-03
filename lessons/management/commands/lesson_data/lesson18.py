@@ -18,7 +18,7 @@ LESSON = {
         {"fa": "بغل می‌کند", "reading": "bəğəl mikonəd", "az": "qucaqlayır"},
         {"fa": "نوازش می‌کند", "reading": "nəvazəş mikonəd", "az": "sığallayır, əzizləyir"},
         {"fa": "می‌بوسد", "reading": "mibusəd", "az": "öpür"},
-        {"fa": "صحبت می‌کند", "reading": "sohbət mikonəd", "az": "danişır, söhbət edir"},
+        {"fa": "صحبت می‌کند", "reading": "sohbət mikonəd", "az": "danışır, söhbət edir"},
         {"fa": "به دنیا می‌آید", "reading": "be donya miayəd", "az": "dünyaya gəlir (doğulur)"},
         {"fa": "از دنیا می‌رود", "reading": "əz donya mirəvəd", "az": "dünyasını dəyişir (vəfat edir)"},
         {"fa": "نوزاد", "reading": "nouzad", "az": "Körpə, yeni doğulmuş uşaq"},
@@ -57,7 +57,7 @@ LESSON = {
         {"fa": "مچ", "reading": "moç", "az": "Bilək"},
         {"fa": "انگشت", "reading": "əngoşt", "az": "Barmaq"},
         {"fa": "ماهیچه (عضله)", "reading": "mahiçe (əzəle)", "az": "Əzələ"},
-        {"fa": "استخوان", "reading": "ostəxan", "az": "Sümük"},
+        {"fa": "استخوان", "reading": "ostoxan", "az": "Sümük"},
         {"fa": "قلب", "reading": "qəlb", "az": "Ürək"},
         {"fa": "پوست", "reading": "pust", "az": "Dəri"},
         {"fa": "اسکلت", "reading": "eskelet", "az": "Skelet"},
@@ -86,6 +86,39 @@ LESSON = {
         {"fa": "ریش / ریشه", "reading": "riş / rişe", "az": "Saqqal / Kök (ağac kökü)"},
         {"fa": "شاخ / شاخه", "reading": "şax / şaxe", "az": "Buynuz / Budaq (ağac budağı)"},
         {"fa": "مالِ", "reading": "male", "az": "...-ın, ...-in (sahiblik ifadəsi)"},
+        # Səh. 219 «واژه‌ها» siyahısındakı, əvvəl faylda çatışmayan sözlər.
+        {"fa": "قسمت", "reading": "qesmət", "az": "Hissə, bölmə"},
+        {"fa": "محکم", "reading": "mohkəm", "az": "Möhkəm"},
+        {"fa": "بهتر", "reading": "behtər", "az": "Daha yaxşı"},
+        {"fa": "طعم و مزه", "reading": "tə'm-o-məze", "az": "Dad və ləzzət"},
+        {"fa": "شور", "reading": "şur", "az": "Şor (duzlu)"},
+        {"fa": "تند", "reading": "tond", "az": "Acı (istiotlu) / sürətli"},
+        {"fa": "ترش", "reading": "torş", "az": "Turş"},
+        {"fa": "شیرین", "reading": "şirin", "az": "Şirin"},
+        {"fa": "احساس می‌کند", "reading": "ehsas mikonəd", "az": "hiss edir"},
+        {"fa": "حس می‌کند", "reading": "hes mikonəd", "az": "hiss edir (eyni məna)"},
+        {"fa": "نفس می‌کشد", "reading": "nəfəs mikeşəd", "az": "nəfəs alır"},
+        {"fa": "حرف می‌زند", "reading": "hərf mizənəd", "az": "danışır"},
+        {"fa": "راه می‌رود", "reading": "rah mirəvəd", "az": "yeriyir, gəzir"},
+        {"fa": "شانه می‌زند (شانه می‌کند)", "reading": "şane mizənəd (şane mikonəd)", "az": "darayır"},
+        {"fa": "کوتاه می‌کند", "reading": "kutah mikonəd", "az": "qısaldır"},
+        # Səh. 228-229 oxu mətnindəki sözlər.
+        {"fa": "گوشت", "reading": "quşt", "az": "Ət"},
+        {"fa": "خون", "reading": "xun", "az": "Qan"},
+        {"fa": "برخی (بعضی)", "reading": "bərxi (bə'zi)", "az": "Bəzi, bir qismi"},
+        {"fa": "به وسیله‌ی (با)", "reading": "be vəsileye (ba)", "az": "…vasitəsilə, ilə"},
+        {"fa": "گوناگون", "reading": "qunagun", "az": "Müxtəlif, rəngarəng"},
+        {"fa": "زردپوست", "reading": "zərdpust", "az": "Sarıdərili"},
+        {"fa": "سیاه‌پوست", "reading": "siyahpust", "az": "Qaradərili"},
+        {"fa": "سرخ‌پوست", "reading": "sorxpust", "az": "Qırmızıdərili"},
+        {"fa": "سفیدپوست", "reading": "sefidpust", "az": "Ağdərili"},
+        {"fa": "زبری", "reading": "zebri", "az": "Kobudluq, sərtlik"},
+        {"fa": "نرمی", "reading": "nərmi", "az": "Yumşaqlıq"},
+        {"fa": "گرمی / سردی", "reading": "gərmi / sərdi", "az": "İstilik / soyuqluq"},
+        {"fa": "ضعیف", "reading": "zəif", "az": "Zəif"},
+        {"fa": "عصا", "reading": "əsa", "az": "Əsa (dəyənək)"},
+        {"fa": "آرایشگاه", "reading": "arayeşgah", "az": "Bərbərxana, gözəllik salonu"},
+        {"fa": "مسواک می‌زند", "reading": "mesvak mizənəd", "az": "diş fırçalayır"},
     ],
     "grammar_notes": [
         {
@@ -215,8 +248,242 @@ LESSON = {
                 },
                 {
                     "fa": "آیا آن خانه‌ی زیبا مالِ عبّاس است؟ بله، آن خانه‌ی زیبا مالِ عبّاس است.",
-                    "reading_az": "Aya an xaneye ziba male Əbbaş əst? Bəle, an xaneye ziba male Əbbas əst.",
+                    "reading_az": "Aya an xaneye ziba male Əbbas əst? Bəle, an xaneye ziba male Əbbas əst.",
                     "az": "O gözəl ev Abbasındır? Bəli, o gözəl ev Abbasındır.",
+                },
+            ],
+        },
+        {
+            # Səh. 221 səhifə altındakı təsrif cədvəli.
+            "title_az": "İndiki zamanda təsrif: «بوسیدن»، «شنیدن»، «احترام گذاشتن»",
+            "title_fa": "بوسیدن؛ شنیدن؛ احترام گذاشتن",
+            "explanation_az": (
+                "Bu dərsdə üç fel indiki zamanda (حال) altı şəxs üzrə təsrif olunur.\n"
+                "Quruluş: می‌ + indiki zaman kökü + şəxs sonluğu.\n"
+                "1. بوسیدن (öpmək) — kök «بوس»: می‌بوسم، می‌بوسی، می‌بوسد، می‌بوسیم، می‌بوسید، می‌بوسند.\n"
+                "2. شنیدن (eşitmək) — kök «شنو»: می‌شنوم، می‌شنوی، می‌شنود، می‌شنویم، می‌شنوید، می‌شنوند.\n"
+                "3. احترام گذاشتن (hörmət etmək) — mürəkkəb feldir; yalnız köməkçi hissə (گذاشتن → گذار) təsriflənir, "
+                "ad hissəsi (احترام) dəyişmir: احترام می‌گذارم، احترام می‌گذاری، احترام می‌گذارد و s.\n"
+                "Diqqət: «احترام گذاشتن» həmişə «به» ilə işlənir — به استادم احترام می‌گذارم.\n"
+                "«بوسیدن» felinin əmr forması: ببوس (öp) / ببوسید (öpün)."
+            ),
+            "note_fa": (
+                "بوسیدن: می‌بوسم؛ می‌بوسی؛ می‌بوسد؛ می‌بوسیم؛ می‌بوسید؛ می‌بوسند\n"
+                "شنیدن: می‌شنوم؛ می‌شنوی؛ می‌شنود؛ می‌شنویم؛ می‌شنوید؛ می‌شنوند\n"
+                "احترام گذاشتن: احترام می‌گذارم؛ احترام می‌گذاری؛ احترام می‌گذارد؛ احترام می‌گذاریم؛ احترام می‌گذارید؛ احترام می‌گذارند\n"
+                "بوسیدن ← فعل امر: ببوس؛ ببوسید"
+            ),
+            "note_reading_az": (
+                "Busidən: mibusəm; mibusi; mibusəd; mibusim; mibusid; mibusənd\n"
+                "Şənidən: mişənəvəm; mişənəvi; mişənəvəd; mişənəvim; mişənəvid; mişənəvənd\n"
+                "Ehteram gozaştən: ehteram migozarəm; ehteram migozari; ehteram migozarəd; "
+                "ehteram migozarim; ehteram migozarid; ehteram migozarənd\n"
+                "Busidən ← fe'le əmr: bebus; bebusid"
+            ),
+            "note_az": (
+                "Üç felin indiki zaman təsrifi:\n"
+                "• بوسیدن — öpmək\n"
+                "• شنیدن — eşitmək\n"
+                "• احترام گذاشتن — hörmət etmək (mürəkkəb fel)\n"
+                "Əmr forması: ببوس (öp) / ببوسید (öpün)."
+            ),
+            "conjugations": [
+                {"pronoun_fa": "من", "form_fa": "می‌بوسم / می‌شنوم / احترام می‌گذارم"},
+                {"pronoun_fa": "تو", "form_fa": "می‌بوسی / می‌شنوی / احترام می‌گذاری"},
+                {"pronoun_fa": "او", "form_fa": "می‌بوسد / می‌شنود / احترام می‌گذارد"},
+                {"pronoun_fa": "ما", "form_fa": "می‌بوسیم / می‌شنویم / احترام می‌گذاریم"},
+                {"pronoun_fa": "شما", "form_fa": "می‌بوسید / می‌شنوید / احترام می‌گذارید"},
+                {"pronoun_fa": "آن‌ها", "form_fa": "می‌بوسند / می‌شنوند / احترام می‌گذارند"},
+            ],
+            "examples": [
+                {
+                    "fa": "من هر روز دست مادرم را می‌بوسم.",
+                    "reading_az": "Mən hər ruz dəste madərəm ra mibusəm.",
+                    "az": "Mən hər gün anamın əlini öpürəm.",
+                },
+                {
+                    "fa": "ما با گوش‌هایمان صدای پرنده‌ها را می‌شنویم.",
+                    "reading_az": "Ma ba guşhayeman sedaye pərəndeha ra mişənvim.",
+                    "az": "Biz qulaqlarımızla quşların səsini eşidirik.",
+                },
+                {
+                    "fa": "طلبه‌های این کلاس به استادهایشان احترام می‌گذارند.",
+                    "reading_az": "Tələbehaye in kelas be ostadhayeşan ehteram migozarənd.",
+                    "az": "Bu sinfin tələbələri müəllimlərinə hörmət edirlər.",
+                },
+                {
+                    "fa": "روز مادر به دیدن مادرتان بروید و دست ایشان را ببوسید.",
+                    "reading_az": "Ruze madər be didəne madərətan bərəvid va dəste işan ra bebusid.",
+                    "az": "Analar günündə ananızın görüşünə gedin və onun əlini öpün.",
+                },
+            ],
+        },
+        {
+            # Səh. 229 səhifə altındakı təsrif cədvəli.
+            "title_az": "«حرف زدن» (danışmaq) felinin indiki zamanda təsrifi",
+            "title_fa": "حرف زدن",
+            "explanation_az": (
+                "«حرف زدن» — mürəkkəb feldir: ad hissəsi «حرف» (söz) + fel hissəsi «زدن» (vurmaq).\n"
+                "Yalnız fel hissəsi təsriflənir, «حرف» sözü dəyişməz qalır:\n"
+                "حرف می‌زنم، حرف می‌زنی، حرف می‌زند، حرف می‌زنیم، حرف می‌زنید، حرف می‌زنند.\n"
+                "Mənası «صحبت کردن» (söhbət etmək) ilə eynidir: با او حرف می‌زنم = با او صحبت می‌کنم.\n"
+                "Kiminləsə danışmaq üçün «با» işlənir: با دوستم حرف می‌زنم.\n"
+                "Nə ilə danışdığımızı bildirmək üçün də «با» işlənir: با زبان حرف می‌زنیم."
+            ),
+            "note_fa": (
+                "حرف زدن: حرف می‌زنم؛ حرف می‌زنی؛ حرف می‌زند؛ حرف می‌زنیم؛ حرف می‌زنید؛ حرف می‌زنند\n"
+                "به وسیله‌ی زبان حرف می‌زنیم. / با ....... حرف می‌زند."
+            ),
+            "note_reading_az": (
+                "Hərf zədən: hərf mizənəm; hərf mizəni; hərf mizənəd; hərf mizənim; hərf mizənid; hərf mizənənd\n"
+                "Be vəsileye zəban hərf mizənim. / Ba ....... hərf mizənəd."
+            ),
+            "note_az": (
+                "«حرف زدن» = «صحبت کردن» (danışmaq).\n"
+                "• با کسی حرف زدن — kiminləsə danışmaq\n"
+                "• با زبان حرف زدن — dillə danışmaq"
+            ),
+            "conjugations": [
+                {"pronoun_fa": "من", "form_fa": "حرف می‌زنم"},
+                {"pronoun_fa": "تو", "form_fa": "حرف می‌زنی"},
+                {"pronoun_fa": "او", "form_fa": "حرف می‌زند"},
+                {"pronoun_fa": "ما", "form_fa": "حرف می‌زنیم"},
+                {"pronoun_fa": "شما", "form_fa": "حرف می‌زنید"},
+                {"pronoun_fa": "آن‌ها", "form_fa": "حرف می‌زنند"},
+            ],
+            "examples": [
+                {
+                    "fa": "به وسیله‌ی زبان حرف می‌زنیم.",
+                    "reading_az": "Be vəsileye zəban hərf mizənim.",
+                    "az": "Biz dil vasitəsilə danışırıq.",
+                },
+                {
+                    "fa": "نوزاد هنوز حرف نمی‌زند.",
+                    "reading_az": "Nouzad hənuz hərf nemizənəd.",
+                    "az": "Körpə hələ danışmır.",
+                },
+                {
+                    "fa": "دیروز با مادربزرگم حرف زدم.",
+                    "reading_az": "Diruz ba madərbozorgəm hərf zədəm.",
+                    "az": "Dünən nənəmlə danışdım.",
+                },
+            ],
+        },
+        {
+            # Səh. 228 haşiyəsi (به وسیله‌ی: با) + səh. 229-230 çalışmaları.
+            "title_az": "«به وسیله‌ی …» — vasitə bildirən quruluş",
+            "title_fa": "به وسیله‌ی ........",
+            "explanation_az": (
+                "İşin hansı alət və ya üzv vasitəsilə görüldüyünü bildirmək üçün «به وسیله‌ی» işlənir.\n"
+                "Quruluş: به وسیله‌ی + VASİTƏ + FEL.\n"
+                "Dərslikdəki haşiyə: به وسیله‌ی = با. Yəni «به وسیله‌ی گوش می‌شنویم» ilə «با گوش می‌شنویم» eynidir.\n"
+                "«وسیله» sözü izafətlə bağlanır, ona görə sonuna «ـی» əlavə olunur: وسیله + ی = وسیله‌ی.\n"
+                "Azərbaycan dilinə «… vasitəsilə», «… ilə» kimi tərcümə edilir.\n"
+                "Nümunələr: ما به وسیله‌ی چشم می‌بینیم؛ به وسیله‌ی پا راه می‌رویم؛ به وسیله‌ی دست می‌نویسیم."
+            ),
+            "note_fa": (
+                "به وسیله‌ی = با\n"
+                "گوش ← ما به وسیله‌ی گوش می‌شنویم.\n"
+                "چشم ← ما به وسیله‌ی چشم می‌بینیم.\n"
+                "زبان ← ما به وسیله‌ی زبان حرف می‌زنیم."
+            ),
+            "note_reading_az": (
+                "Be vəsileye = ba\n"
+                "Guş ← Ma be vəsileye guş mişənvim.\n"
+                "Çeşm ← Ma be vəsileye çeşm mibinim.\n"
+                "Zəban ← Ma be vəsileye zəban hərf mizənim."
+            ),
+            "note_az": (
+                "«به وسیله‌ی …» = «با …» (… vasitəsilə):\n"
+                "• به وسیله‌ی گوش می‌شنویم — qulaq vasitəsilə eşidirik\n"
+                "• به وسیله‌ی بینی نفس می‌کشیم — burun vasitəsilə nəfəs alırıq"
+            ),
+            "conjugations": [
+                {"pronoun_fa": "به وسیله‌ی گوش", "form_fa": "می‌شنویم (eşidirik)"},
+                {"pronoun_fa": "به وسیله‌ی چشم", "form_fa": "می‌بینیم (görürük)"},
+                {"pronoun_fa": "به وسیله‌ی بینی", "form_fa": "نفس می‌کشیم (nəfəs alırıq)"},
+                {"pronoun_fa": "به وسیله‌ی زبان", "form_fa": "حرف می‌زنیم (danışırıq)"},
+                {"pronoun_fa": "به وسیله‌ی دست", "form_fa": "می‌نویسیم (yazırıq)"},
+                {"pronoun_fa": "به وسیله‌ی پا", "form_fa": "راه می‌رویم (yeriyirik)"},
+            ],
+            "examples": [
+                {
+                    "fa": "ما به وسیله‌ی پوست، گرمی، سردی، زبری و نرمی را احساس می‌کنیم.",
+                    "reading_az": "Ma be vəsileye pust, gərmi, sərdi, zebri va nərmi ra ehsas mikonim.",
+                    "az": "Biz dəri vasitəsilə istini, soyuğu, sərtliyi və yumşaqlığı hiss edirik.",
+                },
+                {
+                    "fa": "قلب عضوی است که به وسیله‌ی آن خون به همه‌جای بدن می‌رسد.",
+                    "reading_az": "Qəlb ozvi əst ke be vəsileye an xun be həmecaye bədən mirəsəd.",
+                    "az": "Ürək elə bir üzvdür ki, onun vasitəsilə qan bədənin hər yerinə çatır.",
+                },
+                {
+                    "fa": "دست عضوی است که به وسیله‌ی آن می‌نویسیم و وسایل را برمی‌داریم.",
+                    "reading_az": "Dəst ozvi əst ke be vəsileye an minəvisim va vəsayel ra bərmidarim.",
+                    "az": "Əl elə bir üzvdür ki, onun vasitəsilə yazırıq və əşyaları götürürük.",
+                },
+            ],
+        },
+        {
+            # Səh. 220, 222, 227, 228 səhifə altı haşiyələri (زیرنویس‌ها).
+            "title_az": "Dərslikdəki haşiyələr: eyni mənalı ifadələr",
+            "title_fa": "زیرنویس‌های درس",
+            "explanation_az": (
+                "Dərsin səhifə altı qeydlərində bir neçə ifadənin izahı verilib:\n"
+                "1. نوازش کردن = نوازش دادن — «sığallamaq» mənasında hər iki forma işlənir (səh. 220).\n"
+                "2. شانه زدن = شانه کردن — «(saçı) daramaq» (səh. 222).\n"
+                "3. کوتاه کردن — bir şeyin uzunluğunu və ya hündürlüyünü azaltmaq, yəni «qısaltmaq» (səh. 222).\n"
+                "4. کیست؟ → danışıq dilində «کیه؟» deyilir: این عصا مالِ کیست؟ = این عصا مالِ کیه؟ (səh. 227).\n"
+                "5. برخی = بعضی — «bəzi, bir qismi» (səh. 228).\n"
+                "6. به وسیله‌ی = با — «… vasitəsilə, … ilə» (səh. 228)."
+            ),
+            "note_fa": (
+                "نوازش کردن: نوازش دادن\n"
+                "شانه زدن: شانه کردن\n"
+                "کم کردن طول یا بلندی چیزی را «کوتاه کردن» می‌گویند.\n"
+                "در زبان گفتار «کیست» را «کیه» می‌گوییم: این عصا مالِ کیست؟ = این عصا مالِ کیه؟\n"
+                "برخی: بعضی\n"
+                "به وسیله‌ی: با"
+            ),
+            "note_reading_az": (
+                "Nəvazəş kərdən: nəvazəş dadən\n"
+                "Şane zədən: şane kərdən\n"
+                "Kəm kərdəne tul ya boləndiye çizi ra «kutah kərdən» miguyənd.\n"
+                "Dər zəbane goftar «kist» ra «kiye» miguyim: In əsa male kist? = In əsa male kiye?\n"
+                "Bərxi: bə'zi\n"
+                "Be vəsileye: ba"
+            ),
+            "note_az": (
+                "• نوازش کردن / نوازش دادن — sığallamaq\n"
+                "• شانه زدن / شانه کردن — daramaq\n"
+                "• کوتاه کردن — qısaltmaq\n"
+                "• کیست؟ → کیه؟ (danışıq dili)\n"
+                "• برخی = بعضی — bəzi\n"
+                "• به وسیله‌ی = با — vasitəsilə"
+            ),
+            "conjugations": [
+                {"pronoun_fa": "نوازش کردن", "form_fa": "نوازش دادن (sığallamaq)"},
+                {"pronoun_fa": "شانه زدن", "form_fa": "شانه کردن (daramaq)"},
+                {"pronoun_fa": "کوتاه کردن", "form_fa": "qısaltmaq"},
+                {"pronoun_fa": "کیست؟", "form_fa": "کیه؟ (danışıq dili)"},
+                {"pronoun_fa": "برخی", "form_fa": "بعضی (bəzi)"},
+                {"pronoun_fa": "به وسیله‌ی", "form_fa": "با (… ilə)"},
+            ],
+            "examples": [
+                {
+                    "fa": "من هر روز موهای دخترم را شانه می‌زنم.",
+                    "reading_az": "Mən hər ruz muhaye doxtərəm ra şane mizənəm.",
+                    "az": "Mən hər gün qızımın saçlarını darayıram.",
+                },
+                {
+                    "fa": "برادرم به آرایشگاه رفت و موهای سر و صورتش را کوتاه کرد.",
+                    "reading_az": "Bəradərəm be arayeşgah rəft va muhaye sər va surətəş ra kutah kərd.",
+                    "az": "Qardaşım bərbərxanaya getdi və başının, üzünün tüklərini qısaltdı.",
+                },
+                {
+                    "fa": "این عصا مالِ کیه؟ (= این عصا مالِ کیست؟)",
+                    "reading_az": "In əsa male kiye? (= In əsa male kist?)",
+                    "az": "Bu əsa kimindir? (danışıq dili / yazı dili)",
                 },
             ],
         },
@@ -297,58 +564,223 @@ LESSON = {
             ],
         },
         {
-            "kind": "fill_blank",
-            "title_fa": "لطفاً کامل کنید — اعضای بدن",
-            "instruction_az": "Cümlələri mötərizədəki sözlərlə tamamlayın (کوتاه؛ دست؛ خون؛ قوی؛ بیست؛ بزرگ؛ پا)",
+            # Səh. 221 və səh. 229 səhifə altındakı danışıq tapşırıqları:
+            # «......... را بغل می‌کند.»، «با ....... حرف می‌زند.» və s.
+            "kind": "practice_reveal",
+            "instruction_az": (
+                "Nöqtələrin yerini doldurub cümləni ucadan deyin. Nümunə: "
+                "«… را بغل می‌کند.» → «مادر، نوزادش را بغل می‌کند.»"
+            ),
+            "example_prompt_fa": "… را بغل می‌کند.",
+            "example_answer_fa": "مادر، نوزادش را بغل می‌کند.",
+            "example_reading_az": "Madər, nouzadəş ra bəğəl mikonəd.",
+            "example_az": "Ana körpəsini qucaqlayır.",
+            "items": [
+                {
+                    "prompt_fa": "… را بغل می‌کند.",
+                    "answer_fa": "پدر، نوزادش را بغل می‌کند.",
+                    "reading_az": "Pedər, nouzadəş ra bəğəl mikonəd.",
+                    "az": "Ata körpəsini qucaqlayır.",
+                },
+                {
+                    "prompt_fa": "… را نوازش می‌کند.",
+                    "answer_fa": "پدربزرگم نوه‌هایش را نوازش می‌کند.",
+                    "reading_az": "Pedərbozorgəm novehayəş ra nəvazəş mikonəd.",
+                    "az": "Babam nəvələrini sığallayır.",
+                },
+                {
+                    "prompt_fa": "… را می‌بوسد.",
+                    "answer_fa": "مادر، دست فرزندش را می‌بوسد.",
+                    "reading_az": "Madər, dəste fərzəndəş ra mibusəd.",
+                    "az": "Ana övladının əlini öpür.",
+                },
+                {
+                    "prompt_fa": "با … صحبت می‌کند.",
+                    "answer_fa": "او با مادربزرگش صحبت می‌کند.",
+                    "reading_az": "U ba madərbozorgəş sohbət mikonəd.",
+                    "az": "O, nənəsi ilə söhbət edir.",
+                },
+                {
+                    "prompt_fa": "به … احترام می‌گذارد.",
+                    "answer_fa": "طلبه به استادش احترام می‌گذارد.",
+                    "reading_az": "Tələbe be ostadəş ehteram migozarəd.",
+                    "az": "Tələbə müəlliminə hörmət edir.",
+                },
+                {
+                    "prompt_fa": "… را احساس می‌کند (حس می‌کند).",
+                    "answer_fa": "انسان به وسیله‌ی پوست، گرمی و سردی را احساس می‌کند.",
+                    "reading_az": "Ensan be vəsileye pust, gərmi va sərdi ra ehsas mikonəd.",
+                    "az": "İnsan dəri vasitəsilə istini və soyuğu hiss edir.",
+                },
+                {
+                    "prompt_fa": "با … حرف می‌زند.",
+                    "answer_fa": "انسان با زبان حرف می‌زند.",
+                    "reading_az": "Ensan ba zəban hərf mizənəd.",
+                    "az": "İnsan dillə danışır.",
+                },
+            ],
+        },
+        {
+            # Səh. 223 «لطفاً کامل کنید» — 6 bənd, cəmi 7 boşluq (4-cü bənddə iki boşluq var),
+            # söz qutusunda da 7 söz var. Ona görə fill_blank yox, multi_blank kimi verilir.
+            "kind": "multi_blank",
+            "title_fa": "لطفاً کامل کنید",
+            "instruction_az": "Cümlələri söz qutusundakı sözlərlə tamamlayın (کوتاه؛ دست؛ خون؛ قوی؛ بیست؛ بزرگ؛ پا)",
+            "example_fa": "انسان دو ___ دارد.\nانسان دو *گوش* دارد.",
+            "example_reading_az": "Ensan do guş darəd.",
+            "example_az": (
+                "İnsanın iki qulağı var.\n"
+                "Hər boşluğa söz qutusundan yalnız BİR söz düşür.\n"
+                "Bəzi cümlələrdə iki boşluq var — onlara iki ayrı söz seçilir."
+            ),
+            # 7 boşluq = 7 çip.
             "word_bank": ["کوتاه", "دست", "خون", "قوی", "بیست", "بزرگ", "پا"],
             "items": [
                 {
-                    "fa_with_blank": "شکم انسان‌های چاق، ...... است.",
-                    "correct_answer": "بزرگ",
-                    "reading_az": "Şekəme enşanhaye çağ, bozorg əst.",
-                    "az": "Kök insanların qarnı böyükdür.",
-                    "full_reading_az": "Şekəme enşanhaye çağ, bozorg əst.",
+                    "fa_with_blanks": "شکم انسان‌های چاق، ___ است.",
+                    "correct_answers": ["بزرگ"],
+                    "full_reading_az": "Şekəme ensanhaye çaq, bozorg əst.",
                     "full_translation_az": "Kök insanların qarnı böyükdür.",
                 },
                 {
-                    "fa_with_blank": "در رگ‌های انسان ...... وجود دارد.",
-                    "correct_answer": "خون",
-                    "reading_az": "Dər rəghaye enşan xun vocud darəd.",
-                    "az": "İnsanın damarlarında qan var.",
-                    "full_reading_az": "Dər rəghaye enşan xun vocud darəd.",
+                    "fa_with_blanks": "در رگ‌های انسان ___ وجود دارد.",
+                    "correct_answers": ["خون"],
+                    "full_reading_az": "Dər rəghaye ensan xun vocud darəd.",
                     "full_translation_az": "İnsanın damarlarında qan var.",
                 },
                 {
-                    "fa_with_blank": "انسان ...... انگشت دارد.",
-                    "correct_answer": "بیست",
-                    "reading_az": "Ensan bist əngoşt darəd.",
-                    "az": "İnsanın iyirmi barmağı var.",
+                    "fa_with_blanks": "انسان ___ انگشت دارد.",
+                    "correct_answers": ["بیست"],
                     "full_reading_az": "Ensan bist əngoşt darəd.",
                     "full_translation_az": "İnsanın iyirmi barmağı var.",
                 },
                 {
-                    "fa_with_blank": "انسان دو ......، دو ...... و یک سر دارد.",
-                    "correct_answer": "دست / پا",
-                    "reading_az": "Ensan do dəst, do pa va yek sər darəd.",
-                    "az": "İnsanın iki əli, iki ayağı və bir başı var.",
+                    "fa_with_blanks": "انسان دو ___، دو ___ و یک سر دارد.",
+                    "correct_answers": ["دست", "پا"],
                     "full_reading_az": "Ensan do dəst, do pa va yek sər darəd.",
                     "full_translation_az": "İnsanın iki əli, iki ayağı və bir başı var.",
                 },
                 {
-                    "fa_with_blank": "من روزهای جمعه ناخن‌هایم را ...... می‌کنم.",
-                    "correct_answer": "کوتاه",
-                    "reading_az": "Mən ruzhaye com'e naxonhayəm ra kotah mikonəm.",
-                    "az": "Mən cümə günləri dırnaqlarımı tuturamm (qısaldıram).",
-                    "full_reading_az": "Mən ruzhaye com'e naxonhayəm ra kotah mikonəm.",
-                    "full_translation_az": "Mən cümə günləri dırnaqlarımı tuturamm (qısaldıram).",
+                    "fa_with_blanks": "من روزهای جمعه ناخن‌هایم را ___ می‌کنم.",
+                    "correct_answers": ["کوتاه"],
+                    "full_reading_az": "Mən ruzhaye com'e naxonhayəm ra kutah mikonəm.",
+                    "full_translation_az": "Mən cümə günləri dırnaqlarımı qısaldıram (tuturam).",
                 },
                 {
-                    "fa_with_blank": "بازوها و ماهیچه‌های آن جوان بسیار ...... هستند.",
-                    "correct_answer": "قوی",
-                    "reading_az": "Bazuha va mahiçehaye an cəvan besyar qəvi həstənd.",
-                    "az": "O gəncin qolları və əzələləri çox güclüdür.",
+                    "fa_with_blanks": "بازوها و ماهیچه‌های آن جوان بسیار ___ هستند.",
+                    "correct_answers": ["قوی"],
                     "full_reading_az": "Bazuha va mahiçehaye an cəvan besyar qəvi həstənd.",
                     "full_translation_az": "O gəncin qolları və əzələləri çox güclüdür.",
+                },
+            ],
+        },
+        {
+            # Səh. 225 «نام تصویرهای زیر را بگویید» — 16 şəkil, hər birinin adını demək.
+            "kind": "picture_sentences",
+            "title_fa": "نام تصویرهای زیر را بگویید.",
+            "instruction_az": "Aşağıdakı şəkillərdəki bədən üzvlərinin adını deyin",
+            "example_fa": "این گوش است.",
+            "example_reading_az": "In guş əst.",
+            "example_az": "Bu qulaqdır.",
+            "example_answer_fa": "این گوش است؛ ما به وسیله‌ی گوش می‌شنویم.",
+            "example_answer_reading_az": "In guş əst; ma be vəsileye guş mişənvim.",
+            "example_answer_az": "Bu qulaqdır; biz qulaq vasitəsilə eşidirik.",
+            "items": [
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "این ماهیچه (عضله) است.", "reading_az": "In mahiçe (əzəle) əst.", "az": "Bu əzələdir."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "این‌ها ناخن هستند.", "reading_az": "Inha naxon həstənd.", "az": "Bunlar dırnaqlardır."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "این رگ است.", "reading_az": "In rəg əst.", "az": "Bu damardır."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "این بازو است.", "reading_az": "In bazu əst.", "az": "Bu qoldur (bazudur)."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "این مژه است.", "reading_az": "In moje əst.", "az": "Bu kirpikdir."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "این ابرو است.", "reading_az": "In əbru əst.", "az": "Bu qaşdır."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "این مغز است.", "reading_az": "In məğz əst.", "az": "Bu beyindir."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "این استخوان است.", "reading_az": "In ostoxan əst.", "az": "Bu sümükdür."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "این معده است.", "reading_az": "In moede əst.", "az": "Bu mədədir."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "این قلب است.", "reading_az": "In qəlb əst.", "az": "Bu ürəkdir."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "این کف دست و انگشت‌ها است.", "reading_az": "In kəfe dəst va əngoştha əst.", "az": "Bu ovuc və barmaqlardır."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "این آرنج است.", "reading_az": "In arənc əst.", "az": "Bu dirsəkdir."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "این روده‌ی بزرگ و روده‌ی کوچک است.", "reading_az": "In rudeye bozorg va rudeye kuçək əst.", "az": "Bu yoğun və nazik bağırsaqdır."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "این اسکلت و ستون فقرات است.", "reading_az": "In eskelet va sotune fəqərat əst.", "az": "Bu skelet və onurğa sütunudur."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "این کف پا است.", "reading_az": "In kəfe pa əst.", "az": "Bu ayağın altıdır."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "این کمر است.", "reading_az": "In kəmər əst.", "az": "Bu beldir."},
+                    ],
                 },
             ],
         },
@@ -362,10 +794,10 @@ LESSON = {
             "items": [
                 {
                     "fa": "در صورت انسان چه چیزهایی وجود دارد؟",
-                    "reading_az": "Dər surəte enşan çe çizhayi vocud darəd?",
+                    "reading_az": "Dər surəte ensan çe çizhayi vocud darəd?",
                     "az": "İnsanın üzündə nələr var?",
                     "sample_answer_fa": "در صورت انسان چشم، ابرو، پلک، مژه، بینی، لب، چانه و گوش وجود دارد.",
-                    "sample_answer_reading_az": "Dər surəte enşan çeşm, əbru, pelk, moje, bini, ləb, çane va guş vocud darəd.",
+                    "sample_answer_reading_az": "Dər surəte ensan çeşm, əbru, pelk, moje, bini, ləb, çane va guş vocud darəd.",
                     "sample_answer_az": "İnsanın üzündə göz, qaş, göz qapağı, kirpik, burun, dodaq, çənə və qulaq var.",
                 },
                 {
@@ -386,10 +818,10 @@ LESSON = {
                 },
                 {
                     "fa": "در شکم انسان چه چیزهایی هست؟",
-                    "reading_az": "Dər şekَme enşan çe çizhayi həst?",
+                    "reading_az": "Dər şekəme ensan çe çizhayi həst?",
                     "az": "İnsanın qarnında nələr var?",
                     "sample_answer_fa": "در شکم انسان معده، کلیه‌ها، کبد (جگر) و رودی بزرگ و کوچک قرار دارد.",
-                    "sample_answer_reading_az": "Dər şekəme enşan moede, kolyeha, kəbed va rudeye bozorg va kuçək qərar darəd.",
+                    "sample_answer_reading_az": "Dər şekəme ensan moede, kolyeha, kəbed va rudeye bozorg va kuçək qərar darəd.",
                     "sample_answer_az": "İnsanın qarnında mədə, böyrəklər, qaraciyər və yoğun-nazik bağırsaqlar yerləşir.",
                 },
                 {
@@ -407,6 +839,44 @@ LESSON = {
                     "sample_answer_fa": "یک دست پنج انگشت دارد.",
                     "sample_answer_reading_az": "Yek dəst pənc əngoşt darəd.",
                     "sample_answer_az": "Bir əldə beş barmaq var.",
+                },
+            ],
+        },
+        {
+            # Səh. 227 «لطفاً بخوانید» — «مالِ …» quruluşu ilə 4 cümlə.
+            "kind": "practice_reveal",
+            "instruction_az": (
+                "Verilmiş sözlərdən «مالِ …» quruluşu ilə cümlə qurub oxuyun. "
+                "Nümunə: «دوچرخه‌ی آبی / من» → «این دوچرخه‌ی آبی، مالِ من است.»"
+            ),
+            "example_prompt_fa": "دوچرخه‌ی آبی / من",
+            "example_answer_fa": "این دوچرخه‌ی آبی، مالِ من است.",
+            "example_reading_az": "In doçərxeye abi, male mən əst.",
+            "example_az": "Bu mavi velosiped mənimdir.",
+            "items": [
+                {
+                    "prompt_fa": "این عینک / من — آن عینک / برادرم صادق",
+                    "answer_fa": "این عینک، مالِ من است و آن عینک، مالِ برادرم صادق است.",
+                    "reading_az": "In eynek, male mən əst va an eynek, male bəradərəm Sadeq əst.",
+                    "az": "Bu eynək mənimdir, o eynək isə qardaşım Sadiqindir.",
+                },
+                {
+                    "prompt_fa": "یکی از این دفترها / خواهرم پروین",
+                    "answer_fa": "یکی از این دفترها مالِ خواهرم پروین است.",
+                    "reading_az": "Yeki əz in dəftərha male xahərəm Pərvin əst.",
+                    "az": "Bu dəftərlərdən biri bacım Pərvinindir.",
+                },
+                {
+                    "prompt_fa": "این عصا / کیست؟ — پدربزرگم",
+                    "answer_fa": "این عصا مالِ کیست؟ این عصا مالِ پدربزرگم است.",
+                    "reading_az": "In əsa male kist? In əsa male pedərbozorgəm əst.",
+                    "az": "Bu əsa kimindir? Bu əsa babamındır.",
+                },
+                {
+                    "prompt_fa": "آیا آن خانه‌ی زیبا / عبّاس؟",
+                    "answer_fa": "آیا آن خانه‌ی زیبا مالِ عبّاس است؟ بله، آن خانه‌ی زیبا مالِ عبّاس است.",
+                    "reading_az": "Aya an xaneye ziba male Əbbas əst? Bəle, an xaneye ziba male Əbbas əst.",
+                    "az": "O gözəl ev Abbasındır? Bəli, o gözəl ev Abbasındır.",
                 },
             ],
         },
@@ -509,6 +979,16 @@ LESSON = {
                     "sample_answer_az": "Biz dil vasitəsilə danışırıq və yeməklərin dadını hiss edirik.",
                 },
                 {
+                    # Səh. 230, alt-orta şəkil: qırmızı ox əlin DƏRİSİNİ göstərir
+                    # (sadə əl şəklindən fərqləndirmək üçün) → پوست.
+                    "fa": "پوست",
+                    "reading_az": "Pust",
+                    "az": "Dəri",
+                    "sample_answer_fa": "ما به وسیله‌ی پوست، گرمی و سردی را احساس می‌کنیم.",
+                    "sample_answer_reading_az": "Ma be vəsileye pust, gərmi va sərdi ra ehsas mikonim.",
+                    "sample_answer_az": "Biz dəri vasitəsilə istini və soyuğu hiss edirik.",
+                },
+                {
                     "fa": "پا",
                     "reading_az": "Pa",
                     "az": "Ayaq",
@@ -519,57 +999,54 @@ LESSON = {
             ],
         },
         {
-            "kind": "fill_blank",
-            "title_fa": "لطفاً کامل کنید — انسان و اعضای بدن",
-            "instruction_az": "Cümlələri söz qutusu ilə tamamlayın (نمی‌بیند؛ نوزاد؛ کور؛ مهربان؛ نمی‌شنود؛ کر؛ معلول)",
+            # Səh. 230 «لطفاً کامل کنید» — 6 bənd, cəmi 7 boşluq (6-cı bənddə iki boşluq var),
+            # söz qutusunda da 7 söz var → multi_blank.
+            "kind": "multi_blank",
+            "title_fa": "لطفاً کامل کنید",
+            "instruction_az": "Cümlələri söz qutusundakı sözlərlə tamamlayın (نمی‌بیند؛ نوزاد؛ کور؛ مهربان؛ نمی‌شنود؛ کر؛ معلول)",
+            "example_fa": "کسی که به دیگران کمک نمی‌کند، ___ است.\nکسی که به دیگران کمک نمی‌کند، *نامهربان* است.",
+            "example_reading_az": "Kəsi ke be digəran komək nemikonəd, namehrəban əst.",
+            "example_az": (
+                "Başqalarına kömək etməyən adam namehribandır.\n"
+                "Hər boşluğa söz qutusundan bir söz seçilir; sonuncu cümlədə iki boşluq var."
+            ),
+            # 7 boşluq = 7 çip.
             "word_bank": ["نمی‌بیند", "نوزاد", "کور", "مهربان", "نمی‌شنود", "کر", "معلول"],
             "items": [
                 {
-                    "fa_with_blank": "کسی که دیگران را دوست دارد و به آن‌ها کمک می‌کند، ...... است.",
-                    "correct_answer": "مهربان",
-                    "reading_az": "Kəsi ke digəran ra dust darəd va be anha komək mikonəd, mehrəban əst.",
-                    "az": "Başqalarını sevən və onlara kömək edən şəxs mehribandır.",
+                    "fa_with_blanks": "کسی که دیگران را دوست دارد و به آن‌ها کمک می‌کند، ___ است.",
+                    "correct_answers": ["مهربان"],
                     "full_reading_az": "Kəsi ke digəran ra dust darəd va be anha komək mikonəd, mehrəban əst.",
                     "full_translation_az": "Başqalarını sevən və onlara kömək edən şəxs mehribandır.",
                 },
                 {
-                    "fa_with_blank": "کسی که دست و پایش سالم نیست، ...... است.",
-                    "correct_answer": "معلول",
-                    "reading_az": "Kəsi ke dəst va payəş saləm nist, mə'lul əst.",
-                    "az": "Əli və ayağı sağlam olmayan şəxs əlildir.",
+                    "fa_with_blanks": "کسی که دست و پایش سالم نیست، ___ است.",
+                    "correct_answers": ["معلول"],
                     "full_reading_az": "Kəsi ke dəst va payəş saləm nist, mə'lul əst.",
                     "full_translation_az": "Əli və ayağı sağlam olmayan şəxs əlildir.",
                 },
                 {
-                    "fa_with_blank": "به بچه‌ای که دو، سه هفته سن دارد، ...... می‌گویند.",
-                    "correct_answer": "نوزاد",
-                    "reading_az": "Be bəççe-i ke do, se həfte sen darəd, nouzad miguyənd.",
-                    "az": "İki-üç həftəlik uşağa körpə (yeni doğulmuş) deyirlər.",
-                    "full_reading_az": "Be bəççe-i ke do, se həfte sen darəd, nouzad miguyənd.",
+                    "fa_with_blanks": "به بچّه‌ای که دو، سه هفته سن دارد، ___ می‌گویند.",
+                    "correct_answers": ["نوزاد"],
+                    "full_reading_az": "Be bəççe-i ke do, se həfte senn darəd, nouzad miguyənd.",
                     "full_translation_az": "İki-üç həftəlik uşağa körpə (yeni doğulmuş) deyirlər.",
                 },
                 {
-                    "fa_with_blank": "نابینا کسی است که ...... .",
-                    "correct_answer": "نمی‌بیند",
-                    "reading_az": "Nabina kəsi əst ke nimibinəd.",
-                    "az": "Gözdən əlil görməyən şəxsdir.",
-                    "full_reading_az": "Nabina kəsi əst ke nimibinəd.",
+                    "fa_with_blanks": "نابینا کسی است که ___ .",
+                    "correct_answers": ["نمی‌بیند"],
+                    "full_reading_az": "Nabina kəsi əst ke nemibinəd.",
                     "full_translation_az": "Gözdən əlil görməyən şəxsdir.",
                 },
                 {
-                    "fa_with_blank": "ناشنوا کسی است که ...... .",
-                    "correct_answer": "نمی‌شنود",
-                    "reading_az": "Naşənva kəsi əst ke nimişənəvəd.",
-                    "az": "Eşitmə əlili eşitməyən şəxsdir.",
-                    "full_reading_az": "Naşənva kəsi əst ke nimişənəvəd.",
+                    "fa_with_blanks": "ناشنوا کسی است که ___ .",
+                    "correct_answers": ["نمی‌شنود"],
+                    "full_reading_az": "Naşənva kəsi əst ke nemişənəvəd.",
                     "full_translation_az": "Eşitmə əlili eşitməyən şəxsdir.",
                 },
                 {
-                    "fa_with_blank": "اسم دیگر نابینا، ...... و اسم دیگر ناشنوا، ...... است.",
-                    "correct_answer": "کور / کر",
-                    "reading_az": "Esme digəre nabina kur va esme digəre naşənva kor əst.",
-                    "az": "Gözdən əlilin başqa adı kor, eşitmə əlilininki isə kardır.",
-                    "full_reading_az": "Esme digəre nabina kur va esme digəre naşənva kor əst.",
+                    "fa_with_blanks": "اسم دیگر نابینا، ___ و اسم دیگر ناشنوا، ___ است.",
+                    "correct_answers": ["کور", "کر"],
+                    "full_reading_az": "Esme digəre nabina kur va esme digəre naşənva kər əst.",
                     "full_translation_az": "Gözdən əlilin başqa adı kor, eşitmə əlilininki isə kardır.",
                 },
             ],
@@ -694,7 +1171,7 @@ LESSON = {
         "answer_items": [
             {
                 "fa": "در صورت انسان چشم، ابرو، پلک، مژه، بینی و لب قرار دارد.",
-                "reading_az": "Dər surəte enşan çeşm, əbru, pelk, moje, bini va ləb qərar darəd.",
+                "reading_az": "Dər surəte ensan çeşm, əbru, pelk, moje, bini va ləb qərar darəd.",
                 "az": "İnsanın üzündə göz, qaş, göz qapağı, kirpik, burun və dodaq yerləşir.",
             },
             {
@@ -735,34 +1212,34 @@ LESSON = {
         ],
         "full_translation_az": (
             "İnsan bədəninin dəri, ət, qan, sümük və s. kimi müxtəlif hissələri var. İnsanların dərisinin rəngi "
-            "müxtəlifdir. Bəzi insanlar sarıdərilidir; bəzisi qarədərili, bir neçəsi qırmızıdərilidir və bəziləri "
+            "müxtəlifdir. Bəzi insanlar sarıdərilidir; bəzisi qaradərili, bir neçəsi qırmızıdərilidir və bəziləri "
             "isə ağdərilidirlər. Biz dəri vasitəsilə istini, soyuğu, sərtliyi və yumşaqlığı hiss edirik.\n\n"
             "İnsan bədənində iki yüzdən çox sümük var. Sümüklər çox möhkəmdir. İnsan bədəninin ən möhkəm və ən uzun sümüyü bud sümüyüdür.\n\n"
             "İnsan bədənində görmək üçün iki göz və eşitmək üçün iki qulaq var. Bəzi insanların gözləri zəifdir və yaxşı görmürlər. Onlar daha yaxşı görmək üçün eynəkdən istifadə edirlər.\n\n"
-            "Biz burun vasitəsilə nəfəs almaqla yanaşı, yemeklərin, güllərin, ətirlərin qoxusunu da duyuruq. Dil vasitəsilə danışırıq və yeməklərin dadını — balın şirinliyini, duzun şorluğunu, istiotun acılığını və bəzi meyvələrin turşluğunu hiss edirik.\n\n"
+            "Biz burun vasitəsilə nəfəs almaqla yanaşı, yeməklərin, güllərin, ətirlərin qoxusunu da duyuruq. Dil vasitəsilə danışırıq və yeməklərin dadını — balın şirinliyini, duzun şorluğunu, istiotun acılığını və bəzi meyvələrin turşluğunu hiss edirik.\n\n"
             "Bədənimizdə başqa üzvlər də var: məsələn, qanın bədənin hər yerinə çatmasını təmin edən ürək; yeriməyimizə imkan verən ayaq və yazmağımıza, yemək yeməyimizə, əşyaları götürməyimizə kömək edən əl."
         ),
         "sentences": [
             {
                 "fa": "بدن انسان قسمت‌های گوناگونی، مانندِ پوست، گوشت، خون، استخوان و... دارد.",
-                "reading_az": "Bədəne enşan qəsməthaye gunaguni, manənde pust, guşt, xun, ostəxan va... darəd.",
+                "reading_az": "Bədəne ensan qəsməthaye gunaguni, manənde pust, guşt, xun, ostoxan va... darəd.",
                 "az": "İnsan bədəninin dəri, ət, qan, sümük və s. kimi müxtəlif hissələri var.",
                 "new_paragraph": True,
             },
-            {"fa": "رنگ پوست انسان‌ها گوناگون است.", "reading_az": "Rənge puste enshanha gunagun əst.", "az": "İnsanların dərisinin rəngi müxtəlifdir."},
-            {"fa": "بعضی از انسان‌ها زردپوست هستند؛ بعضی سیاه‌پوست، برخی سرخ‌پوست و بعضی دیگر سفیدپوستند.", "reading_az": "Bəzi əz enshanha zərdpust həstənd; bəzi siyahpust, bərxi sorxpust va bəzi digər sefidpustənd.", "az": "Bəzi insanlar sarıdərilidir; bəzisi qarədərili, bir neçəsi qırmızıdərilidir və bəziləri isə ağdərilidirlər."},
+            {"fa": "رنگ پوست انسان‌ها گوناگون است.", "reading_az": "Rənge puste ensanha gunagun əst.", "az": "İnsanların dərisinin rəngi müxtəlifdir."},
+            {"fa": "بعضی از انسان‌ها زردپوست هستند؛ بعضی سیاه‌پوست، برخی سرخ‌پوست و بعضی دیگر سفیدپوستند.", "reading_az": "Bəzi əz ensanha zərdpust həstənd; bəzi siyahpust, bərxi sorxpust va bəzi digər sefidpustənd.", "az": "Bəzi insanlar sarıdərilidir; bəzisi qaradərili, bir neçəsi qırmızıdərilidir və bəziləri isə ağdərilidirlər."},
             {"fa": "ما به وسیله‌ی پوست، گرمی، سردی، زبری و نرمی را احساس می‌کنیم.", "reading_az": "Ma be vəsileye pust, gərmi, sərdi, zebri va nərmi ra ehsas mikonim.", "az": "Biz dəri vasitəsilə istini, soyuğu, sərtliyi və yumşaqlığı hiss edirik."},
             {
                 "fa": "در بدن انسان، بیش از دویست عدد استخوان وجود دارد.",
-                "reading_az": "Dər bədəne enşan, biştər əz devist ədəd ostəxan vocud darəd.",
+                "reading_az": "Dər bədəne ensan, biştər əz devist ədəd ostoxan vocud darəd.",
                 "az": "İnsan bədənində iki yüzdən çox sümük var.",
                 "new_paragraph": True,
             },
-            {"fa": "استخوان‌ها بسیار محکم هستند.", "reading_az": "Ostəxanha besyar mohkəm həstənd.", "az": "Sümüklər çox möhkəmdir."},
-            {"fa": "محکم‌ترین و بلندترین استخوان بدن انسان، استخوان ران است.", "reading_az": "Mohkəmtərin va boləndtərin ostəxane bədəne enşan, ostəxane ran əst.", "az": "İnsan bədəninin ən möhkəm və ən uzun sümüyü bud sümüyüdür."},
+            {"fa": "استخوان‌ها بسیار محکم هستند.", "reading_az": "Ostoxanha besyar mohkəm həstənd.", "az": "Sümüklər çox möhkəmdir."},
+            {"fa": "محکم‌ترین و بلندترین استخوان بدن انسان، استخوان ران است.", "reading_az": "Mohkəmtərin va boləndtərin ostoxane bədəne ensan, ostoxane ran əst.", "az": "İnsan bədəninin ən möhkəm və ən uzun sümüyü bud sümüyüdür."},
             {
                 "fa": "در بدن انسان، دو چشم برای دیدن و دو گوش برای شنیدن وجود دارد.",
-                "reading_az": "Dər bədəne enşan, do çeşm bəraye didən va do guş bəraye şənidən vocud darəd.",
+                "reading_az": "Dər bədəne ensan, do çeşm bəraye didən va do guş bəraye şənidən vocud darəd.",
                 "az": "İnsan bədənində görmək üçün iki göz və eşitmək üçün iki qulaq var.",
                 "new_paragraph": True,
             },
@@ -771,13 +1248,13 @@ LESSON = {
             {
                 "fa": "ما از بینی علاوه بر نفس کشیدن، بوی غذاها، گل‌ها، عطرها و... را احساس می‌کنیم.",
                 "reading_az": "Ma əz bini əlave bər nəfəs kəşidən, buye qəzaha, golha, ətrha va... ra ehsas mikonim.",
-                "az": "Biz burun vasitəsilə nəfəs almaqla yanaşı, yemeklərin, güllərin, ətirlərin qoxusunu da duyuruq.",
+                "az": "Biz burun vasitəsilə nəfəs almaqla yanaşı, yeməklərin, güllərin, ətirlərin qoxusunu da duyuruq.",
                 "new_paragraph": True,
             },
             {"fa": "به وسیله‌ی زبان حرف می‌زنیم و طعم و مزه‌ی خوردنی‌ها، مانندِ شیرین بودنِ عسل، شور بودنِ نمک، تند بودنِ فلفل و ترش بودنِ بعضی از میوه‌ها را حس می‌کنیم.", "reading_az": "Be vəsileye zəban sohbət mizənim va təmu məzeye xordəniha, manənde şirin budəne əsəl, şur budəne nəmək, tond budəne felfel va torş budəne bəzi əz miveha ra hes mikonim.", "az": "Dil vasitəsilə danışırıq və yeməklərin dadını — balın şirinliyini, duzun şorluğunu, istiotun acılığını və bəzi meyvələrin turşluğunu hiss edirik."},
             {
-                "fa": "در بدن ما اعضای دیگری هم وجود دارد، مانندِ قلب که به وسیله‌ی آن خون به همه‌جای بدن می‌رسد؛ پا که به وسیله‌ی آن راه می‌رویم و دست که به وسیله‌ی آن می‌نویسیم، غذا می‌خریم و وسایل را برمی‌داریم.",
-                "reading_az": "Dər bədəne ma əzaye digəri həm vocud darəd, manənde qəlb ke be vəsileye an xun be həmecaye bədən miræsəd; pa ke be vəsileye an rah mirəvim va dəst ke be vəsileye an minəvisim, qəza mixorim va vəsayel ra bərmidarim.",
+                "fa": "در بدن ما اعضای دیگری هم وجود دارد، مانندِ قلب که به وسیله‌ی آن خون به همه‌جای بدن می‌رسد؛ پا که به وسیله‌ی آن راه می‌رویم و دست که به وسیله‌ی آن می‌نویسیم، غذا می‌خوریم و وسایل را برمی‌داریم.",
+                "reading_az": "Dər bədəne ma əzaye digəri həm vocud darəd, manənde qəlb ke be vəsileye an xun be həmecaye bədən mirəsəd; pa ke be vəsileye an rah mirəvim va dəst ke be vəsileye an minəvisim, qəza mixorim va vəsayel ra bərmidarim.",
                 "az": "Bədənimizdə başqa üzvlər də var: məsələn, qanın bədənin hər yerinə çatmasını təmin edən ürək; yeriməyimizə imkan verən ayaq və yazmağımıza, yemək yeməyimizə, əşyaları götürməyimizə kömək edən əl.",
                 "new_paragraph": True,
             },
@@ -785,18 +1262,18 @@ LESSON = {
         "comprehension_questions": [
             {
                 "question_fa": "پوست انسان‌ها چه رنگ است؟",
-                "reading_az": "Puste enshanha çe rəng əst?",
+                "reading_az": "Puste ensanha çe rəng əst?",
                 "az": "İnsanların dərisi nə rəngdədir?",
                 "sample_answer_fa": "رنگ پوست انسان‌ها گوناگون است: زردپوست، سیاه‌پوست، سرخ‌پوست و سفیدپوست.",
-                "sample_answer_reading_az": "Rənge puste enshanha gunagun əst: zərdpust, siyahpust, sorxpust va sefidpust.",
-                "sample_answer_az": "İnsanların dərisinin rəngi müxtəlifdir: sarıdərililər, qarədərililər, qırmızıdərililər və ağdərililər.",
+                "sample_answer_reading_az": "Rənge puste ensanha gunagun əst: zərdpust, siyahpust, sorxpust va sefidpust.",
+                "sample_answer_az": "İnsanların dərisinin rəngi müxtəlifdir: sarıdərililər, qaradərililər, qırmızıdərililər və ağdərililər.",
             },
             {
                 "question_fa": "بلندترین استخوان بدن کدام است؟",
-                "reading_az": "Boləndtərin ostəxane bədən kodam əst?",
+                "reading_az": "Boləndtərin ostoxane bədən kodam əst?",
                 "az": "Bədənin ən uzun sümüyü hansıdır?",
                 "sample_answer_fa": "محکم‌ترین و بلندترین استخوان بدن انسان، استخوان ران است.",
-                "sample_answer_reading_az": "Mohkəmtərin va boləndtərin ostəxane bədəne enşan, ostəxane ran əst.",
+                "sample_answer_reading_az": "Mohkəmtərin va boləndtərin ostoxane bədəne ensan, ostoxane ran əst.",
                 "sample_answer_az": "İnsan bədəninin ən möhkəm və ən uzun sümüyü bud sümüyüdür.",
             },
             {
@@ -809,7 +1286,7 @@ LESSON = {
             },
             {
                 "question_fa": "چرا بعضی از انسان‌ها از عینک استفاده می‌کنند؟",
-                "reading_az": "Çəra bəzi əz enshanha əz eynek estefade mikonənd?",
+                "reading_az": "Çəra bəzi əz ensanha əz eynek estefade mikonənd?",
                 "az": "Niyə bəzi insanlar eynəkdən istifadə edirlər?",
                 "sample_answer_fa": "چون چشم‌هایشان ضعیف است و برای بهتر دیدن از عینک استفاده می‌کنند.",
                 "sample_answer_reading_az": "Çun çeşmhayeşan zəif əst va bəraye behtər didən əz eynek estefade mikonənd.",
@@ -835,7 +1312,7 @@ LESSON = {
                 "question_fa": "انسان به وسیله‌ی پاها و دست‌هایش چه کار می‌کند؟",
                 "reading_az": "Ensan be vəsileye paha va dəsthayəş çe kar mikonəd?",
                 "az": "İnsan ayaqları və əlləri ilə nə edir?",
-                "sample_answer_fa": "به وسیله‌ی پا راه می‌رود و به وسیله‌ی دست می‌نویسد، غذا می‌خورد و وسایل را برمی‌داریم.",
+                "sample_answer_fa": "به وسیله‌ی پا راه می‌رود و به وسیله‌ی دست می‌نویسد، غذا می‌خورد و وسایل را برمی‌دارد.",
                 "sample_answer_reading_az": "Be vəsileye pa rah mirəvəd va be vəsileye dəst minəvisəd, qəza mixorəd va vəsayel ra bərmidarəd.",
                 "sample_answer_az": "Ayaq vasitəsilə gəzir, əl vasitəsilə isə yazır, yemək yeyir və əşyaları götürür.",
             },

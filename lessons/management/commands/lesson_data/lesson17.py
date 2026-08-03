@@ -38,6 +38,8 @@ LESSON = {
         {"fa": "می‌خندد", "reading": "mixəndəd", "az": "gülür"},
         {"fa": "گریه می‌کند", "reading": "gerye mikonəd", "az": "ağlayır"},
         {"fa": "جالب", "reading": "caleb", "az": "Maraqlı"},
+        {"fa": "همه‌جور", "reading": "həmecur", "az": "Hər cür, hər növ"},
+        {"fa": "آدم", "reading": "adəm", "az": "Adam, insan"},
         {"fa": "همه‌جور آدم", "reading": "həmecur adəm", "az": "Hər cür insan"},
         {"fa": "بغل‌دستی", "reading": "bəğəldəsti", "az": "Yan qonşusu (oturuşda)"},
         {"fa": "فرد", "reading": "fərd", "az": "Fərd, şəxs"},
@@ -51,6 +53,20 @@ LESSON = {
         {"fa": "بازی می‌کند", "reading": "bazi mikonəd", "az": "oynayır"},
         {"fa": "خوش‌اخلاق", "reading": "xoşəxlaq", "az": "Xoşxasiyyət"},
         {"fa": "فیل و فنجان", "reading": "fil o fenjan", "az": "Böyük fərq (biri çox böyük, biri balaca)"},
+        # واژه‌های خوانده شده (səh. 208-209) — çalışmalarda işlənən, əvvəlki dərslərdən tanış sözlər
+        {"fa": "چاق", "reading": "çağ", "az": "Kök"},
+        {"fa": "لاغر", "reading": "lağər", "az": "Arıq"},
+        {"fa": "ضخیم", "reading": "zəxim", "az": "Qalın"},
+        {"fa": "نازک", "reading": "nazok", "az": "Nazik"},
+        {"fa": "تمیز", "reading": "təmiz", "az": "Təmiz"},
+        {"fa": "کثیف", "reading": "kəsif", "az": "Çirkli"},
+        {"fa": "چروک", "reading": "çoruk", "az": "Qırışlı"},
+        {"fa": "خوش‌مزه (لذیذ)", "reading": "xoşməze (ləziz)", "az": "Ləzzətli, dadlı"},
+        {"fa": "خلوت", "reading": "xəlvət", "az": "Sakit, adamsız"},
+        {"fa": "شلوغ", "reading": "şoluğ", "az": "Səs-küylü, adamla dolu"},
+        {"fa": "طناب", "reading": "tənab", "az": "Kəndir, ip"},
+        {"fa": "می‌پوشد", "reading": "mipuşəd", "az": "geyinir"},
+        {"fa": "می‌شوید", "reading": "mişuyəd", "az": "yuyur"},
     ],
     "grammar_notes": [
         {
@@ -103,6 +119,24 @@ LESSON = {
                     "reading_az": "Mən bəraye doxtərəm yek kif bənəfş va yek camdadi abi mixərəm.",
                     "az": "Mən qızım üçün bənövşəyi bir çanta və mavi bir qələmqabı alıram.",
                 },
+                {
+                    "fa": "رفتگرها خیابان‌های کثیف را تمیز می‌کنند.",
+                    "reading_az": "Rəftgərha xiyabanhaye kəsif ra təmiz mikonənd.",
+                    "az": "Süpürgəçilər çirkli küçələri təmizləyirlər.",
+                },
+            ],
+            "drills": [
+                {
+                    # səh. 211 haşiyəsi — «پوشیدن: فعل امر ← بپوش؛ بپوشید»
+                    "title_fa": "فعل امر بسازید",
+                    "instruction_az": "«پوشیدن» felinin əmr formasını qurun və sifəti düzgün yerə qoyun",
+                    "items": [
+                        {"prompt_fa": "پوشیدن — تو", "answer_fa": "بپوش!", "reading_az": "Bəpuş!", "az": "Gey!"},
+                        {"prompt_fa": "پوشیدن — شما", "answer_fa": "بپوشید!", "reading_az": "Bəpuşid!", "az": "Geyinin!"},
+                        {"prompt_fa": "در زمستان / لباس ضخیم / پوشیدن", "answer_fa": "در زمستان، لباس ضخیم بپوشید.", "reading_az": "Dər zemestan, lebase zəxim bəpuşid.", "az": "Qışda qalın paltar geyinin. — sifət isimdən SONRA."},
+                        {"prompt_fa": "در تابستان / لباس نازک / پوشیدن", "answer_fa": "در تابستان، لباس نازک بپوشید.", "reading_az": "Dər tabestan, lebase nazok bəpuşid.", "az": "Yayda nazik paltar geyinin."},
+                    ],
+                },
             ],
         },
         {
@@ -154,6 +188,18 @@ LESSON = {
                     "az": "Reyhanə quru paltarları kəndirdən götürür və yaş paltarları sərir.",
                 },
             ],
+            "drills": [
+                {
+                    # səh. 212 haşiyəsi — «شستن» felinin keçmiş zamanda təsrifi
+                    "title_fa": "صرف کنید — «شستن»",
+                    "instruction_az": "«شستن» (yumaq) felinin keçmiş zaman formalarını deyin",
+                    "items": [
+                        {"prompt_fa": "شستن — من / تو / او", "answer_fa": "شستم / شستی / شست", "reading_az": "şostəm / şosti / şost", "az": "yudum / yudun / yudu"},
+                        {"prompt_fa": "شستن — ما / شما / آن‌ها", "answer_fa": "شستیم / شستید / شستند", "reading_az": "şostim / şostid / şostənd", "az": "yuduq / yudunuz / yudular"},
+                        {"prompt_fa": "ما / لباس‌های کثیف / با لباس‌شویی / شستن", "answer_fa": "ما لباس‌های کثیف را با لباس‌شویی شستیم.", "reading_az": "Ma lebashaye kəsif ra ba lebasşuyi şostim.", "az": "Biz çirkli paltarları paltaryuyanla yuduq. — sifət cəmlənmir: «کثیف», «کثیف‌ها» ✗"},
+                    ],
+                },
+            ],
         },
         {
             "title_az": "Müqayisə (تر) və üstünlük (ترین) dərəcəli sifətlər",
@@ -178,7 +224,7 @@ LESSON = {
             ),
             "note_az": (
                 "1. Müqayisə (-تر): «از» ilə işlənir → زیباتر از (daha gözəl).\n"
-                "2. Üstünlük (-ترین): Isimdin ƏVVƏLİNƏ gəlir → زیباترین صندلی (ən gözəl stul)."
+                "2. Üstünlük (-ترین): İsimdən ƏVVƏLƏ gəlir → زیباترین صندلی (ən gözəl stul)."
             ),
             "conjugations": [
                 {"pronoun_fa": "چاق (Sadə)", "form_fa": "Kök"},
@@ -198,7 +244,7 @@ LESSON = {
                 },
                 {
                     "fa": "کلاس ما یکی از بهترین و جالب‌ترین کلاس‌های مدرسه است.",
-                    "reading_az": "Kelase ma yeki əz behtərin va calebtərin kelashaye mædrese əst.",
+                    "reading_az": "Kelase ma yeki əz behtərin va calebtərin kelashaye mədrese əst.",
                     "az": "Bizim sinif məktəbin ən yaxşı və ən maraqlı siniflərindən biridir.",
                 },
                 {
@@ -245,7 +291,7 @@ LESSON = {
                 {
                     "fa": "چرا غذا نمی‌خوری؟ چون سیر هستم؛ گرسنه نیستم.",
                     "reading_az": "Çəra qəza nimixori? Çun sir hastəm; gorsene nistəm.",
-                    "az": "Niyə yemek yemirsən? Çünki toxam; ac deyiləm.",
+                    "az": "Niyə yemək yemirsən? Çünki toxam; ac deyiləm.",
                 },
                 {
                     "fa": "چرا تکلیف‌هایت را ننوشتی؟ برای این‌که دیروز مریض بودم.",
@@ -260,11 +306,11 @@ LESSON = {
                 {
                     "fa": "چرا چلوکباب زیاد دوست داری؟ چون بسیار خوش‌مزه است.",
                     "reading_az": "Çəra çelokəbab ziyad dust dari? Çun besyar xoşməze əst.",
-                    "az": "Niyə tikə-kababı çox sevsən? Çünki çox ləzzətlidir.",
+                    "az": "Niyə tikə-kababı çox sevirsən? Çünki çox ləzzətlidir.",
                 },
                 {
                     "fa": "چرا لباس‌هایت را روی طناب آویزان کردی؟ چون لباس‌هایم خیس بود.",
-                    "reading_az": "Çəra lebashayət ra ruye tənab avizan kərdi? Çun lebaşhayəm xis bud.",
+                    "reading_az": "Çəra lebashayət ra ruye tənab avizan kərdi? Çun lebashayəm xis bud.",
                     "az": "Niyə paltarlarını kəndirdən asdın? Çünki paltarlarım yaş idi.",
                 },
                 {
@@ -272,152 +318,389 @@ LESSON = {
                     "reading_az": "Çəra televizyon kəm təmaşa mikoni? Bəraye inke dərsha va təklifhayəm ziyad əst.",
                     "az": "Niyə televizora az baxırsan? Ona görə ki, dərslərim və tapşırıqlarım çoxdur.",
                 },
+                {
+                    "fa": "چرا روسری و مانتوی آبی می‌پوشی؟ برای این‌که رنگ آبی را زیاد دوست دارم.",
+                    "reading_az": "Çəra rusəri o mantoye abi mipuşi? Bəraye inke rənge abi ra ziyad dust daram.",
+                    "az": "Niyə mavi baş örtüyü və mavi manto geyinirsən? Ona görə ki, mavi rəngi çox sevirəm.",
+                },
+            ],
+            "drills": [
+                {
+                    # səh. 216 haşiyəsi — «با ___ شوخی می‌کند؛ با ___ بازی می‌کند»
+                    "title_fa": "با حرف اضافه‌ی مناسب بگویید",
+                    "instruction_az": "«شوخی کردن» və «بازی کردن» hər ikisi «با» ilə işlənir — boşluğu doldurub deyin",
+                    "items": [
+                        {"prompt_fa": "با ___ شوخی می‌کند.", "answer_fa": "او همیشه با دیگران شوخی می‌کند.", "reading_az": "U həmişe ba digəran şuxi mikonəd.", "az": "O həmişə başqaları ilə zarafat edir."},
+                        {"prompt_fa": "با ___ بازی می‌کند.", "answer_fa": "بچّه‌ها در حیاط با توپ بازی می‌کنند.", "reading_az": "Bəççeha dər həyat ba tup bazi mikonənd.", "az": "Uşaqlar həyətdə topla oynayırlar."},
+                        {"prompt_fa": "چرا او را دوست داری؟", "answer_fa": "چون او خوش‌اخلاق است و همیشه با دیگران شوخی می‌کند.", "reading_az": "Çun u xoşəxlaq əst va həmişe ba digəran şuxi mikonəd.", "az": "Çünki o xoşxasiyyətdir və həmişə başqaları ilə zarafat edir."},
+                    ],
+                },
+            ],
+        },
+        {
+            "title_az": "Hiss və reaksiya bildirən fellər: ترسیدن، خندیدن، لبخند زدن، گریه کردن",
+            "title_fa": "ترسیدن؛ خندیدن؛ لبخند زدن؛ گریه کردن",
+            "explanation_az": (
+                "Bu dərsin dörd əsas «hiss» feli var və hər birinin öz quruluşu var:\n"
+                "• ترسیدن (qorxmaq) — HƏMİŞƏ «از» ilə: از … می‌ترسد (…-dan qorxur).\n"
+                "  Nümunə: موش‌ها از گربه‌ها می‌ترسند. (Siçanlar pişiklərdən qorxur.)\n"
+                "• خندیدن (gülmək) — sadə feldir: می‌خندد.\n"
+                "• لبخند زدن (gülümsəmək) — mürəkkəb feldir: لبخند می‌زند.\n"
+                "• گریه کردن (ağlamaq) — mürəkkəb feldir: گریه می‌کند.\n"
+                "Sifət qarşılığı: ترسو (qorxaq) ↔ شجاع (cəsur), خنده‌رو (gülərüz) ↔ ناراحت (kədərli)."
+            ),
+            "note_fa": (
+                "بگوییم: بچّه‌ها از حیوان‌های جنگل می‌ترسند. ✓ / نگوییم: بچّه‌ها به حیوان‌های جنگل می‌ترسند. ✗\n"
+                "بگوییم: او لبخند می‌زند و می‌خندد. ✓"
+            ),
+            "note_reading_az": (
+                "Bəguyim: Bəççeha əz heyvanhaye cəngəl mitərsənd. ✓ / Nəguyim: Bəççeha be heyvanhaye cəngəl mitərsənd. ✗\n"
+                "Bəguyim: U ləbxənd mizənəd va mixəndəd. ✓"
+            ),
+            "note_az": (
+                "«ترسیدن» yalnız «از» ilə işlənir:\n"
+                "• Düzgün: از … می‌ترسم\n"
+                "• Səhv: به … می‌ترسم"
+            ),
+            "conjugations": [
+                {"pronoun_fa": "ترسیدن — من / تو / او", "form_fa": "می‌ترسم / می‌ترسی / می‌ترسد"},
+                {"pronoun_fa": "ترسیدن — ما / شما / آن‌ها", "form_fa": "می‌ترسیم / می‌ترسید / می‌ترسند"},
+                {"pronoun_fa": "خندیدن — من / تو / او", "form_fa": "می‌خندم / می‌خندی / می‌خندد"},
+                {"pronoun_fa": "خندیدن — ما / شما / آن‌ها", "form_fa": "می‌خندیم / می‌خندید / می‌خندند"},
+                {"pronoun_fa": "لبخند زدن — من / تو / او", "form_fa": "لبخند می‌زنم / لبخند می‌زنی / لبخند می‌زند"},
+                {"pronoun_fa": "لبخند زدن — ما / شما / آن‌ها", "form_fa": "لبخند می‌زنیم / لبخند می‌زنید / لبخند می‌زنند"},
+            ],
+            "examples": [
+                {
+                    "fa": "موش‌ها از گربه‌ها می‌ترسند.",
+                    "reading_az": "Muşha əz gorbeha mitərsənd.",
+                    "az": "Siçanlar pişiklərdən qorxurlar. — «ترسیدن» + «از».",
+                },
+                {
+                    "fa": "بچّه‌ها از حیوان‌های جنگل می‌ترسند.",
+                    "reading_az": "Bəççeha əz heyvanhaye cəngəl mitərsənd.",
+                    "az": "Uşaqlar meşə heyvanlarından qorxurlar.",
+                },
+                {
+                    "fa": "این کودک، گرسنه است و گریه می‌کند؛ او شیر می‌خواهد.",
+                    "reading_az": "In kudək, gorsene əst va gerye mikonəd; u şir mixahəd.",
+                    "az": "Bu körpə acdır və ağlayır; o süd istəyir.",
+                },
+                {
+                    "fa": "بچّه‌ها هنگام جشن تولّدشان خوش‌حال هستند و می‌خندند.",
+                    "reading_az": "Bəççeha hengame cəşne təvəllodəşan xoşhal həstənd va mixəndənd.",
+                    "az": "Uşaqlar ad günü şənliyində şaddırlar və gülürlər.",
+                },
+                {
+                    "fa": "دوستم احمد، بیشتر وقت‌ها خنده‌رو است و لبخند می‌زند.",
+                    "reading_az": "Dustəm Əhməd, biştər vəqtha xəndero əst va ləbxənd mizənəd.",
+                    "az": "Dostum Əhməd əksər vaxtlar gülərüzdür və gülümsəyir.",
+                },
+            ],
+            "drills": [
+                {
+                    # səh. 210 haşiyəsi — «از … می‌ترسد» quruluşu
+                    "title_fa": "«از ___ می‌ترسد» را کامل کنید",
+                    "instruction_az": "Nümunəyə uyğun cümlə qurun — «ترسیدن» həmişə «از» ilə",
+                    "items": [
+                        {"prompt_fa": "موش‌ها / گربه‌ها", "answer_fa": "موش‌ها از گربه‌ها می‌ترسند.", "reading_az": "Muşha əz gorbeha mitərsənd.", "az": "Siçanlar pişiklərdən qorxurlar."},
+                        {"prompt_fa": "بچّه‌ها / حیوان‌های جنگل", "answer_fa": "بچّه‌ها از حیوان‌های جنگل می‌ترسند.", "reading_az": "Bəççeha əz heyvanhaye cəngəl mitərsənd.", "az": "Uşaqlar meşə heyvanlarından qorxurlar."},
+                        {"prompt_fa": "انسان ترسو / تاریکی", "answer_fa": "انسان ترسو از تاریکی می‌ترسد.", "reading_az": "Ensane tərsu əz tariki mitərsəd.", "az": "Qorxaq insan qaranlıqdan qorxur."},
+                        {"prompt_fa": "انسان شجاع / هیچ‌چیز", "answer_fa": "انسان‌های شجاع از هیچ‌چیز نمی‌ترسند.", "reading_az": "Ensanhaye şoja əz hiççiz nemitərsənd.", "az": "Cəsur insanlar heç nədən qorxmurlar."},
+                    ],
+                },
             ],
         },
     ],
     "exercises": [
         {
-            "kind": "fill_blank",
+            # Çalışma 1 — səh. 210 «لطفاً کامل کنید».
+            # Dərslikdə söz bankı: (ترش؛ گران؛ شیرین؛ روشن؛ شجاع؛ تاریک؛ ارزان؛ می‌زنند؛ می‌خندند)
+            # Cümlələrin çoxunda İKİ boşluq var → multi_blank.
+            "kind": "multi_blank",
+            "title_fa": "لطفاً کامل کنید",
+            "instruction_az": "Cümlələri söz bankındakı uyğun sifət və fellərlə tamamlayın",
+            "example_fa": "روزها هوا ___ است و شب‌ها هوا ___ است.\nروزها هوا *روشن* است و شب‌ها هوا *تاریک* است.",
+            "example_reading_az": "Ruzha həva rouşən əst va şəbha həva tarik əst.",
+            "example_az": (
+                "Gündüzlər hava işıqlıdır, gecələr isə qaranlıqdır.\n"
+                "Zidd mənalı sifət cütlərini yadda saxlayın: روشن ↔ تاریک, شیرین ↔ ترش,\n"
+                "گران ↔ ارزان, شجاع ↔ ترسو."
+            ),
+            # 9 boşluq = 9 çip.
+            "word_bank": ["شجاع", "روشن", "تاریک", "می‌زنند", "می‌خندند", "ترش", "شیرین", "گران", "ارزان"],
+            "items": [
+                {
+                    "fa_with_blanks": "حسین ___ است، ترسو نیست.",
+                    "correct_answers": ["شجاع"],
+                    "full_reading_az": "Hoseyn şoja əst, tərsu nist.",
+                    "full_translation_az": "Hüseyn cəsurdur, qorxaq deyil.",
+                },
+                {
+                    "fa_with_blanks": "روزها هوا ___ است و شب‌ها هوا ___ است.",
+                    "correct_answers": ["روشن", "تاریک"],
+                    "full_reading_az": "Ruzha həva rouşən əst va şəbha həva tarik əst.",
+                    "full_translation_az": "Gündüzlər hava işıqlıdır, gecələr isə qaranlıqdır.",
+                },
+                {
+                    "fa_with_blanks": "آن‌ها هنگام خوش‌حال بودن لبخند ___ یا ___ .",
+                    "correct_answers": ["می‌زنند", "می‌خندند"],
+                    "full_reading_az": "Anha hengame xoşhal budən ləbxənd mizənənd ya mixəndənd.",
+                    "full_translation_az": "Onlar sevinəndə gülümsəyir və ya gülürlər. — «لبخند زدن» mürəkkəb, «خندیدن» sadə feldir.",
+                },
+                {
+                    "fa_with_blanks": "بعضی از لیموها ___ هستند و بعضی از لیموها ___ هستند.",
+                    "correct_answers": ["ترش", "شیرین"],
+                    "full_reading_az": "Bəzi əz limuha torş həstənd va bəzi əz limuha şirin həstənd.",
+                    "full_translation_az": "Limonların bəzisi turş, bəzisi isə şirindir.",
+                },
+                {
+                    "fa_with_blanks": "ثروتمندان لباس‌های ___ می‌پوشند و انسان‌های فقیر لباس‌های ___ می‌پوشند.",
+                    "correct_answers": ["گران", "ارزان"],
+                    "full_reading_az": "Servətməndan lebashaye gəran mipuşənd va ensanhaye fəqir lebashaye ərzan mipuşənd.",
+                    "full_translation_az": "Varlılar bahalı paltarlar geyinir, kasıb insanlar isə ucuz paltarlar geyinirlər. — cəm isimdən sonra sifət TƏK qalır.",
+                },
+            ],
+        },
+        {
+            # Çalışma 2 — səh. 211 «لطفاً تصحیح کنید» (sifətin yeri).
+            # Bu, boşluq doldurma deyil — səhv cümlənin düzgün formasını demək çalışmasıdır → practice_reveal.
+            "kind": "practice_reveal",
             "title_fa": "لطفاً تصحیح کنید — جایگاه صفت",
-            "instruction_az": "Səhv cümlələri düzəldin (sifəti isimdən sonraya, izafətlə köçürün)",
-            "word_bank": [],
-            "example_fa": "خواهرم زیبا لباس‌ها می‌دوزد. ← خواهرم لباس‌های زیبا می‌دوزد.",
-            "example_reading_az": "Xvahərəm ziba lebaşa miduzəd. ← Xvahərəm lebaşhaye ziba miduzəd.",
-            "example_az": "Bacım gözəl paltarlar tikir.",
+            "instruction_az": "Səhv cümləni oxuyun, sonra düzgün formasını deyin (sifət isimdən SONRA, izafətlə)",
+            "example_prompt_fa": "آن مرد یک بزرگ خانه دارد. ✗",
+            "example_answer_fa": "آن مرد یک خانه‌ی بزرگ دارد. ✓",
+            "example_reading_az": "An mərd yek xaneye bozorg darəd.",
+            "example_az": "O kişinin böyük bir evi var. — sifət isimdən SONRA gəlir.",
             "items": [
                 {
-                    "fa_with_blank": "خواهرم زیبا لباس‌ها می‌دوزد. (تصحیح: ___)",
-                    "correct_answer": "خواهرم لباس‌های زیبا می‌دوزد.",
-                    "reading_az": "Xvahərəm ziba lebaşa miduzəd.",
-                    "az": "Bacım gözəl paltarlar tikir.",
-                    "full_reading_az": "Xvahərəm lebaşhaye ziba miduzəd.",
-                    "full_translation_az": "Bacım gözəl paltarlar tikir.",
+                    "prompt_fa": "خواهرم زیبا لباس‌ها می‌دوزد. ✗",
+                    "answer_fa": "خواهرم لباس‌های زیبا می‌دوزد. ✓",
+                    "reading_az": "Xahərəm lebashaye ziba miduzəd.",
+                    "az": "Bacım gözəl paltarlar tikir. — «زیبا» sifəti «لباس‌ها» isimindən sonra gəlməlidir.",
                 },
                 {
-                    "fa_with_blank": "مادرم هر روز لذیذ غذا می‌پزد. (تصحیح: ___)",
-                    "correct_answer": "مادرم هر روز غذای لذیذ می‌پزد.",
-                    "reading_az": "Madərəm hər ruz ləziz qəza mipəzəd.",
-                    "az": "Anam her gün lezzetli yemek bişirir.",
-                    "full_reading_az": "Madərəm hər ruz qəzaye ləziz mipəzəd.",
-                    "full_translation_az": "Anam her gün lezzetli yemek bişirir.",
+                    "prompt_fa": "مادرم هر روز لذیذ غذا می‌پزد. ✗",
+                    "answer_fa": "مادرم هر روز غذای لذیذ می‌پزد. ✓",
+                    "reading_az": "Madərəm hər ruz qəzaye ləziz mipəzəd.",
+                    "az": "Anam hər gün ləzzətli yemək bişirir.",
                 },
                 {
-                    "fa_with_blank": "رنگ‌کار با صورتی رنگ، اتاق را رنگ می‌زند. (تصحیح: ___)",
-                    "correct_answer": "رنگ‌کار با رنگ صورتی، اتاق را رنگ می‌زند.",
-                    "reading_az": "Rəngkar ba surəti rəng, otaq ra rəng mizənəd.",
-                    "az": "Rəngsaz otağı pembe rənglə rəngləyir.",
-                    "full_reading_az": "Rəngkar ba rənge surəti, otaq ra rəng mizənəd.",
-                    "full_translation_az": "Rəngsaz otağı pembe rənglə rəngləyir.",
+                    "prompt_fa": "رنگ‌کار با صورتی رنگ، اتاق را رنگ می‌زند. ✗",
+                    "answer_fa": "رنگ‌کار با رنگ صورتی، اتاق را رنگ می‌زند. ✓",
+                    "reading_az": "Rəngkar ba rənge surəti, otaq ra rəng mizənəd.",
+                    "az": "Rəngsaz otağı çəhrayı rənglə rəngləyir.",
                 },
                 {
-                    "fa_with_blank": "آن ثروتمند خانم، چهار بزرگ خانه دارد. (تصحیح: ___)",
-                    "correct_answer": "آن خانم ثروتمند، چهار خانه‌ی بزرگ دارد.",
-                    "reading_az": "An servətmənd xanom, çəhar bozorg xane darəd.",
-                    "az": "O varlı qadının dörd böyük evi var.",
-                    "full_reading_az": "An xanome servətmənd, çəhar xaneye bozorg darəd.",
-                    "full_translation_az": "O varlı qadının dörd böyük evi var.",
+                    "prompt_fa": "آن ثروتمند خانم، چهار بزرگ خانه دارد. ✗",
+                    "answer_fa": "آن خانم ثروتمند، چهار خانه‌ی بزرگ دارد. ✓",
+                    "reading_az": "An xanome servətmənd, çəhar xaneye bozorg darəd.",
+                    "az": "O varlı qadının dörd böyük evi var. — burada iki sifət də isimdən sonraya keçir.",
                 },
             ],
         },
         {
-            "kind": "fill_blank",
+            # Çalışma 3 — səh. 212 «لطفاً تصحیح کنید» (cəm isim + tək sifət).
+            "kind": "practice_reveal",
             "title_fa": "لطفاً تصحیح کنید — صفت جمع",
-            "instruction_az": "Səhv cümlələri düzəldin (sifətdən cəm şəkilçisi «ها»nı çıxarın)",
-            "word_bank": [],
-            "example_fa": "پیراهن‌های چروک‌ها را اتو بزنید. ← پیراهن‌های چروک را اتو بزنید.",
-            "example_reading_az": "Pirahənhaye çorukha ra oto bəzenid.",
-            "example_az": "Qırış köynəkləri ütüləyin.",
+            "instruction_az": "Səhv cümləni oxuyun, sonra düzgün formasını deyin (sifətdən «ها» cəm şəkilçisini çıxarın)",
+            "example_prompt_fa": "من لباس‌های تمیزها می‌پوشم. ✗",
+            "example_answer_fa": "من لباس‌های تمیز می‌پوشم. ✓",
+            "example_reading_az": "Mən lebashaye təmiz mipuşəm.",
+            "example_az": "Mən təmiz paltarlar geyinirəm. — təyini birləşmədə sifət həmişə TƏK qalır.",
             "items": [
                 {
-                    "fa_with_blank": "پیراهن‌های چروک‌ها را اتو بزنید. (تصحیح: ___)",
-                    "correct_answer": "پیراهن‌های چروک را اتو بزنید.",
-                    "reading_az": "Pirahənhaye çorukha ra oto bəzenid.",
-                    "az": "Qırış köynəkləri ütüləyin.",
-                    "full_reading_az": "Pirahənhaye çoruk ra oto bəzenid.",
-                    "full_translation_az": "Qırış köynəkləri ütüləyin.",
+                    "prompt_fa": "پیراهن‌های چروک‌ها را اتو بزنید. ✗",
+                    "answer_fa": "پیراهن‌های چروک را اتو بزنید. ✓",
+                    "reading_az": "Pirahənhaye çoruk ra oto bəzenid.",
+                    "az": "Qırışlı köynəkləri ütüləyin.",
                 },
                 {
-                    "fa_with_blank": "ما لباس‌های کثیف‌ها را با لباس‌شویی شستیم. (تصحیح: ___)",
-                    "correct_answer": "ما لباس‌های کثیف را با لباس‌شویی شستیم.",
-                    "reading_az": "Ma lebaşhaye kəsifha ra ba lebaşşuyi şostim.",
+                    "prompt_fa": "ما لباس‌های کثیف‌ها را با لباس‌شویی شستیم. ✗",
+                    "answer_fa": "ما لباس‌های کثیف را با لباس‌شویی شستیم. ✓",
+                    "reading_az": "Ma lebashaye kəsif ra ba lebasşuyi şostim.",
                     "az": "Biz çirkli paltarları paltaryuyanla yuduq.",
-                    "full_reading_az": "Ma lebaşhaye kəsif ra ba lebaşşuyi şostim.",
-                    "full_translation_az": "Biz çirkli paltarları paltaryuyanla yuduq.",
                 },
                 {
-                    "fa_with_blank": "انسان‌های قوی‌ها به انسان‌های ضعیف‌ها کمک می‌کنند. (تصحیح: ___)",
-                    "correct_answer": "انسان‌های قوی به انسان‌های ضعیف کمک می‌کنند.",
-                    "reading_az": "Enşanhaye qəviha be enşanhaye zəifha komək mikonənd.",
-                    "az": "Güclü insanlar zəif insanlara kömək edirlər.",
-                    "full_reading_az": "Enşanhaye qəvi be enşanhaye zəif komək mikonənd.",
-                    "full_translation_az": "Güclü insanlar zəif insanlara kömək edirlər.",
+                    "prompt_fa": "انسان‌های قوی‌ها به انسان‌های ضعیف‌ها کمک می‌کنند. ✗",
+                    "answer_fa": "انسان‌های قوی به انسان‌های ضعیف کمک می‌کنند. ✓",
+                    "reading_az": "Ensanhaye qəvi be ensanhaye zəif komək mikonənd.",
+                    "az": "Güclü insanlar zəif insanlara kömək edirlər. — hər iki sifət tək qalır.",
                 },
                 {
-                    "fa_with_blank": "پدرم گفت: دخترم! گل‌های قشنگ‌ها را انتخاب کن و بخر. (تصحیح: ___)",
-                    "correct_answer": "پدرم گفت: دخترم! گل‌های قشنگ را انتخاب کن و بخر.",
-                    "reading_az": "Pedərəm goft: Doxtərəm! Golhaye qəşəngha ra entexab kon va bəxər.",
+                    "prompt_fa": "پدرم گفت: دخترم! گل‌های قشنگ‌ها را انتخاب کن و بخر. ✗",
+                    "answer_fa": "پدرم گفت: دخترم! گل‌های قشنگ را انتخاب کن و بخر. ✓",
+                    "reading_az": "Pedərəm goft: Doxtərəm! Golhaye qəşəng ra entexab kon va bəxər.",
                     "az": "Atam dedi: Qızım! Gözəl gülləri seç və al.",
-                    "full_reading_az": "Pedərəm goft: Doxtərəm! Golhaye qəşəng ra entexab kon va bəxər.",
-                    "full_translation_az": "Atam dedi: Qızım! Gözəl gülləri seç və al.",
                 },
             ],
         },
         {
-            "kind": "fill_blank",
+            # Çalışma 4 — səh. 213 «برای هر تصویر، صفت مناسب بگویید».
+            # Dərslikdə 8 şəkil var (sağdan sola): نرم / شیرین / بسته / می‌ترسد —
+            # خیس / قشنگ (زشت) / روشن / فقیر.
+            "kind": "picture_sentences",
+            "title_fa": "برای هر تصویر، صفت مناسب بگویید",
+            "instruction_az": "Hər şəkil üçün uyğun sifəti deyin və onunla bir cümlə qurun",
+            "example_fa": "این چیست؟ چه‌جور است؟",
+            "example_reading_az": "In çist? Çecur əst?",
+            "example_az": "Bu nədir? Necədir? — əvvəlcə sifəti deyin, sonra tam cümlə qurun.",
+            "example_answer_fa": "این پنبه است. پنبه نرم است.",
+            "example_answer_reading_az": "In pəmbe əst. Pəmbe nərm əst.",
+            "example_answer_az": "Bu pambıqdır. Pambıq yumşaqdır.",
+            "items": [
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "پنبه نرم است.", "reading_az": "Pəmbe nərm əst.", "az": "Pambıq yumşaqdır."},
+                        {"fa": "پنبه، پوست گربه و دم روباه نرم است؛ زبر نیست.", "reading_az": "Pəmbe, puste gorbe va dome rubah nərm əst; zebr nist.", "az": "Pambıq, pişik dərisi və tülkü quyruğu yumşaqdır; sərt deyil."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "عسل شیرین است.", "reading_az": "Əsəl şirin əst.", "az": "Bal şirindir."},
+                        {"fa": "عسل و انگور شیرین هستند؛ غوره و لیمو ترش هستند.", "reading_az": "Əsəl va əngur şirin həstənd; qure va limu torş həstənd.", "az": "Bal və üzüm şirindir; qora və limon isə turşdur."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "این در، بسته است.", "reading_az": "In dər, bəste əst.", "az": "Bu qapı bağlıdır."},
+                        {"fa": "درِ کلاس بسته است؛ باز نیست.", "reading_az": "Dəre kelas bəste əst; baz nist.", "az": "Sinfin qapısı bağlıdır; açıq deyil."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "این حیوان ترسو است؛ او می‌ترسد.", "reading_az": "In heyvan tərsu əst; u mitərsəd.", "az": "Bu heyvan qorxaqdır; o qorxur."},
+                        {"fa": "حیوان‌های ترسو از حیوان‌های قوی می‌ترسند.", "reading_az": "Heyvanhaye tərsu əz heyvanhaye qəvi mitərsənd.", "az": "Qorxaq heyvanlar güclü heyvanlardan qorxurlar. — «ترسیدن» + «از»."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "این لباس‌ها خیس هستند.", "reading_az": "In lebasha xis həstənd.", "az": "Bu paltarlar yaşdır."},
+                        {"fa": "من لباس‌های خیس را روی طناب آویزان کردم تا خشک شوند.", "reading_az": "Mən lebashaye xis ra ruye tənab avizan kərdəm ta xoşk şəvənd.", "az": "Mən yaş paltarları qurusun deyə kəndirdən asdım."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "این نقّاشی و این خط، قشنگ (زیبا) است؛ آن یکی زشت است.", "reading_az": "In nəqqaşi va in xətt, qəşəng (ziba) əst; an yeki zeşt əst.", "az": "Bu rəsm və bu xətt gözəldir; o birisi isə çirkindir."},
+                        {"fa": "خط بعضی از دانش‌آموزان در کتاب اوّل زشت است و در کتاب‌های بعد زیبا است.", "reading_az": "Xətte bəzi əz daneşamuzan dər ketabe əvvəl zeşt əst va dər ketabhaye bəd ziba əst.", "az": "Bəzi şagirdlərin xətti birinci kitabda çirkindir, sonrakı kitablarda isə gözəldir."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "این اتاق روشن است.", "reading_az": "In otaq rouşən əst.", "az": "Bu otaq işıqlıdır."},
+                        {"fa": "روزها هوا روشن است و شب‌ها هوا تاریک است.", "reading_az": "Ruzha həva rouşən əst va şəbha həva tarik əst.", "az": "Gündüzlər hava işıqlı, gecələr isə qaranlıq olur."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "این انسان فقیر است.", "reading_az": "In ensan fəqir əst.", "az": "Bu insan kasıbdır."},
+                        {"fa": "ثروتمندان به انسان‌های فقیر کمک می‌کنند.", "reading_az": "Servətməndan be ensanhaye fəqir komək mikonənd.", "az": "Varlılar kasıb insanlara kömək edirlər."},
+                    ],
+                },
+            ],
+        },
+        {
+            # Çalışma 5 — səh. 213 «مانند مثال، جمله بگویید».
+            # Nümunə: من / برنج ارزان / خریدن → من برنج ارزان می‌خرم، برنج گران نمی‌خرم.
+            "kind": "practice_reveal",
+            "title_fa": "مانند مثال، جمله بگویید",
+            "instruction_az": "Nümunə kimi müsbət və inkar hissəni birlikdə deyin (sifətin ziddini işlədin)",
+            "example_prompt_fa": "من / برنج ارزان / خریدن",
+            "example_answer_fa": "من برنج ارزان می‌خرم، برنج گران نمی‌خرم.",
+            "example_reading_az": "Mən berence ərzan mixərəm, berence gəran nemixərəm.",
+            "example_az": "Mən ucuz düyü alıram, bahalı düyü almıram. — ikinci hissədə sifətin ZİDDİ və inkar fel işlənir.",
+            "items": [
+                {
+                    "prompt_fa": "محمّد / لباس سفید / دوست داشتن",
+                    "answer_fa": "محمّد لباس سفید دوست دارد، لباس رنگی دوست ندارد.",
+                    "reading_az": "Mohəmməd lebase sefid dust darəd, lebase rəngi dust nədarəd.",
+                    "az": "Məhəmməd ağ paltar sevir, rəngli paltar sevmir.",
+                },
+                {
+                    "prompt_fa": "حسین / طبقه‌ی بالا / زندگی کردن",
+                    "answer_fa": "حسین در طبقه‌ی بالا زندگی می‌کند، در طبقه‌ی پایین زندگی نمی‌کند.",
+                    "reading_az": "Hoseyn dər təbəqeye bala zendegi mikonəd, dər təbəqeye payin zendegi nemikonəd.",
+                    "az": "Hüseyn yuxarı mərtəbədə yaşayır, aşağı mərtəbədə yaşamır. — «زندگی کردن» + «در».",
+                },
+                {
+                    "prompt_fa": "انسان ترسو / حیوان‌ها / ترسیدن",
+                    "answer_fa": "انسان ترسو از حیوان‌ها می‌ترسد، انسان شجاع از حیوان‌ها نمی‌ترسد.",
+                    "reading_az": "Ensane tərsu əz heyvanha mitərsəd, ensane şoja əz heyvanha nemitərsəd.",
+                    "az": "Qorxaq insan heyvanlardan qorxur, cəsur insan isə heyvanlardan qorxmur.",
+                },
+                {
+                    "prompt_fa": "ثروتمندها / لباس نو و گران / پوشیدن",
+                    "answer_fa": "ثروتمندها لباس نو و گران می‌پوشند، لباس کهنه و ارزان نمی‌پوشند.",
+                    "reading_az": "Servətməndha lebase nou o gəran mipuşənd, lebase kohne o ərzan nemipuşənd.",
+                    "az": "Varlılar təzə və bahalı paltar geyinirlər, köhnə və ucuz paltar geyinmirlər.",
+                },
+            ],
+        },
+        {
+            # Çalışma 6 — səh. 213 «لطفاً کامل کنید».
+            # Söz bankı: (بالاتر، خیس، بزرگ‌ترین، قوی، بیشتر، ضعیف، قوی‌ترین) — 7 söz, 7 boşluq.
+            # 1-ci və 4-cü bənddə İKİ boşluq var → multi_blank.
+            "kind": "multi_blank",
             "title_fa": "لطفاً کامل کنید — صفت تفضیلی و عالی",
-            "instruction_az": "Cümlələri mötərizədəki sözlərlə tamamlayın (بالاتر، خیس، بزرگ‌ترین، قوی، بیشتر، ضعیف، قوی‌ترین)",
+            "instruction_az": "Cümlələri söz bankındakı uyğun sifətlərlə tamamlayın (sadə, «تر»li və «ترین»li formalara diqqət edin)",
+            "example_fa": "این پسر، ___ از آن پسر است.\nاین پسر، *چاق‌تر* از آن پسر است.",
+            "example_reading_az": "In posər, çağtər əz an posər əst.",
+            "example_az": (
+                "Bu oğlan o oğlandan daha kökdür.\n"
+                "«تر» müqayisə üçün «از» ilə işlənir; «ترین» isə isimdən əvvəl gəlir və «از» tələb etmir."
+            ),
             "word_bank": ["بالاتر", "خیس", "بزرگ‌ترین", "قوی", "بیشتر", "ضعیف", "قوی‌ترین"],
             "items": [
                 {
-                    "fa_with_blank": "احمد و سجّاد ...... هستند، ...... نیستند.",
-                    "correct_answer": "قوی / ضعیف",
-                    "reading_az": "Əhməd va Səccad qəvi həstənd, zəif nistənd.",
-                    "az": "Əhməd və Səccad güclüdürlər, zəif deyillər.",
+                    "fa_with_blanks": "احمد و سجّاد ___ هستند، ___ نیستند.",
+                    "correct_answers": ["قوی", "ضعیف"],
                     "full_reading_az": "Əhməd va Səccad qəvi həstənd, zəif nistənd.",
-                    "full_translation_az": "Əhməd və Səccad güclüdürlər, zəif deyillər.",
+                    "full_translation_az": "Əhməd və Səccad güclüdürlər, zəif deyillər. — hər iki boşluq sadə sifətdir.",
                 },
                 {
-                    "fa_with_blank": "این درخت ...... از آن درخت میوه دارد.",
-                    "correct_answer": "بیشتر",
-                    "reading_az": "In dərəxt biştər əz an dərəxt mive darəd.",
-                    "az": "Bu ağacın o ağacdan daha çox meyvəsi var.",
+                    "fa_with_blanks": "این درخت ___ از آن درخت میوه دارد.",
+                    "correct_answers": ["بیشتر"],
                     "full_reading_az": "In dərəxt biştər əz an dərəxt mive darəd.",
-                    "full_translation_az": "Bu ağacın o ağacdan daha çox meyvəsi var.",
+                    "full_translation_az": "Bu ağacın o ağacdan daha çox meyvəsi var. — «از» olduğu üçün müqayisə forması lazımdır.",
                 },
                 {
-                    "fa_with_blank": "من لباس‌های ...... را روی طناب آویزان کردم.",
-                    "correct_answer": "خیس",
-                    "reading_az": "Mən lebashaye xis ra ruye tənab avizan kərdəm.",
-                    "az": "Mən yaş paltarları kəndirdən asdım.",
+                    "fa_with_blanks": "من لباس‌های ___ را روی طناب آویزان کردم.",
+                    "correct_answers": ["خیس"],
                     "full_reading_az": "Mən lebashaye xis ra ruye tənab avizan kərdəm.",
-                    "full_translation_az": "Mən yaş paltarları kəndirdən asdım.",
+                    "full_translation_az": "Mən yaş paltarları kəndirdən asdım. — cəm isimdən sonra sifət TƏK qalır.",
                 },
                 {
-                    "fa_with_blank": "شیر ...... و فیل ...... حیوان جنگل هستند.",
-                    "correct_answer": "قوی / بزرگ‌ترین",
-                    "reading_az": "Şir qəvi va fil bozorgtərin heyvane cəngəl həstənd.",
-                    "az": "Şir güclü, fil isə meşənin ən böyük heyvanıdır.",
-                    "full_reading_az": "Şir qəvi va fil bozorgtərin heyvane cəngəl həstənd.",
-                    "full_translation_az": "Şir güclü, fil isə meşənin ən böyük heyvanıdır.",
+                    "fa_with_blanks": "شیر ___ و فیل ___ حیوان جنگل هستند.",
+                    "correct_answers": ["قوی‌ترین", "بزرگ‌ترین"],
+                    "full_reading_az": "Şir qəvitərin va fil bozorgtərin heyvane cəngəl həstənd.",
+                    "full_translation_az": "Şir meşənin ən güclü, fil isə ən böyük heyvanıdır. — hər iki boşluq üstünlük dərəcəsidir («ترین»), çünki hər ikisi «حیوان جنگل» isminin təyinidir.",
                 },
                 {
-                    "fa_with_blank": "طبقه‌ی سوم ...... از طبقه‌ی دوم است.",
-                    "correct_answer": "بالاتر",
-                    "reading_az": "Təbəqeye sevvom balatər əz təbəqeye dovvom əst.",
-                    "az": "Üçüncü mərtəbə ikinci mərtəbədən daha yuxarıdadır.",
+                    "fa_with_blanks": "طبقه‌ی سوم ___ از طبقه‌ی دوم است.",
+                    "correct_answers": ["بالاتر"],
                     "full_reading_az": "Təbəqeye sevvom balatər əz təbəqeye dovvom əst.",
                     "full_translation_az": "Üçüncü mərtəbə ikinci mərtəbədən daha yuxarıdadır.",
                 },
             ],
         },
         {
+            # Çalışma 7 — səh. 214 «با گزینه‌ی درست کامل کنید».
+            # Söz bankı = hər bəndin düzgün variantı (mötərizədə üç variant verilir).
             "kind": "fill_blank",
             "title_fa": "با گزینه‌ی درست کامل کنید — صفت ساده، تر، ترین",
-            "instruction_az": "Mötərizədəki variantlardan düzgün olanını seçin",
-            "word_bank": [],
+            "instruction_az": "Mötərizədəki variantlardan düzgün olanını seçin: «تر» → «از» ilə; «ترین» → isimdən əvvəl; müqayisə yoxdursa sadə sifət",
+            "word_bank": ["گران‌ترین", "خوش‌حال", "لاغر", "زیباتر", "ضخیم‌تر", "خلوت‌ترین"],
             "items": [
                 {
-                    "fa_with_blank": "این کیف، ...... کیف است. (گران، گران‌تر، گران‌ترین)",
+                    "fa_with_blank": "این کیف، ___ کیف است. (گران، گران‌تر، گران‌ترین)",
                     "correct_answer": "گران‌ترین",
                     "reading_az": "In kif, gərantərin kif əst.",
                     "az": "Bu çanta ən bahalı çantadır.",
@@ -425,7 +708,7 @@ LESSON = {
                     "full_translation_az": "Bu çanta ən bahalı çantadır.",
                 },
                 {
-                    "fa_with_blank": "من و دوستانم امروز ...... هستیم. (خوش‌حال، خوش‌حال‌تر، خوش‌حال‌ترین)",
+                    "fa_with_blank": "من و دوستانم امروز ___ هستیم. (خوش‌حال، خوش‌حال‌تر، خوش‌حال‌ترین)",
                     "correct_answer": "خوش‌حال",
                     "reading_az": "Mən va dustanəm emruz xoşhal həstim.",
                     "az": "Mən və dostlarım bu gün şadıq.",
@@ -433,7 +716,7 @@ LESSON = {
                     "full_translation_az": "Mən və dostlarım bu gün şadıq.",
                 },
                 {
-                    "fa_with_blank": "محمد و مهدی خیلی ...... هستند. (لاغر، لاغرتر، لاغرترین)",
+                    "fa_with_blank": "محمد و مهدی خیلی ___ هستند. (لاغر، لاغرتر، لاغرترین)",
                     "correct_answer": "لاغر",
                     "reading_az": "Mohəmməd va Məhdi xeyli lağər həstənd.",
                     "az": "Məhəmməd və Mehdi çox arıqdırlar.",
@@ -441,7 +724,7 @@ LESSON = {
                     "full_translation_az": "Məhəmməd və Mehdi çox arıqdırlar.",
                 },
                 {
-                    "fa_with_blank": "خط من، ...... از خط دوستم است. (زیبا، زیباتر، زیباترین)",
+                    "fa_with_blank": "خط من، ___ از خط دوستم است. (زیبا، زیباتر، زیباترین)",
                     "correct_answer": "زیباتر",
                     "reading_az": "Xətte mən, zibatər əz xətte dustəm əst.",
                     "az": "Mənim xəttim dostumun xəttindən daha gözəldir.",
@@ -449,7 +732,7 @@ LESSON = {
                     "full_translation_az": "Mənim xəttim dostumun xəttindən daha gözəldir.",
                 },
                 {
-                    "fa_with_blank": "ژاکت جواد، ...... از ژاکت من است. (ضخیم، ضخیم‌تر، ضخیم‌ترین)",
+                    "fa_with_blank": "ژاکت جواد، ___ از ژاکت من است. (ضخیم، ضخیم‌تر، ضخیم‌ترین)",
                     "correct_answer": "ضخیم‌تر",
                     "reading_az": "Jakəte Cəvad, zəximtər əz jakəte mən əst.",
                     "az": "Cavadın jaketi mənim jaketimdən daha qalındır.",
@@ -457,7 +740,7 @@ LESSON = {
                     "full_translation_az": "Cavadın jaketi mənim jaketimdən daha qalındır.",
                 },
                 {
-                    "fa_with_blank": "این خیابان، ...... خیابان این شهر است. (خلوت، خلوت‌تر، خلوت‌ترین)",
+                    "fa_with_blank": "این خیابان، ___ خیابان این شهر است. (خلوت، خلوت‌تر، خلوت‌ترین)",
                     "correct_answer": "خلوت‌ترین",
                     "reading_az": "In xiyaban, xəlvəttərin xiyabane in şəhr əst.",
                     "az": "Bu küçə bu şəhərin ən sakit küçəsidir.",
@@ -467,50 +750,44 @@ LESSON = {
             ],
         },
         {
-            "kind": "fill_blank",
+            # Çalışma 8 — səh. 214 «لطفاً تصحیح کنید» (müqayisə/üstünlük dərəcəsi).
+            "kind": "practice_reveal",
             "title_fa": "لطفاً تصحیح کنید — صفت تفضیلی و عالی",
-            "instruction_az": "Səhv cümlələri düzəldin",
-            "word_bank": [],
+            "instruction_az": "Səhv cümləni oxuyun, sonra düzgün formasını deyin («تر» → «از» ilə, «ترین» → «از»sız isimdən əvvəl)",
+            "example_prompt_fa": "این صندلی، زیباتر صندلی است. ✗",
+            "example_answer_fa": "این صندلی، زیباتر از آن صندلی است. ✓",
+            "example_reading_az": "In səndəli, zibatər əz an səndəli əst.",
+            "example_az": "Bu stul o stuldan daha gözəldir. — «تر» olan yerdə mütləq «از» olmalıdır.",
             "items": [
                 {
-                    "fa_with_blank": "محمد قوی از سعید و یاسر است. (تصحیح: ___)",
-                    "correct_answer": "محمد قوی‌تر از سعید و یاسر است.",
-                    "reading_az": "Mohəmməd qəvi əz Səid va Yasər əst.",
-                    "az": "Məhəmməd Səid və Yasərdən daha güclüdür.",
-                    "full_reading_az": "Mohəmməd qəvitər əz Səid va Yasər əst.",
-                    "full_translation_az": "Məhəmməd Səid və Yasərdən daha güclüdür.",
+                    "prompt_fa": "محمّد قوی از سعید و یاسر است. ✗",
+                    "answer_fa": "محمّد قوی‌تر از سعید و یاسر است. ✓",
+                    "reading_az": "Mohəmməd qəvitər əz Səid va Yasər əst.",
+                    "az": "Məhəmməd Səid və Yasərdən daha güclüdür. — «از» var, deməli sifət «تر» almalıdır.",
                 },
                 {
-                    "fa_with_blank": "کفش شما نوترین از کفش من است. (تصحیح: ___)",
-                    "correct_answer": "کفش شما نوتر از کفش من است.",
-                    "reading_az": "Kəfşe şoma noutərin əz kəfşe mən əst.",
-                    "az": "Sizin ayaqqabınız mənim ayaqqabımdan daha təzədir.",
-                    "full_reading_az": "Kəfşe şoma noutər əz kəfşe mən əst.",
-                    "full_translation_az": "Sizin ayaqqabınız mənim ayaqqabımdan daha təzədir.",
+                    "prompt_fa": "کفش شما نوترین از کفش من است. ✗",
+                    "answer_fa": "کفش شما نوتر از کفش من است. ✓",
+                    "reading_az": "Kəfşe şoma noutər əz kəfşe mən əst.",
+                    "az": "Sizin ayaqqabınız mənim ayaqqabımdan daha təzədir. — «ترین» «از» ilə işlənmir.",
                 },
                 {
-                    "fa_with_blank": "خط‌کش لیلا ارزان‌تر خط‌کش نرگس است. (تصحیح: ___)",
-                    "correct_answer": "خط‌کش لیلا ارزان‌تر از خط‌کش نرگس است.",
-                    "reading_az": "Xətkeşe Leyla ərzantər xətkeşe Nərgəs əst.",
-                    "az": "Leylanın xətkeşi Nərgizin xətkeşindən ucuzdur.",
-                    "full_reading_az": "Xətkeşe Leyla ərzantər əz xətkeşe Nərgəs əst.",
-                    "full_translation_az": "Leylanın xətkeşi Nərgizin xətkeşindən ucuzdur.",
+                    "prompt_fa": "خط‌کش لیلا ارزان‌تر خط‌کش نرگس است. ✗",
+                    "answer_fa": "خط‌کش لیلا ارزان‌تر از خط‌کش نرگس است. ✓",
+                    "reading_az": "Xətkeşe Leyla ərzantər əz xətkeşe Nərgəs əst.",
+                    "az": "Leylanın xətkeşi Nərgizin xətkeşindən ucuzdur. — «تر»dən sonra «از» unudulmamalıdır.",
                 },
                 {
-                    "fa_with_blank": "این اتاق، روشن‌تر اتاق است. (تصحیح: ___)",
-                    "correct_answer": "این اتاق، روشن‌ترین اتاق است.",
-                    "reading_az": "In otaq, rouşəntər otaq əst.",
-                    "az": "Bu otaq ən işıqlı otaqdır.",
-                    "full_reading_az": "In otaq, rouşəntərin otaq əst.",
-                    "full_translation_az": "Bu otaq ən işıqlı otaqdır.",
+                    "prompt_fa": "این اتاق، روشن‌تر اتاق است. ✗",
+                    "answer_fa": "این اتاق، روشن‌ترین اتاق است. ✓",
+                    "reading_az": "In otaq, rouşəntərin otaq əst.",
+                    "az": "Bu otaq ən işıqlı otaqdır. — «از» yoxdursa və sifət isimdən əvvəl gəlirsə, «ترین» olmalıdır.",
                 },
                 {
-                    "fa_with_blank": "این انگور، خوش‌مزه‌ترین از آن انگور است. (تصحیح: ___)",
-                    "correct_answer": "این انگور، خوش‌مزه‌تر از آن انگور است.",
-                    "reading_az": "In əngur, xoşməzetərin əz an əngur əst.",
+                    "prompt_fa": "این انگور، خوش‌مزه‌ترین از آن انگور است. ✗",
+                    "answer_fa": "این انگور، خوش‌مزه‌تر از آن انگور است. ✓",
+                    "reading_az": "In əngur, xoşməzetər əz an əngur əst.",
                     "az": "Bu üzüm o üzümdən daha ləzzətlidir.",
-                    "full_reading_az": "In əngur, xoşməzetər əz an əngur əst.",
-                    "full_translation_az": "Bu üzüm o üzümdən daha ləzzətlidir.",
                 },
             ],
         },
@@ -541,7 +818,7 @@ LESSON = {
                 {
                     "fa": "چرا جنگل، کوه و دریا را دوست داری؟",
                     "reading_az": "Çəra cəngəl, kuh va dərya ra dust dari?",
-                    "az": "Niyə meşəni, dağı və dənizi sevsən?",
+                    "az": "Niyə meşəni, dağı və dənizi sevirsən?",
                     "sample_answer_fa": "چون طبیعت زیباترین جای زمین است.",
                     "sample_answer_reading_az": "Çun təbiət zibatərin caye zəmin əst.",
                     "sample_answer_az": "Çünki təbiət yer üzünün ən gözəl yeridir.",
@@ -557,69 +834,67 @@ LESSON = {
             ],
         },
         {
-            "kind": "fill_blank",
+            # Çalışma 10 — səh. 218 «با صفت مناسب کامل کنید».
+            # 5-ci bənddə İKİ boşluq var → multi_blank. 7 boşluq = 7 çip.
+            "kind": "multi_blank",
             "title_fa": "با صفت مناسب کامل کنید",
             "instruction_az": "Cümlələri zidd mənalı sifətlərlə tamamlayın",
-            "word_bank": [],
+            "example_fa": "این در، بسته نیست؛ ___ است.\nاین در، بسته نیست؛ *باز* است.",
+            "example_reading_az": "In dər, bəste nist; baz əst.",
+            "example_az": (
+                "Bu qapı bağlı deyil; açıqdır.\n"
+                "Cümlədə verilmiş sifətin ZİDDİNİ tapıb boşluğa yazın:\n"
+                "ضعیف ↔ قوی, خیس ↔ خشک, زشت ↔ قشنگ, ترسو ↔ شجاع, ترش ↔ شیرین, ارزان ↔ گران."
+            ),
+            "word_bank": ["قوی", "خشک", "قشنگ", "ترسو", "ترش", "شیرین", "گران"],
             "items": [
                 {
-                    "fa_with_blank": "این بچّه، ضعیف است؛ ...... نیست.",
-                    "correct_answer": "قوی",
-                    "reading_az": "In bəççe, zəif əst; qəvi nist.",
-                    "az": "Bu uşaq zəifdir; güclü deyil.",
+                    "fa_with_blanks": "این بچّه، ضعیف است؛ ___ نیست.",
+                    "correct_answers": ["قوی"],
                     "full_reading_az": "In bəççe, zəif əst; qəvi nist.",
                     "full_translation_az": "Bu uşaq zəifdir; güclü deyil.",
                 },
                 {
-                    "fa_with_blank": "لباس من، خیس نیست؛ ...... است.",
-                    "correct_answer": "خشک",
-                    "reading_az": "Lebase mən, xis nist; xoşk əst.",
-                    "az": "Mənim paltarım yaş deyil; qurudur.",
+                    "fa_with_blanks": "لباس من، خیس نیست؛ ___ است.",
+                    "correct_answers": ["خشک"],
                     "full_reading_az": "Lebase mən, xis nist; xoşk əst.",
                     "full_translation_az": "Mənim paltarım yaş deyil; qurudur.",
                 },
                 {
-                    "fa_with_blank": "آن نقّاشی ...... است؛ زشت نیست.",
-                    "correct_answer": "قشنگ (زیبا)",
-                    "reading_az": "An nəqqaşi qəşəng əst; zeşt nist.",
-                    "az": "O rəsm gözəldir; çirkin deyil.",
+                    "fa_with_blanks": "آن نقّاشی ___ است؛ زشت نیست.",
+                    "correct_answers": ["قشنگ"],
                     "full_reading_az": "An nəqqaşi qəşəng əst; zeşt nist.",
-                    "full_translation_az": "O rəsm gözəldir; çirkin deyil.",
+                    "full_translation_az": "O rəsm gözəldir; çirkin deyil. — «قشنگ» və «زیبا» eyni mənadadır.",
                 },
                 {
-                    "fa_with_blank": "شیرها ...... نیستند؛ شجاع هستند.",
-                    "correct_answer": "ترسو",
-                    "reading_az": "Şirha tərsu nistənd; şoja həstənd.",
-                    "az": "Şirlər qorxaq deyillər; cəsurdurlar.",
+                    "fa_with_blanks": "شیرها ___ نیستند؛ شجاع هستند.",
+                    "correct_answers": ["ترسو"],
                     "full_reading_az": "Şirha tərsu nistənd; şoja həstənd.",
                     "full_translation_az": "Şirlər qorxaq deyillər; cəsurdurlar.",
                 },
                 {
-                    "fa_with_blank": "غوره ...... است و انگور ...... است.",
-                    "correct_answer": "ترش / شیرین",
-                    "reading_az": "Qure torş əst va əngur şirin əst.",
-                    "az": "Qora turşdur, üzüm isə şirindir.",
+                    "fa_with_blanks": "غوره ___ است و انگور ___ است.",
+                    "correct_answers": ["ترش", "شیرین"],
                     "full_reading_az": "Qure torş əst va əngur şirin əst.",
                     "full_translation_az": "Qora turşdur, üzüm isə şirindir.",
                 },
                 {
-                    "fa_with_blank": "آن ماشین‌ها ارزان نیستند؛ ...... هستند.",
-                    "correct_answer": "گران",
-                    "reading_az": "An maşinha ərzan nistənd; gəran həstənd.",
-                    "az": "O maşınlar ucuz deyillər; bahalıdırlar.",
+                    "fa_with_blanks": "آن ماشین‌ها ارزان نیستند؛ ___ هستند.",
+                    "correct_answers": ["گران"],
                     "full_reading_az": "An maşinha ərzan nistənd; gəran həstənd.",
-                    "full_translation_az": "O maşınlar ucuz deyillər; bahalıdırlar.",
+                    "full_translation_az": "O maşınlar ucuz deyillər; bahalıdırlar. — cəm isimdən sonra sifət TƏK qalır.",
                 },
             ],
         },
         {
+            # Çalışma 11 — səh. 218 «با گزینه‌ی درست کامل کنید».
             "kind": "fill_blank",
             "title_fa": "با گزینه‌ی درست کامل کنید — حرف اضافه",
-            "instruction_az": "Boşluqları düzgün söz və ya söz birləşməsi ilə tamamlayın",
-            "word_bank": [],
+            "instruction_az": "Mötərizədəki variantlardan düzgün olanını seçib boşluğa qoyun",
+            "word_bank": ["با", "از", "ماژیک مشکی", "دوستان", "هم‌کلاسی‌هایم", "جالب‌ترین", "دوستان چاق"],
             "items": [
                 {
-                    "fa_with_blank": "ریخانه ...... دوستانش شوخی می‌کند. (با؛ از؛ در)",
+                    "fa_with_blank": "ریحانه ___ دوستانش شوخی می‌کند. (با؛ از؛ در)",
                     "correct_answer": "با",
                     "reading_az": "Reyhane ba dustanəş şuxi mikonəd.",
                     "az": "Reyhanə dostları ilə zarafat edir.",
@@ -627,7 +902,7 @@ LESSON = {
                     "full_translation_az": "Reyhanə dostları ilə zarafat edir.",
                 },
                 {
-                    "fa_with_blank": "بچه‌ها ...... حیوان‌های جنگل می‌ترسند. (به؛ از؛ در)",
+                    "fa_with_blank": "بچه‌ها ___ حیوان‌های جنگل می‌ترسند. (به؛ از؛ در)",
                     "correct_answer": "از",
                     "reading_az": "Bəççeha əz heyvanhaye cəngəl mitərsənd.",
                     "az": "Uşaqlar meşə heyvanlarından qorxurlar.",
@@ -635,15 +910,15 @@ LESSON = {
                     "full_translation_az": "Uşaqlar meşə heyvanlarından qorxurlar.",
                 },
                 {
-                    "fa_with_blank": "دو عدد ...... روی میز است. (ماژیک مشکی؛ مشکی ماژیک)",
+                    "fa_with_blank": "دو عدد ___ روی میز است. (ماژیک مشکی؛ مشکی ماژیک)",
                     "correct_answer": "ماژیک مشکی",
                     "reading_az": "Do ədəd majike meşki ruye miz əst.",
-                    "az": "Stulun üstündə iki qara marker var.",
+                    "az": "Masanın üstündə iki qara marker var.",
                     "full_reading_az": "Do ədəd majike meşki ruye miz əst.",
-                    "full_translation_az": "Stulun üstündə iki qara marker var.",
+                    "full_translation_az": "Masanın üstündə iki qara marker var.",
                 },
                 {
-                    "fa_with_blank": "هنگام وارد شدن او بعضی از ...... می‌خندند. (دوستان؛ دوست)",
+                    "fa_with_blank": "هنگام وارد شدن او بعضی از ___ می‌خندند. (دوستان؛ دوست)",
                     "correct_answer": "دوستان",
                     "reading_az": "Hengame varəd şodəne u bəzi əz dustan mixəndənd.",
                     "az": "O içəri girəndə dostların bəzisi gülür.",
@@ -651,7 +926,7 @@ LESSON = {
                     "full_translation_az": "O içəri girəndə dostların bəzisi gülür.",
                 },
                 {
-                    "fa_with_blank": "یکی از ...... بسیار چاق است. (هم‌کلاسی‌ام؛ هم‌کلاسی‌هایم)",
+                    "fa_with_blank": "یکی از ___ بسیار چاق است. (هم‌کلاسی‌ام؛ هم‌کلاسی‌هایم)",
                     "correct_answer": "هم‌کلاسی‌هایم",
                     "reading_az": "Yeki əz həmkelasihayəm besyar çağ əst.",
                     "az": "Sinif yoldaşlarımdan biri çox kökdür.",
@@ -659,20 +934,78 @@ LESSON = {
                     "full_translation_az": "Sinif yoldaşlarımdan biri çox kökdür.",
                 },
                 {
-                    "fa_with_blank": "کلاس ما یکی از ...... کلاس‌های مدرسه است. (جالب؛ جالب‌تر؛ جالب‌ترین)",
+                    "fa_with_blank": "کلاس ما یکی از ___ کلاس‌های مدرسه است. (جالب؛ جالب‌تر؛ جالب‌ترین)",
                     "correct_answer": "جالب‌ترین",
-                    "reading_az": "Kelase ma yeki əz calebtərin kelashaye mædrese əst.",
+                    "reading_az": "Kelase ma yeki əz calebtərin kelashaye mədrese əst.",
                     "az": "Bizim sinif məktəbin ən maraqlı siniflərindən biridir.",
-                    "full_reading_az": "Kelase ma yeki əz calebtərin kelashaye mædrese əst.",
+                    "full_reading_az": "Kelase ma yeki əz calebtərin kelashaye mədrese əst.",
                     "full_translation_az": "Bizim sinif məktəbin ən maraqlı siniflərindən biridir.",
                 },
                 {
-                    "fa_with_blank": "در دانشگاه ما ...... کم هستند. (دوستان چاق‌ها؛ دوستان چاق)",
+                    "fa_with_blank": "در دانشگاه ما ___ کم هستند. (دوستان چاق‌ها؛ دوستان چاق)",
                     "correct_answer": "دوستان چاق",
                     "reading_az": "Dər daneşgahe ma dustane çağ kəm həstənd.",
                     "az": "Bizim universitetdə kök dostlar azdır.",
                     "full_reading_az": "Dər daneşgahe ma dustane çağ kəm həstənd.",
                     "full_translation_az": "Bizim universitetdə kök dostlar azdır.",
+                },
+            ],
+        },
+        {
+            # Çalışma 11 — səh. 218 «برای تصویرهای زیر جمله بگویید».
+            # Dərslikdə 6 zidd cütlük şəkli var (sağdan sola):
+            # نو↔کهنه / خیس↔خشک / گریه می‌کند↔می‌خندد — زبر↔نرم / ضخیم↔نازک / ناراحت↔خوش‌حال.
+            "kind": "picture_sentences",
+            "title_fa": "برای تصویرهای زیر جمله بگویید",
+            "instruction_az": "Hər şəkil cütü üçün zidd mənalı sifətlərlə iki cümlə deyin",
+            "example_fa": "باز ↔ بسته",
+            "example_reading_az": "baz ↔ bəste",
+            "example_az": "Hər şəkildə iki zidd sifət var — hər biri üçün bir cümlə qurun.",
+            "example_answer_fa": "این در، باز است. آن در، بسته است.",
+            "example_answer_reading_az": "In dər, baz əst. An dər, bəste əst.",
+            "example_answer_az": "Bu qapı açıqdır. O qapı bağlıdır.",
+            "items": [
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "این کفش‌ها نو هستند.", "reading_az": "In kəfşha nou həstənd.", "az": "Bu ayaqqabılar təzədir."},
+                        {"fa": "آن کفش‌ها کهنه هستند؛ کفش شما نوتر از کفش من است.", "reading_az": "An kəfşha kohne həstənd; kəfşe şoma noutər əz kəfşe mən əst.", "az": "O ayaqqabılar köhnədir; sizin ayaqqabınız mənimkindən daha təzədir."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "این دست خیس است.", "reading_az": "In dəst xis əst.", "az": "Bu əl yaşdır."},
+                        {"fa": "آن دست خشک است؛ من دست خیسم را با حوله خشک می‌کنم.", "reading_az": "An dəst xoşk əst; mən dəste xisəm ra ba houle xoşk mikonəm.", "az": "O əl qurudur; mən yaş əlimi dəsmalla qurulayıram."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "این کودک گریه می‌کند؛ او ناراحت است.", "reading_az": "In kudək gerye mikonəd; u narahat əst.", "az": "Bu körpə ağlayır; o kədərlidir."},
+                        {"fa": "آن کودک می‌خندد؛ او خوش‌حال است.", "reading_az": "An kudək mixəndəd; u xoşhal əst.", "az": "O körpə gülür; o şaddır."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "پوست درخت زبر است.", "reading_az": "Puste dərəxt zebr əst.", "az": "Ağac qabığı sərtdir (kobuddur)."},
+                        {"fa": "پنبه نرم است؛ پوست درخت نرم نیست.", "reading_az": "Pəmbe nərm əst; puste dərəxt nərm nist.", "az": "Pambıq yumşaqdır; ağac qabığı yumşaq deyil."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "این جوراب‌ها ضخیم هستند.", "reading_az": "In curabha zəxim həstənd.", "az": "Bu corablar qalındır."},
+                        {"fa": "آن جوراب‌ها نازک هستند؛ در زمستان جوراب ضخیم بپوشید.", "reading_az": "An curabha nazok həstənd; dər zemestan curabe zəxim bəpuşid.", "az": "O corablar nazikdir; qışda qalın corab geyinin."},
+                    ],
+                },
+                {
+                    "image": "",
+                    "sentences": [
+                        {"fa": "این پسر ناراحت است؛ او کم می‌خندد.", "reading_az": "In posər narahat əst; u kəm mixəndəd.", "az": "Bu oğlan kədərlidir; o az gülür."},
+                        {"fa": "آن پسر خوش‌حال و خنده‌رو است؛ او همیشه لبخند می‌زند.", "reading_az": "An posər xoşhal va xəndero əst; u həmişe ləbxənd mizənəd.", "az": "O oğlan şən və gülərüzdür; o həmişə gülümsəyir."},
+                    ],
                 },
             ],
         },
@@ -729,12 +1062,58 @@ LESSON = {
                     {
                         "fa": "لباس‌های من زیر باران خیس شد؛ آن‌ها را برای خشک‌کردن، کنار بخاری آویزان کردم.",
                         "reading_az": "Lebaşhaye mən zire baran xis şod; anha ra bəraye xoşkkərdən, kənare boxari avizan kərdəm.",
-                        "az": "Paltarlarım yağışın altında ıslandı; onları qurumaq üçün sobanın yanında asdım.",
+                        "az": "Paltarlarım yağışın altında islandı; onları qurumaq üçün sobanın yanında asdım.",
                     },
                 ],
             },
         ],
+        # «لطفاً پاسخ دهید» — səh. 215 (1-4) və səh. 217 (5-9) sualları.
         "answer_items": [
+            {
+                "fa": "چرا دیروز به کلاس نرفتی؟",
+                "reading_az": "Çəra diruz be kelas nərəfti?",
+                "az": "Niyə dünən sinfə getmədin?",
+            },
+            {
+                "fa": "چرا درِ کلاس را می‌بندید؟",
+                "reading_az": "Çəra dəre kelas ra mibəndid?",
+                "az": "Niyə sinfin qapısını bağlayırsınız?",
+            },
+            {
+                "fa": "چرا جنگل، کوه و دریا را دوست داری؟",
+                "reading_az": "Çəra cəngəl, kuh va dərya ra dust dari?",
+                "az": "Niyə meşəni, dağı və dənizi sevirsən?",
+            },
+            {
+                "fa": "چرا در زمستان، لباس‌های ضخیم می‌پوشیم؟",
+                "reading_az": "Çəra dər zemestan, lebashaye zəxim mipuşim?",
+                "az": "Niyə qışda qalın paltarlar geyinirik?",
+            },
+            {
+                "fa": "چرا این کلاس، جالب‌ترین کلاس مدرسه است؟",
+                "reading_az": "Çəra in kelas, calebtərin kelase mədrese əst?",
+                "az": "Niyə bu sinif məktəbin ən maraqlı sinfidir?",
+            },
+            {
+                "fa": "چاق‌ترین فرد این کلاس چند کیلو وزن دارد؟",
+                "reading_az": "Çağtərin fərde in kelas çənd kilo vəzn darəd?",
+                "az": "Bu sinfin ən kök adamının neçə kilo çəkisi var?",
+            },
+            {
+                "fa": "به نظر شما چرا درس یکی از بچّه‌ها ضعیف است؟",
+                "reading_az": "Be nəzəre şoma çəra dərse yeki əz bəççeha zəif əst?",
+                "az": "Sizcə niyə uşaqlardan birinin dərsi zəifdir?",
+            },
+            {
+                "fa": "چه کسی همیشه با دیگران شوخی می‌کند؟",
+                "reading_az": "Çe kəsi həmişe ba digəran şuxi mikonəd?",
+                "az": "Kim həmişə başqaları ilə zarafat edir?",
+            },
+            {
+                "fa": "قدِّ بلندترین و کوتاه‌ترین فرد در این کلاس چند سانتی‌متر است؟",
+                "reading_az": "Qədde boləndtərin va kotahtərin fərd dər in kelas çənd santimetr əst?",
+                "az": "Bu sinifdə ən ucaboy və ən qısaboy adamın boyu neçə santimetrdir?",
+            },
             {
                 "fa": "آیا در کلاس شما همه‌جور آدمی هست؟",
                 "reading_az": "Aya dər kelase şoma həmecur adəmi həst?",
@@ -742,7 +1121,7 @@ LESSON = {
             },
             {
                 "fa": "بغل‌دستی شما لاغرتر است یا چاق‌تر؟",
-                "reading_az": "Bəğəldَstiye şoma lağərtər əst ya çağtər?",
+                "reading_az": "Bəğəldəstiye şoma lağərtər əst ya çağtər?",
                 "az": "Yanınızda oturan daha arıqdır, yoxsa daha kök?",
             },
             {
@@ -783,7 +1162,7 @@ LESSON = {
         "sentences": [
             {
                 "fa": "کلاس ما یکی از بهترین و جالب‌ترین کلاس‌های مدرسه است.",
-                "reading_az": "Kelase ma yeki əz behtərin va calebtərin kelashaye mædrese əst.",
+                "reading_az": "Kelase ma yeki əz behtərin va calebtərin kelashaye mədrese əst.",
                 "az": "Bizim sinif məktəbin ən yaxşı və ən maraqlı siniflərindən biridir.",
                 "new_paragraph": True,
             },
@@ -832,7 +1211,7 @@ LESSON = {
         "comprehension_questions": [
             {
                 "question_fa": "چرا این کلاس، جالب‌ترین کلاس مدرسه است؟",
-                "reading_az": "Çəra in kelas, calebtərin kelase mædrese əst?",
+                "reading_az": "Çəra in kelas, calebtərin kelase mədrese əst?",
                 "az": "Niyə bu sinif məktəbin ən maraqlı sinfidir?",
                 "sample_answer_fa": "چون در این کلاس همه‌جور آدمی هست؛ از کوتاه قد تا بلند قد، از چاق تا لاغر.",
                 "sample_answer_reading_az": "Çun dər in kelas həmecur adəmi həst; əz kotah qəd ta bolənd qəd, əz çağ ta lağər.",
